@@ -28,12 +28,16 @@
       "Bash(gh pr *)",
       "Bash(gh api *)",
       "Bash(git push origin develop)",
+      "Bash(git push origin main)",
+      "Bash(git checkout *)",
+      "Bash(git merge *)",
+      "Bash(rm *.html)",
+      "Bash(rm *.json)",
       "Bash(git worktree *)",
       "Bash(git rm *)"
     ],
     "deny": [
       "Bash(git push --force *)",
-      "Bash(git push origin main *)",
       "Bash(git reset --hard *)",
       "Bash(git checkout -- *)",
       "Bash(git clean *)",
