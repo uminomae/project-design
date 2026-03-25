@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Design | LOVE-DRIVEN DEV</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Noto+Sans+JP:wght@300;400;500&family=Noto+Serif+JP:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #fafaf9;
+            --ink: #0f172a;
+            --mid: #334155;
+            --mute: #94a3b8;
+            --gold: #8a7040;
+            --navy: #2e3a6e;
+            --coral: #b04050;
+
+            --serif-en: "EB Garamond", "Georgia", serif;
+            --serif-jp: "Noto Serif JP", "Yu Mincho", "Hiragino Mincho ProN", serif;
+            --sans: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: var(--sans);
+            background: var(--bg);
+            color: var(--ink);
+            -webkit-font-smoothing: antialiased;
+            overflow-x: hidden;
+        }
+
+        /* === WebGL placeholder === */
+        #webgl-container {
+            position: fixed;
+            top: 0; left: 0;
+            width: 100vw; height: 100vh;
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        /* === Content Layer === */
+        #content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* === Hero === */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 6rem 0;
+        }
+
+        .hero-label {
+            font-family: var(--serif-en);
+            font-size: 0.8rem;
+            font-weight: 400;
+            letter-spacing: 0.15em;
+            color: var(--coral);
+            margin-bottom: 1.5rem;
+        }
+
+        .hero h1 {
+            font-family: var(--serif-en);
+            font-size: clamp(3.5rem, 10vw, 6rem);
+            font-weight: 400;
+            font-style: normal;
+            letter-spacing: -0.02em;
+            line-height: 1.05;
+            color: var(--ink);
+            margin-bottom: 3rem;
+        }
+
+        .hero-notice {
+            max-width: 560px;
+            padding: 2rem 2.5rem;
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-left: 2px solid var(--gold);
+        }
+
+        .hero-notice p {
+            font-family: var(--serif-jp);
+            font-size: 0.95rem;
+            font-weight: 300;
+            line-height: 2;
+            color: var(--mid);
+        }
+
+        /* === Sections === */
+        section {
+            min-height: 100vh;
+            padding: 8rem 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        /* === Section Header === */
+        .section-label {
+            font-family: var(--serif-en);
+            font-size: 0.8rem;
+            font-weight: 400;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--mute);
+            margin-bottom: 0.75rem;
+        }
+
+        h2 {
+            font-family: var(--serif-jp);
+            font-size: clamp(1.75rem, 4vw, 2.5rem);
+            font-weight: 400;
+            color: var(--ink);
+            margin-bottom: 2.5rem;
+            line-height: 1.3;
+        }
+
+        h3 {
+            font-family: var(--sans);
+            font-size: 0.9rem;
+            font-weight: 500;
+            letter-spacing: 0.05em;
+            color: var(--ink);
+            margin-bottom: 1rem;
+        }
+
+        p {
+            font-family: var(--sans);
+            font-size: 0.9rem;
+            font-weight: 300;
+            line-height: 2;
+            color: var(--mid);
+            margin-bottom: 1.5rem;
+        }
+
+        p:last-child { margin-bottom: 0; }
+
+        /* === Overview === */
+        .overview-text {
+            max-width: 680px;
+            margin-bottom: 3rem;
+        }
+
+        .overview-text p {
+            font-family: var(--serif-jp);
+            line-height: 2.1;
+        }
+
+        /* === Grid === */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+        }
+
+        @media (max-width: 768px) {
+            .grid { grid-template-columns: 1fr; }
+        }
+
+        /* === Cards === */
+        .card {
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.65);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            border: 1px solid rgba(0, 0, 0, 0.04);
+            transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+        }
+
+        .card h3 {
+            color: var(--gold);
+        }
+
+        .card p {
+            font-size: 0.9rem;
+        }
+
+        .card ul {
+            list-style: none;
+            margin: 0;
+        }
+
+        .card ul li {
+            font-size: 0.9rem;
+            font-weight: 300;
+            color: var(--mid);
+            padding: 0.4rem 0;
+            padding-left: 1.25rem;
+            position: relative;
+        }
+
+        .card ul li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            width: 6px;
+            height: 1px;
+            background: var(--mute);
+        }
+
+        /* === Pill Links === */
+        .pills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.625rem;
+            margin-top: 2rem;
+        }
+
+        .pill {
+            display: inline-block;
+            padding: 0.5rem 1.25rem;
+            border-radius: 2rem;
+            font-family: var(--sans);
+            font-size: 0.8rem;
+            font-weight: 400;
+            text-decoration: none;
+            letter-spacing: 0.03em;
+            transition: all 0.3s ease;
+            background: rgba(255, 255, 255, 0.5);
+            backdrop-filter: blur(4px);
+        }
+
+        .pill--doing {
+            color: var(--coral);
+            border: 1px solid rgba(176, 64, 80, 0.3);
+        }
+        .pill--doing:hover {
+            background: var(--coral);
+            color: #fff;
+            border-color: var(--coral);
+        }
+
+        .pill--being {
+            color: var(--navy);
+            border: 1px solid rgba(46, 58, 110, 0.3);
+        }
+        .pill--being:hover {
+            background: var(--navy);
+            color: #fff;
+            border-color: var(--navy);
+        }
+
+        /* === Being description === */
+        .being-desc {
+            max-width: 680px;
+            padding: 2rem 2.5rem;
+            background: rgba(255, 255, 255, 0.65);
+            backdrop-filter: blur(8px);
+            border-left: 2px solid var(--navy);
+            margin-bottom: 2rem;
+        }
+
+        .being-desc p {
+            font-family: var(--serif-jp);
+            line-height: 2.1;
+        }
+
+        /* === Repos === */
+        .repo-card {
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.65);
+            backdrop-filter: blur(8px);
+            border-top: 2px solid var(--mute);
+            transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .repo-card:hover { transform: translateY(-4px); }
+
+        .repo-card a {
+            font-family: var(--serif-en);
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: var(--ink);
+            text-decoration: none;
+        }
+
+        .repo-card span {
+            display: block;
+            font-size: 0.85rem;
+            font-weight: 300;
+            color: var(--mute);
+            margin-top: 0.5rem;
+        }
+
+        /* === Future === */
+        .future-text {
+            max-width: 560px;
+        }
+
+        /* === Footer === */
+        footer {
+            padding: 5rem 0 3rem;
+            text-align: center;
+        }
+
+        footer a {
+            font-family: var(--serif-en);
+            font-size: 0.9rem;
+            font-weight: 400;
+            color: var(--mute);
+            text-decoration: none;
+            margin: 0 1.25rem;
+            letter-spacing: 0.05em;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover { color: var(--ink); }
+
+        /* === Responsive === */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 3rem; }
+            h2 { font-size: 2rem; }
+            section { padding: 5rem 0; }
+            .hero-notice, .being-desc { padding: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <div id="webgl-container">
+        <!-- Three.js shader background will be injected here -->
+    </div>
+
+    <div id="content">
+        <main class="container">
+
+            <!-- Hero -->
+            <header class="hero">
+                <span class="hero-label">Love-Driven Dev</span>
+                <h1>Project<br>Design</h1>
+                <div class="hero-notice">
+                    <p>Love駆動開発と呼びたい現象を、これまで何度も経験してきました。<br>
+                    ここでいうプロジェクトは「やること（Doing）」だけでなく「起きていること（Being）」まで含む出来事です。</p>
+                </div>
+            </header>
+
+            <!-- Overview -->
+            <section>
+                <span class="section-label">Overview</span>
+                <h2>概要</h2>
+                <div class="overview-text">
+                    <p>プロジェクトデザインとは、プロジェクトの構想・設計・実行だけでなく、実行・管理の方法そのものを対象化し、構想・設計する営みです。</p>
+                    <p>まず、その基底として射程と領域を固定し、以降の議論を「やること（Doing）」と「起きてること（Being）」に分けて整理します。</p>
+                    <p>プロジェクト実務は、環境適応（物質的条件）とコミュニケーション（非物質的条件）に大別できます。本サイトでは環境適応を前提知（PMBOK等）とし、コミュニケーションを情報処理／感情処理に分解して、とくに感情処理を中心に扱います。</p>
+                </div>
+                <div class="grid">
+                    <div class="card">
+                        <h3>定義</h3>
+                        <ul>
+                            <li>プロジェクトの構想・設計・実行</li>
+                            <li>実行・管理方法の構想・設計</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h3>射程</h3>
+                        <p>営利・非営利の事業を主たる適用対象とする。研究、人生など、主体が目的を持って行為する営み一般に適用できる。</p>
+                    </div>
+                    <div class="card">
+                        <h3>領域</h3>
+                        <p>コミュニケーション（情報処理＋感情処理）と環境適応（経営学など）</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Doing -->
+            <section>
+                <span class="section-label">Doing</span>
+                <h2>やること</h2>
+                <div class="grid">
+                    <div class="card">
+                        <h3>行動原理</h3>
+                        <ul>
+                            <li>多様な価値観を受容れる</li>
+                            <li>バランスを達成する</li>
+                            <li>状況に常に適応する</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h3>環境適応</h3>
+                        <p>「PMBOK第7版」等に基づく物質的条件の整理。本サイトでは前提知とし、非物質的条件へ焦点を当てます。</p>
+                    </div>
+                    <div class="card">
+                        <h3>コミュニケーション</h3>
+                        <p>情報処理と感情処理。心の反応を通じて感じ取る感情の側面を中心に扱います。</p>
+                    </div>
+                </div>
+                <div class="pills">
+                    <a href="https://uminomae.github.io/pjdhiro/meditation/" class="pill pill--doing">欠損駆動思考</a>
+                    <a href="https://uminomae.github.io/pjdhiro/thinking-bi/" class="pill pill--doing">美駆動思考</a>
+                    <a href="https://uminomae.github.io/pjdhiro/emotional-processing/" class="pill pill--doing">感情処理（総論）</a>
+                    <a href="https://uminomae.github.io/pjdhiro/meditation/" class="pill pill--doing">瞑想</a>
+                    <a href="https://uminomae.github.io/pjdhiro/emotional-contagion/" class="pill pill--doing">情動伝染</a>
+                    <a href="https://uminomae.github.io/pjdhiro/emotional-metacognition/" class="pill pill--doing">感情メタ認知</a>
+                    <a href="https://uminomae.github.io/pjdhiro/personal-boundaries/" class="pill pill--doing">心理的境界</a>
+                </div>
+            </section>
+
+            <!-- Being -->
+            <section>
+                <span class="section-label">Being</span>
+                <h2>起きていること</h2>
+                <div class="being-desc">
+                    <p>場（Field）を整え、そこに立ち上がる差異＝波（Wave）を受け取り、縁＝境界（Relation）として接続を設計し、不可避な衝突を渦（Spinor）として統合し、成果を束（Bundle）として社会に実装する営み。</p>
+                </div>
+                <div class="pills">
+                    <a href="https://uminomae.github.io/pjdhiro/value/" class="pill pill--being">価値</a>
+                    <a href="https://uminomae.github.io/pjdhiro/acceptance/" class="pill pill--being">受容</a>
+                    <a href="https://uminomae.github.io/pjdhiro/dialogueCreation/" class="pill pill--being">創造とは</a>
+                    <a href="https://uminomae.github.io/pjdhiro/dialogue-ba-jidai/" class="pill pill--being">場と時代</a>
+                    <a href="https://uminomae.github.io/pjdhiro/dialogue-project-design/" class="pill pill--being">プロジェクトデザイン</a>
+                    <a href="https://uminomae.github.io/pjdhiro/dialogue-sharing-concepts/" class="pill pill--being">概念の共有</a>
+                    <a href="https://uminomae.github.io/pjdhiro/dialogue-spilit/" class="pill pill--being">精神</a>
+                    <a href="https://uminomae.github.io/pjdhiro/dialogue-acceptance/" class="pill pill--being">受容 (対話)</a>
+                    <a href="https://uminomae.github.io/pjdhiro/dialogue-2025/" class="pill pill--being">2025</a>
+                </div>
+            </section>
+
+            <!-- Future + Repos -->
+            <section>
+                <span class="section-label">Direction</span>
+                <h2>今後の方向性</h2>
+                <div class="future-text">
+                    <p>本ページで固定した「射程・領域・Doing/Beingの二分」は基底（土台・骨格）です。以降の各ページは、この骨格の上に展開します。</p>
+                </div>
+                <div class="grid" style="margin-top: 3rem;">
+                    <div class="repo-card">
+                        <a href="https://github.com/uminomae/kesson-driven-thinking">kesson-driven-thinking</a>
+                        <span>欠損駆動思考</span>
+                    </div>
+                    <div class="repo-card">
+                        <a href="https://uminomae.github.io/creation-space/">creation-space</a>
+                        <span>創造とは</span>
+                    </div>
+                    <div class="repo-card">
+                        <a href="#">project-design</a>
+                        <span>PD論（このサイト）</span>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer>
+            <a href="#">Blog</a>
+            <a href="#">X</a>
+            <a href="#">GitHub</a>
+        </footer>
+    </div>
+
+</body>
+</html>
