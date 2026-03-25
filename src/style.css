@@ -398,24 +398,28 @@ p:last-child { margin-bottom: 0; }
 
 /* === Repos === */
 .repo-card {
+    display: block;
     padding: 2rem;
     background: rgba(255, 255, 255, 0.65);
     backdrop-filter: blur(8px);
     border-top: 2px solid var(--mute);
     transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
 }
 
 .repo-card:hover { transform: translateY(-4px); }
 
-.repo-card a {
+.repo-card__title {
+    display: block;
     font-family: var(--serif-en);
     font-size: 1.1rem;
     font-weight: 500;
     color: var(--ink);
-    text-decoration: none;
 }
 
-.repo-card span {
+.repo-card__desc {
     display: block;
     font-size: 0.85rem;
     font-weight: 300;
