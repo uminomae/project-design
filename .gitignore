@@ -1,5 +1,7 @@
 memo.md
+preview.html
 .cache/
 .claude/worktrees/
+.claude/settings.local.json
 build/
 .build-tmp/
