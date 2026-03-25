@@ -47,5 +47,12 @@
       "Bash(wget * | bash)",
       "Bash(chmod 777 *)"
     ]
+  },
+  "sandbox": {
+    "filesystem": {
+      "allowWrite": [
+        ".claude/settings.json"
+      ]
+    }
   }
 }
