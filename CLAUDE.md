@@ -65,6 +65,30 @@
 | active | `.cache/active/` |
 | セッションログ | `.cache/session/log-{YYYYMMDD}-{seq}.md` |
 
+## 開発サーバー
+
+macOS launchd でローカルサーバーを常駐させる。スクリプトの手動実行ではなく **launchd が正規の起動方法**。
+
+| 項目 | 値 |
+|------|------|
+| URL | `http://localhost:3004/` |
+| 起動スクリプト | `serve.sh` |
+| launchd plist | `~/Library/LaunchAgents/com.uminomae.project-design.plist` |
+| ログ | `~/Library/Logs/project-design.log` |
+
+### 操作コマンド
+
+```bash
+# 起動（通常は RunAtLoad で自動起動）
+launchctl load ~/Library/LaunchAgents/com.uminomae.project-design.plist
+
+# 停止
+launchctl unload ~/Library/LaunchAgents/com.uminomae.project-design.plist
+
+# 状態確認
+lsof -i :3004 -P
+```
+
 <important if="this is the beginning of a session">
 
 ## セッション開始手順

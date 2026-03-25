@@ -10,8 +10,13 @@ CLI は docs/ を自動読み込みしない。以下の対応表に従い、タ
 | プロジェクト方針の確認 | `docs/PROJECT.md` | プロジェクト憲章 |
 | commit・push | `.claude/rules/commit-rules.md` | Git 規約 |
 | セッション管理 | `.claude/rules/session-management.md` | セッション手順 |
+| 参照リポの確認 | `.claude/rules/reference-repos.md` | 見本リポ・PM委任 |
+| knowledge 追加 | `knowledge/README.md` | データ構造 |
+| 並列作業・ワークツリー | `.claude/rules/parallel-worktree.md` | 3レーン構造 |
+| ルール追加 | `.claude/rules/reference-repos.md` | 段階的構築方針 |
 
 ## 読み方の原則
 
 - **全文読みは避ける**: 大きなファイルはセクション指定で読む
 - **CLAUDE.md が常に優先**: docs/ と CLAUDE.md が矛盾したら CLAUDE.md に従う
+- **不明時**: creation-space → kesson-driven-thinking の順で参照
