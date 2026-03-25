@@ -43,9 +43,12 @@
         <a href="/pjdhiro/" data-ja="BLOG" data-en="BLOG">BLOG</a>
     </nav>
 
-    <div id="webgl-container">
-        <!-- Three.js shader background will be injected here -->
-    </div>
+    <div id="webgl-container"></div>
+    <script type="module">
+      const shaders = ['src/shaders/main.js', 'src/shaders/main2.js', 'src/shaders/main3.js', 'src/shaders/main4.js'];
+      const pick = shaders[Math.floor(Math.random() * shaders.length)];
+      import(`./${pick}`);
+    </script>
 
     <div id="content">
         <main class="container">
@@ -151,15 +154,15 @@
                 <div class="grid" style="margin-top: 3rem;">
                     <a href="/kesson-space/" class="repo-card">
                         <span class="repo-card__title" data-ja="欠損駆動思考" data-en="Kesson-Driven Thinking">欠損駆動思考</span>
-                        <span class="repo-card__desc" data-ja="欠損駆動思考" data-en="Kesson-Driven Thinking">欠損駆動思考</span>
+                        <span class="repo-card__desc" data-ja="" data-en=""></span>
                     </a>
                     <a href="/creation-space/" class="repo-card">
                         <span class="repo-card__title" data-ja="創造とは" data-en="What Is Creation">創造とは</span>
-                        <span class="repo-card__desc" data-ja="創造とは" data-en="What Is Creation">創造とは</span>
+                        <span class="repo-card__desc" data-ja="" data-en=""></span>
                     </a>
                     <a href="/awareness-space/" class="repo-card">
                         <span class="repo-card__title" data-ja="意識とは" data-en="What Is Awareness">意識とは</span>
-                        <span class="repo-card__desc" data-ja="意識とは" data-en="What Is Awareness">意識とは</span>
+                        <span class="repo-card__desc" data-ja="" data-en=""></span>
                     </a>
                 </div>
             </section>
