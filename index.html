@@ -11,6 +11,12 @@
 </head>
 <body>
 
+    <!-- Language Toggle -->
+    <div class="lang-toggle">
+        <button id="btn-ja" class="active" onclick="switchLang('ja')">JA</button>
+        <button id="btn-en" onclick="switchLang('en')">EN</button>
+    </div>
+
     <div id="webgl-container">
         <!-- Three.js shader background will be injected here -->
     </div>
@@ -23,7 +29,8 @@
                 <span class="hero-label">Love-Driven Dev</span>
                 <h1>Project<br>Design</h1>
                 <div class="hero-notice">
-                    <p>Love駆動開発と呼びたい現象を、これまで何度も経験してきました。<br>
+                    <p data-ja="Love駆動開発と呼びたい現象を、これまで何度も経験してきました。<br>ここでいうプロジェクトは「やること（Doing）」だけでなく「起きていること（Being）」まで含む出来事です。"
+                       data-en="I have experienced many times a phenomenon I want to call Love-Driven Development.<br>Here, a project is an event that includes not only &quot;Doing&quot; but also &quot;Being.&quot;">Love駆動開発と呼びたい現象を、これまで何度も経験してきました。<br>
                     ここでいうプロジェクトは「やること（Doing）」だけでなく「起きていること（Being）」まで含む出来事です。</p>
                 </div>
             </header>
@@ -31,27 +38,32 @@
             <!-- Overview -->
             <section>
                 <span class="section-label">Overview</span>
-                <h2>概要</h2>
+                <h2 data-ja="概要" data-en="Overview">概要</h2>
                 <div class="overview-text">
-                    <p>プロジェクトデザインとは、プロジェクトの構想・設計・実行だけでなく、実行・管理の方法そのものを対象化し、構想・設計する営みです。</p>
-                    <p>まず、その基底として射程と領域を固定し、以降の議論を「やること（Doing）」と「起きてること（Being）」に分けて整理します。</p>
-                    <p>プロジェクト実務は、環境適応（物質的条件）とコミュニケーション（非物質的条件）に大別できます。本サイトでは環境適応を前提知（PMBOK等）とし、コミュニケーションを情報処理／感情処理に分解して、とくに感情処理を中心に扱います。</p>
+                    <p data-ja="プロジェクトデザインとは、プロジェクトの構想・設計・実行だけでなく、実行・管理の方法そのものを対象化し、構想・設計する営みです。"
+                       data-en="Project Design is a practice that not only envisions, designs, and executes projects, but also objectifies the methods of execution and management themselves, and envisions and designs them.">プロジェクトデザインとは、プロジェクトの構想・設計・実行だけでなく、実行・管理の方法そのものを対象化し、構想・設計する営みです。</p>
+                    <p data-ja="まず、その基底として射程と領域を固定し、以降の議論を「やること（Doing）」と「起きてること（Being）」に分けて整理します。"
+                       data-en="First, we fix the scope and domain as the foundation, and organize the subsequent discussion into &quot;Doing&quot; and &quot;Being.&quot;">まず、その基底として射程と領域を固定し、以降の議論を「やること（Doing）」と「起きてること（Being）」に分けて整理します。</p>
+                    <p data-ja="プロジェクト実務は、環境適応（物質的条件）とコミュニケーション（非物質的条件）に大別できます。本サイトでは環境適応を前提知（PMBOK等）とし、コミュニケーションを情報処理／感情処理に分解して、とくに感情処理を中心に扱います。"
+                       data-en="Project practice can be broadly divided into environmental adaptation (material conditions) and communication (non-material conditions). This site treats environmental adaptation as prerequisite knowledge (PMBOK, etc.), decomposes communication into information processing and emotional processing, and focuses especially on emotional processing.">プロジェクト実務は、環境適応（物質的条件）とコミュニケーション（非物質的条件）に大別できます。本サイトでは環境適応を前提知（PMBOK等）とし、コミュニケーションを情報処理／感情処理に分解して、とくに感情処理を中心に扱います。</p>
                 </div>
                 <div class="grid">
                     <div class="card">
-                        <h3>定義</h3>
+                        <h3 data-ja="定義" data-en="Definition">定義</h3>
                         <ul>
-                            <li>プロジェクトの構想・設計・実行</li>
-                            <li>実行・管理方法の構想・設計</li>
+                            <li data-ja="プロジェクトの構想・設計・実行" data-en="Envisioning, designing, and executing projects">プロジェクトの構想・設計・実行</li>
+                            <li data-ja="実行・管理方法の構想・設計" data-en="Envisioning and designing execution and management methods">実行・管理方法の構想・設計</li>
                         </ul>
                     </div>
                     <div class="card">
-                        <h3>射程</h3>
-                        <p>営利・非営利の事業を主たる適用対象とする。研究、人生など、主体が目的を持って行為する営み一般に適用できる。</p>
+                        <h3 data-ja="射程" data-en="Scope">射程</h3>
+                        <p data-ja="営利・非営利の事業を主たる適用対象とする。研究、人生など、主体が目的を持って行為する営み一般に適用できる。"
+                           data-en="Primarily applicable to profit and non-profit enterprises. Generally applicable to any endeavor where a subject acts with purpose, such as research or life itself.">営利・非営利の事業を主たる適用対象とする。研究、人生など、主体が目的を持って行為する営み一般に適用できる。</p>
                     </div>
                     <div class="card">
-                        <h3>領域</h3>
-                        <p>コミュニケーション（情報処理＋感情処理）と環境適応（経営学など）</p>
+                        <h3 data-ja="領域" data-en="Domain">領域</h3>
+                        <p data-ja="コミュニケーション（情報処理＋感情処理）と環境適応（経営学など）"
+                           data-en="Communication (information processing + emotional processing) and environmental adaptation (management studies, etc.)">コミュニケーション（情報処理＋感情処理）と環境適応（経営学など）</p>
                     </div>
                 </div>
             </section>
@@ -59,75 +71,64 @@
             <!-- Doing -->
             <section>
                 <span class="section-label">Doing</span>
-                <h2>やること</h2>
+                <h2 data-ja="やること" data-en="What We Do">やること</h2>
                 <div class="grid">
                     <div class="card">
-                        <h3>行動原理</h3>
+                        <h3 data-ja="行動原理" data-en="Principles of Action">行動原理</h3>
                         <ul>
-                            <li>多様な価値観を受容れる</li>
-                            <li>バランスを達成する</li>
-                            <li>状況に常に適応する</li>
+                            <li data-ja="多様な価値観を受容れる" data-en="Embrace diverse values">多様な価値観を受容れる</li>
+                            <li data-ja="バランスを達成する" data-en="Achieve balance">バランスを達成する</li>
+                            <li data-ja="状況に常に適応する" data-en="Continuously adapt to the situation">状況に常に適応する</li>
                         </ul>
                     </div>
                     <div class="card">
-                        <h3>環境適応</h3>
-                        <p>「PMBOK第7版」等に基づく物質的条件の整理。本サイトでは前提知とし、非物質的条件へ焦点を当てます。</p>
+                        <h3 data-ja="環境適応" data-en="Environmental Adaptation">環境適応</h3>
+                        <p data-ja="「PMBOK第7版」等に基づく物質的条件の整理。本サイトでは前提知とし、非物質的条件へ焦点を当てます。"
+                           data-en="Organization of material conditions based on PMBOK 7th Edition, etc. This site treats these as prerequisite knowledge and focuses on non-material conditions.">「PMBOK第7版」等に基づく物質的条件の整理。本サイトでは前提知とし、非物質的条件へ焦点を当てます。</p>
                     </div>
                     <div class="card">
-                        <h3>コミュニケーション</h3>
-                        <p>情報処理と感情処理。心の反応を通じて感じ取る感情の側面を中心に扱います。</p>
+                        <h3 data-ja="コミュニケーション" data-en="Communication">コミュニケーション</h3>
+                        <p data-ja="情報処理と感情処理。心の反応を通じて感じ取る感情の側面を中心に扱います。"
+                           data-en="Information processing and emotional processing. We focus on the emotional aspects perceived through the reactions of the heart.">情報処理と感情処理。心の反応を通じて感じ取る感情の側面を中心に扱います。</p>
                     </div>
                 </div>
                 <div class="pills">
-                    <a href="https://uminomae.github.io/pjdhiro/meditation/" class="pill pill--doing">欠損駆動思考</a>
-                    <a href="https://uminomae.github.io/pjdhiro/thinking-bi/" class="pill pill--doing">美駆動思考</a>
-                    <a href="https://uminomae.github.io/pjdhiro/emotional-processing/" class="pill pill--doing">感情処理（総論）</a>
-                    <a href="https://uminomae.github.io/pjdhiro/meditation/" class="pill pill--doing">瞑想</a>
-                    <a href="https://uminomae.github.io/pjdhiro/emotional-contagion/" class="pill pill--doing">情動伝染</a>
-                    <a href="https://uminomae.github.io/pjdhiro/emotional-metacognition/" class="pill pill--doing">感情メタ認知</a>
-                    <a href="https://uminomae.github.io/pjdhiro/personal-boundaries/" class="pill pill--doing">心理的境界</a>
+                    <a href="https://uminomae.github.io/pjdhiro/meditation/" class="pill pill--doing" data-ja="欠損駆動思考" data-en="Kesson-Driven Thinking">欠損駆動思考</a>
+                    <a href="https://uminomae.github.io/pjdhiro/thinking-bi/" class="pill pill--doing" data-ja="美駆動思考" data-en="Beauty-Driven Thinking">美駆動思考</a>
+                    <a href="https://uminomae.github.io/pjdhiro/emotional-processing/" class="pill pill--doing" data-ja="感情処理（総論）" data-en="Emotional Processing">感情処理（総論）</a>
+                    <a href="https://uminomae.github.io/pjdhiro/meditation/" class="pill pill--doing" data-ja="瞑想" data-en="Meditation">瞑想</a>
                 </div>
             </section>
 
             <!-- Being -->
             <section>
                 <span class="section-label">Being</span>
-                <h2>起きていること</h2>
+                <h2 data-ja="起きていること" data-en="What Is Happening">起きていること</h2>
                 <div class="being-desc">
-                    <p>場（Field）を整え、そこに立ち上がる差異＝波（Wave）を受け取り、縁＝境界（Relation）として接続を設計し、不可避な衝突を渦（Spinor）として統合し、成果を束（Bundle）として社会に実装する営み。</p>
+                    <p data-ja="場（Field）を整え、そこに立ち上がる差異＝波（Wave）を受け取り、縁＝境界（Relation）として接続を設計し、不可避な衝突を渦（Spinor）として統合し、成果を束（Bundle）として社会に実装する営み。"
+                       data-en="A practice of cultivating the Field, receiving the differences that arise as Waves, designing connections as Relations (boundaries), integrating inevitable collisions as Spinors (vortices), and implementing outcomes as Bundles into society.">場（Field）を整え、そこに立ち上がる差異＝波（Wave）を受け取り、縁＝境界（Relation）として接続を設計し、不可避な衝突を渦（Spinor）として統合し、成果を束（Bundle）として社会に実装する営み。</p>
                 </div>
                 <div class="pills">
-                    <a href="https://uminomae.github.io/pjdhiro/value/" class="pill pill--being">価値</a>
-                    <a href="https://uminomae.github.io/pjdhiro/acceptance/" class="pill pill--being">受容</a>
-                    <a href="https://uminomae.github.io/pjdhiro/dialogueCreation/" class="pill pill--being">創造とは</a>
-                    <a href="https://uminomae.github.io/pjdhiro/dialogue-ba-jidai/" class="pill pill--being">場と時代</a>
-                    <a href="https://uminomae.github.io/pjdhiro/dialogue-project-design/" class="pill pill--being">プロジェクトデザイン</a>
-                    <a href="https://uminomae.github.io/pjdhiro/dialogue-sharing-concepts/" class="pill pill--being">概念の共有</a>
-                    <a href="https://uminomae.github.io/pjdhiro/dialogue-spilit/" class="pill pill--being">精神</a>
-                    <a href="https://uminomae.github.io/pjdhiro/dialogue-acceptance/" class="pill pill--being">受容 (対話)</a>
-                    <a href="https://uminomae.github.io/pjdhiro/dialogue-2025/" class="pill pill--being">2025</a>
+                    <a href="https://uminomae.github.io/pjdhiro/dialogueCreation/" class="pill pill--being" data-ja="創造のモデル" data-en="Model of Creation">創造のモデル</a>
                 </div>
             </section>
 
             <!-- Future + Repos -->
             <section>
                 <span class="section-label">Direction</span>
-                <h2>今後の方向性</h2>
+                <h2 data-ja="今後の方向性" data-en="Future Direction">今後の方向性</h2>
                 <div class="future-text">
-                    <p>本ページで固定した「射程・領域・Doing/Beingの二分」は基底（土台・骨格）です。以降の各ページは、この骨格の上に展開します。</p>
+                    <p data-ja="本ページで固定した「射程・領域・Doing/Beingの二分」は基底（土台・骨格）です。以降の各ページは、この骨格の上に展開します。"
+                       data-en="The &quot;scope, domain, and Doing/Being dichotomy&quot; established on this page is the foundation (base and skeleton). Each subsequent page develops upon this skeleton.">本ページで固定した「射程・領域・Doing/Beingの二分」は基底（土台・骨格）です。以降の各ページは、この骨格の上に展開します。</p>
                 </div>
                 <div class="grid" style="margin-top: 3rem;">
                     <div class="repo-card">
-                        <a href="https://github.com/uminomae/kesson-driven-thinking">kesson-driven-thinking</a>
-                        <span>欠損駆動思考</span>
+                        <a href="https://uminomae.github.io/kesson-space/" data-ja="欠損駆動思考" data-en="Kesson-Driven Thinking">欠損駆動思考</a>
+                        <span data-ja="欠損駆動思考" data-en="Kesson-Driven Thinking">欠損駆動思考</span>
                     </div>
                     <div class="repo-card">
-                        <a href="https://uminomae.github.io/creation-space/">creation-space</a>
-                        <span>創造とは</span>
-                    </div>
-                    <div class="repo-card">
-                        <a href="#">project-design</a>
-                        <span>PD論（このサイト）</span>
+                        <a href="https://uminomae.github.io/creation-space/" data-ja="創造とは" data-en="What Is Creation">創造とは</a>
+                        <span data-ja="創造とは" data-en="What Is Creation">創造とは</span>
                     </div>
                 </div>
             </section>
@@ -140,6 +141,23 @@
             <a href="#">GitHub</a>
         </footer>
     </div>
+
+    <script>
+    function switchLang(lang) {
+        document.documentElement.lang = lang;
+        document.getElementById('btn-ja').classList.toggle('active', lang === 'ja');
+        document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+
+        var key = 'data-' + lang;
+        var elems = document.querySelectorAll('[data-ja][data-en]');
+        for (var i = 0; i < elems.length; i++) {
+            var val = elems[i].getAttribute(key);
+            if (val !== null) {
+                elems[i].innerHTML = val;
+            }
+        }
+    }
+    </script>
 
 </body>
 </html>

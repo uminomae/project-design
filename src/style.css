@@ -43,6 +43,48 @@ body {
     padding: 0 2rem;
 }
 
+/* === Lang Toggle === */
+.lang-toggle {
+    position: fixed;
+    top: 1.5rem;
+    right: 1.5rem;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    gap: 0;
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 2rem;
+    padding: 0.25rem;
+    font-family: var(--serif-en);
+    font-size: 0.8rem;
+    letter-spacing: 0.05em;
+}
+
+.lang-toggle button {
+    border: none;
+    background: transparent;
+    padding: 0.35rem 0.85rem;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    font-family: var(--serif-en);
+    font-size: 0.8rem;
+    letter-spacing: 0.05em;
+    color: var(--mute);
+    transition: all 0.3s ease;
+}
+
+.lang-toggle button.active {
+    background: var(--ink);
+    color: #fff;
+}
+
+.lang-toggle button:hover:not(.active) {
+    color: var(--ink);
+}
+
 /* === Hero === */
 .hero {
     min-height: 100vh;
