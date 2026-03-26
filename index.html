@@ -24,17 +24,63 @@
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "WebSite",
-      "name": "Project Design | LOVE-DRIVEN DEV",
-      "url": "https://uminomae.github.io/pjdhiro/project-design/",
-      "description": "Project Design Theory — Exploring the envisioning, design, and execution of projects that encompass both Doing and Being. Focuses on Love-Driven Development, emotional processing, and Kesson-Driven Thinking.",
-      "inLanguage": ["ja", "en"],
-      "keywords": ["プロジェクトデザイン", "project design", "事業構想", "Love-Driven Development", "感情処理", "emotional processing", "欠損駆動思考", "Kesson-Driven Thinking"],
-      "author": {
-        "@type": "Person",
-        "name": "pjdhiro",
-        "url": "https://uminomae.github.io/pjdhiro/"
-      }
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "name": "Project Design | LOVE-DRIVEN DEV",
+          "url": "https://uminomae.github.io/pjdhiro/project-design/",
+          "description": "Project Design Theory — Exploring the envisioning, design, and execution of projects that encompass both Doing and Being. Focuses on Love-Driven Development, emotional processing, and Kesson-Driven Thinking.",
+          "inLanguage": ["ja", "en"],
+          "keywords": ["プロジェクトデザイン", "project design", "事業構想", "Love-Driven Development", "感情処理", "emotional processing", "欠損駆動思考", "Kesson-Driven Thinking"],
+          "author": {
+            "@type": "Person",
+            "name": "pjdhiro",
+            "url": "https://uminomae.github.io/pjdhiro/",
+            "description": "プロジェクトデザイン論の提唱者。Doing と Being を包含するプロジェクトの構想・設計・実行を理論化。",
+            "jobTitle": "Project Design Theorist",
+            "knowsAbout": ["Project Design", "Kesson-Driven Thinking", "Love-Driven Development", "Emotional Processing in Projects", "Beauty-Driven Thinking"],
+            "sameAs": [
+              "https://github.com/uminomae",
+              "https://uminomae.github.io/pjdhiro/",
+              "https://uminomae.github.io/pjdhiro/project-design/",
+              "https://uminomae.github.io/creation-space/",
+              "https://uminomae.github.io/awareness-space/",
+              "https://uminomae.github.io/kesson-space/"
+            ]
+          }
+        },
+        {
+          "@type": "DefinedTerm",
+          "name": "プロジェクトデザイン",
+          "alternateName": "Project Design",
+          "description": "Doing（やること）と Being（起きていること）を包含するプロジェクトの構想・設計・実行の理論体系",
+          "inDefinedTermSet": {
+            "@type": "DefinedTermSet",
+            "name": "プロジェクトデザイン論用語集",
+            "url": "https://uminomae.github.io/pjdhiro/project-design/"
+          }
+        },
+        {
+          "@type": "DefinedTerm",
+          "name": "Love駆動開発",
+          "alternateName": "Love-Driven Development",
+          "description": "感情処理を核心に据えた開発アプローチ",
+          "inDefinedTermSet": {
+            "@type": "DefinedTermSet",
+            "name": "プロジェクトデザイン論用語集",
+            "url": "https://uminomae.github.io/pjdhiro/project-design/"
+          }
+        },
+        {
+          "@type": "ItemList",
+          "name": "プロジェクトデザイン論の構成要素",
+          "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "欠損駆動思考 (Kesson-Driven Thinking)", "url": "https://uminomae.github.io/kesson-space/"},
+            {"@type": "ListItem", "position": 2, "name": "創造の5段階モデル (Five Stages of Creation)", "url": "https://uminomae.github.io/creation-space/"},
+            {"@type": "ListItem", "position": 3, "name": "意識の4層モデル (Four-Layer Consciousness)", "url": "https://uminomae.github.io/awareness-space/"}
+          ]
+        }
+      ]
     }
     </script>
 </head>
@@ -71,9 +117,9 @@
 
             <!-- Hero -->
             <header class="hero">
-                <span class="hero-label">Love-Driven Dev</span>
-                <h1>Project<br>Design</h1>
-                <div class="hero-notice">
+                <span class="hero-label glow-heading">Love-Driven Dev</span>
+                <h1 class="glow-heading">Project<br>Design</h1>
+                <div class="hero-notice glow-text">
                     <p data-ja="Love駆動開発と呼びたい現象を、これまで何度も経験してきました。<br>ここでいうプロジェクトは「やること（Doing）」だけでなく「起きていること（Being）」まで含む出来事です。"
                        data-en="I have experienced many times a phenomenon I want to call Love-Driven Development.<br>Here, a project is an event that includes not only &quot;Doing&quot; but also &quot;Being.&quot;">Love駆動開発と呼びたい現象を、これまで何度も経験してきました。<br>
                     ここでいうプロジェクトは「やること（Doing）」だけでなく「起きていること（Being）」まで含む出来事です。</p>
@@ -82,9 +128,9 @@
 
             <!-- Overview -->
             <section>
-                <span class="section-label">Overview</span>
-                <h2 data-ja="概要" data-en="Overview">概要</h2>
-                <div class="overview-text">
+                <span class="section-label glow-heading">Overview</span>
+                <h2 class="glow-heading" data-ja="概要" data-en="Overview">概要</h2>
+                <div class="overview-text glow-text">
                     <p data-ja="プロジェクトデザインとは、プロジェクトの構想・設計・実行だけでなく、実行・管理の方法そのものを対象化し、構想・設計する営みです。"
                        data-en="Project Design is a practice that not only envisions, designs, and executes projects, but also objectifies the methods of execution and management themselves, and envisions and designs them.">プロジェクトデザインとは、プロジェクトの構想・設計・実行だけでなく、実行・管理の方法そのものを対象化し、構想・設計する営みです。</p>
                     <p data-ja="まず、その基底として射程と領域を固定し、以降の議論を「やること（Doing）」と「起きてること（Being）」に分けて整理します。"
@@ -93,19 +139,19 @@
                        data-en="Project practice can be broadly divided into environmental adaptation (material conditions) and communication (non-material conditions). This site treats environmental adaptation as prerequisite knowledge (PMBOK, etc.), decomposes communication into information processing and emotional processing, and focuses especially on emotional processing.">プロジェクト実務は、環境適応（物質的条件）とコミュニケーション（非物質的条件）に大別できます。本サイトでは環境適応を前提知（PMBOK等）とし、コミュニケーションを情報処理／感情処理に分解して、とくに感情処理を中心に扱います。</p>
                 </div>
                 <div class="grid">
-                    <div class="card">
+                    <div class="card glow-card">
                         <h3 data-ja="定義" data-en="Definition">定義</h3>
                         <ul>
                             <li data-ja="プロジェクトの構想・設計・実行" data-en="Envisioning, designing, and executing projects">プロジェクトの構想・設計・実行</li>
                             <li data-ja="実行・管理方法の構想・設計" data-en="Envisioning and designing execution and management methods">実行・管理方法の構想・設計</li>
                         </ul>
                     </div>
-                    <div class="card">
+                    <div class="card glow-card">
                         <h3 data-ja="射程" data-en="Scope">射程</h3>
                         <p data-ja="営利・非営利の事業を主たる適用対象とする。研究、人生など、主体が目的を持って行為する営み一般に適用できる。"
                            data-en="Primarily applicable to profit and non-profit enterprises. Generally applicable to any endeavor where a subject acts with purpose, such as research or life itself.">営利・非営利の事業を主たる適用対象とする。研究、人生など、主体が目的を持って行為する営み一般に適用できる。</p>
                     </div>
-                    <div class="card">
+                    <div class="card glow-card">
                         <h3 data-ja="領域" data-en="Domain">領域</h3>
                         <p data-ja="コミュニケーション（情報処理＋感情処理）と環境適応（経営学など）"
                            data-en="Communication (information processing + emotional processing) and environmental adaptation (management studies, etc.)">コミュニケーション（情報処理＋感情処理）と環境適応（経営学など）</p>
@@ -115,10 +161,10 @@
 
             <!-- Doing -->
             <section>
-                <span class="section-label">Doing</span>
-                <h2 data-ja="やること" data-en="What We Do">やること</h2>
+                <span class="section-label glow-heading">Doing</span>
+                <h2 class="glow-heading" data-ja="やること" data-en="What We Do">やること</h2>
                 <div class="grid">
-                    <div class="card">
+                    <div class="card glow-card">
                         <h3 data-ja="行動原理" data-en="Principles of Action">行動原理</h3>
                         <ul>
                             <li data-ja="多様な価値観を受容れる" data-en="Embrace diverse values">多様な価値観を受容れる</li>
@@ -126,12 +172,12 @@
                             <li data-ja="状況に常に適応する" data-en="Continuously adapt to the situation">状況に常に適応する</li>
                         </ul>
                     </div>
-                    <div class="card">
+                    <div class="card glow-card">
                         <h3 data-ja="環境適応" data-en="Environmental Adaptation">環境適応</h3>
                         <p data-ja="「PMBOK第7版」等に基づく物質的条件の整理。本サイトでは前提知とし、非物質的条件へ焦点を当てます。"
                            data-en="Organization of material conditions based on PMBOK 7th Edition, etc. This site treats these as prerequisite knowledge and focuses on non-material conditions.">「PMBOK第7版」等に基づく物質的条件の整理。本サイトでは前提知とし、非物質的条件へ焦点を当てます。</p>
                     </div>
-                    <div class="card">
+                    <div class="card glow-card">
                         <h3 data-ja="コミュニケーション" data-en="Communication">コミュニケーション</h3>
                         <p data-ja="情報処理と感情処理。心の反応を通じて感じ取る感情の側面を中心に扱います。"
                            data-en="Information processing and emotional processing. We focus on the emotional aspects perceived through the reactions of the heart.">情報処理と感情処理。心の反応を通じて感じ取る感情の側面を中心に扱います。</p>
@@ -147,9 +193,9 @@
 
             <!-- Being -->
             <section>
-                <span class="section-label">Being</span>
-                <h2 data-ja="起きていること" data-en="What Is Happening">起きていること</h2>
-                <div class="being-desc">
+                <span class="section-label glow-heading">Being</span>
+                <h2 class="glow-heading" data-ja="起きていること" data-en="What Is Happening">起きていること</h2>
+                <div class="being-desc glow-text">
                     <p data-ja="場（Field）を整え、そこに立ち上がる差異＝波（Wave）を受け取り、縁＝境界（Relation）として接続を設計し、不可避な衝突を渦（Spinor）として統合し、成果を束（Bundle）として社会に実装する営み。"
                        data-en="A practice of cultivating the Field, receiving the differences that arise as Waves, designing connections as Relations (boundaries), integrating inevitable collisions as Spinors (vortices), and implementing outcomes as Bundles into society.">場（Field）を整え、そこに立ち上がる差異＝波（Wave）を受け取り、縁＝境界（Relation）として接続を設計し、不可避な衝突を渦（Spinor）として統合し、成果を束（Bundle）として社会に実装する営み。</p>
                 </div>
@@ -161,22 +207,22 @@
 
             <!-- Future + Repos -->
             <section>
-                <span class="section-label">Direction</span>
-                <h2 data-ja="今後の方向性" data-en="Future Direction">今後の方向性</h2>
-                <div class="future-text">
+                <span class="section-label glow-heading">Direction</span>
+                <h2 class="glow-heading" data-ja="今後の方向性" data-en="Future Direction">今後の方向性</h2>
+                <div class="future-text glow-text">
                     <p data-ja="本ページで固定した「射程・領域・Doing/Beingの二分」は基底（土台・骨格）です。以降の各ページは、この骨格の上に展開します。"
                        data-en="The &quot;scope, domain, and Doing/Being dichotomy&quot; established on this page is the foundation (base and skeleton). Each subsequent page develops upon this skeleton.">本ページで固定した「射程・領域・Doing/Beingの二分」は基底（土台・骨格）です。以降の各ページは、この骨格の上に展開します。</p>
                 </div>
                 <div class="grid" style="margin-top: 3rem;">
-                    <a href="/kesson-space/" class="repo-card">
+                    <a href="/kesson-space/" class="repo-card glow-link">
                         <span class="repo-card__title" data-ja="欠損駆動思考" data-en="Kesson-Driven Thinking">欠損駆動思考</span>
                         <span class="repo-card__desc" data-ja="" data-en=""></span>
                     </a>
-                    <a href="/creation-space/" class="repo-card">
+                    <a href="/creation-space/" class="repo-card glow-link">
                         <span class="repo-card__title" data-ja="創造とは" data-en="What Is Creation">創造とは</span>
                         <span class="repo-card__desc" data-ja="" data-en=""></span>
                     </a>
-                    <a href="/awareness-space/" class="repo-card">
+                    <a href="/awareness-space/" class="repo-card glow-link">
                         <span class="repo-card__title" data-ja="意識とは" data-en="What Is Awareness">意識とは</span>
                         <span class="repo-card__desc" data-ja="" data-en=""></span>
                     </a>
