@@ -3,7 +3,7 @@
 作成日: 2026-03-26  
 作成: Codex  
 親Issue: #6  
-関連Issue: #8, #9, #10, #20
+関連Issue: #8, #9, #10, #20, #21, #22, #23
 
 ## 概要
 
@@ -14,6 +14,9 @@
 - **AI への信頼**: reliance・calibration・trustworthiness の再整理
 
 その次段として、横断論点としての **信頼修復の横断比較** を追加した。
+さらに、その流れから **自己信頼の独立レビュー** を追加した。
+さらに、その次段として **gaslighting と trust の横断整理** を追加した。
+さらに、その次段として **trust の lived experience taxonomy** を追加した。
 
 3 本はそれぞれ独立して読めるが、論点は次のように連結している。
 
@@ -51,6 +54,30 @@
 - apology や説明だけでは足りず、violation type の診断、責任明確化、substantive change、反復的一貫性が共通条件だと整理した。
 - 今後の焦点は、自己信頼の破綻と修復、制度 trust repair の未整理部分、repair の lived experience の項目化。
 
+### 1.5 自己信頼の独立レビュー
+
+ファイル: [trust-self-trust-deep-dive-codex-20260327.md](/Users/uminomae/dev/project-design/knowledge/research/trust-self-trust-deep-dive-codex-20260327.md)
+
+- self-trust を self-confidence / self-efficacy / self-esteem から切り分けた。
+- Lehrer、Govier、McLeod、Zagzebski、Dormandy、Michaelian を軸に、認識論・フェミニスト哲学・臨床を接続した。
+- 今後の焦点は、自己信頼の測定設計、gaslighting と trust の横断整理、self-trust の lived experience の記述。
+
+### 1.6 gaslighting と trust の横断整理
+
+ファイル: [trust-gaslighting-cross-domain-deep-dive-codex-20260327.md](/Users/uminomae/dev/project-design/knowledge/research/trust-gaslighting-cross-domain-deep-dive-codex-20260327.md)
+
+- gaslighting を self-trust / other-trust / institutional trust の三層で整理した。
+- intimate abuse だけでなく、medical gaslighting、cultural gaslighting、structural gaslighting を trust 配置の歪みとして接続した。
+- 今後の焦点は、gaslighting 前後の lived experience 記述、制度 repair、AI における gaslighting-like structure の検討。
+
+### 1.7 trust の lived experience taxonomy
+
+ファイル: [trust-lived-experience-taxonomy-codex-20260327.md](/Users/uminomae/dev/project-design/knowledge/research/trust-lived-experience-taxonomy-codex-20260327.md)
+
+- trust の主観的経験を九次元の暫定 taxonomy にまとめた。
+- trust / caution / distrust / mistrust / repaired trust を lived experience の違いとして書き分けるコードブックを提示した。
+- 今後の焦点は、小規模適用による次元調整と、AI / institutional trust への適用検証。
+
 ## 2. 横断して見えた共通論点
 
 ### 2.1 trust は一つではない
@@ -75,14 +102,14 @@
 
 ## 3. 次の深掘り候補
 
-1. **自己信頼の独立レビュー**  
-   愛着・臨床・フェミニスト哲学・認識論を横断する。
-
-2. **trust の lived experience の項目化**  
-   神経現象学レーンをもとに経験次元の暫定 taxonomy をつくる。
-
-3. **AI trust の測定再設計**  
+1. **AI trust の測定再設計**  
    self-report ではなく reliance behavior と uncertainty understanding を中心に組み直す。
+
+2. **制度 trust repair の精密化**  
+   medical gaslighting と institutional repair を接続して整理する。
+
+3. **taxonomy の小規模適用**  
+   既存 interview / fieldnote / diary への仮適用で分類軸を磨く。
 
 ## 4. 関連ファイル
 
@@ -92,3 +119,6 @@
 - [trust-neurophenomenology-deep-dive-codex-20260326.md](/Users/uminomae/dev/project-design/knowledge/research/trust-neurophenomenology-deep-dive-codex-20260326.md)
 - [trust-ai-deep-dive-codex-20260326.md](/Users/uminomae/dev/project-design/knowledge/research/trust-ai-deep-dive-codex-20260326.md)
 - [trust-repair-cross-domain-deep-dive-codex-20260326.md](/Users/uminomae/dev/project-design/knowledge/research/trust-repair-cross-domain-deep-dive-codex-20260326.md)
+- [trust-self-trust-deep-dive-codex-20260327.md](/Users/uminomae/dev/project-design/knowledge/research/trust-self-trust-deep-dive-codex-20260327.md)
+- [trust-gaslighting-cross-domain-deep-dive-codex-20260327.md](/Users/uminomae/dev/project-design/knowledge/research/trust-gaslighting-cross-domain-deep-dive-codex-20260327.md)
+- [trust-lived-experience-taxonomy-codex-20260327.md](/Users/uminomae/dev/project-design/knowledge/research/trust-lived-experience-taxonomy-codex-20260327.md)

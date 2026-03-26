@@ -71,6 +71,9 @@ date  : YYYYMMDD
 |---------|-----|------|
 | `design-thinking-deep-research-gpt-20260326.md` | ChatGPT | 完了 |
 | `design-thinking-deep-research--codex-20260326.md` | Codex | 完了 |
+| `design-thinking-abduction-genealogy-deep-dive-codex-20260326.md` | Codex | 完了 |
+| `design-thinking-stanford-lineage-deep-dive-codex-20260327.md` | Codex | 完了 |
+| `design-thinking-designerly-vs-business-deep-dive-codex-20260327.md` | Codex | 完了 |
 
 ### 価値（value）
 

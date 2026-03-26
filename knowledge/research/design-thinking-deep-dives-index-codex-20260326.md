@@ -30,22 +30,26 @@ Issue: #15
 ### 2. Stanford 系譜の実証
 
 Issue: #12
+状況: 第一稿作成済み
 
-予定ファイル:
-[design-thinking-stanford-lineage-deep-dive-codex-20260326.md](/Users/uminomae/dev/project-design/knowledge/research/design-thinking-stanford-lineage-deep-dive-codex-20260326.md)
+ファイル:
+[design-thinking-stanford-lineage-deep-dive-codex-20260327.md](/Users/uminomae/dev/project-design/knowledge/research/design-thinking-stanford-lineage-deep-dive-codex-20260327.md)
 
 - McKim, Faste, Kelley, d.school, IDEO の連続性を追う
 - 教育実践が business DT にどう変換されたかを見る
+- 現時点の結論は「Stanford は practical/educational DT の主要形成拠点だが、McKim の visual/human-values 系譜は IDEO で teachable elements に圧縮された」
 
 ### 3. designerly thinking と business design thinking の断絶
 
 Issue: #17
+状況: 第一稿作成済み
 
-予定ファイル:
-[design-thinking-designerly-vs-business-deep-dive-codex-20260326.md](/Users/uminomae/dev/project-design/knowledge/research/design-thinking-designerly-vs-business-deep-dive-codex-20260326.md)
+ファイル:
+[design-thinking-designerly-vs-business-deep-dive-codex-20260327.md](/Users/uminomae/dev/project-design/knowledge/research/design-thinking-designerly-vs-business-deep-dive-codex-20260327.md)
 
 - Cross, Lawson, Rowe, Schön と Brown, Kelley, Rotman を比較する
 - 何が継承され、何が切り落とされたかを整理する
+- 現時点の結論は「business DT は designerly thinking の偽物ではなく、深い設計文化を teachable/portable に抽出した薄型版である」
 
 ### 4. wicked problems の受容史
 
