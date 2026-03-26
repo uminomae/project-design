@@ -81,6 +81,16 @@ if fname == "index.html":
     if '<meta name="viewport"' not in html:
         errors.append("L1: missing viewport meta tag")
 
+    # Check: no zoom blocking (WCAG 1.4.4)
+    viewport_match = re.search(r'<meta\s+name="viewport"\s+content="([^"]*)"', html)
+    if viewport_match:
+        vp = viewport_match.group(1)
+        if "user-scalable=no" in vp or "user-scalable=0" in vp:
+            errors.append("L1: viewport has user-scalable=no (WCAG 1.4.4)")
+        max_scale = re.search(r"maximum-scale=([0-9.]+)", vp)
+        if max_scale and float(max_scale.group(1)) < 2:
+            errors.append("L1: viewport maximum-scale < 2 (WCAG 1.4.4)")
+
 # --- style.css checks ---
 if fname == "style.css":
     p = pathlib.Path(file_path)
@@ -126,6 +136,12 @@ if fname == "style.css":
                 in_exempt_block = False
                 brace_depth = 0
             selector_buf = ""
+
+    # Check: no orientation lock (WCAG 1.3.4)
+    if re.search(r'orientation\s*:\s*(portrait|landscape)', css):
+        for i, line in enumerate(css.splitlines(), 1):
+            if re.search(r'orientation\s*:\s*(portrait|landscape)', line):
+                errors.append(f"L{i}: CSS orientation lock detected (WCAG 1.3.4)")
 
     # Check: no hardcoded colors outside :root (allow #fff and #000)
     in_root = False

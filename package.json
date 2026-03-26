@@ -1,0 +1,27 @@
+{
+  "name": "project-design",
+  "version": "1.0.0",
+  "description": "**Project Design Theory -- Beyond PMBOK.**",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "node .claude/scripts/responsive-test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uminomae/project-design.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/uminomae/project-design/issues"
+  },
+  "homepage": "https://github.com/uminomae/project-design#readme",
+  "dependencies": {
+    "puppeteer": "^24.40.0"
+  }
+}
