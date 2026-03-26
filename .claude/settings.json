@@ -48,6 +48,21 @@
       "Bash(chmod 777 *)"
     ]
   },
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Edit|Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash .claude/hooks/ui-lint.sh",
+            "timeout": 10,
+            "statusMessage": "UI lint checking..."
+          }
+        ]
+      }
+    ]
+  },
   "sandbox": {
     "filesystem": {
       "allowWrite": [

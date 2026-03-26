@@ -22,6 +22,68 @@ body {
     overflow-x: hidden;
 }
 
+/* ============================================
+   Glow classes — readability over WebGL bg
+   ============================================ */
+
+/* Headings: text-shadow only, no panel */
+.glow-heading {
+    text-shadow:
+        0 0 14px rgba(255,255,255,1),
+        0 0 30px rgba(255,255,255,1),
+        0 0 60px rgba(255,255,255,0.7);
+}
+
+/* Text glow — テキストをグローだけで読ませる */
+.glow-text,
+.glow-text p,
+.glow-text li,
+.glow-text span {
+    text-shadow:
+        0 0 10px rgba(255,255,255,1),
+        0 0 22px rgba(255,255,255,1),
+        0 0 44px rgba(255,255,255,0.6);
+}
+
+/* Card — 情報のまとまりを示すパネル */
+.glow-card {
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 6px;
+    padding: 2rem;
+}
+.glow-card p,
+.glow-card li,
+.glow-card h3,
+.glow-card span {
+    text-shadow:
+        0 0 10px rgba(255,255,255,1),
+        0 0 22px rgba(255,255,255,1),
+        0 0 44px rgba(255,255,255,0.6);
+}
+
+/* Link — コンパクト、下線、ホバーで光る */
+.glow-link {
+    padding: 0.75rem 1.25rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.glow-link span {
+    text-shadow:
+        0 0 10px rgba(255,255,255,1),
+        0 0 22px rgba(255,255,255,1),
+        0 0 44px rgba(255,255,255,0.6);
+}
+.glow-link:hover {
+    background: rgba(255, 255, 255, 0.3);
+    border-bottom-color: rgba(0, 0, 0, 0.15);
+    padding-left: 1.75rem;
+}
+
+/* ============================================ */
+
 /* === WebGL placeholder === */
 #webgl-container {
     position: fixed;
@@ -207,12 +269,7 @@ body {
 }
 
 .hero-notice {
-    max-width: 560px;
-    padding: 2rem 2.5rem;
-    background: rgba(255, 255, 255, 0.7);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    border-left: 2px solid var(--gold);
+    max-width: 680px;
 }
 
 .hero-notice p {
@@ -278,6 +335,7 @@ p:last-child { margin-bottom: 0; }
     margin-bottom: 3rem;
 }
 
+
 .overview-text p {
     font-family: var(--serif-jp);
     line-height: 2.1;
@@ -295,19 +353,6 @@ p:last-child { margin-bottom: 0; }
 }
 
 /* === Cards === */
-.card {
-    padding: 2rem;
-    background: rgba(255, 255, 255, 0.65);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
-    border: 1px solid rgba(0, 0, 0, 0.04);
-    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-.card:hover {
-    transform: translateY(-4px);
-}
-
 .card h3 {
     color: var(--gold);
 }
@@ -349,7 +394,8 @@ p:last-child { margin-bottom: 0; }
 }
 
 .pill {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
     padding: 0.5rem 1.25rem;
     border-radius: 2rem;
     font-family: var(--sans);
@@ -385,10 +431,6 @@ p:last-child { margin-bottom: 0; }
 /* === Being description === */
 .being-desc {
     max-width: 680px;
-    padding: 2rem 2.5rem;
-    background: rgba(255, 255, 255, 0.65);
-    backdrop-filter: blur(8px);
-    border-left: 2px solid var(--navy);
     margin-bottom: 2rem;
 }
 
@@ -400,17 +442,10 @@ p:last-child { margin-bottom: 0; }
 /* === Repos === */
 .repo-card {
     display: block;
-    padding: 2rem;
-    background: rgba(255, 255, 255, 0.65);
-    backdrop-filter: blur(8px);
-    border-top: 2px solid var(--mute);
-    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
     text-decoration: none;
     color: inherit;
     cursor: pointer;
 }
-
-.repo-card:hover { transform: translateY(-4px); }
 
 .repo-card__title {
     display: block;
@@ -430,7 +465,7 @@ p:last-child { margin-bottom: 0; }
 
 /* === Future === */
 .future-text {
-    max-width: 560px;
+    max-width: 680px;
 }
 
 /* === Footer === */
@@ -453,11 +488,42 @@ footer a {
 footer a:hover { color: var(--ink); }
 
 /* === Responsive === */
+
+/* md: tablet */
 @media (max-width: 768px) {
+    .container { padding: 0 1.5rem; }
     .hero h1 { font-size: 3rem; }
     h2 { font-size: 2rem; }
-    section { padding: 5rem 0; }
-    .hero-notice, .being-desc { padding: 1.5rem; }
+    section { padding: 5rem 0; min-height: auto; }
+    .glow-card { padding: 1.5rem; }
+    .glow-link { padding: 1rem 1.5rem; }
     .top-bar { top: 1rem; right: 1rem; }
     .site-menu { top: 3.5rem; right: 1rem; }
+    .hero-notice,
+    .overview-text,
+    .being-desc,
+    .future-text { max-width: 100%; }
+}
+
+/* sm: smartphone */
+@media (max-width: 480px) {
+    .container { padding: 0 1rem; }
+    .hero { padding: 4rem 0; }
+    .hero h1 { font-size: 2.5rem; margin-bottom: 2rem; }
+    h2 { font-size: 1.5rem; margin-bottom: 1.5rem; }
+    section { padding: 3rem 0; }
+    .glow-card { padding: 1.25rem; }
+    .glow-link { padding: 0.75rem 1rem; }
+    .pills { gap: 0.5rem; }
+    footer a { margin: 0 0.75rem; font-size: 0.85rem; }
+}
+
+/* Touch targets: min 44px */
+.pill,
+.glow-link,
+.menu-toggle,
+.lang-toggle button {
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
 }
