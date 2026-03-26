@@ -4,6 +4,27 @@
 
 ---
 
+## Overview (English)
+
+**Project Design Theory** is a theoretical framework that encompasses both Doing (task execution) and Being (emergent processes) in project envisioning, design, and execution. While PMBOK focuses on process and deliverable management, Project Design addresses the design of relationships, meaning, and structure -- driven by dialogue and emotional processing rather than schedule, cost, and quality alone.
+
+### Key Concepts
+- **Love-Driven Development** (Love 駆動開発): Projects are driven by relationships, emotions, and intentions rather than purely by schedule, cost, and quality metrics.
+- **Emotional Processing** (感情処理): Emotions are not noise to be filtered out but signals that drive the project forward.
+- **Kesson-Driven Thinking** (欠損駆動思考): A thinking methodology that picks up discarded errors as questions worth holding.
+- **Five-Stage Model of Creation** (創造の5段階モデル): Field, Wave, Edge, Vortex, Bundle -- a cross-domain model of creative processes.
+- **Intersubjectivity** (間主観性): Meaning arises in relationships, not in isolation.
+
+### Related Projects
+- [creation-space](https://github.com/uminomae/creation-space): Exploring creative processes across 30 academic domains
+- [awareness-space](https://github.com/uminomae/awareness-space): Exploring consciousness through the Four-Layer Model
+- [kesson-space](https://github.com/uminomae/kesson-space): 3D experiential space for Kesson-Driven Thinking
+- [pjdhiro](https://github.com/uminomae/pjdhiro): Published content and blog
+
+> For the full theoretical framework, see [Project Design](https://uminomae.github.io/pjdhiro/project-design/).
+
+---
+
 ## 概要 / Overview
 
 プロジェクトデザインとは、プロジェクトの構想・設計・実行だけでなく、実行・管理の方法そのものを対象化し、構想・設計する営み。「やること（Doing）」と「起きていること（Being）」の両方を包含する。
