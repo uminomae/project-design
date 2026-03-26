@@ -125,7 +125,9 @@ CSS 変数のみ使用。ハードコードされた色は禁止。
 - セクションごとに `min-height: 100vh`
 - 各構成要素が `.glow-heading` / `.glow-text` / `.glow-card` / `.glow-link` のいずれかを持つこと
 
-## 7. 機械検証項目（ui-lint.sh で自動チェック）
+## 7. 機械検証項目
+
+### 7a. 静的チェック（ui-lint.sh — PostToolUse hook）
 
 1. index.html 内の `h1`, `h2`, `span.section-label`, `span.hero-label` に `.glow-heading` が付いているか
 2. 本文ブロック（`.overview-text`, `.hero-notice`, `.being-desc`, `.future-text`）に `.glow-text` が付いているか
@@ -135,6 +137,22 @@ CSS 変数のみ使用。ハードコードされた色は禁止。
 6. style.css にハードコードされた色（#で始まる6桁）が `:root` 外にないか
 7. viewport meta タグが存在するか
 8. タッチターゲットの min-height/min-width が 44px 以上か（CSS 検証）
+9. `user-scalable=no` または `maximum-scale=1` を使っていないか（WCAG 1.4.4）
+10. CSS に `orientation` ロックがないか（WCAG 1.3.4）
+
+### 7b. ブラウザチェック（responsive-test.sh — 定期実行）
+
+Puppeteer で `http://localhost:3004/` に対して実行。根拠は WCAG 2.2 AA。
+
+| # | チェック | 根拠 | 閾値 |
+|---|---------|------|------|
+| B1 | 320px 幅で横スクロールなし | WCAG 1.4.10 Reflow | `scrollWidth <= clientWidth` |
+| B2 | 768px 幅で grid が 1カラム化 | §3 必須対応 | `grid-template-columns: 1fr` |
+| B3 | 200% zoom で水平オーバーフローなし | WCAG 1.4.4 Resize Text | `scrollWidth <= clientWidth` |
+| B4 | タッチターゲット実測 44x44px 以上 | WCAG 2.5.5 (AAA) | `boundingRect >= 44` |
+| B5 | フォント最小 12px | Lighthouse 基準 | 全テキスト要素 `fontSize >= 12` |
+
+実行: `npm test` または `bash .claude/scripts/responsive-test.sh`
 
 ## 8. 却下履歴 — 試して合わなかった手法
 

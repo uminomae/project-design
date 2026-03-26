@@ -5,3 +5,4 @@ preview.html
 .claude/settings.local.json
 build/
 .build-tmp/
+node_modules/
