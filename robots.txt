@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://uminomae.github.io/pjdhiro/project-design/sitemap.xml
+Sitemap: https://uminomae.github.io/project-design/sitemap.xml
