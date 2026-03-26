@@ -8,7 +8,7 @@
 
 const puppeteer = require('puppeteer');
 
-const URL = 'http://localhost:3004/';
+const URL = process.env.TEST_URL || 'http://localhost:3004/';
 const TOUCH_SELECTORS = '.pill, .glow-link, .menu-toggle, .lang-toggle button';
 const MIN_TOUCH_SIZE = 44;
 const MIN_FONT_SIZE = 12;
