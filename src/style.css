@@ -10,6 +10,22 @@
     --serif-en: "EB Garamond", "Georgia", serif;
     --serif-jp: "Noto Serif JP", "Yu Mincho", "Hiragino Mincho ProN", serif;
     --sans: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
+
+    /* Glow color RGB — adjustable via ?dev panel */
+    --glow-r: 255;  --glow-g: 255;  --glow-b: 253;
+
+    /* Glow radii (px) — adjustable via ?dev panel */
+    --glow-h-r1: 14;  --glow-h-r2: 30;  --glow-h-r3: 60;
+    --glow-t-r1: 35;  --glow-t-r2: 53;  --glow-t-r3: 2;  --glow-t-r4: 2;  --glow-t-r5: 8;
+    --glow-c-r1: 10;  --glow-c-r2: 22;  --glow-c-r3: 44;
+    /* Glow opacity (0-1) */
+    --glow-h-a3: 0.7;
+    --glow-t-a3: 1;  --glow-t-a4: 0.8;  --glow-t-a5: 0.95;
+    --glow-c-a3: 0.6;
+    /* Card panel */
+    --card-bg-alpha: 0.3;
+    --card-blur: 6;
+    --card-border-alpha: 0.3;
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -22,16 +38,12 @@ body {
     overflow-x: hidden;
 }
 
-/* ============================================
-   Glow classes — readability over WebGL bg
-   ============================================ */
-
 /* Headings: text-shadow only, no panel */
 .glow-heading {
     text-shadow:
-        0 0 14px rgba(255,255,255,1),
-        0 0 30px rgba(255,255,255,1),
-        0 0 60px rgba(255,255,255,0.7);
+        0 0 calc(var(--glow-h-r1) * 1px) rgba(var(--glow-r),var(--glow-g),var(--glow-b),1),
+        0 0 calc(var(--glow-h-r2) * 1px) rgba(var(--glow-r),var(--glow-g),var(--glow-b),1),
+        0 0 calc(var(--glow-h-r3) * 1px) rgba(var(--glow-r),var(--glow-g),var(--glow-b), var(--glow-h-a3));
 }
 
 /* Text glow — テキストをグローだけで読ませる */
@@ -40,19 +52,19 @@ body {
 .glow-text li,
 .glow-text span {
     text-shadow:
-        0 0 8px rgba(255,255,255,1),
-        0 0 18px rgba(255,255,255,1),
-        0 0 36px rgba(255,255,255,0.9),
-        0 0 60px rgba(255,255,255,0.6),
-        0 0 90px rgba(255,255,255,0.3);
+        0 0 calc(var(--glow-t-r1) * 1px) rgba(var(--glow-r),var(--glow-g),var(--glow-b),1),
+        0 0 calc(var(--glow-t-r2) * 1px) rgba(var(--glow-r),var(--glow-g),var(--glow-b),1),
+        0 0 calc(var(--glow-t-r3) * 1px) rgba(var(--glow-r),var(--glow-g),var(--glow-b), var(--glow-t-a3)),
+        0 0 calc(var(--glow-t-r4) * 1px) rgba(var(--glow-r),var(--glow-g),var(--glow-b), var(--glow-t-a4)),
+        0 0 calc(var(--glow-t-r5) * 1px) rgba(var(--glow-r),var(--glow-g),var(--glow-b), var(--glow-t-a5));
 }
 
 /* Card — 情報のまとまりを示すパネル */
 .glow-card {
-    background: rgba(255, 255, 255, 0.3);
-    backdrop-filter: blur(6px);
-    -webkit-backdrop-filter: blur(6px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(var(--glow-r),var(--glow-g),var(--glow-b), var(--card-bg-alpha));
+    backdrop-filter: blur(calc(var(--card-blur) * 1px));
+    -webkit-backdrop-filter: blur(calc(var(--card-blur) * 1px));
+    border: 1px solid rgba(var(--glow-r),var(--glow-g),var(--glow-b), var(--card-border-alpha));
     border-radius: 6px;
     padding: 2rem;
 }
@@ -61,9 +73,9 @@ body {
 .glow-card h3,
 .glow-card span {
     text-shadow:
-        0 0 10px rgba(255,255,255,1),
-        0 0 22px rgba(255,255,255,1),
-        0 0 44px rgba(255,255,255,0.6);
+        0 0 calc(var(--glow-c-r1) * 1px) rgba(var(--glow-r),var(--glow-g),var(--glow-b),1),
+        0 0 calc(var(--glow-c-r2) * 1px) rgba(var(--glow-r),var(--glow-g),var(--glow-b),1),
+        0 0 calc(var(--glow-c-r3) * 1px) rgba(var(--glow-r),var(--glow-g),var(--glow-b), var(--glow-c-a3));
 }
 
 /* Link — コンパクト、下線、ホバーで光る */
@@ -74,9 +86,9 @@ body {
 }
 .glow-link span {
     text-shadow:
-        0 0 10px rgba(255,255,255,1),
-        0 0 22px rgba(255,255,255,1),
-        0 0 44px rgba(255,255,255,0.6);
+        0 0 calc(var(--glow-c-r1) * 1px) rgba(var(--glow-r),var(--glow-g),var(--glow-b),1),
+        0 0 calc(var(--glow-c-r2) * 1px) rgba(var(--glow-r),var(--glow-g),var(--glow-b),1),
+        0 0 calc(var(--glow-c-r3) * 1px) rgba(var(--glow-r),var(--glow-g),var(--glow-b), var(--glow-c-a3));
 }
 .glow-link:hover {
     background: rgba(255, 255, 255, 0.3);

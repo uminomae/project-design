@@ -9,7 +9,7 @@ function init() {
   const container = document.getElementById('webgl-container');
   if (!container) return;
 
-  renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true });
+  renderer = new THREE.WebGLRenderer({ alpha: true, antialias: false });
   renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
   renderer.setSize(innerWidth, innerHeight);
   container.appendChild(renderer.domElement);
@@ -64,7 +64,7 @@ function init() {
 
           vec2 ab = 2.5 + 1.5 * abs(sin(p * 1.5 + t * 0.1));
 
-          const int iterations = 45;
+          const int iterations = 20;
           for(int i = 0; i < iterations; i++) {
               float r = (i / 2 * 2 == i) ? ab.x : ab.y;
               r += sin(t * 0.5 + float(i) * 0.2) * 0.02;
@@ -151,18 +151,23 @@ function init() {
   scene.add(mesh);
 
   window.addEventListener('resize', onResize);
-  window.addEventListener('scroll', onScroll, { passive: true });
   onScroll();
 
   const clock = new THREE.Clock();
-  function animate() {
+  let lastRenderTime = 0;
+  const FRAME_INTERVAL = 1 / 15;
+  function animate(now) {
     animationId = requestAnimationFrame(animate);
+    onScroll();
     currentScroll += (targetScroll - currentScroll) * 0.05;
     uniforms.u_scroll.value = currentScroll;
-    uniforms.u_time.value = clock.getElapsedTime();
+    uniforms.u_time.value = clock.getElapsedTime() * 0.5;
+    var nowSec = (now || 0) * 0.001;
+    if (nowSec - lastRenderTime < FRAME_INTERVAL) return;
+    lastRenderTime = nowSec;
     renderer.render(scene, camera);
   }
-  animate();
+  animate(0);
 }
 
 function onResize() {
@@ -184,7 +189,6 @@ function onScroll() {
 
 export function cleanup() {
   window.removeEventListener('resize', onResize);
-  window.removeEventListener('scroll', onScroll);
   if (animationId) cancelAnimationFrame(animationId);
   if (mesh) {
     scene.remove(mesh);

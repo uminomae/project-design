@@ -9,7 +9,7 @@ function init() {
   const container = document.getElementById('webgl-container');
   if (!container) return;
 
-  renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true });
+  renderer = new THREE.WebGLRenderer({ alpha: true, antialias: false });
   renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
   renderer.setSize(innerWidth, innerHeight);
   container.appendChild(renderer.domElement);
@@ -148,7 +148,7 @@ function init() {
           float dlaIntensity = 0.0;
           float tw = 0.001;
 
-          const int samples = 6;
+          const int samples = 3;
           for(int i = 0; i < samples; i++) {
               float sr2 = (float(i) + rnd) / float(samples);
               float weight = wcurve(sr2, 1.0, 1.0);
@@ -193,18 +193,23 @@ function init() {
   scene.add(mesh);
 
   window.addEventListener('resize', onResize);
-  window.addEventListener('scroll', onScroll, { passive: true });
   onScroll();
 
   const clock = new THREE.Clock();
-  function animate() {
+  let lastRenderTime = 0;
+  const FRAME_INTERVAL = 1 / 15;
+  function animate(now) {
     animationId = requestAnimationFrame(animate);
+    onScroll();
     currentScroll += (targetScroll - currentScroll) * 0.05;
     uniforms.u_scroll.value = currentScroll;
-    uniforms.u_time.value = clock.getElapsedTime();
+    uniforms.u_time.value = clock.getElapsedTime() * 0.5;
+    var nowSec = (now || 0) * 0.001;
+    if (nowSec - lastRenderTime < FRAME_INTERVAL) return;
+    lastRenderTime = nowSec;
     renderer.render(scene, camera);
   }
-  animate();
+  animate(0);
 }
 
 function onResize() {
@@ -226,7 +231,6 @@ function onScroll() {
 
 export function cleanup() {
   window.removeEventListener('resize', onResize);
-  window.removeEventListener('scroll', onScroll);
   if (animationId) cancelAnimationFrame(animationId);
   if (mesh) {
     scene.remove(mesh);
