@@ -7,3 +7,4 @@
 | ディレクトリ | 用途 |
 |---|---|
 | `evidence/` | 調査・探索データ |
+| `research/` | 外部 LLM（ChatGPT Deep Research 等）による調査レポート |
