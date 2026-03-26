@@ -1,55 +1,61 @@
-# project-design
+# プロジェクトデザイン論 — project-design
 
-プロジェクトデザイン論の探索・構造化・管理拠点。
+**Project Design Theory -- Beyond PMBOK.**
 
-## プロジェクトデザインとは
+---
 
-プロジェクトデザインとは、プロジェクトの構想・設計・実行だけでなく、実行・管理の方法そのものを対象化し、構想・設計する営み。
+## 概要 / Overview
 
-- **射程**: 「やること（Doing）」と「起きていること（Being）」の両方を含む
-- **焦点**: コミュニケーション（情報処理／感情処理）、とくに感情処理
-- **駆動力**: Love 駆動開発 — 関係・感情・意図が駆動する局面
+プロジェクトデザインとは、プロジェクトの構想・設計・実行だけでなく、実行・管理の方法そのものを対象化し、構想・設計する営み。「やること（Doing）」と「起きていること（Being）」の両方を包含する。
 
-## ディレクトリ構造
+Project Design is the practice of not only planning, designing, and executing projects, but also objectifying and redesigning the methods of execution and management themselves. It encompasses both "Doing" (tasks and deliverables) and "Being" (what is happening in the relational and emotional space).
 
-```
-project-design/
-├── CLAUDE.md              # CLI エントリーポイント
-├── README.md              # このファイル
-├── knowledge/             # データベース層
-│   └── evidence/          # 調査・探索データ
-├── publish/               # 公開用出力先（正本は pjdhiro）
-├── transform/             # 変換ルール・テンプレート
-├── docs/                  # 管理書類
-│   ├── README.md          # 管理ハブ
-│   └── PROJECT.md         # プロジェクト憲章
-├── scripts/               # ビルド・同期スクリプト
-├── assets/                # 静的アセット
-├── src/                   # Web UI（将来）
-└── .claude/               # CLI 設定
-```
+## 5つの柱 / Five Pillars
 
-## コンテンツ源
+| 柱 / Pillar | 日本語 | English | 説明 / Description |
+|:---:|--------|---------|---------|
+| 1 | 対話 | Dialogue | プロジェクトの基盤は情報伝達ではなく対話である / The foundation of a project is dialogue, not information transfer |
+| 2 | 感情処理 | Emotional Processing | 感情はノイズではなく、プロジェクトを駆動するシグナルである / Emotions are not noise but signals that drive the project |
+| 3 | 思考法 | Thinking Methods | 欠損駆動思考・BI思考など、問いを立てる方法論 / Methodologies for framing questions: Kesson-Driven Thinking, BI Thinking |
+| 4 | 創造の構造 | Structure of Creation | 創造プロセスの5段階モデル（場→波→縁→渦→束） / Five-Stage Model of Creation (Field, Wave, Edge, Vortex, Bundle) |
+| 5 | 間主観性 | Intersubjectivity | 個ではなく関係の中で意味が立ち上がる / Meaning arises in relationships, not in isolation |
 
-公開 MD の正本は `pjdhiro/_pages/pd/` に配置。本リポジトリは探索・構造化・管理の拠点。
+## PMBOK との比較 / PMBOK vs Project Design
 
-| pjdhiro 上のパス | 内容 |
+| 観点 / Aspect | PMBOK | プロジェクトデザイン / Project Design |
+|---|---|---|
+| 焦点 / Focus | プロセスと成果物の管理 | 関係・意味・構造のデザイン |
+| 対象 / Scope | Doing（やること） | Doing + Being（やること＋起きていること） |
+| コミュニケーション / Communication | 情報伝達の効率化 | 対話と感情処理 |
+| 駆動力 / Driver | スケジュール・コスト・品質 | Love 駆動開発 — 関係・感情・意図 |
+| 創造性 / Creativity | スコープ外 | 中核要素（5段階モデル） |
+| 思考法 / Thinking | 論理的分析 | 欠損駆動思考・間主観的探索 |
+
+## コンテンツ構成 / Content Structure
+
+公開コンテンツの正本は [pjdhiro](https://github.com/uminomae/pjdhiro) に配置。本リポジトリは探索・構造化・管理の拠点。
+
+| カテゴリ / Category | 内容 / Contents |
 |---|---|
-| `project-design.md` | PD 総論 |
-| `dialogue/` | 対話記録 7篇 |
-| `thinking/` | 思考法（欠損駆動思考、BI思考） |
-| `emotional-processing/` | 感情処理 7篇 |
-| `word/` | 用語定義 |
+| PD総論 | プロジェクトデザインの全体像 |
+| 対話 (Dialogue) | 対話記録 7篇 |
+| 感情処理 (Emotional Processing) | 感情処理 7篇 |
+| 思考法 (Thinking) | 欠損駆動思考、BI思考 |
+| 用語 (Glossary) | プロジェクトデザイン用語定義 |
 
-## 関連リポジトリ
+## Live Site
 
-| リポジトリ | 関係 |
+[https://uminomae.github.io/pjdhiro/project-design/](https://uminomae.github.io/pjdhiro/project-design/)
+
+## 関連プロジェクト / Related Projects
+
+| リポジトリ / Repository | 概要 / Description |
 |---|---|
-| [kesson-driven-thinking](https://github.com/uminomae/kesson-driven-thinking) | 欠損駆動思考の探索拠点 |
-| [creation-space](https://github.com/uminomae/creation-space) | 「創造とは」の探索拠点 |
-| [kesson-space](https://github.com/uminomae/kesson-space) | kesson-space サイト |
+| [pjdhiro](https://github.com/uminomae/pjdhiro) | GitHub Pages ホスティング、ブログ、PD コンテンツの正本 |
+| [creation-space](https://github.com/uminomae/creation-space) | 「創造とは」の探索 — 30領域の学術横断調査、5段階モデル |
+| [awareness-space](https://github.com/uminomae/awareness-space) | 「意識とは」の探索 — 間主観性の4層モデル |
+| [kesson-space](https://github.com/uminomae/kesson-space) | 欠損駆動思考の3D体験空間 |
 
-## Git 規約
+## Author
 
-- `develop`: 作業ブランチ
-- `main`: 公開用（develop → main マージは pjdhiro が判断）
+**pjdhiro** — [https://github.com/uminomae](https://github.com/uminomae)

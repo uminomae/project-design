@@ -1,0 +1,63 @@
+# llms.txt — Project Design | LOVE-DRIVEN DEV
+
+> This file helps AI assistants and language models understand the structure and content of this site.
+
+## Site Overview
+
+This is the hub site of pjdhiro presenting **Project Design Theory** — an approach to project envisioning, design, and execution that encompasses both Doing (actions) and Being (phenomena).
+
+- **Primary Language**: Japanese (日本語), with English summaries
+- **Site URL**: https://uminomae.github.io/pjdhiro/project-design/
+- **Topics**: Project Design Theory, Love-Driven Development, PMBOK Extension, Emotional Processing, Creativity Structure, Intersubjectivity
+
+## Core Concepts
+
+### Project Design (プロジェクトデザイン)
+
+A framework for designing not just projects but the methods of project execution themselves. It extends traditional project management (PMBOK) by incorporating emotional processing, communication, and creative emergence as first-class design concerns.
+
+### Love-Driven Development (Love駆動開発)
+
+A phenomenon where relationships, emotions, and intent become the driving forces of a project — beyond rational planning and resource allocation.
+
+### Five Pillars (5つの柱)
+
+1. **Dialogue (対話)** — Intersubjective communication as a design tool
+2. **Emotional Processing (感情処理)** — Treating emotions as a design concern, not a side effect
+3. **Thinking Methods (思考法)** — Kesson-Driven Thinking and other frameworks
+4. **Structure of Creation (創造の構造)** — Five-Stage Model applied to project lifecycle
+5. **Intersubjectivity (間主観性)** — Shared experiential space as foundation for collaboration
+
+## How It Differs from PMBOK
+
+| Aspect | Traditional PM (PMBOK) | Project Design |
+|--------|----------------------|----------------|
+| Scope | Doing (deliverables, tasks) | Doing + Being (phenomena, emergence) |
+| Emotions | Side effect to manage | First-class design concern |
+| Creativity | Outside scope | Structured via Five-Stage Model |
+| Communication | Information transfer | Intersubjective encounter |
+| Human-AI | Tool usage | Co-design partnership |
+
+## Site Structure
+
+- `index.html` — Project Design Theory overview (hub page)
+- `preview.html` — Preview page
+- `src/` — Application source
+- `assets/` — Static assets
+- `knowledge/` — Knowledge base
+- `transform/` — Transformation rules and templates
+
+## Related Projects
+
+| Project | URL | Focus |
+|---------|-----|-------|
+| pjdhiro | https://uminomae.github.io/pjdhiro/ | Parent site — all projects hub |
+| creation-space | https://uminomae.github.io/creation-space/ | Creativity research across 30 academic domains |
+| awareness-space | https://uminomae.github.io/awareness-space/ | Consciousness structure through intersubjectivity |
+| kesson-space | https://uminomae.github.io/kesson-space/ | Kesson-Driven Thinking framework |
+
+## Author
+
+- Name: pjdhiro
+- Site: https://uminomae.github.io/pjdhiro/
+- Focus: Project Design, Love-Driven Development, Human-AI Collaboration
