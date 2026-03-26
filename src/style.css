@@ -141,7 +141,7 @@ body {
     padding: 0.35rem 0.85rem;
     cursor: pointer;
     font-family: var(--serif-en);
-    font-size: 0.8rem;
+    font-size: 1rem;
     letter-spacing: 0.05em;
     color: var(--mute);
     transition: all 0.3s ease;
@@ -181,7 +181,7 @@ body {
     display: block;
     padding: 0.6rem 1.25rem;
     font-family: var(--serif-en);
-    font-size: 0.85rem;
+    font-size: 1rem;
     font-weight: 400;
     color: var(--mid);
     text-decoration: none;
@@ -238,7 +238,7 @@ body {
     border-radius: 1.5rem;
     cursor: pointer;
     font-family: var(--serif-en);
-    font-size: 0.8rem;
+    font-size: 1rem;
     letter-spacing: 0.05em;
     color: var(--mute);
     transition: all 0.3s ease;
@@ -286,14 +286,6 @@ body {
     max-width: 680px;
 }
 
-.hero-notice p {
-    font-family: var(--serif-jp);
-    font-size: 0.95rem;
-    font-weight: 300;
-    line-height: 2;
-    color: var(--mid);
-}
-
 /* === Sections === */
 section {
     min-height: 100vh;
@@ -325,7 +317,7 @@ h2 {
 
 h3 {
     font-family: var(--sans);
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-weight: 500;
     letter-spacing: 0.05em;
     color: var(--ink);
@@ -334,7 +326,7 @@ h3 {
 
 p {
     font-family: var(--sans);
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     font-weight: 300;
     line-height: 2;
     color: var(--mid);
@@ -343,16 +335,22 @@ p {
 
 p:last-child { margin-bottom: 0; }
 
+/* === Prose blocks (shared style) === */
+.hero-notice p,
+.overview-text p,
+.being-desc p,
+.future-text p {
+    font-family: var(--serif-jp);
+    font-size: 0.95rem;
+    font-weight: 300;
+    line-height: 2.1;
+    color: var(--mid);
+}
+
 /* === Overview === */
 .overview-text {
     max-width: 680px;
     margin-bottom: 3rem;
-}
-
-
-.overview-text p {
-    font-family: var(--serif-jp);
-    line-height: 2.1;
 }
 
 /* === Grid === */
@@ -372,7 +370,7 @@ p:last-child { margin-bottom: 0; }
 }
 
 .card p {
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 
 .card ul {
@@ -381,7 +379,7 @@ p:last-child { margin-bottom: 0; }
 }
 
 .card ul li {
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-weight: 300;
     color: var(--mid);
     padding: 0.4rem 0;
@@ -413,7 +411,7 @@ p:last-child { margin-bottom: 0; }
     padding: 0.5rem 1.25rem;
     border-radius: 2rem;
     font-family: var(--sans);
-    font-size: 0.8rem;
+    font-size: 1rem;
     font-weight: 400;
     text-decoration: none;
     letter-spacing: 0.03em;
@@ -448,11 +446,6 @@ p:last-child { margin-bottom: 0; }
     margin-bottom: 2rem;
 }
 
-.being-desc p {
-    font-family: var(--serif-jp);
-    line-height: 2.1;
-}
-
 /* === Repos === */
 .repo-card {
     display: block;
@@ -471,7 +464,7 @@ p:last-child { margin-bottom: 0; }
 
 .repo-card__desc {
     display: block;
-    font-size: 0.85rem;
+    font-size: 1rem;
     font-weight: 300;
     color: var(--mute);
     margin-top: 0.5rem;
@@ -490,7 +483,7 @@ footer {
 
 footer a {
     font-family: var(--serif-en);
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-weight: 400;
     color: var(--mute);
     text-decoration: none;
@@ -529,7 +522,7 @@ footer a:hover { color: var(--ink); }
     .glow-card { padding: 1.25rem; }
     .glow-link { padding: 0.75rem 1rem; }
     .pills { gap: 0.5rem; }
-    footer a { margin: 0 0.75rem; font-size: 0.85rem; }
+    footer a { margin: 0 0.75rem; font-size: 1rem; }
 }
 
 /* Touch targets: min 44px */
