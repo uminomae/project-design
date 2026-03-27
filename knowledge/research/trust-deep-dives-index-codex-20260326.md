@@ -3,7 +3,7 @@
 作成日: 2026-03-26  
 作成: Codex  
 親Issue: #6  
-関連Issue: #8, #9, #10, #20, #21, #22, #23, #25, #26
+関連Issue: #8, #9, #10, #20, #21, #22, #23, #25, #26, #27
 
 ## 概要
 
@@ -19,6 +19,7 @@
 さらに、その次段として **trust の lived experience taxonomy** を追加した。
 さらに、その次段として **AI trust の測定再設計** を追加した。
 さらに、その次段として **institutional trust repair の精密化** を追加した。
+さらに、その次段として **AI trust measurement matrix の試作** を追加した。
 
 3 本はそれぞれ独立して読めるが、論点は次のように連結している。
 
@@ -97,6 +98,14 @@
 - 医療・公衆衛生・科学・政治制度で procedural justice / accountability / reform / intelligibility を共通軸にした。
 - 今後の焦点は、dismissal と appeal pathway をめぐる制度 repair の lived side。
 
+### 1.10 AI trust measurement matrix の試作
+
+ファイル: [trust-ai-measurement-matrix-codex-20260327.md](/Users/uminomae/dev/project-design/knowledge/research/trust-ai-measurement-matrix-codex-20260327.md)
+
+- AI trust measurement redesign を、実験・評価設計でそのまま使える matrix に落とし込んだ。
+- 態度 / 行動 / 校正 / 理解 / contestability の五層を、high-stakes / low-stakes と automation level に応じて使い分けるテンプレートを提示した。
+- 今後の焦点は、既存 study への retrofit 適用と high-stakes AI での実運用。
+
 ## 2. 横断して見えた共通論点
 
 ### 2.1 trust は一つではない
@@ -121,14 +130,14 @@
 
 ## 3. 次の深掘り候補
 
-1. **AI trust measurement matrix の試作**  
-   実験設計レベルのテンプレートに落とし込む。
-
-2. **institutional repair と gaslighting の接続**  
+1. **institutional repair と gaslighting の接続**  
    dismissal と appeal pathway を中心に制度側の二次損傷を詰める。
 
-3. **taxonomy の実データ適用**  
+2. **taxonomy の実データ適用**  
    interview / diary / fieldnote で code agreement を確認する。
+
+3. **matrix の試運用**  
+   既存 AI study へ retrofit 的に当てる。
 
 ## 4. 関連ファイル
 
@@ -144,3 +153,4 @@
 - [trust-lived-experience-taxonomy-pilot-codex-20260327.md](/Users/uminomae/dev/project-design/knowledge/research/trust-lived-experience-taxonomy-pilot-codex-20260327.md)
 - [trust-ai-measurement-redesign-codex-20260327.md](/Users/uminomae/dev/project-design/knowledge/research/trust-ai-measurement-redesign-codex-20260327.md)
 - [trust-institutional-repair-deep-dive-codex-20260327.md](/Users/uminomae/dev/project-design/knowledge/research/trust-institutional-repair-deep-dive-codex-20260327.md)
+- [trust-ai-measurement-matrix-codex-20260327.md](/Users/uminomae/dev/project-design/knowledge/research/trust-ai-measurement-matrix-codex-20260327.md)
