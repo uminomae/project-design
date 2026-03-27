@@ -138,6 +138,8 @@ CSS 変数のみ使用。ハードコードされた色は禁止。
 - `body` は `background: transparent`
 - セクションごとに `min-height: 100vh`
 - 各構成要素が `.glow-heading` / `.glow-text` / `.glow-card` / `.glow-link` のいずれかを持つこと
+- prose 系本文ブロック（hero / overview / being / future）は `.prose-block` で共通化し、タイポグラフィ設定を個別に複製しない
+- UI の振る舞いは `src/app.js` に集約し、`index.html` に `onclick` やインライン `<script>` を残さない
 
 ## 7. 機械検証項目
 
