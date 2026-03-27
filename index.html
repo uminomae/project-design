@@ -357,27 +357,53 @@
         modal.classList.add('open');
         modal.setAttribute('aria-hidden', 'false');
         document.body.style.overflow = 'hidden';
+        // Add ?about to URL
+        if (!new URLSearchParams(window.location.search).has('about')) {
+            var url = new URL(window.location);
+            url.searchParams.set('about', '');
+            history.pushState({ modal: 'about' }, '', url.toString());
+        }
     }
 
     function closeAbout() {
         var modal = document.getElementById('about-modal');
+        if (!modal.classList.contains('open')) return;
         modal.classList.remove('open');
         modal.setAttribute('aria-hidden', 'true');
         document.body.style.overflow = '';
-        // Remove ?about from URL without reload
+        // Remove ?about from URL
         if (new URLSearchParams(window.location.search).has('about')) {
-            var url = new URL(window.location);
-            url.searchParams.delete('about');
-            history.replaceState(null, '', url.pathname + url.search + url.hash || window.location.pathname);
+            if (history.state && history.state.modal === 'about') {
+                history.back();
+            } else {
+                var url = new URL(window.location);
+                url.searchParams.delete('about');
+                history.replaceState(null, '', url.pathname + (url.search || '') + (url.hash || ''));
+            }
         }
     }
+
+    // Handle browser back/forward
+    window.addEventListener('popstate', function() {
+        var hasAbout = new URLSearchParams(window.location.search).has('about');
+        var modal = document.getElementById('about-modal');
+        if (hasAbout && !modal.classList.contains('open')) {
+            openAbout();
+        } else if (!hasAbout && modal.classList.contains('open')) {
+            modal.classList.remove('open');
+            modal.setAttribute('aria-hidden', 'true');
+            document.body.style.overflow = '';
+        }
+    });
 
     document.addEventListener('keydown', function(e) {
         if (e.key === 'Escape') closeAbout();
     });
 
-    // Open about modal if ?about is in URL
+    // Open about modal if ?about is in URL (page load)
     if (new URLSearchParams(window.location.search).has('about')) {
+        // Use replaceState so initial load doesn't add extra history entry
+        history.replaceState({ modal: 'about' }, '', window.location.href);
         openAbout();
     }
     </script>
