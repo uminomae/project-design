@@ -54,22 +54,26 @@ Issue: #17
 ### 4. wicked problems の受容史
 
 Issue: #16
+状況: 第一稿作成済み
 
-予定ファイル:
-[design-thinking-wicked-problems-reception-deep-dive-codex-20260326.md](/Users/uminomae/dev/project-design/knowledge/research/design-thinking-wicked-problems-reception-deep-dive-codex-20260326.md)
+ファイル:
+[design-thinking-wicked-problems-reception-deep-dive-codex-20260327.md](/Users/uminomae/dev/project-design/knowledge/research/design-thinking-wicked-problems-reception-deep-dive-codex-20260327.md)
 
 - Rittel & Webber から Buchanan を経た意味変化を追う
 - 経営・教育文脈での単純化を確認する
+- 現時点の結論は「planning 理論の政治的批判概念が、design theory を経て、business では generic complexity の語へ薄まりやすい」
 
 ### 5. 形骸化・批判の実証整理
 
 Issue: #13
+状況: 第一稿作成済み
 
-予定ファイル:
-[design-thinking-ossification-critique-deep-dive-codex-20260326.md](/Users/uminomae/dev/project-design/knowledge/research/design-thinking-ossification-critique-deep-dive-codex-20260326.md)
+ファイル:
+[design-thinking-ossification-critique-deep-dive-codex-20260327.md](/Users/uminomae/dev/project-design/knowledge/research/design-thinking-ossification-critique-deep-dive-codex-20260327.md)
 
 - 5段階化、共感ワークショップ化、innovation theater 化を整理する
 - 学術批判と実務批判を分けて扱う
+- 現時点の結論は「形骸化は誤用だけでなく、teachable/portable にする過程に内在する圧縮でもある」
 
 ### 6. 日本での受容史
 

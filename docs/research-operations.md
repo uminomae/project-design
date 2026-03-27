@@ -74,6 +74,8 @@ date  : YYYYMMDD
 | `design-thinking-abduction-genealogy-deep-dive-codex-20260326.md` | Codex | 完了 |
 | `design-thinking-stanford-lineage-deep-dive-codex-20260327.md` | Codex | 完了 |
 | `design-thinking-designerly-vs-business-deep-dive-codex-20260327.md` | Codex | 完了 |
+| `design-thinking-wicked-problems-reception-deep-dive-codex-20260327.md` | Codex | 完了 |
+| `design-thinking-ossification-critique-deep-dive-codex-20260327.md` | Codex | 完了 |
 
 ### 価値（value）
 
