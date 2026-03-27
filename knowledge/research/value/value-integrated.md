@@ -7,7 +7,7 @@ Issue: #33
 
 ## 要約
 
-「価値」は価格/効用/規範/意味/象徴の少なくとも5つの問題系が束になった多義語である。日本語「価値」は英語の value/values/worth/utility/significance/merit/price に分岐し、翻訳時に問題系の混線が起きやすい。PD の複数概念（Doing, Being, 欠損駆動思考, trust, design-thinking）と接続点があるが、未整理の領域も多い。
+「価値」は価格/効用/規範/意味/象徴の少なくとも5つの問題系が束になった多義語である。日本語「価値」は英語の value/values/worth/utility/significance/merit/price に分岐し、翻訳時に問題系の混線が起きやすい。「価値とは何か」を問うときは、まずどの問題系を指しているかを切り分ける必要がある。
 
 ## 「価値」の多義性
 
@@ -52,49 +52,38 @@ Issue: #33
 | Value Sensitive Design | Friedman et al. (2006) | 技術設計に human values を体系的に組み込む方法論。概念的・経験的・技術的の三相調査 | 価値の選定基準が不明確、ステークホルダー間の価値衝突の解決手順が弱い | [VSD Lab](https://vsdesign.org/) |
 | ACT values | Hayes et al. | values = 「選ばれた生の方向」。症状除去より価値に沿った行動パターンの柔軟性を重視 | 価値の内容的妥当性を問わない（方向性のみ）、文化的文脈への感度が低い | [ACT概説](https://contextualscience.org/act) |
 
-## PD への接続
+## 領域横断の論点
 
-| PD 概念 | 接続 | 確度 |
-|---------|------|------|
-| Doing | 「多様な価値観を受容れる」が行動原理の第一項（pjdhiro pd/project-design.md L65） | 確立 |
-| Being | Being 側に「価値」の記述がない。Graeber「価値 = 行動の意味」が Doing と Being を架橋する理論的資源になりうる | 仮説 |
-| 欠損駆動思考 | 「無価値感」が入力値（pjdhiro pd/thinking/thinking-kesson.md L51）。F-O 座標系は情動構成のメカニズムであり、価値判断の一要素に関与する可能性がある | 仮説 |
-| Love 駆動開発 | 暗黙的に含まれるが明示的接続なし | 未整理 |
-| trust | 「価値評価・社会予測・誤差学習」の結節点（trust-codex-20260326.md L81） | 仮説 |
-| design-thinking | McKim (1964) "Human Values and Design" から IDEO/d.school の "empathy for user needs" への圧縮の系譜（[Stanford lineage 深掘り](design-thinking-stanford-lineage-deep-dive-codex-20260327.md) L143-145）。PD はこの圧縮を逆転させる方向 | 仮説 |
-| 感情処理 | 「価値」は処理段階の一要素。value.md は作成中 | 進行中 |
-
-## 洞察
-
-調査から引き出された気づき。特にデザイン思考の定義に関わるもの:
-
-1. Being 側に「価値」の記述がない -- Being（起きていること）の中で価値がどう立ち上がるかの記述が PD に欠けている。Graeber「価値 = 行動が社会的全体に組み込まれることで意味を持つようになる仕方」は Doing と Being を架橋する理論的資源になりうる
-2. design-thinking の系譜で McKim の "human values" が IDEO/d.school で "user needs" に圧縮された歴史がある（[Stanford lineage 深掘り](design-thinking-stanford-lineage-deep-dive-codex-20260327.md) L143-145）。PD はこの圧縮を逆に展開し、values を復元する方向にある。デザイン思考を再定義するなら、この圧縮の解除が出発点になる
-3. F-O 座標系（欠損駆動思考）は情動構成のメカニズムだが、「何を脅威と感じるか」「何が関係に影響するか」は価値判断の情動的な入り口として機能する可能性がある
-4. 3つの LLM レポートとも Schwartz/Bourdieu/Graeber を欠いていた -- 心理学・社会学・人類学の最重要価値理論が盲点だった。設計対象の価値を分類するフレームワークがこれらの知見を欠けば、設計者の暗黙の価値前提が無自覚に反映されるリスクがある
-5. ChatGPT「5次元」と Pro「四層」は類似した分類を異なる粒度で行っている。統合すれば PD 独自の価値分類フレームになる可能性があるが、デザイン思考の定義が先にないと分類の軸が定まらない
+| 論点 | 内容 |
+|------|------|
+| 客観性 vs 主観性 | 価値は世界の性質か、評価者と対象の関係か |
+| 発見 vs 付与 | 価値は「ある」ものを発見するのか、人間が付与するのか |
+| 価値 vs 価格 | 価格は価値の貨幣的表現だが、価値概念が違えば価格規定も変わる |
+| 価値 vs 意味 | 意味は「何を表すか」、価値は「なぜ大事か」。ただし significance は両方を跨ぐ |
+| 評価 vs 価値 | 価値は対象側の worth、評価はそれを見積もる行為。混同すると議論が混線する |
+| 個人 vs 社会 | 価値の主体（誰の価値か）と権威（誰が決めるか）が衝突する領域 |
+| 複数価値のトレードオフ | 価値はしばしば複数で衝突し、単一尺度化に抵抗する |
 
 ## 探索すべき問い
 
-定義しきれなかった部分が、次の調査で検証すべき仮説として残る:
+「価値」の定義としてまだ定まっていない部分:
 
-- Being 側での「価値」の位置づけ -- デザイン思考が Being をどう扱うかの問いと連動する
-- Love 駆動開発と価値の明示的接続 -- 「関係・感情・意図が駆動する」とき、価値はどこに位置するか
-- F-O 座標系と価値判断の関係の精緻化 -- 情動構成と価値判断は別のメカニズムか、同一過程の異なる記述か
-- value.md（pjdhiro 正本）への反映内容 -- 本レポートのどの部分が PD の用語定義に入るべきか
-- プロンプト同一性（3レポート比較の前提条件が未確認）
+- 内在的価値（intrinsic value）は「それ自体で価値がある」とされるが、何がそれに該当するかは立場で異なる
+- 価値の比較可能性（commensurability）— 異なる種類の価値を共通の尺度で比較できるか
+- 「価値がある」は記述か規範か — 事実判断と価値判断の境界（fact-value distinction）
+- 日本語「価値」の概念史 — 西洋語との接触・翻訳が語の近代的用法をどう形成したか
 
 ## 深掘り候補
 
-ChatGPT の深掘り候補10件から PD 関連度で5件に絞り込み。
+「価値」の定義をさらに精緻化するためのテーマ:
 
-| 優先度 | テーマ | PD との関連 | 出典入口 |
-|--------|--------|-----------|---------|
-| 1 | Graeber「価値 = 行動の意味」と Doing/Being の関係 | Being 側の空白を埋める理論的資源 | [Graeber (2001)](https://davidgraeber.org/books/toward-an-anthropological-theory-of-value/) |
-| 2 | ACT values と経済学 value の比較 | 「選ばれた生の方向」と「選好の主観価値」の分岐点 | [ACT](https://contextualscience.org/act) |
-| 3 | 価値整合（alignment）は倫理学の価値論を必要とするか | AI alignment と VSD の接続点 | [CIRL](https://arxiv.org/abs/1606.03137), [VSD Lab](https://vsdesign.org/) |
-| 4 | 価値の社会的生成と AI 評価指標 | 制度が価値尺度を作るメカニズム | [B&T](https://press.princeton.edu/books/paperback/9780691123776/on-justification) |
-| 5 | 「意味」と「価値」の分岐 | significance が meaning と value を跨ぐ問題 | [SEP Meaning of Life](https://plato.stanford.edu/entries/life-meaning/) |
+| テーマ | 問い | 出典入口 |
+|--------|------|---------|
+| 「意味」と「価値」の分岐 | significance が meaning と value を跨ぐ問題。どこで分かれるか | [SEP Meaning of Life](https://plato.stanford.edu/entries/life-meaning/) |
+| ACT values と経済学 value の比較 | 「選ばれた生の方向」と「選好の主観価値」は同じ「価値」か | [ACT](https://contextualscience.org/act) |
+| 価値の社会的生成 | 制度・場・コードが価値尺度をどう作るか | [B&T](https://press.princeton.edu/books/paperback/9780691123776/on-justification) |
+| 日本語「価値」の概念史 | 西洋語との接触で語の用法がどう変わったか | 未調査 |
+| 価値の不可通約性 | 異なる種類の価値を比較できるか | [SEP Value Pluralism](https://plato.stanford.edu/entries/value-pluralism/) |
 
 ## 出典一覧
 
@@ -177,10 +166,6 @@ ChatGPT の深掘り候補10件から PD 関連度で5件に絞り込み。
 | 26 | Cambridge Dictionary "value" | https://dictionary.cambridge.org/dictionary/english/value |
 | 27 | Online Etymology Dictionary "value" | https://www.etymonline.com/word/value |
 
-## デザイン思考の定義に向けて
-
-design-thinking は McKim (1964) の "human values" を IDEO/d.school の "empathy for user needs" に圧縮してきた（[Stanford lineage 深掘り](design-thinking-stanford-lineage-deep-dive-codex-20260327.md) L143-145）。PD はこの圧縮を逆転させ、価値の多義性（価格/効用/規範/意味/象徴）を設計の中に取り戻す方向にある。「価値とは何か」の整理は、デザイン思考を PD の文脈で再定義するための土台であり、次の段階として「デザイン思考とは何か」の定義調査が必要になる。Being 側の空白、Love 駆動開発との未接続は、デザイン思考の定義を通じて初めて位置づけられる可能性がある。
-
 ## 方法論ノート（付録）
 
-3レポートの使い分け: ChatGPT=構造化+網羅性、Pro=横断論点の言語化、Codex=簡潔さ+検証可能な出典。調査プロセスの詳細は PROCESS-LOG.md を参照。品質保証は V1（出典実在確認: 25件 high / 2件 medium）、V2（主張と出典内容の照合）、V3-V6（反論構築・バイアス検出・論理チェック）を実施。3レポートのプロンプト同一性は未確認であり、モデル能力の厳密な比較ではなく出力品質の比較として扱っている。
+3つの外部 LLM レポート（GPT-5.2 Thinking, GPT-5.4 Pro, GPT-5 Codex）を入力とし、agent-team-workflow (cs#188) で比較・補完・統合した。出典検証は V1（実在確認: 25件 high / 2件 medium）、V2（主張と出典の照合）を実施。出典は二次文献中心。調査プロセスの詳細は PROCESS-LOG.md を参照。
