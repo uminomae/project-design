@@ -78,22 +78,26 @@ Issue: #13
 ### 6. 日本での受容史
 
 Issue: #14
+状況: 第一稿作成済み
 
-予定ファイル:
-[design-thinking-japan-reception-deep-dive-codex-20260326.md](/Users/uminomae/dev/project-design/knowledge/research/design-thinking-japan-reception-deep-dive-codex-20260326.md)
+ファイル:
+[design-thinking-japan-reception-deep-dive-codex-20260327.md](/Users/uminomae/dev/project-design/knowledge/research/design-thinking-japan-reception-deep-dive-codex-20260327.md)
 
 - 大学、研修、コンサル、行政への導入を確認する
 - 翻訳と概念ずれを追う
+- 現時点の結論は「日本受容の特徴は、翻訳よりも systems design / HCD / innovation education との接続と再編にある」
 
 ### 7. visual thinking / language of design
 
 Issue: #11
+状況: 第一稿作成済み
 
-予定ファイル:
-[design-thinking-visual-thinking-language-deep-dive-codex-20260326.md](/Users/uminomae/dev/project-design/knowledge/research/design-thinking-visual-thinking-language-deep-dive-codex-20260326.md)
+ファイル:
+[design-thinking-visual-thinking-language-deep-dive-codex-20260327.md](/Users/uminomae/dev/project-design/knowledge/research/design-thinking-visual-thinking-language-deep-dive-codex-20260327.md)
 
 - McKim, Buchanan, Schön 系譜を追う
 - なぜポストイット化で核が抜けるのかを説明する
+- 現時点の結論は「artifact が knowledge-generating medium から facilitation prop に変わると、design の language は薄くなる」
 
 ## 運用メモ
 
