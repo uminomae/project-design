@@ -90,7 +90,7 @@ date  : YYYYMMDD
 | ファイル | LLM | 状態 |
 |---------|-----|------|
 | `value-chatgpt-20260326.md` | ChatGPT | 完了 |
-| `value-codex-YYYYMMDD.md` | Codex | 未着手 |
+| `value-codex-20260327.md` | Codex | 完了 |
 
 ## 調査の進捗管理
 
