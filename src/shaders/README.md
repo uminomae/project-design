@@ -4,18 +4,20 @@
 
 | ファイル | 役割 |
 |---------|------|
-| `main.js` ~ `main4.js` | ランダム選択対象（採用済み） |
-| `aura-v*.js` | 試作ファイル（採用/不採用混在） |
-| `index.html` の script | 4つからランダムに1つを動的 import |
+| `main.js` | 現行採用シェーダー |
+| `src/app.js` | `main.js` を読み込むエントリ |
 
 ## 採用シェーダー
 
 | ファイル | 元バージョン | アプローチ |
 |---------|-------------|-----------|
 | main.js | aura-v3 | 4ttGDH風 多重Domain Warping + 5 octave FBM |
-| main2.js | aura-v10 | 3D Volumetric raymarching + density filaments |
-| main3.js | aura-v11 | nimitz Divergence noise (DLA) + Dynamism blur |
-| main4.js | aura-v12 | Lyapunov fractal（淡色パレット） |
+
+## 方針
+
+- ランディングページでは採用済みの 1 本だけを保持する
+- 試作シェーダーは比較検討が終わった時点で削除し、常用のランダム切替は行わない
+- 新規試作を作る場合は、採用判断が済むまで一時ファイルとして扱い、採用後に `main.js` へ反映する
 
 ## Gemini 向け生成プロンプト
 
@@ -62,6 +64,6 @@ GLSL内で `u_scroll` を元に、以下の5つのフェーズの重み（w1〜w
 Gemini は HTML インラインで出力するため、以下の手順で変換する:
 
 1. `<script type="module">` 内のコードを抽出
-2. `src/shaders/aura-vN.js` として保存
-3. `index.html` の script src を切り替えて確認
-4. 採用なら `mainN.js` にコピーし、ランダム選択配列に追加
+2. 一時ファイルとして `src/shaders/` 配下に保存して確認
+3. 採用なら `main.js` に統合
+4. 不採用なら比較終了後に削除

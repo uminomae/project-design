@@ -6,6 +6,15 @@
     --gold: #8a7040;
     --navy: #2e3a6e;
     --coral: #b04050;
+    --white: #ffffff;
+    --glass-bg-strong: rgba(255, 255, 255, 0.92);
+    --glass-bg-medium: rgba(255, 255, 255, 0.75);
+    --glass-bg-soft: rgba(255, 255, 255, 0.55);
+    --glass-bg-faint: rgba(255, 255, 255, 0.35);
+    --glass-border-soft: rgba(0, 0, 0, 0.08);
+    --glass-border-faint: rgba(0, 0, 0, 0.15);
+    --glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.06);
+    --glass-shadow-modal: 0 8px 40px rgba(0, 0, 0, 0.12);
 
     --serif-en: "EB Garamond", "Georgia", serif;
     --serif-jp: "Noto Serif JP", "Yu Mincho", "Hiragino Mincho ProN", serif;
@@ -133,10 +142,10 @@ body {
 
 /* === Menu Toggle === */
 .menu-toggle {
-    background: rgba(255, 255, 255, 0.75);
+    background: var(--glass-bg-medium);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
-    border: 1px solid rgba(0, 0, 0, 0.08);
+    border: 1px solid var(--glass-border-soft);
     border-radius: 2rem;
     padding: 0.35rem 0.85rem;
     cursor: pointer;
@@ -157,7 +166,7 @@ body {
     top: 4rem;
     right: 1.5rem;
     z-index: 99;
-    background: rgba(255, 255, 255, 0.92);
+    background: var(--glass-bg-strong);
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
     border: 1px solid rgba(0, 0, 0, 0.06);
@@ -168,7 +177,7 @@ body {
     visibility: hidden;
     transform: translateY(-8px);
     transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.06);
+    box-shadow: var(--glass-shadow);
 }
 
 .site-menu.open {
@@ -220,10 +229,10 @@ body {
     display: flex;
     align-items: center;
     gap: 0;
-    background: rgba(255, 255, 255, 0.75);
+    background: var(--glass-bg-medium);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
-    border: 1px solid rgba(0, 0, 0, 0.08);
+    border: 1px solid var(--glass-border-soft);
     border-radius: 2rem;
     padding: 0.25rem;
     font-family: var(--serif-en);
@@ -246,7 +255,7 @@ body {
 
 .lang-toggle button.active {
     background: var(--ink);
-    color: #fff;
+    color: var(--white);
 }
 
 .lang-toggle button:hover:not(.active) {
@@ -336,10 +345,9 @@ p {
 p:last-child { margin-bottom: 0; }
 
 /* === Prose blocks (shared style) === */
-.hero-notice p,
-.overview-text p,
-.being-desc p,
-.future-text p {
+.prose-block p,
+.about-modal__body,
+.about-modal__body p {
     font-family: var(--serif-jp);
     font-size: 0.95rem;
     font-weight: 300;
@@ -470,6 +478,10 @@ p:last-child { margin-bottom: 0; }
     margin-top: 0.5rem;
 }
 
+.repo-grid {
+    margin-top: 3rem;
+}
+
 /* === Future === */
 .future-text {
     max-width: 680px;
@@ -503,14 +515,14 @@ footer a:hover { color: var(--ink); }
     height: 44px;
     border-radius: 50%;
     border: none;
-    background: rgba(255, 255, 255, 0.35);
+    background: var(--glass-bg-faint);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
     color: var(--ink);
     cursor: pointer;
     margin-top: 2rem;
     transition: all 0.3s ease;
-    border: 1px solid rgba(0, 0, 0, 0.15);
+    border: 1px solid var(--glass-border-faint);
 }
 .about-trigger__letter {
     font-family: var(--serif-en);
@@ -522,7 +534,7 @@ footer a:hover { color: var(--ink); }
 }
 .about-trigger:hover {
     color: var(--ink);
-    background: rgba(255, 255, 255, 0.55);
+    background: var(--glass-bg-soft);
 }
 
 /* === About Modal === */
@@ -554,9 +566,9 @@ footer a:hover { color: var(--ink); }
     overflow-y: auto;
     padding: 2.5rem;
     border-radius: 10px;
-    background: #fff;
+    background: var(--white);
     border: 1px solid rgba(0, 0, 0, 0.06);
-    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.12);
+    box-shadow: var(--glass-shadow-modal);
 }
 .about-modal__close {
     position: absolute;
@@ -567,8 +579,8 @@ footer a:hover { color: var(--ink); }
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid rgba(0, 0, 0, 0.15);
-    background: rgba(255, 255, 255, 0.35);
+    border: 1px solid var(--glass-border-faint);
+    background: var(--glass-bg-faint);
     color: var(--ink);
     cursor: pointer;
     border-radius: 50%;
@@ -576,14 +588,7 @@ footer a:hover { color: var(--ink); }
 }
 .about-modal__close:hover {
     color: var(--ink);
-    background: rgba(255, 255, 255, 0.55);
-}
-.about-modal__body {
-    font-family: var(--serif-jp);
-    font-size: 0.95rem;
-    font-weight: 300;
-    line-height: 2.1;
-    color: var(--mid);
+    background: var(--glass-bg-soft);
 }
 .about-modal__body h1 {
     font-family: var(--serif-en);
@@ -602,13 +607,6 @@ footer a:hover { color: var(--ink); }
     border-top: 1px solid rgba(0, 0, 0, 0.08);
     margin: 1.5rem 0;
 }
-.about-modal__body p {
-    font-family: var(--serif-jp);
-    font-size: 0.95rem;
-    font-weight: 300;
-    line-height: 2.1;
-}
-
 /* === Visually Hidden (SEO) === */
 .visually-hidden {
     position: absolute;
@@ -634,10 +632,7 @@ footer a:hover { color: var(--ink); }
     .glow-link { padding: 1rem 1.5rem; }
     .top-bar { top: 1rem; right: 1rem; }
     .site-menu { top: 3.5rem; right: 1rem; }
-    .hero-notice,
-    .overview-text,
-    .being-desc,
-    .future-text { max-width: 100%; }
+    .prose-block { max-width: 100%; }
 }
 
 /* sm: smartphone */
