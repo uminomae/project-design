@@ -136,6 +136,9 @@
                        data-en="Many times, I have experienced what I want to call Love-Driven Development.<br>Here, a project is an event that includes not only &quot;Doing&quot; but also &quot;Being.&quot;">Love駆動開発と呼びたい現象を、これまで何度も経験してきました。<br>
                     ここでいうプロジェクトは「やること（Doing）」だけでなく「起きていること（Being）」まで含む出来事です。</p>
                 </div>
+                <button class="about-trigger" onclick="openAbout()" aria-label="About this site">
+                    <span class="about-trigger__letter">i</span>
+                </button>
             </header>
 
             <!-- Overview -->
@@ -250,6 +253,17 @@
         </footer>
     </div>
 
+    <!-- About Modal -->
+    <div id="about-modal" class="about-modal" aria-hidden="true">
+        <div class="about-modal__backdrop" onclick="closeAbout()"></div>
+        <div class="about-modal__panel">
+            <button class="about-modal__close" onclick="closeAbout()" aria-label="Close">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 4l8 8M12 4l-8 8" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+            </button>
+            <div id="about-body" class="about-modal__body"></div>
+        </div>
+    </div>
+
     <script src="src/dev-panel.js"></script>
     <script>
     function toggleMenu() {
@@ -277,7 +291,69 @@
                 elems[i].innerHTML = val;
             }
         }
+
+        // Update about modal if open
+        var modal = document.getElementById('about-modal');
+        if (modal.classList.contains('open')) {
+            loadAboutContent(lang);
+        }
     }
+
+    // --- About Modal ---
+    var aboutCache = {};
+
+    function loadAboutContent(lang) {
+        var path = 'content/about-' + lang + '.md';
+        if (aboutCache[lang]) {
+            renderAbout(aboutCache[lang]);
+            return;
+        }
+        fetch(path)
+            .then(function(res) { return res.ok ? res.text() : ''; })
+            .then(function(md) {
+                aboutCache[lang] = md;
+                renderAbout(md);
+            })
+            .catch(function() { renderAbout(''); });
+    }
+
+    function renderAbout(md) {
+        var body = document.getElementById('about-body');
+        var html = md
+            .replace(/^# (.+)$/gm, '<h1>$1</h1>')
+            .replace(/^## (.+)$/gm, '<h2>$1</h2>')
+            .replace(/^---$/gm, '<hr>')
+            .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+            .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2">$1</a>')
+            .replace(/\n{2,}/g, '</p><p>')
+            .replace(/^(?!<h[12]|<hr|<p)/, '<p>')
+            .replace(/$/, '</p>')
+            .replace(/<p><(h[12]|hr)>/g, '<$1>')
+            .replace(/<\/(h[12])><\/p>/g, '</$1>')
+            .replace(/<hr><\/p>/g, '<hr>')
+            .replace(/<p>\s*<\/p>/g, '');
+        body.innerHTML = html;
+    }
+
+    function openAbout() {
+        var modal = document.getElementById('about-modal');
+        var lang = document.documentElement.lang || 'ja';
+        loadAboutContent(lang);
+        modal.classList.add('open');
+        modal.setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeAbout() {
+        var modal = document.getElementById('about-modal');
+        modal.classList.remove('open');
+        modal.setAttribute('aria-hidden', 'true');
+        document.body.style.overflow = '';
+    }
+
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') closeAbout();
+    });
     </script>
 
 <noscript>
