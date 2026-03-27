@@ -1,14 +1,20 @@
 ## About This Site
 
-Project Design is an exploration hub for thinking about **Doing** and **Being** at the same time.
+I have experienced, many times, something I want to call Love-Driven Development.
 
-Here, “design” does not mean only visual or industrial design. It also includes technical systems, organizations, communities, and the design of situations themselves: **what counts as the problem**, and **how relations are structured**.
+There are moments when looking only at tasks is not enough.  
+Something important is happening, but it does not fit inside plans, methods, or management language alone.  
+Once you include what is actually happening, not only what is being done, the project looks different.
 
-This page presents the basic frame of Project Design: its scope, domain, and the split between Doing and Being. From there, it connects to Love-Driven Development, emotional processing, Kesson-Driven Thinking, and related models of creation and awareness.
+Project Design begins from that feeling.
 
-For a first read, this order works well.
+This site is not only about plans or procedures.  
+It tries to hold Doing and Being together, and to think projects again as events: through emotional processing, Kesson-Driven Thinking, Love-Driven Development, and the emergence of intersubjective situations.
 
-Overview: scope and domain  
-Doing: principles of action  
-Being: the structure of what is happening  
-Direction: entry points to related explorations
+This page places only the basic frame.  
+What belongs to the scope.  
+What kind of domain this is.  
+And how Doing and Being can be separated, then reconnected.
+
+It is closer to an entry point than to a manual.  
+If this feeling is familiar at all, the pages beyond this one may help give it a name.
