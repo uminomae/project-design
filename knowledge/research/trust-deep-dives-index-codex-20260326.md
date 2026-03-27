@@ -3,7 +3,7 @@
 作成日: 2026-03-26  
 作成: Codex  
 親Issue: #6  
-関連Issue: #8, #9, #10, #20, #21, #22, #23
+関連Issue: #8, #9, #10, #20, #21, #22, #23, #25, #26
 
 ## 概要
 
@@ -17,6 +17,8 @@
 さらに、その流れから **自己信頼の独立レビュー** を追加した。
 さらに、その次段として **gaslighting と trust の横断整理** を追加した。
 さらに、その次段として **trust の lived experience taxonomy** を追加した。
+さらに、その次段として **AI trust の測定再設計** を追加した。
+さらに、その次段として **institutional trust repair の精密化** を追加した。
 
 3 本はそれぞれ独立して読めるが、論点は次のように連結している。
 
@@ -76,7 +78,24 @@
 
 - trust の主観的経験を九次元の暫定 taxonomy にまとめた。
 - trust / caution / distrust / mistrust / repaired trust を lived experience の違いとして書き分けるコードブックを提示した。
-- 今後の焦点は、小規模適用による次元調整と、AI / institutional trust への適用検証。
+- 小規模適用版として [trust-lived-experience-taxonomy-pilot-codex-20260327.md](/Users/uminomae/dev/project-design/knowledge/research/trust-lived-experience-taxonomy-pilot-codex-20260327.md) を追加し、典型エピソードへの仮適用を行った。
+- 今後の焦点は、実データへの適用と、AI / institutional trust への適用検証。
+
+### 1.8 AI trust の測定再設計
+
+ファイル: [trust-ai-measurement-redesign-codex-20260327.md](/Users/uminomae/dev/project-design/knowledge/research/trust-ai-measurement-redesign-codex-20260327.md)
+
+- self-report 偏重から、態度 / 行動 / 校正 / 理解 / contestability の五層測定へ組み直した。
+- trust と trustworthiness を測定上も分けるべきだと整理した。
+- 今後の焦点は、measurement matrix の試作と high-stakes AI での適用。
+
+### 1.9 institutional trust repair の精密化
+
+ファイル: [trust-institutional-repair-deep-dive-codex-20260327.md](/Users/uminomae/dev/project-design/knowledge/research/trust-institutional-repair-deep-dive-codex-20260327.md)
+
+- 制度 trust repair を apology でなく trustworthiness reconstruction として整理した。
+- 医療・公衆衛生・科学・政治制度で procedural justice / accountability / reform / intelligibility を共通軸にした。
+- 今後の焦点は、dismissal と appeal pathway をめぐる制度 repair の lived side。
 
 ## 2. 横断して見えた共通論点
 
@@ -102,14 +121,14 @@
 
 ## 3. 次の深掘り候補
 
-1. **AI trust の測定再設計**  
-   self-report ではなく reliance behavior と uncertainty understanding を中心に組み直す。
+1. **AI trust measurement matrix の試作**  
+   実験設計レベルのテンプレートに落とし込む。
 
-2. **制度 trust repair の精密化**  
-   medical gaslighting と institutional repair を接続して整理する。
+2. **institutional repair と gaslighting の接続**  
+   dismissal と appeal pathway を中心に制度側の二次損傷を詰める。
 
-3. **taxonomy の小規模適用**  
-   既存 interview / fieldnote / diary への仮適用で分類軸を磨く。
+3. **taxonomy の実データ適用**  
+   interview / diary / fieldnote で code agreement を確認する。
 
 ## 4. 関連ファイル
 
@@ -122,3 +141,6 @@
 - [trust-self-trust-deep-dive-codex-20260327.md](/Users/uminomae/dev/project-design/knowledge/research/trust-self-trust-deep-dive-codex-20260327.md)
 - [trust-gaslighting-cross-domain-deep-dive-codex-20260327.md](/Users/uminomae/dev/project-design/knowledge/research/trust-gaslighting-cross-domain-deep-dive-codex-20260327.md)
 - [trust-lived-experience-taxonomy-codex-20260327.md](/Users/uminomae/dev/project-design/knowledge/research/trust-lived-experience-taxonomy-codex-20260327.md)
+- [trust-lived-experience-taxonomy-pilot-codex-20260327.md](/Users/uminomae/dev/project-design/knowledge/research/trust-lived-experience-taxonomy-pilot-codex-20260327.md)
+- [trust-ai-measurement-redesign-codex-20260327.md](/Users/uminomae/dev/project-design/knowledge/research/trust-ai-measurement-redesign-codex-20260327.md)
+- [trust-institutional-repair-deep-dive-codex-20260327.md](/Users/uminomae/dev/project-design/knowledge/research/trust-institutional-repair-deep-dive-codex-20260327.md)
