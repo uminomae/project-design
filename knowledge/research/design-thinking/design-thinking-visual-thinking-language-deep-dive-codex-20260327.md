@@ -152,10 +152,10 @@ flowchart LR
 - Donald A. Schön, *The Reflective Practitioner* (1984). [Google Books](https://books.google.com/books/about/The_Reflective_Practitioner.html?id=ceJIWay4-jgC)  
   reflection-in-action / professional problem solving の書誌導線。
 
-- [design-thinking-stanford-lineage-deep-dive-codex-20260327.md](/Users/uminomae/dev/project-design/knowledge/research/design-thinking-stanford-lineage-deep-dive-codex-20260327.md)  
+- [design-thinking-stanford-lineage-deep-dive-codex-20260327.md](/Users/uminomae/dev/project-design/knowledge/research/design-thinking/design-thinking-stanford-lineage-deep-dive-codex-20260327.md)  
   McKim → Kelley → d.school / IDEO の系譜整理。
 
-- [design-thinking-designerly-vs-business-deep-dive-codex-20260327.md](/Users/uminomae/dev/project-design/knowledge/research/design-thinking-designerly-vs-business-deep-dive-codex-20260327.md)  
+- [design-thinking-designerly-vs-business-deep-dive-codex-20260327.md](/Users/uminomae/dev/project-design/knowledge/research/design-thinking/design-thinking-designerly-vs-business-deep-dive-codex-20260327.md)  
   workshop 化で失われるものの比較整理。
 
 ## 10. 未確認・保持論点

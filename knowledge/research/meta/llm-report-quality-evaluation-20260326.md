@@ -2,7 +2,7 @@
 
 - 評価日: 2026-03-26
 - 評価者: Claude (Opus)
-- 対象: knowledge/research/ 配下の GPT / Codex レポート群
+- 対象: `knowledge/research/{topic}/` 配下の GPT / Codex レポート群
 
 ## 評価対象ファイル
 

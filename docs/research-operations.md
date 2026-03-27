@@ -23,9 +23,10 @@
 
 | ディレクトリ | 役割 | 命名規則 |
 |---|---|---|
-| `knowledge/research/` | 調査レポート（生データ） | `{topic}-{llm}-{YYYYMMDD}.md` |
-| `knowledge/research/` | 深掘りレポート | `{topic}-{subtopic}-deep-dive-{llm}-{YYYYMMDD}.md` |
-| `knowledge/research/` | インデックス | `{topic}-deep-dives-index-{llm}-{YYYYMMDD}.md` |
+| `knowledge/research/{topic}/` | 調査レポート（生データ） | `{topic}-{llm}-{YYYYMMDD}.md` |
+| `knowledge/research/{topic}/` | 深掘りレポート | `{topic}-{subtopic}-deep-dive-{llm}-{YYYYMMDD}.md` |
+| `knowledge/research/{topic}/` | インデックス | `{topic}-deep-dives-index-{llm}-{YYYYMMDD}.md` |
+| `knowledge/research/meta/` | テーマ横断メモ | `{slug}-{llm}-{YYYYMMDD}.md` |
 | `transform/` | 変換ルール・テンプレート | MD 実体は置かない |
 | `publish/` | 公開用出力 | 正本は pjdhiro に残す |
 
@@ -48,15 +49,15 @@ date  : YYYYMMDD
 | 親 Issue | project-design#6 |
 | 子 Issue | #8（愛着）, #9（AI）, #10（神経現象学） |
 | KDT 側関連 | kesson-driven-thinking#7, #10 |
-| インデックス | `knowledge/research/trust-deep-dives-index-codex-20260326.md` |
+| インデックス | `knowledge/research/trust/trust-deep-dives-index-codex-20260326.md` |
 
 | ファイル | LLM | 状態 |
 |---------|-----|------|
-| `trust-chatgpt-20260326.md` | ChatGPT | 完了 |
-| `trust-codex-20260326.md` | Codex | 完了 |
-| `trust-attachment-deep-dive-codex-20260326.md` | Codex | 完了 |
-| `trust-neurophenomenology-deep-dive-codex-20260326.md` | Codex | 完了 |
-| `trust-ai-deep-dive-codex-20260326.md` | Codex | 完了 |
+| `trust/trust-chatgpt-20260326.md` | ChatGPT | 完了 |
+| `trust/trust-codex-20260326.md` | Codex | 完了 |
+| `trust/trust-attachment-deep-dive-codex-20260326.md` | Codex | 完了 |
+| `trust/trust-neurophenomenology-deep-dive-codex-20260326.md` | Codex | 完了 |
+| `trust/trust-ai-deep-dive-codex-20260326.md` | Codex | 完了 |
 
 ### デザイン思考（design-thinking）
 
@@ -65,19 +66,19 @@ date  : YYYYMMDD
 | 親 Issue | project-design#6 |
 | 子 Issue | #11（visual thinking）, #12（Stanford系譜）, #13（形骸化）, #14（日本受容史）, #15（abduction）, #16（wicked problems）, #17（designerly vs business） |
 | KDT 側関連 | kesson-space#171 |
-| インデックス | `knowledge/research/design-thinking-deep-dives-index-codex-20260326.md` |
+| インデックス | `knowledge/research/design-thinking/design-thinking-deep-dives-index-codex-20260326.md` |
 
 | ファイル | LLM | 状態 |
 |---------|-----|------|
-| `design-thinking-deep-research-gpt-20260326.md` | ChatGPT | 完了 |
-| `design-thinking-deep-research--codex-20260326.md` | Codex | 完了 |
-| `design-thinking-abduction-genealogy-deep-dive-codex-20260326.md` | Codex | 完了 |
-| `design-thinking-stanford-lineage-deep-dive-codex-20260327.md` | Codex | 完了 |
-| `design-thinking-designerly-vs-business-deep-dive-codex-20260327.md` | Codex | 完了 |
-| `design-thinking-wicked-problems-reception-deep-dive-codex-20260327.md` | Codex | 完了 |
-| `design-thinking-ossification-critique-deep-dive-codex-20260327.md` | Codex | 完了 |
-| `design-thinking-visual-thinking-language-deep-dive-codex-20260327.md` | Codex | 完了 |
-| `design-thinking-japan-reception-deep-dive-codex-20260327.md` | Codex | 完了 |
+| `design-thinking/design-thinking-deep-research-gpt-20260326.md` | ChatGPT | 完了 |
+| `design-thinking/design-thinking-deep-research--codex-20260326.md` | Codex | 完了 |
+| `design-thinking/design-thinking-abduction-genealogy-deep-dive-codex-20260326.md` | Codex | 完了 |
+| `design-thinking/design-thinking-stanford-lineage-deep-dive-codex-20260327.md` | Codex | 完了 |
+| `design-thinking/design-thinking-designerly-vs-business-deep-dive-codex-20260327.md` | Codex | 完了 |
+| `design-thinking/design-thinking-wicked-problems-reception-deep-dive-codex-20260327.md` | Codex | 完了 |
+| `design-thinking/design-thinking-ossification-critique-deep-dive-codex-20260327.md` | Codex | 完了 |
+| `design-thinking/design-thinking-visual-thinking-language-deep-dive-codex-20260327.md` | Codex | 完了 |
+| `design-thinking/design-thinking-japan-reception-deep-dive-codex-20260327.md` | Codex | 完了 |
 
 ### 価値（value）
 
@@ -89,8 +90,8 @@ date  : YYYYMMDD
 
 | ファイル | LLM | 状態 |
 |---------|-----|------|
-| `value-chatgpt-20260326.md` | ChatGPT | 完了 |
-| `value-codex-20260327.md` | Codex | 完了 |
+| `value/value-chatgpt-20260326.md` | ChatGPT | 完了 |
+| `value/value-codex-20260327.md` | Codex | 完了 |
 
 ## 調査の進捗管理
 

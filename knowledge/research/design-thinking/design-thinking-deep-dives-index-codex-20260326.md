@@ -11,7 +11,7 @@
 
 起点レポート:
 
-- [design-thinking-deep-research--codex-20260326.md](/Users/uminomae/dev/project-design/knowledge/research/design-thinking-deep-research--codex-20260326.md)
+- [design-thinking-deep-research--codex-20260326.md](/Users/uminomae/dev/project-design/knowledge/research/design-thinking/design-thinking-deep-research--codex-20260326.md)
 
 ## 深掘り候補
 
@@ -21,7 +21,7 @@ Issue: #15
 状況: 第一稿作成済み
 
 ファイル:
-[design-thinking-abduction-genealogy-deep-dive-codex-20260326.md](/Users/uminomae/dev/project-design/knowledge/research/design-thinking-abduction-genealogy-deep-dive-codex-20260326.md)
+[design-thinking-abduction-genealogy-deep-dive-codex-20260326.md](/Users/uminomae/dev/project-design/knowledge/research/design-thinking/design-thinking-abduction-genealogy-deep-dive-codex-20260326.md)
 
 - Peirce から Simon, Schön, Dorst, Roger Martin までをつなぐ
 - explanation hypothesis と frame creation の差分を追う
@@ -33,7 +33,7 @@ Issue: #12
 状況: 第一稿作成済み
 
 ファイル:
-[design-thinking-stanford-lineage-deep-dive-codex-20260327.md](/Users/uminomae/dev/project-design/knowledge/research/design-thinking-stanford-lineage-deep-dive-codex-20260327.md)
+[design-thinking-stanford-lineage-deep-dive-codex-20260327.md](/Users/uminomae/dev/project-design/knowledge/research/design-thinking/design-thinking-stanford-lineage-deep-dive-codex-20260327.md)
 
 - McKim, Faste, Kelley, d.school, IDEO の連続性を追う
 - 教育実践が business DT にどう変換されたかを見る
@@ -45,7 +45,7 @@ Issue: #17
 状況: 第一稿作成済み
 
 ファイル:
-[design-thinking-designerly-vs-business-deep-dive-codex-20260327.md](/Users/uminomae/dev/project-design/knowledge/research/design-thinking-designerly-vs-business-deep-dive-codex-20260327.md)
+[design-thinking-designerly-vs-business-deep-dive-codex-20260327.md](/Users/uminomae/dev/project-design/knowledge/research/design-thinking/design-thinking-designerly-vs-business-deep-dive-codex-20260327.md)
 
 - Cross, Lawson, Rowe, Schön と Brown, Kelley, Rotman を比較する
 - 何が継承され、何が切り落とされたかを整理する
@@ -57,7 +57,7 @@ Issue: #16
 状況: 第一稿作成済み
 
 ファイル:
-[design-thinking-wicked-problems-reception-deep-dive-codex-20260327.md](/Users/uminomae/dev/project-design/knowledge/research/design-thinking-wicked-problems-reception-deep-dive-codex-20260327.md)
+[design-thinking-wicked-problems-reception-deep-dive-codex-20260327.md](/Users/uminomae/dev/project-design/knowledge/research/design-thinking/design-thinking-wicked-problems-reception-deep-dive-codex-20260327.md)
 
 - Rittel & Webber から Buchanan を経た意味変化を追う
 - 経営・教育文脈での単純化を確認する
@@ -69,7 +69,7 @@ Issue: #13
 状況: 第一稿作成済み
 
 ファイル:
-[design-thinking-ossification-critique-deep-dive-codex-20260327.md](/Users/uminomae/dev/project-design/knowledge/research/design-thinking-ossification-critique-deep-dive-codex-20260327.md)
+[design-thinking-ossification-critique-deep-dive-codex-20260327.md](/Users/uminomae/dev/project-design/knowledge/research/design-thinking/design-thinking-ossification-critique-deep-dive-codex-20260327.md)
 
 - 5段階化、共感ワークショップ化、innovation theater 化を整理する
 - 学術批判と実務批判を分けて扱う
@@ -81,7 +81,7 @@ Issue: #14
 状況: 第一稿作成済み
 
 ファイル:
-[design-thinking-japan-reception-deep-dive-codex-20260327.md](/Users/uminomae/dev/project-design/knowledge/research/design-thinking-japan-reception-deep-dive-codex-20260327.md)
+[design-thinking-japan-reception-deep-dive-codex-20260327.md](/Users/uminomae/dev/project-design/knowledge/research/design-thinking/design-thinking-japan-reception-deep-dive-codex-20260327.md)
 
 - 大学、研修、コンサル、行政への導入を確認する
 - 翻訳と概念ずれを追う
@@ -93,7 +93,7 @@ Issue: #11
 状況: 第一稿作成済み
 
 ファイル:
-[design-thinking-visual-thinking-language-deep-dive-codex-20260327.md](/Users/uminomae/dev/project-design/knowledge/research/design-thinking-visual-thinking-language-deep-dive-codex-20260327.md)
+[design-thinking-visual-thinking-language-deep-dive-codex-20260327.md](/Users/uminomae/dev/project-design/knowledge/research/design-thinking/design-thinking-visual-thinking-language-deep-dive-codex-20260327.md)
 
 - McKim, Buchanan, Schön 系譜を追う
 - なぜポストイット化で核が抜けるのかを説明する

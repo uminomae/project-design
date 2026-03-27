@@ -149,7 +149,7 @@ Parent: #6
 - Stanford Encyclopedia of Philosophy, “Value Theory.” [SEP](https://plato.stanford.edu/entries/value-theory/)  
 - Encyclopaedia Britannica, “Axiology.” [Britannica](https://www.britannica.com/topic/axiology)  
 - コトバンク「価値」 [Kotobank](https://kotobank.jp/word/%E4%BE%A1%E5%80%A4-460651)  
-- [value-chatgpt-20260326.md](/Users/uminomae/dev/project-design/knowledge/research/value-chatgpt-20260326.md)  
+- [value-chatgpt-20260326.md](/Users/uminomae/dev/project-design/knowledge/research/value/value-chatgpt-20260326.md)  
   用語マップと深掘り候補の広いチェックリストとして参照
 
 ## 8. 未確認・保持論点

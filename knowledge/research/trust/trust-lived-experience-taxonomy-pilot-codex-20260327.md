@@ -7,26 +7,26 @@ Parent: #6
 
 ## 0. 位置づけ
 
-本稿は [trust-lived-experience-taxonomy-codex-20260327.md](/Users/uminomae/dev/project-design/knowledge/research/trust-lived-experience-taxonomy-codex-20260327.md) で提案した暫定 taxonomy の小規模適用版である。重要なのは、ここで扱うのが **raw interview data ではなく、既存 deep dive から抽出した典型エピソード** だという点である。したがって本稿は妥当性検証ではなく、コードブックの粗さ・重なり・使いにくさを確認するための pilot である。
+本稿は [trust-lived-experience-taxonomy-codex-20260327.md](/Users/uminomae/dev/project-design/knowledge/research/trust/trust-lived-experience-taxonomy-codex-20260327.md) で提案した暫定 taxonomy の小規模適用版である。重要なのは、ここで扱うのが **raw interview data ではなく、既存 deep dive から抽出した典型エピソード** だという点である。したがって本稿は妥当性検証ではなく、コードブックの粗さ・重なり・使いにくさを確認するための pilot である。
 
 ## 1. 適用対象
 
 次の 5 つの典型エピソードに仮適用する。
 
 1. **愛着ベースの安定した委譲**  
-   出典: [trust-attachment-deep-dive-codex-20260326.md](/Users/uminomae/dev/project-design/knowledge/research/trust-attachment-deep-dive-codex-20260326.md)
+   出典: [trust-attachment-deep-dive-codex-20260326.md](/Users/uminomae/dev/project-design/knowledge/research/trust/trust-attachment-deep-dive-codex-20260326.md)
 
 2. **裏切り後の関係修復前夜**  
-   出典: [trust-repair-cross-domain-deep-dive-codex-20260326.md](/Users/uminomae/dev/project-design/knowledge/research/trust-repair-cross-domain-deep-dive-codex-20260326.md)
+   出典: [trust-repair-cross-domain-deep-dive-codex-20260326.md](/Users/uminomae/dev/project-design/knowledge/research/trust/trust-repair-cross-domain-deep-dive-codex-20260326.md)
 
 3. **gaslighting による self-trust erosion**  
-   出典: [trust-gaslighting-cross-domain-deep-dive-codex-20260327.md](/Users/uminomae/dev/project-design/knowledge/research/trust-gaslighting-cross-domain-deep-dive-codex-20260327.md)
+   出典: [trust-gaslighting-cross-domain-deep-dive-codex-20260327.md](/Users/uminomae/dev/project-design/knowledge/research/trust/trust-gaslighting-cross-domain-deep-dive-codex-20260327.md)
 
 4. **medical gaslighting 後の institutional distrust**  
-   出典: [trust-gaslighting-cross-domain-deep-dive-codex-20260327.md](/Users/uminomae/dev/project-design/knowledge/research/trust-gaslighting-cross-domain-deep-dive-codex-20260327.md), [trust-institutional-repair-deep-dive-codex-20260327.md](/Users/uminomae/dev/project-design/knowledge/research/trust-institutional-repair-deep-dive-codex-20260327.md)
+   出典: [trust-gaslighting-cross-domain-deep-dive-codex-20260327.md](/Users/uminomae/dev/project-design/knowledge/research/trust/trust-gaslighting-cross-domain-deep-dive-codex-20260327.md), [trust-institutional-repair-deep-dive-codex-20260327.md](/Users/uminomae/dev/project-design/knowledge/research/trust/trust-institutional-repair-deep-dive-codex-20260327.md)
 
 5. **高リスク AI 支援に対する条件付き reliance**  
-   出典: [trust-ai-deep-dive-codex-20260326.md](/Users/uminomae/dev/project-design/knowledge/research/trust-ai-deep-dive-codex-20260326.md), [trust-ai-measurement-redesign-codex-20260327.md](/Users/uminomae/dev/project-design/knowledge/research/trust-ai-measurement-redesign-codex-20260327.md)
+   出典: [trust-ai-deep-dive-codex-20260326.md](/Users/uminomae/dev/project-design/knowledge/research/trust/trust-ai-deep-dive-codex-20260326.md), [trust-ai-measurement-redesign-codex-20260327.md](/Users/uminomae/dev/project-design/knowledge/research/trust/trust-ai-measurement-redesign-codex-20260327.md)
 
 ## 2. 適用フォーマット
 

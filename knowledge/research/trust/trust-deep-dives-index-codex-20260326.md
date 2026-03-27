@@ -27,7 +27,7 @@
 
 ### 1.1 愛着と信頼
 
-ファイル: [trust-attachment-deep-dive-codex-20260326.md](/Users/uminomae/dev/project-design/knowledge/research/trust-attachment-deep-dive-codex-20260326.md)
+ファイル: [trust-attachment-deep-dive-codex-20260326.md](/Users/uminomae/dev/project-design/knowledge/research/trust/trust-attachment-deep-dive-codex-20260326.md)
 
 - 乳幼児期の basic trust、愛着安全性、成人対人信頼、epistemic trust、self-trust をつないだ。
 - 信頼の破綻を、low trust 一般ではなく、裏切り、監視亢進、自己不信、修復閾値の問題として整理した。
@@ -35,7 +35,7 @@
 
 ### 1.2 信頼の神経現象学
 
-ファイル: [trust-neurophenomenology-deep-dive-codex-20260326.md](/Users/uminomae/dev/project-design/knowledge/research/trust-neurophenomenology-deep-dive-codex-20260326.md)
+ファイル: [trust-neurophenomenology-deep-dive-codex-20260326.md](/Users/uminomae/dev/project-design/knowledge/research/trust/trust-neurophenomenology-deep-dive-codex-20260326.md)
 
 - trust そのものを正面から扱う神経現象学文献は薄いことを前提に、方法論、近接領域、候補研究デザインを切り分けた。
 - trust を「警戒の緩み」「委譲感」「可逆性」「身体の防御トーン」などの経験次元に分解している。
@@ -43,7 +43,7 @@
 
 ### 1.3 AI への信頼
 
-ファイル: [trust-ai-deep-dive-codex-20260326.md](/Users/uminomae/dev/project-design/knowledge/research/trust-ai-deep-dive-codex-20260326.md)
+ファイル: [trust-ai-deep-dive-codex-20260326.md](/Users/uminomae/dev/project-design/knowledge/research/trust/trust-ai-deep-dive-codex-20260326.md)
 
 - AI trust を、対人 trust の単純移植ではなく、reliance・calibration・trustworthiness・institutional mediation の交点として整理した。
 - 「高 trust がよい」ではなく、「適切に校正された依存」が目標だと明示した。
@@ -51,7 +51,7 @@
 
 ### 1.4 信頼修復の横断比較
 
-ファイル: [trust-repair-cross-domain-deep-dive-codex-20260326.md](/Users/uminomae/dev/project-design/knowledge/research/trust-repair-cross-domain-deep-dive-codex-20260326.md)
+ファイル: [trust-repair-cross-domain-deep-dive-codex-20260326.md](/Users/uminomae/dev/project-design/knowledge/research/trust/trust-repair-cross-domain-deep-dive-codex-20260326.md)
 
 - 対人・臨床・組織・制度・AI を横断して trust repair を比較した。
 - apology や説明だけでは足りず、violation type の診断、責任明確化、substantive change、反復的一貫性が共通条件だと整理した。
@@ -59,7 +59,7 @@
 
 ### 1.5 自己信頼の独立レビュー
 
-ファイル: [trust-self-trust-deep-dive-codex-20260327.md](/Users/uminomae/dev/project-design/knowledge/research/trust-self-trust-deep-dive-codex-20260327.md)
+ファイル: [trust-self-trust-deep-dive-codex-20260327.md](/Users/uminomae/dev/project-design/knowledge/research/trust/trust-self-trust-deep-dive-codex-20260327.md)
 
 - self-trust を self-confidence / self-efficacy / self-esteem から切り分けた。
 - Lehrer、Govier、McLeod、Zagzebski、Dormandy、Michaelian を軸に、認識論・フェミニスト哲学・臨床を接続した。
@@ -67,7 +67,7 @@
 
 ### 1.6 gaslighting と trust の横断整理
 
-ファイル: [trust-gaslighting-cross-domain-deep-dive-codex-20260327.md](/Users/uminomae/dev/project-design/knowledge/research/trust-gaslighting-cross-domain-deep-dive-codex-20260327.md)
+ファイル: [trust-gaslighting-cross-domain-deep-dive-codex-20260327.md](/Users/uminomae/dev/project-design/knowledge/research/trust/trust-gaslighting-cross-domain-deep-dive-codex-20260327.md)
 
 - gaslighting を self-trust / other-trust / institutional trust の三層で整理した。
 - intimate abuse だけでなく、medical gaslighting、cultural gaslighting、structural gaslighting を trust 配置の歪みとして接続した。
@@ -75,16 +75,16 @@
 
 ### 1.7 trust の lived experience taxonomy
 
-ファイル: [trust-lived-experience-taxonomy-codex-20260327.md](/Users/uminomae/dev/project-design/knowledge/research/trust-lived-experience-taxonomy-codex-20260327.md)
+ファイル: [trust-lived-experience-taxonomy-codex-20260327.md](/Users/uminomae/dev/project-design/knowledge/research/trust/trust-lived-experience-taxonomy-codex-20260327.md)
 
 - trust の主観的経験を九次元の暫定 taxonomy にまとめた。
 - trust / caution / distrust / mistrust / repaired trust を lived experience の違いとして書き分けるコードブックを提示した。
-- 小規模適用版として [trust-lived-experience-taxonomy-pilot-codex-20260327.md](/Users/uminomae/dev/project-design/knowledge/research/trust-lived-experience-taxonomy-pilot-codex-20260327.md) を追加し、典型エピソードへの仮適用を行った。
+- 小規模適用版として [trust-lived-experience-taxonomy-pilot-codex-20260327.md](/Users/uminomae/dev/project-design/knowledge/research/trust/trust-lived-experience-taxonomy-pilot-codex-20260327.md) を追加し、典型エピソードへの仮適用を行った。
 - 今後の焦点は、実データへの適用と、AI / institutional trust への適用検証。
 
 ### 1.8 AI trust の測定再設計
 
-ファイル: [trust-ai-measurement-redesign-codex-20260327.md](/Users/uminomae/dev/project-design/knowledge/research/trust-ai-measurement-redesign-codex-20260327.md)
+ファイル: [trust-ai-measurement-redesign-codex-20260327.md](/Users/uminomae/dev/project-design/knowledge/research/trust/trust-ai-measurement-redesign-codex-20260327.md)
 
 - self-report 偏重から、態度 / 行動 / 校正 / 理解 / contestability の五層測定へ組み直した。
 - trust と trustworthiness を測定上も分けるべきだと整理した。
@@ -92,7 +92,7 @@
 
 ### 1.9 institutional trust repair の精密化
 
-ファイル: [trust-institutional-repair-deep-dive-codex-20260327.md](/Users/uminomae/dev/project-design/knowledge/research/trust-institutional-repair-deep-dive-codex-20260327.md)
+ファイル: [trust-institutional-repair-deep-dive-codex-20260327.md](/Users/uminomae/dev/project-design/knowledge/research/trust/trust-institutional-repair-deep-dive-codex-20260327.md)
 
 - 制度 trust repair を apology でなく trustworthiness reconstruction として整理した。
 - 医療・公衆衛生・科学・政治制度で procedural justice / accountability / reform / intelligibility を共通軸にした。
@@ -100,7 +100,7 @@
 
 ### 1.10 AI trust measurement matrix の試作
 
-ファイル: [trust-ai-measurement-matrix-codex-20260327.md](/Users/uminomae/dev/project-design/knowledge/research/trust-ai-measurement-matrix-codex-20260327.md)
+ファイル: [trust-ai-measurement-matrix-codex-20260327.md](/Users/uminomae/dev/project-design/knowledge/research/trust/trust-ai-measurement-matrix-codex-20260327.md)
 
 - AI trust measurement redesign を、実験・評価設計でそのまま使える matrix に落とし込んだ。
 - 態度 / 行動 / 校正 / 理解 / contestability の五層を、high-stakes / low-stakes と automation level に応じて使い分けるテンプレートを提示した。
@@ -141,16 +141,16 @@
 
 ## 4. 関連ファイル
 
-- [trust-codex-20260326.md](/Users/uminomae/dev/project-design/knowledge/research/trust-codex-20260326.md)
-- [trust-chatgpt-20260326.md](/Users/uminomae/dev/project-design/knowledge/research/trust-chatgpt-20260326.md)
-- [trust-attachment-deep-dive-codex-20260326.md](/Users/uminomae/dev/project-design/knowledge/research/trust-attachment-deep-dive-codex-20260326.md)
-- [trust-neurophenomenology-deep-dive-codex-20260326.md](/Users/uminomae/dev/project-design/knowledge/research/trust-neurophenomenology-deep-dive-codex-20260326.md)
-- [trust-ai-deep-dive-codex-20260326.md](/Users/uminomae/dev/project-design/knowledge/research/trust-ai-deep-dive-codex-20260326.md)
-- [trust-repair-cross-domain-deep-dive-codex-20260326.md](/Users/uminomae/dev/project-design/knowledge/research/trust-repair-cross-domain-deep-dive-codex-20260326.md)
-- [trust-self-trust-deep-dive-codex-20260327.md](/Users/uminomae/dev/project-design/knowledge/research/trust-self-trust-deep-dive-codex-20260327.md)
-- [trust-gaslighting-cross-domain-deep-dive-codex-20260327.md](/Users/uminomae/dev/project-design/knowledge/research/trust-gaslighting-cross-domain-deep-dive-codex-20260327.md)
-- [trust-lived-experience-taxonomy-codex-20260327.md](/Users/uminomae/dev/project-design/knowledge/research/trust-lived-experience-taxonomy-codex-20260327.md)
-- [trust-lived-experience-taxonomy-pilot-codex-20260327.md](/Users/uminomae/dev/project-design/knowledge/research/trust-lived-experience-taxonomy-pilot-codex-20260327.md)
-- [trust-ai-measurement-redesign-codex-20260327.md](/Users/uminomae/dev/project-design/knowledge/research/trust-ai-measurement-redesign-codex-20260327.md)
-- [trust-institutional-repair-deep-dive-codex-20260327.md](/Users/uminomae/dev/project-design/knowledge/research/trust-institutional-repair-deep-dive-codex-20260327.md)
-- [trust-ai-measurement-matrix-codex-20260327.md](/Users/uminomae/dev/project-design/knowledge/research/trust-ai-measurement-matrix-codex-20260327.md)
+- [trust-codex-20260326.md](/Users/uminomae/dev/project-design/knowledge/research/trust/trust-codex-20260326.md)
+- [trust-chatgpt-20260326.md](/Users/uminomae/dev/project-design/knowledge/research/trust/trust-chatgpt-20260326.md)
+- [trust-attachment-deep-dive-codex-20260326.md](/Users/uminomae/dev/project-design/knowledge/research/trust/trust-attachment-deep-dive-codex-20260326.md)
+- [trust-neurophenomenology-deep-dive-codex-20260326.md](/Users/uminomae/dev/project-design/knowledge/research/trust/trust-neurophenomenology-deep-dive-codex-20260326.md)
+- [trust-ai-deep-dive-codex-20260326.md](/Users/uminomae/dev/project-design/knowledge/research/trust/trust-ai-deep-dive-codex-20260326.md)
+- [trust-repair-cross-domain-deep-dive-codex-20260326.md](/Users/uminomae/dev/project-design/knowledge/research/trust/trust-repair-cross-domain-deep-dive-codex-20260326.md)
+- [trust-self-trust-deep-dive-codex-20260327.md](/Users/uminomae/dev/project-design/knowledge/research/trust/trust-self-trust-deep-dive-codex-20260327.md)
+- [trust-gaslighting-cross-domain-deep-dive-codex-20260327.md](/Users/uminomae/dev/project-design/knowledge/research/trust/trust-gaslighting-cross-domain-deep-dive-codex-20260327.md)
+- [trust-lived-experience-taxonomy-codex-20260327.md](/Users/uminomae/dev/project-design/knowledge/research/trust/trust-lived-experience-taxonomy-codex-20260327.md)
+- [trust-lived-experience-taxonomy-pilot-codex-20260327.md](/Users/uminomae/dev/project-design/knowledge/research/trust/trust-lived-experience-taxonomy-pilot-codex-20260327.md)
+- [trust-ai-measurement-redesign-codex-20260327.md](/Users/uminomae/dev/project-design/knowledge/research/trust/trust-ai-measurement-redesign-codex-20260327.md)
+- [trust-institutional-repair-deep-dive-codex-20260327.md](/Users/uminomae/dev/project-design/knowledge/research/trust/trust-institutional-repair-deep-dive-codex-20260327.md)
+- [trust-ai-measurement-matrix-codex-20260327.md](/Users/uminomae/dev/project-design/knowledge/research/trust/trust-ai-measurement-matrix-codex-20260327.md)

@@ -217,11 +217,11 @@ repair はこの次元で見ると「元通り」以外も記述できる。
 
 ## 9. 参照した基盤レポート
 
-- [trust-neurophenomenology-deep-dive-codex-20260326.md](/Users/uminomae/dev/project-design/knowledge/research/trust-neurophenomenology-deep-dive-codex-20260326.md)
-- [trust-self-trust-deep-dive-codex-20260327.md](/Users/uminomae/dev/project-design/knowledge/research/trust-self-trust-deep-dive-codex-20260327.md)
-- [trust-gaslighting-cross-domain-deep-dive-codex-20260327.md](/Users/uminomae/dev/project-design/knowledge/research/trust-gaslighting-cross-domain-deep-dive-codex-20260327.md)
-- [trust-repair-cross-domain-deep-dive-codex-20260326.md](/Users/uminomae/dev/project-design/knowledge/research/trust-repair-cross-domain-deep-dive-codex-20260326.md)
-- [trust-attachment-deep-dive-codex-20260326.md](/Users/uminomae/dev/project-design/knowledge/research/trust-attachment-deep-dive-codex-20260326.md)
+- [trust-neurophenomenology-deep-dive-codex-20260326.md](/Users/uminomae/dev/project-design/knowledge/research/trust/trust-neurophenomenology-deep-dive-codex-20260326.md)
+- [trust-self-trust-deep-dive-codex-20260327.md](/Users/uminomae/dev/project-design/knowledge/research/trust/trust-self-trust-deep-dive-codex-20260327.md)
+- [trust-gaslighting-cross-domain-deep-dive-codex-20260327.md](/Users/uminomae/dev/project-design/knowledge/research/trust/trust-gaslighting-cross-domain-deep-dive-codex-20260327.md)
+- [trust-repair-cross-domain-deep-dive-codex-20260326.md](/Users/uminomae/dev/project-design/knowledge/research/trust/trust-repair-cross-domain-deep-dive-codex-20260326.md)
+- [trust-attachment-deep-dive-codex-20260326.md](/Users/uminomae/dev/project-design/knowledge/research/trust/trust-attachment-deep-dive-codex-20260326.md)
 
 ## 10. 次の論点
 
