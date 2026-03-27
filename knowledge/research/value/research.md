@@ -48,6 +48,7 @@ Issue: #33
 2. **日英の翻訳ズレがある**: 日本語「価値」は英語の value/values/worth/utility/significance/merit/price に分岐する
 3. **3レポートは相補的**: ChatGPT=構造化+網羅性、Pro=横断論点の言語化、Codex=簡潔さ+検証可能な出典
 4. **独自フレームワークの出自**: ChatGPT の「束をほどく」は Boltanski & Thevenot に構造的類似、Pro の四層は O'Neill/IPBES の拡張
+5. **prompt 準拠の再実行**: `value-deep-research-codex-20260327.md` を追加し、2026-03-27 統一プロンプトに合わせた A-E 形式の広域見取り図を保存
 
 ### Phase C で補完済み/補完中の弱点
 

@@ -201,6 +201,39 @@ insights:
 
 ---
 
+## Phase D: prompt 準拠 deep research 追試
+
+| 項目 | 内容 |
+|------|------|
+| ファイル | `value-deep-research-codex-20260327.md` |
+| 使用モデル | GPT-5 (Codex) |
+| 実行日 | 2026-03-27 |
+| 入力 | `knowledge/research/value/PROMPT.md` |
+| 目的 | 2026-03-27 作成の統一プロンプトに合わせ、A-E 形式・広域見取り図・URL 付き出典を備えた Codex 版レポートを別ファイルとして残す |
+
+### D-1. 実施内容
+
+- 既存の `value-codex-20260327.md` は LLM 比較資産として保持し、上書きせず別ファイルを追加
+- 既存の `value-integrated.md`, `research.md`, `README.md` を参照して命名・位置づけを確認
+- 主要ソースを再収集し、次を優先:
+  - 辞典: Kotobank, Cambridge Dictionary, Etymonline
+  - 哲学: SEP, Britannica
+  - 経済学: Smith, Marx, Jevons, Prospect Theory
+  - 社会科学: Schwartz, Bourdieu, Mauss, Graeber
+  - AI/HCI: VSD, CIRL
+  - 認知/神経: Scholarpedia, Active Inference, Varela 入口
+  - 環境/教育/法: IPBES, TEEB, OECD, UDHR
+- 直接の本文確認が難しい標準文献は Google Scholar 検索リンクを付与
+
+### D-2. 出力上の判断
+
+- 「価値」を単一理論に統合せず、領域ごとの使い方を並置
+- 神経現象学については、標準術語としての「価値」が定着していない点を明記
+- 日本語と英語のズレを B/D に分散させず、B に集中して整理
+- deep research の保存先は `knowledge/research/value/` とした
+
+---
+
 ## 調査設計の記録
 
 ### 使用ツール・モデルの一覧
