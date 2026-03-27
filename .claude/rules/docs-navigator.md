@@ -15,6 +15,7 @@ CLI は docs/ を自動読み込みしない。以下の対応表に従い、タ
 | knowledge 追加 | `knowledge/README.md` | データ構造 |
 | 並列作業・ワークツリー | `.claude/rules/parallel-worktree.md` | 3レーン構造 |
 | ルール追加 | `.claude/rules/reference-repos.md` | 段階的構築方針 |
+| SEO / LLM / クエリリンク | `.claude/rules/seo-llm.md` | モーダルのクエリリンク・静的要約・構造化データ |
 
 ## 読み方の原則
 

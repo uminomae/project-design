@@ -84,6 +84,14 @@
           }
         },
         {
+          "@type": "AboutPage",
+          "name": "About — Project Design",
+          "url": "https://uminomae.github.io/pjdhiro/project-design/?about",
+          "description": "Love駆動開発と呼びたい現象を、これまで何度も経験してきました。プロジェクトには「やること（Doing）」と「起きていること（Being）」があります。感情処理、欠損駆動思考、間主観性、創造の5段階を軸に、その構造を言語化しようとしています。",
+          "inLanguage": ["ja", "en"],
+          "author": {"@type": "Person", "name": "pjdhiro"}
+        },
+        {
           "@type": "ItemList",
           "name": "プロジェクトデザイン論の構成要素",
           "itemListElement": [
@@ -246,6 +254,13 @@
 
         </main>
 
+        <!-- SEO: About コンテンツの静的要約（クローラー向け） -->
+        <div class="visually-hidden" aria-hidden="true" id="seo-content-summary">
+            <h2>About — Project Design</h2>
+            <p>Love駆動開発と呼びたい現象を、これまで何度も経験してきました。プロジェクトには「やること（Doing）」と「起きていること（Being）」があります。このサイトでは、感情処理、欠損駆動思考、間主観性、創造の5段階を軸に、その構造を言語化しようとしています。</p>
+            <p>I have experienced what I want to call Love-Driven Development many times. Every project has "Doing" and "Being." This site attempts to articulate that structure through emotional processing, Kesson-Driven Thinking, intersubjectivity, and the Five Stages of Creation.</p>
+        </div>
+
         <footer>
             <a href="/pjdhiro/">Blog</a>
             <a href="https://x.com/pjdhiro">X</a>
@@ -349,11 +364,22 @@
         modal.classList.remove('open');
         modal.setAttribute('aria-hidden', 'true');
         document.body.style.overflow = '';
+        // Remove ?about from URL without reload
+        if (new URLSearchParams(window.location.search).has('about')) {
+            var url = new URL(window.location);
+            url.searchParams.delete('about');
+            history.replaceState(null, '', url.pathname + url.search + url.hash || window.location.pathname);
+        }
     }
 
     document.addEventListener('keydown', function(e) {
         if (e.key === 'Escape') closeAbout();
     });
+
+    // Open about modal if ?about is in URL
+    if (new URLSearchParams(window.location.search).has('about')) {
+        openAbout();
+    }
     </script>
 
 <noscript>
@@ -361,6 +387,8 @@
     <h2>プロジェクトデザイン論 — Doing と Being を包含する設計</h2>
     <p>Project Design Theory explores the envisioning, design, and execution of projects that encompass both Doing (what we do) and Being (what is happening). It focuses on Love-Driven Development, emotional processing, and Kesson-Driven Thinking as core methodologies for human-AI collaborative project design.</p>
     <p>プロジェクトデザイン論は、Doing（やること）と Being（起きていること）を包含するプロジェクトの構想・設計・実行を探索します。Love駆動開発、感情処理、欠損駆動思考を軸に、人間とAIの協働プロジェクトデザインを実践・記録します。</p>
+    <h3>About</h3>
+    <p>Love駆動開発と呼びたい現象を、これまで何度も経験してきました。プロジェクトには「やること（Doing）」と「起きていること（Being）」があります。このサイトでは、感情処理、欠損駆動思考、間主観性、創造の5段階を軸に、その構造を言語化しようとしています。まだ完成していません。書きながら考えています。— pjdhiro</p>
   </section>
 </noscript>
 </body>

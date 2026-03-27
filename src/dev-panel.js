@@ -240,12 +240,120 @@ function initFps() {
     document.head.appendChild(script);
 }
 
+// --- Dev Links Panel ---
+// モーダル追加時はここにリンクを追加する（seo-llm.md 参照）
+var DEV_LINKS = [
+    { group: 'Query Links', items: [
+        { label: 'About', path: './?about' },
+        { label: 'Dev Mode', path: './?dev' },
+    ]},
+];
+
+function buildLinksPanel() {
+    var panel = document.createElement('div');
+    panel.id = 'dev-links-panel';
+
+    var style = document.createElement('style');
+    style.textContent = [
+        '#dev-links-panel { position:fixed; top:0; right:0; width:320px; height:100vh;',
+        '  background:rgba(0,0,0,0.85); color:#eee; font:12px/1.6 monospace;',
+        '  overflow-y:auto; z-index:9997; padding:1rem;',
+        '  transform:translateX(100%); transition:transform 0.3s ease; }',
+        '#dev-links-panel.open { transform:translateX(0); }',
+        '#dev-links-toggle { position:fixed; top:calc(50% + 40px); right:0; z-index:9996;',
+        '  writing-mode:vertical-rl; background:rgba(0,0,0,0.7); color:#aaa;',
+        '  border:none; padding:0.5rem 0.25rem; cursor:pointer; font:11px monospace;',
+        '  border-radius:4px 0 0 4px; }',
+        '#dev-links-toggle:hover { color:#fff; }',
+        '.dl-group { margin-bottom:1rem; border-bottom:1px solid #333; padding-bottom:0.75rem; }',
+        '.dl-group-title { font-weight:bold; color:#af8; margin-bottom:0.5rem; }',
+        '.dl-item { display:flex; align-items:center; gap:0.5rem; margin:0.25rem 0; }',
+        '.dl-link { color:#8cf; text-decoration:none; font-size:12px; flex:1; }',
+        '.dl-link:hover { color:#fff; text-decoration:underline; }',
+        '.dl-copy { background:#333; color:#aaa; border:1px solid #555; border-radius:3px;',
+        '  padding:0.15rem 0.4rem; cursor:pointer; font:10px monospace; flex-shrink:0; }',
+        '.dl-copy:hover { background:#444; color:#fff; }',
+    ].join('\n');
+    document.head.appendChild(style);
+
+    // Toggle button
+    var toggle = document.createElement('button');
+    toggle.id = 'dev-links-toggle';
+    toggle.textContent = 'LINKS';
+    toggle.onclick = function() { panel.classList.toggle('open'); };
+    document.body.appendChild(toggle);
+
+    // Header
+    var header = document.createElement('div');
+    header.style.cssText = 'display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem;';
+    header.innerHTML = '<span style="color:#af8;font-size:14px;font-weight:bold;">Link Hub</span>';
+    var closeBtn = document.createElement('button');
+    closeBtn.className = 'dl-copy';
+    closeBtn.style.fontSize = '11px';
+    closeBtn.textContent = 'Close';
+    closeBtn.onclick = function() { panel.classList.remove('open'); };
+    header.appendChild(closeBtn);
+    panel.appendChild(header);
+
+    // Groups
+    for (var g = 0; g < DEV_LINKS.length; g++) {
+        var group = DEV_LINKS[g];
+        var groupEl = document.createElement('div');
+        groupEl.className = 'dl-group';
+
+        var title = document.createElement('div');
+        title.className = 'dl-group-title';
+        title.textContent = group.group;
+        groupEl.appendChild(title);
+
+        for (var i = 0; i < group.items.length; i++) {
+            var item = group.items[i];
+            var row = document.createElement('div');
+            row.className = 'dl-item';
+
+            var link = document.createElement('a');
+            link.className = 'dl-link';
+            link.href = item.path;
+            link.textContent = item.label;
+            if (item.path.indexOf('http') === 0) {
+                link.target = '_blank';
+                link.rel = 'noopener';
+            }
+
+            var copyBtn = document.createElement('button');
+            copyBtn.className = 'dl-copy';
+            copyBtn.textContent = 'Copy';
+            copyBtn.dataset.url = item.path;
+            copyBtn.onclick = function() {
+                var btn = this;
+                var url = btn.dataset.url;
+                // Resolve relative URLs
+                if (url.indexOf('http') !== 0) {
+                    url = new URL(url, window.location.href).href;
+                }
+                navigator.clipboard.writeText(url).then(function() {
+                    btn.textContent = 'OK';
+                    setTimeout(function() { btn.textContent = 'Copy'; }, 1000);
+                });
+            };
+
+            row.appendChild(link);
+            row.appendChild(copyBtn);
+            groupEl.appendChild(row);
+        }
+        panel.appendChild(groupEl);
+    }
+
+    document.body.appendChild(panel);
+}
+
 // Init on ?dev
 if (new URLSearchParams(window.location.search).has('dev')) {
     if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', function() { buildPanel(); initFps(); });
+        document.addEventListener('DOMContentLoaded', function() { buildPanel(); buildLinksPanel(); initFps(); });
     } else {
         buildPanel();
+        buildLinksPanel();
         initFps();
     }
 }
