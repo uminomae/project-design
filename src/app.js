@@ -18,6 +18,16 @@ const KNOWLEDGE_ENTRIES = {
         pdf: 'https://uminomae.github.io/pjdhiro/assets/project-design/knowledge/ja/pdf/design-thinking.pdf',
         title: { ja: 'デザイン思考とは', en: 'What is Design Thinking?' },
     },
+    'trust': {
+        md: 'content/knowledge/trust-{lang}.md',
+        pdf: 'https://uminomae.github.io/pjdhiro/assets/project-design/knowledge/ja/pdf/trust.pdf',
+        title: { ja: '信頼とは', en: 'What is Trust?' },
+    },
+    'value': {
+        md: 'content/knowledge/value-{lang}.md',
+        pdf: 'https://uminomae.github.io/pjdhiro/assets/project-design/knowledge/ja/pdf/value.pdf',
+        title: { ja: '価値とは', en: 'What is Value?' },
+    },
 };
 
 let activeKnowledgeKey = null;
