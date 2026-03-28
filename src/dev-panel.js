@@ -245,6 +245,7 @@ function initFps() {
 var DEV_LINKS = [
     { group: 'Query Links', items: [
         { label: 'About', path: './?about' },
+        { label: 'Knowledge: Design Thinking', path: './?knowledge=design-thinking' },
         { label: 'Dev Mode', path: './?dev' },
     ]},
 ];
