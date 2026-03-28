@@ -15,7 +15,7 @@ const langButtons = Array.from(document.querySelectorAll('[data-lang-button]'));
 const KNOWLEDGE_ENTRIES = {
     'design-thinking': {
         md: 'content/knowledge/design-thinking-{lang}.md',
-        pdf: 'https://raw.githubusercontent.com/uminomae/pjdhiro/main/assets/project-design/knowledge/ja/pdf/design-thinking.pdf',
+        pdf: 'https://uminomae.github.io/pjdhiro/assets/project-design/knowledge/ja/pdf/design-thinking.pdf',
         title: { ja: 'デザイン思考とは', en: 'What is Design Thinking?' },
     },
 };
