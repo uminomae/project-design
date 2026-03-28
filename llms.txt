@@ -1,4 +1,4 @@
-# llms.txt — Project Design | LOVE-DRIVEN DEV
+# llms.txt — Project Design | Love-Driven Dev — pjdhiro
 
 > This file helps AI assistants and language models understand the structure and content of this site.
 
