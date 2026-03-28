@@ -115,7 +115,7 @@ function init() {
           float densityAccum = 0.0;
           float maxDepth = 250.0;
 
-          for (int i = 0; i < 25; i++) {
+          for (int i = 0; i < 12; i++) {
               if (t > maxDepth) break;
 
               vec3 pos = camPos + relVec * t;
@@ -177,7 +177,13 @@ function init() {
 
   const clock = new THREE.Clock();
   let lastRenderTime = 0;
-  const FRAME_INTERVAL = 1 / 15;
+  let scrolling = false;
+  let scrollTimer = 0;
+  window.addEventListener('scroll', () => {
+    scrolling = true;
+    clearTimeout(scrollTimer);
+    scrollTimer = setTimeout(() => { scrolling = false; }, 200);
+  }, { passive: true });
   function animate(now) {
     animationId = requestAnimationFrame(animate);
     onScroll();
@@ -185,7 +191,8 @@ function init() {
     uniforms.u_scroll.value = currentScroll;
     uniforms.u_time.value = clock.getElapsedTime() * 0.5;
     var nowSec = (now || 0) * 0.001;
-    if (nowSec - lastRenderTime < FRAME_INTERVAL) return;
+    var interval = scrolling ? (1 / 8) : (1 / 15);
+    if (nowSec - lastRenderTime < interval) return;
     lastRenderTime = nowSec;
     renderer.render(scene, camera);
   }

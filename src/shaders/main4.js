@@ -64,7 +64,7 @@ function init() {
 
           vec2 ab = 2.5 + 1.5 * abs(sin(p * 1.5 + t * 0.1));
 
-          const int iterations = 20;
+          const int iterations = 10;
           for(int i = 0; i < iterations; i++) {
               float r = (i / 2 * 2 == i) ? ab.x : ab.y;
               r += sin(t * 0.5 + float(i) * 0.2) * 0.02;
@@ -155,7 +155,13 @@ function init() {
 
   const clock = new THREE.Clock();
   let lastRenderTime = 0;
-  const FRAME_INTERVAL = 1 / 15;
+  let scrolling = false;
+  let scrollTimer = 0;
+  window.addEventListener('scroll', () => {
+    scrolling = true;
+    clearTimeout(scrollTimer);
+    scrollTimer = setTimeout(() => { scrolling = false; }, 200);
+  }, { passive: true });
   function animate(now) {
     animationId = requestAnimationFrame(animate);
     onScroll();
@@ -163,7 +169,8 @@ function init() {
     uniforms.u_scroll.value = currentScroll;
     uniforms.u_time.value = clock.getElapsedTime() * 0.5;
     var nowSec = (now || 0) * 0.001;
-    if (nowSec - lastRenderTime < FRAME_INTERVAL) return;
+    var interval = scrolling ? (1 / 8) : (1 / 15);
+    if (nowSec - lastRenderTime < interval) return;
     lastRenderTime = nowSec;
     renderer.render(scene, camera);
   }

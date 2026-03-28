@@ -57,7 +57,7 @@ function init() {
         float f = 0.0;
         float amp = 0.5;
         mat2 rot = mat2(0.8, -0.6, 0.6, 0.8);
-        for (int i = 0; i < 3; i++) {
+        for (int i = 0; i < 2; i++) {
           f += amp * noise(p);
           p = rot * p * 2.1;
           amp *= 0.55;
@@ -150,7 +150,13 @@ function init() {
 
   const clock = new THREE.Clock();
   let lastRenderTime = 0;
-  const FRAME_INTERVAL = 1 / 15;
+  let scrolling = false;
+  let scrollTimer = 0;
+  window.addEventListener('scroll', () => {
+    scrolling = true;
+    clearTimeout(scrollTimer);
+    scrollTimer = setTimeout(() => { scrolling = false; }, 200);
+  }, { passive: true });
   function animate(now) {
     animationId = requestAnimationFrame(animate);
     onScroll();
@@ -158,7 +164,8 @@ function init() {
     uniforms.u_scroll.value = currentScroll;
     uniforms.u_time.value = clock.getElapsedTime() * 0.5;
     var nowSec = (now || 0) * 0.001;
-    if (nowSec - lastRenderTime < FRAME_INTERVAL) return;
+    var interval = scrolling ? (1 / 8) : (1 / 15);
+    if (nowSec - lastRenderTime < interval) return;
     lastRenderTime = nowSec;
     renderer.render(scene, camera);
   }

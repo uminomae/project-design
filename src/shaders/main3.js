@@ -79,7 +79,7 @@ function init() {
           float amp = 1.0;
           vec2 e = vec2(0.03, 0.0);
 
-          for(int i = 0; i < 3; i++) {
+          for(int i = 0; i < 2; i++) {
               float n0 = smoothNoise(p + t * 0.2);
               float nx = smoothNoise(p + e.xy + t * 0.2) + smoothNoise(p - e.xy + t * 0.2);
               float ny = smoothNoise(p + e.yx + t * 0.2) + smoothNoise(p - e.yx + t * 0.2);
@@ -148,7 +148,7 @@ function init() {
           float dlaIntensity = 0.0;
           float tw = 0.001;
 
-          const int samples = 3;
+          const int samples = 2;
           for(int i = 0; i < samples; i++) {
               float sr2 = (float(i) + rnd) / float(samples);
               float weight = wcurve(sr2, 1.0, 1.0);
@@ -197,7 +197,13 @@ function init() {
 
   const clock = new THREE.Clock();
   let lastRenderTime = 0;
-  const FRAME_INTERVAL = 1 / 15;
+  let scrolling = false;
+  let scrollTimer = 0;
+  window.addEventListener('scroll', () => {
+    scrolling = true;
+    clearTimeout(scrollTimer);
+    scrollTimer = setTimeout(() => { scrolling = false; }, 200);
+  }, { passive: true });
   function animate(now) {
     animationId = requestAnimationFrame(animate);
     onScroll();
@@ -205,7 +211,8 @@ function init() {
     uniforms.u_scroll.value = currentScroll;
     uniforms.u_time.value = clock.getElapsedTime() * 0.5;
     var nowSec = (now || 0) * 0.001;
-    if (nowSec - lastRenderTime < FRAME_INTERVAL) return;
+    var interval = scrolling ? (1 / 8) : (1 / 15);
+    if (nowSec - lastRenderTime < interval) return;
     lastRenderTime = nowSec;
     renderer.render(scene, camera);
   }
