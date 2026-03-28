@@ -70,9 +70,7 @@ body {
 
 /* Card — 情報のまとまりを示すパネル */
 .glow-card {
-    background: rgba(var(--glow-r),var(--glow-g),var(--glow-b), var(--card-bg-alpha));
-    backdrop-filter: blur(calc(var(--card-blur) * 1px));
-    -webkit-backdrop-filter: blur(calc(var(--card-blur) * 1px));
+    background: rgba(var(--glow-r),var(--glow-g),var(--glow-b), 0.85);
     border: 1px solid rgba(var(--glow-r),var(--glow-g),var(--glow-b), var(--card-border-alpha));
     border-radius: 6px;
     padding: 2rem;
@@ -424,8 +422,7 @@ p:last-child { margin-bottom: 0; }
     text-decoration: none;
     letter-spacing: 0.03em;
     transition: all 0.3s ease;
-    background: rgba(255, 255, 255, 0.5);
-    backdrop-filter: blur(4px);
+    background: rgba(255, 255, 255, 0.85);
 }
 
 .pill--doing {
