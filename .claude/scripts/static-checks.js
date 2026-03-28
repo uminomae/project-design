@@ -51,11 +51,45 @@ if (/Math\.random/.test(appSrc) && /shaders/.test(appSrc)) {
   fail('S3', 'app.js: シェーダーランダム選択ロジックなし');
 }
 
-// S4: index.html の存在
-if (fs.existsSync(path.join(ROOT, 'index.html'))) {
-  pass('S4', 'index.html 存在');
+// S4: モーダルのクエリリンク整合性
+// app.js の KNOWLEDGE_ENTRIES キー / about が index.html と sitemap.xml に揃っているか
+const indexHtml = fs.readFileSync(path.join(ROOT, 'index.html'), 'utf8');
+const sitemap = fs.readFileSync(path.join(ROOT, 'sitemap.xml'), 'utf8');
+
+// app.js から KNOWLEDGE_ENTRIES のキーを抽出
+const entryKeys = [...appSrc.matchAll(/'([a-z-]+)':\s*\{/g)].map(m => m[1]);
+
+// about モーダルのチェック
+const aboutInHtml = /data-about-open/.test(indexHtml);
+const aboutInSitemap = /\?about/.test(sitemap);
+if (aboutInHtml && aboutInSitemap) {
+  pass('S4a', 'about モーダル: HTML トリガー + sitemap あり');
 } else {
-  fail('S4', 'index.html なし');
+  const lacks = [];
+  if (!aboutInHtml) lacks.push('HTML トリガー');
+  if (!aboutInSitemap) lacks.push('sitemap');
+  fail('S4a', `about モーダル: ${lacks.join(' / ')} なし`);
+}
+
+// knowledge モーダルのチェック
+for (const key of entryKeys) {
+  const inHtml = indexHtml.includes(`data-knowledge="${key}"`);
+  const inSitemap = sitemap.includes(`?knowledge=${key}`);
+  if (inHtml && inSitemap) {
+    pass(`S4k-${key}`, `knowledge/${key}: HTML リンク + sitemap あり`);
+  } else {
+    const lacks = [];
+    if (!inHtml) lacks.push('HTML リンク');
+    if (!inSitemap) lacks.push('sitemap');
+    fail(`S4k-${key}`, `knowledge/${key}: ${lacks.join(' / ')} なし`);
+  }
+}
+
+// S5: index.html の存在
+if (fs.existsSync(path.join(ROOT, 'index.html'))) {
+  pass('S5', 'index.html 存在');
+} else {
+  fail('S5', 'index.html なし');
 }
 
 // 結果出力
