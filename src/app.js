@@ -1,4 +1,6 @@
-import './shaders/main.js';
+const shaders = ['./shaders/main.js', './shaders/main2.js', './shaders/main3.js', './shaders/main4.js'];
+const pick = shaders[Math.floor(Math.random() * shaders.length)];
+await import(pick);
 
 const aboutCache = {};
 const knowledgeCache = {};
