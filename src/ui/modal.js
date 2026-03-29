@@ -5,9 +5,9 @@ function setBodyLocked(locked) {
 let revealTimers = [];
 
 export const revealConfig = {
-    initialDelay: 400,
-    stagger: 500,
-    duration: 0.8,
+    initialDelay: 0,
+    stagger: 150,
+    duration: 1.5,
 };
 
 export function revealAboutContent(container) {
