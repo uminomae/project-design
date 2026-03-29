@@ -142,8 +142,7 @@
             class="menu-toggle"
             type="button"
             data-menu-toggle
-            data-ja="Menu"
-            data-en="Menu"
+            data-i18n-key="menu.toggle"
             aria-expanded="false"
             aria-controls="site-menu"
         >Menu</button>
@@ -154,19 +153,7 @@
     </div>
 
     <!-- Dropdown Menu -->
-    <nav class="site-menu" id="site-menu">
-        <span class="menu-label">Sites</span>
-        <a href="/project-design/" class="menu-current" data-ja="HOME" data-en="HOME">HOME</a>
-        <a href="/kesson-space/" data-ja="欠損駆動思考" data-en="KESSON-DRIVEN">欠損駆動思考</a>
-        <a href="/creation-space/" data-ja="創造とは" data-en="CREATION">創造とは</a>
-        <a href="/awareness-space/" data-ja="意識とは" data-en="AWARENESS">意識とは</a>
-        <a href="/pjdhiro/" data-ja="BLOG" data-en="BLOG">BLOG</a>
-        <hr>
-        <span class="menu-label" data-ja="調査ノート" data-en="Research Notes">調査ノート</span>
-        <a href="?knowledge=design-thinking" data-knowledge="design-thinking" data-ja="デザイン思考とは" data-en="What is Design Thinking?">デザイン思考とは</a>
-        <a href="?knowledge=trust" data-knowledge="trust" data-ja="信頼とは" data-en="What is Trust?">信頼とは</a>
-        <a href="?knowledge=value" data-knowledge="value" data-ja="価値とは" data-en="What is Value?">価値とは</a>
-    </nav>
+    <nav class="site-menu" id="site-menu" aria-label="Site menu"></nav>
 
     <div id="webgl-container"></div>
 
@@ -178,114 +165,104 @@
                 <span class="hero-label glow-heading">Love-Driven Dev — pjdhiro</span>
                 <h1 class="glow-heading">Project<br>Design</h1>
                 <div class="hero-notice prose-block glow-text">
-                    <p data-ja="Love駆動開発と呼びたい現象を、これまで何度も経験してきました。<br>ここでいうプロジェクトは「やること（Doing）」だけでなく「起きていること（Being）」まで含む出来事です。"
-                       data-en="Many times, I have experienced what I want to call Love-Driven Development.<br>Here, a project is an event that includes not only &quot;Doing&quot; but also &quot;Being.&quot;">Love駆動開発と呼びたい現象を、これまで何度も経験してきました。<br>
+                    <p data-i18n-key="hero.notice">Love駆動開発と呼びたい現象を、これまで何度も経験してきました。<br>
                     ここでいうプロジェクトは「やること（Doing）」だけでなく「起きていること（Being）」まで含む出来事です。</p>
                 </div>
-                <button class="about-trigger" type="button" data-about-open aria-label="About this site">
+                <button class="about-trigger" type="button" data-modal-open="about" data-i18n-aria-label-key="hero.aboutAria" aria-label="このサイトについて">
                     <span class="about-trigger__letter">i</span>
                 </button>
             </header>
 
             <!-- Overview -->
             <section>
-                <span class="section-label glow-heading">Overview</span>
-                <h2 class="glow-heading" data-ja="概要" data-en="Overview">概要</h2>
+                <span class="section-label glow-heading" data-i18n-key="section.overview.label">Overview</span>
+                <h2 class="glow-heading" data-i18n-key="section.overview.title">概要</h2>
                 <div class="overview-text prose-block glow-text">
-                    <p data-ja="プロジェクトデザインとは、プロジェクトの構想・設計・実行だけでなく、実行・管理の方法そのものを対象化し、構想・設計する営みです。"
-                       data-en="Project Design is a practice that not only envisions, designs, and executes projects, but also takes the methods of execution and management themselves as its object of inquiry, and envisions and designs them.">プロジェクトデザインとは、プロジェクトの構想・設計・実行だけでなく、実行・管理の方法そのものを対象化し、構想・設計する営みです。</p>
-                    <p data-ja="まず、その基底として射程と領域を固定し、以降の議論を「やること（Doing）」と「起きてること（Being）」に分けて整理します。"
-                       data-en="First, we fix the scope and domain as the foundation, and organize the subsequent discussion into &quot;Doing&quot; and &quot;Being.&quot;">まず、その基底として射程と領域を固定し、以降の議論を「やること（Doing）」と「起きてること（Being）」に分けて整理します。</p>
-                    <p data-ja="プロジェクト実務は、環境適応（物質的条件）とコミュニケーション（非物質的条件）に大別できます。本サイトでは環境適応を前提知（PMBOK等）とし、コミュニケーションを情報処理／感情処理に分解して、とくに感情処理を中心に扱います。"
-                       data-en="Project practice can be broadly divided into environmental adaptation (material conditions) and communication (non-material conditions). This site treats environmental adaptation as prerequisite knowledge (PMBOK, etc.), decomposes communication into information processing and emotional processing, and focuses especially on emotional processing.">プロジェクト実務は、環境適応（物質的条件）とコミュニケーション（非物質的条件）に大別できます。本サイトでは環境適応を前提知（PMBOK等）とし、コミュニケーションを情報処理／感情処理に分解して、とくに感情処理を中心に扱います。</p>
+                    <p data-i18n-key="overview.p1">プロジェクトデザインとは、プロジェクトの構想・設計・実行だけでなく、実行・管理の方法そのものを対象化し、構想・設計する営みです。</p>
+                    <p data-i18n-key="overview.p2">まず、その基底として射程と領域を固定し、以降の議論を「やること（Doing）」と「起きてること（Being）」に分けて整理します。</p>
+                    <p data-i18n-key="overview.p3">プロジェクト実務は、環境適応（物質的条件）とコミュニケーション（非物質的条件）に大別できます。本サイトでは環境適応を前提知（PMBOK等）とし、コミュニケーションを情報処理／感情処理に分解して、とくに感情処理を中心に扱います。</p>
                 </div>
                 <div class="grid">
                     <div class="card glow-card">
-                        <h3 data-ja="定義" data-en="Definition">定義</h3>
+                        <h3 data-i18n-key="overview.definition.title">定義</h3>
                         <ul>
-                            <li data-ja="プロジェクトの構想・設計・実行" data-en="Envisioning, designing, and executing projects">プロジェクトの構想・設計・実行</li>
-                            <li data-ja="実行・管理方法の構想・設計" data-en="Envisioning and designing execution and management methods">実行・管理方法の構想・設計</li>
+                            <li data-i18n-key="overview.definition.item1">プロジェクトの構想・設計・実行</li>
+                            <li data-i18n-key="overview.definition.item2">実行・管理方法の構想・設計</li>
                         </ul>
                     </div>
                     <div class="card glow-card">
-                        <h3 data-ja="射程" data-en="Scope">射程</h3>
-                        <p data-ja="営利・非営利の事業を主たる適用対象とする。研究、人生など、主体が目的を持って行為する営み一般に適用できる。"
-                           data-en="Primarily applicable to profit and non-profit enterprises. Generally applicable to any endeavor where a subject acts with purpose, such as research or life itself.">営利・非営利の事業を主たる適用対象とする。研究、人生など、主体が目的を持って行為する営み一般に適用できる。</p>
+                        <h3 data-i18n-key="overview.scope.title">射程</h3>
+                        <p data-i18n-key="overview.scope.body">営利・非営利の事業を主たる適用対象とする。研究、人生など、主体が目的を持って行為する営み一般に適用できる。</p>
                     </div>
                     <div class="card glow-card">
-                        <h3 data-ja="領域" data-en="Domain">領域</h3>
-                        <p data-ja="コミュニケーション（情報処理＋感情処理）と環境適応（経営学など）"
-                           data-en="Communication (information processing + emotional processing) and environmental adaptation (management studies, etc.)">コミュニケーション（情報処理＋感情処理）と環境適応（経営学など）</p>
+                        <h3 data-i18n-key="overview.domain.title">領域</h3>
+                        <p data-i18n-key="overview.domain.body">コミュニケーション（情報処理＋感情処理）と環境適応（経営学など）</p>
                     </div>
                 </div>
             </section>
 
             <!-- Doing -->
             <section>
-                <span class="section-label glow-heading">Doing</span>
-                <h2 class="glow-heading" data-ja="やること" data-en="Doing">やること</h2>
+                <span class="section-label glow-heading" data-i18n-key="section.doing.label">Doing</span>
+                <h2 class="glow-heading" data-i18n-key="section.doing.title">やること</h2>
                 <div class="grid">
                     <div class="card glow-card">
-                        <h3 data-ja="行動原理" data-en="Principles of Action">行動原理</h3>
+                        <h3 data-i18n-key="doing.principles.title">行動原理</h3>
                         <ul>
-                            <li data-ja="多様な価値観を受容れる" data-en="Embrace diverse values">多様な価値観を受容れる</li>
-                            <li data-ja="バランスを達成する" data-en="Achieve balance">バランスを達成する</li>
-                            <li data-ja="状況に常に適応する" data-en="Continuously adapt to the situation">状況に常に適応する</li>
+                            <li data-i18n-key="doing.principles.item1">多様な価値観を受容れる</li>
+                            <li data-i18n-key="doing.principles.item2">バランスを達成する</li>
+                            <li data-i18n-key="doing.principles.item3">状況に常に適応する</li>
                         </ul>
                     </div>
                     <div class="card glow-card">
-                        <h3 data-ja="環境適応" data-en="Environmental Adaptation">環境適応</h3>
-                        <p data-ja="「PMBOK第7版」等に基づく物質的条件の整理。本サイトでは前提知とし、非物質的条件へ焦点を当てます。"
-                           data-en="Organization of material conditions based on PMBOK 7th Edition, etc. This site treats these as prerequisite knowledge and focuses on non-material conditions.">「PMBOK第7版」等に基づく物質的条件の整理。本サイトでは前提知とし、非物質的条件へ焦点を当てます。</p>
+                        <h3 data-i18n-key="doing.environment.title">環境適応</h3>
+                        <p data-i18n-key="doing.environment.body">「PMBOK第7版」等に基づく物質的条件の整理。本サイトでは前提知とし、非物質的条件へ焦点を当てます。</p>
                     </div>
                     <div class="card glow-card">
-                        <h3 data-ja="コミュニケーション" data-en="Communication">コミュニケーション</h3>
-                        <p data-ja="情報処理と感情処理。心の反応を通じて感じ取る感情の側面を中心に扱います。"
-                           data-en="Information processing and emotional processing. We focus on the emotional aspects perceived through our inner responses.">情報処理と感情処理。心の反応を通じて感じ取る感情の側面を中心に扱います。</p>
+                        <h3 data-i18n-key="doing.communication.title">コミュニケーション</h3>
+                        <p data-i18n-key="doing.communication.body">情報処理と感情処理。心の反応を通じて感じ取る感情の側面を中心に扱います。</p>
                     </div>
                 </div>
                 <div class="pills">
-                    <a href="/kesson-space/" class="pill pill--doing" data-ja="欠損駆動思考" data-en="Kesson-Driven Thinking">欠損駆動思考</a>
-                    <a href="/pjdhiro/thinking-bi/" class="pill pill--doing" data-ja="美駆動思考" data-en="Beauty-Driven Thinking">美駆動思考</a>
-                    <a href="/pjdhiro/emotional-processing/" class="pill pill--doing" data-ja="感情処理（総論）" data-en="Emotional Processing">感情処理（総論）</a>
-                    <a href="/pjdhiro/meditation/" class="pill pill--doing" data-ja="瞑想" data-en="Meditation">瞑想</a>
+                    <a href="/kesson-space/" class="pill pill--doing" data-i18n-key="pill.kesson">欠損駆動思考</a>
+                    <a href="/pjdhiro/thinking-bi/" class="pill pill--doing" data-i18n-key="pill.beauty">美駆動思考</a>
+                    <a href="/pjdhiro/emotional-processing/" class="pill pill--doing" data-i18n-key="pill.emotionalProcessing">感情処理（総論）</a>
+                    <a href="/pjdhiro/meditation/" class="pill pill--doing" data-i18n-key="pill.meditation">瞑想</a>
                 </div>
             </section>
 
             <!-- Being -->
             <section>
-                <span class="section-label glow-heading">Being</span>
-                <h2 class="glow-heading" data-ja="起きていること" data-en="Being">起きていること</h2>
+                <span class="section-label glow-heading" data-i18n-key="section.being.label">Being</span>
+                <h2 class="glow-heading" data-i18n-key="section.being.title">起きていること</h2>
                 <div class="being-desc prose-block glow-text">
-                    <p data-ja="場（Field）が現れ、差異＝波（Wave）が立ち上がり、縁＝境界（Relation）が結ばれ、衝突が渦（Spinor）として回り、成果が束（Bundle）として成る。プロジェクトの現在地を知ること。"
-                       data-en="Fields emerge, waves of difference arise, relations form, collisions spiral, and outcomes bundle together. To know where the project stands.">場（Field）が現れ、差異＝波（Wave）が立ち上がり、縁＝境界（Relation）が結ばれ、衝突が渦（Spinor）として回り、成果が束（Bundle）として成る。プロジェクトの現在地を知ること。</p>
+                    <p data-i18n-key="section.being.body">場（Field）が現れ、差異＝波（Wave）が立ち上がり、縁＝境界（Relation）が結ばれ、衝突が渦（Spinor）として回り、成果が束（Bundle）として成る。プロジェクトの現在地を知ること。</p>
                 </div>
                 <div class="pills">
-                    <a href="/creation-space/" class="pill pill--being" data-ja="創造のモデル" data-en="Model of Creation">創造のモデル</a>
-                    <a href="/awareness-space/" class="pill pill--being" data-ja="意識のモデル" data-en="Model of Awareness">意識のモデル</a>
+                    <a href="/creation-space/" class="pill pill--being" data-i18n-key="pill.creationModel">創造のモデル</a>
+                    <a href="/awareness-space/" class="pill pill--being" data-i18n-key="pill.awarenessModel">意識のモデル</a>
                 </div>
             </section>
 
             <!-- Future + Repos -->
             <section>
-                <span class="section-label glow-heading">Direction</span>
-                <h2 class="glow-heading" data-ja="今後の方向性" data-en="Future Direction">今後の方向性</h2>
+                <span class="section-label glow-heading" data-i18n-key="section.direction.label">Direction</span>
+                <h2 class="glow-heading" data-i18n-key="section.direction.title">今後の方向性</h2>
                 <div class="future-text prose-block glow-text">
-                    <p data-ja="本ページで固定した「射程・領域・Doing/Beingの二分」は基底（土台・骨格）です。以降の各ページは、この骨格の上に展開します。"
-                       data-en="The &quot;scope, domain, and Doing/Being dichotomy&quot; established on this page is the foundation (base and skeleton). Each subsequent page develops upon this skeleton.">本ページで固定した「射程・領域・Doing/Beingの二分」は基底（土台・骨格）です。以降の各ページは、この骨格の上に展開します。</p>
+                    <p data-i18n-key="section.direction.body">本ページで固定した「射程・領域・Doing/Beingの二分」は基底（土台・骨格）です。以降の各ページは、この骨格の上に展開します。</p>
                 </div>
                 <div class="grid repo-grid">
                     <a href="/kesson-space/" class="repo-card glow-link">
-                        <span class="repo-card__title" data-ja="欠損駆動思考" data-en="Kesson-Driven Thinking">欠損駆動思考</span>
-                        <span class="repo-card__desc" data-ja="" data-en=""></span>
+                        <span class="repo-card__title" data-i18n-key="repo.kesson">欠損駆動思考</span>
+                        <span class="repo-card__desc"></span>
                     </a>
                     <a href="/creation-space/" class="repo-card glow-link">
-                        <span class="repo-card__title" data-ja="創造とは" data-en="What Is Creation">創造とは</span>
-                        <span class="repo-card__desc" data-ja="" data-en=""></span>
+                        <span class="repo-card__title" data-i18n-key="repo.creation">創造とは</span>
+                        <span class="repo-card__desc"></span>
                     </a>
                     <a href="/awareness-space/" class="repo-card glow-link">
-                        <span class="repo-card__title" data-ja="意識とは" data-en="What Is Awareness">意識とは</span>
-                        <span class="repo-card__desc" data-ja="" data-en=""></span>
+                        <span class="repo-card__title" data-i18n-key="repo.awareness">意識とは</span>
+                        <span class="repo-card__desc"></span>
                     </a>
                 </div>
             </section>
@@ -316,10 +293,10 @@
     </div>
 
     <!-- About Modal -->
-    <div id="about-modal" class="about-modal" aria-hidden="true">
-        <div class="about-modal__backdrop" data-about-close></div>
-        <div class="about-modal__panel">
-            <button class="about-modal__close" type="button" data-about-close aria-label="Close">
+    <div id="about-modal" class="modal modal--about" aria-hidden="true">
+        <div class="modal__backdrop" data-modal-close="about"></div>
+        <div class="modal__panel modal__panel--about">
+            <button class="modal__close" type="button" data-modal-close="about" data-i18n-aria-label-key="modal.close" aria-label="閉じる">
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 4l8 8M12 4l-8 8" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
             </button>
             <div id="about-body" class="about-modal__body"></div>
@@ -327,12 +304,12 @@
     </div>
 
     <!-- Knowledge Modal -->
-    <div id="knowledge-modal" class="knowledge-modal" aria-hidden="true">
-        <div class="knowledge-modal__backdrop" data-knowledge-close></div>
-        <div class="knowledge-modal__panel">
+    <div id="knowledge-modal" class="modal modal--knowledge" aria-hidden="true">
+        <div class="modal__backdrop" data-modal-close="knowledge"></div>
+        <div class="modal__panel modal__panel--knowledge">
             <div class="knowledge-modal__header">
-                <a id="knowledge-pdf-link" class="knowledge-modal__pdf" href="#" target="_blank" rel="noopener" aria-disabled="true" data-ja="PDF準備中" data-en="PDF pending">PDF準備中</a>
-                <button class="knowledge-modal__close" type="button" data-knowledge-close aria-label="Close">
+                <a id="knowledge-pdf-link" class="knowledge-modal__pdf" href="#" target="_blank" rel="noopener" aria-disabled="true" data-i18n-key="knowledge.pdf.pending">PDF準備中</a>
+                <button class="modal__close" type="button" data-modal-close="knowledge" data-i18n-aria-label-key="modal.close" aria-label="閉じる">
                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 4l8 8M12 4l-8 8" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
                 </button>
             </div>

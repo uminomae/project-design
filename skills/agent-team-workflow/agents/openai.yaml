@@ -1,0 +1,7 @@
+interface:
+  display_name: "Agent Team Workflow"
+  short_description: "Run tasks with a lightweight multi-agent workflow"
+  default_prompt: "Use $agent-team-workflow to run a concise SURVEY -> REVIEW -> PLAN workflow with researcher and critic roles before execution."
+
+policy:
+  allow_implicit_invocation: true

@@ -1,327 +1,226 @@
-const shaders = ['./shaders/main.js', './shaders/main2.js', './shaders/main3.js', './shaders/main4.js'];
-const pick = shaders[Math.floor(Math.random() * shaders.length)];
-await import(pick);
+import { loadRandomShader } from './bootstrap/shaders.js';
+import { KNOWLEDGE_ENTRIES, MENU_ITEMS, SHADER_PATHS, TRANSLATIONS } from './content/site-data.mjs';
+import { renderMarkdown } from './lib/render-markdown.js';
+import { getSearchParams, updateSearchParams } from './lib/query-state.js';
+import { createI18n } from './ui/i18n.js';
+import { createMenuController, renderSiteMenu } from './ui/menu.js';
+import { createModalController } from './ui/modal.js';
 
-const aboutCache = {};
-const knowledgeCache = {};
+await loadRandomShader(SHADER_PATHS, import.meta.url);
 
-const menu = document.getElementById('site-menu');
+const aboutCache = new Map();
+const knowledgeCache = new Map();
+
+const menuElement = document.getElementById('site-menu');
 const menuToggle = document.querySelector('[data-menu-toggle]');
-const aboutModal = document.getElementById('about-modal');
+const aboutModalElement = document.getElementById('about-modal');
 const aboutBody = document.getElementById('about-body');
-const knowledgeModal = document.getElementById('knowledge-modal');
+const knowledgeModalElement = document.getElementById('knowledge-modal');
 const knowledgeBody = document.getElementById('knowledge-body');
 const knowledgePdfLink = document.getElementById('knowledge-pdf-link');
 const langButtons = Array.from(document.querySelectorAll('[data-lang-button]'));
 
-const KNOWLEDGE_ENTRIES = {
-    'design-thinking': {
-        md: 'content/knowledge/design-thinking-{lang}.md',
-        pdf: 'https://uminomae.github.io/pjdhiro/assets/project-design/knowledge/ja/pdf/design-thinking.pdf',
-        title: { ja: 'デザイン思考とは', en: 'What is Design Thinking?' },
-    },
-    'trust': {
-        md: 'content/knowledge/trust-{lang}.md',
-        pdf: 'https://uminomae.github.io/pjdhiro/assets/project-design/knowledge/ja/pdf/trust.pdf',
-        title: { ja: '信頼とは', en: 'What is Trust?' },
-    },
-    'value': {
-        md: 'content/knowledge/value-{lang}.md',
-        pdf: 'https://uminomae.github.io/pjdhiro/assets/project-design/knowledge/ja/pdf/value.pdf',
-        title: { ja: '価値とは', en: 'What is Value?' },
-    },
-};
+const menuController = createMenuController({
+    menuElement,
+    toggleButton: menuToggle,
+});
+
+const aboutModal = createModalController(aboutModalElement);
+const knowledgeModal = createModalController(knowledgeModalElement);
 
 let activeKnowledgeKey = null;
 
-function closeMenu() {
-    menu.classList.remove('open');
-    menuToggle.setAttribute('aria-expanded', 'false');
+const i18n = createI18n({
+    langButtons,
+    translations: TRANSLATIONS,
+    onLanguageChange: async (lang) => {
+        if (aboutModal.isOpen()) {
+            await loadAboutContent(lang);
+        }
+
+        if (knowledgeModal.isOpen() && activeKnowledgeKey) {
+            await loadKnowledgeContent(activeKnowledgeKey, lang);
+        }
+    },
+});
+
+renderSiteMenu({
+    menuElement,
+    items: MENU_ITEMS,
+    knowledgeEntries: KNOWLEDGE_ENTRIES,
+    translate: i18n.translate,
+    lang: i18n.getCurrentLang(),
+});
+i18n.applyTranslations(menuElement, i18n.getCurrentLang());
+
+function renderAbout(markdown) {
+    aboutBody.innerHTML = renderMarkdown(markdown);
 }
 
-function toggleMenu() {
-    const isOpen = menu.classList.toggle('open');
-    menuToggle.setAttribute('aria-expanded', String(isOpen));
-}
-
-function renderMarkdown(md) {
-    let html = md
-        .replace(/^---$/gm, '<hr>')
-        .replace(/^### (.+)$/gm, '<h3>$1</h3>')
-        .replace(/^## (.+)$/gm, '<h2>$1</h2>')
-        .replace(/^# (.+)$/gm, '<h1>$1</h1>')
-        .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
-        .replace(/\*(.+?)\*/g, '<em>$1</em>')
-        .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener">$1</a>');
-
-    // Tables
-    html = html.replace(/(?:^|\n)((?:\|.+\|\n)+)/g, (match, tableBlock) => {
-        const rows = tableBlock.trim().split('\n');
-        if (rows.length < 2) return match;
-
-        const parseRow = (row) =>
-            row.split('|').slice(1, -1).map(cell => cell.trim());
-
-        const headerCells = parseRow(rows[0]);
-        // Skip separator row (row[1])
-        const bodyRows = rows.slice(2);
-
-        let table = '<table><thead><tr>';
-        for (const cell of headerCells) {
-            table += `<th>${cell}</th>`;
+async function fetchTextWithFallback(path, fallbackPath) {
+    try {
+        const response = await fetch(path);
+        const text = response.ok ? await response.text() : '';
+        if (text || !fallbackPath) {
+            return text;
         }
-        table += '</tr></thead><tbody>';
-        for (const row of bodyRows) {
-            const cells = parseRow(row);
-            table += '<tr>';
-            for (const cell of cells) {
-                table += `<td>${cell}</td>`;
-            }
-            table += '</tr>';
-        }
-        table += '</tbody></table>';
-        return table;
-    });
 
-    // Ordered lists
-    html = html.replace(/(?:^|\n)((?:\d+\. .+\n?)+)/g, (match, listBlock) => {
-        const items = listBlock.trim().split('\n');
-        let list = '<ol>';
-        for (const item of items) {
-            list += `<li>${item.replace(/^\d+\.\s*/, '')}</li>`;
-        }
-        list += '</ol>';
-        return list;
-    });
-
-    // Unordered lists
-    html = html.replace(/(?:^|\n)((?:- .+\n?)+)/g, (match, listBlock) => {
-        const items = listBlock.trim().split('\n');
-        let list = '<ul>';
-        for (const item of items) {
-            list += `<li>${item.replace(/^-\s*/, '')}</li>`;
-        }
-        list += '</ul>';
-        return list;
-    });
-
-    // Paragraphs: lines not starting with HTML tags
-    html = html
-        .split('\n')
-        .map(line => {
-            const trimmed = line.trim();
-            if (!trimmed) return '';
-            if (/^<(h[1-3]|hr|table|thead|tbody|tr|th|td|ol|ul|li|\/|p)/.test(trimmed)) return trimmed;
-            return `<p>${trimmed}</p>`;
-        })
-        .join('\n')
-        .replace(/<p>\s*<\/p>/g, '');
-
-    return html;
-}
-
-function renderAbout(md) {
-    aboutBody.innerHTML = renderMarkdown(md);
+        const fallbackResponse = await fetch(fallbackPath);
+        return fallbackResponse.ok ? await fallbackResponse.text() : '';
+    } catch {
+        return '';
+    }
 }
 
 async function loadAboutContent(lang) {
-    const cached = aboutCache[lang];
+    const cached = aboutCache.get(lang);
     if (cached !== undefined) {
         renderAbout(cached);
         return;
     }
 
-    try {
-        const response = await fetch(`content/about-${lang}.md`);
-        const markdown = response.ok ? await response.text() : '';
-        aboutCache[lang] = markdown;
-        renderAbout(markdown);
-    } catch {
-        aboutCache[lang] = '';
-        renderAbout('');
-    }
+    const markdown = await fetchTextWithFallback(`content/about-${lang}.md`);
+    aboutCache.set(lang, markdown);
+    renderAbout(markdown);
 }
 
-function getCurrentLang() {
-    return document.documentElement.lang || 'ja';
+function updateKnowledgePdfLink(entry, lang) {
+    if (entry.pdfUrl) {
+        knowledgePdfLink.href = entry.pdfUrl;
+        knowledgePdfLink.setAttribute('aria-disabled', 'false');
+        knowledgePdfLink.textContent = i18n.translate('knowledge.pdf.open', lang);
+        return;
+    }
+
+    knowledgePdfLink.href = '#';
+    knowledgePdfLink.setAttribute('aria-disabled', 'true');
+    knowledgePdfLink.textContent = i18n.translate('knowledge.pdf.pending', lang);
 }
 
-async function switchLang(lang) {
-    document.documentElement.lang = lang;
-
-    for (const button of langButtons) {
-        button.classList.toggle('active', button.dataset.langButton === lang);
+async function loadKnowledgeContent(key, lang) {
+    const entry = KNOWLEDGE_ENTRIES[key];
+    if (!entry) {
+        return;
     }
 
-    const key = `data-${lang}`;
-    for (const element of document.querySelectorAll('[data-ja][data-en]')) {
-        const value = element.getAttribute(key);
-        if (value !== null) {
-            element.innerHTML = value;
-        }
+    const cacheKey = `${key}:${lang}`;
+    let markdown = knowledgeCache.get(cacheKey);
+
+    if (markdown === undefined) {
+        const mdPath = entry.mdPath.replace('{lang}', lang);
+        const fallbackPath = lang === 'ja'
+            ? undefined
+            : entry.mdPath.replace('{lang}', 'ja');
+        markdown = await fetchTextWithFallback(mdPath, fallbackPath);
+        knowledgeCache.set(cacheKey, markdown);
     }
 
-    if (aboutModal.classList.contains('open')) {
-        await loadAboutContent(lang);
-    }
-
-    if (knowledgeModal.classList.contains('open') && activeKnowledgeKey) {
-        await loadKnowledgeContent(activeKnowledgeKey, lang);
-    }
+    knowledgeBody.innerHTML = renderMarkdown(markdown);
+    updateKnowledgePdfLink(entry, lang);
 }
-
-// --- About modal ---
 
 async function openAbout({ pushHistory = true } = {}) {
-    await loadAboutContent(getCurrentLang());
-    aboutModal.classList.add('open');
-    aboutModal.setAttribute('aria-hidden', 'false');
-    document.body.style.overflow = 'hidden';
+    await loadAboutContent(i18n.getCurrentLang());
+    knowledgeModal.close();
+    activeKnowledgeKey = null;
+    aboutModal.open();
 
-    if (pushHistory && !new URLSearchParams(window.location.search).has('about')) {
-        const url = new URL(window.location.href);
-        url.searchParams.set('about', '');
-        history.pushState({ modal: 'about' }, '', url.toString());
+    if (pushHistory && !getSearchParams().has('about')) {
+        updateSearchParams(
+            { about: '', knowledge: null },
+            { state: { modal: 'about' } },
+        );
     }
 }
 
 function closeAbout({ updateHistory = true } = {}) {
-    if (!aboutModal.classList.contains('open')) {
+    if (!aboutModal.isOpen()) {
         return;
     }
 
-    aboutModal.classList.remove('open');
-    aboutModal.setAttribute('aria-hidden', 'true');
-    document.body.style.overflow = '';
+    aboutModal.close();
 
     if (!updateHistory) {
         return;
     }
 
-    if (new URLSearchParams(window.location.search).has('about')) {
-        if (history.state && history.state.modal === 'about') {
+    if (getSearchParams().has('about')) {
+        if (history.state?.modal === 'about') {
             history.back();
             return;
         }
 
-        const url = new URL(window.location.href);
-        url.searchParams.delete('about');
-        history.replaceState(null, '', `${url.pathname}${url.search}${url.hash}`);
-    }
-}
-
-// --- Knowledge modal ---
-
-async function loadKnowledgeContent(key, lang) {
-    const entry = KNOWLEDGE_ENTRIES[key];
-    if (!entry) return;
-
-    const cacheKey = `${key}-${lang}`;
-    let markdown = knowledgeCache[cacheKey];
-
-    if (markdown === undefined) {
-        try {
-            const mdPath = entry.md.replace('{lang}', lang);
-            const response = await fetch(mdPath);
-            markdown = response.ok ? await response.text() : '';
-            // Fallback to ja if lang file not found
-            if (!markdown && lang !== 'ja') {
-                const fallback = await fetch(entry.md.replace('{lang}', 'ja'));
-                markdown = fallback.ok ? await fallback.text() : '';
-            }
-        } catch {
-            markdown = '';
-        }
-        knowledgeCache[cacheKey] = markdown;
-    }
-
-    knowledgeBody.innerHTML = renderMarkdown(markdown);
-
-    // PDF link
-    if (entry.pdf) {
-        knowledgePdfLink.href = entry.pdf;
-        knowledgePdfLink.setAttribute('aria-disabled', 'false');
-        const pdfLabel = lang === 'en' ? 'Open PDF' : 'PDFで読む';
-        knowledgePdfLink.textContent = pdfLabel;
-    } else {
-        knowledgePdfLink.href = '#';
-        knowledgePdfLink.setAttribute('aria-disabled', 'true');
-        const pendingLabel = lang === 'en' ? 'PDF pending' : 'PDF準備中';
-        knowledgePdfLink.textContent = pendingLabel;
+        updateSearchParams({ about: null }, { replace: true });
     }
 }
 
 async function openKnowledge(key, { pushHistory = true } = {}) {
-    activeKnowledgeKey = key;
-    await loadKnowledgeContent(key, getCurrentLang());
-    knowledgeModal.classList.add('open');
-    knowledgeModal.setAttribute('aria-hidden', 'false');
-    document.body.style.overflow = 'hidden';
+    if (!KNOWLEDGE_ENTRIES[key]) {
+        return;
+    }
 
-    if (pushHistory) {
-        const params = new URLSearchParams(window.location.search);
-        if (params.get('knowledge') !== key) {
-            const url = new URL(window.location.href);
-            url.searchParams.set('knowledge', key);
-            history.pushState({ modal: 'knowledge', key }, '', url.toString());
-        }
+    activeKnowledgeKey = key;
+    await loadKnowledgeContent(key, i18n.getCurrentLang());
+    aboutModal.close();
+    knowledgeModal.open();
+
+    if (pushHistory && getSearchParams().get('knowledge') !== key) {
+        updateSearchParams(
+            { knowledge: key, about: null },
+            { state: { modal: 'knowledge', key } },
+        );
     }
 }
 
 function closeKnowledge({ updateHistory = true } = {}) {
-    if (!knowledgeModal.classList.contains('open')) {
+    if (!knowledgeModal.isOpen()) {
         return;
     }
 
-    knowledgeModal.classList.remove('open');
-    knowledgeModal.setAttribute('aria-hidden', 'true');
-    document.body.style.overflow = '';
+    knowledgeModal.close();
     activeKnowledgeKey = null;
 
     if (!updateHistory) {
         return;
     }
 
-    const params = new URLSearchParams(window.location.search);
-    if (params.has('knowledge')) {
-        if (history.state && history.state.modal === 'knowledge') {
+    if (getSearchParams().has('knowledge')) {
+        if (history.state?.modal === 'knowledge') {
             history.back();
             return;
         }
 
-        const url = new URL(window.location.href);
-        url.searchParams.delete('knowledge');
-        history.replaceState(null, '', `${url.pathname}${url.search}${url.hash}`);
+        updateSearchParams({ knowledge: null }, { replace: true });
     }
 }
-
-// --- Event handling ---
 
 function handleDocumentClick(event) {
     const target = event.target;
 
     if (target.closest('[data-menu-toggle]')) {
-        toggleMenu();
+        menuController.toggle();
         return;
     }
 
     const langButton = target.closest('[data-lang-button]');
     if (langButton) {
-        switchLang(langButton.dataset.langButton);
+        i18n.switchLang(langButton.dataset.langButton);
         return;
     }
 
-    if (target.closest('[data-about-open]')) {
+    const openTrigger = target.closest('[data-modal-open]');
+    if (openTrigger?.dataset.modalOpen === 'about') {
         openAbout();
         return;
     }
 
-    if (target.closest('[data-about-close]')) {
+    const closeTrigger = target.closest('[data-modal-close]');
+    if (closeTrigger?.dataset.modalClose === 'about') {
         closeAbout();
         return;
     }
 
-    if (target.closest('[data-knowledge-close]')) {
+    if (closeTrigger?.dataset.modalClose === 'knowledge') {
         closeKnowledge();
         return;
     }
@@ -329,33 +228,30 @@ function handleDocumentClick(event) {
     const knowledgeLink = target.closest('[data-knowledge]');
     if (knowledgeLink) {
         event.preventDefault();
-        closeMenu();
+        menuController.close();
         openKnowledge(knowledgeLink.dataset.knowledge);
         return;
     }
 
-    if (menu.classList.contains('open') && !target.closest('#site-menu')) {
-        closeMenu();
+    if (menuController.isOpen() && !target.closest('#site-menu')) {
+        menuController.close();
     }
 }
 
 function handlePopState() {
-    const params = new URLSearchParams(window.location.search);
+    const params = getSearchParams();
 
-    // About
-    const hasAbout = params.has('about');
-    if (hasAbout) {
-        if (!aboutModal.classList.contains('open')) {
+    if (params.has('about')) {
+        if (!aboutModal.isOpen()) {
             openAbout({ pushHistory: false });
         }
     } else {
         closeAbout({ updateHistory: false });
     }
 
-    // Knowledge
     const knowledgeKey = params.get('knowledge');
     if (knowledgeKey && KNOWLEDGE_ENTRIES[knowledgeKey]) {
-        if (!knowledgeModal.classList.contains('open') || activeKnowledgeKey !== knowledgeKey) {
+        if (!knowledgeModal.isOpen() || activeKnowledgeKey !== knowledgeKey) {
             openKnowledge(knowledgeKey, { pushHistory: false });
         }
     } else {
@@ -373,9 +269,9 @@ async function init() {
     });
     window.addEventListener('popstate', handlePopState);
 
-    await switchLang(getCurrentLang());
+    await i18n.switchLang(i18n.getCurrentLang());
 
-    const params = new URLSearchParams(window.location.search);
+    const params = getSearchParams();
 
     if (params.has('about')) {
         history.replaceState({ modal: 'about' }, '', window.location.href);

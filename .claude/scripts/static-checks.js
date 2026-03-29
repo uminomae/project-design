@@ -7,6 +7,7 @@
 
 const fs = require('fs');
 const path = require('path');
+const { pathToFileURL } = require('url');
 
 const ROOT = path.resolve(__dirname, '../..');
 const results = [];
@@ -43,60 +44,67 @@ for (const f of SHADER_FILES) {
   }
 }
 
-// S3: app.js がランダム選択ロジックを含むか
-const appSrc = fs.readFileSync(path.join(ROOT, 'src/app.js'), 'utf8');
-if (/Math\.random/.test(appSrc) && /shaders/.test(appSrc)) {
-  pass('S3', 'app.js: シェーダーランダム選択ロジックあり');
-} else {
-  fail('S3', 'app.js: シェーダーランダム選択ロジックなし');
-}
+async function main() {
+  const appSrc = fs.readFileSync(path.join(ROOT, 'src/app.js'), 'utf8');
+  const shaderBootstrapSrc = fs.readFileSync(path.join(ROOT, 'src/bootstrap/shaders.js'), 'utf8');
+  const menuSrc = fs.readFileSync(path.join(ROOT, 'src/ui/menu.js'), 'utf8');
+  const indexHtml = fs.readFileSync(path.join(ROOT, 'index.html'), 'utf8');
+  const sitemap = fs.readFileSync(path.join(ROOT, 'sitemap.xml'), 'utf8');
+  const siteData = await import(pathToFileURL(path.join(ROOT, 'src/content/site-data.mjs')).href);
 
-// S4: モーダルのクエリリンク整合性
-// app.js の KNOWLEDGE_ENTRIES キー / about が index.html と sitemap.xml に揃っているか
-const indexHtml = fs.readFileSync(path.join(ROOT, 'index.html'), 'utf8');
-const sitemap = fs.readFileSync(path.join(ROOT, 'sitemap.xml'), 'utf8');
+  // S3: シェーダーのランダム選択が bootstrap に分離されているか
+  if (/loadRandomShader/.test(appSrc) && /Math\.random/.test(shaderBootstrapSrc) && /await import/.test(shaderBootstrapSrc)) {
+    pass('S3', 'シェーダーランダム選択ロジックあり');
+  } else {
+    fail('S3', 'シェーダーランダム選択ロジックなし');
+  }
 
-// app.js から KNOWLEDGE_ENTRIES のキーを抽出
-const entryKeys = [...appSrc.matchAll(/'([a-z-]+)':\s*\{/g)].map(m => m[1]);
+  // S4: モーダルのクエリリンク整合性
+  const entryKeys = Object.keys(siteData.KNOWLEDGE_ENTRIES);
 
-// about モーダルのチェック
-const aboutInHtml = /data-about-open/.test(indexHtml);
-const aboutInSitemap = /\?about/.test(sitemap);
-if (aboutInHtml && aboutInSitemap) {
-  pass('S4a', 'about モーダル: HTML トリガー + sitemap あり');
-} else {
-  const lacks = [];
-  if (!aboutInHtml) lacks.push('HTML トリガー');
-  if (!aboutInSitemap) lacks.push('sitemap');
-  fail('S4a', `about モーダル: ${lacks.join(' / ')} なし`);
-}
-
-// knowledge モーダルのチェック
-for (const key of entryKeys) {
-  const inHtml = indexHtml.includes(`data-knowledge="${key}"`);
-  const inSitemap = sitemap.includes(`?knowledge=${key}`);
-  if (inHtml && inSitemap) {
-    pass(`S4k-${key}`, `knowledge/${key}: HTML リンク + sitemap あり`);
+  const aboutInHtml = /data-modal-open="about"/.test(indexHtml);
+  const aboutInSitemap = /\?about/.test(sitemap);
+  if (aboutInHtml && aboutInSitemap) {
+    pass('S4a', 'about モーダル: HTML トリガー + sitemap あり');
   } else {
     const lacks = [];
-    if (!inHtml) lacks.push('HTML リンク');
-    if (!inSitemap) lacks.push('sitemap');
-    fail(`S4k-${key}`, `knowledge/${key}: ${lacks.join(' / ')} なし`);
+    if (!aboutInHtml) lacks.push('HTML トリガー');
+    if (!aboutInSitemap) lacks.push('sitemap');
+    fail('S4a', `about モーダル: ${lacks.join(' / ')} なし`);
   }
+
+  const menuRootPresent = /id="site-menu"/.test(indexHtml);
+  const knowledgeLinkRenderer = /data-knowledge=/.test(menuSrc);
+  for (const key of entryKeys) {
+    const inSitemap = sitemap.includes(`?knowledge=${key}`);
+    if (menuRootPresent && knowledgeLinkRenderer && inSitemap) {
+      pass(`S4k-${key}`, `knowledge/${key}: menu renderer + sitemap あり`);
+    } else {
+      const lacks = [];
+      if (!menuRootPresent) lacks.push('HTML menu root');
+      if (!knowledgeLinkRenderer) lacks.push('menu renderer');
+      if (!inSitemap) lacks.push('sitemap');
+      fail(`S4k-${key}`, `knowledge/${key}: ${lacks.join(' / ')} なし`);
+    }
+  }
+
+  // S5: index.html の存在
+  if (fs.existsSync(path.join(ROOT, 'index.html'))) {
+    pass('S5', 'index.html 存在');
+  } else {
+    fail('S5', 'index.html なし');
+  }
+
+  console.log('\n=== Static Checks ===\n');
+  for (const r of results) {
+    console.log(`  [${r.status}] ${r.id}: ${r.msg}`);
+  }
+  const passed = results.filter(r => r.status === 'PASS').length;
+  console.log(`\n  ${passed}/${results.length} passed\n`);
+  process.exit(exitCode);
 }
 
-// S5: index.html の存在
-if (fs.existsSync(path.join(ROOT, 'index.html'))) {
-  pass('S5', 'index.html 存在');
-} else {
-  fail('S5', 'index.html なし');
-}
-
-// 結果出力
-console.log('\n=== Static Checks ===\n');
-for (const r of results) {
-  console.log(`  [${r.status}] ${r.id}: ${r.msg}`);
-}
-const passed = results.filter(r => r.status === 'PASS').length;
-console.log(`\n  ${passed}/${results.length} passed\n`);
-process.exit(exitCode);
+main().catch((error) => {
+  console.error(error);
+  process.exit(1);
+});
