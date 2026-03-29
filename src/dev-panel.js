@@ -247,7 +247,7 @@ function buildPanel() {
     scrollTitle.textContent = 'Shader scroll';
     scrollGroup.appendChild(scrollTitle);
 
-    window.__shaderScrollStep = 0.002;
+    window.__shaderScrollStep = 0.005;
     var sRow = document.createElement('div');
     sRow.className = 'dp-row';
     var sLabel = document.createElement('span');
@@ -259,10 +259,10 @@ function buildPanel() {
     sInput.min = 0.0005;
     sInput.max = 0.05;
     sInput.step = 0.0005;
-    sInput.value = 0.002;
+    sInput.value = 0.005;
     var sVal = document.createElement('span');
     sVal.className = 'dp-val';
-    sVal.textContent = '0.002';
+    sVal.textContent = '0.005';
     sInput.addEventListener('input', function() {
         window.__shaderScrollStep = parseFloat(sInput.value);
         sVal.textContent = parseFloat(sInput.value).toFixed(4);

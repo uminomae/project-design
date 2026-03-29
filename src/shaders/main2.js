@@ -175,7 +175,7 @@ function init() {
   window.addEventListener('resize', onResize);
   onScroll();
 
-  const MAX_SCROLL_STEP = () => window.__shaderScrollStep || 0.002;
+  const MAX_SCROLL_STEP = () => window.__shaderScrollStep || 0.005;
   const clock = new THREE.Clock();
   function animate() {
     animationId = requestAnimationFrame(animate);
