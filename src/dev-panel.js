@@ -257,7 +257,7 @@ function buildPanel() {
     sInput.type = 'range';
     sInput.className = 'dp-range';
     sInput.min = 0.0005;
-    sInput.max = 0.02;
+    sInput.max = 0.5;
     sInput.step = 0.0005;
     sInput.value = 0.002;
     var sVal = document.createElement('span');
