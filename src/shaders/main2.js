@@ -4,13 +4,15 @@ import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.m
 let scene, camera, renderer, material, mesh, animationId;
 let targetScroll = 0;
 let currentScroll = 0;
+const IDLE_PIXEL_RATIO = Math.min(devicePixelRatio, 1);
+const SCROLL_PIXEL_RATIO = Math.min(devicePixelRatio, 0.5);
 
 function init() {
   const container = document.getElementById('webgl-container');
   if (!container) return;
 
   renderer = new THREE.WebGLRenderer({ alpha: true, antialias: false });
-  renderer.setPixelRatio(Math.min(devicePixelRatio, 1));
+  renderer.setPixelRatio(IDLE_PIXEL_RATIO);
   renderer.setSize(innerWidth, innerHeight);
   container.appendChild(renderer.domElement);
 
@@ -174,6 +176,22 @@ function init() {
 
   window.addEventListener('resize', onResize);
   onScroll();
+
+  let scrollTimer = 0;
+  let scrolling = false;
+  window.addEventListener('scroll', () => {
+    if (!scrolling) {
+      scrolling = true;
+      renderer.setPixelRatio(SCROLL_PIXEL_RATIO);
+      renderer.setSize(innerWidth, innerHeight);
+    }
+    clearTimeout(scrollTimer);
+    scrollTimer = setTimeout(() => {
+      scrolling = false;
+      renderer.setPixelRatio(IDLE_PIXEL_RATIO);
+      renderer.setSize(innerWidth, innerHeight);
+    }, 200);
+  }, { passive: true });
 
   const clock = new THREE.Clock();
   function animate() {
