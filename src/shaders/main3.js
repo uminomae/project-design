@@ -84,9 +84,7 @@ function init() {
               float nx = smoothNoise(p + e.xy + t * 0.2) + smoothNoise(p - e.xy + t * 0.2);
               float ny = smoothNoise(p + e.yx + t * 0.2) + smoothNoise(p - e.yx + t * 0.2);
               float laplacian = (nx + ny - 4.0 * n0);
-
               div += abs(laplacian) * amp * 15.0;
-
               p = rot(1.57) * p * 2.1;
               amp *= 0.5;
           }
@@ -195,12 +193,12 @@ function init() {
   window.addEventListener('resize', onResize);
   onScroll();
 
-  const MAX_SCROLL_STEP = () => window.__shaderScrollStep || 0.005;
+  const MAX_SCROLL_STEP = () => window.__shaderScrollStep || 0.002;
   const clock = new THREE.Clock();
   function animate() {
     animationId = requestAnimationFrame(animate);
     onScroll();
-    const delta = (targetScroll - currentScroll) * 0.05;
+    const delta = (targetScroll - currentScroll) * 0.02;
     currentScroll += Math.sign(delta) * Math.min(Math.abs(delta), MAX_SCROLL_STEP());
     uniforms.u_scroll.value = currentScroll;
     uniforms.u_time.value = clock.getElapsedTime() * 0.5;

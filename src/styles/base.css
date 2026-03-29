@@ -11,9 +11,8 @@ body {
 /* Headings: text-shadow only, no panel */
 .glow-heading {
     text-shadow:
-        0 0 calc(var(--glow-h-r1) * 1px) rgba(var(--glow-r),var(--glow-g),var(--glow-b),1),
-        0 0 calc(var(--glow-h-r2) * 1px) rgba(var(--glow-r),var(--glow-g),var(--glow-b),1),
-        0 0 calc(var(--glow-h-r3) * 1px) rgba(var(--glow-r),var(--glow-g),var(--glow-b), var(--glow-h-a3));
+        0 0 10px rgba(255, 255, 255, 1),
+        0 0 20px rgba(255, 255, 255, 0.67);
 }
 
 /* Text glow — テキストをグローだけで読ませる */
@@ -22,11 +21,8 @@ body {
 .glow-text li,
 .glow-text span {
     text-shadow:
-        0 0 calc(var(--glow-t-r1) * 1px) rgba(var(--glow-r),var(--glow-g),var(--glow-b),1),
-        0 0 calc(var(--glow-t-r2) * 1px) rgba(var(--glow-r),var(--glow-g),var(--glow-b),1),
-        0 0 calc(var(--glow-t-r3) * 1px) rgba(var(--glow-r),var(--glow-g),var(--glow-b), var(--glow-t-a3)),
-        0 0 calc(var(--glow-t-r4) * 1px) rgba(var(--glow-r),var(--glow-g),var(--glow-b), var(--glow-t-a4)),
-        0 0 calc(var(--glow-t-r5) * 1px) rgba(var(--glow-r),var(--glow-g),var(--glow-b), var(--glow-t-a5));
+        0 0 10px rgba(255, 255, 255, 1),
+        0 0 20px rgba(255, 255, 255, 0.67);
 }
 
 h1 {

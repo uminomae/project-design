@@ -11,9 +11,8 @@
 .glow-card h3,
 .glow-card span {
     text-shadow:
-        0 0 calc(var(--glow-c-r1) * 1px) rgba(var(--glow-r),var(--glow-g),var(--glow-b),1),
-        0 0 calc(var(--glow-c-r2) * 1px) rgba(var(--glow-r),var(--glow-g),var(--glow-b),1),
-        0 0 calc(var(--glow-c-r3) * 1px) rgba(var(--glow-r),var(--glow-g),var(--glow-b), var(--glow-c-a3));
+        0 0 10px rgba(255, 255, 255, 1),
+        0 0 20px rgba(255, 255, 255, 0.67);
 }
 
 .card h3 {
@@ -130,9 +129,7 @@
     height: 44px;
     border-radius: 50%;
     border: none;
-    background: var(--glass-bg-faint);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
+    background: rgba(255, 255, 255, 0.85);
     color: var(--ink);
     cursor: pointer;
     margin-top: 2rem;
@@ -163,9 +160,8 @@
 
 .glow-link span {
     text-shadow:
-        0 0 calc(var(--glow-c-r1) * 1px) rgba(var(--glow-r),var(--glow-g),var(--glow-b),1),
-        0 0 calc(var(--glow-c-r2) * 1px) rgba(var(--glow-r),var(--glow-g),var(--glow-b),1),
-        0 0 calc(var(--glow-c-r3) * 1px) rgba(var(--glow-r),var(--glow-g),var(--glow-b), var(--glow-c-a3));
+        0 0 10px rgba(255, 255, 255, 1),
+        0 0 20px rgba(255, 255, 255, 0.67);
 }
 
 .glow-link:hover {
