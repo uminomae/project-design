@@ -153,24 +153,16 @@ function init() {
   window.addEventListener('resize', onResize);
   onScroll();
 
-  let scrollTimer = 0;
-  let scrolling = false;
-  window.addEventListener('scroll', () => {
-    scrolling = true;
-    clearTimeout(scrollTimer);
-    scrollTimer = setTimeout(() => { scrolling = false; }, 200);
-  }, { passive: true });
-
+  const MAX_SCROLL_STEP = 0.006;
   const clock = new THREE.Clock();
   function animate() {
     animationId = requestAnimationFrame(animate);
     onScroll();
-    currentScroll += (targetScroll - currentScroll) * 0.05;
+    const delta = (targetScroll - currentScroll) * 0.05;
+    currentScroll += Math.sign(delta) * Math.min(Math.abs(delta), MAX_SCROLL_STEP);
     uniforms.u_scroll.value = currentScroll;
     uniforms.u_time.value = clock.getElapsedTime() * 0.5;
-    if (!scrolling) {
-      renderer.render(scene, camera);
-    }
+    renderer.render(scene, camera);
   }
   animate();
 }
