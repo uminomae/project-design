@@ -1,5 +1,6 @@
 // dev-panel.js — ?dev で開くグロー調整パネル
 // creation-space の dev-panel パターンを簡易模倣
+import { revealConfig, revealAboutContent, resetReveal } from './ui/modal.js';
 
 const PARAMS = [
     { group: 'Glow color', items: [
@@ -175,6 +176,68 @@ function buildPanel() {
         }
         panel.appendChild(groupEl);
     }
+
+    // Reveal timing group
+    var revealGroup = document.createElement('div');
+    revealGroup.className = 'dp-group';
+    var revealTitle = document.createElement('div');
+    revealTitle.className = 'dp-group-title';
+    revealTitle.textContent = 'About reveal';
+    revealGroup.appendChild(revealTitle);
+
+    var REVEAL_PARAMS = [
+        { key: 'initialDelay', label: 'Initial (ms)', min: 0, max: 2000, step: 50 },
+        { key: 'stagger', label: 'Stagger (ms)', min: 100, max: 2000, step: 50 },
+        { key: 'duration', label: 'Duration (s)', min: 0.2, max: 3, step: 0.1 },
+    ];
+
+    for (var ri = 0; ri < REVEAL_PARAMS.length; ri++) {
+        var rp = REVEAL_PARAMS[ri];
+        var rRow = document.createElement('div');
+        rRow.className = 'dp-row';
+
+        var rLabel = document.createElement('span');
+        rLabel.className = 'dp-label';
+        rLabel.textContent = rp.label;
+
+        var rInput = document.createElement('input');
+        rInput.type = 'range';
+        rInput.className = 'dp-range';
+        rInput.min = rp.min;
+        rInput.max = rp.max;
+        rInput.step = rp.step;
+        rInput.value = revealConfig[rp.key];
+
+        var rVal = document.createElement('span');
+        rVal.className = 'dp-val';
+        rVal.textContent = rp.step < 1 ? parseFloat(rInput.value).toFixed(1) : rInput.value;
+
+        rInput.addEventListener('input', (function(inp, vs, key, step) {
+            return function() {
+                revealConfig[key] = parseFloat(inp.value);
+                vs.textContent = step < 1 ? parseFloat(inp.value).toFixed(1) : inp.value;
+            };
+        })(rInput, rVal, rp.key, rp.step));
+
+        rRow.appendChild(rLabel);
+        rRow.appendChild(rInput);
+        rRow.appendChild(rVal);
+        revealGroup.appendChild(rRow);
+    }
+
+    var previewBtn = document.createElement('button');
+    previewBtn.className = 'dp-btn';
+    previewBtn.textContent = 'Preview';
+    previewBtn.style.marginTop = '0.5rem';
+    previewBtn.onclick = function() {
+        var aboutBody = document.getElementById('about-body');
+        if (aboutBody) {
+            resetReveal(aboutBody);
+            setTimeout(function() { revealAboutContent(aboutBody); }, 50);
+        }
+    };
+    revealGroup.appendChild(previewBtn);
+    panel.appendChild(revealGroup);
 
     // Actions
     var actions = document.createElement('div');

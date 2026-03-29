@@ -4,6 +4,12 @@ function setBodyLocked(locked) {
 
 let revealTimers = [];
 
+export const revealConfig = {
+    initialDelay: 400,
+    stagger: 500,
+    duration: 0.8,
+};
+
 export function revealAboutContent(container) {
     revealTimers.forEach(clearTimeout);
     revealTimers = [];
@@ -11,6 +17,7 @@ export function revealAboutContent(container) {
     const items = container.querySelectorAll('.reveal-item');
     items.forEach((el) => {
         el.classList.remove('reveal');
+        el.style.animationDuration = '';
     });
 
     if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
@@ -18,12 +25,15 @@ export function revealAboutContent(container) {
         return;
     }
 
-    let delay = 600;
+    let delay = revealConfig.initialDelay;
 
     items.forEach((el) => {
-        const id = setTimeout(() => el.classList.add('reveal'), delay);
+        const id = setTimeout(() => {
+            el.style.animationDuration = revealConfig.duration + 's';
+            el.classList.add('reveal');
+        }, delay);
         revealTimers.push(id);
-        delay += 800;
+        delay += revealConfig.stagger;
     });
 }
 
