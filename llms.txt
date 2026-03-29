@@ -8,13 +8,13 @@ This is the hub site of pjdhiro presenting **Project Design Theory** — an appr
 
 - **Primary Language**: Japanese (日本語), with English summaries
 - **Site URL**: https://uminomae.github.io/pjdhiro/project-design/
-- **Topics**: Project Design Theory, Love-Driven Development, PMBOK Extension, Emotional Processing, Creativity Structure, Intersubjectivity
+- **Topics**: Project Design Theory, Love-Driven Development, 事業構想 (Business Planning), PMBOK Extension, Emotional Processing, Creativity Structure, Intersubjectivity
 
 ## Core Concepts
 
 ### Project Design (プロジェクトデザイン)
 
-A framework for designing not just projects but the methods of project execution themselves. It extends traditional project management (PMBOK) by incorporating emotional processing, communication, and creative emergence as first-class design concerns.
+A framework for designing not just projects but the methods of project execution themselves. Applicable to business planning (事業構想) across profit and non-profit enterprises. It extends traditional project management (PMBOK) by incorporating emotional processing, communication, and creative emergence as first-class design concerns.
 
 ### Love-Driven Development (Love駆動開発)
 
