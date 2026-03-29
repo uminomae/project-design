@@ -156,13 +156,13 @@ function init() {
     if (!scrolling) {
       scrolling = true;
       renderer.setPixelRatio(SCROLL_PIXEL_RATIO);
-      renderer.setSize(innerWidth, innerHeight);
+      renderer.setSize(innerWidth, innerHeight, false);
     }
     clearTimeout(scrollTimer);
     scrollTimer = setTimeout(() => {
       scrolling = false;
       renderer.setPixelRatio(IDLE_PIXEL_RATIO);
-      renderer.setSize(innerWidth, innerHeight);
+      renderer.setSize(innerWidth, innerHeight, false);
     }, 200);
   }, { passive: true });
 
