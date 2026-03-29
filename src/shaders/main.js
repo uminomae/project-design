@@ -149,27 +149,15 @@ function init() {
   onScroll();
 
   const clock = new THREE.Clock();
-  let lastRenderTime = 0;
-  let scrolling = false;
-  let scrollTimer = 0;
-  window.addEventListener('scroll', () => {
-    scrolling = true;
-    clearTimeout(scrollTimer);
-    scrollTimer = setTimeout(() => { scrolling = false; }, 200);
-  }, { passive: true });
-  function animate(now) {
+  function animate() {
     animationId = requestAnimationFrame(animate);
     onScroll();
     currentScroll += (targetScroll - currentScroll) * 0.05;
     uniforms.u_scroll.value = currentScroll;
     uniforms.u_time.value = clock.getElapsedTime() * 0.5;
-    var nowSec = (now || 0) * 0.001;
-    var interval = scrolling ? (1 / 8) : (1 / 15);
-    if (nowSec - lastRenderTime < interval) return;
-    lastRenderTime = nowSec;
     renderer.render(scene, camera);
   }
-  animate(0);
+  animate();
 }
 
 function onResize() {
