@@ -4,7 +4,7 @@ import { renderMarkdown } from './lib/render-markdown.js';
 import { getSearchParams, updateSearchParams } from './lib/query-state.js';
 import { createI18n } from './ui/i18n.js';
 import { createMenuController, renderSiteMenu } from './ui/menu.js';
-import { createModalController } from './ui/modal.js';
+import { createModalController, resetReveal, revealAboutContent } from './ui/modal.js';
 
 await loadRandomShader(SHADER_PATHS, import.meta.url);
 
@@ -35,7 +35,9 @@ const i18n = createI18n({
     translations: TRANSLATIONS,
     onLanguageChange: async (lang) => {
         if (aboutModal.isOpen()) {
+            resetReveal(aboutBody);
             await loadAboutContent(lang);
+            revealAboutContent(aboutBody);
         }
 
         if (knowledgeModal.isOpen() && activeKnowledgeKey) {
@@ -55,6 +57,9 @@ i18n.applyTranslations(menuElement, i18n.getCurrentLang());
 
 function renderAbout(markdown) {
     aboutBody.innerHTML = renderMarkdown(markdown);
+    for (const child of aboutBody.children) {
+        child.classList.add('reveal-item');
+    }
 }
 
 async function fetchTextWithFallback(path, fallbackPath) {
@@ -124,6 +129,7 @@ async function openAbout({ pushHistory = true } = {}) {
     knowledgeModal.close();
     activeKnowledgeKey = null;
     aboutModal.open();
+    revealAboutContent(aboutBody);
 
     if (pushHistory && !getSearchParams().has('about')) {
         updateSearchParams(
@@ -138,6 +144,7 @@ function closeAbout({ updateHistory = true } = {}) {
         return;
     }
 
+    resetReveal(aboutBody);
     aboutModal.close();
 
     if (!updateHistory) {

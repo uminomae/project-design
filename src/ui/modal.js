@@ -2,6 +2,39 @@ function setBodyLocked(locked) {
     document.body.style.overflow = locked ? 'hidden' : '';
 }
 
+let revealTimers = [];
+
+export function revealAboutContent(container) {
+    revealTimers.forEach(clearTimeout);
+    revealTimers = [];
+
+    const items = container.querySelectorAll('.reveal-item');
+    items.forEach((el) => {
+        el.classList.remove('reveal');
+    });
+
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        items.forEach((el) => el.classList.add('reveal'));
+        return;
+    }
+
+    let delay = 600;
+
+    items.forEach((el) => {
+        const id = setTimeout(() => el.classList.add('reveal'), delay);
+        revealTimers.push(id);
+        delay += 800;
+    });
+}
+
+export function resetReveal(container) {
+    revealTimers.forEach(clearTimeout);
+    revealTimers = [];
+    container.querySelectorAll('.reveal-item').forEach((el) => {
+        el.classList.remove('reveal');
+    });
+}
+
 export function createModalController(rootElement) {
     function isOpen() {
         return rootElement.classList.contains('open');

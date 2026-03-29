@@ -199,6 +199,33 @@
     font-style: italic;
 }
 
+/* === Progressive Reveal (About Modal) === */
+@keyframes revealPara {
+    from { opacity: 0; transform: translateY(8px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+.about-modal__body .reveal-item {
+    opacity: 0;
+    transform: translateY(8px);
+}
+
+.about-modal__body .reveal-item.reveal {
+    animation: revealPara 1.2s ease-out forwards;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .about-modal__body .reveal-item {
+        opacity: 1;
+        transform: none;
+    }
+    .about-modal__body .reveal-item.reveal {
+        animation: none;
+        opacity: 1;
+        transform: none;
+    }
+}
+
 /* === Visually Hidden (SEO) === */
 .visually-hidden {
     position: absolute;
