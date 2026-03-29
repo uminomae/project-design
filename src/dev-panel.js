@@ -239,6 +239,40 @@ function buildPanel() {
     revealGroup.appendChild(previewBtn);
     panel.appendChild(revealGroup);
 
+    // Shader scroll group
+    var scrollGroup = document.createElement('div');
+    scrollGroup.className = 'dp-group';
+    var scrollTitle = document.createElement('div');
+    scrollTitle.className = 'dp-group-title';
+    scrollTitle.textContent = 'Shader scroll';
+    scrollGroup.appendChild(scrollTitle);
+
+    window.__shaderScrollStep = 0.002;
+    var sRow = document.createElement('div');
+    sRow.className = 'dp-row';
+    var sLabel = document.createElement('span');
+    sLabel.className = 'dp-label';
+    sLabel.textContent = 'Max step';
+    var sInput = document.createElement('input');
+    sInput.type = 'range';
+    sInput.className = 'dp-range';
+    sInput.min = 0.0005;
+    sInput.max = 0.02;
+    sInput.step = 0.0005;
+    sInput.value = 0.002;
+    var sVal = document.createElement('span');
+    sVal.className = 'dp-val';
+    sVal.textContent = '0.002';
+    sInput.addEventListener('input', function() {
+        window.__shaderScrollStep = parseFloat(sInput.value);
+        sVal.textContent = parseFloat(sInput.value).toFixed(4);
+    });
+    sRow.appendChild(sLabel);
+    sRow.appendChild(sInput);
+    sRow.appendChild(sVal);
+    scrollGroup.appendChild(sRow);
+    panel.appendChild(scrollGroup);
+
     // Actions
     var actions = document.createElement('div');
     actions.className = 'dp-actions';

@@ -195,13 +195,13 @@ function init() {
   window.addEventListener('resize', onResize);
   onScroll();
 
-  const MAX_SCROLL_STEP = 0.006;
+  const MAX_SCROLL_STEP = () => window.__shaderScrollStep || 0.002;
   const clock = new THREE.Clock();
   function animate() {
     animationId = requestAnimationFrame(animate);
     onScroll();
     const delta = (targetScroll - currentScroll) * 0.05;
-    currentScroll += Math.sign(delta) * Math.min(Math.abs(delta), MAX_SCROLL_STEP);
+    currentScroll += Math.sign(delta) * Math.min(Math.abs(delta), MAX_SCROLL_STEP());
     uniforms.u_scroll.value = currentScroll;
     uniforms.u_time.value = clock.getElapsedTime() * 0.5;
     renderer.render(scene, camera);
