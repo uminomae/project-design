@@ -4,15 +4,13 @@ import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.m
 let scene, camera, renderer, material, mesh, animationId;
 let targetScroll = 0;
 let currentScroll = 0;
-const IDLE_PIXEL_RATIO = Math.min(devicePixelRatio, 2);
-const SCROLL_PIXEL_RATIO = Math.min(devicePixelRatio, 1);
 
 function init() {
   const container = document.getElementById('webgl-container');
   if (!container) return;
 
   renderer = new THREE.WebGLRenderer({ alpha: true, antialias: false });
-  renderer.setPixelRatio(IDLE_PIXEL_RATIO);
+  renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
   renderer.setSize(innerWidth, innerHeight);
   container.appendChild(renderer.domElement);
 
@@ -158,17 +156,9 @@ function init() {
   let scrollTimer = 0;
   let scrolling = false;
   window.addEventListener('scroll', () => {
-    if (!scrolling) {
-      scrolling = true;
-      renderer.setPixelRatio(SCROLL_PIXEL_RATIO);
-      renderer.setSize(innerWidth, innerHeight, false);
-    }
+    scrolling = true;
     clearTimeout(scrollTimer);
-    scrollTimer = setTimeout(() => {
-      scrolling = false;
-      renderer.setPixelRatio(IDLE_PIXEL_RATIO);
-      renderer.setSize(innerWidth, innerHeight, false);
-    }, 200);
+    scrollTimer = setTimeout(() => { scrolling = false; }, 200);
   }, { passive: true });
 
   const clock = new THREE.Clock();
@@ -178,7 +168,9 @@ function init() {
     currentScroll += (targetScroll - currentScroll) * 0.05;
     uniforms.u_scroll.value = currentScroll;
     uniforms.u_time.value = clock.getElapsedTime() * 0.5;
-    renderer.render(scene, camera);
+    if (!scrolling) {
+      renderer.render(scene, camera);
+    }
   }
   animate();
 }
