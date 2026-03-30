@@ -33,6 +33,16 @@ export function createContentLoader({
 }) {
     const aboutCache = new Map();
     const knowledgeCache = new Map();
+    let activeRequestId = 0;
+
+    function beginRequest() {
+        activeRequestId += 1;
+        return activeRequestId;
+    }
+
+    function isLatestRequest(requestId) {
+        return requestId === activeRequestId;
+    }
 
     function hasKnowledgeEntry(key) {
         return Boolean(knowledgeEntries[key]);
@@ -52,23 +62,28 @@ export function createContentLoader({
     }
 
     async function loadAboutContent(lang) {
+        const requestId = beginRequest();
         const cached = aboutCache.get(lang);
 
         if (cached !== undefined) {
+            if (!isLatestRequest(requestId)) return false;
             renderAbout(aboutBody, cached);
-            return;
+            return true;
         }
 
         const markdown = await fetchTextWithFallback(`content/about-${lang}.md`);
         aboutCache.set(lang, markdown);
+        if (!isLatestRequest(requestId)) return false;
         renderAbout(aboutBody, markdown);
+        return true;
     }
 
     async function loadKnowledgeContent(key, lang) {
+        const requestId = beginRequest();
         const entry = knowledgeEntries[key];
 
         if (!entry) {
-            return;
+            return false;
         }
 
         const cacheKey = `${key}:${lang}`;
@@ -84,8 +99,10 @@ export function createContentLoader({
             knowledgeCache.set(cacheKey, markdown);
         }
 
+        if (!isLatestRequest(requestId)) return false;
         knowledgeBody.innerHTML = renderMarkdown(markdown);
         updateKnowledgePdfLink(entry, lang);
+        return true;
     }
 
     return {
