@@ -1,0 +1,155 @@
+import { getSearchParams, updateSearchParams } from '../lib/query-state.js';
+import { resetReveal, revealAboutContent } from '../ui/modal.js';
+
+export function createModalRouter({
+    aboutBody,
+    aboutModal,
+    contentLoader,
+    getCurrentLang,
+    knowledgeModal,
+}) {
+    let activeKnowledgeKey = null;
+
+    async function openAbout({ pushHistory = true } = {}) {
+        await contentLoader.loadAboutContent(getCurrentLang());
+        closeKnowledge({ updateHistory: false });
+        activeKnowledgeKey = null;
+        aboutModal.open();
+        revealAboutContent(aboutBody);
+
+        if (pushHistory && !getSearchParams().has('about')) {
+            updateSearchParams(
+                { about: '', knowledge: null },
+                { state: { modal: 'about' } },
+            );
+        }
+    }
+
+    function closeAbout({ updateHistory = true } = {}) {
+        if (!aboutModal.isOpen()) {
+            return;
+        }
+
+        resetReveal(aboutBody);
+        aboutModal.close();
+
+        if (!updateHistory) {
+            return;
+        }
+
+        if (getSearchParams().has('about')) {
+            if (history.state?.modal === 'about') {
+                history.back();
+                return;
+            }
+
+            updateSearchParams({ about: null }, { replace: true });
+        }
+    }
+
+    async function openKnowledge(key, { pushHistory = true } = {}) {
+        if (!contentLoader.hasKnowledgeEntry(key)) {
+            return;
+        }
+
+        activeKnowledgeKey = key;
+        await contentLoader.loadKnowledgeContent(key, getCurrentLang());
+        closeAbout({ updateHistory: false });
+        knowledgeModal.open();
+
+        if (pushHistory && getSearchParams().get('knowledge') !== key) {
+            updateSearchParams(
+                { knowledge: key, about: null },
+                { state: { modal: 'knowledge', key } },
+            );
+        }
+    }
+
+    function closeKnowledge({ updateHistory = true } = {}) {
+        if (!knowledgeModal.isOpen()) {
+            return;
+        }
+
+        knowledgeModal.close();
+        activeKnowledgeKey = null;
+
+        if (!updateHistory) {
+            return;
+        }
+
+        if (getSearchParams().has('knowledge')) {
+            if (history.state?.modal === 'knowledge') {
+                history.back();
+                return;
+            }
+
+            updateSearchParams({ knowledge: null }, { replace: true });
+        }
+    }
+
+    async function handleLanguageChange(lang) {
+        if (aboutModal.isOpen()) {
+            resetReveal(aboutBody);
+            await contentLoader.loadAboutContent(lang);
+            revealAboutContent(aboutBody);
+        }
+
+        if (knowledgeModal.isOpen() && activeKnowledgeKey) {
+            await contentLoader.loadKnowledgeContent(activeKnowledgeKey, lang);
+        }
+    }
+
+    function handleEscape() {
+        closeKnowledge();
+        closeAbout();
+    }
+
+    async function handlePopState() {
+        const params = getSearchParams();
+
+        if (params.has('about')) {
+            if (!aboutModal.isOpen()) {
+                await openAbout({ pushHistory: false });
+            }
+        } else {
+            closeAbout({ updateHistory: false });
+        }
+
+        const knowledgeKey = params.get('knowledge');
+
+        if (knowledgeKey && contentLoader.hasKnowledgeEntry(knowledgeKey)) {
+            if (!knowledgeModal.isOpen() || activeKnowledgeKey !== knowledgeKey) {
+                await openKnowledge(knowledgeKey, { pushHistory: false });
+            }
+        } else {
+            closeKnowledge({ updateHistory: false });
+        }
+    }
+
+    async function hydrateFromLocation() {
+        const params = getSearchParams();
+
+        if (params.has('about')) {
+            history.replaceState({ modal: 'about' }, '', window.location.href);
+            await openAbout({ pushHistory: false });
+        }
+
+        const knowledgeKey = params.get('knowledge');
+
+        if (knowledgeKey && contentLoader.hasKnowledgeEntry(knowledgeKey)) {
+            history.replaceState({ modal: 'knowledge', key: knowledgeKey }, '', window.location.href);
+            await openKnowledge(knowledgeKey, { pushHistory: false });
+        }
+    }
+
+    return {
+        closeAbout,
+        closeKnowledge,
+        handleEscape,
+        handleLanguageChange,
+        handlePopState,
+        hydrateFromLocation,
+        openAbout,
+        openKnowledge,
+    };
+}
