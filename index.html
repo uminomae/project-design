@@ -137,7 +137,7 @@
 <body>
 
     <!-- Top Bar -->
-    <div class="top-bar">
+    <div class="top-bar" role="group" data-i18n-aria-label-key="controls.topBarAria" aria-label="Site controls">
         <button
             class="menu-toggle"
             type="button"
@@ -146,7 +146,7 @@
             aria-expanded="false"
             aria-controls="site-menu"
         >Menu</button>
-        <div class="lang-toggle">
+        <div class="lang-toggle" data-i18n-aria-label-key="controls.languageAria" aria-label="Language toggle">
             <button type="button" class="active" data-lang-button="ja">JA</button>
             <button type="button" data-lang-button="en">EN</button>
         </div>
@@ -155,16 +155,16 @@
     <!-- Dropdown Menu -->
     <nav class="site-menu" id="site-menu" aria-label="Site menu"></nav>
 
-    <div id="webgl-container"></div>
+    <div id="webgl-container" aria-hidden="true"></div>
 
-    <div id="content">
-        <main class="container">
+    <div id="content" class="page-shell">
+        <main class="container page-main" id="main-content">
 
             <!-- Hero -->
-            <header class="hero">
+            <header class="hero page-hero" id="hero">
                 <span class="hero-label glow-heading">Love-Driven Dev — pjdhiro</span>
                 <h1 class="glow-heading">Project<br>Design</h1>
-                <div class="hero-notice prose-block glow-text">
+                <div class="hero-notice prose-block glow-text section-prose">
                     <p data-i18n-key="hero.notice">Love駆動開発と呼びたい現象を、これまで何度も経験してきました。<br>
                     ここでいうプロジェクトは「やること（Doing）」だけでなく「起きていること（Being）」まで含む出来事です。</p>
                 </div>
@@ -174,10 +174,10 @@
             </header>
 
             <!-- Overview -->
-            <section>
+            <section class="content-section content-section--overview" id="overview" aria-labelledby="overview-title">
                 <span class="section-label glow-heading" data-i18n-key="section.overview.label">Overview</span>
-                <h2 class="glow-heading" data-i18n-key="section.overview.title">概要</h2>
-                <div class="overview-text prose-block glow-text">
+                <h2 class="glow-heading" id="overview-title" data-i18n-key="section.overview.title">概要</h2>
+                <div class="overview-text prose-block glow-text section-prose">
                     <p data-i18n-key="overview.p1">プロジェクトデザインとは、プロジェクトの構想・設計・実行だけでなく、実行・管理の方法そのものを対象化し、構想・設計する営みです。</p>
                     <p data-i18n-key="overview.p2">まず、その基底として射程と領域を固定し、以降の議論を「やること（Doing）」と「起きてること（Being）」に分けて整理します。</p>
                     <p data-i18n-key="overview.p3">プロジェクト実務は、環境適応（物質的条件）とコミュニケーション（非物質的条件）に大別できます。本サイトでは環境適応を前提知（PMBOK等）とし、コミュニケーションを情報処理／感情処理に分解して、とくに感情処理を中心に扱います。</p>
@@ -202,9 +202,9 @@
             </section>
 
             <!-- Doing -->
-            <section>
+            <section class="content-section content-section--doing" id="doing" aria-labelledby="doing-title">
                 <span class="section-label glow-heading" data-i18n-key="section.doing.label">Doing</span>
-                <h2 class="glow-heading" data-i18n-key="section.doing.title">やること</h2>
+                <h2 class="glow-heading" id="doing-title" data-i18n-key="section.doing.title">やること</h2>
                 <div class="grid">
                     <div class="card glow-card">
                         <h3 data-i18n-key="doing.principles.title">行動原理</h3>
@@ -232,10 +232,10 @@
             </section>
 
             <!-- Being -->
-            <section>
+            <section class="content-section content-section--being" id="being" aria-labelledby="being-title">
                 <span class="section-label glow-heading" data-i18n-key="section.being.label">Being</span>
-                <h2 class="glow-heading" data-i18n-key="section.being.title">起きていること</h2>
-                <div class="being-desc prose-block glow-text">
+                <h2 class="glow-heading" id="being-title" data-i18n-key="section.being.title">起きていること</h2>
+                <div class="being-desc prose-block glow-text section-prose">
                     <p data-i18n-key="section.being.body">場（Field）が現れ、差異＝波（Wave）が立ち上がり、縁＝境界（Relation）が結ばれ、衝突が渦（Spinor）として回り、成果が束（Bundle）として成る。プロジェクトの現在地を知ること。</p>
                 </div>
                 <div class="pills">
@@ -245,10 +245,10 @@
             </section>
 
             <!-- Future + Repos -->
-            <section>
+            <section class="content-section content-section--direction" id="direction" aria-labelledby="direction-title">
                 <span class="section-label glow-heading" data-i18n-key="section.direction.label">Direction</span>
-                <h2 class="glow-heading" data-i18n-key="section.direction.title">今後の方向性</h2>
-                <div class="future-text prose-block glow-text">
+                <h2 class="glow-heading" id="direction-title" data-i18n-key="section.direction.title">今後の方向性</h2>
+                <div class="future-text prose-block glow-text section-prose">
                     <p data-i18n-key="section.direction.body">本ページで固定した「射程・領域・Doing/Beingの二分」は基底（土台・骨格）です。以降の各ページは、この骨格の上に展開します。</p>
                 </div>
                 <div class="grid repo-grid">
@@ -285,7 +285,7 @@
             <p>Value is a polysemous term bundling at least five problem domains: price, utility, norms, meaning, and symbolism. It emerges not as a fixed property of objects nor as mere subjective feeling, but as a multi-layered concept arising from relationships among objects, subjects, institutions, and contexts.</p>
         </div>
 
-        <footer>
+        <footer class="site-footer">
             <a href="/pjdhiro/">Blog</a>
             <a href="https://x.com/pjdhiro">X</a>
             <a href="https://github.com/uminomae/project-design">GitHub</a>
@@ -293,9 +293,10 @@
     </div>
 
     <!-- About Modal -->
-    <div id="about-modal" class="modal modal--about" aria-hidden="true">
+    <div id="about-modal" class="modal modal--about" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="about-modal-title">
         <div class="modal__backdrop" data-modal-close="about"></div>
         <div class="modal__panel modal__panel--about">
+            <h2 id="about-modal-title" class="visually-hidden" data-i18n-key="modal.aboutTitle">About this site</h2>
             <button class="modal__close" type="button" data-modal-close="about" data-i18n-aria-label-key="modal.close" aria-label="閉じる">
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 4l8 8M12 4l-8 8" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
             </button>
@@ -304,9 +305,10 @@
     </div>
 
     <!-- Knowledge Modal -->
-    <div id="knowledge-modal" class="modal modal--knowledge" aria-hidden="true">
+    <div id="knowledge-modal" class="modal modal--knowledge" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="knowledge-modal-title">
         <div class="modal__backdrop" data-modal-close="knowledge"></div>
         <div class="modal__panel modal__panel--knowledge">
+            <h2 id="knowledge-modal-title" class="visually-hidden" data-i18n-key="modal.knowledgeTitle">Knowledge note</h2>
             <div class="knowledge-modal__header">
                 <a id="knowledge-pdf-link" class="knowledge-modal__pdf" href="#" target="_blank" rel="noopener" aria-disabled="true" data-i18n-key="knowledge.pdf.pending">PDF準備中</a>
                 <button class="modal__close" type="button" data-modal-close="knowledge" data-i18n-aria-label-key="modal.close" aria-label="閉じる">
@@ -320,7 +322,7 @@
     <script type="module" src="src/app.js"></script>
 
 <noscript>
-  <section>
+  <section class="noscript-fallback">
     <h2>プロジェクトデザイン論 — Doing と Being を包含する事業構想と設計</h2>
     <p>Project Design Theory explores the envisioning, design, and execution of projects that encompass both Doing (what we do) and Being (what is happening). It focuses on Love-Driven Development, emotional processing, and Kesson-Driven Thinking as core methodologies for human-AI collaborative project design.</p>
     <p>プロジェクトデザイン論は、Doing（やること）と Being（起きていること）を包含する事業構想・設計・実行を探索します。Love駆動開発、感情処理、欠損駆動思考を軸に、人間とAIの協働プロジェクトデザインを実践・記録します。</p>

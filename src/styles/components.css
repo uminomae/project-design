@@ -115,11 +115,6 @@
     margin-top: 0.5rem;
 }
 
-/* === Future === */
-.future-text {
-    max-width: 680px;
-}
-
 /* === About Trigger === */
 .about-trigger {
     display: inline-flex;
