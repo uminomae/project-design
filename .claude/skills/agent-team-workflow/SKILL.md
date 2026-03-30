@@ -14,7 +14,7 @@ agent: "CLI"
 
 # agent-team-workflow スキル
 
-**バージョン**: 1.2
+**バージョン**: 1.3
 **作成日**: 2026-03-27
 **Issue**: cs#188
 **正本**: project-design（メタリポジトリ）
@@ -25,6 +25,24 @@ agent: "CLI"
 ## 0. 概要
 
 全スキル・全CLIの基本作業フローをマルチエージェントチームで実行する汎用ワークフロー。
+
+### 指示書生成スキルとの連携
+
+本スキルは単体でも使えるが、指示書駆動で使うのが標準パターン:
+
+```
+指示書生成（cli-instruction / codex-worker-instruction）
+  → .cache/inbox/_instructions-*.md を生成
+  → CLI / Codex が読み取り
+  → 本スキル（agent-team-workflow）で実行
+```
+
+| 入力スキル | 用途 | 正本 |
+|---|---|---|
+| **cli-instruction** | Claude Code CLI 向け指示書を生成 | pd `.claude/skills/cli-instruction/` |
+| **codex-worker-instruction** | Codex background worker 向け指示書を生成 | pd `.claude/skills/codex-worker-instruction/` |
+
+指示書が agent-team-workflow の Phase 選択・スキップ・alignment を含む場合、本スキルはそれに従う。
 
 ### 前提条件
 
@@ -285,6 +303,7 @@ review:
 
 | 日付 | バージョン | 内容 |
 |------|-----------|------|
+| 2026-03-30 | 1.3 | 指示書生成スキルとの連携を明文化 (techo#56) |
 | 2026-03-27 | 1.2 | Agent Teams に統一。正本を project-design に移動 |
 | 2026-03-27 | 1.1 | 実行可能な手順に更新。Agent 定義追加、Main の具体的手順を記述 |
 | 2026-03-27 | 1.0 | 初版。cs#188 設計に基づき骨格を作成 |
