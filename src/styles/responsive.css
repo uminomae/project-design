@@ -4,6 +4,7 @@
     .hero h1 { font-size: 3rem; }
     h2 { font-size: 2rem; }
     .content-section { padding: 5rem 0; min-height: auto; }
+    .noscript-fallback { padding: 5rem 1.5rem; }
     .grid { grid-template-columns: 1fr; }
     .glow-card { padding: 1.5rem; }
     .glow-link { padding: 1rem 1.5rem; }
@@ -20,6 +21,7 @@
     .hero h1 { font-size: 2.5rem; margin-bottom: 2rem; }
     h2 { font-size: 1.5rem; margin-bottom: 1.5rem; }
     .content-section { padding: 3rem 0; }
+    .noscript-fallback { padding: 3rem 1rem; }
     .glow-card { padding: 1.25rem; }
     .glow-link { padding: 0.75rem 1rem; }
     .pills { gap: 0.5rem; }

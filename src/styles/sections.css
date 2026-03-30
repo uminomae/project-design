@@ -90,3 +90,16 @@
 .site-footer a:hover {
     color: var(--ink);
 }
+
+/* === No Script Fallback === */
+.noscript-fallback {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 8rem 2rem;
+}
+
+.noscript-fallback h2,
+.noscript-fallback h3,
+.noscript-fallback p {
+    max-width: 680px;
+}

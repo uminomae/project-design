@@ -137,7 +137,7 @@
 <body>
 
     <!-- Top Bar -->
-    <div class="top-bar" role="group" aria-label="Site controls">
+    <div class="top-bar" role="group" data-i18n-aria-label-key="controls.topBarAria" aria-label="Site controls">
         <button
             class="menu-toggle"
             type="button"
@@ -146,7 +146,7 @@
             aria-expanded="false"
             aria-controls="site-menu"
         >Menu</button>
-        <div class="lang-toggle" aria-label="Language toggle">
+        <div class="lang-toggle" data-i18n-aria-label-key="controls.languageAria" aria-label="Language toggle">
             <button type="button" class="active" data-lang-button="ja">JA</button>
             <button type="button" data-lang-button="en">EN</button>
         </div>
@@ -293,7 +293,7 @@
     </div>
 
     <!-- About Modal -->
-    <div id="about-modal" class="modal modal--about" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="about-modal-title" aria-describedby="about-body">
+    <div id="about-modal" class="modal modal--about" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="about-modal-title">
         <div class="modal__backdrop" data-modal-close="about"></div>
         <div class="modal__panel modal__panel--about">
             <h2 id="about-modal-title" class="visually-hidden" data-i18n-key="modal.aboutTitle">About this site</h2>
@@ -305,7 +305,7 @@
     </div>
 
     <!-- Knowledge Modal -->
-    <div id="knowledge-modal" class="modal modal--knowledge" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="knowledge-modal-title" aria-describedby="knowledge-body">
+    <div id="knowledge-modal" class="modal modal--knowledge" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="knowledge-modal-title">
         <div class="modal__backdrop" data-modal-close="knowledge"></div>
         <div class="modal__panel modal__panel--knowledge">
             <h2 id="knowledge-modal-title" class="visually-hidden" data-i18n-key="modal.knowledgeTitle">Knowledge note</h2>
