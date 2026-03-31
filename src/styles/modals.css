@@ -226,6 +226,217 @@
     }
 }
 
+/* === How-to Modal === */
+.modal__panel--howto {
+    max-width: 720px;
+    max-height: 85vh;
+}
+
+.howto-modal__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+
+.howto-modal__header h2 {
+    font-family: var(--serif-jp);
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: var(--ink);
+    margin: 0;
+}
+
+.howto-modal__body {
+    font-family: var(--sans);
+    font-size: 0.95rem;
+    font-weight: 300;
+    line-height: 1.8;
+    color: var(--mid);
+}
+
+.howto-section {
+    margin-bottom: 2rem;
+}
+
+.howto-section:last-child {
+    margin-bottom: 0;
+}
+
+.howto-section h3 {
+    font-family: var(--serif-jp);
+    font-size: 1.05rem;
+    font-weight: 400;
+    color: var(--ink);
+    margin: 0 0 0.75rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.howto-desc {
+    font-size: 0.9rem;
+    color: var(--mute);
+    margin: 0 0 0.75rem;
+}
+
+.howto-steps {
+    margin: 0 0 1.25rem;
+    padding-left: 1.5rem;
+}
+
+.howto-steps li {
+    margin-bottom: 0.4rem;
+}
+
+.howto-examples {
+    list-style: none;
+    margin: 0 0 1rem;
+    padding: 0;
+}
+
+.howto-examples li {
+    position: relative;
+    padding-left: 1.2rem;
+    margin-bottom: 0.4rem;
+    font-size: 0.9rem;
+}
+
+.howto-examples li::before {
+    content: "\203A";
+    position: absolute;
+    left: 0;
+    color: var(--mute);
+    font-weight: 700;
+}
+
+.howto-tips {
+    margin: 0;
+    padding-left: 1.5rem;
+}
+
+.howto-tips li {
+    margin-bottom: 0.3rem;
+    font-size: 0.9rem;
+}
+
+.howto-section--note {
+    background: rgba(0, 0, 0, 0.02);
+    border-radius: 6px;
+    padding: 0.75rem 1rem;
+}
+
+.howto-section--note p {
+    margin: 0;
+    font-size: 0.85rem;
+    color: var(--mute);
+}
+
+/* Prompt block */
+.howto-prompt {
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.howto-prompt__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.4rem 0.75rem;
+    background: rgba(0, 0, 0, 0.02);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.howto-prompt__label {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--mute);
+}
+
+.howto-prompt__code {
+    margin: 0;
+    padding: 0.75rem;
+    font-size: 0.82rem;
+    line-height: 1.6;
+    white-space: pre-wrap;
+    word-break: break-word;
+    color: var(--mid);
+    font-family: SFMono-Regular, Menlo, Consolas, monospace;
+}
+
+/* Copy button */
+.howto-copy {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    background: var(--white);
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    padding: 0.2rem 0.6rem;
+    font-family: var(--sans);
+    font-size: 0.75rem;
+    cursor: pointer;
+    color: var(--mute);
+    transition: all 0.2s ease;
+}
+
+.howto-copy:hover {
+    color: var(--ink);
+    border-color: rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.02);
+}
+
+.howto-copy svg {
+    flex-shrink: 0;
+}
+
+/* Repo table */
+.howto-repo-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.85rem;
+    margin-top: 0.75rem;
+}
+
+.howto-repo-table th,
+.howto-repo-table td {
+    padding: 0.45rem 0.75rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+    text-align: left;
+    vertical-align: top;
+}
+
+.howto-repo-table th {
+    background: rgba(0, 0, 0, 0.02);
+    font-weight: 500;
+    color: var(--ink);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.howto-repo-table td:first-child {
+    white-space: nowrap;
+    font-family: SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: 0.8rem;
+}
+
+/* Trigger button in top bar */
+.howto-trigger {
+    background: rgba(255, 255, 255, 0.92);
+    border: 1px solid var(--glass-border-soft);
+    border-radius: 2rem;
+    padding: 0.35rem 0.85rem;
+    cursor: pointer;
+    font-family: var(--sans);
+    font-size: 0.85rem;
+    color: var(--mute);
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.howto-trigger:hover {
+    color: var(--ink);
+}
+
 /* === Visually Hidden (SEO) === */
 .visually-hidden {
     position: absolute;

@@ -23,6 +23,7 @@ export function getAppDom() {
         aboutBody: getRequiredElementById('about-body'),
         aboutModalElement: getRequiredElementById('about-modal'),
         knowledgeBody: getRequiredElementById('knowledge-body'),
+        howtoModalElement: getRequiredElementById('howto-modal'),
         knowledgeModalElement: getRequiredElementById('knowledge-modal'),
         knowledgePdfLink: getRequiredElementById('knowledge-pdf-link'),
         langButtons: Array.from(document.querySelectorAll('[data-lang-button]')),

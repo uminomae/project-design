@@ -23,6 +23,7 @@ const menuController = createMenuController({
 });
 
 const aboutModal = createModalController(dom.aboutModalElement);
+const howtoModal = createModalController(dom.howtoModalElement);
 const knowledgeModal = createModalController(dom.knowledgeModalElement);
 
 let modalRouter;
@@ -59,6 +60,7 @@ modalRouter = createModalRouter({
     aboutModal,
     contentLoader,
     getCurrentLang: () => i18n.getCurrentLang(),
+    howtoModal,
     knowledgeModal,
 });
 

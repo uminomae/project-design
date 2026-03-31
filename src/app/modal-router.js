@@ -6,6 +6,7 @@ export function createModalRouter({
     aboutModal,
     contentLoader,
     getCurrentLang,
+    howtoModal,
     knowledgeModal,
 }) {
     let activeKnowledgeKey = null;
@@ -99,7 +100,42 @@ export function createModalRouter({
         }
     }
 
+    function openHowto({ pushHistory = true } = {}) {
+        closeAbout({ updateHistory: false });
+        closeKnowledge({ updateHistory: false });
+        howtoModal.open();
+
+        if (pushHistory && !getSearchParams().has('howto')) {
+            updateSearchParams(
+                { howto: '', about: null, knowledge: null },
+                { state: { modal: 'howto' } },
+            );
+        }
+    }
+
+    function closeHowto({ updateHistory = true } = {}) {
+        if (!howtoModal.isOpen()) {
+            return;
+        }
+
+        howtoModal.close();
+
+        if (!updateHistory) {
+            return;
+        }
+
+        if (getSearchParams().has('howto')) {
+            if (history.state?.modal === 'howto') {
+                history.back();
+                return;
+            }
+
+            updateSearchParams({ howto: null }, { replace: true });
+        }
+    }
+
     function handleEscape() {
+        closeHowto();
         closeKnowledge();
         closeAbout();
     }
@@ -124,6 +160,14 @@ export function createModalRouter({
         } else {
             closeKnowledge({ updateHistory: false });
         }
+
+        if (params.has('howto')) {
+            if (!howtoModal.isOpen()) {
+                openHowto({ pushHistory: false });
+            }
+        } else {
+            closeHowto({ updateHistory: false });
+        }
     }
 
     async function hydrateFromLocation() {
@@ -140,16 +184,23 @@ export function createModalRouter({
             history.replaceState({ modal: 'knowledge', key: knowledgeKey }, '', window.location.href);
             await openKnowledge(knowledgeKey, { pushHistory: false });
         }
+
+        if (params.has('howto')) {
+            history.replaceState({ modal: 'howto' }, '', window.location.href);
+            openHowto({ pushHistory: false });
+        }
     }
 
     return {
         closeAbout,
+        closeHowto,
         closeKnowledge,
         handleEscape,
         handleLanguageChange,
         handlePopState,
         hydrateFromLocation,
         openAbout,
+        openHowto,
         openKnowledge,
     };
 }

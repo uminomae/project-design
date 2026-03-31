@@ -22,6 +22,10 @@ export function bindAppEvents({ i18n, menuController, modalRouter }) {
             void modalRouter.openAbout();
             return;
         }
+        if (openTrigger?.dataset.modalOpen === 'howto') {
+            void modalRouter.openHowto();
+            return;
+        }
 
         const closeTrigger = target.closest('[data-modal-close]');
         if (closeTrigger?.dataset.modalClose === 'about') {
@@ -31,6 +35,28 @@ export function bindAppEvents({ i18n, menuController, modalRouter }) {
 
         if (closeTrigger?.dataset.modalClose === 'knowledge') {
             modalRouter.closeKnowledge();
+            return;
+        }
+
+        if (closeTrigger?.dataset.modalClose === 'howto') {
+            modalRouter.closeHowto();
+            return;
+        }
+
+        const copyBtn = target.closest('.howto-copy');
+        if (copyBtn) {
+            const targetId = copyBtn.getAttribute('data-copy-target');
+            const codeEl = document.getElementById(targetId);
+            if (codeEl) {
+                navigator.clipboard.writeText(codeEl.textContent.trim()).then(() => {
+                    const label = copyBtn.querySelector('[data-i18n-key="howto.copy"]');
+                    if (label) {
+                        const orig = label.textContent;
+                        label.textContent = 'OK!';
+                        setTimeout(() => { label.textContent = orig; }, 1500);
+                    }
+                });
+            }
             return;
         }
 

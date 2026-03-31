@@ -146,6 +146,12 @@
             aria-expanded="false"
             aria-controls="site-menu"
         >Menu</button>
+        <button
+            class="howto-trigger"
+            type="button"
+            data-modal-open="howto"
+            data-i18n-key="howto.triggerLabel"
+        >AIに読ませる</button>
         <div class="lang-toggle" data-i18n-aria-label-key="controls.languageAria" aria-label="Language toggle">
             <button type="button" class="active" data-lang-button="ja">JA</button>
             <button type="button" data-lang-button="en">EN</button>
@@ -317,6 +323,151 @@
                 </button>
             </div>
             <div id="knowledge-body" class="knowledge-modal__body"></div>
+        </div>
+    </div>
+
+    <!-- How-to Modal -->
+    <div id="howto-modal" class="modal modal--howto" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="howto-modal-title">
+        <div class="modal__backdrop" data-modal-close="howto"></div>
+        <div class="modal__panel modal__panel--howto">
+            <div class="howto-modal__header">
+                <h2 id="howto-modal-title" data-i18n-key="howto.title">このプロジェクトを AI に読ませる</h2>
+                <button class="modal__close" type="button" data-modal-close="howto" data-i18n-aria-label-key="modal.close" aria-label="閉じる">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 4l8 8M12 4l-8 8" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+                </button>
+            </div>
+            <div class="howto-modal__body">
+
+                <!-- Part 1: 3ステップ -->
+                <section class="howto-section">
+                    <h3 data-i18n-key="howto.steps.heading">3ステップで始める</h3>
+                    <ol class="howto-steps">
+                        <li data-i18n-key="howto.steps.1">LLM（Claude.ai / ChatGPT / Gemini 等）を開く</li>
+                        <li data-i18n-key="howto.steps.2">下のプロンプトをコピーして貼り付ける</li>
+                        <li data-i18n-key="howto.steps.3">「○○」を自分のテーマに置き換えて送信</li>
+                    </ol>
+                    <div class="howto-prompt">
+                        <div class="howto-prompt__head">
+                            <span class="howto-prompt__label" data-i18n-key="howto.prompt.basic.label">基本プロンプト</span>
+                            <button class="howto-copy" type="button" data-copy-target="prompt-basic" aria-label="Copy">
+                                <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><rect x="5" y="5" width="9" height="9" rx="1.5" stroke="currentColor" stroke-width="1.3"/><path d="M11 5V3.5A1.5 1.5 0 009.5 2h-6A1.5 1.5 0 002 3.5v6A1.5 1.5 0 003.5 11H5" stroke="currentColor" stroke-width="1.3"/></svg>
+                                <span data-i18n-key="howto.copy">コピー</span>
+                            </button>
+                        </div>
+                        <pre class="howto-prompt__code" id="prompt-basic" data-i18n-key="howto.prompt.basic.code">https://github.com/uminomae/project-design
+
+このrepoと関連repoを読んでください。
+このプロジェクトの知見やフレームワークを活用して
+「○○」を手伝ってください。関連repoも参照してください。</pre>
+                    </div>
+                </section>
+
+                <!-- Part 2A: 調査・分析 -->
+                <section class="howto-section">
+                    <h3 data-i18n-key="howto.research.heading">A. 調査・分析に使う</h3>
+                    <p class="howto-desc" data-i18n-key="howto.research.desc">このプロジェクトの理論構造や調査手法を、自分のテーマに転用できます。</p>
+                    <ul class="howto-examples">
+                        <li data-i18n-key="howto.research.ex1">「Being×Doingの二軸で、自分のプロジェクトを見直したい」</li>
+                        <li data-i18n-key="howto.research.ex2">「30領域の三角測量手法を参考に、○○を多角的に調査して」</li>
+                        <li data-i18n-key="howto.research.ex3">「創造の5段階モデルで、私の創作プロセスを構造化したい」</li>
+                        <li data-i18n-key="howto.research.ex4">「意識の4層モデルを使って、チームの関係性を分析したい」</li>
+                    </ul>
+                    <div class="howto-prompt">
+                        <div class="howto-prompt__head">
+                            <span class="howto-prompt__label" data-i18n-key="howto.prompt.research.label">調査向けプロンプト</span>
+                            <button class="howto-copy" type="button" data-copy-target="prompt-research" aria-label="Copy">
+                                <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><rect x="5" y="5" width="9" height="9" rx="1.5" stroke="currentColor" stroke-width="1.3"/><path d="M11 5V3.5A1.5 1.5 0 009.5 2h-6A1.5 1.5 0 002 3.5v6A1.5 1.5 0 003.5 11H5" stroke="currentColor" stroke-width="1.3"/></svg>
+                                <span data-i18n-key="howto.copy">コピー</span>
+                            </button>
+                        </div>
+                        <pre class="howto-prompt__code" id="prompt-research" data-i18n-key="howto.prompt.research.code">https://github.com/uminomae/project-design
+
+このrepoと関連repoを読んで、中にある理論構造
+（Doing/Being の二軸、創造の5段階モデル、
+意識の4層モデル、三角測量など）を参考に、
+「○○」というテーマを多角的に分析してください。</pre>
+                    </div>
+                </section>
+
+                <!-- Part 2B: ハーネス導入 -->
+                <section class="howto-section">
+                    <h3 data-i18n-key="howto.harness.heading">B. LLM協働環境を自分のプロジェクトに導入する</h3>
+                    <p class="howto-desc" data-i18n-key="howto.harness.desc">CLAUDE.md・hooks・skills・agents などのハーネス設計を参考にできます。</p>
+                    <ul class="howto-examples">
+                        <li data-i18n-key="howto.harness.ex1">「CLAUDE.mdやhooksの設計を参考に、LLM協働環境を構築したい」</li>
+                        <li data-i18n-key="howto.harness.ex2">「マルチエージェント構成（Claude/Gemini/Codex）を設計したい」</li>
+                    </ul>
+                    <div class="howto-prompt">
+                        <div class="howto-prompt__head">
+                            <span class="howto-prompt__label" data-i18n-key="howto.prompt.harness.label">ハーネス導入プロンプト</span>
+                            <button class="howto-copy" type="button" data-copy-target="prompt-harness" aria-label="Copy">
+                                <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><rect x="5" y="5" width="9" height="9" rx="1.5" stroke="currentColor" stroke-width="1.3"/><path d="M11 5V3.5A1.5 1.5 0 009.5 2h-6A1.5 1.5 0 002 3.5v6A1.5 1.5 0 003.5 11H5" stroke="currentColor" stroke-width="1.3"/></svg>
+                                <span data-i18n-key="howto.copy">コピー</span>
+                            </button>
+                        </div>
+                        <pre class="howto-prompt__code" id="prompt-harness" data-i18n-key="howto.prompt.harness.code">https://github.com/uminomae/project-design
+
+このrepoと関連repoの .claude/ ディレクトリ構造を読んで、
+仮説検証型の文献調査をLLMに自律実行させるための
+ハーネス（CLAUDE.md、hooks、skills、agents）の設計を分析して、
+私のプロジェクトにも導入する方法を提案してください。</pre>
+                    </div>
+                </section>
+
+                <!-- Part 2C: 思考の整理 -->
+                <section class="howto-section">
+                    <h3 data-i18n-key="howto.thinking.heading">C. 思考の整理・対人スキル</h3>
+                    <ul class="howto-examples">
+                        <li data-i18n-key="howto.thinking.ex1">「感情処理やメタ認知のフレームワークを私の状況に当てはめて」</li>
+                        <li data-i18n-key="howto.thinking.ex2">「意識の4点仮説を使って、チームの関係性を考えたい」</li>
+                        <li data-i18n-key="howto.thinking.ex3">「5段階モデル（場→波→縁→渦→束）で創作プロセスを設計して」</li>
+                    </ul>
+                </section>
+
+                <!-- Part 3: repo マップ -->
+                <section class="howto-section">
+                    <h3 data-i18n-key="howto.map.heading">なぜ1つのURLで済むのか</h3>
+                    <p class="howto-desc" data-i18n-key="howto.map.desc">project-design（pd）は理論のトップに位置し、READMEから関連repoへリンクしています。LLMがそれらを辿り、目的に最適な知見を引き出します。</p>
+                    <table class="howto-repo-table">
+                        <thead>
+                            <tr>
+                                <th data-i18n-key="howto.map.colTitle">ページタイトル</th>
+                                <th data-i18n-key="howto.map.colContent">コンテンツ概要</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Project Design</strong></td>
+                                <td data-i18n-key="howto.map.pd">Doing（やること）と Being（起きていること）を包含するプロジェクトの構想・設計・実行の理論</td>
+                            </tr>
+                            <tr>
+                                <td><strong data-i18n-key="howto.map.cs.title">創造とは</strong></td>
+                                <td data-i18n-key="howto.map.cs">30の学術領域から「創造とは何か」を探索。創造の5段階モデル（場→波→縁→渦→束）</td>
+                            </tr>
+                            <tr>
+                                <td><strong data-i18n-key="howto.map.as.title">意識とは</strong></td>
+                                <td data-i18n-key="howto.map.as">間主観性・内受容感覚・予測誤差・エポケーの4層モデルで意識の構造を探索</td>
+                            </tr>
+                            <tr>
+                                <td><strong data-i18n-key="howto.map.ks.title">欠損駆動思考とは</strong></td>
+                                <td data-i18n-key="howto.map.ks">違和感・未定義要件・弱い信号を「保持すべき問い」として扱う思考フレームワーク</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <!-- Tips -->
+                <section class="howto-section">
+                    <h3>Tips</h3>
+                    <ul class="howto-tips">
+                        <li data-i18n-key="howto.tips.1">具体的に「何をしたいか」を伝えるほど良い結果が出ます</li>
+                        <li data-i18n-key="howto.tips.2">「関連repoも見て」と追加すると、深掘りされます</li>
+                        <li data-i18n-key="howto.tips.3">Claude.ai、ChatGPT、Gemini など、どのLLMでも使えます</li>
+                    </ul>
+                </section>
+
+
+            </div>
         </div>
     </div>
 
