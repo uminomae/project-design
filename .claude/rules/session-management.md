@@ -45,8 +45,17 @@
 
 パス: `.cache/inbox/`
 
-- 命名: `_instructions-{issue}-{slug}.md`, `REQ-{engine}-*`, `REVIEW-{engine}-*`
+- 命名: `_instructions-{issue}-{slug}.md`, `REVIEW-{engine}-*`
 - 処理完了後は `archive/` に移動
+
+## review artifact 運用
+
+レビュー成果物は inbox / outbox / reviews を分けて扱う。
+
+- 送信記録: `.cache/outbox/REQ-{engine}-*`
+- 親セッションまたは人間への返却: `.cache/inbox/REVIEW-{engine}-*`
+- 履歴の正本: `.cache/reviews/{engine}/...`
+- Codex 非同期 pending: `.cache/reviews/codex/pending/`
 
 ## DIC（成果物整合性チェック）
 
