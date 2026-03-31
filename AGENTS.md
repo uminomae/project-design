@@ -1,144 +1,22 @@
-# AGENTS.md
+# AGENTS.md — Codex エージェント向けガイド
 
-プロジェクトデザイン論の探索・構造化・管理拠点。
+**正本は `CLAUDE.md`。** 本ファイルは OpenAI Codex 等の外部エージェントが読む際の入口。
 
-## このファイルの位置づけ
+## 基本方針
 
-**権限・起動手順・branch ルールの正本は本ファイル。**
-競合した場合は `AGENTS.md` を優先する。本ファイル更新時は `docs/README.md` も同時に確認すること。
+すべてのルール・権限・運用手順は `CLAUDE.md` に定義されている。
+本ファイルと `CLAUDE.md` が矛盾した場合は **`CLAUDE.md` を優先**する。
 
-## プロジェクト概要
+## 参照先
 
-- `project-design` は「プロジェクトデザイン論」を探索する独立モジュール
-- プロジェクト = 「やること（Doing）」＋「起きていること（Being）」を含む出来事
-- Love 駆動開発: 関係・感情・意図が駆動する局面に名前を与える試み
-- 調査資産を `knowledge/evidence/` に蓄積し、`transform/` で公開用に整形する
-- **公開 MD の正本は `pjdhiro` に残す**（creation-space と同じパターン）
+| 内容 | ファイル |
+|------|---------|
+| プロジェクト概要・絶対原則・委任レベル | `CLAUDE.md` |
+| タスク別参照ガイド | `.claude/rules/docs-navigator.md` |
+| Git 規約 | `.claude/rules/commit-rules.md` |
+| セッション管理 | `.claude/rules/session-management.md` |
 
-## コンテンツ源（pjdhiro 正本）
+## Codex 固有の差分
 
-| pjdhiro 上のパス | 内容 |
-|---|---|
-| `_pages/pd/project-design.md` | PD 総論（射程・領域・Doing/Being・Love駆動開発） |
-| `_pages/pd/dialogue/` | 対話記録 7篇（創造、受容、場と時代、概念共有、精神、PD、2025） |
-| `_pages/pd/thinking/` | 思考法（欠損駆動思考、BI思考） |
-| `_pages/pd/emotional-processing/` | 感情処理 7篇（瞑想、情動伝染、感情メタ認知、心理的境界、価値、受容、総論） |
-| `_pages/pd/word/` | 用語定義（プロジェクト、その他） |
-
-## 絶対原則
-
-- **保持論点を急いで解くな**。不快と混乱は保持論点として残す
-- **AI多数派バイアス保護**: 独自の主張を通説に丸めない
-- **[P][M][S]タグ**: [P]確立事実 / [M]比喩的解釈 / [S]推測仮説。最終出力には含めない
-- 対話する人間の固有名詞は **pjdhiro** を使用
-- **取り消せない操作、価値判断を伴う操作は pjdhiro の明示的承認なしに実行しない**
-- **デザインルールは対話から拾って常にブラッシュアップする**: pjdhiro との UI 対話で生まれたデザイン判断（採用・却下とも）は `docs/DESIGN-RULES.md` に同一セッション内で反映する。品質管理の一環であり、ルールの陳腐化を防ぐ
-
-<important if="you are writing or modifying JS/TS files">
-
-## コーディング禁止事項
-
-- **JS/TS ファイルでシェルエスケープを使ってはならない**。具体的に禁止するパターン:
-  - `\!` → `!` と書く（`!==`, `!value` 等）
-  - `` \` `` → `` ` `` と書く（テンプレートリテラル）
-  - `\${` → `${` と書く（テンプレートリテラル内の式展開）
-
-</important>
-
-## 委任レベル
-
-| レベル | 例 |
-|--------|-----|
-| 自律実行 | ファイル読み取り、state.md更新、同期チェック、inbox管理 |
-| 確認後実行 | ファイル削除・統合、ルール変更 |
-| pjdhiro専権 | しっくり感チェック、保持論点の解消、理論の最終採否、公開判定 |
-
-**永続承認**: セッション終了時に pjdhiro が承認した操作は永続的に有効。
-**dev/ 以下の push**: dev/ 配下の全リポジトリは push まで自律実行してよい（2026-03-19 pjdhiro承認）。
-
-## パス定数
-
-| 用途 | パス |
-|------|------|
-| state.md | `.cache/session/state.md` |
-| inbox | `.cache/inbox/` |
-| outbox | `.cache/outbox/` |
-| active | `.cache/active/` |
-| セッションログ | `.cache/session/log-{YYYYMMDD}-{seq}.md` |
-
-## 開発サーバー
-
-macOS launchd でローカルサーバーを常駐させる。スクリプトの手動実行ではなく **launchd が正規の起動方法**。
-
-| 項目 | 値 |
-|------|------|
-| URL | `http://localhost:3004/` |
-| 起動スクリプト | `serve.sh` |
-| launchd plist | `~/Library/LaunchAgents/com.uminomae.project-design.plist` |
-| ログ | `~/Library/Logs/project-design.log` |
-
-### 操作コマンド
-
-```bash
-# 起動（通常は RunAtLoad で自動起動）
-launchctl load ~/Library/LaunchAgents/com.uminomae.project-design.plist
-
-# 停止
-launchctl unload ~/Library/LaunchAgents/com.uminomae.project-design.plist
-
-# 状態確認
-lsof -i :3004 -P
-```
-
-<important if="this is the beginning of a session">
-
-## セッション開始手順
-
-1. **state.md を読む**: `.cache/session/state.md`
-2. **同期チェック**: `git branch --show-current` → develop確認、HEAD vs remote
-3. **inbox/active 確認**
-4. **現状報告** → pjdhiro にタスクを選んでもらう
-
-</important>
-
-## Git 規約
-
-- 作業ブランチ: **develop**（main はマージ=公開。pjdhiroが判断）
-- `Co-Authored-By: Codex <noreply@anthropic.com>` を含める
-- push権限は §委任レベル に従う
-
-<important if="the session is ending or user requests session end">
-
-## セッション終了時（必須）
-
-1. state.md を **Read-Before-Write** で更新
-2. セッションログ作成: `.cache/session/log-{YYYYMMDD}-{seq}.md`
-3. state.md に最終コミットSHA・次セッションへの指示
-
-</important>
-
-## 自律権限
-
-### 自律pushできる範囲
-- evidence/ の調査データ
-- state.md / session log / inbox 整理
-- knowledge/ のデータ追加・更新
-
-### pjdhiro承認が必要
-- AGENTS.md / .Codex/rules/ の変更
-- docs/ の構造的変更
-- develop → main マージ
-- 新しいIssueの作成
-
-## 関連リポジトリ
-
-| リポジトリ | 関係 |
-|---|---|
-| `pjdhiro` | 公開先。`_pages/pd/` の MD をホスティング |
-| `kesson-driven-thinking` | 欠損駆動思考の探索拠点。PD の重要部品 |
-| `creation-space` | 「創造とは」の探索拠点。PD の実践事例 |
-| `kesson-space` | kesson-space サイト |
-
-## 参照ガイド
-
-タスク種別に応じた必読ファイルは `.Codex/rules/docs-navigator.md` を参照。
+- Co-Authored-By: `Co-Authored-By: Codex <noreply@openai.com>`
+- 非対話実行のため、pjdhiro 承認が必要な操作は実行せず outbox に報告を残すこと

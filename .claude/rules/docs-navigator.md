@@ -9,7 +9,7 @@ CLI は docs/ を自動読み込みしない。以下の対応表に従い、タ
 | プロジェクト全体の状況把握 | `docs/README.md` | エントリーポイント |
 | プロジェクト方針の確認 | `docs/PROJECT.md` | プロジェクト憲章 |
 | commit・push | `.claude/rules/commit-rules.md` | Git 規約 |
-| セッション管理 | `.claude/rules/session-management.md` | セッション手順 |
+| セッション管理・state.md 同期 | `.claude/rules/session-management.md` | セッション手順・state.md トリガー |
 | 参照リポの確認 | `.claude/rules/reference-repos.md` | 見本リポ・PM委任 |
 | UI / CSS 変更 | `docs/DESIGN-RULES.md` | グロークラス体系・レスポンシブ・カラー |
 | knowledge 追加 | `knowledge/README.md` | データ構造 |
