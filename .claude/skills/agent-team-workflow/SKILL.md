@@ -14,9 +14,9 @@ agent: "CLI"
 
 # agent-team-workflow スキル
 
-**バージョン**: 1.3
+**バージョン**: 1.5
 **作成日**: 2026-03-27
-**Issue**: cs#188
+**Issue**: cs#188, techo#68, techo#71, techo#72, techo#73, techo#74, techo#75
 **正本**: project-design（メタリポジトリ）
 **参照元**: [Imbad0202/academic-research-skills](https://github.com/Imbad0202/academic-research-skills) (CC BY-NC 4.0) のエッセンスを抽出し、pjdhiro プロジェクト向けに独自設計・独自実装。
 
@@ -25,6 +25,12 @@ agent: "CLI"
 ## 0. 概要
 
 全スキル・全CLIの基本作業フローをマルチエージェントチームで実行する汎用ワークフロー。
+
+### 原則: シンプルさファースト
+
+**「複雑さを足す前にシンプルな方法を使い切る」**（[Building Effective Agents](https://www.anthropic.com/engineering/building-effective-agents)）。
+
+本ワークフローのデフォルトは **Phase 1-2（SURVEY + REVIEW）のみ**。フル実行（Phase 1-7）は、タスク規模判定またはユーザーの明示指定がある場合のみ。
 
 ### 指示書生成スキルとの連携
 
@@ -49,15 +55,26 @@ agent: "CLI"
 - `CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS=1` が `.claude/settings.json` の `env` に設定されていること
 - `.claude/agents/team-researcher.md`、`.claude/agents/team-planner.md`、`.claude/agents/team-critic.md`、`.claude/agents/team-worker.md` が配置されていること
 
+### タスク規模判定（techo#74）
+
+Main は alignment 受領時に、チーム実行の必要性を判定する。
+
+| 判定 | 条件 | 実行形態 |
+|------|------|---------|
+| **single** | 単一ファイルの修正・生成、明確な仕様の定型作業、事実検証不要な実装 | チーム不使用。Main が単独で実行 |
+| **light** | 1つの観点から調査・検証すれば十分 | Phase 1-2 のみ（デフォルト） |
+| **standard** | 複数ソースの調査統合、設計判断が必要 | Phase 1-4（調査＋計画） |
+| **full** | 仮説の妥当性検証、複数ファイル横断の実装、高信頼リサーチ | Phase 1-7（フル実行） |
+
+ユーザーまたは指示書が明示的に Phase 構成を指定した場合、その指定が優先される（オーバーライド）。
+
 ### 呼び出し方
 
 | 方法 | 例 |
 |------|-----|
-| **全体実行** | 「このタスクを agent-team-workflow で」 |
-| **特定 Phase のみ** | 「Phase 1-2 だけ」「REVIEW だけ」 |
+| **自動判定** | 「このタスクを agent-team-workflow で」→ Main が規模判定 |
+| **明示指定** | 「Phase 1-2 だけ」「full で」「REVIEW だけ」 |
 | **指示書から課題注入** | SKILL.md は骨格、具体的な課題・ゴール・スキップ指定はテンプレートで渡す |
-
-不要な Phase はスキップしてよい。LLM または指示書が判断する。
 
 ### Agent 定義
 
@@ -79,8 +96,9 @@ agent: "CLI"
 Main（本体セッション）が以下を実行する:
 
 1. **タスク定義の確認**: 何を調べ/作り/検証するか
-2. **Phase 選択**: 全 Phase か、特定 Phase のみか
-3. **共有辞書の構築**: タスクに関連する用語・判定基準を整理
+2. **タスク規模判定**: §0 の判定基準に基づき single / light / standard / full を決定
+3. **Phase 選択**: 規模判定に基づく Phase 構成（ユーザー指定があればオーバーライド）
+4. **共有辞書の構築**: タスクに関連する用語・判定基準を整理
 
 ```yaml
 # Main が構築する共有辞書（タスクごとに内容が変わる）
@@ -95,7 +113,24 @@ alignment:
     info: "参考情報"
   scope: "{調査範囲の制約}"
   skip_phases: []  # スキップする Phase 番号
+  scale: "light"   # single | light | standard | full（自動判定結果を記録）
+  review_mode: "single"  # single | voting（§2 参照）
 ```
+
+---
+
+### Phase 間ゲート: Handoff スキーマ検証（techo#71）
+
+Main は各 Phase の出力を次 Phase に渡す前に、以下の必須フィールドを検証する。不正な形式はエラーとして差し戻す。
+
+| フォーマット | 必須フィールド |
+|---|---|
+| **handoff** | `findings[].claim`, `findings[].evidence`, `findings[].confidence`（high/medium/low） |
+| **review** | `consensus`（CONSENSUS-4/3/SPLIT/CRITICAL のいずれか）, `convergence.recommendation` |
+| **plan** | `steps[].id`, `steps[].assignee`（worker/researcher/critic）, `steps[].deliverables` |
+| **worker-result** | `deliverables[]`（1件以上） |
+
+検証に失敗した場合、Main は該当エージェントにフォーマット修正を指示して再実行する（最大1回）。
 
 ---
 
@@ -193,8 +228,10 @@ Phase 2 と同じ手順。入力 = Phase 5 の実装結果。
 
 毎回同じエンジン。入力が違うだけ（調査結果 / 計画 / 実装結果）。
 
+### Single モード（デフォルト）
+
 ```
-Main が critic を起動
+Main が critic を1体起動
   → critic が Question taxonomy で問いを生成
   → critic が V3-V6 で検証
   → critic が Consensus を判定
@@ -204,6 +241,26 @@ Main が判定を確認
   → 収束 → 次 Phase
   → 未収束 → 前 Phase に差し戻し or 追加ラウンド
 ```
+
+### Voting モード（techo#75、alignment に `review_mode: voting` で有効化）
+
+高信頼性が必要な場面（リサーチ、重要な設計判断）で使用。同一入力で critic を複数独立実行し、多数決で判定する。
+
+```
+Main が critic を 2-3 体並行起動（同一入力、独立実行）
+  → 各 critic が独立に V3-V6 検証 + consensus 判定
+Main が結果を集約
+  → 多数決で consensus 判定を統合
+  → 意見が割れた場合: 各 critic の指摘を統合し追加ラウンドへ
+  → 全員一致: 高信頼で次 Phase へ
+```
+
+| 項目 | Single | Voting |
+|------|--------|--------|
+| critic 数 | 1 | 2-3 |
+| コスト | 低 | 中-高 |
+| 信頼度 | 標準 | 高（独立検証による三角測量） |
+| 適用場面 | 通常タスク | 高信頼リサーチ、重要設計判断 |
 
 ### 収束の4シグナル（3つ以上で収束）
 
@@ -280,6 +337,8 @@ review:
 
 ## 5. メタ評価（Phase 7 CLOSE 用、任意）
 
+### 品質次元
+
 | 次元 | 評価観点 |
 |------|---------|
 | **coverage** | 調査の網羅性 |
@@ -289,14 +348,43 @@ review:
 | **efficiency** | ラウンド数・時間の妥当性 |
 | **novelty** | 新規 INSIGHT の質 |
 
+### 実行統計（techo#73）
+
+Main は各 Phase 完了時に以下を記録し、Phase 7 で集計する:
+
+```yaml
+execution_stats:
+  scale_used: "light"  # 実際に使用した規模
+  phases_executed: [1, 2]
+  total_agents_spawned: 3
+  per_phase:
+    - phase: 1
+      agents: 2
+      errors: 0
+      rounds: 1
+    - phase: 2
+      agents: 1
+      errors: 0
+      rounds: 1
+      review_mode: "single"  # or "voting"
+      consensus_result: "CONSENSUS-3"
+  gate_failures: 0  # handoff スキーマ検証の失敗回数
+  insights_total: 5
+```
+
+この統計はセッションログに含め、ワークフロー改善の根拠とする。
+
 ---
 
 ## Gotchas
 
-- **全 Phase 実行は重い**: 小タスクでは Phase 1-2 のみ、または Phase 5-6 のみで十分
+- **シンプルさファースト**: まず single / light で十分か判断する。full はコストに見合う場合のみ
+- **デフォルトは Phase 1-2**: 明示指定または自動判定が standard/full でない限り、light 実行
 - **ラウンド上限**: デフォルト3ラウンドで収束しない場合、問題の分割を検討
 - **V1-V6 の過剰使用**: 全検証を毎回回すとコスト高。agent の判断に委ねる
-- **Main の役割**: Main は orchestrator。agent の起動・結果の集約・判定・次 Phase への遷移を制御する
+- **Voting モードのコスト**: critic 2-3体分のトークンを消費する。通常タスクには不要
+- **ゲート検証**: handoff スキーマ不正は1回だけリトライ。2回失敗したら Main が手動介入
+- **Main の役割**: Main は orchestrator。規模判定・agent の起動・ゲート検証・結果の集約・判定・次 Phase への遷移を制御する
 
 ---
 
@@ -304,6 +392,7 @@ review:
 
 | 日付 | バージョン | 内容 |
 |------|-----------|------|
+| 2026-04-01 | 1.5 | Building Effective Agents 知見反映: 自動ルーティング(techo#68)、handoff スキーマ検証ゲート(techo#71)、デフォルト最小構成(techo#72)、実行統計の可視化(techo#73)、単一LLM十分性判定(techo#74)、Voting パターン(techo#75) |
 | 2026-03-31 | 1.4 | 4 agent + Coordinator 構成に拡張。planner / worker 追加、WRITE 権限を worker に限定 (techo#66) |
 | 2026-03-30 | 1.3 | 指示書生成スキルとの連携を明文化 (techo#56) |
 | 2026-03-27 | 1.2 | Agent Teams に統一。正本を project-design に移動 |
