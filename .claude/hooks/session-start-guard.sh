@@ -37,6 +37,11 @@ if [ "$branch_name" != "develop" ]; then
   hook_block "session-start-guard: develop branch required, current: ${branch_name}"
 fi
 
-if find "${REPO_ROOT}/.cache/outbox" -maxdepth 1 -type f \( -name 'DONE-*.md' -o -name 'REVIEW-*.md' \) 2>/dev/null | grep -q .; then
-  hook_warn "session-start-guard: unprocessed DONE/REVIEW in outbox"
+if {
+  find "${REPO_ROOT}/.cache/outbox" -maxdepth 1 -type f \( -name 'DONE-*.md' -o -name 'REQ-*.md' -o -name 'REVIEW-*.md' \) 2>/dev/null
+  find "${REPO_ROOT}/.cache/inbox" -maxdepth 1 -type f -name 'REVIEW-*.md' 2>/dev/null
+  find "${REPO_ROOT}/.cache/reviews/codex/pending" -maxdepth 1 -type f 2>/dev/null
+} | grep -q .
+then
+  hook_warn "session-start-guard: unprocessed review artifacts detected"
 fi
