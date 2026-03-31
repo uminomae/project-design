@@ -47,7 +47,7 @@ agent: "CLI"
 ### 前提条件
 
 - `CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS=1` が `.claude/settings.json` の `env` に設定されていること
-- `.claude/agents/team-researcher.md` と `.claude/agents/team-critic.md` が配置されていること
+- `.claude/agents/team-researcher.md`、`.claude/agents/team-planner.md`、`.claude/agents/team-critic.md`、`.claude/agents/team-worker.md` が配置されていること
 
 ### 呼び出し方
 
@@ -61,14 +61,14 @@ agent: "CLI"
 
 ### Agent 定義
 
-| agent | 定義ファイル | 役割 |
-|-------|-------------|------|
-| **researcher** | `.claude/agents/team-researcher.md` | 調査・情報収集・V1-V2 事実検証 |
-| **critic** | `.claude/agents/team-critic.md` | 批判的検証・V3-V6・合意度判定 |
-| **architect** | Main が兼任（デフォルト） | 構造化・計画立案 |
-| **implementer** | Main が兼任（デフォルト） | 実装・実行 |
+| agent | 定義ファイル | 役割 | 権限 |
+|-------|-------------|------|------|
+| **researcher** | `.claude/agents/team-researcher.md` | 調査・情報収集・V1-V2 事実検証 | READ-ONLY |
+| **planner** | `.claude/agents/team-planner.md` | 構造化・計画立案・ステップ分解 | READ-ONLY |
+| **critic** | `.claude/agents/team-critic.md` | 批判的検証・V3-V6・合意度判定 | READ-ONLY |
+| **worker** | `.claude/agents/team-worker.md` | 汎用実行。Main が役割を注入（implementer / translator 等） | READ/WRITE |
 
-最小構成は researcher + critic の2 agent。Main（呼び出し元）が architect/implementer を兼任する。
+標準構成は 4 agent + Coordinator（Main）。WRITE 権限は worker のみに限定する。Main は Coordinator として起動・集約・判定・遷移を制御する。
 
 ---
 
@@ -140,16 +140,17 @@ alignment:
 
 ### Phase 3: PLAN（計画）
 
-**実行者**: Main（architect 兼任）
+**実行者**: planner agent
 
 **Main の手順**:
 
-1. Phase 2 の収束した調査結果 + INSIGHT を読む
-2. 実行計画を立てる:
-   - ステップの分解
-   - 各ステップの担当（Main / agent）
-   - 成果物の定義
-   - リスクと対策
+1. Phase 2 の収束した調査結果 + INSIGHT を集約する
+2. Agent Teams で team-planner を起動する。プロンプトに以下を含める:
+   - `.claude/agents/team-planner.md` を読むこと
+   - alignment（共有辞書）
+   - Phase 1-2 の調査結果・INSIGHT
+   - 制約条件
+3. planner が返す plan（ステップ分解、担当割り当て、worker-assignment ドラフト）を確認する
 
 ---
 
@@ -161,13 +162,13 @@ Phase 2 と同じ手順。入力 = Phase 3 の計画。
 
 ### Phase 5: EXECUTE（実装）
 
-**実行者**: Main（implementer 兼任）、必要に応じて Agent-WT
+**実行者**: worker（role: implementer）、必要に応じて複数 worker を並行起動
 
 **Main の手順**:
 
-1. Phase 4 で収束した計画に基づいて実装する
-2. ファイル編集を伴う独立タスクは Agent-WT（worktree）で並行実行可
-3. 実装結果を記録する
+1. Phase 4 で収束した計画に基づいて worker を起動する
+2. 独立したタスクは worker を複数起動して並行実行（worktree と組み合わせ可）
+3. 各 worker の worker-result を集約する
 
 ---
 
@@ -303,6 +304,7 @@ review:
 
 | 日付 | バージョン | 内容 |
 |------|-----------|------|
+| 2026-03-31 | 1.4 | 4 agent + Coordinator 構成に拡張。planner / worker 追加、WRITE 権限を worker に限定 (techo#66) |
 | 2026-03-30 | 1.3 | 指示書生成スキルとの連携を明文化 (techo#56) |
 | 2026-03-27 | 1.2 | Agent Teams に統一。正本を project-design に移動 |
 | 2026-03-27 | 1.1 | 実行可能な手順に更新。Agent 定義追加、Main の具体的手順を記述 |
