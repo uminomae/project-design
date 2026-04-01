@@ -1,5 +1,5 @@
 // src/shaders/aura-v3.js — 4ttGDH風 多重Domain Warping + 5 octave FBM
-import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js';
+import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.183.0/build/three.module.js';
 
 let scene, camera, renderer, material, mesh, animationId;
 let targetScroll = 0;
@@ -12,6 +12,7 @@ function init() {
   renderer = new THREE.WebGLRenderer({ alpha: true, antialias: false });
   renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
   renderer.setSize(innerWidth, innerHeight);
+  renderer.outputColorSpace = THREE.SRGBColorSpace;
   container.appendChild(renderer.domElement);
 
   scene = new THREE.Scene();
