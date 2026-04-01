@@ -80,3 +80,7 @@ Project Design is the practice of not only planning, designing, and executing pr
 ## Author
 
 **pjdhiro** — [https://github.com/uminomae](https://github.com/uminomae)
+
+## License
+
+[MIT License](LICENSE)

@@ -138,7 +138,7 @@ export const TRANSLATIONS = {
         'howto.tips.1': '具体的に「何をしたいか」を伝えるほど良い結果が出ます',
         'howto.tips.2': '「関連repoも見て」と追加すると、深掘りされます',
         'howto.tips.3': 'Claude.ai、ChatGPT、Gemini など、どのLLMでも使えます',
-        'howto.note': '理論の最終採否・公開判定は pjdhiro 専権です。活用は自由ですが、公開・引用時は出典を明記してください。',
+        'howto.note': 'MIT License — 商用利用・改変・再配布すべて自由です。出典表示の義務はありません。詳細は各リポジトリの LICENSE ファイルをご覧ください。',
     },
     en: {
         'menu.toggle': 'Menu',
@@ -240,6 +240,6 @@ export const TRANSLATIONS = {
         'howto.tips.1': 'The more specific you are about your goal, the better the results',
         'howto.tips.2': 'Adding "also check related repos" enables deeper exploration',
         'howto.tips.3': 'Works with any LLM: Claude.ai, ChatGPT, Gemini, etc.',
-        'howto.note': 'Final decisions on theory adoption and publication are reserved by pjdhiro. Feel free to use the content, but please cite the source when publishing or quoting.',
+        'howto.note': 'MIT License — Free for commercial use, modification, and redistribution. No attribution required. See the LICENSE file in each repository for details.',
     },
 };
