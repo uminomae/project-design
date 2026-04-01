@@ -204,10 +204,10 @@ Parent: #44
 **概念2: Year Zero / Stunde Null**
 - 否定的な扱い: 過去の断絶を宣言し、歴史の連続性を暴力的に切断する政治的レトリックになりうる。
 - 肯定的な扱い: 主要な肯定的扱いは見つからなかった。
-- 権力的な扱い: カンボジアの `Year Zero` は、過去の制度と文化の抹消を正当化する宣言として機能した。`Stunde Null` も戦後の連続性を切断する神話として使われる。
+- 権力的な扱い: カンボジアの `Year Zero` は、過去の制度と文化の抹消を正当化する宣言として機能した（Kiernan, *The Pol Pot Regime*, 2002）。`Stunde Null` も戦後ドイツにおいて連続性を切断する神話として使われたが、実際にはナチ体制との人的・制度的連続性は維持されていた（Judt, *Postwar*, 2005）。
 - 両者の関係: `片方のみ`。少なくとも歴史学的評価では、主に危険な断絶言説として現れる。
-- 語りの限界: 「本当にゼロから始まった」とは歴史学的にはほとんど言えない。
-- 出典: [Britannica: Cambodian Genocide](https://www.britannica.com/event/Cambodian-Genocide)
+- 語りの限界: 「本当にゼロから始まった」とは歴史学的にはほとんど言えない。Year Zero の宣言が実際に何を破壊し何を温存したかは、Chandler (*A History of Cambodia*, 4th ed., 2008) が詳述している。
+- 出典: [Britannica: Cambodian Genocide](https://www.britannica.com/event/Cambodian-Genocide), Ben Kiernan, *The Pol Pot Regime: Race, Power, and Genocide in Cambodia under the Khmer Rouge, 1975–79* (Yale University Press, 2002), David Chandler, *A History of Cambodia* (4th ed., Westview Press, 2008), Tony Judt, *Postwar: A History of Europe Since 1945* (Penguin, 2005)
 
 ### D17 言語学
 
@@ -268,10 +268,10 @@ Parent: #44
 
 **概念3: terra nullius**
 - 否定的な扱い: 主要な肯定的扱いは見つからなかった。むしろ、所有者不在の宣言が先住民の権利抹消に使われた。
-- 権力的な扱い: `terra nullius` は土地を「空白」と宣言することで、収奪と排除を正当化した。
+- 権力的な扱い: `terra nullius` は土地を「空白」と宣言することで、収奪と排除を正当化した。その法的根拠はローマ法の *res nullius* 概念と15世紀の教皇勅書（Discovery Doctrine）に遡る。
 - 両者の関係: `片方のみ`。ここでの「ゼロ」は足場ではなく権力の言説装置である。
-- 語りの限界: 法的な「無主地」と現地の lived reality が乖離する。
-- 出典: [Cornell Wex: Terra nullius](https://www.law.cornell.edu/wex/terra_nullius)
+- 語りの限界: 法的な「無主地」と現地の lived reality が乖離する。オーストラリア最高裁 Mabo v Queensland (No 2) [1992] HCA 23 は、terra nullius の法的虚構性を認定し、先住民の土地権を回復した画期的判決である。
+- 出典: [Cornell Wex: Terra nullius](https://www.law.cornell.edu/wex/terra_nullius), Mabo v Queensland (No 2) [1992] HCA 23, Hannah Arendt, *The Origins of Totalitarianism* (Harcourt, 1951), Giorgio Agamben, *Homo Sacer: Sovereign Power and Bare Life* (Stanford University Press, 1998)
 
 ### D21 経済学（理論）
 
@@ -308,21 +308,35 @@ Parent: #44
 
 ### D24 宗教学・神秘主義
 
-**概念**: `空`、否定神学、ファナー、無為
+**概念**: `空`、否定神学、ファナー、無為、ケノーシス、ツィムツーム
 
 **概念1: 仏教の `空`**
-- 否定的な扱い: 実体否定のため、虚無主義と誤解されやすい。
-- 肯定的な扱い: 縁起と非実体性を示し、悟りへの認識転換を支える。
+- 否定的な扱い: 実体否定のため、虚無主義と誤解されやすい。ナーガールジュナ『中論』24:11 はこの誤読を明示的に批判している。
+- 肯定的な扱い: 縁起と非実体性を示し、悟りへの認識転換を支える。空は諸法の成立条件であり、空でなければ四聖諦も成り立たない（『中論』24:14）。
 - 両者の関係: `学派依存`。虚無論的読解と中道的読解が分かれる。
-- 語りの限界: `空` を固定的な「何か」として語ると取り違えになる。
-- 出典: [IEP: Nagarjuna](https://iep.utm.edu/nagarjun/)
+- 語りの限界: `空` を固定的な「何か」として語ると取り違えになる。空自体もまた空である（空空）という再帰構造が語りを困難にする。
+- 出典: [IEP: Nagarjuna](https://iep.utm.edu/nagarjun/), [SEP: Nagarjuna](https://plato.stanford.edu/entries/nagarjuna/)
 
 **概念2: 否定神学 / 神秘的無化**
 - 否定的な扱い: 神は肯定的表象で捉えられず、沈黙や否定に追い込まれる。
 - 肯定的な扱い: その否定が超越への接近方法になり、ファナーでは自己の消滅がバカーへの前提になる。
 - 両者の関係: `同時的共存`。否定がそのまま接近方法になる。
-- 語りの限界: 語れば外し、黙れば届かない、という自己矛盾を抱える。
-- 出典: [Britannica: Apophatic theology](https://www.britannica.com/topic/apophatic-theology), [Britannica: Fana](https://www.britannica.com/topic/fana-Sufism), [Britannica: Nirguna](https://www.britannica.com/topic/nirguna), [SEP: Laozi](https://plato.stanford.edu/entries/laozi/)
+- 語りの限界: 語れば外し、黙れば届かない、という自己矛盾を抱える。ハッラージュの「アナ・アル=ハック（我は真理なり）」宣言（922年処刑）は、ファナーの極致が言語化された瞬間であり、その言語化自体が異端として裁かれた。
+- 出典: [Britannica: Apophatic theology](https://www.britannica.com/topic/apophatic-theology), [Britannica: Fana](https://www.britannica.com/topic/fana-Sufism), [Britannica: Nirguna](https://www.britannica.com/topic/nirguna), [SEP: Laozi](https://plato.stanford.edu/entries/laozi/), [SEP: Mysticism](https://plato.stanford.edu/entries/mysticism/)
+
+**概念3: ケノーシス（キリスト教）**
+- 否定的な扱い: 神が自己を空にする（ピリピ書2:7「己を虚しうし」）行為は、全能性の放棄として映る。
+- 肯定的な扱い: 自己空虚化が受肉と救済の条件になる。神学的には神の愛の極致として解釈される。
+- 両者の関係: `同時的共存`。全能の放棄がそのまま救済の条件になる。
+- 語りの限界: 無限者の有限化をどう語るかは教派によって大きく異なる。マザー・テレサの手紙（"Come Be My Light", 2007）は、信仰者における神の不在体験が数十年にわたり持続しうることを示した。
+- 出典: [SEP: Christianity and Philosophy - Kenosis](https://plato.stanford.edu/entries/christiantheology-philosophy/#Keno)
+
+**概念4: ツィムツーム（カバラ）**
+- 否定的な扱い: 神の自己収縮は、被造世界に神の不在領域を生む。
+- 肯定的な扱い: 収縮なしには有限な世界が存在できない。創造の前提条件として機能する。ルーリア派カバラ（16世紀）の中核概念。
+- 両者の関係: `同時的共存`。不在の創出がそのまま存在の条件になる。
+- 語りの限界: ルーリア派カバラの特殊な文脈を普遍化することへの留保が必要。
+- 出典: [SEP: Kabbalah](https://plato.stanford.edu/entries/kabbalah/)
 
 ### D25 人類学・民族学
 
@@ -330,16 +344,17 @@ Parent: #44
 
 **概念1: liminality**
 - 否定的な扱い: 古い身分が失われた中間状態であり、不安定で危うい。
-- 肯定的な扱い: 変容とコミュニタスの条件であり、儀礼の中核的段階になる。
+- 肯定的な扱い: 変容とコミュニタスの条件であり、儀礼の中核的段階になる。Victor Turner (*The Ritual Process: Structure and Anti-Structure*, 1969) は通過儀礼の中間段階（リミナリティ）において、既存の社会構造が一時的に解体され、平等で未分化な共同性（コミュニタス）が生じることを示した。
 - 両者の関係: `段階的変容`。剥奪から再編への過程で意味を持つ。
-- 出典: [Britannica: Rite of passage](https://www.britannica.com/topic/rite-of-passage)
+- 語りの限界: Turner のコミュニタス概念は儀礼文脈を超えて広く援用されるが、脱文脈化による概念の希薄化が指摘されている。
+- 出典: [Britannica: Rite of passage](https://www.britannica.com/topic/rite-of-passage), Victor Turner, *The Ritual Process: Structure and Anti-Structure* (Aldine, 1969)
 
 **概念2: terra nullius**
 - 否定的な扱い: 主要な肯定的扱いは見つからなかった。
-- 権力的な扱い: 文化的・法的に inhabited だった土地を「無主」と宣言することで、植民地支配を正当化する。
+- 権力的な扱い: 文化的・法的に inhabited だった土地を「無主」と宣言することで、植民地支配を正当化する。Mabo v Queensland (No 2) [1992] は、この法的虚構の転換点となった。
 - 両者の関係: `片方のみ`。この「空白」は記述ではなく支配の技法である。
 - 語りの限界: 人類学的実在と国家法のカテゴリーが衝突する。
-- 出典: [Cornell Wex: Terra nullius](https://www.law.cornell.edu/wex/terra_nullius), [Society for Cultural Anthropology: Emptiness](https://www.culanth.org/fieldsights/emptiness-an-introduction)
+- 出典: [Cornell Wex: Terra nullius](https://www.law.cornell.edu/wex/terra_nullius), [Society for Cultural Anthropology: Emptiness](https://www.culanth.org/fieldsights/emptiness-an-introduction), Mabo v Queensland (No 2) [1992] HCA 23
 
 ### D26 音楽学
 
@@ -385,20 +400,27 @@ Parent: #44
 
 ### D30 伝統知・技芸
 
-**概念**: 初心、beginner's mind、守破離
+**概念**: 初心、beginner's mind、守破離、無心
 
 **概念1: 初心 / beginner's mind**
 - 否定的な扱い: 未熟で、まだ一人前ではない段階として現れる。
-- 肯定的な扱い: 開放性と学習可能性に富む状態として評価され、熟達後も更新の条件とされる。
+- 肯定的な扱い: 開放性と学習可能性に富む状態として評価され、熟達後も更新の条件とされる。世阿弥『花鏡』の「初心忘るべからず」は、初心を単なる未熟ではなく、熟達者が回帰すべき原点として位置づけた。鈴木俊隆『禅マインド ビギナーズ・マインド』(1970) はこの概念を禅の文脈で西洋に紹介し、「初心者の心には多くの可能性がある。専門家の心にはほとんどない」と定式化した。
 - 両者の関係: `段階的変容`。未熟さが、そのまま熟達の入り口と刷新条件になる。
-- 出典: [Britannica: Zeami](https://www.britannica.com/biography/Zeami), [Britannica: Zen](https://www.britannica.com/topic/Zen)
+- 出典: [Britannica: Zeami](https://www.britannica.com/biography/Zeami), [Britannica: Zen](https://www.britannica.com/topic/Zen), Shunryu Suzuki, *Zen Mind, Beginner's Mind* (Weatherhill, 1970), 世阿弥『花鏡』
 
 **概念2: 守破離**
 - 否定的な扱い: `守` は型の模倣であり、自由や個性の抑制として見える。
 - 肯定的な扱い: 型の内面化を経て、破り、離れるという熟達過程の説明になる。
 - 両者の関係: `段階的変容`。拘束がなければ離脱も成立しない。
-- 語りの限界: 出典系譜が世阿弥、茶道、武道のどこに主軸を置くかで揺れており、直接出典の固定が今後の課題である。
-- 出典: [Britannica: Apprenticeship](https://www.britannica.com/topic/apprenticeship), [国立国会図書館レファレンス協同データベース: 守破離](https://crd.ndl.go.jp/reference/entry/index.php?id=1000054037&page=ref_view)
+- 語りの限界: 守破離の語は千利休の弟子・川上不白『不白筆記』(1794) に遡るとされるが、概念の原型は世阿弥の段階的修行論（『風姿花伝』における年来稽古条々）に見出される。茶道・武道・能楽にまたがる出典系譜を持ち、単一の原典に帰することは困難である。
+- 出典: [Britannica: Apprenticeship](https://www.britannica.com/topic/apprenticeship), [国立国会図書館レファレンス協同データベース: 守破離](https://crd.ndl.go.jp/reference/entry/index.php?id=1000054037&page=ref_view), 世阿弥『風姿花伝』, 川上不白『不白筆記』(1794)
+
+**概念3: 無心（mushin）**
+- 否定的な扱い: 心を空にすることは、判断力や意識の放棄と映る。
+- 肯定的な扱い: 沢庵宗彭『不動智神妙録』では、心がどこにも止まらない状態が最高の境地とされる。武蔵『五輪書』空の巻でも、空を知ることが道を知ることとされる。
+- 両者の関係: `段階的変容`。意識的修練を経て、意識を手放す段階に至る。
+- 語りの限界: 「無心」を言語で定義すること自体が、無心の状態と矛盾する。
+- 出典: [Wikipedia: Mushin](https://en.wikipedia.org/wiki/Mushin_(mental_state)), [Britannica: Takuan Sōhō](https://www.britannica.com/biography/Takuan-Soho), 宮本武蔵『五輪書』空の巻, 沢庵宗彭『不動智神妙録』
 
 ## B. 横断比較表
 
@@ -427,13 +449,13 @@ Parent: #44
 | D21 | ゼロ利潤 / ゼロサム | あり | あり | なし | レベル差 | 中 |
 | D22 | ゼロベース予算 | あり | あり | あり | 同時的共存 | 中 |
 | D23 | 不均衡 / ZPD / deficit model | あり | あり | あり | 段階的変容 | 中 |
-| D24 | 空 / 否定神学 / 無化 | あり | あり | なし | 学派依存・同時的共存 | 大 |
+| D24 | 空 / 否定神学 / ケノーシス / ツィムツーム | あり | あり | なし | 学派依存・同時的共存 | 大 |
 | D25 | liminality / terra nullius | あり | 一部のみ | あり | 段階的変容・片方のみ | 大 |
 | D26 | rest / silence | あり | あり | なし | 同時的共存 | 中 |
 | D27 | 建築的空所 | あり | あり | なし | レベル差 | 小 |
 | D28 | empty space / poor theatre | あり | あり | なし | 同時的共存 | 小 |
 | D29 | criticality / edge of chaos | あり | あり | なし | 同時的共存 | 大 |
-| D30 | 初心 / 守破離 | あり | あり | なし | 段階的変容 | 中 |
+| D30 | 初心 / 守破離 / 無心 | あり | あり | なし | 段階的変容 | 中 |
 
 ## C. 仮説を支持するデータ
 
