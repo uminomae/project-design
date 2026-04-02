@@ -179,6 +179,48 @@ hook_transcript_contains() {
   rg -q --fixed-strings "$pattern" "$transcript"
 }
 
+hook_mark_read() {
+  local rel_path="$1"
+  python3 - "$HOOK_CACHE_DIR/read-state.json" "$HOOK_SESSION_ID" "$rel_path" <<'PY'
+import json
+import os
+import sys
+from datetime import datetime, timezone
+
+state_path, session_id, rel_path = sys.argv[1:4]
+state = {"sessions": {}}
+if os.path.exists(state_path):
+    with open(state_path, encoding="utf-8") as fh:
+        state = json.load(fh)
+
+session = state["sessions"].setdefault(session_id, {"reads": {}, "updated_at": None})
+session["reads"][rel_path] = datetime.now(timezone.utc).isoformat()
+session["updated_at"] = datetime.now(timezone.utc).isoformat()
+
+with open(state_path, "w", encoding="utf-8") as fh:
+    json.dump(state, fh, ensure_ascii=False, indent=2)
+    fh.write("\n")
+PY
+}
+
+hook_has_read() {
+  local rel_path="$1"
+  python3 - "$HOOK_CACHE_DIR/read-state.json" "$HOOK_SESSION_ID" "$rel_path" <<'PY'
+import json
+import os
+import sys
+
+state_path, session_id, rel_path = sys.argv[1:4]
+if os.path.exists(state_path):
+    with open(state_path, encoding="utf-8") as fh:
+        state = json.load(fh)
+    reads = state.get("sessions", {}).get(session_id, {}).get("reads", {})
+    if rel_path in reads:
+        sys.exit(0)
+sys.exit(1)
+PY
+}
+
 hook_warn() {
   printf 'hook warn: %s\n' "$*" >&2
 }
