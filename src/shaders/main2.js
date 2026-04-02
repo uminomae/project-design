@@ -177,7 +177,12 @@ function init() {
   onScroll();
 
   const MAX_SCROLL_STEP = () => window.__shaderScrollStep || 0.002;
-  const clock = new THREE.Clock();
+  const clockStart = performance.now();
+  const clock = {
+    getElapsedTime() {
+      return (performance.now() - clockStart) / 1000;
+    }
+  };
   function animate() {
     animationId = requestAnimationFrame(animate);
     onScroll();
