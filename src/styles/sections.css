@@ -100,6 +100,15 @@
     color: var(--ink);
 }
 
+.site-footer__license {
+    font-family: var(--serif-en);
+    font-size: 0.7rem;
+    font-weight: 400;
+    color: var(--mute);
+    letter-spacing: 0.05em;
+    margin-top: 1.5rem;
+}
+
 /* === No Script Fallback === */
 .noscript-fallback {
     max-width: 960px;
