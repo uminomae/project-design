@@ -30,7 +30,7 @@ agent: "CLI"
 
 ## 1. チェックセット（簡素版）
 
-毎回すべてを full-scan せず、以下の 5 系統に絞る。
+毎回すべてを full-scan せず、以下の 6 系統に絞る。
 
 | ID | チェック | 内容 |
 |---|---|---|
@@ -39,6 +39,7 @@ agent: "CLI"
 | PR-3 | Canonical reference drift | repo が retired asset を参照していないか、pd 正本を向いているか |
 | PR-4 | Quality smoke | repo 固有の軽量テスト。pd なら `static-checks.js` と必要時 `responsive-test.sh` |
 | PR-5 | Review queue health | stale な Codex pending、未回収 review、close guard 漏れ |
+| PR-6 | Publication staleness | evidence 更新日 > 対応 SVG/PNG/PDF 更新日の検出、旧世代 SVG 形式の検出 |
 
 ## 2. パス規約
 
@@ -83,7 +84,7 @@ done
 - 長く dirty のままの repo
 - stale な review pending
 
-### Step 3: 5 チェックを回す
+### Step 3: 6 チェックを回す
 
 #### PR-1 Git drift
 
@@ -126,6 +127,32 @@ bash .claude/scripts/responsive-test.sh
 - `.cache/reviews/codex/pending/` の stale thread
 - review 必須変更なのに `REVIEW-*` 不在
 - close 前提 Issue に対する review 未回収
+
+#### PR-6 Publication staleness（techo#83）
+
+evidence/ の変更が下流の公開物に反映されているかを検出する。
+
+チェック項目:
+
+1. **更新日比較**: creation-space の `evidence/evidence-D{nn}-*.md` の mtime と、対応する `assets/svg/domains/domain-D{nn}-*.svg` / `assets/png/` / PDF の mtime を比較する。evidence が新しければ WARN
+2. **旧世代 SVG**: `assets/svg/` 内の SVG にインライン `font-family` が残っていれば WARN（techo#82 関連）
+
+```bash
+# evidence vs SVG の更新日比較（creation-space）
+cd /Users/uminomae/dev/creation-space
+for ev in evidence/evidence-D*.md; do
+  domain=$(echo "$ev" | grep -oP 'D\d+')
+  svg=$(ls assets/svg/domains/domain-${domain}-*.svg 2>/dev/null | head -1)
+  if [ -n "$svg" ] && [ "$ev" -nt "$svg" ]; then
+    echo "WARN: $ev is newer than $svg"
+  fi
+done
+
+# 旧世代 SVG 検出
+grep -rl 'font-family' assets/svg/domains/ 2>/dev/null
+```
+
+ルール正本: `techo/rules/rebuild-publication.md`
 
 ### Step 4: レポートを書く
 

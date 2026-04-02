@@ -41,6 +41,7 @@ agent: "CLI"
 - cross-repo 参照を更新する
 - workflow / rules / skills / hooks を変更する
 - UI 導線と docs 契約を同時に変更する
+- evidence/ または knowledge/ の変更を含む（再生成漏れリスク）
 
 軽微な docs 修正などでは任意。
 
@@ -58,8 +59,23 @@ agent: "CLI"
   - hidden assumption
   - 設計判断の飛躍
   - cross-repo 影響
+  - 再生成漏れ（evidence/knowledge 変更時に下流 SVG/PNG/PDF/manifest が未更新）
 
 パス変更を含む場合は、必要に応じて `commit-review-with-log` 相当の影響走査を先に行い、その要約を添える。
+
+### 3.1 再生成漏れ検出（techo#83）
+
+evidence/ または knowledge/ に変更があるコミットでは、以下を WARN として報告する。
+
+| 条件 | WARN メッセージ |
+|---|---|
+| 該当ドメインの SVG が未更新 | evidence 変更に対応する SVG 再生成が未実施 |
+| 該当ドメインの PNG が未更新 | SVG→PNG 変換が未実施 |
+| 該当ドメインの PDF が未更新 | PDF 再生成が未実施 |
+| manifest が未更新 | manifest 更新が未実施 |
+
+依存チェーン: evidence → MD → SVG → PNG → PDF → manifest
+ルール正本: `techo/rules/rebuild-publication.md`
 
 ## 4. 実行手順
 
