@@ -1,23 +1,25 @@
-# WebGL Background Shaders
+# Background Shaders
 
 ## ファイル構成
 
 | ファイル | 役割 |
 |---------|------|
-| `main.js` | 現行採用シェーダー |
-| `src/app.js` | `main.js` を読み込むエントリ |
+| `main-webgpu.js` | develop 採用の WebGPU 背景エントリ |
+| `webgpu-background-core.js` | WGSL 数式移植の中核 |
+| `main.js` | 旧 WebGL 参照（比較用） |
+| `src/app.js` | 背景エントリを読み込むアプリ起点 |
 
 ## 採用シェーダー
 
 | ファイル | 元バージョン | アプローチ |
 |---------|-------------|-----------|
-| main.js | aura-v3 | 4ttGDH風 多重Domain Warping + 5 octave FBM |
+| main-webgpu.js | WebGPU math port | `main.js` の数式を WGSL に移植した背景 |
 
 ## 方針
 
-- ランディングページでは採用済みの 1 本だけを保持する
-- 試作シェーダーは比較検討が終わった時点で削除し、常用のランダム切替は行わない
-- 新規試作を作る場合は、採用判断が済むまで一時ファイルとして扱い、採用後に `main.js` へ反映する
+- develop では `main-webgpu.js` を採用する
+- `main.js` など旧 WebGL 背景は比較・参照用として保持する
+- 比較が不要になった時点で legacy 背景を整理する
 
 ## Gemini 向け生成プロンプト
 
