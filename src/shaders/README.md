@@ -4,8 +4,12 @@
 
 | ファイル | 役割 |
 |---------|------|
-| `main-webgpu.js` | develop 採用の WebGPU 背景エントリ |
-| `webgpu-background-core.js` | WGSL 数式移植の中核 |
+| `main-webgpu.js` | WebGPU 背景 1 |
+| `main2-webgpu.js` | WebGPU 背景 2 |
+| `main3-webgpu.js` | WebGPU 背景 3 |
+| `main4-webgpu.js` | WebGPU 背景 4 |
+| `webgpu-runtime.js` | WebGPU 背景の共通 runtime |
+| `webgpu-background-core.js` | 背景1 の WGSL |
 | `main.js` | 旧 WebGL 参照（比較用） |
 | `src/app.js` | 背景エントリを読み込むアプリ起点 |
 
@@ -14,10 +18,13 @@
 | ファイル | 元バージョン | アプローチ |
 |---------|-------------|-----------|
 | main-webgpu.js | WebGPU math port | `main.js` の数式を WGSL に移植した背景 |
+| main2-webgpu.js | volumetric port | `main2.js` の volumetric density 系を WebGPU 化した背景 |
+| main3-webgpu.js | divergence port | `main3.js` の divergence / fold / blur 系を WebGPU 化した背景 |
+| main4-webgpu.js | lyapunov port | `main4.js` の chaos / order boundary 系を WebGPU 化した背景 |
 
 ## 方針
 
-- develop では `main-webgpu.js` を採用する
+- WebGPU 版 4 本を `SHADER_PATHS` でランダム選択する
 - `main.js` など旧 WebGL 背景は比較・参照用として保持する
 - 比較が不要になった時点で legacy 背景を整理する
 
