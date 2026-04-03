@@ -17,6 +17,12 @@
     margin-bottom: 1.5rem;
 }
 
+.hero-label--ai {
+    margin-bottom: 2.5rem;
+    color: var(--mid);
+    text-shadow: none;
+}
+
 .page-hero h1,
 .hero h1 {
     font-size: clamp(3.5rem, 10vw, 6rem);
@@ -53,15 +59,6 @@
 .overview-text,
 .being-desc {
     margin-bottom: 2rem;
-}
-
-.ai-disclaimer {
-    font-family: var(--sans);
-    font-size: 0.75rem;
-    font-weight: 300;
-    color: var(--mute);
-    letter-spacing: 0.02em;
-    margin-bottom: 1.5rem;
 }
 
 .overview-text {
