@@ -85,6 +85,14 @@
     text-align: center;
 }
 
+.site-footer__license {
+    margin: 1.2rem 0 0;
+    font-family: var(--sans);
+    font-size: 0.82rem;
+    letter-spacing: 0.04em;
+    color: var(--mute);
+}
+
 .site-footer a {
     font-family: var(--serif-en);
     font-size: 1rem;
