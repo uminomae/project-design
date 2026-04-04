@@ -7,7 +7,7 @@
 This is the hub site of pjdhiro presenting **Project Design Theory** — an approach to project envisioning, design, and execution that encompasses both Doing (actions) and Being (phenomena).
 
 - **Primary Language**: Japanese (日本語), with English summaries
-- **Site URL**: https://uminomae.github.io/pjdhiro/project-design/
+- **Site URL**: https://uminomae.github.io/project-design/
 - **Topics**: Project Design Theory, Love-Driven Development, 事業構想 (Business Planning), PMBOK Extension, Emotional Processing, Creativity Structure, Intersubjectivity
 
 ## Core Concepts
