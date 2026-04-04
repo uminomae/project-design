@@ -32,6 +32,8 @@ export const MENU_ITEMS = [
     { type: 'knowledge-link', key: 'design-thinking', href: '?knowledge=design-thinking' },
     { type: 'knowledge-link', key: 'trust', href: '?knowledge=trust' },
     { type: 'knowledge-link', key: 'value', href: '?knowledge=value' },
+    { type: 'separator' },
+    { type: 'action', labelKey: 'slides.trigger', modalOpen: 'slides' },
 ];
 
 export const TRANSLATIONS = {
@@ -136,6 +138,8 @@ export const TRANSLATIONS = {
         'howto.tips.2': '「関連repoも見て」と追加すると、深掘りされます',
         'howto.tips.3': 'Claude.ai、ChatGPT、Gemini など、どのLLMでも使えます',
         'howto.note': 'MIT License — 商用利用・改変・再配布すべて自由です。出典表示の義務はありません。詳細は各リポジトリの LICENSE ファイルをご覧ください。',
+        'slides.trigger': 'プレゼン資料',
+        'slides.title': 'プレゼン資料',
     },
     en: {
         'menu.toggle': 'Menu',
@@ -238,5 +242,7 @@ export const TRANSLATIONS = {
         'howto.tips.2': 'Adding "also check related repos" enables deeper exploration',
         'howto.tips.3': 'Works with any LLM: Claude.ai, ChatGPT, Gemini, etc.',
         'howto.note': 'MIT License — Free for commercial use, modification, and redistribution. No attribution required. See the LICENSE file in each repository for details.',
+        'slides.trigger': 'Slides',
+        'slides.title': 'Presentation Slides',
     },
 };
