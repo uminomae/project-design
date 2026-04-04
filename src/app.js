@@ -8,6 +8,7 @@ import { getSearchParams } from './lib/query-state.js';
 import { createI18n } from './ui/i18n.js';
 import { createMenuController, renderSiteMenu } from './ui/menu.js';
 import { createModalController } from './ui/modal.js';
+import { createSlideViewer } from './ui/slide-viewer.js';
 
 try {
     await loadRandomShader(SHADER_PATHS, import.meta.url);
@@ -25,6 +26,12 @@ const menuController = createMenuController({
 const aboutModal = createModalController(dom.aboutModalElement);
 const howtoModal = createModalController(dom.howtoModalElement);
 const knowledgeModal = createModalController(dom.knowledgeModalElement);
+const slidesModal = createModalController(dom.slidesModalElement);
+
+const slideViewer = createSlideViewer({
+    container: dom.slidesCanvasWrap,
+    pageIndicator: dom.slidesPage,
+});
 
 let modalRouter;
 
@@ -62,12 +69,15 @@ modalRouter = createModalRouter({
     getCurrentLang: () => i18n.getCurrentLang(),
     howtoModal,
     knowledgeModal,
+    slideViewer,
+    slidesModal,
 });
 
 bindAppEvents({
     i18n,
     menuController,
     modalRouter,
+    slideViewer,
 });
 
 async function init() {

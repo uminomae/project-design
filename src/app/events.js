@@ -1,4 +1,4 @@
-export function bindAppEvents({ i18n, menuController, modalRouter }) {
+export function bindAppEvents({ i18n, menuController, modalRouter, slideViewer }) {
     function handleDocumentClick(event) {
         const target = event.target;
 
@@ -26,6 +26,10 @@ export function bindAppEvents({ i18n, menuController, modalRouter }) {
             void modalRouter.openHowto();
             return;
         }
+        if (openTrigger?.dataset.modalOpen === 'slides') {
+            void modalRouter.openSlides();
+            return;
+        }
 
         const closeTrigger = target.closest('[data-modal-close]');
         if (closeTrigger?.dataset.modalClose === 'about') {
@@ -40,6 +44,11 @@ export function bindAppEvents({ i18n, menuController, modalRouter }) {
 
         if (closeTrigger?.dataset.modalClose === 'howto') {
             modalRouter.closeHowto();
+            return;
+        }
+
+        if (closeTrigger?.dataset.modalClose === 'slides') {
+            modalRouter.closeSlides();
             return;
         }
 
@@ -60,6 +69,18 @@ export function bindAppEvents({ i18n, menuController, modalRouter }) {
             return;
         }
 
+        const slidesPrev = target.closest('#slides-prev');
+        if (slidesPrev && slideViewer) {
+            void slideViewer.prev();
+            return;
+        }
+
+        const slidesNext = target.closest('#slides-next');
+        if (slidesNext && slideViewer) {
+            void slideViewer.next();
+            return;
+        }
+
         const knowledgeLink = target.closest('[data-knowledge]');
         if (knowledgeLink) {
             event.preventDefault();
@@ -76,6 +97,19 @@ export function bindAppEvents({ i18n, menuController, modalRouter }) {
     function handleKeydown(event) {
         if (event.key === 'Escape') {
             modalRouter.handleEscape();
+            return;
+        }
+
+        if (modalRouter.isSlidesOpen() && slideViewer) {
+            if (event.key === 'ArrowLeft') {
+                void slideViewer.prev();
+                return;
+            }
+
+            if (event.key === 'ArrowRight') {
+                void slideViewer.next();
+                return;
+            }
         }
     }
 
