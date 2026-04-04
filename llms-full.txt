@@ -9,7 +9,7 @@ This is the hub site of pjdhiro presenting **Project Design Theory** — an appr
 - **Primary Language**: Japanese (日本語), with English summaries
 - **Site URL**: https://uminomae.github.io/project-design/
 - **llms.txt**: https://uminomae.github.io/project-design/llms.txt
-- **Topics**: Project Design Theory, Love-Driven Development, 事業構想 (Business Planning), PMBOK Extension, Emotional Processing, Creativity Structure, Intersubjectivity
+- **Topics**: Project Design Theory, Love-Driven Development, 事業構想 (Business Planning), PMBOK Extension, Emotional Processing, Creativity Structure, Intersubjectivity, Negative Capability
 
 ## Core Concepts (Detailed)
 
@@ -41,6 +41,10 @@ A structural pattern observed across 30 academic domains describing how creative
 ### Intersubjectivity (間主観性)
 
 The shared experiential space between subjects — a foundation for understanding consciousness and communication in project contexts. Grounded in phenomenological traditions, it provides the theoretical basis for how collaboration and mutual understanding emerge.
+
+### Negative Capability (ネガティブケイパビリティ)
+
+答えの出ない状態に耐える力。Keatsが提唱しBionが精神分析に導入。欠損駆動思考のWithhold（抱持）と構造的に対応する。
 
 ## Site Structure
 
