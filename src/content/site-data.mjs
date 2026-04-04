@@ -35,6 +35,9 @@ export const MENU_ITEMS = [
     { type: 'knowledge-link', key: 'design-thinking', href: '?knowledge=design-thinking' },
     { type: 'knowledge-link', key: 'trust', href: '?knowledge=trust' },
     { type: 'knowledge-link', key: 'value', href: '?knowledge=value' },
+    { type: 'separator' },
+    { type: 'action', labelKey: 'slides.trigger', modalOpen: 'slides' },
+    { type: 'action', labelKey: 'howto.triggerLabel', modalOpen: 'howto' },
 ];
 
 export const TRANSLATIONS = {

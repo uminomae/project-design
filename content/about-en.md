@@ -19,4 +19,8 @@ Not yet complete. Thinking while writing.
 
 ---
 
+<a href="#" data-modal-open="slides">View Slides</a> / <a href="#" data-modal-open="howto">Feed to AI</a>
+
+---
+
 pjdhiro

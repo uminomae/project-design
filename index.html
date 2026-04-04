@@ -146,18 +146,6 @@
             aria-expanded="false"
             aria-controls="site-menu"
         >Menu</button>
-        <button
-            class="howto-trigger"
-            type="button"
-            data-modal-open="howto"
-            data-i18n-key="howto.triggerLabel"
-        >AIに読ませる</button>
-        <button
-            class="slides-trigger"
-            type="button"
-            data-modal-open="slides"
-            data-i18n-key="slides.trigger"
-        >プレゼン資料</button>
         <div class="lang-toggle" data-i18n-aria-label-key="controls.languageAria" aria-label="Language toggle">
             <button type="button" class="active" data-lang-button="ja">JA</button>
             <button type="button" data-lang-button="en">EN</button>
@@ -168,6 +156,12 @@
     <nav class="site-menu" id="site-menu" aria-label="Site menu"></nav>
 
     <div id="webgl-container" aria-hidden="true"></div>
+
+    <!-- Scroll hint -->
+    <div id="scroll-hint" class="scroll-hint visible" aria-hidden="true">
+        <span>scroll</span>
+        <div class="scroll-hint__arrow">&#9662;</div>
+    </div>
 
     <div id="content" class="page-shell">
         <main class="container page-main" id="main-content">

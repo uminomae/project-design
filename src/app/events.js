@@ -18,16 +18,13 @@ export function bindAppEvents({ i18n, menuController, modalRouter, slideViewer }
         }
 
         const openTrigger = target.closest('[data-modal-open]');
-        if (openTrigger?.dataset.modalOpen === 'about') {
-            void modalRouter.openAbout();
-            return;
-        }
-        if (openTrigger?.dataset.modalOpen === 'howto') {
-            void modalRouter.openHowto();
-            return;
-        }
-        if (openTrigger?.dataset.modalOpen === 'slides') {
-            void modalRouter.openSlides();
+        if (openTrigger) {
+            event.preventDefault();
+            menuController.close();
+            const modal = openTrigger.dataset.modalOpen;
+            if (modal === 'about') { void modalRouter.openAbout(); }
+            else if (modal === 'howto') { void modalRouter.openHowto(); }
+            else if (modal === 'slides') { void modalRouter.openSlides(); }
             return;
         }
 
@@ -117,13 +114,29 @@ export function bindAppEvents({ i18n, menuController, modalRouter, slideViewer }
         void modalRouter.handlePopState();
     }
 
+    const scrollHint = document.getElementById('scroll-hint');
+
+    function handleScroll() {
+        if (!scrollHint) {
+            return;
+        }
+
+        if (window.scrollY > window.innerHeight * 0.15) {
+            scrollHint.classList.remove('visible');
+        } else {
+            scrollHint.classList.add('visible');
+        }
+    }
+
     document.addEventListener('click', handleDocumentClick);
     document.addEventListener('keydown', handleKeydown);
     window.addEventListener('popstate', handlePopState);
+    window.addEventListener('scroll', handleScroll, { passive: true });
 
     return () => {
         document.removeEventListener('click', handleDocumentClick);
         document.removeEventListener('keydown', handleKeydown);
         window.removeEventListener('popstate', handlePopState);
+        window.removeEventListener('scroll', handleScroll);
     };
 }

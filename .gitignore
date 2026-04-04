@@ -6,3 +6,4 @@ preview.html
 build/
 .build-tmp/
 node_modules/
+test-results/

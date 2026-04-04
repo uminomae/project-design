@@ -22,6 +22,13 @@ export function renderSiteMenu({ menuElement, items, knowledgeEntries, translate
             continue;
         }
 
+        if (item.type === 'action') {
+            parts.push(
+                `<a href="#" role="button" data-modal-open="${escapeHtml(item.modalOpen)}" data-i18n-key="${escapeHtml(item.labelKey)}">${translate(item.labelKey, lang)}</a>`,
+            );
+            continue;
+        }
+
         const className = item.className ? ` class="${escapeHtml(item.className)}"` : '';
         const dataKnowledge = item.type === 'knowledge-link' ? ` data-knowledge="${escapeHtml(item.key)}"` : '';
         const labelKey = item.type === 'knowledge-link'

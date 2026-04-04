@@ -419,24 +419,6 @@
     font-size: 0.8rem;
 }
 
-/* Trigger button in top bar */
-.howto-trigger {
-    background: rgba(255, 255, 255, 0.92);
-    border: 1px solid var(--glass-border-soft);
-    border-radius: 2rem;
-    padding: 0.35rem 0.85rem;
-    cursor: pointer;
-    font-family: var(--sans);
-    font-size: 0.85rem;
-    color: var(--mute);
-    transition: all 0.3s ease;
-    white-space: nowrap;
-}
-
-.howto-trigger:hover {
-    color: var(--ink);
-}
-
 /* === Visually Hidden (SEO) === */
 .visually-hidden {
     position: absolute;
