@@ -74,7 +74,7 @@ Project Design is the practice of not only planning, designing, and executing pr
 |---|---|
 | [pjdhiro](https://github.com/uminomae/pjdhiro) | GitHub Pages ホスティング、ブログ、PD コンテンツの正本 |
 | [creation-space](https://github.com/uminomae/creation-space) | 「創造とは」の探索 — 30領域の学術横断調査、5段階モデル |
-| [awareness-space](https://github.com/uminomae/awareness-space) | 「意識とは」の探索 — 内受容感覚・予測-誤差ループ・F-O評価・抱持の4層モデル |
+| [awareness-space](https://github.com/uminomae/awareness-space) | 「意識とは」の探索 — 内受容感覚・予測-誤差ループ・生存-信頼評価・抱持の4層モデル |
 | [kesson-space](https://github.com/uminomae/kesson-space) | 欠損駆動思考の3D体験空間 |
 
 ## Author

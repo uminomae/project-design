@@ -139,7 +139,7 @@ weaknesses_to_fix:
 | researcher | 調査内容 | 状態 | 所要時間 | 主な成果 |
 |-----------|---------|------|---------|---------|
 | researcher-sources | 主要主張の URL 付き出典収集・V1/V2 検証 | 完了 | ~464s + ~555s (2回実行) | 27件の URL 付き出典、25件 high / 2件 medium |
-| researcher-pd-connection | PD 中心概念との接続調査 | 完了 | ~726s | 接続点11件。Being側の空白、F-O座標系の接続、value.md作成中を発見 |
+| researcher-pd-connection | PD 中心概念との接続調査 | 完了 | ~726s | 接続点11件。Being側の空白、生存-信頼座標系の接続、value.md作成中を発見 |
 | researcher-coverage | 網羅性の穴埋め（Schwartz, Bourdieu, Graeber）+ フレームワーク出自確認 | 実行中 | — | — |
 
 #### researcher-sources の主な成果
@@ -169,7 +169,7 @@ weaknesses_to_fix:
 | 用語定義 | プロジェクトの目的=「価値創出」、問題は「価値基準」で決まる | pjdhiro pd/word/word-project.md L19,25 |
 | Love駆動開発 | 価値は暗黙的に含まれるが明示的接続なし | pjdhiro pd/project-design.md L24 |
 | 欠損駆動思考/入力 | 「無価値感」が入力値の一つ | pjdhiro pd/thinking/thinking-kesson.md L51 |
-| 欠損駆動思考/F-O | F-O座標系が価値評価の基底メカニズムとして機能 | kesson-driven-thinking core-definitions.md L157 |
+| 欠損駆動思考/生存-信頼 | 生存-信頼座標系が価値評価の基底メカニズムとして機能 | kesson-driven-thinking core-definitions.md L157 |
 | 感情処理 | 「価値」は処理段階の一要素（ただし value.md は作成中） | pjdhiro pd/emotional-processing.md L36 |
 | trust | 信頼=「価値評価・社会予測・誤差学習」の結節点 | trust-codex-20260326.md L81 |
 | design-thinking | "human values → user needs" 圧縮の系譜 | design-thinking深掘りレポート |
