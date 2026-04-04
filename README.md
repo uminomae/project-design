@@ -21,7 +21,7 @@
 - [kesson-space](https://github.com/uminomae/kesson-space): 3D experiential space for Kesson-Driven Thinking
 - [pjdhiro](https://github.com/uminomae/pjdhiro): Published content and blog
 
-> For the full theoretical framework, see [Project Design](https://uminomae.github.io/pjdhiro/project-design/).
+> For the full theoretical framework, see [Project Design](https://uminomae.github.io/project-design/).
 
 ---
 
@@ -56,7 +56,7 @@ Project Design is the practice of not only planning, designing, and executing pr
 
 ## Live Site
 
-[https://uminomae.github.io/pjdhiro/project-design/](https://uminomae.github.io/pjdhiro/project-design/)
+[https://uminomae.github.io/project-design/](https://uminomae.github.io/project-design/)
 
 ## 関連プロジェクト / Related Projects
 
