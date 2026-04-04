@@ -20,14 +20,6 @@ A framework for designing not just projects but the methods of project execution
 
 A phenomenon where relationships, emotions, and intent become the driving forces of a project — beyond rational planning and resource allocation.
 
-### Five Pillars (5つの柱)
-
-1. **Dialogue (対話)** — Intersubjective communication as a design tool
-2. **Emotional Processing (感情処理)** — Treating emotions as a design concern, not a side effect
-3. **Thinking Methods (思考法)** — Kesson-Driven Thinking and other frameworks
-4. **Structure of Creation (創造の構造)** — Five-Stage Model applied to project lifecycle
-5. **Intersubjectivity (間主観性)** — Shared experiential space as foundation for collaboration
-
 ## How It Differs from PMBOK
 
 | Aspect | Traditional PM (PMBOK) | Project Design |
