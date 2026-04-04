@@ -241,7 +241,7 @@ export function createModalRouter({
 
         if (params.has('howto')) {
             history.replaceState({ modal: 'howto' }, '', window.location.href);
-            openHowto({ pushHistory: false });
+            await openHowto({ pushHistory: false });
         }
 
         if (params.has('slides')) {

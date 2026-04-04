@@ -31,6 +31,8 @@ const slidesModal = createModalController(dom.slidesModalElement);
 const slideViewer = createSlideViewer({
     container: dom.slidesCanvasWrap,
     pageIndicator: dom.slidesPage,
+    prevBtn: dom.slidesPrev,
+    nextBtn: dom.slidesNext,
 });
 
 let modalRouter;

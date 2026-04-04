@@ -62,13 +62,14 @@
     font-size: 1.1rem;
 }
 
-.slides-modal__nav-btn:hover {
+.slides-modal__nav-btn:hover:not(:disabled) {
     background: var(--glass-bg-soft);
 }
 
 .slides-modal__nav-btn:disabled {
     opacity: 0.3;
     cursor: default;
+    pointer-events: none;
 }
 
 .slides-modal__page {

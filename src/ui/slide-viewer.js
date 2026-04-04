@@ -15,46 +15,85 @@ async function loadPdfJs() {
     return pdfjsLib;
 }
 
-export function createSlideViewer({ container, pageIndicator }) {
+export function createSlideViewer({ container, pageIndicator, prevBtn, nextBtn }) {
     let pdfDoc = null;
     let currentPage = 1;
     let totalPages = 0;
     let rendering = false;
+    let pendingPage = null;
 
     const canvas = container.querySelector('canvas');
+
+    if (!canvas) {
+        throw new Error('Missing canvas element in slide viewer container');
+    }
+
     const ctx = canvas.getContext('2d');
 
+    function updateNavButtons() {
+        if (prevBtn) { prevBtn.disabled = currentPage <= 1; }
+        if (nextBtn) { nextBtn.disabled = currentPage >= totalPages; }
+    }
+
     async function renderPage(pageNum) {
-        if (rendering || !pdfDoc) {
+        if (rendering) {
+            pendingPage = pageNum;
+            return;
+        }
+
+        if (!pdfDoc) {
             return;
         }
 
         rendering = true;
 
-        const page = await pdfDoc.getPage(pageNum);
-        const containerWidth = container.clientWidth;
-        const unscaledViewport = page.getViewport({ scale: 1 });
-        const scale = (containerWidth / unscaledViewport.width) * window.devicePixelRatio;
-        const viewport = page.getViewport({ scale });
+        try {
+            const page = await pdfDoc.getPage(pageNum);
+            const containerWidth = container.clientWidth;
+            const unscaledViewport = page.getViewport({ scale: 1 });
+            const scale = (containerWidth / unscaledViewport.width) * window.devicePixelRatio;
+            const viewport = page.getViewport({ scale });
 
-        canvas.width = viewport.width;
-        canvas.height = viewport.height;
-        canvas.style.width = containerWidth + 'px';
-        canvas.style.height = (viewport.height / window.devicePixelRatio) + 'px';
+            canvas.width = viewport.width;
+            canvas.height = viewport.height;
+            canvas.style.width = containerWidth + 'px';
+            canvas.style.height = (viewport.height / window.devicePixelRatio) + 'px';
 
-        await page.render({ canvasContext: ctx, viewport }).promise;
+            await page.render({ canvasContext: ctx, viewport }).promise;
 
-        currentPage = pageNum;
-        pageIndicator.textContent = `${currentPage} / ${totalPages}`;
-        rendering = false;
+            currentPage = pageNum;
+            pageIndicator.textContent = `${currentPage} / ${totalPages}`;
+            updateNavButtons();
+        } finally {
+            rendering = false;
+        }
+
+        if (pendingPage !== null) {
+            const next = pendingPage;
+            pendingPage = null;
+            await renderPage(next);
+        }
     }
 
+    const resizeObserver = new ResizeObserver(() => {
+        if (pdfDoc && !rendering) {
+            void renderPage(currentPage);
+        }
+    });
+
+    resizeObserver.observe(container);
+
     async function load(url) {
-        const lib = await loadPdfJs();
-        pdfDoc = await lib.getDocument(url).promise;
-        totalPages = pdfDoc.numPages;
-        currentPage = 1;
-        await renderPage(1);
+        try {
+            const lib = await loadPdfJs();
+            pdfDoc = await lib.getDocument(url).promise;
+            totalPages = pdfDoc.numPages;
+            currentPage = 1;
+            await renderPage(1);
+        } catch (error) {
+            pageIndicator.textContent = 'Failed to load PDF';
+            console.error('PDF load failed:', error);
+        }
     }
 
     async function prev() {
@@ -74,6 +113,8 @@ export function createSlideViewer({ container, pageIndicator }) {
     }
 
     function destroy() {
+        resizeObserver.disconnect();
+
         if (pdfDoc) {
             pdfDoc.destroy();
             pdfDoc = null;
@@ -81,6 +122,7 @@ export function createSlideViewer({ container, pageIndicator }) {
 
         currentPage = 1;
         totalPages = 0;
+        pendingPage = null;
         ctx.clearRect(0, 0, canvas.width, canvas.height);
         pageIndicator.textContent = '';
     }

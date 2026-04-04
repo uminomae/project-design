@@ -17,14 +17,14 @@ export function renderSiteMenu({ menuElement, items, knowledgeEntries, translate
 
         if (item.type === 'label') {
             parts.push(
-                `<span class="menu-label" data-i18n-key="${escapeHtml(item.labelKey)}">${translate(item.labelKey, lang)}</span>`,
+                `<span class="menu-label" data-i18n-key="${escapeHtml(item.labelKey)}">${escapeHtml(translate(item.labelKey, lang))}</span>`,
             );
             continue;
         }
 
         if (item.type === 'action') {
             parts.push(
-                `<a href="#" role="button" data-modal-open="${escapeHtml(item.modalOpen)}" data-i18n-key="${escapeHtml(item.labelKey)}">${translate(item.labelKey, lang)}</a>`,
+                `<a href="#" role="button" data-modal-open="${escapeHtml(item.modalOpen)}" data-i18n-key="${escapeHtml(item.labelKey)}">${escapeHtml(translate(item.labelKey, lang))}</a>`,
             );
             continue;
         }
@@ -36,7 +36,7 @@ export function renderSiteMenu({ menuElement, items, knowledgeEntries, translate
             : item.labelKey;
 
         parts.push(
-            `<a href="${escapeHtml(item.href)}"${className}${dataKnowledge} data-i18n-key="${escapeHtml(labelKey)}">${translate(labelKey, lang)}</a>`,
+            `<a href="${escapeHtml(item.href)}"${className}${dataKnowledge} data-i18n-key="${escapeHtml(labelKey)}">${escapeHtml(translate(labelKey, lang))}</a>`,
         );
     }
 
