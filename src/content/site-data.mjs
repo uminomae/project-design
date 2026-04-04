@@ -1,5 +1,8 @@
 export const SHADER_PATHS = [
     './shaders/main-webgpu.js',
+    './shaders/main2-webgpu.js',
+    './shaders/main3-webgpu.js',
+    './shaders/main4-webgpu.js',
 ];
 
 export const KNOWLEDGE_ENTRIES = {
