@@ -17,35 +17,32 @@ export function bindAppEvents({ i18n, menuController, modalRouter, slideViewer }
             return;
         }
 
+        const modalOpeners = {
+            about: () => modalRouter.openAbout(),
+            howto: () => modalRouter.openHowto(),
+            slides: () => modalRouter.openSlides(),
+        };
+
         const openTrigger = target.closest('[data-modal-open]');
         if (openTrigger) {
             event.preventDefault();
             menuController.close();
-            const modal = openTrigger.dataset.modalOpen;
-            if (modal === 'about') { void modalRouter.openAbout(); }
-            else if (modal === 'howto') { void modalRouter.openHowto(); }
-            else if (modal === 'slides') { void modalRouter.openSlides(); }
+            const handler = modalOpeners[openTrigger.dataset.modalOpen];
+            if (handler) { void handler(); }
             return;
         }
+
+        const modalClosers = {
+            about: () => modalRouter.closeAbout(),
+            knowledge: () => modalRouter.closeKnowledge(),
+            howto: () => modalRouter.closeHowto(),
+            slides: () => modalRouter.closeSlides(),
+        };
 
         const closeTrigger = target.closest('[data-modal-close]');
-        if (closeTrigger?.dataset.modalClose === 'about') {
-            modalRouter.closeAbout();
-            return;
-        }
-
-        if (closeTrigger?.dataset.modalClose === 'knowledge') {
-            modalRouter.closeKnowledge();
-            return;
-        }
-
-        if (closeTrigger?.dataset.modalClose === 'howto') {
-            modalRouter.closeHowto();
-            return;
-        }
-
-        if (closeTrigger?.dataset.modalClose === 'slides') {
-            modalRouter.closeSlides();
+        if (closeTrigger) {
+            const handler = modalClosers[closeTrigger.dataset.modalClose];
+            if (handler) { handler(); }
             return;
         }
 
@@ -115,17 +112,21 @@ export function bindAppEvents({ i18n, menuController, modalRouter, slideViewer }
     }
 
     const scrollHint = document.getElementById('scroll-hint');
+    let scrollHintHidden = false;
 
     function handleScroll() {
         if (!scrollHint) {
             return;
         }
 
-        if (window.scrollY > window.innerHeight * 0.15) {
-            scrollHint.classList.remove('visible');
-        } else {
-            scrollHint.classList.add('visible');
+        const shouldHide = window.scrollY > window.innerHeight * 0.15;
+
+        if (shouldHide === scrollHintHidden) {
+            return;
         }
+
+        scrollHintHidden = shouldHide;
+        scrollHint.classList.toggle('visible', !shouldHide);
     }
 
     document.addEventListener('click', handleDocumentClick);

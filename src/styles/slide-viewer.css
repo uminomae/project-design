@@ -79,7 +79,6 @@
     text-align: center;
 }
 
-
 /* Responsive */
 @media (max-width: 640px) {
     .modal__panel--slides {
