@@ -231,7 +231,7 @@ export const TRANSLATIONS = {
         'howto.map.cs.title': 'What Is Creation',
         'howto.map.cs': 'Exploring "what is creativity" across 30 academic domains. Five-Stage Model of Creation (Field → Wave → Edge → Vortex → Bundle)',
         'howto.map.as.title': 'What Is Awareness',
-        'howto.map.as': 'Exploring consciousness through a four-layer model: intersubjectivity, interoception, prediction error, and withholding',
+        'howto.map.as': 'Exploring consciousness through a four-layer model: intersubjectivity, interoception, prediction error, and containment',
         'howto.map.ks.title': 'What Is Kesson-Driven Thinking',
         'howto.map.ks': 'A thinking framework that treats discomfort, undefined requirements, and weak signals as questions to hold',
         'howto.tips.1': 'The more specific you are about your goal, the better the results',
