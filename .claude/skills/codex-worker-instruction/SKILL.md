@@ -32,6 +32,7 @@ Codex を background worker や別 session で動かすときに、
 |---|---|---|
 | **cli-instruction** | Claude Code CLI 向け end-to-end 実行テンプレ | pd |
 | **本スキル** | Codex の非対話 / 別 session / outbox first 運用向け | pd |
+| **codex-review** | コミット後 Codex review の dispatch / reply / 履歴化 | pd |
 | **agent-team-workflow** | 指示書を読んだ CLI/Codex が実行するワークフロー | pd |
 
 ### ワークフロー内の位置
@@ -112,6 +113,11 @@ Codex を background worker や別 session で動かすときに、
 - 本体実装
 - commit
 
+補足:
+
+- Codex へ commit 後 review を投げる正本は `.claude/skills/codex-review/SKILL.md`
+- `REVIEW-*` は親セッション向け成果物、履歴の正本は `.cache/reviews/codex/` でもよい
+
 ### review worker を必須にする条件
 
 - ファイル移動・削除・リネームを含む
@@ -182,7 +188,7 @@ Codex を background worker や別 session で動かすときに、
 
 - review worker は実装しない。検出と報告だけを返す
 - 調査 worker / review worker は原則 Issue を close しない
-- commit を伴う worker でも、review 必須条件に当てはまる変更では `REVIEW-*` 完了前 close 禁止
+- commit を伴う worker でも、review 必須条件に当てはまる変更では `REVIEW-*` または `codex-review` 正規化結果の回収前 close 禁止
 
 ## 6. テンプレート正本
 

@@ -31,16 +31,6 @@
 
 Project Design is the practice of not only planning, designing, and executing projects, but also objectifying and redesigning the methods of execution and management themselves. It encompasses both "Doing" (tasks and deliverables) and "Being" (what is happening in the relational and emotional space).
 
-## 5つの柱 / Five Pillars
-
-| 柱 / Pillar | 日本語 | English | 説明 / Description |
-|:---:|--------|---------|---------|
-| 1 | 対話 | Dialogue | プロジェクトの基盤は情報伝達ではなく対話である / The foundation of a project is dialogue, not information transfer |
-| 2 | 感情処理 | Emotional Processing | 感情はノイズではなく、プロジェクトを駆動するシグナルである / Emotions are not noise but signals that drive the project |
-| 3 | 思考法 | Thinking Methods | 欠損駆動思考・BI思考など、問いを立てる方法論 / Methodologies for framing questions: Kesson-Driven Thinking, BI Thinking |
-| 4 | 創造の構造 | Structure of Creation | 創造プロセスの5段階モデル（場→波→縁→渦→束） / Five-Stage Model of Creation (Field, Wave, Edge, Vortex, Bundle) |
-| 5 | 間主観性 | Intersubjectivity | 個ではなく関係の中で意味が立ち上がる / Meaning arises in relationships, not in isolation |
-
 ## PMBOK との比較 / PMBOK vs Project Design
 
 | 観点 / Aspect | PMBOK | プロジェクトデザイン / Project Design |
@@ -80,3 +70,7 @@ Project Design is the practice of not only planning, designing, and executing pr
 ## Author
 
 **pjdhiro** — [https://github.com/uminomae](https://github.com/uminomae)
+
+## License
+
+[MIT License](LICENSE)

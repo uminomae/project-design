@@ -64,7 +64,7 @@ export function renderMarkdown(markdown) {
             if (!trimmed) {
                 return '';
             }
-            if (/^<(h[1-3]|hr|table|thead|tbody|tr|th|td|ol|ul|li|\/|p)/.test(trimmed)) {
+            if (/^<(h[1-3]|hr|table|thead|tbody|tr|th|td|ol|ul|li|\/|p|img|figure|div)/.test(trimmed)) {
                 return trimmed;
             }
             return `<p>${trimmed}</p>`;

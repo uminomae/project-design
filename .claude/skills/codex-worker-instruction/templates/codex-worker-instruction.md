@@ -50,7 +50,7 @@ git branch --show-current
 - review worker 起動条件:
   - {ファイル移動/削除/リネーム | path 変更 | cross-repo | publish契約変更 | UI導線+docs契約変更 | なし}
 - close guard:
-  - review worker が必要な変更では、`REVIEW-*` と PASS/WARN/FAIL コメントが揃うまで close しない
+  - review worker が必要な変更では、`REVIEW-*` または `.claude/skills/codex-review/SKILL.md` に基づく正規化 review が揃うまで close しない
   - 調査 worker / review worker は原則 OPEN のまま返す
 
 ## 作業手順
@@ -88,7 +88,7 @@ git push origin {branch}
 
 - `.cache/outbox/REVIEW-*.md` を残す
 - review worker が必要な条件に当てはまる場合は、別 worker を起動するか、その必要を明記して親へ返す
-- review 必須変更では、`REVIEW-*` と PASS/WARN/FAIL コメントが揃うまで close しない
+- review 必須変更では、`REVIEW-*` または codex-review の結果が揃うまで close しない
 
 ## failure handling
 

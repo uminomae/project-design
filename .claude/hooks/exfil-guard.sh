@@ -95,7 +95,7 @@ if has_sensitive_ref or has_send_with_substitution:
 sys.exit(1)
 PY
 then
-  hook_block "exfil-guard: external send + credential detected, blocked"
+  hook_block "🚫 外部送信コマンドと認証情報の組み合わせを検知。データ漏洩リスクのためブロックしました"
 fi
 
 exit 0

@@ -1,8 +1,5 @@
 export const SHADER_PATHS = [
     './shaders/main-webgpu.js',
-    './shaders/main2-webgpu.js',
-    './shaders/main3-webgpu.js',
-    './shaders/main4-webgpu.js',
 ];
 
 export const KNOWLEDGE_ENTRIES = {
@@ -35,9 +32,6 @@ export const MENU_ITEMS = [
     { type: 'knowledge-link', key: 'design-thinking', href: '?knowledge=design-thinking' },
     { type: 'knowledge-link', key: 'trust', href: '?knowledge=trust' },
     { type: 'knowledge-link', key: 'value', href: '?knowledge=value' },
-    { type: 'separator' },
-    { type: 'action', labelKey: 'slides.trigger', modalOpen: 'slides' },
-    { type: 'action', labelKey: 'howto.triggerLabel', modalOpen: 'howto' },
 ];
 
 export const TRANSLATIONS = {
@@ -53,7 +47,6 @@ export const TRANSLATIONS = {
         'controls.topBarAria': 'サイト操作',
         'controls.languageAria': '言語切替',
         'hero.notice': 'Love駆動開発と呼びたい現象を、これまで何度も経験してきました。<br>ここでいうプロジェクトは「やること（Doing）」だけでなく「起きていること（Being）」まで含む出来事です。',
-        'hero.aiDisclaimer': 'AIが執筆しているため間違いがある場合があります。',
         'hero.aboutAria': 'このサイトについて',
         'section.overview.label': 'Overview',
         'section.overview.title': '概要',
@@ -92,7 +85,6 @@ export const TRANSLATIONS = {
         'repo.kesson': '欠損駆動思考',
         'repo.creation': '創造とは',
         'repo.awareness': '意識とは',
-        'footer.license': 'MIT License',
         'knowledge.designThinking.title': 'デザイン思考とは',
         'knowledge.trust.title': '信頼とは',
         'knowledge.value.title': '価値とは',
@@ -137,15 +129,13 @@ export const TRANSLATIONS = {
         'howto.map.cs.title': '創造とは',
         'howto.map.cs': '30の学術領域から「創造とは何か」を探索。創造の5段階モデル（場→波→縁→渦→束）',
         'howto.map.as.title': '意識とは',
-        'howto.map.as': '内受容感覚・予測-誤差ループ・生存-信頼評価・抱持の4層モデルで意識の構造を探索',
+        'howto.map.as': '間主観性・内受容感覚・予測誤差・エポケーの4層モデルで意識の構造を探索',
         'howto.map.ks.title': '欠損駆動思考とは',
         'howto.map.ks': '違和感・未定義要件・弱い信号を「保持すべき問い」として扱う思考フレームワーク',
         'howto.tips.1': '具体的に「何をしたいか」を伝えるほど良い結果が出ます',
         'howto.tips.2': '「関連repoも見て」と追加すると、深掘りされます',
         'howto.tips.3': 'Claude.ai、ChatGPT、Gemini など、どのLLMでも使えます',
-        'howto.note': '理論の最終採否・公開判定は pjdhiro 専権です。活用は自由ですが、公開・引用時は出典を明記してください。',
-        'slides.trigger': 'プレゼン資料',
-        'slides.title': 'プレゼン資料',
+        'howto.note': 'MIT License — 商用利用・改変・再配布すべて自由です。出典表示の義務はありません。詳細は各リポジトリの LICENSE ファイルをご覧ください。',
     },
     en: {
         'menu.toggle': 'Menu',
@@ -159,7 +149,6 @@ export const TRANSLATIONS = {
         'controls.topBarAria': 'Site controls',
         'controls.languageAria': 'Language switcher',
         'hero.notice': 'Many times, I have experienced what I want to call Love-Driven Development.<br>Here, a project is an event that includes not only "Doing" but also "Being."',
-        'hero.aiDisclaimer': 'This page is AI-written and may contain errors.',
         'hero.aboutAria': 'About this site',
         'section.overview.label': 'Overview',
         'section.overview.title': 'Overview',
@@ -198,7 +187,6 @@ export const TRANSLATIONS = {
         'repo.kesson': 'Kesson-Driven Thinking',
         'repo.creation': 'What Is Creation',
         'repo.awareness': 'What Is Awareness',
-        'footer.license': 'MIT License',
         'knowledge.designThinking.title': 'What is Design Thinking?',
         'knowledge.trust.title': 'What is Trust?',
         'knowledge.value.title': 'What is Value?',
@@ -243,14 +231,12 @@ export const TRANSLATIONS = {
         'howto.map.cs.title': 'What Is Creation',
         'howto.map.cs': 'Exploring "what is creativity" across 30 academic domains. Five-Stage Model of Creation (Field → Wave → Edge → Vortex → Bundle)',
         'howto.map.as.title': 'What Is Awareness',
-        'howto.map.as': 'Exploring consciousness through a four-layer model: interoception, prediction-error loop, Survival-Trust evaluation, and withholding',
+        'howto.map.as': 'Exploring consciousness through a four-layer model: intersubjectivity, interoception, prediction error, and withholding',
         'howto.map.ks.title': 'What Is Kesson-Driven Thinking',
         'howto.map.ks': 'A thinking framework that treats discomfort, undefined requirements, and weak signals as questions to hold',
         'howto.tips.1': 'The more specific you are about your goal, the better the results',
         'howto.tips.2': 'Adding "also check related repos" enables deeper exploration',
         'howto.tips.3': 'Works with any LLM: Claude.ai, ChatGPT, Gemini, etc.',
-        'howto.note': 'Final decisions on theory adoption and publication are reserved by pjdhiro. Feel free to use the content, but please cite the source when publishing or quoting.',
-        'slides.trigger': 'Slides',
-        'slides.title': 'Presentation Slides',
+        'howto.note': 'MIT License — Free for commercial use, modification, and redistribution. No attribution required. See the LICENSE file in each repository for details.',
     },
 };

@@ -93,7 +93,7 @@ esac
 
 while IFS= read -r sensitive_ref; do
   [ -n "$sensitive_ref" ] || continue
-  hook_warn "credential-guard: ${sensitive_ref}"
+  hook_warn "⚠️ 認証情報ファイルへのアクセスを検知: ${sensitive_ref}"
 done < <(find_sensitive_refs)
 
 exit 0

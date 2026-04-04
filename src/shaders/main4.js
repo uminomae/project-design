@@ -1,5 +1,5 @@
 // src/shaders/aura-v12.js — Lyapunov fractal (chaos/order boundary)
-import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js';
+import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.183.0/build/three.module.js';
 
 let scene, camera, renderer, material, mesh, animationId;
 let targetScroll = 0;
@@ -12,6 +12,7 @@ function init() {
   renderer = new THREE.WebGLRenderer({ alpha: true, antialias: false });
   renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
   renderer.setSize(innerWidth, innerHeight);
+  renderer.outputColorSpace = THREE.SRGBColorSpace;
   container.appendChild(renderer.domElement);
 
   scene = new THREE.Scene();
@@ -154,7 +155,12 @@ function init() {
   onScroll();
 
   const MAX_SCROLL_STEP = () => window.__shaderScrollStep || 0.002;
-  const clock = new THREE.Clock();
+  const clockStart = performance.now();
+  const clock = {
+    getElapsedTime() {
+      return (performance.now() - clockStart) / 1000;
+    }
+  };
   function animate() {
     animationId = requestAnimationFrame(animate);
     onScroll();

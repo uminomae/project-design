@@ -1,0 +1,123 @@
+# llms-full.txt — Project Design | Love-Driven Dev — pjdhiro
+
+> Extended version of llms.txt with full content descriptions for AI assistants and language models.
+
+## Site Overview
+
+This is the hub site of pjdhiro presenting **Project Design Theory** — an approach to project envisioning, design, and execution that encompasses both Doing (actions) and Being (phenomena).
+
+- **Primary Language**: Japanese (日本語), with English summaries
+- **Site URL**: https://uminomae.github.io/project-design/
+- **llms.txt**: https://uminomae.github.io/project-design/llms.txt
+- **Topics**: Project Design Theory, Love-Driven Development, 事業構想 (Business Planning), PMBOK Extension, Emotional Processing, Creativity Structure, Intersubjectivity, Negative Capability
+
+## Core Concepts (Detailed)
+
+### Project Design (プロジェクトデザイン)
+
+A framework for designing not just projects but the methods of project execution themselves. Applicable to business planning (事業構想) across profit and non-profit enterprises. It extends traditional project management (PMBOK) by incorporating emotional processing, communication, and creative emergence as first-class design concerns.
+
+Key distinctions from PMBOK:
+- **Scope**: Doing (deliverables, tasks) + Being (phenomena, emergence)
+- **Emotions**: First-class design concern, not a side effect
+- **Creativity**: Structured via Five-Stage Model
+- **Communication**: Intersubjective encounter, not mere information transfer
+- **Human-AI**: Co-design partnership, not tool usage
+
+### Love-Driven Development (Love駆動開発)
+
+A phenomenon where relationships, emotions, and intent become the driving forces of a project — beyond rational planning and resource allocation. Not a methodology to be adopted, but a phenomenon to be recognized and named when it occurs.
+
+### Kesson-Driven Thinking (欠損駆動思考)
+
+A thinking framework where the starting point is not empathy (as in design thinking) but the noticing of what is missing — absence, meaninglessness, discomfort, and deficiency. While design thinking asks "What do people need?", Kesson-Driven Thinking asks "What is missing that nobody has noticed?"
+
+### Five-Stage Model of Creation (創造の5段階モデル)
+
+Field (場) → Wave (波) → Edge (縁) → Vortex (渦) → Bundle (束)
+
+A structural pattern observed across 30 academic domains describing how creative processes emerge. Each domain independently exhibits analogous phase transitions that map onto this five-stage sequence.
+
+### Intersubjectivity (間主観性)
+
+The shared experiential space between subjects — a foundation for understanding consciousness and communication in project contexts. Grounded in phenomenological traditions, it provides the theoretical basis for how collaboration and mutual understanding emerge.
+
+### Negative Capability (ネガティブケイパビリティ)
+
+答えの出ない状態に耐える力。Keatsが提唱しBionが精神分析に導入。欠損駆動思考のWithhold（抱持）と構造的に対応する。
+
+## Site Structure
+
+### Main Page (index.html)
+
+The main page presents Project Design Theory through an interactive web application with:
+- About modal (`?about`) — Personal introduction and theory overview
+- Knowledge notes (`?knowledge=design-thinking`, `?knowledge=trust`, `?knowledge=value`) — Research summaries
+- How-to modal (`?howto`) — Guide for using the content with AI assistants
+
+### Knowledge Notes
+
+#### Design Thinking (デザイン思考とは)
+URL: `?knowledge=design-thinking`
+
+Design thinking is not a single methodology but three distinct layers:
+1. **Designerly thinking** — the cognitive style of professional designers (Cross, Schön)
+2. **Stanford-IDEO educational practice** — the popularized 5-step process
+3. **Business consulting package** — marketed methodology
+
+The core lies in abduction, framing, and problem-definition interplay. The five-stage process is an introductory recipe, not the essence. Design thinking complements rather than opposes logical thinking.
+
+#### Trust (信頼とは)
+URL: `?knowledge=trust`
+
+Trust is a composite concept treated across disciplines as emotion, attitude, expectation, relational quality, institutional capital, behavioral strategy, epistemological condition, and experiential structure. Common core elements: vulnerability, expectation, dependence, and unpredictability.
+
+#### Value (価値とは)
+URL: `?knowledge=value`
+
+Value is a polysemous term bundling at least five problem domains: price, utility, norms, meaning, and symbolism. It emerges as a multi-layered concept arising from relationships among objects, subjects, institutions, and contexts.
+
+## Content Hosted on pjdhiro
+
+The full theory articles are hosted on the parent site (pjdhiro):
+
+### Dialogue Series (対話)
+- `/dialogue-project-design/` — Dialogue on Project Design
+- `/dialogueCreation/` — Dialogue on Creation and the Five-Stage Model
+- `/dialogueBaJidai/` — Dialogue on Field (Ba) and Era (Jidai)
+- `/dialogue-acceptance/` — Dialogue on Acceptance
+- `/dialogue-sharing-concepts/` — Dialogue on Sharing Concepts
+- `/dialogueSpilit/` — Dialogue on Spirit
+- `/dialogue2025/` — Dialogue 2025
+
+### Emotional Processing (感情処理)
+- `/emotional-processing/` — Overview
+- `/meditation/` — Meditation as emotional processing
+- `/emotional-metacognition/` — Emotional metacognition
+- `/emotional-contagion/` — Emotional contagion
+- `/personal-boundaries/` — Personal boundaries
+- `/acceptance/` — Acceptance
+- `/value/` — Value
+
+### Thinking Methods (思考法)
+- `/thinking-bi/` — BI Thinking
+- `/thinking-kesson/` — Kesson-Driven Thinking (deficiency-driven)
+
+### Terminology (用語)
+- `/word-project/` — Project-related definitions
+- `/word-other/` — Other key terms
+
+## Related Projects
+
+| Project | URL | Focus |
+|---------|-----|-------|
+| pjdhiro | https://uminomae.github.io/pjdhiro/ | Parent site — all projects hub |
+| creation-space | https://uminomae.github.io/creation-space/ | Creativity research across 30 academic domains |
+| awareness-space | https://uminomae.github.io/awareness-space/ | Consciousness structure through intersubjectivity |
+| kesson-space | https://uminomae.github.io/kesson-space/ | Kesson-Driven Thinking framework |
+
+## Author
+
+- Name: pjdhiro
+- Site: https://uminomae.github.io/pjdhiro/
+- Focus: Project Design, Love-Driven Development, Human-AI Collaboration
