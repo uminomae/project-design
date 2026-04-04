@@ -141,6 +141,8 @@ export const TRANSLATIONS = {
         'howto.tips.2': '「関連repoも見て」と追加すると、深掘りされます',
         'howto.tips.3': 'Claude.ai、ChatGPT、Gemini など、どのLLMでも使えます',
         'howto.note': '理論の最終採否・公開判定は pjdhiro 専権です。活用は自由ですが、公開・引用時は出典を明記してください。',
+        'slides.trigger': 'プレゼン資料',
+        'slides.title': 'プレゼン資料',
     },
     en: {
         'menu.toggle': 'Menu',
@@ -245,5 +247,7 @@ export const TRANSLATIONS = {
         'howto.tips.2': 'Adding "also check related repos" enables deeper exploration',
         'howto.tips.3': 'Works with any LLM: Claude.ai, ChatGPT, Gemini, etc.',
         'howto.note': 'Final decisions on theory adoption and publication are reserved by pjdhiro. Feel free to use the content, but please cite the source when publishing or quoting.',
+        'slides.trigger': 'Slides',
+        'slides.title': 'Presentation Slides',
     },
 };

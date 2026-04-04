@@ -8,6 +8,8 @@ export function createModalRouter({
     getCurrentLang,
     howtoModal,
     knowledgeModal,
+    slideViewer,
+    slidesModal,
 }) {
     let activeKnowledgeKey = null;
 
@@ -134,7 +136,51 @@ export function createModalRouter({
         }
     }
 
+    let slidesLoaded = false;
+    const SLIDES_PDF_PATH = 'assets/pdf/Integrated_Project_Architecture.pdf';
+
+    async function openSlides({ pushHistory = true } = {}) {
+        closeAbout({ updateHistory: false });
+        closeKnowledge({ updateHistory: false });
+        closeHowto({ updateHistory: false });
+        slidesModal.open();
+
+        if (!slidesLoaded && slideViewer) {
+            await slideViewer.load(SLIDES_PDF_PATH);
+            slidesLoaded = true;
+        }
+
+        if (pushHistory && !getSearchParams().has('slides')) {
+            updateSearchParams(
+                { slides: '', about: null, knowledge: null, howto: null },
+                { state: { modal: 'slides' } },
+            );
+        }
+    }
+
+    function closeSlides({ updateHistory = true } = {}) {
+        if (!slidesModal.isOpen()) {
+            return;
+        }
+
+        slidesModal.close();
+
+        if (!updateHistory) {
+            return;
+        }
+
+        if (getSearchParams().has('slides')) {
+            if (history.state?.modal === 'slides') {
+                history.back();
+                return;
+            }
+
+            updateSearchParams({ slides: null }, { replace: true });
+        }
+    }
+
     function handleEscape() {
+        closeSlides();
         closeHowto();
         closeKnowledge();
         closeAbout();
@@ -168,6 +214,14 @@ export function createModalRouter({
         } else {
             closeHowto({ updateHistory: false });
         }
+
+        if (params.has('slides')) {
+            if (!slidesModal.isOpen()) {
+                await openSlides({ pushHistory: false });
+            }
+        } else {
+            closeSlides({ updateHistory: false });
+        }
     }
 
     async function hydrateFromLocation() {
@@ -189,18 +243,26 @@ export function createModalRouter({
             history.replaceState({ modal: 'howto' }, '', window.location.href);
             openHowto({ pushHistory: false });
         }
+
+        if (params.has('slides')) {
+            history.replaceState({ modal: 'slides' }, '', window.location.href);
+            await openSlides({ pushHistory: false });
+        }
     }
 
     return {
         closeAbout,
         closeHowto,
         closeKnowledge,
+        closeSlides,
         handleEscape,
         handleLanguageChange,
         handlePopState,
         hydrateFromLocation,
+        isSlidesOpen: () => slidesModal.isOpen(),
         openAbout,
         openHowto,
         openKnowledge,
+        openSlides,
     };
 }

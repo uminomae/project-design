@@ -29,5 +29,10 @@ export function getAppDom() {
         langButtons: Array.from(document.querySelectorAll('[data-lang-button]')),
         menuElement: getRequiredElementById('site-menu'),
         menuToggle: getRequiredElement('[data-menu-toggle]'),
+        slidesCanvasWrap: getRequiredElementById('slides-canvas-wrap'),
+        slidesModalElement: getRequiredElementById('slides-modal'),
+        slidesNext: getRequiredElementById('slides-next'),
+        slidesPage: getRequiredElementById('slides-page'),
+        slidesPrev: getRequiredElementById('slides-prev'),
     };
 }
