@@ -1,4 +1,4 @@
-const PDFJS_CDN = 'https://cdn.jsdelivr.net/npm/pdfjs-dist@4.9.155/+esm';
+const PDFJS_CDN = 'https://cdn.jsdelivr.net/npm/pdfjs-dist@4.9.155/build/pdf.min.mjs';
 const PDFJS_WORKER_CDN = 'https://cdn.jsdelivr.net/npm/pdfjs-dist@4.9.155/build/pdf.worker.min.mjs';
 
 let pdfjsLib = null;
@@ -8,8 +8,9 @@ async function loadPdfJs() {
         return pdfjsLib;
     }
 
-    pdfjsLib = await import(PDFJS_CDN);
-    pdfjsLib.GlobalWorkerOptions.workerSrc = PDFJS_WORKER_CDN;
+    const mod = await import(PDFJS_CDN);
+    mod.GlobalWorkerOptions.workerSrc = PDFJS_WORKER_CDN;
+    pdfjsLib = mod;
 
     return pdfjsLib;
 }
