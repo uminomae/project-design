@@ -1,43 +1,50 @@
 ---
 title: "CN Divergence Report"
 checked: "2026-04-06"
+status: WARN
 ---
 # CN Divergence Report
 
 ## チェック内容
-terminology-changelog の用語統一（Withhold→抱持）が全リポに反映されているか。
+terminology-changelog の用語統一（Withhold→抱持、F軸/O軸→生存軸/信頼軸）が全リポ・wiki に反映されているか。
 
 ## 結果
 
-### 検索対象
-- `/Users/uminomae/dev/project-design/knowledge/concepts/`
-- `/Users/uminomae/dev/kesson-space/knowledge/concepts/`
-- `/Users/uminomae/dev/awareness-space/knowledge/concepts/`
+### WL-1: 旧用語検索
 
-### "Withhold"（英語旧概念名、大文字小文字不問）
-検出なし。全3リポの concepts/ から旧英語名は除去済み。
+#### "Withhold"（英語旧概念名、大文字小文字不問）
 
-### "保持"（日本語、一般用法との区別が必要）
-多数検出。ただし全て一般的な日本語動詞としての用法（「保持する」「保持論点」「保持条件」等）であり、
-Withhold 概念の旧訳としての使用ではない。
+**wiki/ 内**: 検出なし。PASS。
 
-#### project-design/knowledge/concepts/
-- `CN-005_trust-hypothesis-inventory.md`: "保持論点"（5箇所）、"保持される"（1箇所）
-- `CN-008_pd-bridge-holding-issues.md`: "保持論点"（6箇所）、"保持すべき問い"（1箇所）
+**knowledge/concepts/**: 検出なし。PASS。
 
-#### kesson-space/knowledge/concepts/
-- `CN-004_collective-hoji.md`: "保持"（12箇所） -- 集団的保持の文脈。一般動詞用法
-- `CN-003_boundary-casebook.md`: "保持"（15箇所） -- 保持条件・保持能力の文脈。一般動詞用法
-- `index.md`: "保持"（2箇所） -- "文脈を保持"、"保持論点"
+**knowledge/research/**: WARN。以下のソースファイルに残存（ただしこれらは外部 LLM レポートの原文であり、修正対象外）:
+- `design-thinking/design-thinking-deep-research-gpt-20260326.md`: 3箇所（"Withhold/縁"、"解かずに保つ（Withhold）"）
+- `design-thinking/design_thinking_gpt-deep-research-report.md`: 3箇所（同上、コピー）
 
-#### awareness-space/knowledge/concepts/
-- `CN-005_trust-hypothesis-inventory.md`: "保持"（7箇所） -- 保持論点・保持条件の文脈
-- `CN-001_internalized-relationship.md`: "保持"（8箇所） -- 保持条件の文脈
-- `CN-002_f-axis-exposure.md`: "保持条件"（1箇所）
-- `CN-007_iss42-measurement-design-principles.md`: "保持・再評価"（1箇所）
-- `index.md`: "保持"（1箇所）
+**判定**: research/ 内の外部レポート原文に残存するが、これらは調査入力の原文保存であり修正すべきではない。wiki compile 済みページおよび concepts/ は統一完了。
+
+#### "F軸" / "O軸"（旧用語）
+
+**wiki/ 内**: 検出なし。PASS。
+
+**knowledge/concepts/**: 検出なし。PASS。
+
+**knowledge/research/**: WARN。以下に残存:
+- `trust/trust-research-map.svg`: 1箇所（SVG テキスト内 "精神分析・F-O軸・BSPL"）
+- `trust/REPORT-trust-research-inventory.md`: 2箇所（表内の旧用語）
+
+**判定**: research/ 内の調査レポートに残存するが、元の調査時点の用語を反映しているため、修正は任意。compile 済みページには反映済み。
+
+### WL-2: canonical-keywords 用語統一
+
+wiki/ 内の全ページを走査。canonical-keywords.md の禁止用語が概念名として使用されていないことを確認。
+
+- "保留"（D3の訳として）: 検出なし。PASS。
+- wiki 内の「保持」は全て一般動詞用法（保持論点、保持条件等）。
 
 ## 推奨アクション
-- **旧英語名 "Withhold" の残存はなし。** 用語統一は完了している。
-- **"保持" は一般動詞として広く使用されており、概念名 "抱持" との混同リスクは低い。** 現時点で修正不要。
-- 今後 compile 時に「抱持」概念への参照が "保持" と表記されていないか定期チェックを推奨。
+
+- **wiki/ および concepts/ は用語統一完了。**
+- research/ 内の外部レポート原文の Withhold/F-O軸残存は、原文保存の方針により修正不要。
+- 今後 compile 時に旧用語が wiki に流入しないよう定期チェックを継続。

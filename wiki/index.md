@@ -13,10 +13,17 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[concepts/PDブリッジ保持論点|PDブリッジ保持論点]]
 
 ## Entities
-<!-- Step 2 で生成 -->
+- [[entities/ドナルド・ショーン|ドナルド・ショーン]] -- reflection-in-action, designerly thinking
+- [[entities/ナイジェル・クロス|ナイジェル・クロス]] -- designerly ways of knowing
+- [[entities/アネット・ベイアー|アネット・ベイアー]] -- trust と vulnerability
+- [[entities/ニクラス・ルーマン|ニクラス・ルーマン]] -- trust/confidence 区別, 社会システム理論
+- [[entities/山岸俊男|山岸俊男]] -- 安心/信頼区別
+- [[entities/アブダクション|アブダクション]] -- Peirce → Dorst, 仮説的推論
+- [[entities/ウィキッド・プロブレム|ウィキッド・プロブレム]] -- Rittel & Webber, 厄介な問題
+- [[entities/愛着理論|愛着理論]] -- Bowlby, 安全基地, 内的作業モデル
 
 ## Cross References
-<!-- Step 2 で生成 -->
+- [[cross-refs/concept-entity-map|Concept-Entity Map]] -- concepts と entities の関係マトリクス
 
 ## Health
 - [[health/cn-divergence-report|CN Divergence Report]]
