@@ -12,3 +12,9 @@ compile 実行の履歴。append-only。
 - pages: {生成/更新ページ数}
 - duration: {所要時間}
 -->
+
+## [2026-04-06] compile | Step 1 concepts
+- scope: Step 1（同一ディレクトリ内）
+- sources: 4
+- pages: 4
+- notes: 初回 compile。pd/knowledge/concepts/ から wiki/concepts/ へ
