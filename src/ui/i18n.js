@@ -1,3 +1,24 @@
+function normalizeLang(lang) {
+    return lang === 'en' ? 'en' : 'ja';
+}
+
+function syncLangQuery(lang) {
+    if (!window.history?.replaceState) return;
+    const normalized = normalizeLang(lang);
+    const url = new URL(window.location.href);
+    if (normalized === 'en') {
+        url.searchParams.set('lang', 'en');
+    } else {
+        url.searchParams.delete('lang');
+    }
+    window.history.replaceState(window.history.state, '', url.toString());
+}
+
+export function detectLang() {
+    const raw = new URLSearchParams(window.location.search).get('lang');
+    return normalizeLang(raw);
+}
+
 export function createI18n({ langButtons, translations, onLanguageChange }) {
     function getCurrentLang() {
         return document.documentElement.lang || 'ja';
@@ -19,16 +40,18 @@ export function createI18n({ langButtons, translations, onLanguageChange }) {
     }
 
     async function switchLang(lang) {
-        document.documentElement.lang = lang;
+        const normalized = normalizeLang(lang);
+        document.documentElement.lang = normalized;
 
         for (const button of langButtons) {
-            button.classList.toggle('active', button.dataset.langButton === lang);
+            button.classList.toggle('active', button.dataset.langButton === normalized);
         }
 
-        applyTranslations(document, lang);
+        syncLangQuery(normalized);
+        applyTranslations(document, normalized);
 
         if (onLanguageChange) {
-            await onLanguageChange(lang);
+            await onLanguageChange(normalized);
         }
     }
 

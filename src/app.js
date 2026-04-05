@@ -5,7 +5,7 @@ import { createModalRouter } from './app/modal-router.js';
 import { loadRandomShader } from './bootstrap/shaders.js';
 import { KNOWLEDGE_ENTRIES, MENU_ITEMS, SHADER_PATHS, TRANSLATIONS } from './content/site-data.mjs';
 import { getSearchParams } from './lib/query-state.js';
-import { createI18n } from './ui/i18n.js';
+import { createI18n, detectLang } from './ui/i18n.js';
 import { createMenuController, renderSiteMenu } from './ui/menu.js';
 import { createModalController } from './ui/modal.js';
 import { createSlideViewer } from './ui/slide-viewer.js';
@@ -83,9 +83,7 @@ bindAppEvents({
 });
 
 async function init() {
-    const langParam = getSearchParams().get('lang');
-    const initialLang = (langParam === 'en' || langParam === 'ja') ? langParam : i18n.getCurrentLang();
-    await i18n.switchLang(initialLang);
+    await i18n.switchLang(detectLang());
     await modalRouter.hydrateFromLocation();
 
     if (getSearchParams().has('dev')) {
