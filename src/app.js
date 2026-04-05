@@ -83,7 +83,9 @@ bindAppEvents({
 });
 
 async function init() {
-    await i18n.switchLang(i18n.getCurrentLang());
+    const langParam = getSearchParams().get('lang');
+    const initialLang = (langParam === 'en' || langParam === 'ja') ? langParam : i18n.getCurrentLang();
+    await i18n.switchLang(initialLang);
     await modalRouter.hydrateFromLocation();
 
     if (getSearchParams().has('dev')) {

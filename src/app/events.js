@@ -55,7 +55,7 @@ export function bindAppEvents({ i18n, menuController, modalRouter, slideViewer }
                     const label = copyBtn.querySelector('[data-i18n-key="howto.copy"]');
                     if (label) {
                         const orig = label.textContent;
-                        label.textContent = 'OK!';
+                        label.textContent = i18n.translate('howto.copied');
                         setTimeout(() => { label.textContent = orig; }, 1500);
                     }
                 });

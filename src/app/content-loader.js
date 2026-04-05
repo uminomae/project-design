@@ -43,7 +43,7 @@ export function createContentLoader({
 
     function updateKnowledgePdfLink(entry, lang) {
         if (entry.pdfUrl) {
-            knowledgePdfLink.href = entry.pdfUrl;
+            knowledgePdfLink.href = entry.pdfUrl.replace('{lang}', lang);
             knowledgePdfLink.setAttribute('aria-disabled', 'false');
             knowledgePdfLink.textContent = translate('knowledge.pdf.open', lang);
             return;

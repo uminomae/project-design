@@ -8,17 +8,17 @@ export const SHADER_PATHS = [
 export const KNOWLEDGE_ENTRIES = {
     'design-thinking': {
         mdPath: 'content/knowledge/design-thinking-{lang}.md',
-        pdfUrl: 'https://uminomae.github.io/pjdhiro/assets/project-design/knowledge/ja/pdf/design-thinking.pdf',
+        pdfUrl: 'https://uminomae.github.io/pjdhiro/assets/project-design/knowledge/{lang}/pdf/design-thinking.pdf',
         titleKey: 'knowledge.designThinking.title',
     },
     'trust': {
         mdPath: 'content/knowledge/trust-{lang}.md',
-        pdfUrl: 'https://uminomae.github.io/pjdhiro/assets/project-design/knowledge/ja/pdf/trust.pdf',
+        pdfUrl: 'https://uminomae.github.io/pjdhiro/assets/project-design/knowledge/{lang}/pdf/trust.pdf',
         titleKey: 'knowledge.trust.title',
     },
     'value': {
         mdPath: 'content/knowledge/value-{lang}.md',
-        pdfUrl: 'https://uminomae.github.io/pjdhiro/assets/project-design/knowledge/ja/pdf/value.pdf',
+        pdfUrl: 'https://uminomae.github.io/pjdhiro/assets/project-design/knowledge/{lang}/pdf/value.pdf',
         titleKey: 'knowledge.value.title',
     },
 };
