@@ -14,7 +14,8 @@ export function createModalRouter({
     let activeKnowledgeKey = null;
 
     async function openAbout({ pushHistory = true } = {}) {
-        await contentLoader.loadAboutContent(getCurrentLang());
+        const loaded = await contentLoader.loadAboutContent(getCurrentLang());
+        if (loaded === false) return;
         closeKnowledge({ updateHistory: false });
         activeKnowledgeKey = null;
         aboutModal.open();
@@ -56,7 +57,8 @@ export function createModalRouter({
         }
 
         activeKnowledgeKey = key;
-        await contentLoader.loadKnowledgeContent(key, getCurrentLang());
+        const loaded = await contentLoader.loadKnowledgeContent(key, getCurrentLang());
+        if (loaded === false) return;
         closeAbout({ updateHistory: false });
         knowledgeModal.open();
 
@@ -94,11 +96,15 @@ export function createModalRouter({
         if (aboutModal.isOpen()) {
             resetReveal(aboutBody);
             await contentLoader.loadAboutContent(lang);
-            revealAboutContent(aboutBody);
+            if (aboutModal.isOpen()) {
+                revealAboutContent(aboutBody);
+            }
         }
 
         if (knowledgeModal.isOpen() && activeKnowledgeKey) {
-            await contentLoader.loadKnowledgeContent(activeKnowledgeKey, lang);
+            const key = activeKnowledgeKey;
+            await contentLoader.loadKnowledgeContent(key, lang);
+            // knowledgeModal の open 状態は loadKnowledgeContent 内では変化しないため追加ガード不要
         }
     }
 
@@ -146,8 +152,8 @@ export function createModalRouter({
         slidesModal.open();
 
         if (!slidesLoaded && slideViewer) {
-            await slideViewer.load(SLIDES_PDF_PATH);
-            slidesLoaded = true;
+            const loaded = await slideViewer.load(SLIDES_PDF_PATH);
+            if (loaded) slidesLoaded = true;
         }
 
         if (pushHistory && !getSearchParams().has('slides')) {

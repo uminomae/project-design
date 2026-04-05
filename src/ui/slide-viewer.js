@@ -75,13 +75,17 @@ export function createSlideViewer({ container, pageIndicator, prevBtn, nextBtn }
         }
     }
 
-    const resizeObserver = new ResizeObserver(() => {
-        if (pdfDoc && !rendering) {
-            void renderPage(currentPage);
-        }
-    });
+    const resizeObserver = typeof ResizeObserver !== 'undefined'
+        ? new ResizeObserver(() => {
+            if (pdfDoc && !rendering) {
+                void renderPage(currentPage);
+            }
+        })
+        : null;
 
-    resizeObserver.observe(container);
+    if (resizeObserver) {
+        resizeObserver.observe(container);
+    }
 
     async function load(url) {
         try {
@@ -90,9 +94,11 @@ export function createSlideViewer({ container, pageIndicator, prevBtn, nextBtn }
             totalPages = pdfDoc.numPages;
             currentPage = 1;
             await renderPage(1);
+            return true;
         } catch (error) {
             pageIndicator.textContent = 'Failed to load PDF';
             console.error('PDF load failed:', error);
+            return false;
         }
     }
 
@@ -113,7 +119,7 @@ export function createSlideViewer({ container, pageIndicator, prevBtn, nextBtn }
     }
 
     function destroy() {
-        resizeObserver.disconnect();
+        resizeObserver?.disconnect();
 
         if (pdfDoc) {
             pdfDoc.destroy();

@@ -1,5 +1,18 @@
+function sanitize(input) {
+    return input
+        .replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, '')
+        .replace(/<iframe\b[^>]*>[\s\S]*?<\/iframe>/gi, '')
+        .replace(/<object\b[^>]*>[\s\S]*?<\/object>/gi, '')
+        .replace(/<embed\b[^>]*\/?>/gi, '')
+        .replace(/<form\b[^>]*>[\s\S]*?<\/form>/gi, '')
+        .replace(/\s+on\w+\s*=\s*"[^"]*"/gi, '')
+        .replace(/\s+on\w+\s*=\s*'[^']*'/gi, '')
+        .replace(/href\s*=\s*"javascript:[^"]*"/gi, 'href="#"')
+        .replace(/href\s*=\s*'javascript:[^']*'/gi, "href='#'");
+}
+
 export function renderMarkdown(markdown) {
-    let html = markdown
+    let html = sanitize(markdown)
         .replace(/^---$/gm, '<hr>')
         .replace(/^### (.+)$/gm, '<h3>$1</h3>')
         .replace(/^## (.+)$/gm, '<h2>$1</h2>')

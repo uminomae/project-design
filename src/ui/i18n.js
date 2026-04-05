@@ -9,6 +9,7 @@ export function createI18n({ langButtons, translations, onLanguageChange }) {
 
     function applyTranslations(root = document, lang = getCurrentLang()) {
         for (const element of root.querySelectorAll('[data-i18n-key]')) {
+            // translations は開発者管理の静的データ（site-data.mjs）。外部入力を含まないため innerHTML 使用は安全。
             element.innerHTML = translate(element.dataset.i18nKey, lang);
         }
 

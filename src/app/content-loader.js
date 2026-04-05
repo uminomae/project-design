@@ -1,6 +1,7 @@
 import { renderMarkdown } from '../lib/render-markdown.js';
 
 function renderAbout(aboutBody, markdown) {
+    // markdown は外部 fetch 由来。renderMarkdown でサニタイズ済みのため innerHTML 注入は安全。
     aboutBody.innerHTML = renderMarkdown(markdown);
 
     for (const child of aboutBody.children) {
@@ -33,16 +34,8 @@ export function createContentLoader({
 }) {
     const aboutCache = new Map();
     const knowledgeCache = new Map();
-    let activeRequestId = 0;
-
-    function beginRequest() {
-        activeRequestId += 1;
-        return activeRequestId;
-    }
-
-    function isLatestRequest(requestId) {
-        return requestId === activeRequestId;
-    }
+    let aboutRequestId = 0;
+    let knowledgeRequestId = 0;
 
     function hasKnowledgeEntry(key) {
         return Boolean(knowledgeEntries[key]);
@@ -62,24 +55,28 @@ export function createContentLoader({
     }
 
     async function loadAboutContent(lang) {
-        const requestId = beginRequest();
+        aboutRequestId += 1;
+        const requestId = aboutRequestId;
         const cached = aboutCache.get(lang);
 
         if (cached !== undefined) {
-            if (!isLatestRequest(requestId)) return false;
+            if (requestId !== aboutRequestId) return false;
             renderAbout(aboutBody, cached);
             return true;
         }
 
         const markdown = await fetchTextWithFallback(`content/about-${lang}.md`);
-        aboutCache.set(lang, markdown);
-        if (!isLatestRequest(requestId)) return false;
+        if (markdown) {
+            aboutCache.set(lang, markdown);
+        }
+        if (requestId !== aboutRequestId) return false;
         renderAbout(aboutBody, markdown);
         return true;
     }
 
     async function loadKnowledgeContent(key, lang) {
-        const requestId = beginRequest();
+        knowledgeRequestId += 1;
+        const requestId = knowledgeRequestId;
         const entry = knowledgeEntries[key];
 
         if (!entry) {
@@ -96,10 +93,13 @@ export function createContentLoader({
                 : entry.mdPath.replace('{lang}', 'ja');
 
             markdown = await fetchTextWithFallback(mdPath, fallbackPath);
-            knowledgeCache.set(cacheKey, markdown);
+            if (markdown) {
+                knowledgeCache.set(cacheKey, markdown);
+            }
         }
 
-        if (!isLatestRequest(requestId)) return false;
+        if (requestId !== knowledgeRequestId) return false;
+        // markdown は外部 fetch 由来。renderMarkdown でサニタイズ済みのため innerHTML 注入は安全。
         knowledgeBody.innerHTML = renderMarkdown(markdown);
         updateKnowledgePdfLink(entry, lang);
         return true;
