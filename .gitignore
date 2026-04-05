@@ -7,3 +7,7 @@ build/
 .build-tmp/
 node_modules/
 test-results/
+
+# Obsidian
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
