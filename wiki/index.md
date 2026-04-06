@@ -15,6 +15,14 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[concepts/PDブリッジ保持論点|PDブリッジ保持論点]]
 
 ## Entities
+
+### コア概念（D1-D4）
+- [[entities/欠損|欠損]] -- D2: 予想と現実の誤差を「欠け」として捉えた主観的経験
+- [[entities/欠損駆動思考|欠損駆動思考]] -- D1: 棄却される誤差を問いとして拾う態度
+- [[entities/抱持|抱持]] -- D3: 反射的に処理せず誤差を問いとして保持する機能
+- [[entities/デザイン思考|デザイン思考]] -- 人間中心の問題解決アプローチ、3層構造
+
+### 人物・理論
 - [[entities/ドナルド・ショーン|ドナルド・ショーン]] -- reflection-in-action, designerly thinking
 - [[entities/ナイジェル・クロス|ナイジェル・クロス]] -- designerly ways of knowing
 - [[entities/アネット・ベイアー|アネット・ベイアー]] -- trust と vulnerability
@@ -65,5 +73,9 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 | [[entities/プロスペクト理論\|プロスペクト理論]] | 2026-04-06 | entity, theory, value, behavioral-economics, decision-making |
 | [[entities/デイヴィッド・グレーバー\|デイヴィッド・グレーバー]] | 2026-04-06 | entity, person, value, anthropology, integration |
 | [[entities/Value-Sensitive-Design\|Value Sensitive Design]] | 2026-04-06 | entity, theory, value, design, HCI, ethics |
+| [[entities/欠損\|欠損]] | 2026-04-06 | entity, concept, kesson, prediction-error, phenomenology |
+| [[entities/欠損駆動思考\|欠損駆動思考]] | 2026-04-06 | entity, theory, thinking, kesson, attitude |
+| [[entities/抱持\|抱持]] | 2026-04-06 | entity, concept, containment, psychoanalysis, consciousness |
+| [[entities/デザイン思考\|デザイン思考]] | 2026-04-06 | entity, theory, design, abduction, framing, human-centered |
 
 > **Note**: このテーブルは wiki-compile 時に生成された静的データです。Obsidian では Dataview クエリによる動的表示も利用できます。

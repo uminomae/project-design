@@ -24,6 +24,10 @@ source パスの実在を確認する (WL-5)。
 
 | wiki ページ | compiled | source | source 最終変更 | 鮮度 |
 |---|---|---|---|---|
+| 欠損 | 2026-04-06 | ks: knowledge/schema/core-definitions.md, knowledge/text/foundation/phase1-summary.md | 2026-02-13 | FRESH |
+| 欠損駆動思考 | 2026-04-06 | ks: knowledge/schema/core-definitions.md, knowledge/text/foundation/phase1-summary.md, knowledge/schema/glossary.md | 2026-03-04 | FRESH |
+| 抱持 | 2026-04-06 | ks: knowledge/schema/core-definitions.md, knowledge/schema/container-mapping.md, knowledge/schema/hoji-matching-v2.md, knowledge/schema/glossary.md | 2026-03-04 | FRESH |
+| デザイン思考 | 2026-04-06 | pd: knowledge/research/design-thinking/design-thinking-integrated.md | 2026-03-27 | FRESH |
 | ドナルド・ショーン | 2026-04-06 | knowledge/research/design-thinking/design-thinking-integrated.md | 2026-03-27 | FRESH |
 | ナイジェル・クロス | 2026-04-06 | knowledge/research/design-thinking/design-thinking-integrated.md | 2026-03-27 | FRESH |
 | アネット・ベイアー | 2026-04-06 | knowledge/research/trust/trust-integrated.md | 2026-03-27 | FRESH |
@@ -52,6 +56,11 @@ source パスの実在を確認する (WL-5)。
 | knowledge/research/trust/trust-integrated.md | OK |
 | knowledge/research/value/value-integrated.md | OK |
 | knowledge/research/kesson-bridge.md | OK |
+| ks: knowledge/schema/core-definitions.md | OK |
+| ks: knowledge/text/foundation/phase1-summary.md | OK |
+| ks: knowledge/schema/glossary.md | OK |
+| ks: knowledge/schema/container-mapping.md | OK |
+| ks: knowledge/schema/hoji-matching-v2.md | OK |
 
 ## 判定
 

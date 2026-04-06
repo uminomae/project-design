@@ -35,25 +35,26 @@ wiki 内で他のどのページからもリンクされていない孤立ペー
 | health/cn-divergence-report | index.md |
 | health/freshness-report | index.md |
 | health/orphan-report | index.md |
+| entities/欠損 | index.md, 欠損駆動思考, 抱持, デザイン思考, concept-entity-map |
+| entities/欠損駆動思考 | index.md, 欠損, 抱持, デザイン思考, concept-entity-map |
+| entities/抱持 | index.md, 欠損, 欠損駆動思考, concept-entity-map |
+| entities/デザイン思考 | index.md, 欠損駆動思考, concept-entity-map |
 
 ### 未リンク wikilink ターゲット（wiki 外の概念への参照）
 
-以下は wikilink として参照されているが、対応する wiki ページが存在しないもの:
-- [[デザイン思考]] -- entities/ から参照。canonical-keywords に登録あり
-- [[抱持]] -- concepts/ entities/ から多数参照。canonical-keywords D3
-- [[欠損駆動思考]] -- concepts/ entities/ から参照。canonical-keywords D1
-- [[欠損]] -- concepts/ から参照。canonical-keywords D2
-- [[情動の構成]] -- concepts/ から参照。canonical-keywords D4
-- [[ネガティブケイパビリティ]] -- concepts/ から参照。canonical-keywords
-- [[間主観性]] -- concepts/ から参照。canonical-keywords
-- [[内受容感覚]] -- 測定設計原則から参照。canonical-keywords
-- [[プロジェクトデザイン]] -- entities/ から参照。canonical-keywords
-- [[Love 駆動開発]] -- entities/ から参照。canonical-keywords
-- [[感情処理]] -- entities/ から参照。canonical-keywords
+以下は wikilink として参照されているが、対応する wiki ページが存在しないもの（stub のみ）:
+- [[情動の構成]] -- entities/ から参照。canonical-keywords D4。stub あり
+- [[ネガティブケイパビリティ]] -- entities/ から参照。canonical-keywords。stub あり
+- [[間主観性]] -- concepts/ から参照。canonical-keywords。stub あり
+- [[内受容感覚]] -- 測定設計原則から参照。canonical-keywords。stub あり
+- [[プロジェクトデザイン]] -- entities/ から参照。canonical-keywords。stub あり
+- [[Love 駆動開発]] -- entities/ から参照。canonical-keywords。stub あり
+- [[感情処理]] -- entities/ から参照。canonical-keywords。stub あり
 
-これらは Step 3（cross-repo compile）で他リポの knowledge/ から生成される予定。
+P0 で解消済み: 欠損, 欠損駆動思考, 抱持, デザイン思考（4件）
+残り7件は P1-P3 で解消予定。
 
 ## 判定
 
 **PASS**: wiki 内の全ページは index.md または他ページからリンクされており、孤立ページなし。
-未リンクターゲット（赤リンク）は8件あるが、これらは Step 3 で解消予定。
+未リンクターゲット（赤リンク）は7件（P0 で4件解消、残り7件は P1-P3 で解消予定）。
