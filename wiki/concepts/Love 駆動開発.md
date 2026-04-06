@@ -1,0 +1,12 @@
+---
+title: "Love 駆動開発"
+aliases: ["Love-Driven Development", "LDD"]
+compiled: "2026-04-06"
+tags: [stub, concept, core]
+status: stub
+review_state: 未作成
+---
+
+# Love 駆動開発
+
+> このページは未作成です。Step 3 (cross-repo compile) で生成予定。

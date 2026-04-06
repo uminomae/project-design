@@ -1,6 +1,6 @@
 ---
 title: "Value Sensitive Design"
-aliases: ["VSD", "価値に配慮した設計"]
+aliases: ["VSD", "価値に配慮した設計", "Value Sensitive Design"]
 source:
   - repo: "project-design"
     path: "knowledge/research/value/value-integrated.md"
