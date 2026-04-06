@@ -13,6 +13,13 @@ compile 実行の履歴。append-only。
 - duration: {所要時間}
 -->
 
+## [2026-04-06] compile | Step 3 P3 finalize (cross-refs overview + wikilink meta + health check)
+- scope: Step 3 P3（仕上げ: overview ページ + wikilink メタ + health check + about 更新）
+- sources: wiki 内データ（集約ページ）
+- pages: 2 cross-refs 新規（kesson-space-overview, awareness-space-overview）+ 1 concepts stub -> 充実化（wikilink）
+- updates: concept-entity-map（最終整合確認）, freshness-report, orphan-report, about.md, index.md, log.md
+- notes: P0-P3 全完了。赤リンク 0件。孤立ページ 0件。全ページ FRESH。about.md に Step 3 完了と cross-repo ソース一覧を追加。Issue #53 close。
+
 ## [2026-04-06] compile | Step 3 P2 concepts + cs knowledge
 - scope: Step 3 P2（cross-repo compile: pd/meta + ks/clinical-psychology + cs/knowledge）
 - sources: 35+（pd/meta/project-overview, ks/schema/core-definitions, ks/text/clinical-psychology/part2,3,5,6, cs/knowledge/five-stages-guide, cs/knowledge/glossary, cs/knowledge/schema/five-stages, cs/knowledge/schema/academic-domains, cs/knowledge/domains/ D01-D30 全30レポート）

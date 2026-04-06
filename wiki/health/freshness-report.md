@@ -21,6 +21,8 @@ source パスの実在を確認する (WL-5)。
 | PDブリッジ保持論点 | 2026-04-06 | knowledge/concepts/CN-008_pd-bridge-holding-issues.md | 2026-04-04 | FRESH |
 | Love 駆動開発 | 2026-04-06 | pd: knowledge/meta/project-overview.md, ks: knowledge/schema/core-definitions.md, ks: knowledge/text/clinical-psychology/part5-aesthetic-conflict-hoji.md | 2026-02-13 | FRESH |
 | 感情処理 | 2026-04-06 | ks: knowledge/text/clinical-psychology/part2-intersubjectivity-interoception.md, ks: knowledge/text/clinical-psychology/part3-splitting-integration-fo.md, ks: knowledge/text/clinical-psychology/part5-aesthetic-conflict-hoji.md, ks: knowledge/text/clinical-psychology/part6-psychopathology-4layer.md, ks: knowledge/schema/core-definitions.md | 2026-02-13 | FRESH |
+| プロジェクトデザイン | 2026-04-06 | pd: knowledge/meta/project-overview.md, pd: knowledge/meta/project-history.md | 2026-02-13 | FRESH |
+| wikilink | 2026-04-06 | (メタページ: ソースなし) | -- | FRESH |
 
 ### entities/
 
@@ -48,8 +50,16 @@ source パスの実在を確認する (WL-5)。
 | 情動の構成 | 2026-04-06 | ks: knowledge/schema/core-definitions.md, ks: knowledge/text/clinical-psychology/part3-splitting-integration-fo.md | 2026-02-13 | FRESH |
 | 内受容感覚 | 2026-04-06 | ks: knowledge/text/clinical-psychology/part2-intersubjectivity-interoception.md, as: knowledge/topics/four-layers/ja/report.md | 2026-03-23 | FRESH |
 | 4層モデル | 2026-04-06 | as: knowledge/topics/four-layers/ja/report.md, ks: knowledge/schema/core-definitions.md, ks: knowledge/text/clinical-psychology/part1-alpha-function-4layer.md | 2026-03-23 | FRESH |
-| プロジェクトデザイン | 2026-04-06 | pd: knowledge/meta/project-overview.md, pd: knowledge/meta/project-history.md | 2026-02-13 | FRESH |
 | 創造の5段階モデル | 2026-04-06 | cs: knowledge/five-stages-guide.md, cs: knowledge/glossary.md, cs: knowledge/schema/five-stages.md, cs: knowledge/schema/academic-domains.md | 2026-02-21 | FRESH |
+
+### cross-refs/
+
+| wiki ページ | compiled | source | 鮮度 |
+|---|---|---|---|
+| concept-entity-map | 2026-04-06 | (集約ページ: wiki 内データ) | FRESH |
+| creation-space-domains | 2026-04-06 | cs: knowledge/domains/ (D01-D30) | FRESH |
+| kesson-space-overview | 2026-04-06 | (集約ページ: wiki 内データ) | FRESH |
+| awareness-space-overview | 2026-04-06 | (集約ページ: wiki 内データ) | FRESH |
 
 ### WL-5: source パス実在確認
 
@@ -79,8 +89,6 @@ source パスの実在を確認する (WL-5)。
 | as: knowledge/topics/survival-trust-axis/ja/report.md | OK |
 | pd: knowledge/meta/project-overview.md | OK |
 | pd: knowledge/meta/project-history.md | OK |
-| ks: knowledge/text/clinical-psychology/part5-aesthetic-conflict-hoji.md | OK |
-| ks: knowledge/text/clinical-psychology/part6-psychopathology-4layer.md | OK |
 | cs: knowledge/five-stages-guide.md | OK |
 | cs: knowledge/glossary.md | OK |
 | cs: knowledge/schema/five-stages.md | OK |
@@ -89,4 +97,4 @@ source パスの実在を確認する (WL-5)。
 
 ## 判定
 
-**PASS**: 全ページが FRESH。全 source パスが実在。
+**PASS**: 全ページが FRESH。全 source パスが実在。P3 最終確認完了。

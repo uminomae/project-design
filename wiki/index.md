@@ -50,8 +50,13 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[entities/デイヴィッド・グレーバー|デイヴィッド・グレーバー]] -- 人類学的価値論, 3伝統の統合
 - [[entities/Value-Sensitive-Design|Value Sensitive Design]] -- 三相調査, human values in design
 
+## Meta
+- [[concepts/wikilink|wikilink]] -- wiki 内リンク記法・canonical-keywords 辞書・compile の仕組み
+
 ## Cross References
 - [[cross-refs/concept-entity-map|Concept-Entity Map]] -- concepts と entities の関係マトリクス
+- [[cross-refs/kesson-space-overview|kesson-space 概要]] -- ks の理論構造と wiki 内リンク
+- [[cross-refs/awareness-space-overview|awareness-space 概要]] -- as の調査テーマと wiki 内リンク
 - [[cross-refs/creation-space-domains|creation-space 30ドメイン横断]] -- 30学術領域の構造類似探索テーマ横断
 
 ## Health
@@ -70,6 +75,7 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 | [[concepts/信頼の多元的記述\|信頼の多元的記述]] | 暫定 | 2026-04-06 | 未レビュー |
 | [[concepts/測定設計原則\|測定設計原則]] | 正典 | 2026-04-06 | 未レビュー |
 | [[concepts/PDブリッジ保持論点\|PDブリッジ保持論点]] | 暫定 | 2026-04-06 | 未レビュー |
+| [[concepts/wikilink\|wikilink]] | 正典 | 2026-04-06 | 未レビュー |
 
 ## 最近 compile されたページ
 
@@ -103,5 +109,8 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 | [[concepts/Love 駆動開発\|Love 駆動開発]] | 2026-04-06 | concept, core, love-driven, practice |
 | [[concepts/感情処理\|感情処理]] | 2026-04-06 | concept, emotion, processing, clinical-psychology |
 | [[entities/創造の5段階モデル\|創造の5段階モデル]] | 2026-04-06 | entity, theory, creation, five-stages, cross-domain |
+| [[concepts/wikilink\|wikilink]] | 2026-04-06 | concept, meta, wiki-infrastructure |
+| [[cross-refs/kesson-space-overview\|kesson-space 概要]] | 2026-04-06 | cross-ref, kesson-space, overview |
+| [[cross-refs/awareness-space-overview\|awareness-space 概要]] | 2026-04-06 | cross-ref, awareness-space, overview |
 
 > **Note**: このテーブルは wiki-compile 時に生成された静的データです。Obsidian では Dataview クエリによる動的表示も利用できます。
