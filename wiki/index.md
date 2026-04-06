@@ -9,6 +9,7 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 > **[[about|About This Wiki]]** — ソースの所在、compile の仕組み、Obsidian との分担を解説
 
 ## Concepts
+- [[concepts/プロジェクトデザイン|プロジェクトデザイン]] -- やること（Doing）＋起きていること（Being）を含む出来事の設計論
 - [[concepts/信頼の定義仮説|信頼の定義仮説]]
 - [[concepts/信頼の多元的記述|信頼の多元的記述]]
 - [[concepts/測定設計原則|測定設計原則]]
@@ -20,7 +21,14 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[entities/欠損|欠損]] -- D2: 予想と現実の誤差を「欠け」として捉えた主観的経験
 - [[entities/欠損駆動思考|欠損駆動思考]] -- D1: 棄却される誤差を問いとして拾う態度
 - [[entities/抱持|抱持]] -- D3: 反射的に処理せず誤差を問いとして保持する機能
+- [[entities/情動の構成|情動の構成]] -- D4: 欠損が生存-信頼軸で評価され情動として構成されるプロセス
 - [[entities/デザイン思考|デザイン思考]] -- 人間中心の問題解決アプローチ、3層構造
+
+### 意識・臨床心理
+- [[entities/4層モデル|4層モデル]] -- 意識を4層の連鎖として記述する構造モデル
+- [[entities/ネガティブケイパビリティ|ネガティブケイパビリティ]] -- 答えの出ない状態に耐える力（Keats→Bion）
+- [[entities/間主観性|間主観性]] -- 主体間の相互了解と共有された意味の生成
+- [[entities/内受容感覚|内受容感覚]] -- 身体内部の状態を感知する能力（Layer 0）
 
 ### 人物・理論
 - [[entities/ドナルド・ショーン|ドナルド・ショーン]] -- reflection-in-action, designerly thinking
@@ -49,6 +57,7 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 
 | ページ | status | compiled | review_state |
 |--------|--------|----------|--------------|
+| [[concepts/プロジェクトデザイン\|プロジェクトデザイン]] | 暫定 | 2026-04-06 | 未レビュー |
 | [[concepts/信頼の定義仮説\|信頼の定義仮説]] | 探索的 | 2026-04-06 | 未レビュー |
 | [[concepts/信頼の多元的記述\|信頼の多元的記述]] | 暫定 | 2026-04-06 | 未レビュー |
 | [[concepts/測定設計原則\|測定設計原則]] | 正典 | 2026-04-06 | 未レビュー |
@@ -77,5 +86,11 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 | [[entities/欠損駆動思考\|欠損駆動思考]] | 2026-04-06 | entity, theory, thinking, kesson, attitude |
 | [[entities/抱持\|抱持]] | 2026-04-06 | entity, concept, containment, psychoanalysis, consciousness |
 | [[entities/デザイン思考\|デザイン思考]] | 2026-04-06 | entity, theory, design, abduction, framing, human-centered |
+| [[entities/ネガティブケイパビリティ\|ネガティブケイパビリティ]] | 2026-04-06 | entity, theory, philosophy, psychoanalysis, creativity |
+| [[entities/間主観性\|間主観性]] | 2026-04-06 | entity, concept, philosophy, developmental-psychology, phenomenology |
+| [[entities/情動の構成\|情動の構成]] | 2026-04-06 | entity, theory, neuroscience, emotion, consciousness |
+| [[entities/内受容感覚\|内受容感覚]] | 2026-04-06 | entity, theory, neuroscience, consciousness, embodiment |
+| [[entities/4層モデル\|4層モデル]] | 2026-04-06 | entity, theory, consciousness, neuroscience, model |
+| [[concepts/プロジェクトデザイン\|プロジェクトデザイン]] | 2026-04-06 | concept, core, framework |
 
 > **Note**: このテーブルは wiki-compile 時に生成された静的データです。Obsidian では Dataview クエリによる動的表示も利用できます。

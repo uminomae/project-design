@@ -13,6 +13,13 @@ compile 実行の履歴。append-only。
 - duration: {所要時間}
 -->
 
+## [2026-04-06] compile | Step 3 P1 clinical-psychology + as topics + pd meta
+- scope: Step 3 P1（cross-repo compile: ks clinical-psychology + as topics + pd meta）
+- sources: 10（ks/text/clinical-psychology/ 7篇, ks/schema/core-definitions, as/topics/four-layers/ja/report, as/topics/survival-trust-axis/ja/report, pd/meta/project-overview）
+- pages: 5 entities stub -> 充実化（ネガティブケイパビリティ, 間主観性, 情動の構成, 内受容感覚）+ 1 concepts stub -> 充実化（プロジェクトデザイン）+ 1 entities 新規（4層モデル）
+- updates: index.md, concept-entity-map, freshness-report, orphan-report
+- notes: ks Phase 4 Part 1-6 から臨床心理学概念を compile。as の4層モデル・生存-信頼軸レポートを参照。赤リンク 7件中 5件を解消 + 新規1件。残り2件（Love 駆動開発, 感情処理）は P2 で対応。
+
 ## [2026-04-06] compile | Step 3 P0 core concepts (cross-repo)
 - scope: Step 3 P0（cross-repo compile: ks + pd）
 - sources: 6（ks/core-definitions, ks/phase1-summary, ks/glossary, ks/container-mapping, ks/hoji-matching-v2, pd/design-thinking-integrated）

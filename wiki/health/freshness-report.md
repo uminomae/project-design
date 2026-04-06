@@ -41,6 +41,12 @@ source パスの実在を確認する (WL-5)。
 | プロスペクト理論 | 2026-04-06 | knowledge/research/value/value-integrated.md | 2026-03-27 | FRESH |
 | デイヴィッド・グレーバー | 2026-04-06 | knowledge/research/value/value-integrated.md | 2026-03-27 | FRESH |
 | Value Sensitive Design | 2026-04-06 | knowledge/research/value/value-integrated.md | 2026-03-27 | FRESH |
+| ネガティブケイパビリティ | 2026-04-06 | ks: knowledge/text/clinical-psychology/part5-aesthetic-conflict-hoji.md, ks: knowledge/schema/core-definitions.md | 2026-02-13 | FRESH |
+| 間主観性 | 2026-04-06 | ks: knowledge/text/clinical-psychology/part2-intersubjectivity-interoception.md, as: knowledge/topics/survival-trust-axis/ja/report.md | 2026-03-23 | FRESH |
+| 情動の構成 | 2026-04-06 | ks: knowledge/schema/core-definitions.md, ks: knowledge/text/clinical-psychology/part3-splitting-integration-fo.md | 2026-02-13 | FRESH |
+| 内受容感覚 | 2026-04-06 | ks: knowledge/text/clinical-psychology/part2-intersubjectivity-interoception.md, as: knowledge/topics/four-layers/ja/report.md | 2026-03-23 | FRESH |
+| 4層モデル | 2026-04-06 | as: knowledge/topics/four-layers/ja/report.md, ks: knowledge/schema/core-definitions.md, ks: knowledge/text/clinical-psychology/part1-alpha-function-4layer.md | 2026-03-23 | FRESH |
+| プロジェクトデザイン | 2026-04-06 | pd: knowledge/meta/project-overview.md, pd: knowledge/meta/project-history.md | 2026-02-13 | FRESH |
 
 ### WL-5: source パス実在確認
 
@@ -61,6 +67,15 @@ source パスの実在を確認する (WL-5)。
 | ks: knowledge/schema/glossary.md | OK |
 | ks: knowledge/schema/container-mapping.md | OK |
 | ks: knowledge/schema/hoji-matching-v2.md | OK |
+| ks: knowledge/text/clinical-psychology/part1-alpha-function-4layer.md | OK |
+| ks: knowledge/text/clinical-psychology/part2-intersubjectivity-interoception.md | OK |
+| ks: knowledge/text/clinical-psychology/part3-splitting-integration-fo.md | OK |
+| ks: knowledge/text/clinical-psychology/part5-aesthetic-conflict-hoji.md | OK |
+| ks: knowledge/text/clinical-psychology/part6-psychopathology-4layer.md | OK |
+| as: knowledge/topics/four-layers/ja/report.md | OK |
+| as: knowledge/topics/survival-trust-axis/ja/report.md | OK |
+| pd: knowledge/meta/project-overview.md | OK |
+| pd: knowledge/meta/project-history.md | OK |
 
 ## 判定
 

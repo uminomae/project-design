@@ -40,21 +40,28 @@ wiki 内で他のどのページからもリンクされていない孤立ペー
 | entities/抱持 | index.md, 欠損, 欠損駆動思考, concept-entity-map |
 | entities/デザイン思考 | index.md, 欠損駆動思考, concept-entity-map |
 
+### P1 で追加されたページ
+
+| ページ | 被リンク元 |
+|---|---|
+| entities/ネガティブケイパビリティ | index.md, 抱持, 4層モデル, concept-entity-map |
+| entities/間主観性 | index.md, ネガティブケイパビリティ, 内受容感覚, 4層モデル, concept-entity-map |
+| entities/情動の構成 | index.md, ネガティブケイパビリティ, 間主観性, 4層モデル, 欠損, 欠損駆動思考, 抱持, concept-entity-map |
+| entities/内受容感覚 | index.md, 間主観性, 情動の構成, 4層モデル, concept-entity-map |
+| entities/4層モデル | index.md, ネガティブケイパビリティ, 間主観性, 情動の構成, 内受容感覚, プロジェクトデザイン, concept-entity-map |
+| concepts/プロジェクトデザイン | index.md, concept-entity-map |
+
 ### 未リンク wikilink ターゲット（wiki 外の概念への参照）
 
 以下は wikilink として参照されているが、対応する wiki ページが存在しないもの（stub のみ）:
-- [[情動の構成]] -- entities/ から参照。canonical-keywords D4。stub あり
-- [[ネガティブケイパビリティ]] -- entities/ から参照。canonical-keywords。stub あり
-- [[間主観性]] -- concepts/ から参照。canonical-keywords。stub あり
-- [[内受容感覚]] -- 測定設計原則から参照。canonical-keywords。stub あり
-- [[プロジェクトデザイン]] -- entities/ から参照。canonical-keywords。stub あり
 - [[Love 駆動開発]] -- entities/ から参照。canonical-keywords。stub あり
 - [[感情処理]] -- entities/ から参照。canonical-keywords。stub あり
 
 P0 で解消済み: 欠損, 欠損駆動思考, 抱持, デザイン思考（4件）
-残り7件は P1-P3 で解消予定。
+P1 で解消済み: ネガティブケイパビリティ, 間主観性, 情動の構成, 内受容感覚, プロジェクトデザイン（5件）+ 4層モデル新規（1件）
+残り2件は P2 で解消予定。
 
 ## 判定
 
 **PASS**: wiki 内の全ページは index.md または他ページからリンクされており、孤立ページなし。
-未リンクターゲット（赤リンク）は7件（P0 で4件解消、残り7件は P1-P3 で解消予定）。
+未リンクターゲット（赤リンク）は2件（P2 で解消予定）。
