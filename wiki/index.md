@@ -32,20 +32,28 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[health/freshness-report|Freshness Report]]
 - [[health/orphan-report|Orphan Report]]
 
-## Dataview クエリ例
+## Concepts 一覧（status 別）
 
-### 全 concepts（status 別）
-```dataview
-TABLE status, compiled, review_state
-FROM "concepts"
-SORT status ASC, compiled DESC
-```
+| ページ | status | compiled | review_state |
+|--------|--------|----------|--------------|
+| [[concepts/信頼の定義仮説\|信頼の定義仮説]] | 探索的 | 2026-04-06 | 未レビュー |
+| [[concepts/信頼の多元的記述\|信頼の多元的記述]] | 暫定 | 2026-04-06 | 未レビュー |
+| [[concepts/測定設計原則\|測定設計原則]] | 正典 | 2026-04-06 | 未レビュー |
+| [[concepts/PDブリッジ保持論点\|PDブリッジ保持論点]] | 暫定 | 2026-04-06 | 未レビュー |
 
-### 最近 compile されたページ
-```dataview
-TABLE compiled, tags
-FROM ""
-WHERE compiled
-SORT compiled DESC
-LIMIT 10
-```
+## 最近 compile されたページ
+
+| ページ | compiled | tags |
+|--------|----------|------|
+| [[concepts/信頼の定義仮説\|信頼の定義仮説]] | 2026-04-06 | concept, trust, hypothesis, BSPL |
+| [[concepts/信頼の多元的記述\|信頼の多元的記述]] | 2026-04-06 | concept, trust, framework, axis |
+| [[concepts/測定設計原則\|測定設計原則]] | 2026-04-06 | concept, measurement, methodology, trust |
+| [[concepts/PDブリッジ保持論点\|PDブリッジ保持論点]] | 2026-04-06 | concept, bridge, holding, cross-theme |
+| [[entities/アネット・ベイアー\|アネット・ベイアー]] | 2026-04-06 | entity, person, trust, philosophy, vulnerability |
+| [[entities/ニクラス・ルーマン\|ニクラス・ルーマン]] | 2026-04-06 | entity, person, trust, sociology, systems-theory |
+| [[entities/山岸俊男\|山岸俊男]] | 2026-04-06 | entity, person, trust, social-psychology, japan |
+| [[entities/ドナルド・ショーン\|ドナルド・ショーン]] | 2026-04-06 | entity, person, design-thinking, reflection |
+| [[entities/ナイジェル・クロス\|ナイジェル・クロス]] | 2026-04-06 | entity, person, design-thinking, epistemology |
+| [[entities/アブダクション\|アブダクション]] | 2026-04-06 | entity, theory, logic, design-thinking, abduction |
+
+> **Note**: このテーブルは wiki-compile 時に生成された静的データです。Obsidian では Dataview クエリによる動的表示も利用できます。

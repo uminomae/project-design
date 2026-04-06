@@ -11,3 +11,8 @@ test-results/
 # Obsidian
 .obsidian/workspace.json
 .obsidian/workspace-mobile.json
+
+# Quartz
+quartz/node_modules/
+quartz/public/
+quartz/.quartz-cache/
