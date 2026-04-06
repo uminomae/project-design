@@ -26,6 +26,11 @@ wiki 内で他のどのページからもリンクされていない孤立ペー
 | entities/アブダクション | index.md, PDブリッジ保持論点, concept-entity-map |
 | entities/ウィキッド・プロブレム | index.md, PDブリッジ保持論点, concept-entity-map |
 | entities/愛着理論 | index.md, 信頼の定義仮説, 信頼の多元的記述, 測定設計原則, concept-entity-map |
+| entities/シュワルツの基本的価値理論 | index.md, concept-entity-map |
+| entities/ピエール・ブルデュー | index.md, concept-entity-map |
+| entities/プロスペクト理論 | index.md, concept-entity-map |
+| entities/デイヴィッド・グレーバー | index.md, concept-entity-map |
+| entities/Value-Sensitive-Design | index.md, concept-entity-map |
 | cross-refs/concept-entity-map | index.md |
 | health/cn-divergence-report | index.md |
 | health/freshness-report | index.md |
@@ -42,6 +47,9 @@ wiki 内で他のどのページからもリンクされていない孤立ペー
 - [[ネガティブケイパビリティ]] -- concepts/ から参照。canonical-keywords
 - [[間主観性]] -- concepts/ から参照。canonical-keywords
 - [[内受容感覚]] -- 測定設計原則から参照。canonical-keywords
+- [[プロジェクトデザイン]] -- entities/ から参照。canonical-keywords
+- [[Love 駆動開発]] -- entities/ から参照。canonical-keywords
+- [[感情処理]] -- entities/ から参照。canonical-keywords
 
 これらは Step 3（cross-repo compile）で他リポの knowledge/ から生成される予定。
 

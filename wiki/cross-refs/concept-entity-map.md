@@ -20,6 +20,11 @@ concepts/ と entities/ の関係を可視化するマトリクス。
 | [[アブダクション]] | | | | **部分的** |
 | [[ウィキッド・プロブレム]] | | | | **保持** |
 | [[愛着理論]] | **参照** | **参照** | **参照** | |
+| [[シュワルツの基本的価値理論]] | | | | |
+| [[ピエール・ブルデュー]] | | | | |
+| [[プロスペクト理論]] | | | | **共鳴** |
+| [[デイヴィッド・グレーバー]] | | | | |
+| [[Value Sensitive Design]] | | | | |
 
 ### 凡例
 
@@ -41,6 +46,11 @@ concepts/ と entities/ の関係を可視化するマトリクス。
 | [[アブダクション]] | [[欠損駆動思考]], [[デザイン思考]] |
 | [[ウィキッド・プロブレム]] | [[欠損駆動思考]], [[デザイン思考]] |
 | [[愛着理論]] | [[抱持]] |
+| [[シュワルツの基本的価値理論]] | [[感情処理]], [[間主観性]] |
+| [[ピエール・ブルデュー]] | [[間主観性]] |
+| [[プロスペクト理論]] | [[感情処理]], [[欠損駆動思考]] |
+| [[デイヴィッド・グレーバー]] | [[間主観性]] |
+| [[Value Sensitive Design]] | [[Love 駆動開発]] |
 
 ## Entities の related_concepts 一覧
 
@@ -54,6 +64,11 @@ concepts/ と entities/ の関係を可視化するマトリクス。
 | [[ニクラス・ルーマン]] | 信頼の定義仮説, 信頼の多元的記述 | entity, person, trust, sociology, systems-theory |
 | [[山岸俊男]] | 信頼の定義仮説, 信頼の多元的記述, 抱持 | entity, person, trust, social-psychology, japan |
 | [[愛着理論]] | 信頼の定義仮説, 信頼の多元的記述, 測定設計原則, 抱持 | entity, theory, trust, developmental-psychology, attachment |
+| [[シュワルツの基本的価値理論]] | 感情処理, 間主観性 | entity, theory, value, social-psychology, cross-cultural |
+| [[ピエール・ブルデュー]] | 間主観性 | entity, person, value, sociology, capital |
+| [[プロスペクト理論]] | 感情処理, 欠損駆動思考 | entity, theory, value, behavioral-economics, decision-making |
+| [[デイヴィッド・グレーバー]] | 間主観性 | entity, person, value, anthropology, integration |
+| [[Value Sensitive Design]] | プロジェクトデザイン, Love 駆動開発 | entity, theory, value, design, HCI, ethics |
 
 ## 「信頼の定義仮説」に関連する entities
 

@@ -32,6 +32,11 @@ source パスの実在を確認する (WL-5)。
 | アブダクション | 2026-04-06 | knowledge/research/design-thinking/design-thinking-integrated.md, knowledge/research/kesson-bridge.md | 2026-04-04 | FRESH |
 | ウィキッド・プロブレム | 2026-04-06 | knowledge/research/design-thinking/design-thinking-integrated.md, knowledge/research/kesson-bridge.md | 2026-04-04 | FRESH |
 | 愛着理論 | 2026-04-06 | knowledge/research/trust/trust-integrated.md, knowledge/research/kesson-bridge.md | 2026-04-04 | FRESH |
+| シュワルツの基本的価値理論 | 2026-04-06 | knowledge/research/value/value-integrated.md | 2026-03-27 | FRESH |
+| ピエール・ブルデュー | 2026-04-06 | knowledge/research/value/value-integrated.md | 2026-03-27 | FRESH |
+| プロスペクト理論 | 2026-04-06 | knowledge/research/value/value-integrated.md | 2026-03-27 | FRESH |
+| デイヴィッド・グレーバー | 2026-04-06 | knowledge/research/value/value-integrated.md | 2026-03-27 | FRESH |
+| Value Sensitive Design | 2026-04-06 | knowledge/research/value/value-integrated.md | 2026-03-27 | FRESH |
 
 ### WL-5: source パス実在確認
 

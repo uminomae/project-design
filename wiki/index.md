@@ -23,6 +23,11 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[entities/アブダクション|アブダクション]] -- Peirce → Dorst, 仮説的推論
 - [[entities/ウィキッド・プロブレム|ウィキッド・プロブレム]] -- Rittel & Webber, 厄介な問題
 - [[entities/愛着理論|愛着理論]] -- Bowlby, 安全基地, 内的作業モデル
+- [[entities/シュワルツの基本的価値理論|シュワルツの基本的価値理論]] -- Basic Human Values, 10基本価値の円環構造
+- [[entities/ピエール・ブルデュー|ピエール・ブルデュー]] -- 4資本理論, 象徴資本
+- [[entities/プロスペクト理論|プロスペクト理論]] -- Kahneman & Tversky, 参照点依存, 損失回避
+- [[entities/デイヴィッド・グレーバー|デイヴィッド・グレーバー]] -- 人類学的価値論, 3伝統の統合
+- [[entities/Value-Sensitive-Design|Value Sensitive Design]] -- 三相調査, human values in design
 
 ## Cross References
 - [[cross-refs/concept-entity-map|Concept-Entity Map]] -- concepts と entities の関係マトリクス
@@ -55,5 +60,10 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 | [[entities/ドナルド・ショーン\|ドナルド・ショーン]] | 2026-04-06 | entity, person, design-thinking, reflection |
 | [[entities/ナイジェル・クロス\|ナイジェル・クロス]] | 2026-04-06 | entity, person, design-thinking, epistemology |
 | [[entities/アブダクション\|アブダクション]] | 2026-04-06 | entity, theory, logic, design-thinking, abduction |
+| [[entities/シュワルツの基本的価値理論\|シュワルツの基本的価値理論]] | 2026-04-06 | entity, theory, value, social-psychology, cross-cultural |
+| [[entities/ピエール・ブルデュー\|ピエール・ブルデュー]] | 2026-04-06 | entity, person, value, sociology, capital |
+| [[entities/プロスペクト理論\|プロスペクト理論]] | 2026-04-06 | entity, theory, value, behavioral-economics, decision-making |
+| [[entities/デイヴィッド・グレーバー\|デイヴィッド・グレーバー]] | 2026-04-06 | entity, person, value, anthropology, integration |
+| [[entities/Value-Sensitive-Design\|Value Sensitive Design]] | 2026-04-06 | entity, theory, value, design, HCI, ethics |
 
 > **Note**: このテーブルは wiki-compile 時に生成された静的データです。Obsidian では Dataview クエリによる動的表示も利用できます。
