@@ -21,7 +21,7 @@ const config: QuartzConfig = {
       fontOrigin: "googleFonts",
       cdnCaching: true,
       typography: {
-        header: "EB Garamond",
+        header: "Noto Serif JP",
         body: "Noto Sans JP",
         code: "IBM Plex Mono",
       },
