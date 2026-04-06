@@ -39,7 +39,7 @@ compile 実行の履歴。append-only。
 - sources: 6（ks/core-definitions, ks/phase1-summary, ks/glossary, ks/container-mapping, ks/hoji-matching-v2, pd/design-thinking-integrated）
 - pages: 4 entities（欠損, 欠損駆動思考, 抱持, デザイン思考）stub -> 充実化
 - updates: index.md, concept-entity-map, freshness-report, orphan-report
-- notes: D1-D4 コア定義から entities を compile。抱持は Containment の訳語として統一（Withhold ではない）。赤リンク 11件中 4件を解消。
+- notes: コア概念群から entities を compile。抱持は Containment の訳語として統一（Withhold ではない）。赤リンク 11件中 4件を解消。
 
 ## [2026-04-06] compile | Step 2.5 value entities
 - scope: Step 2.5（value-integrated から entities 追加）
