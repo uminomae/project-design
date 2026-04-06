@@ -6,6 +6,8 @@ compiled: "2026-04-06"
 
 pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 
+> **[[about|About This Wiki]]** — ソースの所在、compile の仕組み、Obsidian との分担を解説
+
 ## Concepts
 - [[concepts/信頼の定義仮説|信頼の定義仮説]]
 - [[concepts/信頼の多元的記述|信頼の多元的記述]]
