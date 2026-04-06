@@ -142,6 +142,7 @@ wiki の健全性を定期的にチェックするスキル。結果は `health/
 | **WL-3** 鮮度 | wiki の compiled 日 vs ソースの最終変更日 | [[health/freshness-report]] |
 | **WL-4** 孤立ページ | どこからもリンクされていないページ | [[health/orphan-report]] |
 | **WL-5** source 実在 | front matter の source パスが実際に存在するか | WL-3 に統合 |
+| **WL-6** 文字化け検出 | UTF-8 置換文字（U+FFFD `�`）が wiki/*.md に含まれていないか | compile 時に検出 |
 
 ---
 
