@@ -8,8 +8,8 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "PD Wiki",
-    pageTitleSuffix: " — Project Design",
+    pageTitle: "Project Design Wiki",
+    pageTitleSuffix: "",
     enableSPA: false,
     enablePopovers: true,
     analytics: null,
