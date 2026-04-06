@@ -44,20 +44,29 @@ const KNOWLEDGE_MENU_KEYS = ["design-thinking", "trust", "value"];
 // NOTE: This menu data is also imported by Quartz for the wiki top nav.
 // When changing labels, ordering, or destinations here, review the wiki side too.
 export function getMenuItems({ currentSite = "home", context = "main" } = {}) {
+  const siteLinks =
+    context === "wiki"
+      ? SITE_MENU_LINKS.filter((item) => item.siteId !== "wiki").map((item) => ({
+          ...item,
+          labelKey:
+            item.siteId === "home" ? "menu.projectDesignHome" : item.labelKey,
+        }))
+      : SITE_MENU_LINKS;
+
   const items = [
     { type: "label", labelKey: "menu.sites" },
-    ...SITE_MENU_LINKS.map((item) => ({
+    ...siteLinks.map((item) => ({
       type: "link",
       href: item.href,
       labelKey: item.labelKey,
       className: item.siteId === currentSite ? "menu-current" : undefined,
     })),
-    { type: "separator" },
-    { type: "label", labelKey: "menu.researchNotes" },
   ];
 
   if (context === "main") {
     items.push(
+      { type: "separator" },
+      { type: "label", labelKey: "menu.researchNotes" },
       ...KNOWLEDGE_MENU_KEYS.map((key) => ({
         type: "knowledge-link",
         key,
@@ -68,20 +77,6 @@ export function getMenuItems({ currentSite = "home", context = "main" } = {}) {
     );
     return items;
   }
-
-  items.push(
-    ...KNOWLEDGE_MENU_KEYS.map((key) => ({
-      type: "link",
-      href: `/project-design/?knowledge=${key}`,
-      labelKey: KNOWLEDGE_ENTRIES[key].titleKey,
-    })),
-    { type: "separator" },
-    {
-      type: "link",
-      href: "/project-design/?slides",
-      labelKey: "slides.trigger",
-    },
-  );
 
   return items;
 }
@@ -96,6 +91,7 @@ export const TRANSLATIONS = {
     "menu.toggle": "Menu",
     "menu.sites": "Sites",
     "menu.home": "HOME",
+    "menu.projectDesignHome": "PROJECT DESIGN HOME",
     "menu.wiki": "WIKI",
     "menu.kesson": "欠損駆動思考",
     "menu.creation": "創造とは",
@@ -230,6 +226,7 @@ export const TRANSLATIONS = {
     "menu.toggle": "Menu",
     "menu.sites": "Sites",
     "menu.home": "HOME",
+    "menu.projectDesignHome": "PROJECT DESIGN HOME",
     "menu.wiki": "WIKI",
     "menu.kesson": "KESSON-DRIVEN",
     "menu.creation": "CREATION",
