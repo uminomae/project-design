@@ -1,0 +1,58 @@
+name: Deploy Pages (site + wiki)
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'index.html'
+      - 'src/**'
+      - 'wiki/**'
+      - 'quartz/**'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install Quartz dependencies
+        working-directory: quartz
+        run: npm ci
+
+      - name: Build wiki with Quartz
+        working-directory: quartz
+        run: npx quartz build --directory ../wiki --output ../wiki-out
+
+      - name: Assemble site
+        run: |
+          mkdir -p _site
+          # Copy existing site (index.html, src/, etc.)
+          cp -r index.html src/ _site/
+          # Copy Quartz wiki output into /wiki/ subpath
+          cp -r wiki-out/ _site/wiki/
+
+      - uses: actions/upload-pages-artifact@v3
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
