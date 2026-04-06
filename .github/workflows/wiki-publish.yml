@@ -2,7 +2,7 @@ name: Deploy Pages (site + wiki)
 
 on:
   push:
-    branches: [main, develop]
+    branches: [main]
     paths:
       - 'index.html'
       - 'src/**'
