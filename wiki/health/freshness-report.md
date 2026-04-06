@@ -19,6 +19,8 @@ source パスの実在を確認する (WL-5)。
 | 信頼の多元的記述 | 2026-04-06 | knowledge/concepts/CN-006_trust-analysis-axes.md | 2026-04-04 | FRESH |
 | 測定設計原則 | 2026-04-06 | knowledge/concepts/CN-007_iss42-measurement-design-principles.md | 2026-04-04 | FRESH |
 | PDブリッジ保持論点 | 2026-04-06 | knowledge/concepts/CN-008_pd-bridge-holding-issues.md | 2026-04-04 | FRESH |
+| Love 駆動開発 | 2026-04-06 | pd: knowledge/meta/project-overview.md, ks: knowledge/schema/core-definitions.md, ks: knowledge/text/clinical-psychology/part5-aesthetic-conflict-hoji.md | 2026-02-13 | FRESH |
+| 感情処理 | 2026-04-06 | ks: knowledge/text/clinical-psychology/part2-intersubjectivity-interoception.md, ks: knowledge/text/clinical-psychology/part3-splitting-integration-fo.md, ks: knowledge/text/clinical-psychology/part5-aesthetic-conflict-hoji.md, ks: knowledge/text/clinical-psychology/part6-psychopathology-4layer.md, ks: knowledge/schema/core-definitions.md | 2026-02-13 | FRESH |
 
 ### entities/
 
@@ -47,6 +49,7 @@ source パスの実在を確認する (WL-5)。
 | 内受容感覚 | 2026-04-06 | ks: knowledge/text/clinical-psychology/part2-intersubjectivity-interoception.md, as: knowledge/topics/four-layers/ja/report.md | 2026-03-23 | FRESH |
 | 4層モデル | 2026-04-06 | as: knowledge/topics/four-layers/ja/report.md, ks: knowledge/schema/core-definitions.md, ks: knowledge/text/clinical-psychology/part1-alpha-function-4layer.md | 2026-03-23 | FRESH |
 | プロジェクトデザイン | 2026-04-06 | pd: knowledge/meta/project-overview.md, pd: knowledge/meta/project-history.md | 2026-02-13 | FRESH |
+| 創造の5段階モデル | 2026-04-06 | cs: knowledge/five-stages-guide.md, cs: knowledge/glossary.md, cs: knowledge/schema/five-stages.md, cs: knowledge/schema/academic-domains.md | 2026-02-21 | FRESH |
 
 ### WL-5: source パス実在確認
 
@@ -76,6 +79,13 @@ source パスの実在を確認する (WL-5)。
 | as: knowledge/topics/survival-trust-axis/ja/report.md | OK |
 | pd: knowledge/meta/project-overview.md | OK |
 | pd: knowledge/meta/project-history.md | OK |
+| ks: knowledge/text/clinical-psychology/part5-aesthetic-conflict-hoji.md | OK |
+| ks: knowledge/text/clinical-psychology/part6-psychopathology-4layer.md | OK |
+| cs: knowledge/five-stages-guide.md | OK |
+| cs: knowledge/glossary.md | OK |
+| cs: knowledge/schema/five-stages.md | OK |
+| cs: knowledge/schema/academic-domains.md | OK |
+| cs: knowledge/domains/ (D01-D30) | OK |
 
 ## 判定
 

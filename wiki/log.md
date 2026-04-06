@@ -13,6 +13,13 @@ compile 実行の履歴。append-only。
 - duration: {所要時間}
 -->
 
+## [2026-04-06] compile | Step 3 P2 concepts + cs knowledge
+- scope: Step 3 P2（cross-repo compile: pd/meta + ks/clinical-psychology + cs/knowledge）
+- sources: 35+（pd/meta/project-overview, ks/schema/core-definitions, ks/text/clinical-psychology/part2,3,5,6, cs/knowledge/five-stages-guide, cs/knowledge/glossary, cs/knowledge/schema/five-stages, cs/knowledge/schema/academic-domains, cs/knowledge/domains/ D01-D30 全30レポート）
+- pages: 2 concepts stub -> 充実化（Love 駆動開発, 感情処理）+ 1 entities 新規（創造の5段階モデル）+ 1 cross-refs 新規（creation-space-domains）
+- updates: index.md, concept-entity-map, freshness-report, log.md
+- notes: P2 完了。Love 駆動開発・感情処理の赤リンク解消。cs 30ドメイン横断テーマ（縁の中心性、境界の厚み、予測符号化クラスタ、遅延負帰還と抱持、循環構造、領域クラスタ分布）を1ページに抽出。
+
 ## [2026-04-06] compile | Step 3 P1 clinical-psychology + as topics + pd meta
 - scope: Step 3 P1（cross-repo compile: ks clinical-psychology + as topics + pd meta）
 - sources: 10（ks/text/clinical-psychology/ 7篇, ks/schema/core-definitions, as/topics/four-layers/ja/report, as/topics/survival-trust-axis/ja/report, pd/meta/project-overview）

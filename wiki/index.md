@@ -10,6 +10,8 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 
 ## Concepts
 - [[concepts/プロジェクトデザイン|プロジェクトデザイン]] -- やること（Doing）＋起きていること（Being）を含む出来事の設計論
+- [[concepts/Love 駆動開発|Love 駆動開発]] -- 関係・感情・意図が駆動する局面に名前を与える実践論
+- [[concepts/感情処理|感情処理]] -- プロジェクトにおける感情の認知・処理・統合
 - [[concepts/信頼の定義仮説|信頼の定義仮説]]
 - [[concepts/信頼の多元的記述|信頼の多元的記述]]
 - [[concepts/測定設計原則|測定設計原則]]
@@ -30,6 +32,9 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[entities/間主観性|間主観性]] -- 主体間の相互了解と共有された意味の生成
 - [[entities/内受容感覚|内受容感覚]] -- 身体内部の状態を感知する能力（Layer 0）
 
+### 創造
+- [[entities/創造の5段階モデル|創造の5段階モデル]] -- 場→波→縁→渦→束の5段階で記述する構造モデル
+
 ### 人物・理論
 - [[entities/ドナルド・ショーン|ドナルド・ショーン]] -- reflection-in-action, designerly thinking
 - [[entities/ナイジェル・クロス|ナイジェル・クロス]] -- designerly ways of knowing
@@ -47,6 +52,7 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 
 ## Cross References
 - [[cross-refs/concept-entity-map|Concept-Entity Map]] -- concepts と entities の関係マトリクス
+- [[cross-refs/creation-space-domains|creation-space 30ドメイン横断]] -- 30学術領域の構造類似探索テーマ横断
 
 ## Health
 - [[health/cn-divergence-report|CN Divergence Report]]
@@ -58,6 +64,8 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 | ページ | status | compiled | review_state |
 |--------|--------|----------|--------------|
 | [[concepts/プロジェクトデザイン\|プロジェクトデザイン]] | 暫定 | 2026-04-06 | 未レビュー |
+| [[concepts/Love 駆動開発\|Love 駆動開発]] | 暫定 | 2026-04-06 | 未レビュー |
+| [[concepts/感情処理\|感情処理]] | 暫定 | 2026-04-06 | 未レビュー |
 | [[concepts/信頼の定義仮説\|信頼の定義仮説]] | 探索的 | 2026-04-06 | 未レビュー |
 | [[concepts/信頼の多元的記述\|信頼の多元的記述]] | 暫定 | 2026-04-06 | 未レビュー |
 | [[concepts/測定設計原則\|測定設計原則]] | 正典 | 2026-04-06 | 未レビュー |
@@ -92,5 +100,8 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 | [[entities/内受容感覚\|内受容感覚]] | 2026-04-06 | entity, theory, neuroscience, consciousness, embodiment |
 | [[entities/4層モデル\|4層モデル]] | 2026-04-06 | entity, theory, consciousness, neuroscience, model |
 | [[concepts/プロジェクトデザイン\|プロジェクトデザイン]] | 2026-04-06 | concept, core, framework |
+| [[concepts/Love 駆動開発\|Love 駆動開発]] | 2026-04-06 | concept, core, love-driven, practice |
+| [[concepts/感情処理\|感情処理]] | 2026-04-06 | concept, emotion, processing, clinical-psychology |
+| [[entities/創造の5段階モデル\|創造の5段階モデル]] | 2026-04-06 | entity, theory, creation, five-stages, cross-domain |
 
 > **Note**: このテーブルは wiki-compile 時に生成された静的データです。Obsidian では Dataview クエリによる動的表示も利用できます。
