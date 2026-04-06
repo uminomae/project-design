@@ -1,3 +1,14 @@
 @use "./base.scss";
 
-// put your custom CSS here!
+// pd design-token unified fonts
+// Google Fonts import is managed by quartz.config.ts fontOrigin: "googleFonts"
+// Additional Noto Serif JP for Japanese headings
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap");
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "EB Garamond", "Noto Serif JP", "Yu Mincho", "Hiragino Mincho ProN", serif;
+}
+
+body {
+  font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
+}
