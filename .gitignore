@@ -9,10 +9,11 @@ node_modules/
 test-results/
 
 # Obsidian
-.obsidian/workspace.json
-.obsidian/workspace-mobile.json
+**/.obsidian/workspace.json
+**/.obsidian/workspace-mobile.json
 
 # Quartz
 quartz/node_modules/
 quartz/public/
 quartz/.quartz-cache/
+wiki-out/
