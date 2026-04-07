@@ -16,13 +16,22 @@ jobs:
           node-version: 20
       - run: node .claude/scripts/static-checks.js
 
-      - name: Check UTF-8 mojibake in wiki
+      - name: Check UTF-8 mojibake
         run: |
-          if grep -rl '�' wiki/ --include='*.md' 2>/dev/null; then
-            echo "FAIL: UTF-8 replacement characters (U+FFFD) found in wiki markdown files"
+          if [ -d wiki/ ]; then
+            TARGET=wiki/
+          elif [ -d knowledge/ ]; then
+            TARGET=knowledge/
+          else
+            echo "SKIP: neither wiki/ nor knowledge/ found"
+            exit 0
+          fi
+          echo "Scanning $TARGET for U+FFFD..."
+          if grep -rl '�' "$TARGET" --include='*.md' 2>/dev/null; then
+            echo "FAIL: UTF-8 replacement characters (U+FFFD) found in $TARGET"
             exit 1
           else
-            echo "PASS: No mojibake detected"
+            echo "PASS: No mojibake detected in $TARGET"
           fi
 
       - name: Check cross-repo URL references
@@ -45,4 +54,13 @@ jobs:
             exit 1
           else
             echo "PASS: All common hooks present in pd"
+          fi
+
+      - name: Check for shell escapes in JS/TS
+        run: |
+          if grep -rn '\\!' --include='*.js' --include='*.ts' src/ 2>/dev/null; then
+            echo "FAIL: shell escape \\! found in JS/TS files"
+            exit 1
+          else
+            echo "PASS: no shell escapes"
           fi
