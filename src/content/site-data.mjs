@@ -46,7 +46,7 @@ const KNOWLEDGE_MENU_KEYS = ["design-thinking", "trust", "value"];
 export function getMenuItems({ currentSite = "home", context = "main" } = {}) {
   const siteLinks =
     context === "wiki"
-      ? SITE_MENU_LINKS.filter((item) => item.siteId !== "wiki").map((item) => ({
+      ? SITE_MENU_LINKS.map((item) => ({
           ...item,
           labelKey:
             item.siteId === "home" ? "menu.projectDesignHome" : item.labelKey,
