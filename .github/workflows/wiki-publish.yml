@@ -6,6 +6,8 @@ on:
     paths:
       - 'index.html'
       - 'src/**'
+      - 'content/**'
+      - 'assets/**'
       - 'wiki/**'
       - 'quartz/**'
   workflow_dispatch:
@@ -40,8 +42,8 @@ jobs:
       - name: Assemble site
         run: |
           mkdir -p _site
-          # Copy existing site (index.html, src/, etc.)
-          cp -r index.html src/ _site/
+          # Copy existing site (index.html, src/, content/, assets/, etc.)
+          cp -r index.html src/ content/ assets/ _site/
           # Copy Quartz wiki output into /wiki/ subpath
           cp -r wiki-out/ _site/wiki/
 
