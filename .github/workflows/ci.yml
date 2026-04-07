@@ -25,6 +25,9 @@ jobs:
             echo "PASS: No mojibake detected"
           fi
 
+      - name: Check cross-repo URL references
+        run: bash scripts/check-cross-repo-urls.sh
+
       - name: Verify hooks symlink targets
         run: |
           COMMON_HOOKS=(_common backslash-bang-guard.sh credential-guard.sh destructive-command-guard.sh exfil-guard.sh instruction-lint.sh instruction-prereq-guard.sh session-start-guard.sh)
