@@ -48,6 +48,16 @@ export default (() => {
     )
   }
 
+  ProjectDesignTopNav.afterDOMLoaded = `
+    document.addEventListener("click", (e) => {
+      const details = document.querySelector(".pd-top-nav__details");
+      if (!details || !details.open) return;
+      if (!e.target.closest(".pd-top-nav__details")) {
+        details.open = false;
+      }
+    });
+  `
+
   ProjectDesignTopNav.css = `
 .pd-top-nav {
   width: 100%;
