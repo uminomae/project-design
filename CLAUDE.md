@@ -47,6 +47,43 @@
 
 </important>
 
+## 共通 hooks の正本管理
+
+### 原則
+
+**共通 hooks は pd (project-design) に正本を置き、各 repo は相対シンボリックリンクで参照する。**
+
+pd の `.claude/hooks/` を更新すれば、cs・ks・as に自動反映される。
+
+### 共通 hooks リスト
+
+| ファイル | 用途 |
+|---------|------|
+| `_common` | 全 hook の共通関数ライブラリ |
+| `backslash-bang-guard.sh` | JS/TS への `\!` `\`` `\${` 混入をブロック |
+| `credential-guard.sh` | 機密情報参照を検出 |
+| `destructive-command-guard.sh` | 破壊的コマンドを警告 |
+| `exfil-guard.sh` | Bash での外部送信を検出 |
+| `instruction-lint.sh` | CLI 指示書の必須項目チェック |
+| `instruction-prereq-guard.sh` | CLI 指示書作成前の必読ファイル確認 |
+| `session-start-guard.sh` | セッション開始時の基本チェック |
+
+### 各 repo での参照方法
+
+各 repo の `.claude/hooks/` 内に、以下の相対パスで symlink を作成する:
+
+```bash
+ln -sf ../../../project-design/.claude/hooks/{file} .claude/hooks/{file}
+```
+
+### repo 固有 hooks
+
+共通 hooks リストに含まれないファイル（例: `state-lock-guard.sh`, `design-system-guard.sh`）は各 repo 内で管理する。
+
+### 同期検証
+
+`scripts/verify-hooks-sync.sh` で全 repo のリンク状態を検証する。
+
 ## 委任レベル
 
 | レベル | 例 |
