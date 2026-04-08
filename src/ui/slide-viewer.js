@@ -87,11 +87,35 @@ export function createSlideViewer({ container, pageIndicator, prevBtn, nextBtn }
         resizeObserver.observe(container);
     }
 
+    let preloadPromise = null;
+
+    async function preload(url) {
+        if (pdfDoc) return true;
+        if (preloadPromise) return preloadPromise;
+
+        preloadPromise = (async () => {
+            try {
+                const lib = await loadPdfJs();
+                pdfDoc = await lib.getDocument(url).promise;
+                totalPages = pdfDoc.numPages;
+                return true;
+            } catch (error) {
+                console.warn('PDF preload failed:', error);
+                preloadPromise = null;
+                return false;
+            }
+        })();
+
+        return preloadPromise;
+    }
+
     async function load(url) {
         try {
-            const lib = await loadPdfJs();
-            pdfDoc = await lib.getDocument(url).promise;
-            totalPages = pdfDoc.numPages;
+            const preloaded = await preload(url);
+            if (!preloaded) {
+                pageIndicator.textContent = 'Failed to load PDF';
+                return false;
+            }
             currentPage = 1;
             await renderPage(1);
             return true;
@@ -147,6 +171,7 @@ export function createSlideViewer({ container, pageIndicator, prevBtn, nextBtn }
         getTotalPages,
         load,
         next,
+        preload,
         prev,
     };
 }

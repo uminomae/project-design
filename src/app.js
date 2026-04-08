@@ -89,6 +89,8 @@ async function init() {
     if (getSearchParams().has('dev')) {
         await import('./dev-panel.js');
     }
+
+    modalRouter.preloadSlides();
 }
 
 init();

@@ -256,6 +256,12 @@ export function createModalRouter({
         }
     }
 
+    function preloadSlides() {
+        if (slideViewer) {
+            slideViewer.preload(SLIDES_PDF_PATH);
+        }
+    }
+
     return {
         closeAbout,
         closeHowto,
@@ -270,5 +276,6 @@ export function createModalRouter({
         openHowto,
         openKnowledge,
         openSlides,
+        preloadSlides,
     };
 }
