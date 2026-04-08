@@ -1,3 +1,8 @@
+---
+title: "Project Design"
+description: "I have experienced what I want to call Love-Driven Development many times. This site attempts to articulate that structure: emotional processing, Kesson-Driven Thinking, intersubjectivity, and the Five Stages of Creation."
+---
+
 # Project Design
 
 I have experienced what I want to call Love-Driven Development many times.

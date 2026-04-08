@@ -1,3 +1,8 @@
+---
+title: "What Is Design Thinking — Survey Note"
+description: "Design thinking is not a single methodology; at least three distinct layers coexist. Its core lies in the interplay of abduction, framing, and problem-setting. A survey of its academic lineage and six patterns of hollowing-out."
+---
+
 # What Is Design Thinking — Survey Note
 
 This note is a cross-disciplinary survey of academic literature on the definition, lineage, and hollowing-out of "design thinking," conducted with LLMs (Claude / GPT) and organized and verified by pjdhiro. It is not pjdhiro's original theory but a synthesis of publicly available literature.

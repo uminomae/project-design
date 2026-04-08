@@ -1,3 +1,8 @@
+---
+title: "What Is Trust — Survey Note"
+description: "\"Trust\" is not a single concept but a composite one. A cross-disciplinary survey covering psychology, sociology, philosophy, economics, neuroscience, and HCI/AI, clarifying its multi-layered structure and necessary conditions."
+---
+
 # What Is Trust — Survey Note
 
 This note is a cross-disciplinary survey of academic literature on the definition, multi-layered structure, and Japanese–English translation gaps surrounding "trust," conducted using LLMs (Claude / GPT) and compiled and verified by pjdhiro. It is not an original theory by pjdhiro but an organized review of publicly available literature.

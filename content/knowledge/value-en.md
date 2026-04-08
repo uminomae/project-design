@@ -1,3 +1,8 @@
+---
+title: "What Is Value — Survey Note"
+description: "\"Value\" is a polysemous term bundling at least five distinct problem domains: price, utility, norms, meaning, and the symbolic. A cross-disciplinary survey spanning philosophy, economics, sociology, anthropology, and cognitive science."
+---
+
 # What Is Value — Survey Note
 
 This note is a cross-disciplinary survey of academic literature on the definition, polysemy, and Japanese–English translation gaps surrounding "value," conducted using LLMs (Claude / GPT) and compiled and verified by pjdhiro. It is not an original theory by pjdhiro but an organized review of publicly available literature.
