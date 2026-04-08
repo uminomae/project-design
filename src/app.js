@@ -90,6 +90,7 @@ async function init() {
         await import('./dev-panel.js');
     }
 
+    // UX: スライドモーダルの即時表示のため、全ユーザーに対してPDF.js+PDFを事前ロードする
     modalRouter.preloadSlides();
 }
 

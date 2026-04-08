@@ -96,7 +96,12 @@ export function createSlideViewer({ container, pageIndicator, prevBtn, nextBtn }
         preloadPromise = (async () => {
             try {
                 const lib = await loadPdfJs();
-                pdfDoc = await lib.getDocument(url).promise;
+                const doc = await lib.getDocument(url).promise;
+                if (!preloadPromise) {
+                    doc.destroy();
+                    return false;
+                }
+                pdfDoc = doc;
                 totalPages = pdfDoc.numPages;
                 return true;
             } catch (error) {
@@ -153,6 +158,7 @@ export function createSlideViewer({ container, pageIndicator, prevBtn, nextBtn }
         currentPage = 1;
         totalPages = 0;
         pendingPage = null;
+        preloadPromise = null;
         ctx.clearRect(0, 0, canvas.width, canvas.height);
         pageIndicator.textContent = '';
     }
