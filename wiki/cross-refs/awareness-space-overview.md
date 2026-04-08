@@ -1,77 +1,93 @@
 ---
 title: "awareness-space 調査テーマ概要"
 aliases: ["as overview", "awareness-space overview"]
-compiled: "2026-04-06"
+compiled: "2026-04-08"
 tags: [cross-ref, awareness-space, overview]
 status: 暫定
-review_state: 未レビュー
+review_state: v2照合済
 ---
 
 # awareness-space 調査テーマ概要
 
-awareness-space (as) は意識研究の文脈で[[欠損駆動思考]]の理論を検証・拡張するリポジトリ。主な調査テーマは [[4層モデル]]（意識の階層構造）と 生存-信頼軸（[[情動の構成]]の評価軸）の2つ。
+awareness-space (as) は意識研究の文脈で[[欠損駆動思考]]の理論を検証・拡張するリポジトリ。DRAFT-awareness-model-v2（2026-04-08）に基づき、実証的証拠と哲学的基盤の二本柱で構成される。
 
 ---
 
-## 調査テーマ
+## 核心仮説（pjdhiro 独自）
 
-### 4層モデル（Four-Layer Model）
+> **神経系から意識にのぼる認知信号において、間主観性（信頼）に関わる信号は生存関連の信号とほぼ同等の重みで処理される。**
 
-as/knowledge/topics/four-layers/ja/report.md に独自レポートを保持。意識を4層の連鎖として記述する構造モデル。
+生存軸と信頼軸は直交する基底ベクトルのように独立した次元として構想されるが、構造の詳細は未確定（v2 §2.1）。
 
-| Layer | 名称 | 内容 | 関連 wiki ページ |
-|-------|------|------|-----------------|
-| Layer 0 | 内受容感覚 | 身体内部の状態感知 | [[内受容感覚]] |
-| Layer 1 | 予測-誤差ループ | 予測符号化に基づく誤差検出 | [[欠損]] |
-| Layer 2 | 生存-信頼評価 | 誤差の意味づけ（生存軸・信頼軸） | [[情動の構成]] |
-| Layer 3 | 抱持 | 誤差を問いとして保持する機能 | [[抱持]] |
+---
 
-wiki ページ: [[4層モデル]]
+## §1 先行研究で確立された知見
 
-### 生存-信頼軸（Survival-Trust Evaluation）
+| テーマ | 原典 | wiki ページ |
+|--------|------|------------|
+| 身体の信号が意識の基盤 | Craig (2002), Damasio (1994) | [[sources/Craig_2002_interoception\|Craig]], [[sources/Damasio_1994_somatic-marker\|Damasio]] |
+| 脳は予測と誤差のシステム | Friston (2010), Clark (2013) | [[sources/Friston_2010_free-energy-principle\|Friston]], [[sources/Clark_2013_predictive-processing\|Clark]] |
+| 情動は予測と内受容から構成（論争あり）| Barrett (2017), Panksepp (1998) | [[sources/Barrett_2017_constructed-emotion\|Barrett]], [[sources/Panksepp-Barrett_1998_panic-grief-constructed-emotion\|Panksepp vs Barrett]] |
 
-as/knowledge/topics/survival-trust-axis/ja/report.md に独自レポートを保持。[[欠損]]が [[情動の構成]]プロセスにおいて、生存軸と信頼軸の二軸で評価されるメカニズムを記述。
+## §2 核心仮説の多層的証拠（8レベル）
 
-- **生存軸**: 身体的安全への脅威度。予測誤差が身体的危険を示す度合い
-- **信頼軸**: 関係的安全への脅威度。他者との信頼関係における不安の度合い
+| 証拠レベル | 原典 | wiki ページ |
+|-----------|------|------------|
+| 分子 | Cole (2007) CTRA | [[sources/Cole_2007_social-regulation-gene-expression\|Cole]] |
+| 内分泌 | Smith & Wang (2014) OT | [[sources/Smith-Wang_2014_oxytocin-social-bonding\|Smith & Wang]] |
+| 神経回路 | Eisenberger (2003) dACC | [[sources/Eisenberger_2003_social-exclusion-fmri\|Eisenberger]] |
+| 神経回路 | Panksepp (1998) PANIC/GRIEF | [[sources/Panksepp-Barrett_1998_panic-grief-constructed-emotion\|Panksepp]] |
+| 生理/行動 | Coan & Sbarra (2015) SBT | [[sources/Coan_2015_social-baseline-theory\|Coan]] |
+| 心理 | Baumeister & Leary (1995) | [[sources/Baumeister_1995_need-to-belong\|Baumeister]] |
+| 疫学 | Holt-Lunstad (2010/2015) | [[sources/Holt-Lunstad_2010_social-relationships-mortality\|Holt-Lunstad]] |
+| 進化 | Dunbar (1998) | [[sources/Dunbar_1992_social-brain-hypothesis\|Dunbar]] |
+| 社会/歴史 | Durkheim (1897) | [[sources/Durkheim_1897_suicide-social-integration\|Durkheim]] |
 
-wiki 内では [[情動の構成]] に統合して記述。
+## §3 哲学的・臨床的基盤
+
+| 系譜 | 核心主張 | wiki ページ |
+|------|---------|------------|
+| 現象学・実存・対話 | 間身体性、共存在、I-Thou | [[sources/phenomenology-existentialism_intersubjectivity\|現象学・実存主義]] |
+| 精神分析・仏教 | 間主観的崩壊がトラウマ、縁起 | [[sources/clinical-psych-buddhism_intersubjectivity\|精神分析・仏教哲学]] |
+| 文化人類学・言語学 | Ubuntu、互酬、共有志向性 | [[sources/anthropology-linguistics_intersubjectivity\|文化人類学・言語学]] |
+| 教育・看護 | 高次機能の社会的起源、ケアリング | [[sources/education-nursing_intersubjectivity\|教育学・看護学]] |
+
+## §4 検証待ち仮説（優先度低）
+
+- 間主観性は信頼感情と関係する
+- 信頼感情の体験は身体に記録される
+- 抱持する能力へつながる
+
+§2 の実証基盤が固まった後に掘り下げる対象。
+
+---
+
+## LLM構成物（v2 §5 で非採用）
+
+以下は wiki entities に残存するが、pjdhiro の理論ではなく LLM が構成したもの:
+
+- L0/L1/L2/L3 の[[4層モデル]]全体
+- 特定の脳部位と pjdhiro 理論の確定的対応
+- Bion α関数と4層の詳細マッピング
+- container-mapping, hoji-matching 等の詳細スキーマ
+
+各 entities ページに注記済み。
 
 ---
 
 ## wiki 内リンク集
 
-### entities（as ソース）
-- [[4層モデル]] -- as + ks 共同ソース（as は4層構造の独自レポート）
-- [[内受容感覚]] -- as + ks 共同ソース（as は Layer 0 の詳細レポート）
+### entities
+- [[間主観性]] -- 核心仮説の中核概念（status: 要改訂）
+- [[内受容感覚]] -- §1 身体的基盤（status: 要改訂）
+- [[情動の構成]] -- 生存-信頼評価プロセス（status: 要改訂）
+- [[欠損]] -- 予測-誤差の主観的経験
+- [[抱持]] -- 保持機能
+- [[4層モデル]] -- LLM構成物（status: LLM構成物）
 
-### entities（as で検証された概念）
-- [[欠損]] -- Layer 1（予測-誤差ループ）に対応
-- [[抱持]] -- Layer 3 に対応
-- [[情動の構成]] -- Layer 2（生存-信頼評価）に対応
-- [[間主観性]] -- 生存-信頼軸レポートで参照
-
----
-
-## pd/ks との関係
-
-| 関係 | 内容 |
-|------|------|
-| ks → as | ks のコア概念定義を意識研究の枠組みで検証。ks が理論の正本 |
-| as → pd | as の調査結果が pd の概念体系（特に [[情動の構成]]、[[4層モデル]]）を補強 |
-| CN 重複 | as/concepts/CN-001,002 は ks と同一起源。compile ソースとしては ks を正本とした |
-| CN 重複 | as/concepts/CN-005,006,007 は pd と同一起源。Step 1 で pd を正本として compile 済み |
-
----
-
-## as が正本となっているナレッジ
-
-| テーマ | as ファイル | 備考 |
-|--------|-----------|------|
-| 4層モデル独自レポート | knowledge/topics/four-layers/ja/report.md | ks にない独自調査 |
-| 生存-信頼軸独自レポート | knowledge/topics/survival-trust-axis/ja/report.md | ks にない独自調査 |
-
-> **Note**: as の en 版レポートも存在するが、wiki compile では ja 版を使用した。
+### concepts
+- [[concepts/信頼の定義仮説|信頼の定義仮説]] -- 信頼軸の概念的基盤
+- [[concepts/信頼の多元的記述|信頼の多元的記述]] -- 信頼の多面的理解
 
 ---
 
