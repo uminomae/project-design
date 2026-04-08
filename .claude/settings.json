@@ -52,6 +52,24 @@
     ]
   },
   "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash .claude/hooks/session-start-guard.sh",
+            "timeout": 10,
+            "statusMessage": "Session start checks..."
+          },
+          {
+            "type": "command",
+            "command": "bash .claude/hooks/wiki-gen-check.sh",
+            "timeout": 15,
+            "statusMessage": "Wiki generation check..."
+          }
+        ]
+      }
+    ],
     "PostToolUse": [
       {
         "matcher": "Edit|Write",

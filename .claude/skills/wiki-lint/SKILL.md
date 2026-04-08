@@ -55,9 +55,14 @@ compile スキルとは異なり、ページの生成は行わない。検出と
 
 ### WL-5: source パス実在確認
 
-1. wiki/ 内の全ページの front matter `source[]` を抽出
-2. 各 source のパスがファイルシステム上に存在するか確認
-3. 結果は WL-3 の freshness-report.md に統合
+1. wiki/ 内の全ページの front matter `source` を抽出
+2. `repo` フィールドに応じてベースパスを解決:
+   - `project-design` → `~/dev/project-design/`
+   - `creation-space` → `~/dev/creation-space/`（原典解説ページ）
+   - `kesson-driven-thinking` → `~/dev/kesson-driven-thinking/`
+3. 各 source のパスがファイルシステム上に存在するか確認
+4. `manifest_id` がある場合、cs/knowledge/raw/manifest.md にその source_id が存在するか確認
+5. 結果は WL-3 の freshness-report.md に統合
 
 ## 実行方法
 

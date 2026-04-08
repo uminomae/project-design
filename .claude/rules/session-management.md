@@ -45,8 +45,23 @@
 
 パス: `.cache/inbox/`
 
-- 命名: `_instructions-{issue}-{slug}.md`, `REVIEW-{engine}-*`
+- 命名: `_instructions-{issue}-{slug}.md`, `REVIEW-{engine}-*`, `wiki-gen-*.md`
 - 処理完了後は `archive/` に移動
+
+### 自動実行 inbox（pjdhiro 承認不要）
+
+以下の inbox アイテムは `action: auto-execute` が付いており、セッション開始時に自動処理する:
+
+| パターン | 処理 |
+|---------|------|
+| `wiki-gen-*.md` | wiki-compile Step 3b を実行。PDF → wiki ページ生成 → commit & push → inbox を archive へ移動 |
+
+自動実行フロー:
+1. セッション開始時、inbox に `wiki-gen-*.md` があるか確認
+2. あれば依頼ファイルの未生成リストに従い、各 PDF を読んで wiki ページを生成
+3. UTF-8 文字化けチェック
+4. `git add wiki/*.md && git commit && git push origin develop`
+5. 依頼ファイルを `.cache/inbox/archive/` に移動
 
 ## review artifact 運用
 
