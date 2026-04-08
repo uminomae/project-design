@@ -54,5 +54,5 @@ wiki-compile（知識の compile）
 ## 注意事項
 
 - Dataview クエリは Quartz では非動作。wiki-compile 時に静的テーブルに変換すること
-- develop ブランチへの push ではデプロイされない（main のみ）
+- develop ブランチへの push でもデプロイされる（techo#119 で branches: [main, develop] に更新済み）
 - 既存サイト（index.html, src/）と wiki は統合ビルドされる

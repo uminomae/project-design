@@ -60,8 +60,11 @@ for line in lines:
             stem = stem[: -len(suffix)]
             break
 
-    wiki_path = os.path.join(wiki_dir, stem + ".md")
-    if not os.path.exists(wiki_path):
+    # sources/ カテゴリ内を探索（2026-04-08 techo#114 で移動済み）
+    wiki_path = os.path.join(wiki_dir, "sources", stem + ".md")
+    # フォールバック: 旧パス（wiki/ 直下）も確認
+    wiki_path_legacy = os.path.join(wiki_dir, stem + ".md")
+    if not os.path.exists(wiki_path) and not os.path.exists(wiki_path_legacy):
         missing.append({
             "source_id": source_id,
             "domain_id": domain_id,

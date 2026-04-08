@@ -127,13 +127,13 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 | [[entities/Value-Sensitive-Design\|Value Sensitive Design]] | 2026-04-06 | entity, theory, value, design, HCI, ethics |
 | [[entities/欠損\|欠損]] | 2026-04-06 | entity, concept, kesson, prediction-error, phenomenology |
 | [[entities/欠損駆動思考\|欠損駆動思考]] | 2026-04-06 | entity, theory, thinking, kesson, attitude |
-| [[entities/抱持\|抱持]] | 2026-04-06 | entity, concept, containment, psychoanalysis, consciousness |
+| [[entities/抱持\|抱持]] | 2026-04-06 | entity, concept, containment, psychoanalysis, awareness |
 | [[entities/デザイン思考\|デザイン思考]] | 2026-04-06 | entity, theory, design, abduction, framing, human-centered |
 | [[entities/ネガティブケイパビリティ\|ネガティブケイパビリティ]] | 2026-04-06 | entity, theory, philosophy, psychoanalysis, creativity |
 | [[entities/間主観性\|間主観性]] | 2026-04-06 | entity, concept, philosophy, developmental-psychology, phenomenology |
-| [[entities/情動の構成\|情動の構成]] | 2026-04-06 | entity, theory, neuroscience, emotion, consciousness |
-| [[entities/内受容感覚\|内受容感覚]] | 2026-04-06 | entity, theory, neuroscience, consciousness, embodiment |
-| [[entities/4層モデル\|4層モデル]] | 2026-04-06 | entity, theory, consciousness, neuroscience, model |
+| [[entities/情動の構成\|情動の構成]] | 2026-04-06 | entity, theory, neuroscience, emotion, awareness |
+| [[entities/内受容感覚\|内受容感覚]] | 2026-04-06 | entity, theory, neuroscience, awareness, embodiment |
+| [[entities/4層モデル\|4層モデル]] | 2026-04-06 | entity, theory, awareness, neuroscience, model |
 | [[concepts/プロジェクトデザイン\|プロジェクトデザイン]] | 2026-04-06 | concept, core, framework |
 | [[concepts/Love 駆動開発\|Love 駆動開発]] | 2026-04-06 | concept, core, love-driven, practice |
 | [[concepts/感情処理\|感情処理]] | 2026-04-06 | concept, emotion, processing, clinical-psychology |

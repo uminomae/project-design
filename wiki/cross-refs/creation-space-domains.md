@@ -178,6 +178,34 @@ activator/inhibitor + 遅延負帰還がパターン形成の必要条件であ�
 - 「強い対応」の数だけで領域の重要度は測れない。「条件付き対応」の理由に含まれる知見も価値がある
 - 本ページは横断テーマの抽出であり、各領域の詳細は creation-space のレポートを参照すること
 
+## 原典解説ページ（Sources）
+
+各ドメインの原典 PDF を OCR 検証して解説したページ。wiki/sources/ に格納。
+
+| ID | 原典ページ |
+|----|-----------|
+| D01 | [[sources/D01_bott_1988_morse-theory-indomitable\|Bott (1988) Morse理論]] |
+| D02 | [[sources/D02_feynman_1948_space-time-approach-nonrelativistic-quantum-mechanics\|Feynman (1948)]], [[sources/D02_abrikosov_1957_magnetic-properties-superconductors-second-group\|Abrikosov (1957)]], [[sources/D02_rayleigh_1916_problem-thermal-convection-horizontal-layer-fluid-heated-below\|Rayleigh (1916)]], [[sources/D02_zurek_2003_decoherence-einselection-quantum-origins-classical\|Zurek (2003)]] |
+| D06 | [[sources/D06_planck-collaboration_2016_cosmological-parameters\|Planck (2016)]] |
+| D07 | [[sources/D07_shannon_1948_mathematical-theory-communication\|Shannon (1948)]] |
+| D08 | [[sources/D08_varela_1991_embodied-mind\|Varela (1991)]] |
+| D10 | [[sources/D10_akdis_2014_allergen-immunotherapy\|Akdis (2014)]], [[sources/D10_rosenblum_2015_autoimmunity\|Rosenblum (2015)]] |
+| D11 | [[sources/D11_ich_2008_q10-guideline\|ICH Q10]], [[sources/D11_ich_2009_q8-r2-guideline\|ICH Q8(R2)]], [[sources/D11_ich_2023_q9-r1-guideline\|ICH Q9(R1)]], [[sources/D11_li_2014_network-pharmacology-qishenyiqi\|Li (2014)]] |
+| D12 | [[sources/D12_maff_2005_ipm-practical-guideline\|MAFF IPM (2005)]] |
+| D14 | [[sources/D14_varela_1991_embodied-mind\|Varela (1991) D14]] |
+| D18 | [[sources/D18_durkheim_1893_division-labor\|Durkheim (1893)]] |
+| D19 | [[sources/D19_propp_1968_morphology-of-the-folktale\|Propp (1968)]] |
+| D20 | [[sources/D20_idea_2011_practical-guide-constitution-building\|IDEA (2011)]] |
+| D21 | [[sources/D21_hayek_1945_use-of-knowledge-in-society\|Hayek (1945)]] |
+| D22 | [[sources/D22_akiike_2021_design-thinking-articles\|Akiike (2021)]], [[sources/D22_stanford_2010_design-thinking-process-guide\|Stanford d.school (2010)]] |
+| D23 | [[sources/D23_nakama_2014_dids-japanese-version\|Nakama (2014)]] |
+| D24 | [[sources/D24_suzuki_1935_manual-of-zen-buddhism\|Suzuki (1935)]], [[sources/D24_teresa_1921_interior-castle\|Teresa (1921)]] |
+| D25 | [[sources/D25_pratt_1991_arts-of-the-contact-zone\|Pratt (1991)]] |
+| D27 | [[sources/D27_alexander_1977_pattern-language\|Alexander (1977)]] |
+| D28 | [[sources/D28_zeami_classics\|世阿弥]] |
+| D29 | [[sources/D29_prigogine_1977_time-structure-fluctuations\|Prigogine (1977)]] |
+| D30 | [[sources/D30_cbd_2018_nagoya-protocol\|CBD (2018)]], [[sources/D30_ipbes_2019_ilk-methodological-guidance\|IPBES (2019)]] |
+
 ## 関連ページ
 
 - [[創造の5段階モデル]] -- 5段階モデルの定義と構造

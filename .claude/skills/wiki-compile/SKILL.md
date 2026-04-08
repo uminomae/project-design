@@ -28,7 +28,8 @@ description: |
 | 1 | 同一ディレクトリ内 | pd/knowledge/concepts/CN-*.md | wiki/concepts/*.md |
 | 2 | 同一リポ cross-directory | pd/knowledge/{concepts,research,meta}/* | wiki/{concepts,entities,cross-refs}/*.md |
 | 3a | cross-repo 概念 | ks/knowledge/, as/knowledge/, cs/evidence/ | wiki/cross-refs/*.md + 既存ページ追記 |
-| 3b | cross-repo 原典解説 | cs/knowledge/raw/manifest.md + PDF | wiki/{domain}_{author}_{year}_{keyword}.md |
+| 3b | cross-repo 原典解説 | cs/knowledge/raw/manifest.md + PDF | wiki/sources/{domain}_{author}_{year}_{keyword}.md |
+| 3c | awareness-model 原典 | pd/knowledge/evidence/awareness-model/*.md | wiki/sources/{Author}_{year}_{keyword}.md |
 
 ## Front matter スキーマ
 
@@ -96,11 +97,13 @@ GitHub Pages に公開
 - 未生成があれば `.cache/inbox/wiki-gen-{date}.md` に依頼を書き出す（warn ではなく action）
 
 ### ファイル命名
-- 原則: `wiki/{stem}.md`（stem = PDF ファイル名から拡張子を除いたもの）
+- 原則: `wiki/sources/{stem}.md`（stem = PDF ファイル名から拡張子を除いたもの）
 - ドメイン不一致時: manifest の domain_id が local_file の接頭辞と異なる場合、domain_id で置換
-  - 例: D08-S08 の local_file が `D14_varela_...pdf` → `wiki/D08_varela_...md`
+  - 例: D08-S08 の local_file が `D14_varela_...pdf` → `wiki/sources/D08_varela_...md`
 - part 分割 PDF: 1つの wiki ページにまとめる。ファイル名から `_part1` を除去
-  - 例: `D24_suzuki_1935_manual-of-zen-buddhism_part1.pdf` → `wiki/D24_suzuki_1935_manual-of-zen-buddhism.md`
+  - 例: `D24_suzuki_1935_manual-of-zen-buddhism_part1.pdf` → `wiki/sources/D24_suzuki_1935_manual-of-zen-buddhism.md`
+- awareness-model 原典: `wiki/sources/{Author}_{year}_{keyword}.md`
+  - 例: `wiki/sources/Craig_2002_interoception.md`
 
 ### 本文構造
 

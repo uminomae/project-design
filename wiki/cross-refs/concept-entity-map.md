@@ -73,7 +73,7 @@ concepts/ と entities/ の関係を可視化するマトリクス。
 |--------|-----------------|------|
 | [[欠損]] | 欠損駆動思考, 抱持, 情動の構成, PDブリッジ保持論点 | entity, concept, kesson, prediction-error, phenomenology |
 | [[欠損駆動思考]] | 欠損, 抱持, 情動の構成, PDブリッジ保持論点, デザイン思考 | entity, theory, thinking, kesson, attitude |
-| [[抱持]] | 欠損, 欠損駆動思考, 情動の構成, ネガティブケイパビリティ, 愛着理論, PDブリッジ保持論点 | entity, concept, containment, psychoanalysis, consciousness |
+| [[抱持]] | 欠損, 欠損駆動思考, 情動の構成, ネガティブケイパビリティ, 愛着理論, PDブリッジ保持論点 | entity, concept, containment, psychoanalysis, awareness |
 | [[デザイン思考]] | 欠損駆動思考, アブダクション, ウィキッド・プロブレム, ドナルド・ショーン, ナイジェル・クロス, PDブリッジ保持論点 | entity, theory, design, abduction, framing, human-centered |
 | [[アネット・ベイアー]] | 信頼の定義仮説, 信頼の多元的記述, 抱持 | entity, person, trust, philosophy, vulnerability |
 | [[アブダクション]] | デザイン思考, 欠損駆動思考, PDブリッジ保持論点 | entity, theory, logic, design-thinking, abduction |
@@ -90,9 +90,9 @@ concepts/ と entities/ の関係を可視化するマトリクス。
 | [[Value Sensitive Design]] | プロジェクトデザイン, Love 駆動開発 | entity, theory, value, design, HCI, ethics |
 | [[ネガティブケイパビリティ]] | 抱持, 欠損駆動思考, 間主観性, 情動の構成, デザイン思考 | entity, theory, philosophy, psychoanalysis, creativity |
 | [[間主観性]] | 抱持, 内受容感覚, 情動の構成, 欠損駆動思考, 4層モデル, 愛着理論 | entity, concept, philosophy, developmental-psychology, phenomenology |
-| [[情動の構成]] | 欠損, 欠損駆動思考, 抱持, 内受容感覚, 4層モデル, 間主観性, ネガティブケイパビリティ | entity, theory, neuroscience, emotion, consciousness |
-| [[内受容感覚]] | 4層モデル, 間主観性, 情動の構成, 抱持, 欠損 | entity, theory, neuroscience, consciousness, embodiment |
-| [[4層モデル]] | 欠損, 欠損駆動思考, 抱持, 情動の構成, 内受容感覚, 間主観性, ネガティブケイパビリティ | entity, theory, consciousness, neuroscience, model |
+| [[情動の構成]] | 欠損, 欠損駆動思考, 抱持, 内受容感覚, 4層モデル, 間主観性, ネガティブケイパビリティ | entity, theory, neuroscience, emotion, awareness |
+| [[内受容感覚]] | 4層モデル, 間主観性, 情動の構成, 抱持, 欠損 | entity, theory, neuroscience, awareness, embodiment |
+| [[4層モデル]] | 欠損, 欠損駆動思考, 抱持, 情動の構成, 内受容感覚, 間主観性, ネガティブケイパビリティ | entity, theory, awareness, neuroscience, model |
 | [[創造の5段階モデル]] | プロジェクトデザイン, 欠損駆動思考, 抱持, 情動の構成, 欠損 | entity, theory, creation, five-stages, cross-domain |
 
 ## 「信頼の定義仮説」に関連する entities
