@@ -43,6 +43,31 @@
 | 12 | anthropology-linguistics-intersubjectivity.md | Mbiti/Ubuntu, Mauss, Tomasello | 文化人類学・言語学 |
 | 13 | education-nursing-intersubjectivity.md | Vygotsky, Noddings, Watson | 教育学・看護学 |
 
+## §1 先行研究ノート（確立された知見・5件）
+
+v2 §1 で参照される、pjdhiro 独自の主張ではない確立された知見。
+
+| # | ファイル | 原典 | 分野 | v2 セクション |
+|---|---------|------|------|--------------|
+| 14 | craig-2002-interoception.md | Craig (2002, 2009) | 神経解剖学/内受容感覚 | §1.1 |
+| 15 | damasio-1994-somatic-marker.md | Damasio (1994, 1996, 1999) | 神経科学/意思決定 | §1.1 |
+| 16 | friston-2010-free-energy-principle.md | Friston (2005, 2010) | 計算論的神経科学 | §1.2 |
+| 17 | clark-2013-predictive-processing.md | Clark (2013, 2015) | 認知科学/哲学 | §1.2 |
+| 18 | barrett-2017-constructed-emotion.md | Barrett (2006, 2017) | 情動心理学/神経科学 | §1.3 |
+
+### §1 研究者間の関係
+
+```
+§1.1 身体の信号が意識の基盤
+  Craig (内受容感覚の経路) ─── Damasio (身体信号の機能)
+          ↓                            ↓
+§1.2 脳は予測と誤差のシステム
+  Friston (数学的原理) ──── Clark (認知科学的解釈)
+          ↓                            ↓
+§1.3 情動は予測と内受容感覚から構成される
+  Barrett (統合: 内受容感覚 + 予測 + 概念 → 情動)
+```
+
 ## 関連ディレクトリ
 
 - 横断調査・ドラフト: `../../research/awareness-model/`

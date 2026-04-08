@@ -53,6 +53,35 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 ## Meta
 - [[concepts/wikilink|wikilink]] -- wiki 内リンク記法・canonical-keywords 辞書・compile の仕組み
 
+## Sources / 原典
+
+### awareness-model §1: 先行研究（確立された知見）
+- [[Craig_2002_interoception|Craig (2002) 内受容感覚]] -- 身体の生理的状態の表象が「物質的な私」を構成
+- [[Damasio_1994_somatic-marker|Damasio (1994) ソマティック・マーカー]] -- 身体感覚が意思決定を導く
+- [[Friston_2010_free-energy-principle|Friston (2010) 自由エネルギー原理]] -- 脳は予測誤差を最小化する
+- [[Clark_2013_predictive-processing|Clark (2013) 予測処理]] -- 脳はトップダウン予測と感覚信号を照合する
+- [[Barrett_2017_constructed-emotion|Barrett (2017) 構成主義的情動理論]] -- 情動は予測・内受容感覚・概念から構成される
+
+### awareness-model §2: 核心仮説の多層的証拠
+- [[Eisenberger_2003_social-exclusion-fmri|Eisenberger (2003)]] -- 社会的排除とdACC
+- [[Coan_2015_social-baseline-theory|Coan & Sbarra (2015)]] -- 社会的近接性がデフォルト
+- [[Holt-Lunstad_2010_social-relationships-mortality|Holt-Lunstad (2010/2015)]] -- 社会的孤立と死亡リスク
+- [[Cole_2007_social-regulation-gene-expression|Cole (2007)]] -- 社会的孤立と遺伝子発現
+- [[Panksepp-Barrett_1998_panic-grief-constructed-emotion|Panksepp vs Barrett]] -- 情動神経科学論争
+- [[Baumeister_1995_need-to-belong|Baumeister & Leary (1995)]] -- 所属欲求
+- [[Smith-Wang_2014_oxytocin-social-bonding|Smith & Wang (2014)]] -- OTと社会的緩衝
+- [[Dunbar_1992_social-brain-hypothesis|Dunbar (1998)]] -- 社会脳仮説
+- [[Durkheim_1897_suicide-social-integration|Durkheim (1897)]] -- 社会的統合と自殺
+
+### awareness-model §3: 哲学・臨床理論
+- [[phenomenology-existentialism_intersubjectivity|現象学・実存主義・対話哲学]] -- Husserl, Heidegger, Merleau-Ponty, Buber
+- [[clinical-psych-buddhism_intersubjectivity|精神分析・仏教哲学]] -- Winnicott, Stolorow, 龍樹
+- [[anthropology-linguistics_intersubjectivity|文化人類学・言語学]] -- Mbiti/Ubuntu, Mauss, Tomasello
+- [[education-nursing_intersubjectivity|教育学・看護学]] -- Vygotsky, Noddings, Watson
+
+### creation-space 30ドメイン原典
+（D01〜D30 は [[cross-refs/creation-space-domains|creation-space 30ドメイン横断]] から参照）
+
 ## Cross References
 - [[cross-refs/concept-entity-map|Concept-Entity Map]] -- concepts と entities の関係マトリクス
 - [[cross-refs/kesson-space-overview|kesson-space 概要]] -- ks の理論構造と wiki 内リンク
