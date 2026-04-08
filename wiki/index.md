@@ -9,6 +9,7 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 > **[[about|About This Wiki]]** — ソースの所在、compile の仕組み、Obsidian との分担を解説
 
 ## Concepts
+- [[concepts/アウェアネスモデル|アウェアネスモデル]] -- 間主観性の信号は生命に等しいレベルで大事であるという核心仮説（pjdhiroレビュー済み）
 - [[concepts/プロジェクトデザイン|プロジェクトデザイン]] -- やること（Doing）＋起きていること（Being）を含む出来事の設計論
 - [[concepts/Love 駆動開発|Love 駆動開発]] -- 関係・感情・意図が駆動する局面に名前を与える実践論
 - [[concepts/感情処理|感情処理]] -- プロジェクトにおける感情の認知・処理・統合
