@@ -81,7 +81,7 @@ pd: SessionStart → wiki-gen-check.sh hook
   ↓ 未生成あり → .cache/inbox/wiki-gen-{date}.md 生成
   ↓ action: auto-execute → pjdhiro 承認不要で自動実行
   ↓
-CLI: PDF を pdftotext で読み取り → wiki ページ生成 → 文字化けチェック
+CLI: PDF をテキスト抽出（下記参照）→ wiki ページ生成 → 文字化けチェック
   ↓
 自動 commit & push to develop
   ↓
@@ -127,6 +127,40 @@ GitHub Pages に公開
 1. **原典の内容が解説されていること** — 最優先
 2. **原典への参照があること** — source traceability
 3. **主な読者は LLM** — 構造化・明確さ重視
+
+### OCR フロー（スキャン画像 PDF 向け）
+
+`pdftotext` でテキストを抽出できないスキャン画像 PDF は以下のフローで処理する:
+
+```
+スキャン画像 PDF
+  ↓ pdftoppm で PNG/JPEG に変換（dpi はファイルサイズに応じて調整）
+  ↓ Claude Read ツールでページ画像を読み取り（OCR）
+  ↓ OCR テキストを中間ファイルに保存: cs/knowledge/raw/ocr/{source_id}_{author}_{year}.md
+  ↓ 中間ファイルを入力として wiki 解説ページを生成/再生成
+```
+
+**dpi 選択の目安:**
+| PDF サイズ | 推奨 dpi | 形式 | 備考 |
+|-----------|---------|------|------|
+| ~10MB | 300 | PNG | Feynman 等の論文 |
+| 10-50MB | 200 | PNG | Alexander 等の書籍 |
+| 50MB+ | 100 | JPEG | Suzuki, 世阿弥 等の大型スキャン |
+
+**サンプリング戦略:** 大容量 PDF は全ページ OCR せず、代表ページ（表紙、目次、序文、主要章の冒頭）を選択的に読み取る。front matter に `ocr_verified: true` を付与し、サンプリング方式の場合は書誌情報にその旨を記載する。
+
+**中間ファイルの構造:**
+```markdown
+# OCR: {著者} ({年}) {タイトル}
+- source_id: {D??-S??}
+- method: Claude Vision (pdftoppm {dpi}dpi {format} → Claude Read)
+- date: {YYYY-MM-DD}
+- pages: {total} (sampled: pp.{range})
+## Structure
+{目次・構成}
+## Key Content Summary (from OCR)
+{セクション別の内容要約}
+```
 
 ### 生成後チェック
 - `grep -rl '�' wiki/ --include='*.md'` で UTF-8 文字化けチェック
