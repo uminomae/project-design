@@ -9,10 +9,13 @@ import * as Plugin from "./quartz/plugins"
 const config: QuartzConfig = {
   configuration: {
     pageTitle: "Project Design Wiki",
-    pageTitleSuffix: "",
+    pageTitleSuffix: " | Project Design Wiki",
     enableSPA: false,
     enablePopovers: true,
-    analytics: null,
+    analytics: {
+      provider: "google",
+      tagId: "G-X5WQCB3JYT",
+    },
     locale: "ja-JP",
     baseUrl: "uminomae.github.io/project-design/wiki",
     ignorePatterns: ["private", "templates", ".obsidian"],

@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://uminomae.github.io/project-design/sitemap.xml
+Sitemap: https://uminomae.github.io/project-design/wiki/sitemap.xml
