@@ -65,10 +65,12 @@ export function createContentLoader({
             return true;
         }
 
-        const markdown = await fetchTextWithFallback(
-            `content/compiled/about-${lang}.md`,
-            `content/about-${lang}.md`,
-        );
+        const compiledPath = `content/compiled/about-${lang}.md`;
+        const fallbackPath = `content/about-${lang}.md`;
+        console.log('[content-loader] fetching:', compiledPath);
+        const markdown = await fetchTextWithFallback(compiledPath, fallbackPath);
+        console.log('[content-loader] loaded from:', markdown && markdown.startsWith('#') ? 'compiled (no frontmatter)' : 'source (has frontmatter)');
+        console.log('[content-loader] first 200 chars:', markdown ? markdown.slice(0, 200) : '(empty)');
         if (markdown) {
             aboutCache.set(lang, markdown);
         }
