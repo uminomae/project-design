@@ -1,7 +1,3 @@
----
-title: "Project Design"
-description: "Love駆動開発と呼びたい現象を、これまで何度も経験してきました。感情処理、欠損駆動思考、間主観性、創造の5段階——体験から出発し、理論として定着させる途上にあります。"
----
 
 # Project Design
 
@@ -21,10 +17,8 @@ PMBOKはスケジュール・コスト・品質を管理しますが、
 
 まだ完成していません。書きながら考えています。
 
----
 
 <a href="#" data-modal-open="slides">プレゼン資料を見る</a> / <a href="#" data-modal-open="howto">AIに読ませる</a>
 
----
 
 pjdhiro
