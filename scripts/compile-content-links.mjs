@@ -120,14 +120,30 @@ function injectLinks(markdown, termMap) {
   return result.filter((line) => line !== null).join("\n");
 }
 
-async function compileFile(filePath, termMap) {
+async function compileFile(filePath, outDir, termMap) {
   const markdown = await readFile(filePath, "utf-8");
   const compiled = injectLinks(markdown, termMap);
-  const outPath = join(COMPILED_DIR, basename(filePath));
+  const outPath = join(outDir, basename(filePath));
   await writeFile(outPath, compiled, "utf-8");
   const name = relative(ROOT, filePath);
   const outName = relative(ROOT, outPath);
   console.error(`compiled: ${name} -> ${outName}`);
+}
+
+/** content/ 配下のサブディレクトリも含めて全 .md を再帰的にコンパイル */
+async function compileDir(dir, outBase, termMap) {
+  const entries = await readdir(dir, { withFileTypes: true });
+  for (const entry of entries) {
+    if (entry.name === "compiled") continue;
+    const fullPath = join(dir, entry.name);
+    if (entry.isDirectory()) {
+      const subOut = join(outBase, entry.name);
+      await mkdir(subOut, { recursive: true });
+      await compileDir(fullPath, subOut, termMap);
+    } else if (entry.name.endsWith(".md")) {
+      await compileFile(fullPath, outBase, termMap);
+    }
+  }
 }
 
 async function main() {
@@ -144,16 +160,16 @@ async function main() {
   const fileIdx = process.argv.indexOf("--file");
   if (fileIdx !== -1 && process.argv[fileIdx + 1]) {
     const target = join(ROOT, process.argv[fileIdx + 1]);
-    await compileFile(target, termMap);
+    // サブディレクトリ構造を維持
+    const relPath = relative(CONTENT_DIR, target);
+    const outDir = join(COMPILED_DIR, relPath, "..");
+    await mkdir(outDir, { recursive: true });
+    await compileFile(target, outDir, termMap);
     return;
   }
 
-  // content/ 直下の全 .md
-  const files = await readdir(CONTENT_DIR);
-  for (const file of files) {
-    if (!file.endsWith(".md")) continue;
-    await compileFile(join(CONTENT_DIR, file), termMap);
-  }
+  // content/ 配下を再帰的に処理（compiled/ 自身は除外）
+  await compileDir(CONTENT_DIR, COMPILED_DIR, termMap);
 }
 
 main().catch((err) => {

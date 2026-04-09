@@ -93,11 +93,12 @@ export function createContentLoader({
 
         if (markdown === undefined) {
             const mdPath = entry.mdPath.replace('{lang}', lang);
+            const compiledPath = mdPath.replace('content/', 'content/compiled/');
             const fallbackPath = lang === 'ja'
-                ? undefined
+                ? mdPath
                 : entry.mdPath.replace('{lang}', 'ja');
 
-            markdown = await fetchTextWithFallback(mdPath, fallbackPath);
+            markdown = await fetchTextWithFallback(compiledPath, fallbackPath);
             if (markdown) {
                 knowledgeCache.set(cacheKey, markdown);
             }
