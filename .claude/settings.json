@@ -85,6 +85,12 @@
             "command": "bash .claude/hooks/wiki-build.sh",
             "timeout": 45,
             "statusMessage": "Wiki build..."
+          },
+          {
+            "type": "command",
+            "command": "bash .claude/hooks/content-compile.sh",
+            "timeout": 20,
+            "statusMessage": "Content wiki-link compile..."
           }
         ]
       }

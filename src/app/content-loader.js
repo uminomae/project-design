@@ -65,7 +65,10 @@ export function createContentLoader({
             return true;
         }
 
-        const markdown = await fetchTextWithFallback(`content/about-${lang}.md`);
+        const markdown = await fetchTextWithFallback(
+            `content/compiled/about-${lang}.md`,
+            `content/about-${lang}.md`,
+        );
         if (markdown) {
             aboutCache.set(lang, markdown);
         }
