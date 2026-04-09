@@ -178,10 +178,10 @@ export const TRANSLATIONS = {
     "howto.research.ex3":
       "「創造の5段階モデルで、私の創作プロセスを構造化したい」",
     "howto.research.ex4":
-      "「意識の4層モデルを使って、チームの関係性を分析したい」",
+      "「間主観性の視点を使って、チームの関係性を分析したい」",
     "howto.prompt.research.label": "調査向けプロンプト",
     "howto.prompt.research.code":
-      "https://github.com/uminomae/project-design\n\nこのrepoと関連repoを読んで、中にある理論構造\n（Doing/Being の二軸、創造の5段階モデル、\n意識の4層モデル、三角測量など）を参考に、\n「○○」というテーマを多角的に分析してください。",
+      "https://github.com/uminomae/project-design\n\nこのrepoと関連repoを読んで、中にある理論構造\n（Doing/Being の二軸、創造の5段階モデル、\n間主観性の意識モデル、三角測量など）を参考に、\n「○○」というテーマを多角的に分析してください。",
     "howto.harness.heading": "B. LLM協働環境を自分のプロジェクトに導入する",
     "howto.harness.desc":
       "CLAUDE.md・hooks・skills・agents などのハーネス設計を参考にできます。",
@@ -195,7 +195,7 @@ export const TRANSLATIONS = {
     "howto.thinking.heading": "C. 思考の整理・対人スキル",
     "howto.thinking.ex1":
       "「感情処理やメタ認知のフレームワークを私の状況に当てはめて」",
-    "howto.thinking.ex2": "「意識の4点仮説を使って、チームの関係性を考えたい」",
+    "howto.thinking.ex2": "「間主観性と生存-信頼軸の視点で、チームの関係性を考えたい」",
     "howto.thinking.ex3":
       "「5段階モデル（場→波→縁→渦→束）で創作プロセスを設計して」",
     "howto.map.heading": "なぜ1つのURLで済むのか",
@@ -210,7 +210,7 @@ export const TRANSLATIONS = {
       "30の学術領域から「創造とは何か」を探索。創造の5段階モデル（場→波→縁→渦→束）",
     "howto.map.as.title": "意識とは",
     "howto.map.as":
-      "間主観性・内受容感覚・予測誤差・エポケーの4層モデルで意識の構造を探索",
+      "身体・予測・情動・社会性の知見から間主観性を中核に据えた意識の探索",
     "howto.map.ks.title": "欠損駆動思考とは",
     "howto.map.ks":
       "違和感・未定義要件・弱い信号を「保持すべき問い」として扱う思考フレームワーク",
@@ -315,10 +315,10 @@ export const TRANSLATIONS = {
     "howto.research.ex3":
       '"I want to structure my creative process using the Five-Stage Model of Creation"',
     "howto.research.ex4":
-      '"I want to analyze team dynamics using the four-layer model of consciousness"',
+      '"I want to analyze team dynamics using the intersubjectivity perspective"',
     "howto.prompt.research.label": "Research Prompt",
     "howto.prompt.research.code":
-      'https://github.com/uminomae/project-design\n\nPlease read this repo and related repos, and using the\ntheoretical structures within (Doing/Being dual-axis,\nFive-Stage Model of Creation, four-layer model of\nconsciousness, triangulation, etc.), analyze the topic\n"○○" from multiple perspectives.',
+      'https://github.com/uminomae/project-design\n\nPlease read this repo and related repos, and using the\ntheoretical structures within (Doing/Being dual-axis,\nFive-Stage Model of Creation, awareness model of\nintersubjectivity, triangulation, etc.), analyze the topic\n"○○" from multiple perspectives.',
     "howto.harness.heading": "B. Set Up LLM Collaboration in Your Project",
     "howto.harness.desc":
       "Reference the harness design: CLAUDE.md, hooks, skills, agents, and more.",
@@ -333,7 +333,7 @@ export const TRANSLATIONS = {
     "howto.thinking.ex1":
       '"Apply the emotional processing and metacognition framework to my situation"',
     "howto.thinking.ex2":
-      '"I want to think about team dynamics using the 4-point hypothesis of consciousness"',
+      '"I want to think about team dynamics using the intersubjectivity and survival-trust axis"',
     "howto.thinking.ex3":
       '"Design a creative process using the 5-stage model (Ba → Wave → En → Vortex → Bundle)"',
     "howto.map.heading": "Why One URL Is Enough",
@@ -348,7 +348,7 @@ export const TRANSLATIONS = {
       'Exploring "what is creativity" across 30 academic domains. Five-Stage Model of Creation (Field → Wave → Edge → Vortex → Bundle)',
     "howto.map.as.title": "What Is Awareness",
     "howto.map.as":
-      "Exploring consciousness through a four-layer model: intersubjectivity, interoception, prediction error, and containment",
+      "Exploring consciousness with intersubjectivity at its core — from body, prediction, emotion, and social neuroscience",
     "howto.map.ks.title": "What Is Kesson-Driven Thinking",
     "howto.map.ks":
       "A thinking framework that treats discomfort, undefined requirements, and weak signals as questions to hold",
