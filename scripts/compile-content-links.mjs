@@ -65,14 +65,14 @@ function injectLinks(markdown, termMap) {
   const linked = new Set();
 
   const result = lines.map((line) => {
-    // front matter の検出
+    // front matter の検出・除去（compiled 版には不要）
     if (line.trim() === "---") {
       frontMatterCount++;
       if (frontMatterCount === 1) inFrontMatter = true;
       if (frontMatterCount === 2) inFrontMatter = false;
-      return line;
+      return null;
     }
-    if (inFrontMatter) return line;
+    if (inFrontMatter) return null;
 
     // 見出し行はスキップ
     if (/^#{1,6}\s/.test(line)) return line;
@@ -117,7 +117,7 @@ function injectLinks(markdown, termMap) {
     return safeLine;
   });
 
-  return result.join("\n");
+  return result.filter((line) => line !== null).join("\n");
 }
 
 async function compileFile(filePath, termMap) {
