@@ -49,7 +49,6 @@ source パスの実在を確認する (WL-5)。
 | 間主観性 | 2026-04-06 | ks: knowledge/text/clinical-psychology/part2-intersubjectivity-interoception.md, as: knowledge/topics/survival-trust-axis/ja/report.md | 2026-03-23 | FRESH |
 | 情動の構成 | 2026-04-06 | ks: knowledge/schema/core-definitions.md, ks: knowledge/text/clinical-psychology/part3-splitting-integration-fo.md | 2026-02-13 | FRESH |
 | 内受容感覚 | 2026-04-06 | ks: knowledge/text/clinical-psychology/part2-intersubjectivity-interoception.md, as: knowledge/topics/four-layers/ja/report.md | 2026-03-23 | FRESH |
-| 4層モデル | 2026-04-06 | as: knowledge/topics/four-layers/ja/report.md, ks: knowledge/schema/core-definitions.md, ks: knowledge/text/clinical-psychology/part1-alpha-function-4layer.md | 2026-03-23 | FRESH |
 | 創造の5段階モデル | 2026-04-06 | cs: knowledge/five-stages-guide.md, cs: knowledge/glossary.md, cs: knowledge/schema/five-stages.md, cs: knowledge/schema/academic-domains.md | 2026-02-21 | FRESH |
 
 ### cross-refs/

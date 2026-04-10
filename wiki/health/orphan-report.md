@@ -26,12 +26,11 @@ wiki 内で他のどのページからもリンクされていない孤立ペー
 | entities/欠損 | index.md, 欠損駆動思考, 抱持, デザイン思考, concept-entity-map, kesson-space-overview, awareness-space-overview |
 | entities/欠損駆動思考 | index.md, 欠損, 抱持, デザイン思考, concept-entity-map, kesson-space-overview, awareness-space-overview |
 | entities/抱持 | index.md, 欠損, 欠損駆動思考, concept-entity-map, kesson-space-overview, awareness-space-overview |
-| entities/情動の構成 | index.md, ネガティブケイパビリティ, 間主観性, 4層モデル, 欠損, 欠損駆動思考, 抱持, concept-entity-map, kesson-space-overview, awareness-space-overview |
+| entities/情動の構成 | index.md, ネガティブケイパビリティ, 間主観性, 欠損, 欠損駆動思考, 抱持, concept-entity-map, kesson-space-overview, awareness-space-overview |
 | entities/デザイン思考 | index.md, 欠損駆動思考, concept-entity-map |
-| entities/4層モデル | index.md, ネガティブケイパビリティ, 間主観性, 情動の構成, 内受容感覚, プロジェクトデザイン, concept-entity-map, kesson-space-overview, awareness-space-overview |
-| entities/ネガティブケイパビリティ | index.md, 抱持, 4層モデル, concept-entity-map, kesson-space-overview, wikilink |
-| entities/間主観性 | index.md, ネガティブケイパビリティ, 内受容感覚, 4層モデル, concept-entity-map, kesson-space-overview |
-| entities/内受容感覚 | index.md, 間主観性, 情動の構成, 4層モデル, concept-entity-map, kesson-space-overview, awareness-space-overview |
+| entities/ネガティブケイパビリティ | index.md, 抱持, concept-entity-map, kesson-space-overview, wikilink |
+| entities/間主観性 | index.md, ネガティブケイパビリティ, 内受容感覚, concept-entity-map, kesson-space-overview |
+| entities/内受容感覚 | index.md, 間主観性, 情動の構成, concept-entity-map, kesson-space-overview, awareness-space-overview |
 | entities/創造の5段階モデル | index.md, concept-entity-map, creation-space-domains |
 | entities/ドナルド・ショーン | index.md, concept-entity-map |
 | entities/ナイジェル・クロス | index.md, concept-entity-map |
@@ -59,7 +58,7 @@ wiki 内で他のどのページからもリンクされていない孤立ペー
 ### 赤リンク（存在しないページへの参照）
 
 P0 で解消: 欠損, 欠損駆動思考, 抱持, デザイン思考（4件）
-P1 で解消: ネガティブケイパビリティ, 間主観性, 情動の構成, 内受容感覚, プロジェクトデザイン + 4層モデル新規（6件）
+P1 で解消: ネガティブケイパビリティ, 間主観性, 情動の構成, 内受容感覚, プロジェクトデザイン（5件）
 P2 で解消: Love 駆動開発, 感情処理（2件）
 P3 で解消: wikilink（1件）
 

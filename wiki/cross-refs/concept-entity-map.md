@@ -18,7 +18,6 @@ concepts/ と entities/ の関係を可視化するマトリクス。
 | [[抱持]] | **参照** | **参照** | **参照** | | | | **参照** |
 | [[情動の構成]] | **参照** | **参照** | **参照** | | | | **参照** |
 | [[デザイン思考]] | **共鳴** | | | | | | **共鳴** |
-| [[4層モデル]] | **参照** | | **参照** | | | | |
 | [[ネガティブケイパビリティ]] | **共鳴** | **共鳴** | **共鳴** | | | | **共鳴** |
 | [[間主観性]] | **参照** | **参照** | **参照** | **参照** | **参照** | | |
 | [[内受容感覚]] | **参照** | | **参照** | | | **参照** | |
@@ -89,10 +88,9 @@ concepts/ と entities/ の関係を可視化するマトリクス。
 | [[デイヴィッド・グレーバー]] | 間主観性 | entity, person, value, anthropology, integration |
 | [[Value Sensitive Design]] | プロジェクトデザイン, Love 駆動開発 | entity, theory, value, design, HCI, ethics |
 | [[ネガティブケイパビリティ]] | 抱持, 欠損駆動思考, 間主観性, 情動の構成, デザイン思考 | entity, theory, philosophy, psychoanalysis, creativity |
-| [[間主観性]] | 抱持, 内受容感覚, 情動の構成, 欠損駆動思考, 4層モデル, 愛着理論 | entity, concept, philosophy, developmental-psychology, phenomenology |
-| [[情動の構成]] | 欠損, 欠損駆動思考, 抱持, 内受容感覚, 4層モデル, 間主観性, ネガティブケイパビリティ | entity, theory, neuroscience, emotion, awareness |
-| [[内受容感覚]] | 4層モデル, 間主観性, 情動の構成, 抱持, 欠損 | entity, theory, neuroscience, awareness, embodiment |
-| [[4層モデル]] | 欠損, 欠損駆動思考, 抱持, 情動の構成, 内受容感覚, 間主観性, ネガティブケイパビリティ | entity, theory, awareness, neuroscience, model |
+| [[間主観性]] | 抱持, 内受容感覚, 情動の構成, 欠損駆動思考, 愛着理論 | entity, concept, philosophy, developmental-psychology, phenomenology |
+| [[情動の構成]] | 欠損, 欠損駆動思考, 抱持, 内受容感覚, 間主観性, ネガティブケイパビリティ | entity, theory, neuroscience, emotion, awareness |
+| [[内受容感覚]] | 間主観性, 情動の構成, 抱持, 欠損 | entity, theory, neuroscience, awareness, embodiment |
 | [[創造の5段階モデル]] | プロジェクトデザイン, 欠損駆動思考, 抱持, 情動の構成, 欠損 | entity, theory, creation, five-stages, cross-domain |
 
 ## 「信頼の定義仮説」に関連する entities

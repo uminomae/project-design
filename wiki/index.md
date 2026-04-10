@@ -19,7 +19,6 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[concepts/測定設計原則|測定設計原則]]
 
 ## Entities
-- [[entities/4層モデル|4層モデル]]
 - [[entities/Value-Sensitive-Design|Value Sensitive Design]]
 - [[entities/アネット・ベイアー|アネット・ベイアー]]
 - [[entities/アブダクション|アブダクション]]
