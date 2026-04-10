@@ -178,9 +178,9 @@ Step 3 で参照した各リポジトリの範囲。
 | **kesson-space** | knowledge/schema/core-definitions.md | コア概念定義の正本 | 欠損, 欠損駆動思考, 抱持, 情動の構成 |
 | **kesson-space** | knowledge/schema/glossary.md, container-mapping.md, hoji-matching-v2.md | 抱持の詳細構造 | 抱持 |
 | **kesson-space** | knowledge/text/foundation/phase1-summary.md | 理論構造概要 | 欠損駆動思考, 欠損 |
-| **kesson-space** | knowledge/text/clinical-psychology/ (7篇) | 臨床心理学との接続 | ネガティブケイパビリティ, 間主観性, 情動の構成, 内受容感覚, 4層モデル |
+| **kesson-space** | knowledge/text/clinical-psychology/ (7篇) | 臨床心理学との接続 | ネガティブケイパビリティ, 間主観性, 情動の構成, 内受容感覚 |
 | **kesson-space** | knowledge/concepts/CN-001〜004 | ks 固有の概念ノート | 各 entities に部分反映 |
-| **awareness-space** | knowledge/topics/four-layers/ja/report.md | 4層モデルの独自レポート | 4層モデル, 内受容感覚 |
+| **awareness-space** | knowledge/topics/four-layers/ja/report.md | アウェアネスモデルの独自レポート | アウェアネスモデル, 内受容感覚 |
 | **awareness-space** | knowledge/topics/survival-trust-axis/ja/report.md | 生存-信頼軸の独自レポート | 情動の構成, 間主観性 |
 | **creation-space** | knowledge/five-stages-guide.md, glossary.md | 5段階モデル解説 | 創造の5段階モデル |
 | **creation-space** | knowledge/schema/five-stages.md, academic-domains.md | 構造定義 | 創造の5段階モデル |
