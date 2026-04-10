@@ -14,18 +14,18 @@ import { readdir, readFile, writeFile, mkdir } from "node:fs/promises";
 import { join, basename, relative } from "node:path";
 import { existsSync } from "node:fs";
 
-const ROOT = new URL("..", import.meta.url).pathname.replace(/\/$/, "");
-const WIKI_BASE = "/project-design/wiki";
+export const ROOT = new URL("..", import.meta.url).pathname.replace(/\/$/, "");
+export const WIKI_BASE = "/project-design/wiki";
 const CONTENT_DIR = join(ROOT, "content");
 const COMPILED_DIR = join(ROOT, "content", "compiled");
 
-const WIKI_DIRS = [
+export const WIKI_DIRS = [
   { dir: join(ROOT, "wiki", "concepts"), category: "concepts" },
   { dir: join(ROOT, "wiki", "entities"), category: "entities" },
 ];
 
 /** wiki ページ名から {term, url} のマップを生成 */
-async function buildTermMap() {
+export async function buildTermMap() {
   const terms = [];
 
   for (const { dir, category } of WIKI_DIRS) {
@@ -58,7 +58,7 @@ async function buildTermMap() {
  * - 見出し行 (# ...) 内は対象外
  * - 各用語は最初の1回だけ置換
  */
-function injectLinks(markdown, termMap) {
+export function injectLinks(markdown, termMap) {
   const lines = markdown.split("\n");
   let inFrontMatter = false;
   let frontMatterCount = 0;
@@ -172,7 +172,14 @@ async function main() {
   await compileDir(CONTENT_DIR, COMPILED_DIR, termMap);
 }
 
-main().catch((err) => {
-  console.error(err);
-  process.exit(1);
-});
+// 直接実行時のみ main() を起動（import 時はスキップ）
+const isDirectRun =
+  process.argv[1] &&
+  import.meta.url === new URL(process.argv[1], "file://").href;
+
+if (isDirectRun) {
+  main().catch((err) => {
+    console.error(err);
+    process.exit(1);
+  });
+}
