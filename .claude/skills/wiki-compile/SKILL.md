@@ -183,3 +183,36 @@ GitHub Pages に公開
 - Step 2: light（researcher で差分検出 + worker で compile）
 - Step 3a: standard（cross-repo 調査が必要）
 - Step 3b: parallel workers（PDF バッチを分割し、4-5 agent で並列生成）
+
+## wiki 更新ルール
+
+### 更新トリガー表
+
+| トリガー | アクション | 方法 |
+|---------|-----------|------|
+| wiki/*.md 追加・編集 | index.md 再生成 | PostToolUse hook → `generate-wiki-index.mjs` |
+| wiki/*.md 追加・編集 | content/ wikilink 再処理 | PostToolUse hook → `compile-content-links.mjs`（既存） |
+| wiki/*.md 追加・編集 | Quartz ビルド | PostToolUse hook → `wiki-build.sh`（既存） |
+| knowledge/ 正本更新 | wiki ページ再コンパイル | 手動 `/wiki-compile`。WL-3 で stale 検知 |
+| cs manifest 更新 | wiki/sources/ 生成依頼 | SessionStart → `wiki-gen-check.sh`（既存） |
+
+### index.md 自動生成
+
+**スクリプト**: `scripts/generate-wiki-index.mjs`
+
+wiki/ の全ページ front matter を読み取り、index.md を自動生成する。
+`content-compile.sh` hook (PostToolUse) 内で実行される。
+wiki/index.md 自体の変更では再帰防止のためスキップ。
+
+**セクション構成**:
+
+| セクション | データソース | ソート |
+|-----------|-------------|-------|
+| Concepts | wiki/concepts/*.md | ファイル名順 |
+| Entities | wiki/entities/*.md | ファイル名順 |
+| Sources (awareness-model) | wiki/sources/ で D\d{2}_ 以外 | tags の §分類でグループ化 |
+| Sources (D01-D30) | wiki/sources/D\d{2}_*.md | ドメイン番号順 |
+| Cross References | wiki/cross-refs/*.md | ファイル名順 |
+| Health | wiki/health/*.md | ファイル名順 |
+| Concepts 一覧 | concepts の status, compiled, review_state | ファイル名順 |
+| 最近 compile されたページ | 全カテゴリの compiled 日 | 降順、上位20件 |

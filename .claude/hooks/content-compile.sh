@@ -41,8 +41,31 @@ if "/wiki/" in path_str or path_str.startswith("wiki/"):
 if not is_content and not is_wiki:
     raise SystemExit(0)
 
-# compile-content-links.mjs を実行
 repo_root = pathlib.Path(os.environ.get("PWD", "."))
+
+# wiki 変更時（index.md 自体の変更を除く）: index.md を再生成
+is_index = path_str.endswith("wiki/index.md") or path_str.endswith("wiki\\index.md")
+if is_wiki and not is_index:
+    index_script = repo_root / "scripts" / "generate-wiki-index.mjs"
+    if index_script.is_file():
+        try:
+            idx_result = subprocess.run(
+                ["node", str(index_script)],
+                cwd=str(repo_root),
+                capture_output=True,
+                text=True,
+                timeout=10,
+            )
+            if idx_result.returncode == 0:
+                print(f"Wiki index regenerated: {idx_result.stderr.strip()}", file=sys.stderr)
+            else:
+                print(f"Wiki index generation failed: {idx_result.stderr[:200]}", file=sys.stderr)
+        except subprocess.TimeoutExpired:
+            print("Wiki index generation timed out (10s)", file=sys.stderr)
+        except FileNotFoundError:
+            pass
+
+# compile-content-links.mjs を実行
 script = repo_root / "scripts" / "compile-content-links.mjs"
 if not script.is_file():
     raise SystemExit(0)
