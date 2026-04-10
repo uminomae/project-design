@@ -103,12 +103,15 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D04_sagan_1967_origin-mitosing-cells|有糸分裂細胞の起源]]
 - [[sources/D04_waddington_1953_genetic-assimilation|遺伝的同化――獲得形質の遺伝]]
 
-#### D05 地球科学 (1件)
+#### D05 地球科学 (2件)
 - [[sources/D05_cane-zebiak_1985_enso-theory|エルニーニョと南方振動の理論]]
+- [[sources/D05_morgan_1968_rises-trenches|プレートテクトニクスの数理的基礎 — 剛体球面ブロックモデルによる地殻運動の記述]]
 
-#### D06 天文学 (3件)
+#### D06 天文学 (5件)
 - [[sources/D06_abbott_2017_gw170817|GW170817：連星中性子星合体からの重力波観測]]
+- [[sources/D06_balbus-hawley_1991_shear-instability|磁気回転不安定性 — 弱磁場降着円盤における強力な局所剪断不安定性]]
 - [[sources/D06_charbonneau_2010_dynamo-solar-cycle|太陽周期のダイナモモデル]]
+- [[sources/D06_jeans_1902_stability-nebula|ジーンズ不安定性 — 自己重力ガス球の安定性条件の導出]]
 - [[sources/D06_planck-collaboration_2016_cosmological-parameters|Planck 2015 年成果 XIII. 宇宙論的パラメータ]]
 
 #### D07 工学・情報科学 (5件)
@@ -127,7 +130,8 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D10_rosenblum_2015_autoimmunity|ヒト自己免疫疾患のメカニズム]]
 - [[sources/D10_tonegawa_1987_nobel-lecture|抗体多様性の体細胞生成（ノーベル講演）]]
 
-#### D11 薬学 (5件)
+#### D11 薬学 (6件)
+- [[sources/D11_davies_2010_antibiotic-resistance|抗生物質耐性の起源と進化 — 耐性遺伝子の太古からの存在と人為的加速]]
 - [[sources/D11_ich_2008_q10-guideline|ICH Q10 医薬品品質システムガイドライン]]
 - [[sources/D11_ich_2009_q8-r2-guideline|ICH Q8(R2) 医薬品開発ガイドライン]]
 - [[sources/D11_ich_2023_q9-r1-guideline|ICH Q9(R1) 品質リスクマネジメントガイドライン]]
@@ -157,7 +161,8 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D15_nose_1944_yugenron|幽玄論]]
 - [[sources/D15_zeami_classics|風姿花伝（花の美学）]]
 
-#### D16 歴史学 (1件)
+#### D16 歴史学 (2件)
+- [[sources/D16_braudel_1958_longue-duree|長期持続 — 歴史と社会科学の時間的多層性]]
 - [[sources/D16_ibn-khaldun_1377_muqaddimah|ムカッディマ（歴史序説）]]
 
 #### D17 言語学 (1件)
@@ -247,6 +252,11 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 
 | ページ | category | compiled |
 |--------|----------|----------|
+| [[sources/D05_morgan_1968_rises-trenches\|プレートテクトニクスの数理的基礎 — 剛体球面ブロックモデルによる地殻運動の記述]] | sources | 2026-04-11 |
+| [[sources/D06_balbus-hawley_1991_shear-instability\|磁気回転不安定性 — 弱磁場降着円盤における強力な局所剪断不安定性]] | sources | 2026-04-11 |
+| [[sources/D06_jeans_1902_stability-nebula\|ジーンズ不安定性 — 自己重力ガス球の安定性条件の導出]] | sources | 2026-04-11 |
+| [[sources/D11_davies_2010_antibiotic-resistance\|抗生物質耐性の起源と進化 — 耐性遺伝子の太古からの存在と人為的加速]] | sources | 2026-04-11 |
+| [[sources/D16_braudel_1958_longue-duree\|長期持続 — 歴史と社会科学の時間的多層性]] | sources | 2026-04-11 |
 | [[sources/D01_carlsson_2009_topology-and-data\|トポロジーとデータ]] | sources | 2026-04-10 |
 | [[sources/D01_ghrist_2008_barcodes\|バーコード：データの永続的位相]] | sources | 2026-04-10 |
 | [[sources/D01_poincare_1908_science-and-method\|科学と方法]] | sources | 2026-04-10 |
@@ -262,10 +272,5 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 | [[sources/D04_eldredge-gould_1972_punctuated-equilibria\|断続平衡説]] | sources | 2026-04-10 |
 | [[sources/D04_sagan_1967_origin-mitosing-cells\|有糸分裂細胞の起源]] | sources | 2026-04-10 |
 | [[sources/D04_waddington_1953_genetic-assimilation\|遺伝的同化――獲得形質の遺伝]] | sources | 2026-04-10 |
-| [[sources/D05_cane-zebiak_1985_enso-theory\|エルニーニョと南方振動の理論]] | sources | 2026-04-10 |
-| [[sources/D06_abbott_2017_gw170817\|GW170817：連星中性子星合体からの重力波観測]] | sources | 2026-04-10 |
-| [[sources/D06_charbonneau_2010_dynamo-solar-cycle\|太陽周期のダイナモモデル]] | sources | 2026-04-10 |
-| [[sources/D07_candes-romberg-tao_2006_robust-uncertainty\|ロバスト不確実性原理――疎な信号のフーリエサンプルからの完全再構成]] | sources | 2026-04-10 |
-| [[sources/D07_diffie-hellman_1976_new-directions-cryptography\|暗号の新方向]] | sources | 2026-04-10 |
 
 > このページは `scripts/generate-wiki-index.mjs` により自動生成されます。wiki/ 内のページ変更時に PostToolUse hook で自動実行されます。
