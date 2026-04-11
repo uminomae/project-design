@@ -50,3 +50,5 @@ Szemerédi 定理の複数アプローチという事例——同じ定理を組
 - 年: 2007
 - 出典: Bulletin of the American Mathematical Society (arXiv:math/0702396)
 - access_status: raw-confirmed
+- **DOI**: [10.1090/S0273-0979-07-01168-8](https://doi.org/10.1090/S0273-0979-07-01168-8)
+- **オープンアクセス**: [PDF](https://arxiv.org/pdf/math/0702396)

@@ -47,3 +47,5 @@ compiled: "2026-04-10"
 - 年: 2007（arXiv: 2007年6月）、査読誌掲載は後年
 - 出典: arXiv:0706.1062 [physics.data-an]
 - access_status: raw-confirmed
+- **DOI**: [10.1137/070710111](https://doi.org/10.1137/070710111)
+- **オープンアクセス**: [arXiv PDF](https://arxiv.org/pdf/0706.1062)

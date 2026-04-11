@@ -51,3 +51,4 @@ compiled: "2026-04-10"
 - 年: 2021
 - 出典: 香川大学大学院地域マネジメント研究科（Graduate School of Management, Kagawa University）
 - access_status: raw-confirmed
+- **オープンアクセス**: [J-STAGE](https://www.jstage.jst.go.jp/)

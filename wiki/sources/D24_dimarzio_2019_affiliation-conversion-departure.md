@@ -39,3 +39,4 @@ compiled: "2026-04-10"
 - 年: 2020（掲載）
 - 出典: The Journal of CESNUR, Volume 4, Issue 3, May-June 2020, pages 57-69
 - access_status: raw-confirmed
+- **DOI**: [10.26338/tjoc.2019.3.2.3](https://doi.org/10.26338/tjoc.2019.3.2.3)

@@ -52,3 +52,4 @@ compiled: "2026-04-10"
 - 年: 1929
 - 出典: The Macmillan Company, New York（Gifford Lectures, University of Edinburgh, 1927–28）
 - access_status: raw-confirmed
+- **全文**: [Wikimedia Commons](https://commons.wikimedia.org/)

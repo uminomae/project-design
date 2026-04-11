@@ -44,3 +44,4 @@ compiled: "2026-04-08"
 - 年: 原著1577年頃（本版1921年）
 - 出典: Christian Classics Ethereal Library（Grand Rapids, MI）
 - access_status: raw-confirmed
+- **全文**: [CCEL](https://www.ccel.org/ccel/teresa/castle2.html)

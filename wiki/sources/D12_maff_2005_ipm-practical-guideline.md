@@ -52,3 +52,4 @@ compiled: "2026-04-08"
 - 年: 2005
 - 出典: 農林水産省，総合的病害虫・雑草管理（IPM）実践指針
 - access_status: raw-confirmed
+- **公式URL**: [農林水産省 IPM実践指針](https://www.maff.go.jp/j/syouan/syokubo/ipm/)

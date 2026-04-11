@@ -47,3 +47,4 @@ compiled: "2026-04-10"
 - 年: 1969
 - 出典: Little, Brown and Company, Boston（初版）；Universitetsforlaget, Oslo
 - access_status: raw-confirmed
+- **ISBN**: 978-82-00-01349-2

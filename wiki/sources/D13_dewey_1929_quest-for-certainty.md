@@ -48,3 +48,4 @@ compiled: "2026-04-10"
 - 年: 1929
 - 出典: G. P. Putnam's Sons / Minton, Balch and Company, New York（ギフォード講演, 1929年）
 - access_status: raw-confirmed
+- **全文**: [Internet Archive](https://archive.org/details/questforcertaint0000john_n0z8)

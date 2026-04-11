@@ -50,3 +50,4 @@ compiled: "2026-04-08"
 - 年: 2015
 - 出典: The Journal of Clinical Investigation, 125(6):2228-2233
 - access_status: raw-confirmed
+- **DOI**: [10.1038/nm.3897](https://doi.org/10.1038/nm.3897)

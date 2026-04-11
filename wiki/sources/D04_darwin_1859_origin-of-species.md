@@ -44,3 +44,4 @@ compiled: "2026-04-10"
 - 年: 1859
 - 出典: John Murray, London
 - access_status: raw-confirmed
+- **全文**: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Origin_of_Species_1859.djvu)

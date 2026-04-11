@@ -53,3 +53,4 @@ Merleau-Pontyに倣い、身体化を2つの意味で用いる。
 - 年: 1991
 - 出典: The MIT Press（Cambridge, Massachusetts）
 - access_status: raw-confirmed
+- **ISBN**: 978-0-262-72021-2

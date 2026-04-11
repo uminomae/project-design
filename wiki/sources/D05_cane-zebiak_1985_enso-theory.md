@@ -44,3 +44,4 @@ compiled: "2026-04-10"
 - 年: 1985
 - 出典: Science, 228, 1085-1087
 - access_status: raw-confirmed
+- **DOI**: [10.1126/science.228.4703.1085](https://doi.org/10.1126/science.228.4703.1085)

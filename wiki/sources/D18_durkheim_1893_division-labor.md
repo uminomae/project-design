@@ -39,3 +39,4 @@ compiled: "2026-04-08"
 - 年: 1893（初版）/ 1902（第2版）/ 1922（第4版）
 - 出典: Librairie Felix Alcan, Paris（第4版はInternet Archive収録）
 - access_status: raw-confirmed
+- **全文**: [Internet Archive](https://archive.org/details/divisionoflabori00durk)

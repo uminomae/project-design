@@ -46,3 +46,4 @@ compiled: "2026-04-08"
 - 年: 2010
 - 出典: Stanford University d.school（An Introduction to Design Thinking PROCESS GUIDE）
 - access_status: raw-confirmed
+- **オープンアクセス**: [Stanford d.school](https://dschool.stanford.edu/)

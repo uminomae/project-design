@@ -39,3 +39,4 @@ compiled: "2026-04-10"
 - 年: 1940/1944年
 - 出典: 河出書房
 - access_status: raw-confirmed
+- **全文**: [Wikimedia Commons](https://commons.wikimedia.org/)

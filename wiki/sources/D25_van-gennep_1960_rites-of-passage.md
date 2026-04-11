@@ -47,3 +47,4 @@ compiled: "2026-04-10"
 - 年: 1960（英訳版）、原著1909
 - 出典: The University of Chicago Press
 - access_status: raw-confirmed
+- **全文**: [Internet Archive](https://archive.org/details/theritesofpassage)

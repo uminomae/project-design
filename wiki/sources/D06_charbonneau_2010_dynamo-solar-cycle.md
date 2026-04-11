@@ -44,3 +44,4 @@ compiled: "2026-04-10"
 - 年: 2010
 - 出典: Living Reviews in Solar Physics, 7, 3
 - access_status: raw-confirmed
+- **DOI**: [10.12942/lrsp-2010-3](https://doi.org/10.12942/lrsp-2010-3)

@@ -44,3 +44,4 @@ compiled: "2026-04-10"
 - 年: 1976
 - 出典: IEEE Transactions on Information Theory, IT-22(6), 644-654
 - access_status: raw-confirmed
+- **DOI**: [10.1109/TIT.1976.1055638](https://doi.org/10.1109/TIT.1976.1055638)

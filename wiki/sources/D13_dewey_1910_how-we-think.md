@@ -48,3 +48,4 @@ compiled: "2026-04-10"
 - 年: 1910
 - 出典: D. C. Heath & Co., Boston
 - access_status: raw-confirmed
+- **全文**: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:How_We_Think.djvu)

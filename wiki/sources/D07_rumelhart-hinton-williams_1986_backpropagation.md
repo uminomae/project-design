@@ -48,3 +48,4 @@ David E. Rumelhart、Geoffrey E. Hinton、Ronald J. Williams による1986年の
 - 年: 1986
 - 出典: Nature, 323, 533-536
 - access_status: raw-confirmed
+- **DOI**: [10.1038/323533a0](https://doi.org/10.1038/323533a0)

@@ -51,3 +51,4 @@ compiled: "2026-04-10"
 - 年: 1909
 - 出典: Librairie Critique, Paris（原著）；英訳: The University of Chicago Press, 1960
 - access_status: raw-confirmed
+- **全文**: [Internet Archive（英訳1960年版）](https://archive.org/details/theritesofpassage)

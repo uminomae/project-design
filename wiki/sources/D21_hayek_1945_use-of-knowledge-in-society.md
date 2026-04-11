@@ -39,3 +39,4 @@ compiled: "2026-04-08"
 - 年: 1945
 - 出典: American Economic Review, Vol. XXXV, No. 4, September 1945, pp. 519-530
 - access_status: raw-confirmed
+- **DOI**: [10.1257/aer.35.4.519](https://doi.org/10.1257/aer.35.4.519)

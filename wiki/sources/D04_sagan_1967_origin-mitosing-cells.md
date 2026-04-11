@@ -44,3 +44,4 @@ compiled: "2026-04-10"
 - 年: 1967
 - 出典: Journal of Theoretical Biology, 14, 225-274
 - access_status: raw-confirmed
+- **DOI**: [10.1016/S0022-5193(67)80274-8](https://doi.org/10.1016/S0022-5193(67)80274-8)

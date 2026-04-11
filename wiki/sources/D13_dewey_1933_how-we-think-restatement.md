@@ -48,3 +48,4 @@ compiled: "2026-04-10"
 - 年: 1933
 - 出典: D. C. Heath & Company, Boston（1910年版の全面改訂版）
 - access_status: raw-confirmed
+- **全文**: [Internet Archive](https://archive.org/details/HowWeThink)

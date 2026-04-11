@@ -1,6 +1,6 @@
 ---
 title: "Wiki Index"
-compiled: "2026-04-10"
+compiled: "2026-04-11"
 ---
 # Wiki -- Map of Content
 
@@ -161,9 +161,10 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D15_nose_1944_yugenron|幽玄論]]
 - [[sources/D15_zeami_classics|風姿花伝（花の美学）]]
 
-#### D16 歴史学 (2件)
+#### D16 歴史学 (3件)
 - [[sources/D16_braudel_1958_longue-duree|長期持続 — 歴史と社会科学の時間的多層性]]
 - [[sources/D16_ibn-khaldun_1377_muqaddimah|ムカッディマ（歴史序説）]]
+- [[sources/D16_toynbee_1934_study-of-history|歴史の研究 — 文明の挑戦と応答]]
 
 #### D17 言語学 (1件)
 - [[sources/D17_bickerton_1981_roots-of-language|言語の起源]]
@@ -257,6 +258,7 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 | [[sources/D06_jeans_1902_stability-nebula\|ジーンズ不安定性 — 自己重力ガス球の安定性条件の導出]] | sources | 2026-04-11 |
 | [[sources/D11_davies_2010_antibiotic-resistance\|抗生物質耐性の起源と進化 — 耐性遺伝子の太古からの存在と人為的加速]] | sources | 2026-04-11 |
 | [[sources/D16_braudel_1958_longue-duree\|長期持続 — 歴史と社会科学の時間的多層性]] | sources | 2026-04-11 |
+| [[sources/D16_toynbee_1934_study-of-history\|歴史の研究 — 文明の挑戦と応答]] | sources | 2026-04-11 |
 | [[sources/D01_carlsson_2009_topology-and-data\|トポロジーとデータ]] | sources | 2026-04-10 |
 | [[sources/D01_ghrist_2008_barcodes\|バーコード：データの永続的位相]] | sources | 2026-04-10 |
 | [[sources/D01_poincare_1908_science-and-method\|科学と方法]] | sources | 2026-04-10 |
@@ -271,6 +273,5 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 | [[sources/D04_darwin_1859_origin-of-species\|種の起源]] | sources | 2026-04-10 |
 | [[sources/D04_eldredge-gould_1972_punctuated-equilibria\|断続平衡説]] | sources | 2026-04-10 |
 | [[sources/D04_sagan_1967_origin-mitosing-cells\|有糸分裂細胞の起源]] | sources | 2026-04-10 |
-| [[sources/D04_waddington_1953_genetic-assimilation\|遺伝的同化――獲得形質の遺伝]] | sources | 2026-04-10 |
 
 > このページは `scripts/generate-wiki-index.mjs` により自動生成されます。wiki/ 内のページ変更時に PostToolUse hook で自動実行されます。

@@ -44,3 +44,4 @@ compiled: "2026-04-10"
 - 年: 1377（ヒジュラ暦779年）
 - 出典: 『歴史の書（Kitab al-Ibar）』序説部分。英訳: Franz Rosenthal訳 (Princeton University Press, 1958, 3 vols.)
 - access_status: raw-confirmed
+- **全文**: [Internet Archive](https://archive.org/details/etaoin/The%20Muqaddimah%20%E2%80%93%20An%20Introduction%20to%20History%20by%20Ibn%20Khaldun.pdf)

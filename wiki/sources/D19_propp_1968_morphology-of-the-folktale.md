@@ -36,3 +36,4 @@ compiled: "2026-04-08"
 - 年: 1928（ロシア語原版）/ 1968（英語第2版）
 - 出典: University of Texas Press（American Folklore Society / Indiana University Research Center in Anthropology, Folklore, and Linguistics, Publication 10）
 - access_status: raw-confirmed
+- **全文**: [Monoskop](https://monoskop.org/images/3/37/Propp_Vladimir_Morphology_of_the_Folktale_1968.pdf)

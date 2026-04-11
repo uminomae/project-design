@@ -43,3 +43,4 @@ Ra = (g α ΔT h³) / (ν κ)
 - 年: 1916
 - 出典: Philosophical Magazine Series 6, Vol. 32, No. 192, pp. 529-546
 - access_status: raw-confirmed
+- **DOI**: [10.1080/14786441608635602](https://doi.org/10.1080/14786441608635602)

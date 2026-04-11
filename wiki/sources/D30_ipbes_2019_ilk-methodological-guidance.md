@@ -49,3 +49,4 @@ IPBESが取り組む課題——科学的知識と先住民知識という異な
 - 年: 2019（IPBES 第7回総会提出文書、2019年3月12日付）
 - 出典: Intergovernmental Science-Policy Platform on Biodiversity and Ecosystem Services（IPBES/7/INF/8）
 - access_status: raw-confirmed
+- **公式URL**: [IPBES](https://www.ipbes.net/)

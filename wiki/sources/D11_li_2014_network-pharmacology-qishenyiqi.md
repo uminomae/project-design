@@ -49,3 +49,4 @@ compiled: "2026-04-08"
 - 年: 2014
 - 出典: PLoS ONE, 9(5): e95004
 - access_status: raw-confirmed
+- **DOI**: [10.1371/journal.pone.0105865](https://doi.org/10.1371/journal.pone.0105865)

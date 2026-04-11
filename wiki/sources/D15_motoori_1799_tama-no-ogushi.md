@@ -40,3 +40,4 @@ compiled: "2026-04-10"
 - 年: 1799年（寛政11年）
 - 出典: 本居宣長全集（筑摩書房）に所収
 - access_status: raw-confirmed
+- **全文**: [Wikimedia Commons](https://commons.wikimedia.org/)

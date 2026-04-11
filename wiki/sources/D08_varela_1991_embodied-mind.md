@@ -49,3 +49,4 @@ enactionの中核にある「知覚は世界の受動的な受け取りではな
 - 年: 1991
 - 出典: The MIT Press（Cambridge, Massachusetts）
 - access_status: raw-confirmed
+- **ISBN**: 978-0-262-72021-2

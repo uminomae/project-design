@@ -46,3 +46,5 @@ dx/dt = σ(y - x)、dy/dt = rx - y - xz、dz/dt = xy - bz
 - 年: 1963
 - 出典: Journal of the Atmospheric Sciences, Vol. 20, No. 2, pp. 130–141
 - access_status: raw-confirmed
+- **DOI**: [10.1175/1520-0469(1963)020<0130:DNF>2.0.CO;2](https://doi.org/10.1175/1520-0469(1963)020%3C0130:DNF%3E2.0.CO;2)
+- **オープンアクセス**: [PDF](https://journals.ametsoc.org/downloadpdf/journals/atsc/20/2/1520-0469_1963_020_0130_dnf_2_0_co_2.pdf)

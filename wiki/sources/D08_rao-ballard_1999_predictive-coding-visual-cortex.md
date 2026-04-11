@@ -48,3 +48,4 @@ compiled: "2026-04-10"
 - 年: 1999
 - 出典: Nature Neuroscience, 2(1), 79-87
 - access_status: raw-confirmed
+- **DOI**: [10.1038/4580](https://doi.org/10.1038/4580)

@@ -44,3 +44,5 @@ Gunnar Carlsson による2009年の論文で、位相的データ解析（TDA: T
 - 年: 2009
 - 出典: Bulletin of the American Mathematical Society, Vol. 46, No. 2, pp. 255–308
 - access_status: raw-confirmed
+- **DOI**: [10.1090/S0273-0979-09-01249-X](https://doi.org/10.1090/S0273-0979-09-01249-X)
+- **オープンアクセス**: [PDF](https://www.ams.org/bull/2009-46-02/S0273-0979-09-01249-X/S0273-0979-09-01249-X.pdf)

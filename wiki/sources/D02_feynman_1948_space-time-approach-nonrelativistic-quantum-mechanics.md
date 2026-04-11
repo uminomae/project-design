@@ -92,3 +92,4 @@ ocr_verified: true
 - 出典: Reviews of Modern Physics, Vol. 20, No. 2, pp. 367-387
 - 謝辞: Professor and Mrs. H. C. Corben, Professor H. A. Bethe, Professor J. A. Wheeler
 - access_status: raw-confirmed（OCR 検証済み）
+- **DOI**: [10.1103/RevModPhys.20.367](https://doi.org/10.1103/RevModPhys.20.367)

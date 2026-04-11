@@ -55,3 +55,4 @@ H = - Σ p_i log p_i
 - 年: 1948
 - 出典: Bell System Technical Journal, Vol. 27, pp. 379-423, 623-656（July, October 1948）
 - access_status: raw-confirmed
+- **DOI**: [10.1002/j.1538-7305.1948.tb01338.x](https://doi.org/10.1002/j.1538-7305.1948.tb01338.x)

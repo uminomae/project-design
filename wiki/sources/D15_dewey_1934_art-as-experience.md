@@ -53,3 +53,4 @@ compiled: "2026-04-10"
 - 年: 1934
 - 出典: G. P. Putnam's Sons, New York（William James Lectureship, Harvard University, 1931年講演）
 - access_status: raw-confirmed
+- **全文**: [Internet Archive](https://archive.org/details/art-as-experience-dewey)

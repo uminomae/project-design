@@ -44,3 +44,4 @@ compiled: "2026-04-10"
 - 年: 1916
 - 出典: Carnegie Institution of Washington, Publication No. 242
 - access_status: raw-confirmed
+- **全文**: [Internet Archive](https://archive.org/details/cu31924000531818)

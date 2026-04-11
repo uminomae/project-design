@@ -44,3 +44,4 @@ M_t(f) - P_t(M; K) = (1 + t) Q_t(f; K)
 - 年: 1988
 - 出典: Publications Mathématiques de l'I.H.É.S., tome 68, pp. 99-114
 - access_status: raw-confirmed
+- **DOI**: [10.1007/BF02564666](https://doi.org/10.1007/BF02564666)

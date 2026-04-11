@@ -43,3 +43,4 @@ compiled: "2026-04-10"
 - 年: 1982
 - 出典: Harvard University Press, Cambridge, Massachusetts
 - access_status: raw-confirmed
+- **ISBN**: 978-0-674-27231-5

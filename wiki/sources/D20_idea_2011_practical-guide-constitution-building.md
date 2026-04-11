@@ -40,3 +40,4 @@ compiled: "2026-04-08"
 - 出典: International Institute for Democracy and Electoral Assistance (International IDEA), Stockholm
 - ISBN: 978-91-86565-38-1
 - access_status: raw-confirmed
+- **公式URL**: [International IDEA](https://www.idea.int/publications/catalogue/practical-guide-constitution-building)

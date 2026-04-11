@@ -52,3 +52,4 @@ compiled: "2026-04-08"
 - 年: 1977（講演日: 1977年12月8日）
 - 出典: Nobel Lectures, Chemistry 1971-1980, pp. 263-285（Les Prix Nobel 1977所収）
 - access_status: raw-confirmed
+- **オープンアクセス**: [Nobel Lecture PDF](https://www.nobelprize.org/uploads/2018/06/prigogine-lecture.pdf)

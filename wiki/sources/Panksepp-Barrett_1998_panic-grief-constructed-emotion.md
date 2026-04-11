@@ -19,7 +19,7 @@ Jaak Panksepp（1943-2017）は哺乳類の脳に進化的に保存された7つ
 
 ### Panksepp 主要文献
 
-- Panksepp, J. (1998). *Affective Neuroscience: The Foundations of Human and Animal Emotions*. Oxford University Press.
+- Panksepp, J. (1998). *Affective Neuroscience: The Foundations of Human and Animal Emotions*. Oxford University Press. **DOI**: [10.1093/oso/9780195096736.001.0001](https://doi.org/10.1093/oso/9780195096736.001.0001)
 - Panksepp, J. (2007). Neurologizing the Psychology of Affects. *Perspectives on Psychological Science*, 2(3), 281-296.
 - Panksepp, J. (2008). Cognitive Conceptualism — Where Have All the Affects Gone? *Perspectives on Psychological Science*, 3(4), 305-308.
 - Panksepp, J. (2011). The basic emotional circuits of mammalian brains: Do animals have affective lives? *Neuroscience & Biobehavioral Reviews*, 35(9), 1791-1804.

@@ -44,3 +44,4 @@ Spruce-Budworm系など複数の生態学的事例から、生態系は単一の
 - 年: 1973
 - 出典: IIASA Research Report RR-73-003, Institute of Resource Ecology, University of British Columbia. 後に Annual Review of Ecology and Systematics, 4, 1–23 (1973) として公刊。
 - access_status: raw-confirmed
+- **DOI**: [10.1146/annurev.es.04.110173.000245](https://doi.org/10.1146/annurev.es.04.110173.000245)

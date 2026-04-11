@@ -39,3 +39,4 @@ compiled: "2026-04-08"
 - 年: 2003
 - 出典: Reviews of Modern Physics, Vol. 75, No. 3, pp. 715-775
 - access_status: raw-confirmed
+- **DOI**: [10.1103/RevModPhys.75.715](https://doi.org/10.1103/RevModPhys.75.715)

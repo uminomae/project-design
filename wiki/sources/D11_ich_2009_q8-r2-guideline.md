@@ -51,3 +51,4 @@ ICH Q8(R2)は、医薬品の規制申請書類においてCTD（Common Technical
 - 年: 2009（改訂版 Q8(R2)）
 - 出典: ICH Harmonised Tripartite Guideline Q8(R2)
 - access_status: raw-confirmed
+- **公式URL**: [ICH Q8(R2)](https://database.ich.org/sites/default/files/Q8_R2_Guideline.pdf)

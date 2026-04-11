@@ -44,3 +44,4 @@ l0ノルム（非ゼロ成分の数）最小化は組み合わせ爆発で計算
 - 年: 2006
 - 出典: IEEE Transactions on Information Theory, 52(2), 489-509（arXiv:math/0409186, 2004年投稿）
 - access_status: raw-confirmed
+- **DOI**: [10.1109/TIT.2005.862083](https://doi.org/10.1109/TIT.2005.862083)

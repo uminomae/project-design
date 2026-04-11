@@ -78,3 +78,4 @@ ocr_verified: true
 - 出典スキャン: 国立国会図書館デジタルコレクション
 - 構成: 十六部、五十三編（上下二冊）
 - access_status: raw-confirmed（OCR 検証済み、代表ページサンプリング）
+- **全文**: [NDL デジタルコレクション](https://dl.ndl.go.jp/)

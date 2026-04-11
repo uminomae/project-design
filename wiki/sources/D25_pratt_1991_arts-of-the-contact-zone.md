@@ -47,3 +47,4 @@ compiled: "2026-04-08"
 - 年: 1991
 - 出典: Profession 91, MLA（後に Ways of Reading, 5th edition, Bedford/St. Martin's, 1999 に収録）
 - access_status: raw-confirmed
+- **オープンアクセス**: [PDF（Texas State University）](https://www.txstate.edu/)

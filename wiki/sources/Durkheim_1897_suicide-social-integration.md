@@ -22,6 +22,7 @@ Durkheim (1897) *Le Suicide* は、一見最も個人的な行為である自殺
 - **出版年**: 1897年
 - **出版社**: Paris: Felix Alcan
 - **英訳**: Durkheim, E. (1951). *Suicide: A Study in Sociology*. Trans. Spaulding & Simpson. New York: Free Press.
+- **全文**: [Internet Archive（仏語原典）](https://archive.org/details/lesuabordetudede00durk)
 
 ### 後続の主要検証研究
 - Berkman, L.F. & Syme, S.L. (1979). Social networks, host resistance, and mortality. *American Journal of Epidemiology*, 109(2), 186-204.

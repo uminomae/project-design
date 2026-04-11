@@ -24,6 +24,7 @@ Damasio (1999) は意識の階層理論を展開: 原自己（身体マップ、
 - **出版社**: G.P. Putnam's Sons
 - **出版年**: 1994年
 - **被引用数**: 20,000件超
+- **ISBN**: 978-0-399-13894-2
 
 理論論文: Damasio (1996) *Philosophical Transactions of the Royal Society B*, 351(1346), 1413-1420. DOI: 10.1098/rstb.1996.0125
 

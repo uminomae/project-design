@@ -40,3 +40,4 @@ Johansson-Sköldberg et al. (2013)、Seidel & Fixson (2013)、Liedtka (2015)、C
 - 年: 2021
 - 出典: Annals of Business Administrative Science, Vol. 20, pp. 197-209. doi:10.7880/abas.0210930a
 - access_status: raw-confirmed
+- **DOI**: [10.7880/abas.0210930a](https://doi.org/10.7880/abas.0210930a)
