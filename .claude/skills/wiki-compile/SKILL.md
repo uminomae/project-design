@@ -129,7 +129,41 @@ GitHub Pages に公開
 - 年: {year}
 - 出典: {journal/publisher}
 - access_status: raw-confirmed
+- **DOI**: [{doi}](https://doi.org/{doi})           ← manifest notes に DOI があれば
+- **オープンアクセス**: [PDF]({oa_url})              ← manifest notes に OA URL があれば
+- **全文**: [{source_name}]({url})                   ← 書籍の場合、archive.org 等の安定URL
+- **公式URL**: [{org_name}]({url})                   ← 公的文書の場合
+- **ISBN**: {isbn}                                   ← 書籍で DOI がない場合
 ```
+
+### DOI/URL 追加ルール
+
+wiki ソースページ生成時、manifest の notes 列から DOI / OA URL を抽出し、書誌情報に含める。
+
+**優先順位**:
+1. **DOI** — 論文であれば最優先。`DOI: 10.xxxx` の形式で manifest notes に記載されている場合
+2. **OA URL** — `OA: https://...` の形式で manifest notes に記載されている場合
+3. **安定 URL** — archive.org, Wikimedia Commons, NDL, 著者ページ等。manifest notes のキーワードから推定
+4. **公式 URL** — ICH, MAFF, CBD 等の公的文書
+5. **ISBN** — 書籍で上記がない場合
+
+**DOI の取得元**:
+- manifest notes に明示されている DOI
+- 論文の場合: 著者名・年・雑誌名・巻号から既知の DOI（主要ジャーナルの DOI パターンは安定）
+- DOI が不明な場合は空欄のまま生成し、後で追加する
+
+**フォーマット**:
+- DOI: `- **DOI**: [10.xxxx](https://doi.org/10.xxxx)`
+- OA: `- **オープンアクセス**: [PDF](https://...)`
+- 全文: `- **全文**: [Internet Archive](https://archive.org/...)`
+- 公式: `- **公式URL**: [機関名](https://...)`
+- ISBN: `- **ISBN**: 978-x-xxx-xxxxx-x`
+
+**DOI なしの正当なケース**（無理に追加しない）:
+- JETP 等のソ連時代の雑誌（標準 DOI なし）
+- 書籍の章（Eldredge-Gould 1972 等）
+- Hilgardia 等の廃刊誌
+- 複数文献のまとめページ（intersubjectivity 系）
 
 ### 設計原則（暫定）
 1. **原典の内容が解説されていること** — 最優先
