@@ -26,6 +26,8 @@ Clark (2015) *Surfing Uncertainty* では幻覚・妄想（予測の過剰）、
 - **DOI**: 10.1017/S0140525X12000477
 - **PMID**: 23663408
 - **被引用数**: 4,000件超（BBS ターゲット記事、28名の Open Peer Commentary 付き）
+- **DOI**: [10.1017/S0140525X12000477](https://doi.org/10.1017/S0140525X12000477)
+- **オープンアクセス**: [PDF](https://www.cambridge.org/core/services/aop-cambridge-core/content/view/33542C736E17E3D1D44E8D03BE5F4CD9/S0140525X12000477a.pdf)
 
 ## 主要主張
 

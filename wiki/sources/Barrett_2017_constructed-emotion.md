@@ -28,6 +28,7 @@ Barrett (2017a) は Friston の能動的推論枠組みで理論を再定式化:
 - **被引用数**: 3,000件超
 
 一般向け: Barrett (2017) *How Emotions Are Made*. Houghton Mifflin Harcourt.
+- **DOI**: [10.1093/scan/nsw154](https://doi.org/10.1093/scan/nsw154)
 
 ## 主要主張
 

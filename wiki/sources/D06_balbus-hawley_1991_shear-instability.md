@@ -21,7 +21,7 @@ Steven A. Balbus & John F. Hawley (1991) は、弱い磁場が存在する差動
 - **タイトル**: A Powerful Local Shear Instability in Weakly Magnetized Disks. I. Linear Analysis
 - **雑誌**: *The Astrophysical Journal*, 376, 214-222
 - **出版年**: 1991年
-- **DOI**: 10.1086/170270
+- **DOI**: [10.1086/170270](https://doi.org/10.1086/170270)
 - **受領**: 1990年11月、改訂: 1991年1月
 - **所属**: Virginia Institute for Theoretical Astronomy, University of Virginia
 
