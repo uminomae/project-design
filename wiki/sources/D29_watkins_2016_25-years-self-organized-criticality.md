@@ -8,6 +8,8 @@ source:
   path: "knowledge/raw/D29_watkins_2016_25-years-self-organized-criticality.pdf"
   manifest_id: "D29-S05"
 compiled: "2026-04-10"
+status: 正典
+review_state: 未レビュー
 ---
 
 # 自己組織化臨界の25年：概念と論争

@@ -8,6 +8,8 @@ source:
   path: "knowledge/raw/D17_bickerton_1981_roots-of-language.pdf"
   manifest_id: "D17-S07"
 compiled: "2026-04-10"
+status: 正典
+review_state: 未レビュー
 ---
 
 # 言語の起源

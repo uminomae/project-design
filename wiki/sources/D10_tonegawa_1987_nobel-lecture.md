@@ -8,6 +8,8 @@ source:
   path: "knowledge/raw/D10_tonegawa_1987_nobel-lecture.pdf"
   manifest_id: "D10-S04"
 compiled: "2026-04-10"
+status: 正典
+review_state: 未レビュー
 ---
 
 # 抗体多様性の体細胞生成（ノーベル講演）

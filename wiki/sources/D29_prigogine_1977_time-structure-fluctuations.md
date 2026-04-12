@@ -8,6 +8,8 @@ source:
   path: "knowledge/raw/D29_prigogine_1977_time-structure-fluctuations.pdf"
   manifest_id: "D29-S01"
 compiled: "2026-04-08"
+status: 正典
+review_state: 未レビュー
 ---
 
 # 時間、構造、そしてゆらぎ — ノーベル講演

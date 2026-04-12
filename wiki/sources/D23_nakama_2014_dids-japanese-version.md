@@ -8,6 +8,8 @@ source:
   path: "knowledge/raw/D23_nakama_2014_dids-japanese-version.pdf"
   manifest_id: "D23-S09"
 compiled: "2026-04-08"
+status: 正典
+review_state: 未レビュー
 ---
 
 # 多次元アイデンティティ発達尺度（DIDS）日本語版

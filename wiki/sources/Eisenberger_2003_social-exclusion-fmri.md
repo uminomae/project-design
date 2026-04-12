@@ -7,6 +7,8 @@ source:
   repo: "project-design"
   path: "knowledge/evidence/awareness-model/eisenberger-2003-social-exclusion-fmri.md"
 compiled: "2026-04-08"
+status: 正典
+review_state: 未レビュー
 ---
 
 # 社会的排除は痛みを伴うか — fMRI研究

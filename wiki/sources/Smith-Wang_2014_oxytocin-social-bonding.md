@@ -7,6 +7,8 @@ source:
   repo: "project-design"
   path: "knowledge/evidence/awareness-model/oxytocin-social-bonding-smith-wang-2014.md"
 compiled: "2026-04-08"
+status: 正典
+review_state: 未レビュー
 ---
 
 # 視床下部オキシトシンによるストレス応答の社会的緩衝

@@ -7,6 +7,8 @@ source:
   repo: "project-design"
   path: "knowledge/evidence/awareness-model/baumeister-leary-1995-need-to-belong.md"
 compiled: "2026-04-08"
+status: 正典
+review_state: 未レビュー
 ---
 
 # 所属欲求 — 基本的な人間の動機づけとしての対人愛着への欲求

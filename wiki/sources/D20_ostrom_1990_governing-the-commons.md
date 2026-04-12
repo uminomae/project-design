@@ -8,6 +8,8 @@ source:
   path: "knowledge/raw/D20_ostrom_1990_governing-the-commons.pdf"
   manifest_id: "D20-S03"
 compiled: "2026-04-10"
+status: 正典
+review_state: 未レビュー
 ---
 
 # コモンズのガバナンス

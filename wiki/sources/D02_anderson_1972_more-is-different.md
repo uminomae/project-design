@@ -8,6 +8,8 @@ source:
   path: "knowledge/raw/D02_anderson_1972_more-is-different.pdf"
   manifest_id: "D02-S02"
 compiled: "2026-04-10"
+status: 正典
+review_state: 未レビュー
 ---
 
 # 多いことは違うことだ

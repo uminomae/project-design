@@ -8,6 +8,8 @@ source:
   path: "knowledge/raw/D30_matsuki_numata_2021_ichiza-konryu.pdf"
   manifest_id: "D30-S09"
 compiled: "2026-04-10"
+status: 正典
+review_state: 未レビュー
 ---
 
 # 茶事における場の共創：「一座建立」の意味空間

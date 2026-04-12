@@ -7,6 +7,8 @@ source:
   repo: "creation-space"
   path: "knowledge/raw/D16_braudel_1958_longue-duree.pdf"
 compiled: "2026-04-11"
+status: 正典
+review_state: 未レビュー
 ---
 
 # 長期持続 — 歴史と社会科学の時間的多層性

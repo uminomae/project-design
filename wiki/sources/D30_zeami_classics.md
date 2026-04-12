@@ -8,6 +8,8 @@ source:
   path: "knowledge/raw/D28_zeami_classics_part1.pdf"
   manifest_id: "D30-S07"
 compiled: "2026-04-10"
+status: 正典
+review_state: 未レビュー
 ---
 
 # 風姿花伝（一座建立・場の共創）

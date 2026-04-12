@@ -7,6 +7,8 @@ source:
   repo: "creation-space"
   path: "knowledge/raw/D11_davies_2010_antibiotic-resistance.pdf"
 compiled: "2026-04-11"
+status: 正典
+review_state: 未レビュー
 ---
 
 # 抗生物質耐性の起源と進化 — 耐性遺伝子の太古からの存在と人為的加速

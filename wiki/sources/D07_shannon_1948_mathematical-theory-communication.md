@@ -8,6 +8,8 @@ source:
   path: "knowledge/raw/D07_shannon_1948_mathematical-theory-communication.pdf"
   manifest_id: "D07-S05"
 compiled: "2026-04-08"
+status: 正典
+review_state: 未レビュー
 ---
 
 # 通信の数学的理論

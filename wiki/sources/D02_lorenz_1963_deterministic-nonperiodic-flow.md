@@ -8,6 +8,8 @@ source:
   path: "knowledge/raw/D02_lorenz_1963_deterministic-nonperiodic-flow.pdf"
   manifest_id: "D02-S12"
 compiled: "2026-04-10"
+status: 正典
+review_state: 未レビュー
 ---
 
 # 決定論的非周期流

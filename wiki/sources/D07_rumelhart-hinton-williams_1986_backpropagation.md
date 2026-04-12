@@ -8,6 +8,8 @@ source:
   path: "knowledge/raw/D07_rumelhart-hinton-williams_1986_backpropagation.pdf"
   manifest_id: "D07-S04"
 compiled: "2026-04-10"
+status: 正典
+review_state: 未レビュー
 ---
 
 # 誤差逆伝播法による表現学習

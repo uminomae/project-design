@@ -8,6 +8,8 @@ source:
   path: "knowledge/raw/D02_abrikosov_1957_magnetic-properties-superconductors-second-group.pdf"
   manifest_id: "D02-S03"
 compiled: "2026-04-08"
+status: 正典
+review_state: 未レビュー
 ---
 
 # 第二種超伝導体の磁気的性質

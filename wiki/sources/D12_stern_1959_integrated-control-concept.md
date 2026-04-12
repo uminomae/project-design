@@ -8,6 +8,8 @@ source:
   path: "knowledge/raw/D12_stern_1959_integrated-control-concept.pdf"
   manifest_id: "D12-S05"
 compiled: "2026-04-10"
+status: 正典
+review_state: 未レビュー
 ---
 
 # 総合的防除の概念

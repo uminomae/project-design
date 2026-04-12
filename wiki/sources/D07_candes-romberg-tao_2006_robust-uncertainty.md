@@ -8,6 +8,8 @@ source:
   path: "knowledge/raw/D07_candes-romberg-tao_2006_robust-uncertainty.pdf"
   manifest_id: "D07-S06"
 compiled: "2026-04-10"
+status: 正典
+review_state: 未レビュー
 ---
 
 # ロバスト不確実性原理――疎な信号のフーリエサンプルからの完全再構成

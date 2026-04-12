@@ -8,6 +8,8 @@ source:
   path: "knowledge/raw/D11_ich_2009_q8-r2-guideline.pdf"
   manifest_id: "D11-S10"
 compiled: "2026-04-08"
+status: 正典
+review_state: 未レビュー
 ---
 
 # ICH Q8(R2) 医薬品開発ガイドライン

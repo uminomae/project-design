@@ -7,6 +7,8 @@ source:
   repo: "project-design"
   path: "knowledge/evidence/awareness-model/coan-sbarra-social-baseline-theory.md"
 compiled: "2026-04-08"
+status: 正典
+review_state: 未レビュー
 ---
 
 # 社会的ベースライン理論 — リスクと努力の社会的調整

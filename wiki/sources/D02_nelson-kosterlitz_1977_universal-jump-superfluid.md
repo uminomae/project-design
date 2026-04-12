@@ -8,6 +8,8 @@ source:
   path: "knowledge/raw/D02_nelson-kosterlitz_1977_universal-jump-superfluid.pdf"
   manifest_id: "D02-S06"
 compiled: "2026-04-10"
+status: 正典
+review_state: 未レビュー
 ---
 
 # 二次元超流体の超流体密度における普遍的ジャンプ

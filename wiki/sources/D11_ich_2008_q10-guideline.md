@@ -8,6 +8,8 @@ source:
   path: "knowledge/raw/D11_ich_2008_q10-guideline.pdf"
   manifest_id: "D11-S11"
 compiled: "2026-04-08"
+status: 正典
+review_state: 未レビュー
 ---
 
 # ICH Q10 医薬品品質システムガイドライン

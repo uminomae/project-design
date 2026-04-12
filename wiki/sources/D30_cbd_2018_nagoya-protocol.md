@@ -8,6 +8,8 @@ source:
   path: "knowledge/raw/D30_cbd_2018_nagoya-protocol.pdf"
   manifest_id: "D30-S04"
 compiled: "2026-04-08"
+status: 正典
+review_state: 未レビュー
 ---
 
 # 名古屋議定書

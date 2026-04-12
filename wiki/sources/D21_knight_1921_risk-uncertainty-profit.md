@@ -8,6 +8,8 @@ source:
   path: "knowledge/raw/D21_knight_1921_risk-uncertainty-profit.pdf"
   manifest_id: "D21-S09"
 compiled: "2026-04-10"
+status: 正典
+review_state: 未レビュー
 ---
 
 # リスク・不確実性・利潤

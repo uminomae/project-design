@@ -7,6 +7,8 @@ source:
   repo: "creation-space"
   path: "knowledge/raw/D16_toynbee_1934_study-of-history-vol1.pdf"
 compiled: "2026-04-11"
+status: 正典
+review_state: 未レビュー
 ---
 
 # 歴史の研究 — 文明の挑戦と応答

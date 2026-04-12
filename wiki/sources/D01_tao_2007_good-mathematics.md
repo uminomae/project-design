@@ -8,6 +8,8 @@ source:
   path: "knowledge/raw/D01_tao_2007_good-mathematics.pdf"
   manifest_id: "D01-S06"
 compiled: "2026-04-10"
+status: 正典
+review_state: 未レビュー
 ---
 
 # 良い数学とは何か

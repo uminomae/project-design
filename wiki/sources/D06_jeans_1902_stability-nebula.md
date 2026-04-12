@@ -7,6 +7,8 @@ source:
   repo: "creation-space"
   path: "knowledge/raw/D06_jeans_1902_stability-nebula.pdf"
 compiled: "2026-04-11"
+status: 正典
+review_state: 未レビュー
 ---
 
 # ジーンズ不安定性 — 自己重力ガス球の安定性条件の導出

@@ -8,6 +8,8 @@ source:
   path: "knowledge/raw/D21_schumpeter_1912_theorie-der-wirtschaftlichen-entwicklung.pdf"
   manifest_id: "D21-S01"
 compiled: "2026-04-10"
+status: 正典
+review_state: 未レビュー
 ---
 
 # 経済発展の理論（初版）

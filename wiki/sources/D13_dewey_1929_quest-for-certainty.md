@@ -8,6 +8,8 @@ source:
   path: "knowledge/raw/D13_dewey_1929_quest-for-certainty.pdf"
   manifest_id: "D13-S08"
 compiled: "2026-04-10"
+status: 正典
+review_state: 未レビュー
 ---
 
 # 確実性の探求

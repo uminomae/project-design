@@ -8,6 +8,8 @@ source:
   path: "knowledge/raw/D30_ipbes_2019_ilk-methodological-guidance.pdf"
   manifest_id: "D30-S03"
 compiled: "2026-04-08"
+status: 正典
+review_state: 未レビュー
 ---
 
 # IPBES 先住民・地域知識 方法論ガイダンス

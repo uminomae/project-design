@@ -7,6 +7,8 @@ source:
   repo: "project-design"
   path: "knowledge/evidence/awareness-model/anthropology-linguistics-intersubjectivity.md"
 compiled: "2026-04-08"
+status: 正典
+review_state: 未レビュー
 ---
 
 # 文化人類学・言語学における間主観性

@@ -8,6 +8,8 @@ source:
   path: "knowledge/raw/D13_dewey_1934_art-as-experience.pdf"
   manifest_id: "D15-S09"
 compiled: "2026-04-10"
+status: 正典
+review_state: 未レビュー
 ---
 
 # 経験としての芸術（美学・芸術哲学の観点）

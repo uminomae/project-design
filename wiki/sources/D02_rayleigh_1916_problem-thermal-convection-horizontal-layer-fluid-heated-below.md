@@ -8,6 +8,8 @@ source:
   path: "knowledge/raw/D02_rayleigh_1916_problem-thermal-convection-horizontal-layer-fluid-heated-below.pdf"
   manifest_id: "D02-S08"
 compiled: "2026-04-08"
+status: 正典
+review_state: 未レビュー
 ---
 
 # 下方加熱された水平流体層における熱対流の問題

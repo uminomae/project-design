@@ -8,6 +8,8 @@ source:
   path: "knowledge/raw/D13_whitehead_1929_process-and-reality.pdf"
   manifest_id: "D13-S10"
 compiled: "2026-04-10"
+status: 正典
+review_state: 未レビュー
 ---
 
 # 過程と実在

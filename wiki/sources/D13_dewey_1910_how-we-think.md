@@ -8,6 +8,8 @@ source:
   path: "knowledge/raw/D13_dewey_1910_how-we-think.pdf"
   manifest_id: "D13-S05"
 compiled: "2026-04-10"
+status: 正典
+review_state: 未レビュー
 ---
 
 # 思考の方法（1910年版）

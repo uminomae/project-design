@@ -8,6 +8,8 @@ source:
   path: "knowledge/raw/D24_teresa_1921_interior-castle.pdf"
   manifest_id: "D24-S07"
 compiled: "2026-04-08"
+status: 正典
+review_state: 未レビュー
 ---
 
 # 内なる城

@@ -8,6 +8,8 @@ source:
   path: "knowledge/raw/D07_wiener_1948_cybernetics.pdf"
   manifest_id: "D07-S01"
 compiled: "2026-04-10"
+status: 正典
+review_state: 未レビュー
 ---
 
 # サイバネティクス——動物と機械における制御と通信

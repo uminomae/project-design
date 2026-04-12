@@ -8,6 +8,8 @@ source:
   path: "knowledge/raw/D02_haken_1983_synergetics.pdf"
   manifest_id: "D02-S07"
 compiled: "2026-04-10"
+status: 正典
+review_state: 未レビュー
 ---
 
 # シナジェティクス：入門

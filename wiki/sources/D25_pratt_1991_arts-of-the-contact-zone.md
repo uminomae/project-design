@@ -8,6 +8,8 @@ source:
   path: "knowledge/raw/D25_pratt_1991_arts-of-the-contact-zone.pdf"
   manifest_id: "D25-S10"
 compiled: "2026-04-08"
+status: 正典
+review_state: 未レビュー
 ---
 
 # コンタクト・ゾーンの技法

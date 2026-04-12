@@ -8,6 +8,8 @@ source:
   path: "knowledge/raw/D04_eldredge-gould_1972_punctuated-equilibria.pdf"
   manifest_id: "D04-S02"
 compiled: "2026-04-10"
+status: 正典
+review_state: 未レビュー
 ---
 
 # 断続平衡説

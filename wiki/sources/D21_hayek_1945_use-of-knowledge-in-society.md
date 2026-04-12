@@ -8,6 +8,8 @@ source:
   path: "knowledge/raw/D21_hayek_1945_use-of-knowledge-in-society.pdf"
   manifest_id: "D21-S04"
 compiled: "2026-04-08"
+status: 正典
+review_state: 未レビュー
 ---
 
 # 社会における知識の利用

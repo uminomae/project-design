@@ -8,6 +8,8 @@ source:
   path: "knowledge/raw/D11_wu_2014_chinese-medicine.pdf"
   manifest_id: "D11-S08"
 compiled: "2026-04-10"
+status: 正典
+review_state: 未レビュー
 ---
 
 # ネットワーク薬理学による漢方処方「君臣佐使」の検証

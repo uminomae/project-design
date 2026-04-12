@@ -8,6 +8,8 @@ source:
   path: "knowledge/raw/D25_barth_1969_ethnic-groups-intro.pdf"
   manifest_id: "D25-S05"
 compiled: "2026-04-10"
+status: 正典
+review_state: 未レビュー
 ---
 
 # 民族集団と境界（序論）

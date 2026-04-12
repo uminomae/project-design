@@ -8,6 +8,8 @@ source:
   path: "knowledge/raw/D25_vangennep_1909_rites-of-passage.pdf"
   manifest_id: "D25-S01b"
 compiled: "2026-04-10"
+status: 正典
+review_state: 未レビュー
 ---
 
 # Les rites de passage（仏語原典）

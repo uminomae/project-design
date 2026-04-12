@@ -8,6 +8,8 @@ source:
   path: "knowledge/raw/D16_ibn-khaldun_1377_muqaddimah.pdf"
   manifest_id: "D16-S08"
 compiled: "2026-04-10"
+status: 正典
+review_state: 未レビュー
 ---
 
 # ムカッディマ（歴史序説）

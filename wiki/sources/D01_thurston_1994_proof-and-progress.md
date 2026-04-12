@@ -8,6 +8,8 @@ source:
   path: "knowledge/raw/D01_thurston_1994_proof-and-progress.pdf"
   manifest_id: "D01-S04"
 compiled: "2026-04-10"
+status: 正典
+review_state: 未レビュー
 ---
 
 # 数学における証明と進歩について

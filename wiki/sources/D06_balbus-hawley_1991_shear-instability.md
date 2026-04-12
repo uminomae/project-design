@@ -7,6 +7,8 @@ source:
   repo: "creation-space"
   path: "knowledge/raw/D06_balbus-hawley_1991_shear-instability.pdf"
 compiled: "2026-04-11"
+status: 正典
+review_state: 未レビュー
 ---
 
 # 磁気回転不安定性 — 弱磁場降着円盤における強力な局所剪断不安定性

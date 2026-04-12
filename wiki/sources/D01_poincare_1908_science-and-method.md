@@ -8,6 +8,8 @@ source:
   path: "knowledge/raw/D01_poincare_1908_science-and-method.pdf"
   manifest_id: "D01-S05"
 compiled: "2026-04-10"
+status: 正典
+review_state: 未レビュー
 ---
 
 # 科学と方法

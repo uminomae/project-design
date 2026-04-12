@@ -7,6 +7,8 @@ source:
   repo: "project-design"
   path: "knowledge/evidence/awareness-model/durkheim-1897-suicide-social-integration.md"
 compiled: "2026-04-08"
+status: 正典
+review_state: 未レビュー
 ---
 
 # 自殺論 — 社会的統合と自己破壊の社会学的研究

@@ -8,6 +8,8 @@ source:
   path: "knowledge/raw/D11_ich_2023_q9-r1-guideline.pdf"
   manifest_id: "D11-S12"
 compiled: "2026-04-08"
+status: 正典
+review_state: 未レビュー
 ---
 
 # ICH Q9(R1) 品質リスクマネジメントガイドライン

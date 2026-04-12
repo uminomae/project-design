@@ -8,6 +8,8 @@ source:
   path: "knowledge/raw/D06_charbonneau_2010_dynamo-solar-cycle.pdf"
   manifest_id: "D06-S07"
 compiled: "2026-04-10"
+status: 正典
+review_state: 未レビュー
 ---
 
 # 太陽周期のダイナモモデル

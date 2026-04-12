@@ -8,6 +8,8 @@ source:
   path: "knowledge/raw/D02_zurek_2003_decoherence-einselection-quantum-origins-classical.pdf"
   manifest_id: "D02-S09"
 compiled: "2026-04-08"
+status: 正典
+review_state: 未レビュー
 ---
 
 # デコヒーレンス、アインセレクション、古典性の量子的起源

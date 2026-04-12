@@ -8,6 +8,8 @@ source:
   path: "knowledge/raw/D06_planck-collaboration_2016_cosmological-parameters.pdf"
   manifest_id: "D06-S08"
 compiled: "2026-04-08"
+status: 正典
+review_state: 未レビュー
 ---
 
 # Planck 2015 年成果 XIII. 宇宙論的パラメータ

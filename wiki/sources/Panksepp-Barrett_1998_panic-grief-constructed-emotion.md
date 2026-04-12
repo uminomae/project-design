@@ -7,6 +7,8 @@ source:
   repo: "project-design"
   path: "knowledge/evidence/awareness-model/panksepp-panic-grief-vs-barrett-constructed-emotion.md"
 compiled: "2026-04-08"
+status: 正典
+review_state: 未レビュー
 ---
 
 # PANIC/GRIEFシステムと構成主義情動理論の論争

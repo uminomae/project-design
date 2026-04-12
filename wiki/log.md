@@ -13,6 +13,29 @@ compile 実行の履歴。append-only。
 - duration: {所要時間}
 -->
 
+## [2026-04-11] compile | Step 3b wiki-gen auto-execute + DOI/URL 一括追加
+- scope: Step 3b（wiki-gen auto-execute, sources 書誌拡充, 原典解説追加）
+- sources: 7（未生成PDF 5件: D10_akdis, D10_rosenblum, D12_maff, D12_stern, D02_rayleigh）+ D16 Toynbee解説 + 既存 sources 103件
+- pages: 原典解説 6件新規（上記 5 + D16 Toynbee）+ sources 103件に DOI/OA URL 追加
+- updates: .claude/skills/wiki-compile/SKILL.md に DOI/URL 自動付与ルール追加、wiki-gen-check.sh 新設
+- commits: 3f685d5, 4b7aabb, 7620b26, ca897d0
+- notes: wiki-gen inbox の auto-execute フローが稼働。残7件は DOI 非該当（intersubjectivity 4件、JETP/書籍章/Hilgardia 3件）。
+
+## [2026-04-10] compile | Step 3b 一括 PDF解説ページ生成 + 4層モデル除去
+- scope: Step 3b（knowledge/raw/*.pdf → sources/ 原典解説ページ一括生成）+ リファクタリング
+- sources: 56（D01-D30 の creation-space 原典 PDF）
+- pages: sources/ 56ページ新規 + 4層モデル関連ファイル全除去（#63）+ PD関連セクション整理
+- updates: index.md 自動生成スクリプト追加, compile-content-links.mjs export 化（as#125）
+- commits: 194eadb, 91e0ccc, 3350961, 90286ee
+- notes: wiki-compile Step 3b 仕組み確立。index.md の維持を自動化。4層モデル非採用決定に伴う除去。
+
+## [2026-04-08] compile | cross-refs/awareness-space-overview v2照合 + アウェアネスモデル v3
+- scope: 既存 compile ページの v2 照合と新規 concept ページ追加
+- sources: awareness-space knowledge/topics/four-layers/ja/, survival-trust-axis/ja/
+- pages: cross-refs/awareness-space-overview.md（review_state: v2照合済）、concepts/アウェアネスモデル.md 新規、entities/ 一部更新（ocr_verified 付与）
+- commits: 0606e50 以降（techo#108, #120 連携）
+- notes: as knowledge の v2 系列を wiki に取り込み、entities/間主観性 を v2照合中状態に変更。ocr_verified フィールド導入。
+
 ## [2026-04-06] compile | Step 3 P3 finalize (cross-refs overview + wikilink meta + health check)
 - scope: Step 3 P3（仕上げ: overview ページ + wikilink メタ + health check + about 更新）
 - sources: wiki 内データ（集約ページ）

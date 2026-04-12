@@ -8,6 +8,8 @@ source:
   path: "knowledge/raw/D14_varela_1991_embodied-mind.pdf"
   manifest_id: "D14-S01"
 compiled: "2026-04-08"
+status: 正典
+review_state: 未レビュー
 ---
 
 # 身体化された心（The Embodied Mind）

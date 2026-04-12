@@ -8,6 +8,8 @@ source:
   path: "knowledge/raw/D21_keynes_1936_general-theory.pdf"
   manifest_id: "D21-S07"
 compiled: "2026-04-10"
+status: 正典
+review_state: 未レビュー
 ---
 
 # 雇用・利子および貨幣の一般理論

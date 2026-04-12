@@ -8,6 +8,8 @@ source:
   path: "knowledge/raw/D04_sagan_1967_origin-mitosing-cells.pdf"
   manifest_id: "D04-S08"
 compiled: "2026-04-10"
+status: 正典
+review_state: 未レビュー
 ---
 
 # 有糸分裂細胞の起源

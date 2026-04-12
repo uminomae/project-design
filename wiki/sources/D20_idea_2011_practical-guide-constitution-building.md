@@ -8,6 +8,8 @@ source:
   path: "knowledge/raw/D20_idea_2011_practical-guide-constitution-building.pdf"
   manifest_id: "D20-S06"
 compiled: "2026-04-08"
+status: 正典
+review_state: 未レビュー
 ---
 
 # 憲法制定の実践ガイド

@@ -8,6 +8,8 @@ source:
   path: "knowledge/raw/D23_kinoshita_2001_self-image.pdf"
   manifest_id: "D23-S06"
 compiled: "2026-04-10"
+status: 正典
+review_state: 未レビュー
 ---
 
 # 幼児は自己映像を「自分のこと」として見ているか？

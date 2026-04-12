@@ -8,6 +8,8 @@ source:
   path: "knowledge/raw/D13_dewey_1933_how-we-think-restatement.pdf"
   manifest_id: "D13-S06"
 compiled: "2026-04-10"
+status: 正典
+review_state: 未レビュー
 ---
 
 # 思考の方法（1933年改訂版）

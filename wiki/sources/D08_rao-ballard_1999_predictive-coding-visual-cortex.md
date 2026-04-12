@@ -8,6 +8,8 @@ source:
   path: "knowledge/raw/D08_rao-ballard_1999_predictive-coding-visual-cortex.pdf"
   manifest_id: "D08-S01"
 compiled: "2026-04-10"
+status: 正典
+review_state: 未レビュー
 ---
 
 # 視覚皮質における予測符号化

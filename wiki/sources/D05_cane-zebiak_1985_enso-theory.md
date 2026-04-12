@@ -8,6 +8,8 @@ source:
   path: "knowledge/raw/D05_cane-zebiak_1985_enso-theory.pdf"
   manifest_id: "D05-S08"
 compiled: "2026-04-10"
+status: 正典
+review_state: 未レビュー
 ---
 
 # エルニーニョと南方振動の理論

@@ -8,6 +8,8 @@ source:
   path: "knowledge/raw/D23_kegan_1982_evolving-self.pdf"
   manifest_id: "D23-S01"
 compiled: "2026-04-10"
+status: 正典
+review_state: 未レビュー
 ---
 
 # 進化する自己

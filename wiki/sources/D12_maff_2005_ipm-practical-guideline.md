@@ -8,6 +8,8 @@ source:
   path: "knowledge/raw/D12_maff_2005_ipm-practical-guideline.pdf"
   manifest_id: "D12-S07"
 compiled: "2026-04-08"
+status: 正典
+review_state: 未レビュー
 ---
 
 # 総合的病害虫・雑草管理（IPM）実践指針

@@ -10,6 +10,8 @@ source:
   ocr: "knowledge/raw/ocr/D24-S10_suzuki_1935.md"
 compiled: "2026-04-08"
 ocr_verified: true
+status: 正典
+review_state: 未レビュー
 ---
 
 # 禅仏教提要

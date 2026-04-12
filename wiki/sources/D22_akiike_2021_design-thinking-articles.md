@@ -8,6 +8,8 @@ source:
   path: "knowledge/raw/D22_akiike_2021_design-thinking-articles.pdf"
   manifest_id: "D22-S07"
 compiled: "2026-04-08"
+status: 正典
+review_state: 未レビュー
 ---
 
 # デザイン思考論文に求められる要件とは何か

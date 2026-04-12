@@ -8,6 +8,8 @@ source:
   path: "knowledge/raw/D11_li_2014_network-pharmacology-qishenyiqi.pdf"
   manifest_id: "D11-S09"
 compiled: "2026-04-08"
+status: 正典
+review_state: 未レビュー
 ---
 
 # 漢方薬QiShenYiQiのネットワーク薬理学研究

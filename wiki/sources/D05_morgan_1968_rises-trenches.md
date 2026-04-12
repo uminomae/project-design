@@ -7,6 +7,8 @@ source:
   repo: "creation-space"
   path: "knowledge/raw/D05_morgan_1968_rises-trenches.pdf"
 compiled: "2026-04-11"
+status: 正典
+review_state: 未レビュー
 ---
 
 # プレートテクトニクスの数理的基礎 — 剛体球面ブロックモデルによる地殻運動の記述

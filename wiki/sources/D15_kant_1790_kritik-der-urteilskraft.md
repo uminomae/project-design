@@ -8,6 +8,8 @@ source:
   path: "knowledge/raw/D15_kant_1790_kritik-der-urteilskraft.pdf"
   manifest_id: "D15-S07"
 compiled: "2026-04-10"
+status: 正典
+review_state: 未レビュー
 ---
 
 # 判断力批判

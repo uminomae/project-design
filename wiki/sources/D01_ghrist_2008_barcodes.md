@@ -8,6 +8,8 @@ source:
   path: "knowledge/raw/D01_ghrist_2008_barcodes.pdf"
   manifest_id: "D01-S03"
 compiled: "2026-04-10"
+status: 正典
+review_state: 未レビュー
 ---
 
 # バーコード：データの永続的位相

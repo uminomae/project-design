@@ -8,6 +8,8 @@ source:
   path: "knowledge/raw/D18_durkheim_1893_division-labor.pdf"
   manifest_id: "D18-S01"
 compiled: "2026-04-08"
+status: 正典
+review_state: 未レビュー
 ---
 
 # 社会分業論 / De la division du travail social

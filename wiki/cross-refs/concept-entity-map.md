@@ -3,6 +3,8 @@ title: "Concept-Entity Map"
 compiled: "2026-04-06"
 last_verified: "2026-04-06"
 tags: [cross-ref, map]
+status: 暫定
+review_state: 未レビュー
 ---
 
 # Concept-Entity Map

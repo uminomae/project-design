@@ -8,6 +8,8 @@ source:
   path: "knowledge/raw/D10_akdis_2014_allergen-immunotherapy.pdf"
   manifest_id: "D10-S01"
 compiled: "2026-04-08"
+status: 正典
+review_state: 未レビュー
 ---
 
 # アレルゲン免疫療法の新治療戦略

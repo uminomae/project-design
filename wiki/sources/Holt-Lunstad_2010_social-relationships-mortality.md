@@ -7,6 +7,8 @@ source:
   repo: "project-design"
   path: "knowledge/evidence/awareness-model/holt-lunstad-social-relationships-mortality-meta-analyses.md"
 compiled: "2026-04-08"
+status: 正典
+review_state: 未レビュー
 ---
 
 # 社会的関係と死亡リスク — 二大メタ分析

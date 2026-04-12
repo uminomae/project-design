@@ -8,6 +8,8 @@ source:
   path: "knowledge/raw/D15_nose_1944_yugenron_part1.pdf"
   manifest_id: "D15-S06"
 compiled: "2026-04-10"
+status: 正典
+review_state: 未レビュー
 ---
 
 # 幽玄論

@@ -10,6 +10,8 @@ source:
   ocr: "knowledge/raw/ocr/D28-S01_zeami_classics.md"
 compiled: "2026-04-08"
 ocr_verified: true
+status: 正典
+review_state: 未レビュー
 ---
 
 # 世阿弥十六部集

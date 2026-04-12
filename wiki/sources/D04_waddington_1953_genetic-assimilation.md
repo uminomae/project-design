@@ -8,6 +8,8 @@ source:
   path: "knowledge/raw/D04_waddington_1953_genetic-assimilation.pdf"
   manifest_id: "D04-S05"
 compiled: "2026-04-10"
+status: 正典
+review_state: 未レビュー
 ---
 
 # 遺伝的同化――獲得形質の遺伝

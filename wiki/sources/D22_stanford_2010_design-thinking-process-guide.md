@@ -8,6 +8,8 @@ source:
   path: "knowledge/raw/D22_stanford_2010_design-thinking-process-guide.pdf"
   manifest_id: "D22-S05"
 compiled: "2026-04-08"
+status: 正典
+review_state: 未レビュー
 ---
 
 # デザイン思考プロセスガイド

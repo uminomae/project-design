@@ -8,6 +8,8 @@ source:
   path: "knowledge/raw/D15_motoori_1799_tama-no-ogushi.pdf"
   manifest_id: "D15-S04"
 compiled: "2026-04-10"
+status: 正典
+review_state: 未レビュー
 ---
 
 # 源氏物語玉の小櫛

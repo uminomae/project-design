@@ -8,6 +8,8 @@ source:
   path: "knowledge/raw/D29_clauset_2007_power-law-distributions.pdf"
   manifest_id: "D29-S06"
 compiled: "2026-04-10"
+status: 正典
+review_state: 未レビュー
 ---
 
 # 実証データにおけるべき乗則分布

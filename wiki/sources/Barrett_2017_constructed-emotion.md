@@ -7,6 +7,8 @@ source:
   repo: "project-design"
   path: "knowledge/evidence/awareness-model/barrett-2017-constructed-emotion.md"
 compiled: "2026-04-08"
+status: 正典
+review_state: 未レビュー
 ---
 
 # 構成主義的情動理論 — 情動は予測・内受容感覚・概念から構成される

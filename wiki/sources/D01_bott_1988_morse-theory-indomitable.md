@@ -8,6 +8,8 @@ source:
   path: "knowledge/raw/D01_bott_1988_morse-theory-indomitable.pdf"
   manifest_id: "D01-S01"
 compiled: "2026-04-08"
+status: 正典
+review_state: 未レビュー
 ---
 
 # モース理論 不屈の研究

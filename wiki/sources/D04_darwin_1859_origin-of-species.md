@@ -8,6 +8,8 @@ source:
   path: "knowledge/raw/D04_darwin_1859_origin-of-species.pdf"
   manifest_id: "D04-S01"
 compiled: "2026-04-10"
+status: 正典
+review_state: 未レビュー
 ---
 
 # 種の起源

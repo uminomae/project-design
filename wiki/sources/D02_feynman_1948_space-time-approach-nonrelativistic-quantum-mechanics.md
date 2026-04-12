@@ -10,6 +10,8 @@ source:
   ocr: "knowledge/raw/ocr/D02-S01_feynman_1948.md"
 compiled: "2026-04-08"
 ocr_verified: true
+status: 正典
+review_state: 未レビュー
 ---
 
 # 非相対論的量子力学への時空アプローチ

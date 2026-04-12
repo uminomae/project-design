@@ -8,6 +8,8 @@ source:
   path: "knowledge/raw/D10_rosenblum_2015_autoimmunity.pdf"
   manifest_id: "D10-S02"
 compiled: "2026-04-08"
+status: 正典
+review_state: 未レビュー
 ---
 
 # ヒト自己免疫疾患のメカニズム
