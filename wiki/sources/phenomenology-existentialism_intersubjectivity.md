@@ -2,11 +2,13 @@
 title: "現象学・実存主義における間主観性"
 description: "Husserl・Heidegger・Merleau-Ponty・Buberの4思想家を通じ、間主観性が個的存在の付加物ではなく存在の構成条件であることを哲学的に論じた原典ノートのwikiページ。"
 aliases: ["Phenomenology and Existentialism: Intersubjectivity"]
-tags: ["awareness-model", "原典解説", "哲学", "現象学", "実存主義", "間主観性"]
+tags: [source, "awareness-model", "原典解説", "哲学", "現象学", "実存主義", "間主観性"]
 source:
   repo: "project-design"
   path: "knowledge/evidence/awareness-model/phenomenology-existentialism-intersubjectivity.md"
 compiled: "2026-04-08"
+status: 正典
+review_state: 未レビュー
 ---
 
 # 現象学・実存主義における間主観性

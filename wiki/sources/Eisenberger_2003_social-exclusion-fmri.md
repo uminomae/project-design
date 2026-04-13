@@ -2,11 +2,13 @@
 title: "社会的排除は痛みを伴うか — fMRI研究"
 description: "社会的排除（Cyberballパラダイム）が身体的痛みと同じ脳領域（背側前帯状皮質）を活性化することをfMRIで初めて実証した。社会的痛みと身体的痛みの神経基盤重複仮説の起点となった論文。"
 aliases: ["Does Rejection Hurt? An fMRI Study of Social Exclusion"]
-tags: ["awareness-model", "原典解説"]
+tags: [source, "awareness-model", "原典解説"]
 source:
   repo: "project-design"
   path: "knowledge/evidence/awareness-model/eisenberger-2003-social-exclusion-fmri.md"
 compiled: "2026-04-08"
+status: 正典
+review_state: 未レビュー
 ---
 
 # 社会的排除は痛みを伴うか — fMRI研究

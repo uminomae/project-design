@@ -2,12 +2,14 @@
 title: "身体化された心（The Embodied Mind）"
 description: "認知を「表象」ではなく「身体化された行為（enaction）」として捉え直し、認知科学と仏教の瞑想心理学との対話を通じて「経験する主体の非統一性」を探求した認知科学の古典的著作。"
 aliases: ["The Embodied Mind", "Varela Thompson Rosch 1991"]
-tags: ["D14", "原典解説"]
+tags: [source, "D14", "原典解説"]
 source:
   repo: "creation-space"
   path: "knowledge/raw/D14_varela_1991_embodied-mind.pdf"
   manifest_id: "D14-S01"
 compiled: "2026-04-08"
+status: 正典
+review_state: 未レビュー
 ---
 
 # 身体化された心（The Embodied Mind）
@@ -53,3 +55,4 @@ Merleau-Pontyに倣い、身体化を2つの意味で用いる。
 - 年: 1991
 - 出典: The MIT Press（Cambridge, Massachusetts）
 - access_status: raw-confirmed
+- **ISBN**: 978-0-262-72021-2

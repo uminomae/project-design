@@ -2,11 +2,13 @@
 title: "PANIC/GRIEFシステムと構成主義情動理論の論争"
 description: "Pankseppによる哺乳類の7基本情動システム（特にPANIC/GRIEF: 分離苦痛回路）と、Barrettの構成主義情動理論（TCE）の対立を整理する。2006-2017年にわたる公刊論争の構造と、2025年時点での未解決状況を示す。"
 aliases: ["Affective Neuroscience", "Theory of Constructed Emotion", "Basic Emotion Theory"]
-tags: ["awareness-model", "原典解説"]
+tags: [source, "awareness-model", "原典解説"]
 source:
   repo: "project-design"
   path: "knowledge/evidence/awareness-model/panksepp-panic-grief-vs-barrett-constructed-emotion.md"
 compiled: "2026-04-08"
+status: 正典
+review_state: 未レビュー
 ---
 
 # PANIC/GRIEFシステムと構成主義情動理論の論争
@@ -19,7 +21,7 @@ Jaak Panksepp（1943-2017）は哺乳類の脳に進化的に保存された7つ
 
 ### Panksepp 主要文献
 
-- Panksepp, J. (1998). *Affective Neuroscience: The Foundations of Human and Animal Emotions*. Oxford University Press.
+- Panksepp, J. (1998). *Affective Neuroscience: The Foundations of Human and Animal Emotions*. Oxford University Press. **DOI**: [10.1093/oso/9780195096736.001.0001](https://doi.org/10.1093/oso/9780195096736.001.0001)
 - Panksepp, J. (2007). Neurologizing the Psychology of Affects. *Perspectives on Psychological Science*, 2(3), 281-296.
 - Panksepp, J. (2008). Cognitive Conceptualism — Where Have All the Affects Gone? *Perspectives on Psychological Science*, 3(4), 305-308.
 - Panksepp, J. (2011). The basic emotional circuits of mammalian brains: Do animals have affective lives? *Neuroscience & Biobehavioral Reviews*, 35(9), 1791-1804.

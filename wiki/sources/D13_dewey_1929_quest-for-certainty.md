@@ -2,12 +2,14 @@
 title: "確実性の探求"
 description: "デューイ（1929）によるギフォード講演録。知識と行為の二元論の歴史的起源を批判し、実践（行為・制作）を認識と等価に位置づけることで哲学の転換を提唱した認識論の主著。"
 aliases: ["The Quest for Certainty", "Dewey knowledge and action"]
-tags: ["D13", "原典解説"]
+tags: [source, "D13", "原典解説"]
 source:
   repo: "creation-space"
   path: "knowledge/raw/D13_dewey_1929_quest-for-certainty.pdf"
   manifest_id: "D13-S08"
 compiled: "2026-04-10"
+status: 正典
+review_state: 未レビュー
 ---
 
 # 確実性の探求
@@ -48,3 +50,4 @@ compiled: "2026-04-10"
 - 年: 1929
 - 出典: G. P. Putnam's Sons / Minton, Balch and Company, New York（ギフォード講演, 1929年）
 - access_status: raw-confirmed
+- **全文**: [Internet Archive](https://archive.org/details/questforcertaint0000john_n0z8)

@@ -2,12 +2,14 @@
 title: "トポロジーとデータ"
 description: "位相的データ解析（TDA）の基礎を確立した論文。高次元・ノイズを含むデータの形状を永続ホモロジーによって捉える手法を体系的に提示する。"
 aliases: ["Topology and Data"]
-tags: ["D01", "原典解説"]
+tags: [source, "D01", "原典解説"]
 source:
   repo: "creation-space"
   path: "knowledge/raw/D01_carlsson_2009_topology-and-data.pdf"
   manifest_id: "D01-S02"
 compiled: "2026-04-10"
+status: 正典
+review_state: 未レビュー
 ---
 
 # トポロジーとデータ
@@ -44,3 +46,5 @@ Gunnar Carlsson による2009年の論文で、位相的データ解析（TDA: T
 - 年: 2009
 - 出典: Bulletin of the American Mathematical Society, Vol. 46, No. 2, pp. 255–308
 - access_status: raw-confirmed
+- **DOI**: [10.1090/S0273-0979-09-01249-X](https://doi.org/10.1090/S0273-0979-09-01249-X)
+- **オープンアクセス**: [PDF](https://www.ams.org/bull/2009-46-02/S0273-0979-09-01249-X/S0273-0979-09-01249-X.pdf)

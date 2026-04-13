@@ -2,12 +2,14 @@
 title: "ICH Q8(R2) 医薬品開発ガイドライン"
 description: "医薬品の規制申請における開発セクション（3.2.P.2）の内容と、Quality by Design（QbD）アプローチに基づくデザインスペース・コントロール戦略の概念を規定したICHガイドライン。"
 aliases: ["Q8(R2) Pharmaceutical Development Guideline", "ICH Q8 R2"]
-tags: ["D11", "原典解説"]
+tags: [source, "D11", "原典解説"]
 source:
   repo: "creation-space"
   path: "knowledge/raw/D11_ich_2009_q8-r2-guideline.pdf"
   manifest_id: "D11-S10"
 compiled: "2026-04-08"
+status: 正典
+review_state: 未レビュー
 ---
 
 # ICH Q8(R2) 医薬品開発ガイドライン
@@ -51,3 +53,4 @@ ICH Q8(R2)は、医薬品の規制申請書類においてCTD（Common Technical
 - 年: 2009（改訂版 Q8(R2)）
 - 出典: ICH Harmonised Tripartite Guideline Q8(R2)
 - access_status: raw-confirmed
+- **公式URL**: [ICH Q8(R2)](https://database.ich.org/sites/default/files/Q8_R2_Guideline.pdf)

@@ -2,12 +2,14 @@
 title: "暗号の新方向"
 description: "公開鍵暗号と一方向関数の概念を初めて提唱し、事前の鍵共有なしに安全な通信と電子署名を実現するアイデアを提示したディフィーとヘルマンの論文。"
 aliases: ["New Directions in Cryptography"]
-tags: ["D07", "原典解説"]
+tags: [source, "D07", "原典解説"]
 source:
   repo: "creation-space"
   path: "knowledge/raw/D07_diffie-hellman_1976_new-directions-cryptography.pdf"
   manifest_id: "D07-S10"
 compiled: "2026-04-10"
+status: 正典
+review_state: 未レビュー
 ---
 
 # 暗号の新方向
@@ -44,3 +46,4 @@ compiled: "2026-04-10"
 - 年: 1976
 - 出典: IEEE Transactions on Information Theory, IT-22(6), 644-654
 - access_status: raw-confirmed
+- **DOI**: [10.1109/TIT.1976.1055638](https://doi.org/10.1109/TIT.1976.1055638)

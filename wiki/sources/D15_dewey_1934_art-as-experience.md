@@ -2,12 +2,14 @@
 title: "経験としての芸術（美学・芸術哲学の観点）"
 description: "デューイ（1934）による美学哲学の主著。芸術を生の経験の完成形として論じ、審美的経験の条件・表現の論理・形式と素材の関係を展開したプラグマティスト美学の基礎文献。"
 aliases: ["Art as Experience D15", "Dewey aesthetics philosophy"]
-tags: ["D15", "原典解説"]
+tags: [source, "D15", "原典解説"]
 source:
   repo: "creation-space"
   path: "knowledge/raw/D13_dewey_1934_art-as-experience.pdf"
   manifest_id: "D15-S09"
 compiled: "2026-04-10"
+status: 正典
+review_state: 未レビュー
 ---
 
 # 経験としての芸術（美学・芸術哲学の観点）
@@ -53,3 +55,4 @@ compiled: "2026-04-10"
 - 年: 1934
 - 出典: G. P. Putnam's Sons, New York（William James Lectureship, Harvard University, 1931年講演）
 - access_status: raw-confirmed
+- **全文**: [Internet Archive](https://archive.org/details/art-as-experience-dewey)

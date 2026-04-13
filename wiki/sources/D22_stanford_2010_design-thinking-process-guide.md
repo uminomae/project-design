@@ -2,12 +2,14 @@
 title: "デザイン思考プロセスガイド"
 description: "スタンフォード大学d.schoolが2010年に作成したデザイン思考の入門プロセスガイド。共感・定義・発想・試作・テストの5段階プロセスを各段階の意義と実践方法とともに解説する。"
 aliases: ["An Introduction to Design Thinking PROCESS GUIDE", "Design Thinking Process Guide"]
-tags: ["D22", "原典解説"]
+tags: [source, "D22", "原典解説"]
 source:
   repo: "creation-space"
   path: "knowledge/raw/D22_stanford_2010_design-thinking-process-guide.pdf"
   manifest_id: "D22-S05"
 compiled: "2026-04-08"
+status: 正典
+review_state: 未レビュー
 ---
 
 # デザイン思考プロセスガイド
@@ -46,3 +48,4 @@ compiled: "2026-04-08"
 - 年: 2010
 - 出典: Stanford University d.school（An Introduction to Design Thinking PROCESS GUIDE）
 - access_status: raw-confirmed
+- **オープンアクセス**: [Stanford d.school](https://dschool.stanford.edu/)

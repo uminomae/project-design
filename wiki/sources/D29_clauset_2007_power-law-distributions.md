@@ -2,12 +2,14 @@
 title: "実証データにおけるべき乗則分布"
 description: "クラウゼット、シャリジ、ニューマン（2007）によるべき乗則の統計的検定手法の提案。最尤推定法とKS統計量を用いた正確なパラメータ推定と適合度検定の方法論を確立した。"
 aliases: ["Power-law distributions in empirical data", "Clauset 2007 power law"]
-tags: ["D29", "原典解説"]
+tags: [source, "D29", "原典解説"]
 source:
   repo: "creation-space"
   path: "knowledge/raw/D29_clauset_2007_power-law-distributions.pdf"
   manifest_id: "D29-S06"
 compiled: "2026-04-10"
+status: 正典
+review_state: 未レビュー
 ---
 
 # 実証データにおけるべき乗則分布
@@ -47,3 +49,5 @@ compiled: "2026-04-10"
 - 年: 2007（arXiv: 2007年6月）、査読誌掲載は後年
 - 出典: arXiv:0706.1062 [physics.data-an]
 - access_status: raw-confirmed
+- **DOI**: [10.1137/070710111](https://doi.org/10.1137/070710111)
+- **オープンアクセス**: [arXiv PDF](https://arxiv.org/pdf/0706.1062)

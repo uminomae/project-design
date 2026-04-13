@@ -2,12 +2,14 @@
 title: "コンタクト・ゾーンの技法"
 description: "言語学者メアリー・ルイーズ・プラットが1991年に発表した論文。権力の非対称な文化接触の場を「コンタクト・ゾーン」と定義し、そこで生まれる異文化横断的な言語・テキスト実践の技法を論じる。"
 aliases: ["Arts of the Contact Zone"]
-tags: ["D25", "原典解説"]
+tags: [source, "D25", "原典解説"]
 source:
   repo: "creation-space"
   path: "knowledge/raw/D25_pratt_1991_arts-of-the-contact-zone.pdf"
   manifest_id: "D25-S10"
 compiled: "2026-04-08"
+status: 正典
+review_state: 未レビュー
 ---
 
 # コンタクト・ゾーンの技法
@@ -47,3 +49,4 @@ compiled: "2026-04-08"
 - 年: 1991
 - 出典: Profession 91, MLA（後に Ways of Reading, 5th edition, Bedford/St. Martin's, 1999 に収録）
 - access_status: raw-confirmed
+- **オープンアクセス**: [PDF（Texas State University）](https://www.txstate.edu/)

@@ -2,12 +2,14 @@
 title: "モース理論 不屈の研究"
 description: "ラウル・ボットによるモース理論の歴史的発展を振り返る講演論文。臨界点理論から始まりフロアー理論に至るまでの数学的系譜を解説する。"
 aliases: ["Morse Theory Indomitable"]
-tags: ["D01", "原典解説"]
+tags: [source, "D01", "原典解説"]
 source:
   repo: "creation-space"
   path: "knowledge/raw/D01_bott_1988_morse-theory-indomitable.pdf"
   manifest_id: "D01-S01"
 compiled: "2026-04-08"
+status: 正典
+review_state: 未レビュー
 ---
 
 # モース理論 不屈の研究
@@ -44,3 +46,4 @@ M_t(f) - P_t(M; K) = (1 + t) Q_t(f; K)
 - 年: 1988
 - 出典: Publications Mathématiques de l'I.H.É.S., tome 68, pp. 99-114
 - access_status: raw-confirmed
+- **DOI**: [10.1007/BF02564666](https://doi.org/10.1007/BF02564666)

@@ -2,12 +2,14 @@
 title: "源氏物語玉の小櫛"
 description: "本居宣長による源氏物語の注釈書。「もののあはれ」論の体系的展開を通じて日本美学の基礎概念を確立した。"
 aliases: ["Tama no Ogushi - Commentary on The Tale of Genji"]
-tags: ["D15", "原典解説"]
+tags: [source, "D15", "原典解説"]
 source:
   repo: "creation-space"
   path: "knowledge/raw/D15_motoori_1799_tama-no-ogushi.pdf"
   manifest_id: "D15-S04"
 compiled: "2026-04-10"
+status: 正典
+review_state: 未レビュー
 ---
 
 # 源氏物語玉の小櫛
@@ -40,3 +42,4 @@ compiled: "2026-04-10"
 - 年: 1799年（寛政11年）
 - 出典: 本居宣長全集（筑摩書房）に所収
 - access_status: raw-confirmed
+- **全文**: [Wikimedia Commons](https://commons.wikimedia.org/)

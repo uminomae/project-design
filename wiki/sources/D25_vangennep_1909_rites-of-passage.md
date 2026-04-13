@@ -2,12 +2,14 @@
 title: "Les rites de passage（仏語原典）"
 description: "アルノルト・ファン・ヘネップによる通過儀礼論の仏語原典（1909）。英訳版（1960）と同一の著作であり、原典として分離・過渡・統合の三相構造を初めて体系化した人類学の基礎文献。"
 aliases: ["Les rites de passage", "van Gennep 1909", "通過儀礼 原典"]
-tags: ["D25", "原典解説"]
+tags: [source, "D25", "原典解説"]
 source:
   repo: "creation-space"
   path: "knowledge/raw/D25_vangennep_1909_rites-of-passage.pdf"
   manifest_id: "D25-S01b"
 compiled: "2026-04-10"
+status: 正典
+review_state: 未レビュー
 ---
 
 # Les rites de passage（仏語原典）
@@ -51,3 +53,4 @@ compiled: "2026-04-10"
 - 年: 1909
 - 出典: Librairie Critique, Paris（原著）；英訳: The University of Chicago Press, 1960
 - access_status: raw-confirmed
+- **全文**: [Internet Archive（英訳1960年版）](https://archive.org/details/theritesofpassage)

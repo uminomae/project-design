@@ -110,6 +110,10 @@ GitHub Pages に公開
 ```markdown
 # {原典タイトル}
 
+> **高校生向けのやさしい解説**
+>
+> {専門用語を避け、高校生が読んで「なるほど」と思える平易な日本語で概要を書く。2-4文。身近な例やたとえを1つ入れる。}
+
 ## 概要
 {原典の概要 3-5文。PDF の内容に基づく}
 
@@ -129,7 +133,74 @@ GitHub Pages に公開
 - 年: {year}
 - 出典: {journal/publisher}
 - access_status: raw-confirmed
+- **DOI**: [{doi}](https://doi.org/{doi})           ← manifest notes に DOI があれば
+- **オープンアクセス**: [PDF]({oa_url})              ← manifest notes に OA URL があれば
+- **全文**: [{source_name}]({url})                   ← 書籍の場合、archive.org 等の安定URL
+- **公式URL**: [{org_name}]({url})                   ← 公的文書の場合
+- **ISBN**: {isbn}                                   ← 書籍で DOI がない場合
 ```
+
+### DOI/URL 追加ルール
+
+wiki ソースページ生成時、manifest の notes 列から DOI / OA URL を抽出し、書誌情報に含める。
+
+**優先順位**:
+1. **DOI** — 論文であれば最優先。`DOI: 10.xxxx` の形式で manifest notes に記載されている場合
+2. **OA URL** — `OA: https://...` の形式で manifest notes に記載されている場合
+3. **安定 URL** — archive.org, Wikimedia Commons, NDL, 著者ページ等。manifest notes のキーワードから推定
+4. **公式 URL** — ICH, MAFF, CBD 等の公的文書
+5. **ISBN** — 書籍で上記がない場合
+
+**DOI の取得元**:
+- manifest notes に明示されている DOI
+- 論文の場合: 著者名・年・雑誌名・巻号から既知の DOI（主要ジャーナルの DOI パターンは安定）
+- DOI が不明な場合は空欄のまま生成し、後で追加する
+
+**フォーマット**:
+- DOI: `- **DOI**: [10.xxxx](https://doi.org/10.xxxx)`
+- OA: `- **オープンアクセス**: [PDF](https://...)`
+- 全文: `- **全文**: [Internet Archive](https://archive.org/...)`
+- 公式: `- **公式URL**: [機関名](https://...)`
+- ISBN: `- **ISBN**: 978-x-xxx-xxxxx-x`
+
+**DOI なしの正当なケース**（無理に追加しない）:
+- JETP 等のソ連時代の雑誌（標準 DOI なし）
+- 書籍の章（Eldredge-Gould 1972 等）
+- Hilgardia 等の廃刊誌
+- 複数文献のまとめページ（intersubjectivity 系）
+
+### 高校生向け解説ルール（全ページ型共通）
+
+全 wiki ページ（concepts/, entities/, sources/, cross-refs/）の `# タイトル` 直後、最初の `## ` セクションの前に、blockquote 形式で「高校生向けのやさしい解説」を配置する。
+
+**形式**:
+```markdown
+# {タイトル}
+
+> **高校生向けのやさしい解説**
+>
+> {解説テキスト}
+
+## 概要
+...
+```
+
+**執筆ガイドライン**:
+- **分量**: 2-4文（80-160字程度）
+- **語彙**: 専門用語を使わない。使う場合は直後にかみ砕いた説明を添える
+- **具体性**: 身近な例・たとえ・日常の場面を1つ以上入れる
+- **トーン**: 教科書調ではなく、語りかける調子。「〜かもしれません」「〜ですよね」等は自然に使ってよい
+- **正確性**: やさしくしても内容を歪めない。概念の核心を捉えた要約にする
+- **wikilink**: 高校生向け解説の中では [[]] を使わない（平文のまま）
+- **対象外ページ**: index.md, log.md, health/ レポートには付けない
+
+**ページ型ごとの焦点**:
+| ページ型 | 解説の焦点 |
+|---------|-----------|
+| concepts/ | 「この考え方が何の役に立つか」を伝える |
+| entities/ | 「この人（理論）は何を言っているのか」を伝える |
+| sources/ | 「この論文（本）は何を明らかにしたのか」を伝える |
+| cross-refs/ | 「ここでは何と何のつながりを見ているか」を伝える |
 
 ### 設計原則（暫定）
 1. **原典の内容が解説されていること** — 最優先

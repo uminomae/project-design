@@ -2,12 +2,14 @@
 title: "通過儀礼（英訳版）"
 description: "アルノルト・ファン・ヘネップ『Les rites de passage』（1909）のモニカ・ヴィゼドム＆ガブリエル・カフィーによる英訳（1960）。分離・過渡・統合の三相構造として通過儀礼を体系化した人類学の古典。"
 aliases: ["The Rites of Passage", "van Gennep 1960", "rites de passage English"]
-tags: ["D25", "原典解説"]
+tags: [source, "D25", "原典解説"]
 source:
   repo: "creation-space"
   path: "knowledge/raw/D25_van-gennep_1960_rites-of-passage.pdf"
   manifest_id: "D25-S01"
 compiled: "2026-04-10"
+status: 正典
+review_state: 未レビュー
 ---
 
 # 通過儀礼（英訳版）
@@ -47,3 +49,4 @@ compiled: "2026-04-10"
 - 年: 1960（英訳版）、原著1909
 - 出典: The University of Chicago Press
 - access_status: raw-confirmed
+- **全文**: [Internet Archive](https://archive.org/details/theritesofpassage)

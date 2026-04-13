@@ -2,12 +2,14 @@
 title: "茶事における場の共創：「一座建立」の意味空間"
 description: "松木孝和・沼田秀穂（2021）による体験茶事の実証研究。インターネット予約を通じて茶道未経験者が参加した茶事において、亭主と客の間に「一座建立」（場の共創）が成立することを確認した。"
 aliases: ["Ichizakonryu", "Matsuki Numata 2021", "一座建立"]
-tags: ["D30", "原典解説"]
+tags: [source, "D30", "原典解説"]
 source:
   repo: "creation-space"
   path: "knowledge/raw/D30_matsuki_numata_2021_ichiza-konryu.pdf"
   manifest_id: "D30-S09"
 compiled: "2026-04-10"
+status: 正典
+review_state: 未レビュー
 ---
 
 # 茶事における場の共創：「一座建立」の意味空間
@@ -51,3 +53,4 @@ compiled: "2026-04-10"
 - 年: 2021
 - 出典: 香川大学大学院地域マネジメント研究科（Graduate School of Management, Kagawa University）
 - access_status: raw-confirmed
+- **オープンアクセス**: [J-STAGE](https://www.jstage.jst.go.jp/)

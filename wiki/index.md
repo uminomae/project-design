@@ -1,6 +1,6 @@
 ---
 title: "Wiki Index"
-compiled: "2026-04-10"
+compiled: "2026-04-13"
 ---
 # Wiki -- Map of Content
 
@@ -49,20 +49,18 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 
 ### awareness-model 原典
 
-#### 先行研究（確立された知見）
-- [[sources/Barrett_2017_constructed-emotion|構成主義的情動理論 — 情動は予測・内受容感覚・概念から構成される]]
-- [[sources/Clark_2013_predictive-processing|予測処理 — 予測する脳、状況に埋め込まれたエージェント]]
-- [[sources/Craig_2002_interoception|内受容感覚 — 身体の生理的状態の感覚]]
-- [[sources/Damasio_1994_somatic-marker|ソマティック・マーカー仮説 — 情動・理性・身体]]
-- [[sources/Friston_2010_free-energy-principle|自由エネルギー原理 — 統一的脳理論?]]
-
 #### 核心仮説の多層的証拠
+- [[sources/Barrett_2017_constructed-emotion|構成主義的情動理論 — 情動は予測・内受容感覚・概念から構成される]]
 - [[sources/Baumeister_1995_need-to-belong|所属欲求 — 基本的な人間の動機づけとしての対人愛着への欲求]]
+- [[sources/Clark_2013_predictive-processing|予測処理 — 予測する脳、状況に埋め込まれたエージェント]]
 - [[sources/Coan_2015_social-baseline-theory|社会的ベースライン理論 — リスクと努力の社会的調整]]
 - [[sources/Cole_2007_social-regulation-gene-expression|ヒト白血球における遺伝子発現の社会的調節]]
+- [[sources/Craig_2002_interoception|内受容感覚 — 身体の生理的状態の感覚]]
+- [[sources/Damasio_1994_somatic-marker|ソマティック・マーカー仮説 — 情動・理性・身体]]
 - [[sources/Dunbar_1992_social-brain-hypothesis|ダンバーの社会脳仮説]]
 - [[sources/Durkheim_1897_suicide-social-integration|自殺論 — 社会的統合と自己破壊の社会学的研究]]
 - [[sources/Eisenberger_2003_social-exclusion-fmri|社会的排除は痛みを伴うか — fMRI研究]]
+- [[sources/Friston_2010_free-energy-principle|自由エネルギー原理 — 統一的脳理論?]]
 - [[sources/Holt-Lunstad_2010_social-relationships-mortality|社会的関係と死亡リスク — 二大メタ分析]]
 - [[sources/Panksepp-Barrett_1998_panic-grief-constructed-emotion|PANIC/GRIEFシステムと構成主義情動理論の論争]]
 - [[sources/Smith-Wang_2014_oxytocin-social-bonding|視床下部オキシトシンによるストレス応答の社会的緩衝]]
@@ -75,10 +73,11 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 
 ### creation-space 30ドメイン原典
 
-#### D01 数学 (6件)
+#### D01 数学 (7件)
 - [[sources/D01_bott_1988_morse-theory-indomitable|モース理論 不屈の研究]]
 - [[sources/D01_carlsson_2009_topology-and-data|トポロジーとデータ]]
 - [[sources/D01_ghrist_2008_barcodes|バーコード：データの永続的位相]]
+- [[sources/D01_hadamard_1945_psychology-invention|数学における発明の心理学]]
 - [[sources/D01_poincare_1908_science-and-method|科学と方法]]
 - [[sources/D01_tao_2007_good-mathematics|良い数学とは何か]]
 - [[sources/D01_thurston_1994_proof-and-progress|数学における証明と進歩について]]
@@ -94,8 +93,10 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D02_rayleigh_1916_problem-thermal-convection-horizontal-layer-fluid-heated-below|下方加熱された水平流体層における熱対流の問題]]
 - [[sources/D02_zurek_2003_decoherence-einselection-quantum-origins-classical|デコヒーレンス、アインセレクション、古典性の量子的起源]]
 
-#### D03 化学 (1件)
+#### D03 化学 (3件)
 - [[sources/D03_becker-doring_1935_keimbildung|過飽和蒸気における核形成の運動論的処理]]
+- [[sources/D03_field-noyes_1974_oscillations|化学系における振動 IV: 実在する化学反応のモデルにおけるリミットサイクル挙動]]
+- [[sources/D03_winter-chambon_1986_gel-point|架橋ポリマーのゲル点における線形粘弾性の解析]]
 
 #### D04 進化生物学 (4件)
 - [[sources/D04_darwin_1859_origin-of-species|種の起源]]
@@ -103,12 +104,15 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D04_sagan_1967_origin-mitosing-cells|有糸分裂細胞の起源]]
 - [[sources/D04_waddington_1953_genetic-assimilation|遺伝的同化――獲得形質の遺伝]]
 
-#### D05 地球科学 (1件)
+#### D05 地球科学 (2件)
 - [[sources/D05_cane-zebiak_1985_enso-theory|エルニーニョと南方振動の理論]]
+- [[sources/D05_morgan_1968_rises-trenches|プレートテクトニクスの数理的基礎 — 剛体球面ブロックモデルによる地殻運動の記述]]
 
-#### D06 天文学 (3件)
+#### D06 天文学 (5件)
 - [[sources/D06_abbott_2017_gw170817|GW170817：連星中性子星合体からの重力波観測]]
+- [[sources/D06_balbus-hawley_1991_shear-instability|磁気回転不安定性 — 弱磁場降着円盤における強力な局所剪断不安定性]]
 - [[sources/D06_charbonneau_2010_dynamo-solar-cycle|太陽周期のダイナモモデル]]
+- [[sources/D06_jeans_1902_stability-nebula|ジーンズ不安定性 — 自己重力ガス球の安定性条件の導出]]
 - [[sources/D06_planck-collaboration_2016_cosmological-parameters|Planck 2015 年成果 XIII. 宇宙論的パラメータ]]
 
 #### D07 工学・情報科学 (5件)
@@ -127,7 +131,8 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D10_rosenblum_2015_autoimmunity|ヒト自己免疫疾患のメカニズム]]
 - [[sources/D10_tonegawa_1987_nobel-lecture|抗体多様性の体細胞生成（ノーベル講演）]]
 
-#### D11 薬学 (5件)
+#### D11 薬学 (6件)
+- [[sources/D11_davies_2010_antibiotic-resistance|抗生物質耐性の起源と進化 — 耐性遺伝子の太古からの存在と人為的加速]]
 - [[sources/D11_ich_2008_q10-guideline|ICH Q10 医薬品品質システムガイドライン]]
 - [[sources/D11_ich_2009_q8-r2-guideline|ICH Q8(R2) 医薬品開発ガイドライン]]
 - [[sources/D11_ich_2023_q9-r1-guideline|ICH Q9(R1) 品質リスクマネジメントガイドライン]]
@@ -157,8 +162,10 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D15_nose_1944_yugenron|幽玄論]]
 - [[sources/D15_zeami_classics|風姿花伝（花の美学）]]
 
-#### D16 歴史学 (1件)
+#### D16 歴史学 (3件)
+- [[sources/D16_braudel_1958_longue-duree|長期持続 — 歴史と社会科学の時間的多層性]]
 - [[sources/D16_ibn-khaldun_1377_muqaddimah|ムカッディマ（歴史序説）]]
+- [[sources/D16_toynbee_1934_study-of-history|歴史の研究 — 文明の挑戦と応答]]
 
 #### D17 言語学 (1件)
 - [[sources/D17_bickerton_1981_roots-of-language|言語の起源]]
@@ -169,9 +176,11 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 #### D19 文学 (1件)
 - [[sources/D19_propp_1968_morphology-of-the-folktale|昔話の形態学]]
 
-#### D20 法学・政治学 (2件)
+#### D20 法学・政治学 (4件)
 - [[sources/D20_idea_2011_practical-guide-constitution-building|憲法制定の実践ガイド]]
 - [[sources/D20_ostrom_1990_governing-the-commons|コモンズのガバナンス]]
+- [[sources/D20_singapore-convention_2018_mediation|シンガポール調停条約 (2018)]]
+- [[sources/D20_uncitral_2021_mediation-rules|UNCITRAL 調停規則 (2021)]]
 
 #### D21 経済学 (6件)
 - [[sources/D21_hayek_1945_use-of-knowledge-in-society|社会における知識の利用]]
@@ -247,6 +256,17 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 
 | ページ | category | compiled |
 |--------|----------|----------|
+| [[sources/D01_hadamard_1945_psychology-invention\|数学における発明の心理学]] | sources | 2026-04-13 |
+| [[sources/D03_field-noyes_1974_oscillations\|化学系における振動 IV: 実在する化学反応のモデルにおけるリミットサイクル挙動]] | sources | 2026-04-13 |
+| [[sources/D03_winter-chambon_1986_gel-point\|架橋ポリマーのゲル点における線形粘弾性の解析]] | sources | 2026-04-13 |
+| [[sources/D20_singapore-convention_2018_mediation\|シンガポール調停条約 (2018)]] | sources | 2026-04-13 |
+| [[sources/D20_uncitral_2021_mediation-rules\|UNCITRAL 調停規則 (2021)]] | sources | 2026-04-13 |
+| [[sources/D05_morgan_1968_rises-trenches\|プレートテクトニクスの数理的基礎 — 剛体球面ブロックモデルによる地殻運動の記述]] | sources | 2026-04-11 |
+| [[sources/D06_balbus-hawley_1991_shear-instability\|磁気回転不安定性 — 弱磁場降着円盤における強力な局所剪断不安定性]] | sources | 2026-04-11 |
+| [[sources/D06_jeans_1902_stability-nebula\|ジーンズ不安定性 — 自己重力ガス球の安定性条件の導出]] | sources | 2026-04-11 |
+| [[sources/D11_davies_2010_antibiotic-resistance\|抗生物質耐性の起源と進化 — 耐性遺伝子の太古からの存在と人為的加速]] | sources | 2026-04-11 |
+| [[sources/D16_braudel_1958_longue-duree\|長期持続 — 歴史と社会科学の時間的多層性]] | sources | 2026-04-11 |
+| [[sources/D16_toynbee_1934_study-of-history\|歴史の研究 — 文明の挑戦と応答]] | sources | 2026-04-11 |
 | [[sources/D01_carlsson_2009_topology-and-data\|トポロジーとデータ]] | sources | 2026-04-10 |
 | [[sources/D01_ghrist_2008_barcodes\|バーコード：データの永続的位相]] | sources | 2026-04-10 |
 | [[sources/D01_poincare_1908_science-and-method\|科学と方法]] | sources | 2026-04-10 |
@@ -256,16 +276,5 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 | [[sources/D02_haken_1983_synergetics\|シナジェティクス：入門]] | sources | 2026-04-10 |
 | [[sources/D02_higgs_1964_broken-symmetries\|対称性の破れとゲージボソンの質量]] | sources | 2026-04-10 |
 | [[sources/D02_lorenz_1963_deterministic-nonperiodic-flow\|決定論的非周期流]] | sources | 2026-04-10 |
-| [[sources/D02_nelson-kosterlitz_1977_universal-jump-superfluid\|二次元超流体の超流体密度における普遍的ジャンプ]] | sources | 2026-04-10 |
-| [[sources/D03_becker-doring_1935_keimbildung\|過飽和蒸気における核形成の運動論的処理]] | sources | 2026-04-10 |
-| [[sources/D04_darwin_1859_origin-of-species\|種の起源]] | sources | 2026-04-10 |
-| [[sources/D04_eldredge-gould_1972_punctuated-equilibria\|断続平衡説]] | sources | 2026-04-10 |
-| [[sources/D04_sagan_1967_origin-mitosing-cells\|有糸分裂細胞の起源]] | sources | 2026-04-10 |
-| [[sources/D04_waddington_1953_genetic-assimilation\|遺伝的同化――獲得形質の遺伝]] | sources | 2026-04-10 |
-| [[sources/D05_cane-zebiak_1985_enso-theory\|エルニーニョと南方振動の理論]] | sources | 2026-04-10 |
-| [[sources/D06_abbott_2017_gw170817\|GW170817：連星中性子星合体からの重力波観測]] | sources | 2026-04-10 |
-| [[sources/D06_charbonneau_2010_dynamo-solar-cycle\|太陽周期のダイナモモデル]] | sources | 2026-04-10 |
-| [[sources/D07_candes-romberg-tao_2006_robust-uncertainty\|ロバスト不確実性原理――疎な信号のフーリエサンプルからの完全再構成]] | sources | 2026-04-10 |
-| [[sources/D07_diffie-hellman_1976_new-directions-cryptography\|暗号の新方向]] | sources | 2026-04-10 |
 
 > このページは `scripts/generate-wiki-index.mjs` により自動生成されます。wiki/ 内のページ変更時に PostToolUse hook で自動実行されます。

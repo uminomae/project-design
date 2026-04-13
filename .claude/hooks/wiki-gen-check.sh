@@ -43,6 +43,7 @@ for line in lines:
     domain_id = cols[2]
     source_title = cols[4]
     local_file = cols[5].strip("`").strip()
+    notes = cols[7].strip() if len(cols) > 7 else ""
     if not local_file or local_file == "\u2014":
         continue
 
@@ -65,12 +66,24 @@ for line in lines:
     # フォールバック: 旧パス（wiki/ 直下）も確認
     wiki_path_legacy = os.path.join(wiki_dir, stem + ".md")
     if not os.path.exists(wiki_path) and not os.path.exists(wiki_path_legacy):
+        # DOI/URL を notes から抽出
+        doi = ""
+        oa_url = ""
+        import re
+        doi_match = re.search(r'DOI:\s*(10\.[0-9]{4,}[^\s,;。]+)', notes)
+        if doi_match:
+            doi = doi_match.group(1).rstrip(".)")
+        oa_match = re.search(r'OA:\s*(https?://[^\s,;。()]+)', notes)
+        if oa_match:
+            oa_url = oa_match.group(1).rstrip(".)")
         missing.append({
             "source_id": source_id,
             "domain_id": domain_id,
             "title": source_title,
             "local_file": local_file,
             "wiki_stem": stem,
+            "doi": doi,
+            "oa_url": oa_url,
         })
 
 if not missing:
@@ -88,10 +101,10 @@ with open(req_path, "w", encoding="utf-8") as fh:
     fh.write(f"action: auto-execute\n")
     fh.write(f"skill: wiki-compile (Step 3b)\n\n")
     fh.write(f"## 未生成 {len(missing)} 件\n\n")
-    fh.write("| source_id | domain_id | title | local_file | wiki_stem |\n")
-    fh.write("|---|---|---|---|---|\n")
+    fh.write("| source_id | domain_id | title | local_file | wiki_stem | doi | oa_url |\n")
+    fh.write("|---|---|---|---|---|---|---|\n")
     for m in missing:
-        fh.write(f"| {m['source_id']} | {m['domain_id']} | {m['title']} | {m['local_file']} | {m['wiki_stem']} |\n")
+        fh.write(f"| {m['source_id']} | {m['domain_id']} | {m['title']} | {m['local_file']} | {m['wiki_stem']} | {m['doi']} | {m['oa_url']} |\n")
     fh.write(f"\n## 処理手順\n\n")
     fh.write("1. 各 PDF を pdftotext で読む\n")
     fh.write("2. wiki-compile Step 3b テンプレートで wiki ページ生成\n")

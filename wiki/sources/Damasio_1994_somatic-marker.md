@@ -2,11 +2,13 @@
 title: "ソマティック・マーカー仮説 — 情動・理性・身体"
 description: "vmPFC損傷患者の臨床観察から、身体感覚（ソマティック・マーカー）が意思決定を導くことを提唱。デカルト的心身二元論を批判し、意識の階層理論（原自己→中核自己→自伝的自己）を展開した。"
 aliases: ["Descartes' Error", "Somatic Marker Hypothesis"]
-tags: ["awareness-model", "原典解説", "§1-先行研究"]
+tags: [source, "awareness-model", "原典解説"]
 source:
   repo: "project-design"
   path: "knowledge/evidence/awareness-model/damasio-1994-somatic-marker.md"
 compiled: "2026-04-08"
+status: 正典
+review_state: 未レビュー
 ---
 
 # ソマティック・マーカー仮説 — 情動・理性・身体
@@ -24,6 +26,7 @@ Damasio (1999) は意識の階層理論を展開: 原自己（身体マップ、
 - **出版社**: G.P. Putnam's Sons
 - **出版年**: 1994年
 - **被引用数**: 20,000件超
+- **ISBN**: 978-0-399-13894-2
 
 理論論文: Damasio (1996) *Philosophical Transactions of the Royal Society B*, 351(1346), 1413-1420. DOI: 10.1098/rstb.1996.0125
 

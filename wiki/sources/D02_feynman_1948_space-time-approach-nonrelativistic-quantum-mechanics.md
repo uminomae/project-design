@@ -2,7 +2,7 @@
 title: "非相対論的量子力学への時空アプローチ"
 description: "リチャード・ファインマンによる経路積分定式化の原論文。量子力学の遷移振幅を全経路にわたる積分として表現する手法を確立し、シュレーディンガー方程式との等価性を証明した。"
 aliases: ["Space-Time Approach to Non-Relativistic Quantum Mechanics"]
-tags: ["D02", "原典解説"]
+tags: [source, "D02", "原典解説"]
 source:
   repo: "creation-space"
   path: "knowledge/raw/D02_feynman_1948_space-time-approach-nonrelativistic-quantum-mechanics.pdf"
@@ -10,6 +10,8 @@ source:
   ocr: "knowledge/raw/ocr/D02-S01_feynman_1948.md"
 compiled: "2026-04-08"
 ocr_verified: true
+status: 正典
+review_state: 未レビュー
 ---
 
 # 非相対論的量子力学への時空アプローチ
@@ -92,3 +94,4 @@ ocr_verified: true
 - 出典: Reviews of Modern Physics, Vol. 20, No. 2, pp. 367-387
 - 謝辞: Professor and Mrs. H. C. Corben, Professor H. A. Bethe, Professor J. A. Wheeler
 - access_status: raw-confirmed（OCR 検証済み）
+- **DOI**: [10.1103/RevModPhys.20.367](https://doi.org/10.1103/RevModPhys.20.367)

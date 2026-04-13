@@ -2,12 +2,14 @@
 title: "総合的防除の概念"
 description: "Stern ら（1959）による「総合的病害虫管理（IPM）」の概念的基礎を提供した論文。化学防除と生物的防除を対立させるのではなく統合する枠組みと、経済的被害水準・経済的閾値の定義を示した。"
 aliases: ["The Integrated Control Concept", "IPM origin"]
-tags: ["D12", "原典解説"]
+tags: [source, "D12", "原典解説"]
 source:
   repo: "creation-space"
   path: "knowledge/raw/D12_stern_1959_integrated-control-concept.pdf"
   manifest_id: "D12-S05"
 compiled: "2026-04-10"
+status: 正典
+review_state: 未レビュー
 ---
 
 # 総合的防除の概念

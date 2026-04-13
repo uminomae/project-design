@@ -2,11 +2,13 @@
 title: "所属欲求 — 基本的な人間の動機づけとしての対人愛着への欲求"
 description: "人間には持続的・肯定的な対人関係を形成・維持する基本的動機づけ（所属欲求）が存在するという「所属欲求仮説」を提唱した理論レビュー論文。9つのメタ理論的基準への適合を広範なエビデンスで論証した。"
 aliases: ["The Need to Belong: Desire for Interpersonal Attachments as a Fundamental Human Motivation"]
-tags: ["awareness-model", "原典解説"]
+tags: [source, "awareness-model", "原典解説"]
 source:
   repo: "project-design"
   path: "knowledge/evidence/awareness-model/baumeister-leary-1995-need-to-belong.md"
 compiled: "2026-04-08"
+status: 正典
+review_state: 未レビュー
 ---
 
 # 所属欲求 — 基本的な人間の動機づけとしての対人愛着への欲求
@@ -23,6 +25,7 @@ Baumeister & Leary (1995) は、心理学的に「基本的動機づけ」と認
 - **出版年**: 1995年5月
 - **DOI**: 10.1037/0033-2909.117.3.497
 - **PMID**: 7777651
+- **DOI**: [10.1037/0033-2909.117.3.497](https://doi.org/10.1037/0033-2909.117.3.497)
 
 ## 方法論
 

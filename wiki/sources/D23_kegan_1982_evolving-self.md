@@ -2,12 +2,14 @@
 title: "進化する自己"
 description: "ロバート・キーガンによる構成的発達理論の主著。人間の意味形成プロセスの発達段階を、ピアジェの認知発達理論を心理臨床・人格発達に拡張する形で体系化した。"
 aliases: ["The Evolving Self", "Kegan 1982"]
-tags: ["D23", "原典解説"]
+tags: [source, "D23", "原典解説"]
 source:
   repo: "creation-space"
   path: "knowledge/raw/D23_kegan_1982_evolving-self.pdf"
   manifest_id: "D23-S01"
 compiled: "2026-04-10"
+status: 正典
+review_state: 未レビュー
 ---
 
 # 進化する自己
@@ -43,3 +45,4 @@ compiled: "2026-04-10"
 - 年: 1982
 - 出典: Harvard University Press, Cambridge, Massachusetts
 - access_status: raw-confirmed
+- **ISBN**: 978-0-674-27231-5

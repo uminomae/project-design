@@ -2,12 +2,14 @@
 title: "デザイン思考論文に求められる要件とは何か"
 description: "秋池篤・市光哲矢による2021年の査読論文。経営学の主要学術誌に掲載されたデザイン思考関連論文をレビューし、研究の共通特性と実証研究の収束傾向を明らかにした。"
 aliases: ["What Are the Requirements for Design Thinking Articles?"]
-tags: ["D22", "原典解説"]
+tags: [source, "D22", "原典解説"]
 source:
   repo: "creation-space"
   path: "knowledge/raw/D22_akiike_2021_design-thinking-articles.pdf"
   manifest_id: "D22-S07"
 compiled: "2026-04-08"
+status: 正典
+review_state: 未レビュー
 ---
 
 # デザイン思考論文に求められる要件とは何か
@@ -40,3 +42,4 @@ Johansson-Sköldberg et al. (2013)、Seidel & Fixson (2013)、Liedtka (2015)、C
 - 年: 2021
 - 出典: Annals of Business Administrative Science, Vol. 20, pp. 197-209. doi:10.7880/abas.0210930a
 - access_status: raw-confirmed
+- **DOI**: [10.7880/abas.0210930a](https://doi.org/10.7880/abas.0210930a)

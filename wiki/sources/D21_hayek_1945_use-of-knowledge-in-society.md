@@ -2,12 +2,14 @@
 title: "社会における知識の利用"
 description: "フリードリヒ・ハイエクが1945年に発表した経済学論文。分散した知識を社会全体で利用するための仕組みとして価格メカニズムの役割を論じ、中央計画の認識論的限界を示した。"
 aliases: ["The Use of Knowledge in Society"]
-tags: ["D21", "原典解説"]
+tags: [source, "D21", "原典解説"]
 source:
   repo: "creation-space"
   path: "knowledge/raw/D21_hayek_1945_use-of-knowledge-in-society.pdf"
   manifest_id: "D21-S04"
 compiled: "2026-04-08"
+status: 正典
+review_state: 未レビュー
 ---
 
 # 社会における知識の利用
@@ -39,3 +41,4 @@ compiled: "2026-04-08"
 - 年: 1945
 - 出典: American Economic Review, Vol. XXXV, No. 4, September 1945, pp. 519-530
 - access_status: raw-confirmed
+- **DOI**: [10.1257/aer.35.4.519](https://doi.org/10.1257/aer.35.4.519)

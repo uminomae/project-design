@@ -2,7 +2,7 @@
 title: "パタン・ランゲージ"
 description: "クリストファー・アレグザンダーらが1977年に著した建築・都市設計の実践書。253のパタンをネットワーク状に配置し、都市から建物、施工詳細まであらゆるスケールの設計問題の解決を生成的に導く言語体系を提示する。"
 aliases: ["A Pattern Language"]
-tags: ["D27", "原典解説"]
+tags: [source, "D27", "原典解説"]
 source:
   repo: "creation-space"
   path: "knowledge/raw/D27_alexander_1977_pattern-language.pdf"
@@ -10,6 +10,8 @@ source:
   ocr: "knowledge/raw/ocr/D27-S01_alexander_1977.md"
 compiled: "2026-04-08"
 ocr_verified: true
+status: 正典
+review_state: 未レビュー
 ---
 
 # パタン・ランゲージ

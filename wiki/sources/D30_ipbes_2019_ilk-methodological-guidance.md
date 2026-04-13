@@ -2,12 +2,14 @@
 title: "IPBES 先住民・地域知識 方法論ガイダンス"
 description: "生物多様性・生態系サービスに関する政府間科学政策プラットフォーム（IPBES）が2019年に発行した、先住民・地域知識（ILK）をIPBES評価プロセスに統合するための方法論的手引き。"
 aliases: ["ILK Methodological Guidance", "IPBES/7/INF/8"]
-tags: ["D30", "原典解説"]
+tags: [source, "D30", "原典解説"]
 source:
   repo: "creation-space"
   path: "knowledge/raw/D30_ipbes_2019_ilk-methodological-guidance.pdf"
   manifest_id: "D30-S03"
 compiled: "2026-04-08"
+status: 正典
+review_state: 未レビュー
 ---
 
 # IPBES 先住民・地域知識 方法論ガイダンス
@@ -49,3 +51,4 @@ IPBESが取り組む課題——科学的知識と先住民知識という異な
 - 年: 2019（IPBES 第7回総会提出文書、2019年3月12日付）
 - 出典: Intergovernmental Science-Policy Platform on Biodiversity and Ecosystem Services（IPBES/7/INF/8）
 - access_status: raw-confirmed
+- **公式URL**: [IPBES](https://www.ipbes.net/)

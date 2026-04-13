@@ -2,11 +2,13 @@
 title: "内受容感覚 — 身体の生理的状態の感覚"
 description: "身体の生理的状態を脳に伝達するラミナI脊髄視床皮質経路を同定し、前部島皮質における統合的表象が「物質的な私」と主観的意識を構成すると提唱した。内受容感覚研究の定礎論文。"
 aliases: ["How do you feel? Interoception: the sense of the physiological condition of the body"]
-tags: ["awareness-model", "原典解説", "§1-先行研究"]
+tags: [source, "awareness-model", "原典解説"]
 source:
   repo: "project-design"
   path: "knowledge/evidence/awareness-model/craig-2002-interoception.md"
 compiled: "2026-04-08"
+status: 正典
+review_state: 未レビュー
 ---
 
 # 内受容感覚 — 身体の生理的状態の感覚

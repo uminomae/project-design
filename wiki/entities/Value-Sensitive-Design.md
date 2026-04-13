@@ -7,9 +7,15 @@ source:
 compiled: "2026-04-06"
 tags: [entity, theory, value, design, HCI, ethics]
 related_concepts: [プロジェクトデザイン, Love 駆動開発]
+status: 暫定
+review_state: 未レビュー
 ---
 
 # Value Sensitive Design
+
+> **高校生向けのやさしい解説**
+>
+> 新しいアプリやサービスを作るとき、便利さだけを考えるとプライバシーや公平さといった大事なものが置いてけぼりになりがちですよね。Value Sensitive Design は、設計のはじめから「どんな価値を大切にするか」を真ん中に置こうとする方法論です。たとえば「使いやすい」だけでなく「ユーザーの自分で決める権利を傷つけないか」も同じテーブルで議論する——そんな進め方を提案しています。
 
 ## 概要
 

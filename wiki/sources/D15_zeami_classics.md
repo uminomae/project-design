@@ -2,12 +2,14 @@
 title: "風姿花伝（花の美学）"
 description: "世阿弥による能楽の芸術論。「花」の概念を軸に、芸術美の本質と幽玄の境地を論じる。"
 aliases: ["Zeami Classics - Aesthetics of Flower"]
-tags: ["D15", "原典解説"]
+tags: [source, "D15", "原典解説"]
 source:
   repo: "creation-space"
   path: "knowledge/raw/D28_zeami_classics_part1.pdf"
   manifest_id: "D15-S03"
 compiled: "2026-04-10"
+status: 正典
+review_state: 未レビュー
 ---
 
 # 風姿花伝（花の美学）
@@ -43,3 +45,4 @@ compiled: "2026-04-10"
 - 年: 15世紀初頭（校註本刊行: 明治期）
 - 出典: 能楽会刊『世阿弥十六部集』（国立国会図書館デジタルコレクション所蔵）
 - access_status: raw-confirmed
+- **全文**: [NDL デジタルコレクション](https://dl.ndl.go.jp/)

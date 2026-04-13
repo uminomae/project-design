@@ -2,12 +2,14 @@
 title: "自己組織化臨界の25年：概念と論争"
 description: "ワトキンスら（2016）による自己組織化臨界（SOC）理論の25周年包括的レビュー。バクらの原論文の核心概念を再検討し、物理学・宇宙物理学・複雑系科学における受容と論争を整理した。"
 aliases: ["25 Years of Self-organized Criticality", "Watkins 2016 SOC"]
-tags: ["D29", "原典解説"]
+tags: [source, "D29", "原典解説"]
 source:
   repo: "creation-space"
   path: "knowledge/raw/D29_watkins_2016_25-years-self-organized-criticality.pdf"
   manifest_id: "D29-S05"
 compiled: "2026-04-10"
+status: 正典
+review_state: 未レビュー
 ---
 
 # 自己組織化臨界の25年：概念と論争

@@ -2,12 +2,14 @@
 title: "幽玄論"
 description: "能勢朝次による「幽玄」概念の体系的研究。日本中世芸術論における幽玄の形成・展開・美学的意義を論じる。"
 aliases: ["Yugenron - A Systematic Study of Yugen"]
-tags: ["D15", "原典解説"]
+tags: [source, "D15", "原典解説"]
 source:
   repo: "creation-space"
   path: "knowledge/raw/D15_nose_1944_yugenron_part1.pdf"
   manifest_id: "D15-S06"
 compiled: "2026-04-10"
+status: 正典
+review_state: 未レビュー
 ---
 
 # 幽玄論
@@ -39,3 +41,4 @@ compiled: "2026-04-10"
 - 年: 1940/1944年
 - 出典: 河出書房
 - access_status: raw-confirmed
+- **全文**: [Wikimedia Commons](https://commons.wikimedia.org/)

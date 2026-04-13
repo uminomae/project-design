@@ -3,9 +3,15 @@ title: "Concept-Entity Map"
 compiled: "2026-04-06"
 last_verified: "2026-04-06"
 tags: [cross-ref, map]
+status: 暫定
+review_state: 未レビュー
 ---
 
 # Concept-Entity Map
+
+> **高校生向けのやさしい解説**
+>
+> このページは、この wiki に出てくる「考え方（concepts）」と「人物・理論（entities）」の関係を、表でまとめた地図です。たとえば「抱持」という考え方が、ベイアー・ルーマン・ボウルビィといった人たちの理論とどれくらい強く結びついているか——「がっちり」「ふんわり」「保留中」のような印を付けて整理しています。理論同士のつながりを一覧したいときの索引として使えます。
 
 concepts/ と entities/ の関係を可視化するマトリクス。
 

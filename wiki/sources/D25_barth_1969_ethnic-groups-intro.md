@@ -2,12 +2,14 @@
 title: "民族集団と境界（序論）"
 description: "フレドリック・バース編著『Ethnic Groups and Boundaries』（1969）の序論。民族集団を文化的内容ではなく境界維持プロセスとして捉え直す理論的転換を提示した社会人類学の古典。"
 aliases: ["Ethnic Groups and Boundaries", "Barth 1969"]
-tags: ["D25", "原典解説"]
+tags: [source, "D25", "原典解説"]
 source:
   repo: "creation-space"
   path: "knowledge/raw/D25_barth_1969_ethnic-groups-intro.pdf"
   manifest_id: "D25-S05"
 compiled: "2026-04-10"
+status: 正典
+review_state: 未レビュー
 ---
 
 # 民族集団と境界（序論）
@@ -47,3 +49,4 @@ compiled: "2026-04-10"
 - 年: 1969
 - 出典: Little, Brown and Company, Boston（初版）；Universitetsforlaget, Oslo
 - access_status: raw-confirmed
+- **ISBN**: 978-82-00-01349-2

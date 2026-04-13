@@ -2,12 +2,14 @@
 title: "経験としての芸術（探究・思考論の観点）"
 description: "デューイ（1934）による経験の哲学の完成形。芸術的経験を特権的な「別領域」としてではなく、生の経験（live experience）の深化・完成形として捉え、経験・探究・表現の連続を論じた。"
 aliases: ["Art as Experience D13", "Dewey esthetics inquiry"]
-tags: ["D13", "原典解説"]
+tags: [source, "D13", "原典解説"]
 source:
   repo: "creation-space"
   path: "knowledge/raw/D13_dewey_1934_art-as-experience.pdf"
   manifest_id: "D13-S09"
 compiled: "2026-04-10"
+status: 正典
+review_state: 未レビュー
 ---
 
 # 経験としての芸術（探究・思考論の観点）
@@ -48,3 +50,4 @@ compiled: "2026-04-10"
 - 年: 1934
 - 出典: G. P. Putnam's Sons, New York（William James Lectureship, Harvard University, 1931年講演）
 - access_status: raw-confirmed
+- **全文**: [Internet Archive](https://archive.org/details/art-as-experience-dewey)

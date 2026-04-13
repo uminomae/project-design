@@ -2,11 +2,13 @@
 title: "構成主義的情動理論 — 情動は予測・内受容感覚・概念から構成される"
 description: "情動は自然種ではなく、内受容感覚的予測と概念的カテゴリ化から構成されるとする理論。Fristonの能動的推論枠組みで再定式化。基本的情動理論への体系的批判と身体予算管理の概念を提唱。"
 aliases: ["The theory of constructed emotion", "How Emotions Are Made"]
-tags: ["awareness-model", "原典解説", "§1-先行研究"]
+tags: [source, "awareness-model", "原典解説"]
 source:
   repo: "project-design"
   path: "knowledge/evidence/awareness-model/barrett-2017-constructed-emotion.md"
 compiled: "2026-04-08"
+status: 正典
+review_state: 未レビュー
 ---
 
 # 構成主義的情動理論 — 情動は予測・内受容感覚・概念から構成される
@@ -28,6 +30,7 @@ Barrett (2017a) は Friston の能動的推論枠組みで理論を再定式化:
 - **被引用数**: 3,000件超
 
 一般向け: Barrett (2017) *How Emotions Are Made*. Houghton Mifflin Harcourt.
+- **DOI**: [10.1093/scan/nsw154](https://doi.org/10.1093/scan/nsw154)
 
 ## 主要主張
 

@@ -2,11 +2,13 @@
 title: "予測処理 — 予測する脳、状況に埋め込まれたエージェント"
 description: "Fristonの自由エネルギー原理を認知科学的に再定式化し、脳を階層的予測機械として記述。知覚・行動・注意を予測誤差最小化の統一原理で説明。身体化認知と予測処理の統合を試みた。"
 aliases: ["Whatever next? Predictive brains, situated agents, and the future of cognitive science", "Predictive Processing"]
-tags: ["awareness-model", "原典解説", "§1-先行研究"]
+tags: [source, "awareness-model", "原典解説"]
 source:
   repo: "project-design"
   path: "knowledge/evidence/awareness-model/clark-2013-predictive-processing.md"
 compiled: "2026-04-08"
+status: 正典
+review_state: 未レビュー
 ---
 
 # 予測処理 — 予測する脳、状況に埋め込まれたエージェント
@@ -26,6 +28,8 @@ Clark (2015) *Surfing Uncertainty* では幻覚・妄想（予測の過剰）、
 - **DOI**: 10.1017/S0140525X12000477
 - **PMID**: 23663408
 - **被引用数**: 4,000件超（BBS ターゲット記事、28名の Open Peer Commentary 付き）
+- **DOI**: [10.1017/S0140525X12000477](https://doi.org/10.1017/S0140525X12000477)
+- **オープンアクセス**: [PDF](https://www.cambridge.org/core/services/aop-cambridge-core/content/view/33542C736E17E3D1D44E8D03BE5F4CD9/S0140525X12000477a.pdf)
 
 ## 主要主張
 

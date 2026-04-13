@@ -2,7 +2,7 @@
 title: "世阿弥十六部集"
 description: "能楽の大成者・世阿弥元清が著した芸論書十六部の集成。吉田東伍校註、能楽会刊。風姿花伝（花伝書）・花鏡・至花道・申楽談儀など全五十三編を収録し、修行論・上演論・鑑賞論にわたる実践的知の体系を網羅する。"
 aliases: ["Zeami Classics", "世阿弥十六部集", "花伝書", "風姿花伝"]
-tags: ["D28", "原典解説"]
+tags: [source, "D28", "原典解説"]
 source:
   repo: "creation-space"
   path: "knowledge/raw/D28_zeami_classics_part1.pdf"
@@ -10,6 +10,8 @@ source:
   ocr: "knowledge/raw/ocr/D28-S01_zeami_classics.md"
 compiled: "2026-04-08"
 ocr_verified: true
+status: 正典
+review_state: 未レビュー
 ---
 
 # 世阿弥十六部集
@@ -78,3 +80,4 @@ ocr_verified: true
 - 出典スキャン: 国立国会図書館デジタルコレクション
 - 構成: 十六部、五十三編（上下二冊）
 - access_status: raw-confirmed（OCR 検証済み、代表ページサンプリング）
+- **全文**: [NDL デジタルコレクション](https://dl.ndl.go.jp/)

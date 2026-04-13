@@ -2,11 +2,13 @@
 title: "社会的関係と死亡リスク — 二大メタ分析"
 description: "社会的関係の欠如が死亡リスクに及ぼす影響を定量化した二つのメタ分析。2010年版は148研究・308,849人でOR=1.50を報告し、社会的つながりの欠如が喫煙・肥満と同等の死亡リスク因子であることを示した。"
 aliases: ["Social relationships and mortality risk: A meta-analytic review", "Loneliness and social isolation as risk factors for mortality"]
-tags: ["awareness-model", "原典解説"]
+tags: [source, "awareness-model", "原典解説"]
 source:
   repo: "project-design"
   path: "knowledge/evidence/awareness-model/holt-lunstad-social-relationships-mortality-meta-analyses.md"
 compiled: "2026-04-08"
+status: 正典
+review_state: 未レビュー
 ---
 
 # 社会的関係と死亡リスク — 二大メタ分析

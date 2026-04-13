@@ -2,12 +2,14 @@
 title: "誤差逆伝播法による表現学習"
 description: "Rumelhart、Hinton、Williams が誤差逆伝播アルゴリズムを多層ネットワークに適用し、有用な内部表現が自動的に獲得できることを示した論文。"
 aliases: ["Learning representations by back-propagating errors", "Backpropagation"]
-tags: ["D07", "原典解説"]
+tags: [source, "D07", "原典解説"]
 source:
   repo: "creation-space"
   path: "knowledge/raw/D07_rumelhart-hinton-williams_1986_backpropagation.pdf"
   manifest_id: "D07-S04"
 compiled: "2026-04-10"
+status: 正典
+review_state: 未レビュー
 ---
 
 # 誤差逆伝播法による表現学習
@@ -48,3 +50,4 @@ David E. Rumelhart、Geoffrey E. Hinton、Ronald J. Williams による1986年の
 - 年: 1986
 - 出典: Nature, 323, 533-536
 - access_status: raw-confirmed
+- **DOI**: [10.1038/323533a0](https://doi.org/10.1038/323533a0)

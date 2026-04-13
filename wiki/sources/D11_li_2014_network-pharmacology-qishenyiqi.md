@@ -2,12 +2,14 @@
 title: "漢方薬QiShenYiQiのネットワーク薬理学研究"
 description: "心筋梗塞に対する中国伝統処方「気参益気滴丸（QSYQ）」の多成分・多標的・多経路作用メカニズムをネットワーク薬理学的手法で解明した研究。"
 aliases: ["A network pharmacology study of Chinese medicine QiShenYiQi", "Li 2014 network pharmacology QSYQ"]
-tags: ["D11", "原典解説"]
+tags: [source, "D11", "原典解説"]
 source:
   repo: "creation-space"
   path: "knowledge/raw/D11_li_2014_network-pharmacology-qishenyiqi.pdf"
   manifest_id: "D11-S09"
 compiled: "2026-04-08"
+status: 正典
+review_state: 未レビュー
 ---
 
 # 漢方薬QiShenYiQiのネットワーク薬理学研究
@@ -49,3 +51,4 @@ compiled: "2026-04-08"
 - 年: 2014
 - 出典: PLoS ONE, 9(5): e95004
 - access_status: raw-confirmed
+- **DOI**: [10.1371/journal.pone.0105865](https://doi.org/10.1371/journal.pone.0105865)

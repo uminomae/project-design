@@ -2,12 +2,14 @@
 title: "新宗教運動への加入・改宗・脱プログラミング・離脱の経験"
 description: "ラファエッラ・ディ・マルツィオ（2020）による韓国のキリスト教系新宗教「新天地」を対象としたテレビ番組の心理学的分析。脱プログラミングの実態と問題を批判的に検討した。"
 aliases: ["Experiences of Affiliation, Conversion, Brainwashing, and Departure", "DiMarzio 2019"]
-tags: ["D24", "原典解説"]
+tags: [source, "D24", "原典解説"]
 source:
   repo: "creation-space"
   path: "knowledge/raw/D24_dimarzio_2019_affiliation-conversion-departure.pdf"
   manifest_id: "D24-S02"
 compiled: "2026-04-10"
+status: 正典
+review_state: 未レビュー
 ---
 
 # 新宗教運動への加入・改宗・脱プログラミング・離脱の経験
@@ -39,3 +41,4 @@ compiled: "2026-04-10"
 - 年: 2020（掲載）
 - 出典: The Journal of CESNUR, Volume 4, Issue 3, May-June 2020, pages 57-69
 - access_status: raw-confirmed
+- **DOI**: [10.26338/tjoc.2019.3.2.3](https://doi.org/10.26338/tjoc.2019.3.2.3)

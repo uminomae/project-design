@@ -6,7 +6,13 @@ tags: [meta]
 
 # About This Wiki
 
+> **高校生向けのやさしい解説**
+>
+> このページは「この wiki がどうやって作られて、どう使えばいいか」を説明する案内板です。書いている人が手で全部書いているのではなく、AI が複数のリポジトリの研究ノートを読んで自動でまとめています。だから、人間（pjdhiro）が承認した正本ではなく、いつでも作り直せる「閲覧用ビュー」だ——というのが大事なポイントです。
+
 この wiki の成り立ち、仕組み、役割分担を説明するメタドキュメント。
+
+> プロジェクトデザイン論そのものの概要は [[about-project-design|About Project Design]]（PDF 埋め込み）を参照。
 
 ---
 
@@ -87,9 +93,64 @@ source:                       # ★ compile 元のファイル
     path: "knowledge/concepts/CN-005_trust-hypothesis-inventory.md"
 compiled: "2026-04-06"        # 最後に compile した日
 tags: [concept, trust]        # Obsidian タグ
-status: 探索的 | 暫定 | 正典   # 内容の成熟度（LLM が判定）
-review_state: 未レビュー       # 人間のレビュー状態
+status: 探索的 | 暫定 | 正典 | LLM構成物 | 要改訂  # 内容の成熟度
+review_state: 未レビュー | v2照合中 | v2照合済 | レビュー済み  # 人間のレビュー状態
+ocr_verified: true            # (optional) 原典 PDF を OCR で検証済み
+related_concepts: [...]       # (optional) 関連概念リスト
 ```
+
+#### status の意味
+
+| 値 | 意味 |
+|---|---|
+| `探索的` | 調査途中。構造が定まっていない |
+| `暫定` | 情報はまとまったが理論的位置付けが未確定 |
+| `正典` | 学術文献の解説など、出典が確定しているもの |
+| `LLM構成物` | LLM が構成したが pjdhiro が採用していない。参照は注意 |
+| `要改訂` | 既存内容に不整合あり、書き直し待ち |
+
+#### review_state の意味
+
+| 値 | 意味 |
+|---|---|
+| `未レビュー` | pjdhiro 未確認 |
+| `v2照合中` | 理論 v2 系列との整合性を確認中 |
+| `v2照合済` | 整合性確認済み |
+| `レビュー済み` | pjdhiro が内容を承認 |
+
+---
+
+## ディレクトリ配置ルール
+
+| ディレクトリ | 内容 | status の既定 |
+|---|---|---|
+| `concepts/` | PD 固有の概念定義（project-design 独自または ks との共有） | `暫定` or `正典` |
+| `entities/` | PD が参照する外部知識（理論、モデル、人物） | `暫定` |
+| `sources/` | 学術論文・原典・公式文書の解説ページ | `正典` |
+| `cross-refs/` | リポジトリ横断の接続情報・マップ・overview | `暫定` |
+| `health/` | wiki-lint スキルの健全性レポート | 管理対象外 |
+
+### 判断に迷うケース
+
+- **人物ページ**: 理論の代表者 → `entities/`, 論文の著者 → `sources/`
+- **LLM が構成した仮説**: `status: LLM構成物` で `entities/` に置く
+- **複数リポを横断する観点整理**: `cross-refs/`
+
+### alias 命名規則
+
+- 英語名（Roman）→ 日本語別名 → 略称 の順に記載
+- 例: `aliases: ["Annette Baier", "アネット・ベイアー", "Baier"]`
+
+### tag 体系
+
+- 構造タグ: `concept`, `entity`, `person`, `cross-ref`, `source`（ディレクトリ種別を示す。1ページに必ず1つ）
+- ドメインタグ: `trust`, `value`, `design-thinking`, `kesson`, `awareness-model` など（テーマ別）
+- creation-space ドメインタグ: `D01`〜`D30`（30ドメインに属する sources/entities に付与）
+- メタタグ: `原典参照`（PDF 由来）, `原典解説`（sources の解説ページ）
+
+#### 禁止: コンテンツ位置タグ
+
+`§1-先行研究` のような本文セクション名をタグ化してはならない（フィルタ精度が落ちる）。本文内の見出しで参照する。
 
 ---
 
