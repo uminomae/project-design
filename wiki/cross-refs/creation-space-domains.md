@@ -16,6 +16,10 @@ review_state: 未レビュー
 
 # creation-space 30ドメイン横断
 
+> **高校生向けのやさしい解説**
+>
+> 数学・物理・建築・音楽・宗教——一見するとバラバラな30の学問分野を、「何かが新しく生まれる過程」という共通レンズで覗くと、似たパターンが見えてくる、という探索の総まとめページです。たとえば「境界は線ではなく帯のような厚みを持つ」という発見が、化学の反応・人類学の通過儀礼・建築の中間領域で別々に見つかっている——そんな分野横断のテーマを集めています。
+
 creation-space の [[創造の5段階モデル]]に基づく30学術領域（D01-D30）の構造類似探索から抽出した横断テーマ。個別ドメインのページは作成せず、テーマ横断のクロスリファレンスとして1ページにまとめる。
 
 ## 調査の全体像
@@ -262,27 +266,34 @@ activator/inhibitor + 遅延負帰還がパターン形成の必要条件であ�
 
 | ID | 原典ページ |
 |----|-----------|
-| D01 | [[sources/D01_bott_1988_morse-theory-indomitable\|Bott (1988) Morse理論]] |
-| D02 | [[sources/D02_feynman_1948_space-time-approach-nonrelativistic-quantum-mechanics\|Feynman (1948)]], [[sources/D02_abrikosov_1957_magnetic-properties-superconductors-second-group\|Abrikosov (1957)]], [[sources/D02_rayleigh_1916_problem-thermal-convection-horizontal-layer-fluid-heated-below\|Rayleigh (1916)]], [[sources/D02_zurek_2003_decoherence-einselection-quantum-origins-classical\|Zurek (2003)]] |
-| D06 | [[sources/D06_planck-collaboration_2016_cosmological-parameters\|Planck (2016)]] |
-| D07 | [[sources/D07_shannon_1948_mathematical-theory-communication\|Shannon (1948)]] |
-| D08 | [[sources/D08_varela_1991_embodied-mind\|Varela (1991)]] |
-| D10 | [[sources/D10_akdis_2014_allergen-immunotherapy\|Akdis (2014)]], [[sources/D10_rosenblum_2015_autoimmunity\|Rosenblum (2015)]] |
-| D11 | [[sources/D11_ich_2008_q10-guideline\|ICH Q10]], [[sources/D11_ich_2009_q8-r2-guideline\|ICH Q8(R2)]], [[sources/D11_ich_2023_q9-r1-guideline\|ICH Q9(R1)]], [[sources/D11_li_2014_network-pharmacology-qishenyiqi\|Li (2014)]] |
-| D12 | [[sources/D12_maff_2005_ipm-practical-guideline\|MAFF IPM (2005)]] |
+| D01 | [[sources/D01_bott_1988_morse-theory-indomitable\|Bott (1988) Morse理論]], [[sources/D01_carlsson_2009_topology-and-data\|Carlsson (2009)]], [[sources/D01_ghrist_2008_barcodes\|Ghrist (2008)]], [[sources/D01_hadamard_1945_psychology-invention\|Hadamard (1945)]], [[sources/D01_poincare_1908_science-and-method\|Poincare (1908)]], [[sources/D01_tao_2007_good-mathematics\|Tao (2007)]], [[sources/D01_thurston_1994_proof-and-progress\|Thurston (1994)]] |
+| D02 | [[sources/D02_abrikosov_1957_magnetic-properties-superconductors-second-group\|Abrikosov (1957)]], [[sources/D02_anderson_1972_more-is-different\|Anderson (1972)]], [[sources/D02_feynman_1948_space-time-approach-nonrelativistic-quantum-mechanics\|Feynman (1948)]], [[sources/D02_haken_1983_synergetics\|Haken (1983)]], [[sources/D02_higgs_1964_broken-symmetries\|Higgs (1964)]], [[sources/D02_lorenz_1963_deterministic-nonperiodic-flow\|Lorenz (1963)]], [[sources/D02_nelson-kosterlitz_1977_universal-jump-superfluid\|Nelson (1977)]], [[sources/D02_rayleigh_1916_problem-thermal-convection-horizontal-layer-fluid-heated-below\|Rayleigh (1916)]], [[sources/D02_zurek_2003_decoherence-einselection-quantum-origins-classical\|Zurek (2003)]] |
+| D03 | [[sources/D03_becker-doring_1935_keimbildung\|Becker (1935)]], [[sources/D03_field-noyes_1974_oscillations\|Field (1974)]], [[sources/D03_winter-chambon_1986_gel-point\|Winter (1986)]] |
+| D04 | [[sources/D04_darwin_1859_origin-of-species\|Darwin (1859)]], [[sources/D04_eldredge-gould_1972_punctuated-equilibria\|Eldredge (1972)]], [[sources/D04_sagan_1967_origin-mitosing-cells\|Sagan (1967)]], [[sources/D04_waddington_1953_genetic-assimilation\|Waddington (1953)]] |
+| D05 | [[sources/D05_cane-zebiak_1985_enso-theory\|Cane (1985)]], [[sources/D05_morgan_1968_rises-trenches\|Morgan (1968)]] |
+| D06 | [[sources/D06_abbott_2017_gw170817\|Abbott (2017)]], [[sources/D06_balbus-hawley_1991_shear-instability\|Balbus (1991)]], [[sources/D06_charbonneau_2010_dynamo-solar-cycle\|Charbonneau (2010)]], [[sources/D06_jeans_1902_stability-nebula\|Jeans (1902)]], [[sources/D06_planck-collaboration_2016_cosmological-parameters\|Planck (2016)]] |
+| D07 | [[sources/D07_candes-romberg-tao_2006_robust-uncertainty\|Candes (2006)]], [[sources/D07_diffie-hellman_1976_new-directions-cryptography\|Diffie (1976)]], [[sources/D07_rumelhart-hinton-williams_1986_backpropagation\|Rumelhart (1986)]], [[sources/D07_shannon_1948_mathematical-theory-communication\|Shannon (1948)]], [[sources/D07_wiener_1948_cybernetics\|Wiener (1948)]] |
+| D08 | [[sources/D08_rao-ballard_1999_predictive-coding-visual-cortex\|Rao (1999)]], [[sources/D08_varela_1991_embodied-mind\|Varela (1991)]] |
+| D10 | [[sources/D10_akdis_2014_allergen-immunotherapy\|Akdis (2014)]], [[sources/D10_rosenblum_2015_autoimmunity\|Rosenblum (2015)]], [[sources/D10_tonegawa_1987_nobel-lecture\|Tonegawa (1987)]] |
+| D11 | [[sources/D11_davies_2010_antibiotic-resistance\|Davies (2010)]], [[sources/D11_ich_2008_q10-guideline\|ICH Q10]], [[sources/D11_ich_2009_q8-r2-guideline\|ICH Q8(R2)]], [[sources/D11_ich_2023_q9-r1-guideline\|ICH Q9(R1)]], [[sources/D11_li_2014_network-pharmacology-qishenyiqi\|Li (2014)]], [[sources/D11_wu_2014_chinese-medicine\|Wu (2014)]] |
+| D12 | [[sources/D12_clements_1916_plant-succession\|Clements (1916)]], [[sources/D12_holling_1973_resilience-stability\|Holling (1973)]], [[sources/D12_maff_2005_ipm-practical-guideline\|MAFF IPM (2005)]], [[sources/D12_stern_1959_integrated-control-concept\|Stern (1959)]] |
+| D13 | [[sources/D13_dewey_1910_how-we-think\|Dewey (1910)]], [[sources/D13_dewey_1929_quest-for-certainty\|Dewey (1929)]], [[sources/D13_dewey_1933_how-we-think-restatement\|Dewey (1933)]], [[sources/D13_dewey_1934_art-as-experience\|Dewey (1934)]], [[sources/D13_whitehead_1929_process-and-reality\|Whitehead (1929)]] |
 | D14 | [[sources/D14_varela_1991_embodied-mind\|Varela (1991) D14]] |
+| D15 | [[sources/D15_dewey_1934_art-as-experience\|Dewey (1934)]], [[sources/D15_kant_1790_kritik-der-urteilskraft\|Kant (1790)]], [[sources/D15_motoori_1799_tama-no-ogushi\|Motoori (1799)]], [[sources/D15_nose_1944_yugenron\|Nose (1944)]], [[sources/D15_zeami_classics\|世阿弥（風姿花伝）]] |
+| D16 | [[sources/D16_braudel_1958_longue-duree\|Braudel (1958)]], [[sources/D16_ibn-khaldun_1377_muqaddimah\|Ibn Khaldun (1377)]], [[sources/D16_toynbee_1934_study-of-history\|Toynbee (1934)]] |
+| D17 | [[sources/D17_bickerton_1981_roots-of-language\|Bickerton (1981)]] |
 | D18 | [[sources/D18_durkheim_1893_division-labor\|Durkheim (1893)]] |
 | D19 | [[sources/D19_propp_1968_morphology-of-the-folktale\|Propp (1968)]] |
-| D20 | [[sources/D20_idea_2011_practical-guide-constitution-building\|IDEA (2011)]] |
-| D21 | [[sources/D21_hayek_1945_use-of-knowledge-in-society\|Hayek (1945)]] |
+| D20 | [[sources/D20_idea_2011_practical-guide-constitution-building\|IDEA (2011)]], [[sources/D20_ostrom_1990_governing-the-commons\|Ostrom (1990)]], [[sources/D20_singapore-convention_2018_mediation\|Singapore (2018)]], [[sources/D20_uncitral_2021_mediation-rules\|UNCITRAL (2021)]] |
+| D21 | [[sources/D21_hayek_1945_use-of-knowledge-in-society\|Hayek (1945)]], [[sources/D21_hayek_2002_competition-discovery-procedure\|Hayek (2002)]], [[sources/D21_keynes_1936_general-theory\|Keynes (1936)]], [[sources/D21_knight_1921_risk-uncertainty-profit\|Knight (1921)]], [[sources/D21_schumpeter_1912_theorie-der-wirtschaftlichen-entwicklung\|Schumpeter (1912)]], [[sources/D21_schumpeter_1939_business-cycles\|Schumpeter (1939)]] |
 | D22 | [[sources/D22_akiike_2021_design-thinking-articles\|Akiike (2021)]], [[sources/D22_stanford_2010_design-thinking-process-guide\|Stanford d.school (2010)]] |
-| D23 | [[sources/D23_nakama_2014_dids-japanese-version\|Nakama (2014)]] |
-| D24 | [[sources/D24_suzuki_1935_manual-of-zen-buddhism\|Suzuki (1935)]], [[sources/D24_teresa_1921_interior-castle\|Teresa (1921)]] |
-| D25 | [[sources/D25_pratt_1991_arts-of-the-contact-zone\|Pratt (1991)]] |
+| D23 | [[sources/D23_kegan_1982_evolving-self\|Kegan (1982)]], [[sources/D23_kinoshita_2001_self-image\|Kinoshita (2001)]], [[sources/D23_nakama_2014_dids-japanese-version\|Nakama (2014)]] |
+| D24 | [[sources/D24_dimarzio_2019_affiliation-conversion-departure\|Dimarzio (2019)]], [[sources/D24_suzuki_1935_manual-of-zen-buddhism\|Suzuki (1935)]], [[sources/D24_teresa_1921_interior-castle\|Teresa (1921)]] |
+| D25 | [[sources/D25_barth_1969_ethnic-groups-intro\|Barth (1969)]], [[sources/D25_pratt_1991_arts-of-the-contact-zone\|Pratt (1991)]], [[sources/D25_van-gennep_1960_rites-of-passage\|van Gennep (1960 英訳)]], [[sources/D25_vangennep_1909_rites-of-passage\|van Gennep (1909 仏)]] |
 | D27 | [[sources/D27_alexander_1977_pattern-language\|Alexander (1977)]] |
 | D28 | [[sources/D28_zeami_classics\|世阿弥]] |
-| D29 | [[sources/D29_prigogine_1977_time-structure-fluctuations\|Prigogine (1977)]] |
-| D30 | [[sources/D30_cbd_2018_nagoya-protocol\|CBD (2018)]], [[sources/D30_ipbes_2019_ilk-methodological-guidance\|IPBES (2019)]] |
+| D29 | [[sources/D29_clauset_2007_power-law-distributions\|Clauset (2007)]], [[sources/D29_prigogine_1977_time-structure-fluctuations\|Prigogine (1977)]], [[sources/D29_watkins_2016_25-years-self-organized-criticality\|Watkins (2016)]] |
+| D30 | [[sources/D30_cbd_2018_nagoya-protocol\|CBD (2018)]], [[sources/D30_ipbes_2019_ilk-methodological-guidance\|IPBES (2019)]], [[sources/D30_matsuki_numata_2021_ichiza-konryu\|Matsuki & Numata (2021)]], [[sources/D30_zeami_classics\|世阿弥（一座建立）]] |
 
 ## 関連ページ
 
