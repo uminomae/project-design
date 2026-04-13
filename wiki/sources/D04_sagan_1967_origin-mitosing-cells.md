@@ -2,7 +2,7 @@
 title: "有糸分裂細胞の起源"
 description: "ミトコンドリア・鞭毛・葉緑体などの真核細胞内オルガネラが、かつて独立して生きていた原核生物との共生から生じたという連続共生説を提唱したセーガンの論文。"
 aliases: ["On the Origin of Mitosing Cells"]
-tags: ["D04", "原典解説"]
+tags: [source, "D04", "原典解説"]
 source:
   repo: "creation-space"
   path: "knowledge/raw/D04_sagan_1967_origin-mitosing-cells.pdf"

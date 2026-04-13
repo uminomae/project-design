@@ -2,7 +2,7 @@
 title: "数学における証明と進歩について"
 description: "数学者 William Thurston が「数学者は何を達成するのか」という問いから出発し、証明の社会的・認知的側面と、数学的理解の伝播プロセスを論じた論考。"
 aliases: ["On Proof and Progress in Mathematics"]
-tags: ["D01", "原典解説"]
+tags: [source, "D01", "原典解説"]
 source:
   repo: "creation-space"
   path: "knowledge/raw/D01_thurston_1994_proof-and-progress.pdf"

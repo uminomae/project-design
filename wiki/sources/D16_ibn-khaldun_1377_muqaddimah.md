@@ -2,7 +2,7 @@
 title: "ムカッディマ（歴史序説）"
 description: "イブン・ハルドゥーンが著した世界史序論。文明・社会・国家の盛衰を「アサビーヤ（連帯感）」の概念で説明した人類最初の社会科学的著作のひとつ。"
 aliases: ["Muqaddimah", "al-Muqaddimah", "An Introduction to History"]
-tags: ["D16", "原典解説"]
+tags: [source, "D16", "原典解説"]
 source:
   repo: "creation-space"
   path: "knowledge/raw/D16_ibn-khaldun_1377_muqaddimah.pdf"

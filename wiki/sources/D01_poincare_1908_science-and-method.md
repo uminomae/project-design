@@ -2,7 +2,7 @@
 title: "科学と方法"
 description: "Henri Poincaré が科学的発見の方法論を哲学的・心理学的に考察した論集。事実の選択、数学的発見の心理メカニズム、偶然の役割などを探る。"
 aliases: ["Science and Method"]
-tags: ["D01", "原典解説"]
+tags: [source, "D01", "原典解説"]
 source:
   repo: "creation-space"
   path: "knowledge/raw/D01_poincare_1908_science-and-method.pdf"

@@ -137,9 +137,14 @@ related_concepts: [...]       # (optional) 関連概念リスト
 
 ### tag 体系
 
-- 構造タグ: `concept`, `entity`, `person`, `cross-ref`, `source`
-- ドメインタグ: `trust`, `value`, `design-thinking`, `kesson` など
+- 構造タグ: `concept`, `entity`, `person`, `cross-ref`, `source`（ディレクトリ種別を示す。1ページに必ず1つ）
+- ドメインタグ: `trust`, `value`, `design-thinking`, `kesson`, `awareness-model` など（テーマ別）
+- creation-space ドメインタグ: `D01`〜`D30`（30ドメインに属する sources/entities に付与）
 - メタタグ: `原典参照`（PDF 由来）, `原典解説`（sources の解説ページ）
+
+#### 禁止: コンテンツ位置タグ
+
+`§1-先行研究` のような本文セクション名をタグ化してはならない（フィルタ精度が落ちる）。本文内の見出しで参照する。
 
 ---
 

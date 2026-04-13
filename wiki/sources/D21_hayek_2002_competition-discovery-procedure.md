@@ -2,7 +2,7 @@
 title: "発見手続きとしての競争"
 description: "Friedrich Hayek が1968年に行った講演の英訳。競争を「既知の事実の効率的な配分」ではなく「未知の事実を発見する手続き」として再定義した、知識論的・方法論的に重要な論考。"
 aliases: ["Competition as a Discovery Procedure", "Der Wettbewerb als Entdeckungsverfahren"]
-tags: ["D21", "原典解説"]
+tags: [source, "D21", "原典解説"]
 source:
   repo: "creation-space"
   path: "knowledge/raw/D21_hayek_2002_competition-discovery-procedure.pdf"

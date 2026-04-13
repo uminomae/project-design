@@ -2,7 +2,7 @@
 title: "思考の方法（1910年版）"
 description: "デューイ（1910）による反省的思考（reflective thinking）の体系的解析。思考の諸形態を区別し、真の教育的価値をもつ「反省的思考」の構造と訓練可能性を論じた探究論の古典。"
 aliases: ["How We Think 1910", "Dewey reflective thinking"]
-tags: ["D13", "原典解説"]
+tags: [source, "D13", "原典解説"]
 source:
   repo: "creation-space"
   path: "knowledge/raw/D13_dewey_1910_how-we-think.pdf"

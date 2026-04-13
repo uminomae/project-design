@@ -2,7 +2,7 @@
 title: "ジーンズ不安定性 — 自己重力ガス球の安定性条件の導出"
 description: "球対称の自己重力ガス星雲における微小擾乱の安定性を線形解析で調べ、重力崩壊が起こる臨界条件（ジーンズ不安定性）を導出した。ガスの圧縮性が液体の場合と本質的に異なる不安定性を生むことを示し、星・銀河形成の理論的基礎を築いた。"
 aliases: ["The Stability of a Spherical Nebula", "Jeans instability"]
-tags: ["astronomy", "原典解説", "D06"]
+tags: [source, "astronomy", "原典解説", "D06"]
 source:
   repo: "creation-space"
   path: "knowledge/raw/D06_jeans_1902_stability-nebula.pdf"

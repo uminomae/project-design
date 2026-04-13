@@ -2,7 +2,7 @@
 title: "ダンバーの社会脳仮説"
 description: "霊長類の新皮質の進化的拡大が社会的複雑性への適応として駆動されたという仮説。新皮質比と集団サイズの正の相関を比較神経解剖学的に実証し、ヒトの「自然な」集団サイズが約150人（ダンバー数）であると推定した。ただし150という特定の数値の統計的妥当性は批判されている。"
 aliases: ["Social Brain Hypothesis", "Dunbar's number"]
-tags: ["awareness-model", "原典解説"]
+tags: [source, "awareness-model", "原典解説"]
 source:
   repo: "project-design"
   path: "knowledge/evidence/awareness-model/dunbar-social-brain-hypothesis.md"

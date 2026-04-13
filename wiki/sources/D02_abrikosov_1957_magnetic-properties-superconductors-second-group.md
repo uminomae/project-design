@@ -2,7 +2,7 @@
 title: "第二種超伝導体の磁気的性質"
 description: "アブリコソフによる第二種超伝導体の理論的解析。ギンツブルク-ランダウ理論のパラメータ κ が 1/√2 より大きい場合の渦糸格子構造を初めて予測した。"
 aliases: ["On the Magnetic Properties of Superconductors of the Second Group"]
-tags: ["D02", "原典解説"]
+tags: [source, "D02", "原典解説"]
 source:
   repo: "creation-space"
   path: "knowledge/raw/D02_abrikosov_1957_magnetic-properties-superconductors-second-group.pdf"

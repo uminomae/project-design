@@ -2,7 +2,7 @@
 title: "Planck 2015 年成果 XIII. 宇宙論的パラメータ"
 description: "Planck 衛星の全ミッションデータに基づく宇宙論的パラメータの精密測定。ΛCDM 標準宇宙論モデルを高精度で検証し、宇宙の組成・膨張率・幾何学を制約した。"
 aliases: ["Planck 2015 results. XIII. Cosmological parameters"]
-tags: ["D06", "原典解説"]
+tags: [source, "D06", "原典解説"]
 source:
   repo: "creation-space"
   path: "knowledge/raw/D06_planck-collaboration_2016_cosmological-parameters.pdf"

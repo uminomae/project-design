@@ -1,6 +1,6 @@
 ---
 title: "Wiki Index"
-compiled: "2026-04-12"
+compiled: "2026-04-13"
 ---
 # Wiki -- Map of Content
 
@@ -49,20 +49,18 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 
 ### awareness-model 原典
 
-#### 先行研究（確立された知見）
-- [[sources/Barrett_2017_constructed-emotion|構成主義的情動理論 — 情動は予測・内受容感覚・概念から構成される]]
-- [[sources/Clark_2013_predictive-processing|予測処理 — 予測する脳、状況に埋め込まれたエージェント]]
-- [[sources/Craig_2002_interoception|内受容感覚 — 身体の生理的状態の感覚]]
-- [[sources/Damasio_1994_somatic-marker|ソマティック・マーカー仮説 — 情動・理性・身体]]
-- [[sources/Friston_2010_free-energy-principle|自由エネルギー原理 — 統一的脳理論?]]
-
 #### 核心仮説の多層的証拠
+- [[sources/Barrett_2017_constructed-emotion|構成主義的情動理論 — 情動は予測・内受容感覚・概念から構成される]]
 - [[sources/Baumeister_1995_need-to-belong|所属欲求 — 基本的な人間の動機づけとしての対人愛着への欲求]]
+- [[sources/Clark_2013_predictive-processing|予測処理 — 予測する脳、状況に埋め込まれたエージェント]]
 - [[sources/Coan_2015_social-baseline-theory|社会的ベースライン理論 — リスクと努力の社会的調整]]
 - [[sources/Cole_2007_social-regulation-gene-expression|ヒト白血球における遺伝子発現の社会的調節]]
+- [[sources/Craig_2002_interoception|内受容感覚 — 身体の生理的状態の感覚]]
+- [[sources/Damasio_1994_somatic-marker|ソマティック・マーカー仮説 — 情動・理性・身体]]
 - [[sources/Dunbar_1992_social-brain-hypothesis|ダンバーの社会脳仮説]]
 - [[sources/Durkheim_1897_suicide-social-integration|自殺論 — 社会的統合と自己破壊の社会学的研究]]
 - [[sources/Eisenberger_2003_social-exclusion-fmri|社会的排除は痛みを伴うか — fMRI研究]]
+- [[sources/Friston_2010_free-energy-principle|自由エネルギー原理 — 統一的脳理論?]]
 - [[sources/Holt-Lunstad_2010_social-relationships-mortality|社会的関係と死亡リスク — 二大メタ分析]]
 - [[sources/Panksepp-Barrett_1998_panic-grief-constructed-emotion|PANIC/GRIEFシステムと構成主義情動理論の論争]]
 - [[sources/Smith-Wang_2014_oxytocin-social-bonding|視床下部オキシトシンによるストレス応答の社会的緩衝]]

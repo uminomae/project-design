@@ -2,7 +2,7 @@
 title: "非相対論的量子力学への時空アプローチ"
 description: "リチャード・ファインマンによる経路積分定式化の原論文。量子力学の遷移振幅を全経路にわたる積分として表現する手法を確立し、シュレーディンガー方程式との等価性を証明した。"
 aliases: ["Space-Time Approach to Non-Relativistic Quantum Mechanics"]
-tags: ["D02", "原典解説"]
+tags: [source, "D02", "原典解説"]
 source:
   repo: "creation-space"
   path: "knowledge/raw/D02_feynman_1948_space-time-approach-nonrelativistic-quantum-mechanics.pdf"

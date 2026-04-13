@@ -2,7 +2,7 @@
 title: "断続平衡説"
 description: "Eldredge と Gould が提唱した進化モデル。系統漸進説に代わり、種の形態は長期の停滞と急速な分岐イベントの繰り返しによって変化するという理論。"
 aliases: ["Punctuated Equilibria", "断続均衡説"]
-tags: ["D04", "原典解説"]
+tags: [source, "D04", "原典解説"]
 source:
   repo: "creation-space"
   path: "knowledge/raw/D04_eldredge-gould_1972_punctuated-equilibria.pdf"

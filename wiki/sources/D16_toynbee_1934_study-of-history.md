@@ -2,7 +2,7 @@
 title: "歴史の研究 — 文明の挑戦と応答"
 description: "Toynbee は複数の独立した文明を比較分析し、文明の生成・成長・衰退の共通パターンを「挑戦と応答」の原理で説明した。歴史哲学の科学的基礎を構築しようとした野心的試み。"
 aliases: ["A Study of History", "Study of History"]
-tags: ["D16", "原典解説"]
+tags: [source, "D16", "原典解説"]
 source:
   repo: "creation-space"
   path: "knowledge/raw/D16_toynbee_1934_study-of-history-vol1.pdf"

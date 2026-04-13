@@ -2,7 +2,7 @@
 title: "自殺論 — 社会的統合と自己破壊の社会学的研究"
 description: "Durkheim（1897）が19世紀ヨーロッパの自殺統計を分析し、自殺率を非社会的要因（精神病理・気候・遺伝）では説明できず、社会的統合と道徳的規制の水準によって規定される「社会的事実」として定式化した古典的著作。現代の疫学的研究（Berkman & Syme 1979; Holt-Lunstad 2010）につながる社会的統合と死亡率の関連研究の起点。"
 aliases: ["Le Suicide: Etude de sociologie", "Suicide: A Study in Sociology"]
-tags: ["awareness-model", "原典解説"]
+tags: [source, "awareness-model", "原典解説"]
 source:
   repo: "project-design"
   path: "knowledge/evidence/awareness-model/durkheim-1897-suicide-social-integration.md"

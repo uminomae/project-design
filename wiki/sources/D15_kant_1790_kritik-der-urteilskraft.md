@@ -2,7 +2,7 @@
 title: "判断力批判"
 description: "カントが美的判断と目的論的判断を分析し、自然の合目的性・崇高・天才論を展開した批判哲学の第三批判書。"
 aliases: ["Kritik der Urteilskraft", "Critique of Judgment", "Critique of the Power of Judgment"]
-tags: ["D15", "原典解説"]
+tags: [source, "D15", "原典解説"]
 source:
   repo: "creation-space"
   path: "knowledge/raw/D15_kant_1790_kritik-der-urteilskraft.pdf"

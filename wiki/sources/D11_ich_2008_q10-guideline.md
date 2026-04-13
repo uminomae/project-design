@@ -2,7 +2,7 @@
 title: "ICH Q10 医薬品品質システムガイドライン"
 description: "医薬品ライフサイクル全体を通じた効果的な品質マネジメントシステムのモデルを定義し、製品実現・管理状態の確立・継続的改善という3つの目標を達成するための枠組みを規定したICHガイドライン。"
 aliases: ["Q10 Pharmaceutical Quality System Guideline", "ICH Q10"]
-tags: ["D11", "原典解説"]
+tags: [source, "D11", "原典解説"]
 source:
   repo: "creation-space"
   path: "knowledge/raw/D11_ich_2008_q10-guideline.pdf"

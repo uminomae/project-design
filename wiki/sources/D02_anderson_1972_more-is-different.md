@@ -2,7 +2,7 @@
 title: "多いことは違うことだ"
 description: "P. W. Anderson が還元主義の限界を論じ、階層的複雑性と創発の概念を提唱した記念碑的論考。「量的変化が質的変化を生む」という命題を物理学の観点から展開する。"
 aliases: ["More Is Different"]
-tags: ["D02", "原典解説"]
+tags: [source, "D02", "原典解説"]
 source:
   repo: "creation-space"
   path: "knowledge/raw/D02_anderson_1972_more-is-different.pdf"

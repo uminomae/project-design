@@ -2,7 +2,7 @@
 title: "昔話の形態学"
 description: "ウラジーミル・プロップが1928年に発表した民話の構造分析。100篇以上のロシア民話を分析し、すべての昔話が31の機能と7人の登場人物類型で記述できることを論証した。"
 aliases: ["Morphology of the Folktale"]
-tags: ["D19", "原典解説"]
+tags: [source, "D19", "原典解説"]
 source:
   repo: "creation-space"
   path: "knowledge/raw/D19_propp_1968_morphology-of-the-folktale.pdf"

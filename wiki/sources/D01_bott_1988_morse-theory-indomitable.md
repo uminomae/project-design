@@ -2,7 +2,7 @@
 title: "モース理論 不屈の研究"
 description: "ラウル・ボットによるモース理論の歴史的発展を振り返る講演論文。臨界点理論から始まりフロアー理論に至るまでの数学的系譜を解説する。"
 aliases: ["Morse Theory Indomitable"]
-tags: ["D01", "原典解説"]
+tags: [source, "D01", "原典解説"]
 source:
   repo: "creation-space"
   path: "knowledge/raw/D01_bott_1988_morse-theory-indomitable.pdf"

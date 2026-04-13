@@ -2,7 +2,7 @@
 title: "経済発展の理論（初版）"
 description: "Joseph Schumpeter が1912年に著した経済発展論の初版。起業家による「新結合」が静態的な循環経済を内側から破壊し発展をもたらすという、後の「創造的破壊」概念の原型を提示した。"
 aliases: ["Theorie der wirtschaftlichen Entwicklung", "Theory of Economic Development"]
-tags: ["D21", "原典解説"]
+tags: [source, "D21", "原典解説"]
 source:
   repo: "creation-space"
   path: "knowledge/raw/D21_schumpeter_1912_theorie-der-wirtschaftlichen-entwicklung.pdf"

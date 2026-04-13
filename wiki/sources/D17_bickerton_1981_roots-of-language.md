@@ -2,7 +2,7 @@
 title: "言語の起源"
 description: "Derek Bickerton がクレオール語の形成・子供の言語習得・人類の言語起源という三つの問題を統一的に解く「言語バイオプログラム仮説」を提唱した著作。"
 aliases: ["Roots of Language", "Roots of language"]
-tags: ["D17", "原典解説"]
+tags: [source, "D17", "原典解説"]
 source:
   repo: "creation-space"
   path: "knowledge/raw/D17_bickerton_1981_roots-of-language.pdf"

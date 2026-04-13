@@ -2,7 +2,7 @@
 title: "アレルゲン免疫療法の新治療戦略"
 description: "アレルゲン特異的免疫療法（SIT）の問題点と、Tセル寛容・組換えアレルゲン・アジュバント結合・新規投与経路などの改善戦略を論じたレビュー。"
 aliases: ["New treatments for allergen immunotherapy", "Akdis 2014 allergen immunotherapy"]
-tags: ["D10", "原典解説"]
+tags: [source, "D10", "原典解説"]
 source:
   repo: "creation-space"
   path: "knowledge/raw/D10_akdis_2014_allergen-immunotherapy.pdf"

@@ -2,7 +2,7 @@
 title: "視床下部オキシトシンによるストレス応答の社会的緩衝"
 description: "プレーリーハタネズミを用い、室傍核（PVN）内の内因性オキシトシンがストレス応答の社会的緩衝を因果的に媒介することを薬理学的に実証した。オキシトシンの「十分性」（OT投与で再現）と「必要性」（OTR拮抗薬でブロック）の双方を示した。"
 aliases: ["Hypothalamic oxytocin mediates social buffering of the stress response"]
-tags: ["awareness-model", "原典解説"]
+tags: [source, "awareness-model", "原典解説"]
 source:
   repo: "project-design"
   path: "knowledge/evidence/awareness-model/oxytocin-social-bonding-smith-wang-2014.md"

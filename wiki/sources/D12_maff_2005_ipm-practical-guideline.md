@@ -2,7 +2,7 @@
 title: "総合的病害虫・雑草管理（IPM）実践指針"
 description: "化学農薬依存から脱却し、生態系機能を活用した総合的防除（IPM）を農業生産現場に普及させるための基本方針・定義・実践指標策定の枠組みを示した農林水産省指針。"
 aliases: ["総合的病害虫・雑草管理実践指針", "MAFF IPM practical guideline 2005"]
-tags: ["D12", "原典解説"]
+tags: [source, "D12", "原典解説"]
 source:
   repo: "creation-space"
   path: "knowledge/raw/D12_maff_2005_ipm-practical-guideline.pdf"

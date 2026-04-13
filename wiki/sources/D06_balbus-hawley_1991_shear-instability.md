@@ -2,7 +2,7 @@
 title: "磁気回転不安定性 — 弱磁場降着円盤における強力な局所剪断不安定性"
 description: "弱い磁場を持つ差動回転する降着円盤が軸対称擾乱に対して動的に不安定であることを線形解析で証明。安定性条件は角速度が外向きに増加すること（dOmega^2/dR >= 0）であり、ケプラー回転では満たされない。磁場強度に依存しない成長率を持ち、降着円盤の乱流と角運動量輸送の起源を解明した。"
 aliases: ["Balbus-Hawley instability", "MRI", "Magnetorotational instability"]
-tags: ["astronomy", "原典解説", "D06"]
+tags: [source, "astronomy", "原典解説", "D06"]
 source:
   repo: "creation-space"
   path: "knowledge/raw/D06_balbus-hawley_1991_shear-instability.pdf"

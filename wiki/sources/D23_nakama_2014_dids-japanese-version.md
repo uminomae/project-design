@@ -2,7 +2,7 @@
 title: "多次元アイデンティティ発達尺度（DIDS）日本語版"
 description: "中間玲子ほかが2014年に発表した論文。Luyckxらが開発した多次元アイデンティティ発達尺度（DIDS）の日本語版を作成・妥当性検証した研究。"
 aliases: ["Multidimensional Identity Development Scale (DIDS) Japanese Version"]
-tags: ["D23", "原典解説"]
+tags: [source, "D23", "原典解説"]
 source:
   repo: "creation-space"
   path: "knowledge/raw/D23_nakama_2014_dids-japanese-version.pdf"

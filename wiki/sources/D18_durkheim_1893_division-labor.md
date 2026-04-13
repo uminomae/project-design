@@ -2,7 +2,7 @@
 title: "社会分業論 / De la division du travail social"
 description: "エミール・デュルケームが1893年に発表した社会学の古典。分業が社会的連帯をどのように生み出すかを論じ、機械的連帯と有機的連帯の概念を提唱した。"
 aliases: ["De la division du travail social", "The Division of Labour in Society"]
-tags: ["D18", "原典解説"]
+tags: [source, "D18", "原典解説"]
 source:
   repo: "creation-space"
   path: "knowledge/raw/D18_durkheim_1893_division-labor.pdf"

@@ -2,7 +2,7 @@
 title: "バーコード：データの永続的位相"
 description: "永続ホモロジーとそのバーコード表現を解説するサーベイ論文。高次元点群データの形状認識・特徴検出への計算代数位相幾何学の応用を示す。"
 aliases: ["Barcodes: The Persistent Topology of Data"]
-tags: ["D01", "原典解説"]
+tags: [source, "D01", "原典解説"]
 source:
   repo: "creation-space"
   path: "knowledge/raw/D01_ghrist_2008_barcodes.pdf"

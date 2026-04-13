@@ -2,7 +2,7 @@
 title: "身体化された心（The Embodied Mind）— 神経科学の視点"
 description: "認知を「身体化された行為（enaction）」として再定義し、神経科学における自己組織化・創発・autopoiesis の概念と認知機能の関係を論じた認知科学の古典的著作（神経科学 D08 の視点から）。"
 aliases: ["The Embodied Mind neuroscience perspective", "Varela Thompson Rosch 1991 D08"]
-tags: ["D08", "原典解説"]
+tags: [source, "D08", "原典解説"]
 source:
   repo: "creation-space"
   path: "knowledge/raw/D14_varela_1991_embodied-mind.pdf"

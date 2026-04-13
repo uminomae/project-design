@@ -2,7 +2,7 @@
 title: "デザイン思考論文に求められる要件とは何か"
 description: "秋池篤・市光哲矢による2021年の査読論文。経営学の主要学術誌に掲載されたデザイン思考関連論文をレビューし、研究の共通特性と実証研究の収束傾向を明らかにした。"
 aliases: ["What Are the Requirements for Design Thinking Articles?"]
-tags: ["D22", "原典解説"]
+tags: [source, "D22", "原典解説"]
 source:
   repo: "creation-space"
   path: "knowledge/raw/D22_akiike_2021_design-thinking-articles.pdf"

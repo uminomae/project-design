@@ -2,7 +2,7 @@
 title: "幼児は自己映像を「自分のこと」として見ているか？"
 description: "木下孝司（2001）による遅延提示ビデオ映像を用いた幼児の自己認知研究。時間的次元を含んだ自己認知の発達を、心の理論・パフォーマンス変化理解との関連で検討した。"
 aliases: ["Do Young Children Recognize Their Video Images as Themselves?", "Kinoshita 2001 self-image"]
-tags: ["D23", "原典解説"]
+tags: [source, "D23", "原典解説"]
 source:
   repo: "creation-space"
   path: "knowledge/raw/D23_kinoshita_2001_self-image.pdf"

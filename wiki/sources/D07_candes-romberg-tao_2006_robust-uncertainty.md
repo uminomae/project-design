@@ -2,7 +2,7 @@
 title: "ロバスト不確実性原理――疎な信号のフーリエサンプルからの完全再構成"
 description: "スパース信号を少数のランダム周波数サンプルから凸最適化（l1最小化）によって完全に再構成できることを証明したカンデス・ロンバーグ・タオの論文。圧縮センシングの数学的基礎を確立した。"
 aliases: ["Robust uncertainty principles"]
-tags: ["D07", "原典解説"]
+tags: [source, "D07", "原典解説"]
 source:
   repo: "creation-space"
   path: "knowledge/raw/D07_candes-romberg-tao_2006_robust-uncertainty.pdf"

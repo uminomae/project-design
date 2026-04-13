@@ -2,7 +2,7 @@
 title: "化学系における振動 IV: 実在する化学反応のモデルにおけるリミットサイクル挙動"
 description: "Field と Noyes が Belousov-Zhabotinsky 反応の機構を5ステップ・3中間体に簡約した Oregonator モデルを提示し、数値計算で3次元位相空間における安定なリミットサイクルを示した1974年の論文。"
 aliases: ["Oscillations in Chemical Systems IV", "Oregonator", "Field-Noyes 1974"]
-tags: ["D03", "原典解説"]
+tags: [source, "D03", "原典解説"]
 source:
   repo: "creation-space"
   path: "knowledge/raw/D03_field-noyes_1974_oscillations.pdf"

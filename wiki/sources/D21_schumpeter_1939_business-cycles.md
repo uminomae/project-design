@@ -2,7 +2,7 @@
 title: "景気循環論"
 description: "シュンペーターが資本主義の動態を景気循環として分析し、イノベーション（新結合）を循環の内生的駆動力として位置づけた大著。"
 aliases: ["Business Cycles", "景気変動の理論"]
-tags: ["D21", "原典解説"]
+tags: [source, "D21", "原典解説"]
 source:
   repo: "creation-space"
   path: "knowledge/raw/D21_schumpeter_1939_business-cycles.pdf"

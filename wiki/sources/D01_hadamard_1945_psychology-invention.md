@@ -2,7 +2,7 @@
 title: "数学における発明の心理学"
 description: "数学的発明のプロセスを内省的方法で分析し、準備 → 潜伏 → 照明 → 検証 の4段階を提唱した1945年の古典。無意識の働きと美的選択を創造の核心に置いた。"
 aliases: ["The Psychology of Invention in the Mathematical Field", "Hadamard 1945"]
-tags: ["D01", "原典解説"]
+tags: [source, "D01", "原典解説"]
 source:
   repo: "creation-space"
   path: "knowledge/raw/D01_hadamard_1945_psychology-invention.pdf"

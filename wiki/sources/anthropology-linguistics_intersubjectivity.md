@@ -2,7 +2,7 @@
 title: "文化人類学・言語学における間主観性"
 description: "Mbiti/Ubuntu（アフリカ存在論）・モース贈与論・Tomasello（共有志向性）の3系列を通じ、間主観性が生存を可能にする基盤条件であることを存在論的・社会構造的・認知進化的に論じた原典ノートのwikiページ。"
 aliases: ["Anthropology and Linguistics: Intersubjectivity"]
-tags: ["awareness-model", "原典解説", "文化人類学", "言語学", "比較認知科学", "間主観性"]
+tags: [source, "awareness-model", "原典解説", "文化人類学", "言語学", "比較認知科学", "間主観性"]
 source:
   repo: "project-design"
   path: "knowledge/evidence/awareness-model/anthropology-linguistics-intersubjectivity.md"

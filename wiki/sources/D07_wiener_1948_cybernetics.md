@@ -2,7 +2,7 @@
 title: "サイバネティクス——動物と機械における制御と通信"
 description: "Wiener による制御と通信の統一理論。フィードバック・情報・目的指向システムの概念を定式化した。"
 aliases: ["Cybernetics: Or Control and Communication in the Animal and the Machine"]
-tags: ["D07", "原典解説"]
+tags: [source, "D07", "原典解説"]
 source:
   repo: "creation-space"
   path: "knowledge/raw/D07_wiener_1948_cybernetics.pdf"

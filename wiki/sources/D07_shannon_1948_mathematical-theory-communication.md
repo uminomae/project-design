@@ -2,7 +2,7 @@
 title: "通信の数学的理論"
 description: "クロード・シャノンによる情報理論の原論文。情報量のビット単位による定量化、チャンネル容量、エントロピーの概念を確立し、現代通信技術の理論的基礎を築いた。"
 aliases: ["A Mathematical Theory of Communication"]
-tags: ["D07", "原典解説"]
+tags: [source, "D07", "原典解説"]
 source:
   repo: "creation-space"
   path: "knowledge/raw/D07_shannon_1948_mathematical-theory-communication.pdf"

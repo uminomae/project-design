@@ -2,7 +2,7 @@
 title: "過飽和蒸気における核形成の運動論的処理"
 description: "Becker と Döring が過飽和蒸気からの液滴核形成の速度を運動論的に厳密に計算し、核形成頻度の定量的公式を導いた1935年の基礎論文。"
 aliases: ["Kinetische Behandlung der Keimbildung in übersättigten Dämpfen", "Kinetic Treatment of Nucleation in Supersaturated Vapors"]
-tags: ["D03", "原典解説"]
+tags: [source, "D03", "原典解説"]
 source:
   repo: "creation-space"
   path: "knowledge/raw/D03_becker-doring_1935_keimbildung.pdf"

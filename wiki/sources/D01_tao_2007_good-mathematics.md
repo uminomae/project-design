@@ -2,7 +2,7 @@
 title: "良い数学とは何か"
 description: "Terence Tao が「良い数学」の多様な側面を考察し、Szemerédi の定理を事例に数学的質がどのように評価・進展するかを論じた論考。"
 aliases: ["What is Good Mathematics?"]
-tags: ["D01", "原典解説"]
+tags: [source, "D01", "原典解説"]
 source:
   repo: "creation-space"
   path: "knowledge/raw/D01_tao_2007_good-mathematics.pdf"

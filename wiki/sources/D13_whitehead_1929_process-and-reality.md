@@ -2,7 +2,7 @@
 title: "過程と実在"
 description: "ホワイトヘッド（1929）によるギフォード講演録。「現実的存在（actual entity）」の生成・消滅・関係性を軸に宇宙を過程（process）として記述する「有機体の哲学（Philosophy of Organism）」を展開した形而上学の主著。"
 aliases: ["Process and Reality", "Whitehead process philosophy"]
-tags: ["D13", "原典解説"]
+tags: [source, "D13", "原典解説"]
 source:
   repo: "creation-space"
   path: "knowledge/raw/D13_whitehead_1929_process-and-reality.pdf"

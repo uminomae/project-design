@@ -2,7 +2,7 @@
 title: "コモンズのガバナンス"
 description: "Elinor Ostrom が共有資源（コモンズ）の管理問題を検討し、国家管理でも民営化でもない「自治ガバナンス」が成立し長期的に機能することを豊富な事例で示した制度論的著作。"
 aliases: ["Governing the Commons", "Governing the Commons: The Evolution of Institutions for Collective Action"]
-tags: ["D20", "原典解説"]
+tags: [source, "D20", "原典解説"]
 source:
   repo: "creation-space"
   path: "knowledge/raw/D20_ostrom_1990_governing-the-commons.pdf"

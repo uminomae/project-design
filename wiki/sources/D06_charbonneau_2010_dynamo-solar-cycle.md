@@ -2,7 +2,7 @@
 title: "太陽周期のダイナモモデル"
 description: "太陽の11年磁気活動サイクルを磁気流体力学的ダイナモ過程として説明する諸モデルを体系的にレビューしたシャルボノーの総説論文。"
 aliases: ["Dynamo Models of the Solar Cycle"]
-tags: ["D06", "原典解説"]
+tags: [source, "D06", "原典解説"]
 source:
   repo: "creation-space"
   path: "knowledge/raw/D06_charbonneau_2010_dynamo-solar-cycle.pdf"

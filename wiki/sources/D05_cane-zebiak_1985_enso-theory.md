@@ -2,7 +2,7 @@
 title: "エルニーニョと南方振動の理論"
 description: "熱帯太平洋の大気・海洋結合系がENSOサイクルを自律的に生み出すことを最初に結合モデルで再現し、予測可能性を示したケインとゼビアックの論文。"
 aliases: ["A Theory for El Niño and the Southern Oscillation"]
-tags: ["D05", "原典解説"]
+tags: [source, "D05", "原典解説"]
 source:
   repo: "creation-space"
   path: "knowledge/raw/D05_cane-zebiak_1985_enso-theory.pdf"

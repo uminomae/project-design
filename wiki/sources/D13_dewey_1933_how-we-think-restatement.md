@@ -2,7 +2,7 @@
 title: "思考の方法（1933年改訂版）"
 description: "デューイ（1933）による1910年版『思考の方法』の全面改訂版。反省的思考の理論をより精緻化し、感情・態度・習慣の役割を強調した探究論・教育哲学の成熟した定式化。"
 aliases: ["How We Think Restatement 1933", "Dewey reflective thinking revised"]
-tags: ["D13", "原典解説"]
+tags: [source, "D13", "原典解説"]
 source:
   repo: "creation-space"
   path: "knowledge/raw/D13_dewey_1933_how-we-think-restatement.pdf"

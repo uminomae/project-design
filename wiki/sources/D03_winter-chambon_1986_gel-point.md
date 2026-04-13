@@ -2,7 +2,7 @@
 title: "架橋ポリマーのゲル点における線形粘弾性の解析"
 description: "Winter と Chambon が架橋ポリマーのゲル化点において応力緩和モジュラスが G(t) = S·t^(-1/2) のべき乗則に従うことを示し、ゲル点を定量的に特徴づける「Winter-Chambon 基準」を確立した1986年の論文。"
 aliases: ["Analysis of Linear Viscoelasticity of a Crosslinking Polymer at the Gel Point", "Winter-Chambon criterion", "gel equation"]
-tags: ["D03", "原典解説"]
+tags: [source, "D03", "原典解説"]
 source:
   repo: "creation-space"
   path: "knowledge/raw/D03_winter-chambon_1986_gel-point.pdf"

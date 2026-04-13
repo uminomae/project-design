@@ -2,7 +2,7 @@
 title: "禅仏教提要"
 description: "鈴木大拙が1935年に編纂した禅の一次テキスト集成。偈頌・陀羅尼・経典・中国禅師の語録・日本禅師の遺誡・禅寺の仏像図版を六部構成で収録し、禅寺の修行生活で実際に用いられる文献群を英語で提供する。"
 aliases: ["Manual of Zen Buddhism"]
-tags: ["D24", "原典解説"]
+tags: [source, "D24", "原典解説"]
 source:
   repo: "creation-space"
   path: "knowledge/raw/D24_suzuki_1935_manual-of-zen-buddhism_part1.pdf"

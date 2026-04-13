@@ -2,7 +2,7 @@
 title: "抗生物質耐性の起源と進化 — 耐性遺伝子の太古からの存在と人為的加速"
 description: "抗生物質耐性は抗生物質の臨床使用以前から自然界に存在していた「太古のプロセス」であり、ヒトの抗生物質使用が選択圧を爆発的に加速させたとするレビュー。レジストーム、インテグロン、水平遺伝子移動、環境リザーバーの役割を包括的に整理し、耐性制御の困難さと緊急性を論じた。"
 aliases: ["Origins and Evolution of Antibiotic Resistance"]
-tags: ["pharmacy", "原典解説", "D11"]
+tags: [source, "pharmacy", "原典解説", "D11"]
 source:
   repo: "creation-space"
   path: "knowledge/raw/D11_davies_2010_antibiotic-resistance.pdf"

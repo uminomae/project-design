@@ -2,7 +2,7 @@
 title: "プレートテクトニクスの数理的基礎 — 剛体球面ブロックモデルによる地殻運動の記述"
 description: "地球表面を約20の剛体ブロックに分割し、球面上の角速度ベクトルで相対運動を記述する枠組みを提示。トランスフォーム断層・海嶺・海溝の幾何学的関係から回転極を決定し、大西洋・太平洋の拡大速度を定量的に検証した。プレートテクトニクス理論の数理的定式化における基礎論文。"
 aliases: ["Rises, Trenches, Great Faults, and Crustal Blocks"]
-tags: ["earth-science", "原典解説", "D05"]
+tags: [source, "earth-science", "原典解説", "D05"]
 source:
   repo: "creation-space"
   path: "knowledge/raw/D05_morgan_1968_rises-trenches.pdf"

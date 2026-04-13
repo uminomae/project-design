@@ -2,7 +2,7 @@
 title: "名古屋議定書"
 description: "生物多様性条約の第三の目的（遺伝資源の利用から生じる利益の公正かつ衡平な配分）を実施するための国際議定書。2010年に名古屋で採択され、遺伝資源へのアクセスと利益配分（ABS）の法的枠組みを定める。"
 aliases: ["Nagoya Protocol", "名古屋議定書 ABS", "Nagoya Protocol on Access and Benefit-sharing"]
-tags: ["D30", "原典解説"]
+tags: [source, "D30", "原典解説"]
 source:
   repo: "creation-space"
   path: "knowledge/raw/D30_cbd_2018_nagoya-protocol.pdf"

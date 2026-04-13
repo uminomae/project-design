@@ -2,7 +2,7 @@
 title: "教育学・看護学における間主観性"
 description: "Vygotsky（ZPD）・Noddings（ケアリング倫理）・Watson（看護ケアリング理論）の3理論を通じ、間主観性が認知発達・道徳的関係・治癒過程において代替不可能な役割を果たすことを論じた原典ノートのwikiページ。"
 aliases: ["Education and Nursing: Intersubjectivity"]
-tags: ["awareness-model", "原典解説", "教育学", "看護学", "ケアリング", "間主観性"]
+tags: [source, "awareness-model", "原典解説", "教育学", "看護学", "ケアリング", "間主観性"]
 source:
   repo: "project-design"
   path: "knowledge/evidence/awareness-model/education-nursing-intersubjectivity.md"

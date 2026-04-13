@@ -2,7 +2,7 @@
 title: "対称性の破れとゲージボソンの質量"
 description: "Peter Higgs が自発的対称性の破れによってゲージ場の量子に質量が生じることを予測した歴史的論文。ヒッグス機構の原典。"
 aliases: ["Broken Symmetries and the Masses of Gauge Bosons"]
-tags: ["D02", "原典解説"]
+tags: [source, "D02", "原典解説"]
 source:
   repo: "creation-space"
   path: "knowledge/raw/D02_higgs_1964_broken-symmetries.pdf"

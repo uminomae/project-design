@@ -2,7 +2,7 @@
 title: "シンガポール調停条約 (2018)"
 description: "国際商事調停の結果としての和解合意書の国際的執行可能性を定めた国連条約。2018年12月20日国連総会採択、2019年8月7日シンガポールで署名開始、2020年9月12日発効。"
 aliases: ["Singapore Convention on Mediation", "United Nations Convention on International Settlement Agreements Resulting from Mediation", "Singapore Convention 2018"]
-tags: ["D20", "原典解説"]
+tags: [source, "D20", "原典解説"]
 source:
   repo: "creation-space"
   path: "knowledge/raw/D20_singapore-convention_2018_mediation.pdf"

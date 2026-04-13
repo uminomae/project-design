@@ -2,7 +2,7 @@
 title: "種の起源"
 description: "自然選択による進化の理論を初めて体系的に提唱したダーウィンの主著。変異・生存競争・適者生存の仕組みを論証する。"
 aliases: ["On the Origin of Species"]
-tags: ["D04", "原典解説"]
+tags: [source, "D04", "原典解説"]
 source:
   repo: "creation-space"
   path: "knowledge/raw/D04_darwin_1859_origin-of-species.pdf"

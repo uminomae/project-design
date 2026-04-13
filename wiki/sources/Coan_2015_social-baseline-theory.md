@@ -2,7 +2,7 @@
 title: "社会的ベースライン理論 — リスクと努力の社会的調整"
 description: "人間の脳は社会的近接性を動作のデフォルト環境として前提し、孤立状態を追加的な認知・生理コストとして処理するという「社会的ベースライン理論」（SBT）を定式化したレビュー論文。"
 aliases: ["Social Baseline Theory: The social regulation of risk and effort"]
-tags: ["awareness-model", "原典解説"]
+tags: [source, "awareness-model", "原典解説"]
 source:
   repo: "project-design"
   path: "knowledge/evidence/awareness-model/coan-sbarra-social-baseline-theory.md"

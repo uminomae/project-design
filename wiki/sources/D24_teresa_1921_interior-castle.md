@@ -2,7 +2,7 @@
 title: "内なる城"
 description: "16世紀のカルメル会修道女、アビラのテレサが著した霊的修行の手引き。魂を七つの住まいを持つ水晶の城として描き、神との霊的結婚に至る内的変容の段階を体系化した作品。"
 aliases: ["The Interior Castle", "El Castillo Interior", "The Mansions"]
-tags: ["D24", "原典解説"]
+tags: [source, "D24", "原典解説"]
 source:
   repo: "creation-space"
   path: "knowledge/raw/D24_teresa_1921_interior-castle.pdf"

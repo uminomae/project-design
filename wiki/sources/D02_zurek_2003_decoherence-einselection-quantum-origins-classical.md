@@ -2,7 +2,7 @@
 title: "デコヒーレンス、アインセレクション、古典性の量子的起源"
 description: "ウォイチェフ・ズレックによる量子デコヒーレンス理論の包括的レビュー。環境との相互作用が量子重ね合わせを消滅させ古典的世界を創出するメカニズムを解明する。"
 aliases: ["Decoherence, einselection, and the quantum origins of the classical"]
-tags: ["D02", "原典解説"]
+tags: [source, "D02", "原典解説"]
 source:
   repo: "creation-space"
   path: "knowledge/raw/D02_zurek_2003_decoherence-einselection-quantum-origins-classical.pdf"

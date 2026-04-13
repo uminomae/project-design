@@ -2,7 +2,7 @@
 title: "遺伝的同化――獲得形質の遺伝"
 description: "環境刺激によって誘発された表現型が、選択を重ねることで遺伝的に固定される「遺伝的同化」を実験的に実証したワディントンの論文。"
 aliases: ["Genetic assimilation of an acquired character"]
-tags: ["D04", "原典解説"]
+tags: [source, "D04", "原典解説"]
 source:
   repo: "creation-space"
   path: "knowledge/raw/D04_waddington_1953_genetic-assimilation.pdf"

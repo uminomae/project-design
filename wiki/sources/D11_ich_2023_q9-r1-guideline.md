@@ -2,7 +2,7 @@
 title: "ICH Q9(R1) 品質リスクマネジメントガイドライン"
 description: "医薬品の品質リスクマネジメントの原則・プロセス・ツールを規定し、主観性の管理と形式主義への偏重を防ぐための改訂を加えた最新版ICHガイドライン（2023年）。"
 aliases: ["Q9(R1) Quality Risk Management Guideline", "ICH Q9 R1"]
-tags: ["D11", "原典解説"]
+tags: [source, "D11", "原典解説"]
 source:
   repo: "creation-space"
   path: "knowledge/raw/D11_ich_2023_q9-r1-guideline.pdf"

@@ -2,7 +2,7 @@
 title: "憲法制定の実践ガイド"
 description: "国際民主主義・選挙支援研究所（International IDEA）が2011年に発行した憲法制定プロセスの比較実践ガイド。各国の憲法制定事例から得られた知見を体系化し、設計の選択肢と原則を提示する。"
 aliases: ["A Practical Guide to Constitution Building"]
-tags: ["D20", "原典解説"]
+tags: [source, "D20", "原典解説"]
 source:
   repo: "creation-space"
   path: "knowledge/raw/D20_idea_2011_practical-guide-constitution-building.pdf"

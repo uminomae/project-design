@@ -2,7 +2,7 @@
 title: "UNCITRAL 調停規則 (2021)"
 description: "国際商事紛争の調停手続について UNCITRAL が2021年に採択した統一規則。任意性・中立性・秘密保持を核とする13条の手続規範を提示し、1980年の調停規則（Conciliation Rules）を置き換えた。"
 aliases: ["UNCITRAL Mediation Rules", "UNCITRAL 2021"]
-tags: ["D20", "原典解説"]
+tags: [source, "D20", "原典解説"]
 source:
   repo: "creation-space"
   path: "knowledge/raw/D20_uncitral_2021_mediation-rules.pdf"

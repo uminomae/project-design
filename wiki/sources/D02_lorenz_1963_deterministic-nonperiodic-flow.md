@@ -2,7 +2,7 @@
 title: "決定論的非周期流"
 description: "Edward Lorenz が大気対流の簡略モデルから決定論的系における非周期的・カオス的挙動を発見した論文。バタフライ効果と気象予測可能性の限界を示した現代カオス理論の原典。"
 aliases: ["Deterministic Nonperiodic Flow"]
-tags: ["D02", "原典解説"]
+tags: [source, "D02", "原典解説"]
 source:
   repo: "creation-space"
   path: "knowledge/raw/D02_lorenz_1963_deterministic-nonperiodic-flow.pdf"

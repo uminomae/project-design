@@ -2,7 +2,7 @@
 title: "シナジェティクス：入門"
 description: "Hermann Haken が創始した協同現象論（シナジェティクス）の体系的入門書。非平衡状態での自己組織化、秩序パラメータ、相転移の統一的理論を展開する。"
 aliases: ["Synergetics: An Introduction"]
-tags: ["D02", "原典解説"]
+tags: [source, "D02", "原典解説"]
 source:
   repo: "creation-space"
   path: "knowledge/raw/D02_haken_1983_synergetics.pdf"

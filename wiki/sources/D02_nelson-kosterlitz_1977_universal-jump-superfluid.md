@@ -2,7 +2,7 @@
 title: "二次元超流体の超流体密度における普遍的ジャンプ"
 description: "Nelson と Kosterlitz が二次元 XY モデルの相転移理論から、He 薄膜における超流体密度の普遍的ジャンプを予測した論文。BKT 転移の核心的実験予測を導く。"
 aliases: ["Universal Jump in the Superfluid Density of Two-Dimensional Superfluids"]
-tags: ["D02", "原典解説"]
+tags: [source, "D02", "原典解説"]
 source:
   repo: "creation-space"
   path: "knowledge/raw/D02_nelson-kosterlitz_1977_universal-jump-superfluid.pdf"

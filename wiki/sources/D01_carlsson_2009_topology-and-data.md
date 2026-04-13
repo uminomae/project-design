@@ -2,7 +2,7 @@
 title: "トポロジーとデータ"
 description: "位相的データ解析（TDA）の基礎を確立した論文。高次元・ノイズを含むデータの形状を永続ホモロジーによって捉える手法を体系的に提示する。"
 aliases: ["Topology and Data"]
-tags: ["D01", "原典解説"]
+tags: [source, "D01", "原典解説"]
 source:
   repo: "creation-space"
   path: "knowledge/raw/D01_carlsson_2009_topology-and-data.pdf"

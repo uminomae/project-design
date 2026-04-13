@@ -2,7 +2,7 @@
 title: "植物遷移論"
 description: "Clements（1916）による植物群落の発展・構造の包括的理論。裸地から気候クライマックスに至る遷移系列（sere）を「植生の発生」として体系化した生態学の古典。"
 aliases: ["Plant Succession", "Clements succession theory"]
-tags: ["D12", "原典解説"]
+tags: [source, "D12", "原典解説"]
 source:
   repo: "creation-space"
   path: "knowledge/raw/D12_clements_1916_plant-succession.pdf"

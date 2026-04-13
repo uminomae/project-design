@@ -2,7 +2,7 @@
 title: "ヒト白血球における遺伝子発現の社会的調節"
 description: "孤独感（知覚された社会的孤立）が白血球のゲノムワイドな遺伝子発現パターンを変化させることを初めて体系的に示した先駆的研究。CTRA（逆境への保存的転写応答）概念の基盤となった。"
 aliases: ["Social regulation of gene expression in human leukocytes"]
-tags: ["awareness-model", "原典解説"]
+tags: [source, "awareness-model", "原典解説"]
 source:
   repo: "project-design"
   path: "knowledge/evidence/awareness-model/cole2007-social-regulation-gene-expression.md"

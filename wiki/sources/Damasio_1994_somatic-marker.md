@@ -2,7 +2,7 @@
 title: "ソマティック・マーカー仮説 — 情動・理性・身体"
 description: "vmPFC損傷患者の臨床観察から、身体感覚（ソマティック・マーカー）が意思決定を導くことを提唱。デカルト的心身二元論を批判し、意識の階層理論（原自己→中核自己→自伝的自己）を展開した。"
 aliases: ["Descartes' Error", "Somatic Marker Hypothesis"]
-tags: ["awareness-model", "原典解説", "§1-先行研究"]
+tags: [source, "awareness-model", "原典解説"]
 source:
   repo: "project-design"
   path: "knowledge/evidence/awareness-model/damasio-1994-somatic-marker.md"

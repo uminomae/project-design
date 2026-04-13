@@ -2,7 +2,7 @@
 title: "リスク・不確実性・利潤"
 description: "Frank H. Knight が1921年に発表した経済学の古典。「リスク（確率計算可能なもの）」と「不確実性（計算不可能なもの）」を峻別し、後者こそが起業家的利潤と自由企業制度の存在根拠であると論じた。"
 aliases: ["Risk, Uncertainty, and Profit", "Risk Uncertainty and Profit"]
-tags: ["D21", "原典解説"]
+tags: [source, "D21", "原典解説"]
 source:
   repo: "creation-space"
   path: "knowledge/raw/D21_knight_1921_risk-uncertainty-profit.pdf"

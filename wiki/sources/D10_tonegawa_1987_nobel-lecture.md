@@ -2,7 +2,7 @@
 title: "抗体多様性の体細胞生成（ノーベル講演）"
 description: "利根川進による1987年ノーベル賞受賞講演。免疫系が遺伝子の再配列（体細胞組み換え）によって膨大な多様性の抗体を生成するしくみを解明した研究の概要。"
 aliases: ["Somatic Generation of Immune Diversity", "Tonegawa Nobel Lecture"]
-tags: ["D10", "原典解説"]
+tags: [source, "D10", "原典解説"]
 source:
   repo: "creation-space"
   path: "knowledge/raw/D10_tonegawa_1987_nobel-lecture.pdf"

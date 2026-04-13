@@ -2,7 +2,7 @@
 title: "風姿花伝（一座建立・場の共創）"
 description: "世阿弥による能楽の場の理論。一座建立の概念を軸に、演者と観客が共に創る場の成立条件を論じる。"
 aliases: ["Zeami Classics - Za no Kyoso"]
-tags: ["D30", "原典解説"]
+tags: [source, "D30", "原典解説"]
 source:
   repo: "creation-space"
   path: "knowledge/raw/D28_zeami_classics_part1.pdf"

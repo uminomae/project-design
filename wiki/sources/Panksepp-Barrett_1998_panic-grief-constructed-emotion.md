@@ -2,7 +2,7 @@
 title: "PANIC/GRIEFシステムと構成主義情動理論の論争"
 description: "Pankseppによる哺乳類の7基本情動システム（特にPANIC/GRIEF: 分離苦痛回路）と、Barrettの構成主義情動理論（TCE）の対立を整理する。2006-2017年にわたる公刊論争の構造と、2025年時点での未解決状況を示す。"
 aliases: ["Affective Neuroscience", "Theory of Constructed Emotion", "Basic Emotion Theory"]
-tags: ["awareness-model", "原典解説"]
+tags: [source, "awareness-model", "原典解説"]
 source:
   repo: "project-design"
   path: "knowledge/evidence/awareness-model/panksepp-panic-grief-vs-barrett-constructed-emotion.md"

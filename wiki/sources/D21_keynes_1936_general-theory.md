@@ -2,7 +2,7 @@
 title: "雇用・利子および貨幣の一般理論"
 description: "ケインズが古典派経済学の「完全雇用均衡」前提を覆し、有効需要の原理に基づいて不完全雇用均衡を理論化した20世紀経済学の基盤的著作。"
 aliases: ["The General Theory of Employment, Interest and Money", "一般理論"]
-tags: ["D21", "原典解説"]
+tags: [source, "D21", "原典解説"]
 source:
   repo: "creation-space"
   path: "knowledge/raw/D21_keynes_1936_general-theory.pdf"

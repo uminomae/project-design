@@ -2,7 +2,7 @@
 title: "長期持続 — 歴史と社会科学の時間的多層性"
 description: "Braudel は歴史の時間を3層（事件の短期、景気循環の中期、構造の長期持続）に分節し、社会科学が採用すべき時間枠として longue duree を提唱した。事件史の短い息吹への過度の偏重を批判し、構造・モデル・数学的社会科学との対話を通じた学際的方法論を展望した。アナール学派の方法論的マニフェスト。"
 aliases: ["La longue duree", "The Long Duration", "Histoire et Sciences sociales"]
-tags: ["history", "原典解説", "D16"]
+tags: [source, "history", "原典解説", "D16"]
 source:
   repo: "creation-space"
   path: "knowledge/raw/D16_braudel_1958_longue-duree.pdf"

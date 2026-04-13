@@ -2,7 +2,7 @@
 title: "自由エネルギー原理 — 統一的脳理論?"
 description: "脳の知覚・行動・学習を変分自由エネルギーの最小化として統一的に記述。予測符号化、能動的推論、精度重み付けの上位原理。マルコフ毛布を通じて生命一般の原理に拡張。"
 aliases: ["The free-energy principle: a unified brain theory?", "Free Energy Principle", "FEP"]
-tags: ["awareness-model", "原典解説", "§1-先行研究"]
+tags: [source, "awareness-model", "原典解説"]
 source:
   repo: "project-design"
   path: "knowledge/evidence/awareness-model/friston-2010-free-energy-principle.md"

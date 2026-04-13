@@ -2,7 +2,7 @@
 title: "時間、構造、そしてゆらぎ — ノーベル講演"
 description: "イリヤ・プリゴジンによる非平衡熱力学と散逸構造理論のノーベル賞講演。平衡から遠く離れた系でゆらぎが新たな秩序（散逸構造）を生み出すメカニズムを解説する。"
 aliases: ["Time, Structure and Fluctuations. Nobel Lecture"]
-tags: ["D29", "原典解説"]
+tags: [source, "D29", "原典解説"]
 source:
   repo: "creation-space"
   path: "knowledge/raw/D29_prigogine_1977_time-structure-fluctuations.pdf"

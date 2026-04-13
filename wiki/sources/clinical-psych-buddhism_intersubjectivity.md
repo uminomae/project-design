@@ -2,7 +2,7 @@
 title: "臨床心理学・仏教哲学における間主観性"
 description: "Winnicott（発達臨床）・Stolorow（間主観性学派）・龍樹（空の存在論）の3者を通じ、間主観性が心理的生存の条件であり存在論的に根源的であることを論じた原典ノートのwikiページ。"
 aliases: ["Clinical Psychology and Buddhism: Intersubjectivity"]
-tags: ["awareness-model", "原典解説", "臨床心理学", "仏教哲学", "間主観性"]
+tags: [source, "awareness-model", "原典解説", "臨床心理学", "仏教哲学", "間主観性"]
 source:
   repo: "project-design"
   path: "knowledge/evidence/awareness-model/clinical-psych-buddhism-intersubjectivity.md"

@@ -2,7 +2,7 @@
 title: "生態系のレジリエンスと安定性"
 description: "Holling（1973）による生態系の振る舞いに関する古典論文。「平衡安定性」と「レジリエンス」を区別し、生態系が複数の安定状態を持ちうることを理論的・実証的に示した。"
 aliases: ["Resilience and Stability of Ecological Systems", "Holling resilience"]
-tags: ["D12", "原典解説"]
+tags: [source, "D12", "原典解説"]
 source:
   repo: "creation-space"
   path: "knowledge/raw/D12_holling_1973_resilience-stability.pdf"

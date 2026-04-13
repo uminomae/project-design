@@ -2,7 +2,7 @@
 title: "ヒト自己免疫疾患のメカニズム"
 description: "自己免疫疾患の発症・進展・寛解の各フェーズにおけるエフェクター応答と制御機構の不均衡を、遺伝的・環境的要因と合わせて論じたレビュー。"
 aliases: ["Mechanisms of human autoimmunity", "Rosenblum 2015 autoimmunity"]
-tags: ["D10", "原典解説"]
+tags: [source, "D10", "原典解説"]
 source:
   repo: "creation-space"
   path: "knowledge/raw/D10_rosenblum_2015_autoimmunity.pdf"

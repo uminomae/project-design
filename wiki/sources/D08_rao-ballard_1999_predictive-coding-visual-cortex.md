@@ -2,7 +2,7 @@
 title: "視覚皮質における予測符号化"
 description: "上位皮質領域が下位領域の活動を予測し、その残差（予測誤差）のみを上方向に伝達するという階層的予測符号化モデルを提唱し、視覚皮質の受容野外効果を説明したラオとバラードの論文。"
 aliases: ["Predictive coding in the visual cortex"]
-tags: ["D08", "原典解説"]
+tags: [source, "D08", "原典解説"]
 source:
   repo: "creation-space"
   path: "knowledge/raw/D08_rao-ballard_1999_predictive-coding-visual-cortex.pdf"
