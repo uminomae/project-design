@@ -2,10 +2,10 @@
 
 ## Git
 - branch: develop
-- HEAD: e732770
-- main: 9787bac (develop → main マージ済み = 公開)
-- remote: synced (develop push済み, main push済み)
-- dirty: 並行セッションの sources/ 高校生向け解説 87ファイル（私の作業ではない、触らない）
+- HEAD: 84e1c6c
+- main: d5b814b (merged & pushed 2026-04-14 #01 — 高校生向け解説シリーズ公開完了)
+- remote: synced
+- dirty: .cache/ 系のみ
 
 ## 完了タスク
 - wiki原典解説56件生成 + index自動生成スクリプト + PD関連セクション整理 + 4層モデル除去
@@ -17,40 +17,46 @@
 - wiki生成時DOI/URL自動付与ルール追加 — commit ca897d0
 - **#63** 古い情報刷新（4層モデル除去）— **Issue closed**
 - **#66 Phase 1** wiki 品質基盤整備 — commit b56d76b
-  - CRITICAL: frontmatter status/review_state を125ファイルに追加
-  - HIGH: log.md に 2026-04-08/04-10/04-11 のコンパイル履歴追記
-  - MEDIUM: about.md にスキーマ拡充・ディレクトリ配置ルール追記
-  - MEDIUM: creation-space-domains.md に6クラスタのテーマ別索引追加
 - **wiki-gen auto-execute 5件** — commit 905fe58
-  - D01 Hadamard (1945), D03 Field-Noyes (1974), D03 Winter-Chambon (1986, OCR),
-    D20 UNCITRAL Mediation Rules (2021), D20 Singapore Convention (2018)
-  - wiki-gen inbox 5件を archive に移動（D16 Toynbee 依頼含む、全て既生成済み）
 - **#66 Phase 2 (LOW)** wiki tag体系統一 — commit f20455a → **Issue closed**
 - **wiki graph 健全化**（Obsidian グラフビュー確認代替）— commit e732770
-  - about-project-design.md orphan 解消（about.md からリンク追加）
-  - creation-space-domains.md テーブル拡充 31件→98件（fan-leaf 62→0）
-  - health/orphan-report.md を 2026-04-13 の解析結果で更新
-  - 並行セッションで commit 1c59dea/c77084a が先行投入（高校生向け解説追加）
-    → 私の about.md/creation-space-domains.md 編集は 1c59dea に取り込み済み
-  - sources/ 116件に source 構造タグ付与
-  - §1-先行研究 等の位置タグ 5件除去（Barrett/Clark/Craig/Damasio/Friston）
-  - about.md に D01-D30 ドメインタグ・位置タグ禁止ルール追記
-  - alias 順序統一は影響なしのため見送り（Phase 2 完了）
+  - about-project-design.md orphan 解消、creation-space-domains.md テーブル拡充、orphan-report 更新
+- **#67 wiki 全ページ高校生向け解説** — commit c77084a / 1c59dea / 2279e5b → **Issue closed**
+  - SKILL.md にルール追加 (c77084a)
+  - concepts 9 + entities 22 + cross-refs 4 + top-level 2 = 37件 (1c59dea)
+  - sources 116件 (2279e5b) — 6 並列 team-worker + main 30件
+  - UTF-8 文字化け（U+FFFD）なし確認済み
+- **develop → main マージ公開** — merge d5b814b (2026-04-14 #02)
+- **#69** wiki-lint 自動実行 hook — commit bf243c6 → **Issue closed**
+- **#70** backlinks 静的生成 → **closed (Quartz で対応済み)**
+- **#72 #73 #74** knowledge stale hook / WL-1/WL-5 / debounce 移動 — commit 84e1c6c → **Issue closed**
+- **#75 新規** source 不在 6 件の修復 (WL-5 検出) — follow-up open
+- **#75 修復** source 不在 6 件 freshness-report PASS — 2026-04-15 着手
+  - pd 4 entities: knowledge/raw/*.pdf 二次 source 削除、"原典参照" タグ除去
+  - 内受容感覚/間主観性: pd awareness-model に source 差し替え、v3 準拠で全面書き直し
+  - 4層/Layer/神経部位確定マッピング/社会的アロスタシス/α機能4層内在化/臨床療法テーブル等の LLM 構成物を除去
 
 ## 進行中
-- なし（セッション終了 2026-04-13 #03、log-20260413-03.md）
+- **#75 source 不在 6 件の修復** — 2026-04-15 着手、pjdhiro レビュー待ち（内受容感覚/間主観性 全面書き直し含む）
 
 ## 次のステップ
+- **#68 umbrella** wiki 自動追従
+  - **#69** wiki-lint 自動実行 → **closed** (bf243c6)
+  - **#70** backlinks 自動生成 → **closed** (Quartz で対応済み)
+  - **#71** log.md auto-append（スコープ狭小化で保留）
+  - **#72** knowledge/ 編集時 stale 通知 → **closed** (84e1c6c)
+  - **#73** wiki-lint WL-1/WL-5 実装 → **closed** (84e1c6c)
+  - **#74** debounce を .cache/ に移動 → **closed** (84e1c6c)
+  - **#75** source 不在 6 件の修復（新規、WL-5 検出）
 - techo の探究系 backlog（重め、pjdhiro 判断要）:
   - techo#60 探究: 信頼とは何か
   - techo#67 origin-survey: 対照群テスト
   - techo#105 ks/as ナレッジ再構築（LLM推測分離）
   - techo#116 欠損駆動思考ナレッジ全面見直し
-- ※as#125 (2304fca)、techo#112 (507f27c) は実装済み — state.md からstale項目削除
 
 ## Hot Topics
+- **#67 高校生向け解説**: 全 wiki ページ（153件）の `# タイトル` 直後に blockquote 形式で平易な解説を挿入。LLM 向けとは別の「人間の読み手にとっての入口」を全ページに設けた
 - **wiki DOI/URL 自動付与**: SKILL.md + wiki-gen-check.sh で manifest notes から DOI/OA URL を抽出し、wiki ソースページ生成時に書誌情報に自動含めるルールを導入
 - **wiki 更新ルール稼働**: wiki/ 変更 → index.md 自動再生成 → content wikilink 再処理 → Quartz ビルド
-- **wiki sources 111件**: 103件に DOI/URL あり。残り7件はDOI非該当（intersubjectivity 4件、JETP/書籍章/Hilgardia 3件）、1件新規(Toynbee)
 - PDF正本ワークフロー: MD/PDF → pjdhiro assets → GitHub Pages 配信
 - 保持論点は ks repo Issue #173-#179 に登録済み

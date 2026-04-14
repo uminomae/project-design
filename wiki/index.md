@@ -256,6 +256,12 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 
 | ページ | category | compiled |
 |--------|----------|----------|
+| [[entities/アネット・ベイアー\|アネット・ベイアー]] | entities | 2026-04-15 |
+| [[entities/ウィキッド・プロブレム\|ウィキッド・プロブレム]] | entities | 2026-04-15 |
+| [[entities/ドナルド・ショーン\|ドナルド・ショーン]] | entities | 2026-04-15 |
+| [[entities/ナイジェル・クロス\|ナイジェル・クロス]] | entities | 2026-04-15 |
+| [[entities/間主観性\|間主観性]] | entities | 2026-04-15 |
+| [[entities/内受容感覚\|内受容感覚]] | entities | 2026-04-15 |
 | [[sources/D01_hadamard_1945_psychology-invention\|数学における発明の心理学]] | sources | 2026-04-13 |
 | [[sources/D03_field-noyes_1974_oscillations\|化学系における振動 IV: 実在する化学反応のモデルにおけるリミットサイクル挙動]] | sources | 2026-04-13 |
 | [[sources/D03_winter-chambon_1986_gel-point\|架橋ポリマーのゲル点における線形粘弾性の解析]] | sources | 2026-04-13 |
@@ -270,11 +276,5 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 | [[sources/D01_carlsson_2009_topology-and-data\|トポロジーとデータ]] | sources | 2026-04-10 |
 | [[sources/D01_ghrist_2008_barcodes\|バーコード：データの永続的位相]] | sources | 2026-04-10 |
 | [[sources/D01_poincare_1908_science-and-method\|科学と方法]] | sources | 2026-04-10 |
-| [[sources/D01_tao_2007_good-mathematics\|良い数学とは何か]] | sources | 2026-04-10 |
-| [[sources/D01_thurston_1994_proof-and-progress\|数学における証明と進歩について]] | sources | 2026-04-10 |
-| [[sources/D02_anderson_1972_more-is-different\|多いことは違うことだ]] | sources | 2026-04-10 |
-| [[sources/D02_haken_1983_synergetics\|シナジェティクス：入門]] | sources | 2026-04-10 |
-| [[sources/D02_higgs_1964_broken-symmetries\|対称性の破れとゲージボソンの質量]] | sources | 2026-04-10 |
-| [[sources/D02_lorenz_1963_deterministic-nonperiodic-flow\|決定論的非周期流]] | sources | 2026-04-10 |
 
 > このページは `scripts/generate-wiki-index.mjs` により自動生成されます。wiki/ 内のページ変更時に PostToolUse hook で自動実行されます。
