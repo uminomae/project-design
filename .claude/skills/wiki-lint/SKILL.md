@@ -66,7 +66,27 @@ compile スキルとは異なり、ページの生成は行わない。検出と
 
 ## 実行方法
 
+### 自動実行（PostToolUse hook）
+
+`scripts/wiki-lint.mjs` が `.claude/hooks/content-compile.sh` から自動呼び出しされる:
+
+- トリガー: wiki/ への Edit/Write（`wiki/health/` 自体の編集は除外して無限ループ防止）
+- Debounce: 60 秒。連続編集では最初の 1 回のみ実行
+- 対象チェック:
+  - WL-4 孤立ページ検出（full re-derivation）
+  - WL-3 freshness-report の `checked:` 日付更新のみ（cross-repo source tracking は手動対象）
+- 失敗時は stderr にメッセージを出すだけでセッションを止めない
+- Debounce 状態: `/tmp/pd-wiki-lint-last`
+
+### 手動実行
+
 セッション内で `/wiki-lint` または手動で各チェックを実行。
+
+```bash
+node scripts/wiki-lint.mjs       # orphan + freshness (date only)
+```
+
+WL-1 CN divergence / WL-5 source パス実在は現状手動:
 
 ```bash
 # 手動実行の場合の参考コマンド
