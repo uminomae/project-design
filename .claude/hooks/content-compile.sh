@@ -26,9 +26,10 @@ if not file_path:
 
 path_str = str(pathlib.Path(file_path))
 
-# content/*.md (compiled/ 配下は除外) または wiki/**/*.md が対象
+# content/*.md (compiled/ 配下は除外) / wiki/**/*.md / knowledge/**/*.md が対象
 is_content = False
 is_wiki = False
+is_knowledge = False
 
 if ("/content/" in path_str or path_str.startswith("content/")) and "/compiled/" not in path_str:
     if path_str.endswith(".md"):
@@ -38,10 +39,56 @@ if "/wiki/" in path_str or path_str.startswith("wiki/"):
     if path_str.endswith(".md"):
         is_wiki = True
 
-if not is_content and not is_wiki:
+if "/knowledge/" in path_str or path_str.startswith("knowledge/"):
+    if path_str.endswith(".md"):
+        is_knowledge = True
+
+if not is_content and not is_wiki and not is_knowledge:
     raise SystemExit(0)
 
 repo_root = pathlib.Path(os.environ.get("PWD", "."))
+
+# knowledge/ 変更時: wiki stale 通知 (#72)
+# 60s debounce: .cache/wiki-stale/last-run
+if is_knowledge:
+    import time
+    stale_debounce_dir = repo_root / ".cache" / "wiki-stale"
+    stale_debounce_file = stale_debounce_dir / "last-run"
+    now = time.time()
+    last = 0.0
+    try:
+        last = float(stale_debounce_file.read_text().strip())
+    except Exception:
+        pass
+    if now - last >= 60:
+        stale_script = repo_root / "scripts" / "wiki-stale-check.mjs"
+        if stale_script.is_file():
+            # knowledge path を repo 相対に正規化
+            rel_path = path_str
+            if "/knowledge/" in rel_path:
+                idx = rel_path.index("/knowledge/")
+                rel_path = rel_path[idx + 1:]
+            try:
+                stale_result = subprocess.run(
+                    ["node", str(stale_script), "--knowledge", rel_path],
+                    cwd=str(repo_root),
+                    capture_output=True,
+                    text=True,
+                    timeout=10,
+                )
+                if stale_result.stderr.strip():
+                    print(stale_result.stderr.rstrip(), file=sys.stderr)
+                try:
+                    stale_debounce_dir.mkdir(parents=True, exist_ok=True)
+                    stale_debounce_file.write_text(str(now))
+                except Exception:
+                    pass
+            except subprocess.TimeoutExpired:
+                print("wiki-stale-check timed out (10s)", file=sys.stderr)
+            except FileNotFoundError:
+                pass
+    # knowledge 編集時は wiki/content 系の処理は走らせない
+    raise SystemExit(0)
 
 # wiki 変更時（index.md 自体の変更を除く）: index.md を再生成 + wiki-lint
 is_index = path_str.endswith("wiki/index.md") or path_str.endswith("wiki\\index.md")
@@ -67,10 +114,11 @@ if is_wiki and not is_index:
             pass
 
     # wiki-lint: health/ 自体への編集ではスキップ (無限ループ防止)
-    # 60s debounce: /tmp/pd-wiki-lint-last に前回実行時刻を記録
+    # 60s debounce: .cache/wiki-lint/last-run に前回実行時刻を記録
     if not is_health:
         import time
-        debounce_file = pathlib.Path("/tmp/pd-wiki-lint-last")
+        debounce_dir = repo_root / ".cache" / "wiki-lint"
+        debounce_file = debounce_dir / "last-run"
         now = time.time()
         last = 0.0
         try:
@@ -90,6 +138,7 @@ if is_wiki and not is_index:
                     )
                     if lint_result.returncode == 0:
                         try:
+                            debounce_dir.mkdir(parents=True, exist_ok=True)
                             debounce_file.write_text(str(now))
                         except Exception:
                             pass
