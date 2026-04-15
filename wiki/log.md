@@ -13,6 +13,16 @@ compile 実行の履歴。append-only。
 - duration: {所要時間}
 -->
 
+## [2026-04-15] auto-append | docs(wiki): 核心仮説を構造層/現象層併記に更新・Husserl/Hatfield 原典ノート新設
+- commit: 375680a
+- pages: 5 wiki/*.md 変更
+- files:
+  - wiki/concepts/アウェアネスモデル.md
+  - wiki/entities/情動伝染.md
+  - wiki/entities/間主観性.md
+  - wiki/sources/Hatfield_1993_emotional-contagion.md
+  - wiki/sources/Husserl_1931_cartesian-meditations-v.md
+
 ## [2026-04-15] auto-append | feat(wiki): 関連原典 自動追記スクリプトと既存ページへの backfill
 - commit: 29ffe17
 - pages: 13 wiki/*.md 変更
