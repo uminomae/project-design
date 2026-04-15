@@ -13,6 +13,17 @@ compile 実行の履歴。append-only。
 - duration: {所要時間}
 -->
 
+## [2026-04-15] auto-append | refactor(wiki): 内受容感覚/間主観性 を v3 準拠に書き直し + #75 修復
+- commit: e6e606e
+- pages: 10 wiki/*.md 変更
+- files:
+  - wiki/entities/アネット・ベイアー.md
+  - wiki/entities/ウィキッド・プロブレム.md
+  - wiki/entities/ドナルド・ショーン.md
+  - wiki/entities/ナイジェル・クロス.md
+  - wiki/entities/内受容感覚.md
+  - ... (+5)
+
 ## [2026-04-11] compile | Step 3b wiki-gen auto-execute + DOI/URL 一括追加
 - scope: Step 3b（wiki-gen auto-execute, sources 書誌拡充, 原典解説追加）
 - sources: 7（未生成PDF 5件: D10_akdis, D10_rosenblum, D12_maff, D12_stern, D02_rayleigh）+ D16 Toynbee解説 + 既存 sources 103件
