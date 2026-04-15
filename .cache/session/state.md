@@ -2,12 +2,33 @@
 
 ## Git
 - branch: develop
-- HEAD: bc73868 (次のコミットで更新)
+- HEAD: f909c77 (2026-04-16 #02 終了時点, 並行セッション含む)
 - main: acf2e4f (merged & pushed 2026-04-15 #01 — #69 #72 #73 #74 #75 公開)
-- remote: ahead (未 push)
+- remote: synced
 - dirty: .cache/ 系のみ
+- develop ahead of main: wiki 間主観性/情動伝染 再整理 + 関連 crosslink 機構 + wiki-gen-check 改善 + docs ドリフト修正
 
 ## 完了タスク
+### 2026-04-16 #02 (このセッション — ワークフローレビュー系)
+- **wiki 生成ワークフローのレビューと改善** — commits bc73868, 29ffe17, 44cbd96, f36b00b
+  - P0-1 wiki-gen-check false positive 修正: manifest `local_file` が非 PDF / 実ファイル不在の行を対象外、前日以前の inbox を auto-archive (bc73868)
+  - P0-2 docs ドリフト修正: wiki-compile/wiki-publish SKILL を `branches:[main]` 実態に戻す (bc73868)
+  - P1-④ 関連ページ自動更新: `scripts/wiki-crosslink.mjs` 新規。source → concept/entity/cross-refs への逆向き参照を `## 関連原典` で冪等追記 (29ffe17)。117 sources backfill → 67 件を 10 ハブページに追加
+  - P1-⑤ ローカル反映撤退: Node 25/Quartz 4.5.2 OOM 非互換を確定、GitHub Pages 一本化。wiki-crosslink の build を opt-in に (f36b00b)
+  - セキュリティ: `GITHUB_TOKEN=gho_...` の ps 露出を検出。pjdhiro 判断で運用注意のみ
+- ※ 並行で 2026-04-16 #01 セッションが走行し、間主観性/情動伝染を再整理した (下記)
+
+### 2026-04-16 #01 (並行セッション — wiki 内容系)
+- **間主観性/情動伝染の層分離と文献確認書き直し** — commits 600e9a0, 375680a, 222cc3c
+  - Trevarthen一次的間主観性/Stolorow調律崩壊論を 間主観性 から 情動伝染 へ分離 (600e9a0)
+  - 核心仮説を構造層/現象層併記に更新、Husserl第五省察/Hatfield 1993の原典ノートを knowledge/evidence と wiki/sources に新設 (375680a)
+  - SEP Husserl / SEP Empathy / Wikipedia Emotional Contagion を調査し、訓練知識合成を撤廃して文献引用付きで再定義 (222cc3c)
+  - SEP Empathy の発達階層モデル (情動伝染→basic empathy→proper intersubjectivity) を採用し、pjdhiro の「本能+間接刺激」モデルと接続
+- **wiki-compile SKILL に「定義の文献確認ルール」追加** — 222cc3c
+  - 訓練知識合成を禁止、SEP/原典/査読論文での定義確認を必須化
+  - 「不明なら書かない」を明文化
+
+### 2026-04-15 以前
 - wiki原典解説56件生成 + index自動生成スクリプト + PD関連セクション整理 + 4層モデル除去
 - techo#115: wiki Entities 原典PDF整備 — Issue closed
 - CI 修正: ci.yml push トリガー main のみ

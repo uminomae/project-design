@@ -62,6 +62,7 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/Durkheim_1897_suicide-social-integration|自殺論 — 社会的統合と自己破壊の社会学的研究]]
 - [[sources/Eisenberger_2003_social-exclusion-fmri|社会的排除は痛みを伴うか — fMRI研究]]
 - [[sources/Friston_2010_free-energy-principle|自由エネルギー原理 — 統一的脳理論?]]
+- [[sources/Hatfield_1993_emotional-contagion|情動伝染 — 自動的模倣と情動の収斂]]
 - [[sources/Holt-Lunstad_2010_social-relationships-mortality|社会的関係と死亡リスク — 二大メタ分析]]
 - [[sources/Panksepp-Barrett_1998_panic-grief-constructed-emotion|PANIC/GRIEFシステムと構成主義情動理論の論争]]
 - [[sources/Smith-Wang_2014_oxytocin-social-bonding|視床下部オキシトシンによるストレス応答の社会的緩衝]]
@@ -265,6 +266,7 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 | [[entities/間主観性\|間主観性]] | entities | 2026-04-15 |
 | [[entities/情動伝染\|情動伝染]] | entities | 2026-04-15 |
 | [[entities/内受容感覚\|内受容感覚]] | entities | 2026-04-15 |
+| [[sources/Hatfield_1993_emotional-contagion\|情動伝染 — 自動的模倣と情動の収斂]] | sources | 2026-04-15 |
 | [[sources/Husserl_1931_cartesian-meditations-v\|デカルト的省察・第五省察]] | sources | 2026-04-15 |
 | [[sources/D01_hadamard_1945_psychology-invention\|数学における発明の心理学]] | sources | 2026-04-13 |
 | [[sources/D03_field-noyes_1974_oscillations\|化学系における振動 IV: 実在する化学反応のモデルにおけるリミットサイクル挙動]] | sources | 2026-04-13 |
@@ -277,6 +279,5 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 | [[sources/D11_davies_2010_antibiotic-resistance\|抗生物質耐性の起源と進化 — 耐性遺伝子の太古からの存在と人為的加速]] | sources | 2026-04-11 |
 | [[sources/D16_braudel_1958_longue-duree\|長期持続 — 歴史と社会科学の時間的多層性]] | sources | 2026-04-11 |
 | [[sources/D16_toynbee_1934_study-of-history\|歴史の研究 — 文明の挑戦と応答]] | sources | 2026-04-11 |
-| [[sources/D01_carlsson_2009_topology-and-data\|トポロジーとデータ]] | sources | 2026-04-10 |
 
 > このページは `scripts/generate-wiki-index.mjs` により自動生成されます。wiki/ 内のページ変更時に PostToolUse hook で自動実行されます。
