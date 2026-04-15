@@ -246,6 +246,7 @@ wiki ソースページ生成時、manifest の notes 列から DOI / OA URL を
 ### 生成後チェック
 - `grep -rl '�' wiki/ --include='*.md'` で UTF-8 文字化けチェック
 - wiki-lint WL-5 で source パスの実在確認
+- **crosslink**: `node scripts/wiki-crosslink.mjs --source wiki/sources/{新ページ}.md` を実行し、本文中で言及された concept/entity/cross-refs ページの `## 関連原典` セクションに逆向き参照を自動追記。スクリプト末尾で Quartz ビルドも走りローカル配信 (`build/_serve/wiki`) に反映される。`--dry-run` / `--no-build` / `--all` オプションあり。冪等なので再実行しても重複追記されない
 
 ## wikilink 変換ルール
 
@@ -271,6 +272,7 @@ wiki ソースページ生成時、manifest の notes 列から DOI / OA URL を
 | wiki/*.md 追加・編集 | index.md 再生成 | PostToolUse hook → `generate-wiki-index.mjs` |
 | wiki/*.md 追加・編集 | content/ wikilink 再処理 | PostToolUse hook → `compile-content-links.mjs`（既存） |
 | wiki/*.md 追加・編集 | Quartz ビルド | PostToolUse hook → `wiki-build.sh`（既存） |
+| wiki/sources/*.md 追加 | concept/entity/cross-refs に逆向き参照 | 手動 `node scripts/wiki-crosslink.mjs --source <path>`（Step 3b 生成後に実行） |
 | knowledge/ 正本更新 | wiki ページ再コンパイル | 手動 `/wiki-compile`。WL-3 で stale 検知 |
 | cs manifest 更新 | wiki/sources/ 生成依頼 | SessionStart → `wiki-gen-check.sh`（既存） |
 

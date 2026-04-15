@@ -38,6 +38,7 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[entities/欠損駆動思考|欠損駆動思考]]
 - [[entities/山岸俊男|山岸俊男]]
 - [[entities/情動の構成|情動の構成]]
+- [[entities/情動伝染|情動伝染]]
 - [[entities/創造の5段階モデル|創造の5段階モデル]]
 - [[entities/内受容感覚|内受容感覚]]
 - [[entities/抱持|抱持]]
@@ -69,6 +70,7 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/anthropology-linguistics_intersubjectivity|文化人類学・言語学における間主観性]]
 - [[sources/clinical-psych-buddhism_intersubjectivity|臨床心理学・仏教哲学における間主観性]]
 - [[sources/education-nursing_intersubjectivity|教育学・看護学における間主観性]]
+- [[sources/Husserl_1931_cartesian-meditations-v|デカルト的省察・第五省察]]
 - [[sources/phenomenology-existentialism_intersubjectivity|現象学・実存主義における間主観性]]
 
 ### creation-space 30ドメイン原典
@@ -261,7 +263,9 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 | [[entities/ドナルド・ショーン\|ドナルド・ショーン]] | entities | 2026-04-15 |
 | [[entities/ナイジェル・クロス\|ナイジェル・クロス]] | entities | 2026-04-15 |
 | [[entities/間主観性\|間主観性]] | entities | 2026-04-15 |
+| [[entities/情動伝染\|情動伝染]] | entities | 2026-04-15 |
 | [[entities/内受容感覚\|内受容感覚]] | entities | 2026-04-15 |
+| [[sources/Husserl_1931_cartesian-meditations-v\|デカルト的省察・第五省察]] | sources | 2026-04-15 |
 | [[sources/D01_hadamard_1945_psychology-invention\|数学における発明の心理学]] | sources | 2026-04-13 |
 | [[sources/D03_field-noyes_1974_oscillations\|化学系における振動 IV: 実在する化学反応のモデルにおけるリミットサイクル挙動]] | sources | 2026-04-13 |
 | [[sources/D03_winter-chambon_1986_gel-point\|架橋ポリマーのゲル点における線形粘弾性の解析]] | sources | 2026-04-13 |
@@ -274,7 +278,5 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 | [[sources/D16_braudel_1958_longue-duree\|長期持続 — 歴史と社会科学の時間的多層性]] | sources | 2026-04-11 |
 | [[sources/D16_toynbee_1934_study-of-history\|歴史の研究 — 文明の挑戦と応答]] | sources | 2026-04-11 |
 | [[sources/D01_carlsson_2009_topology-and-data\|トポロジーとデータ]] | sources | 2026-04-10 |
-| [[sources/D01_ghrist_2008_barcodes\|バーコード：データの永続的位相]] | sources | 2026-04-10 |
-| [[sources/D01_poincare_1908_science-and-method\|科学と方法]] | sources | 2026-04-10 |
 
 > このページは `scripts/generate-wiki-index.mjs` により自動生成されます。wiki/ 内のページ変更時に PostToolUse hook で自動実行されます。
