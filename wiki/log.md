@@ -13,6 +13,17 @@ compile 実行の履歴。append-only。
 - duration: {所要時間}
 -->
 
+## [2026-04-15] auto-append | feat(wiki): 関連原典 自動追記スクリプトと既存ページへの backfill
+- commit: 29ffe17
+- pages: 13 wiki/*.md 変更
+- files:
+  - wiki/concepts/アウェアネスモデル.md
+  - wiki/entities/ネガティブケイパビリティ.md
+  - wiki/entities/内受容感覚.md
+  - wiki/entities/創造の5段階モデル.md
+  - wiki/entities/情動の構成.md
+  - ... (+8)
+
 ## [2026-04-15] auto-append | docs(wiki): 間主観性を構造層に純化し情動伝染ページを分離
 - commit: 600e9a0
 - pages: 4 wiki/*.md 変更
