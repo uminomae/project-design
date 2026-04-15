@@ -246,7 +246,7 @@ wiki ソースページ生成時、manifest の notes 列から DOI / OA URL を
 ### 生成後チェック
 - `grep -rl '�' wiki/ --include='*.md'` で UTF-8 文字化けチェック
 - wiki-lint WL-5 で source パスの実在確認
-- **crosslink**: `node scripts/wiki-crosslink.mjs --source wiki/sources/{新ページ}.md` を実行し、本文中で言及された concept/entity/cross-refs ページの `## 関連原典` セクションに逆向き参照を自動追記。スクリプト末尾で Quartz ビルドも走りローカル配信 (`build/_serve/wiki`) に反映される。`--dry-run` / `--no-build` / `--all` オプションあり。冪等なので再実行しても重複追記されない
+- **crosslink**: `node scripts/wiki-crosslink.mjs --source wiki/sources/{新ページ}.md` を実行し、本文中で言及された concept/entity/cross-refs ページの `## 関連原典` セクションに逆向き参照を自動追記。`--dry-run` / `--all` オプションあり。冪等なので再実行しても重複追記されない。現環境では Quartz ローカルビルドが Node 25/4.5.2 非互換で OOM するため、スクリプトはデフォルトで build をスキップする。公開確認は GitHub Pages に任せる（wiki-publish SKILL 参照）
 
 ## wikilink 変換ルール
 

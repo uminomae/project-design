@@ -9,7 +9,11 @@
  *   node scripts/wiki-crosslink.mjs --source wiki/sources/xxx.md
  *   node scripts/wiki-crosslink.mjs --all
  *   node scripts/wiki-crosslink.mjs --source wiki/sources/xxx.md --dry-run
- *   node scripts/wiki-crosslink.mjs --all --no-build
+ *   node scripts/wiki-crosslink.mjs --all --build
+ *
+ * Quartz build は現環境（Node 25 / Quartz 4.5.2 非互換 OOM）では走らせない。
+ * デフォルトでは build は行わず、--build を明示したときのみ試みる。
+ * 公開確認は GitHub Pages 側に委ねる。
  */
 
 import { readFileSync, writeFileSync, readdirSync, existsSync, statSync } from "node:fs";
@@ -24,17 +28,18 @@ const SECTION = "## 関連原典";
 
 // ---------- CLI ----------
 const argv = process.argv.slice(2);
-const opts = { source: null, all: false, dryRun: false, build: true };
+const opts = { source: null, all: false, dryRun: false, build: false };
 for (let i = 0; i < argv.length; i++) {
   const a = argv[i];
   if (a === "--source") opts.source = argv[++i];
   else if (a === "--all") opts.all = true;
   else if (a === "--dry-run") opts.dryRun = true;
+  else if (a === "--build") opts.build = true;
   else if (a === "--no-build") opts.build = false;
 }
 
 if (!opts.source && !opts.all) {
-  console.error("usage: wiki-crosslink.mjs --source <path> | --all [--dry-run] [--no-build]");
+  console.error("usage: wiki-crosslink.mjs --source <path> | --all [--dry-run] [--build]");
   process.exit(2);
 }
 
