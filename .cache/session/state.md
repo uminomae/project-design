@@ -2,9 +2,9 @@
 
 ## Git
 - branch: develop
-- HEAD: 84e1c6c
-- main: d5b814b (merged & pushed 2026-04-14 #01 — 高校生向け解説シリーズ公開完了)
-- remote: synced
+- HEAD: bc73868 (次のコミットで更新)
+- main: acf2e4f (merged & pushed 2026-04-15 #01 — #69 #72 #73 #74 #75 公開)
+- remote: ahead (未 push)
 - dirty: .cache/ 系のみ
 
 ## 完了タスク
@@ -30,24 +30,25 @@
 - **#69** wiki-lint 自動実行 hook — commit bf243c6 → **Issue closed**
 - **#70** backlinks 静的生成 → **closed (Quartz で対応済み)**
 - **#72 #73 #74** knowledge stale hook / WL-1/WL-5 / debounce 移動 — commit 84e1c6c → **Issue closed**
-- **#75 新規** source 不在 6 件の修復 (WL-5 検出) — follow-up open
-- **#75 修復** source 不在 6 件 freshness-report PASS — 2026-04-15 着手
+- **#75** source 不在 6 件の修復 + 内受容感覚/間主観性 を v3 準拠書き直し — commit e6e606e → **Issue closed**
   - pd 4 entities: knowledge/raw/*.pdf 二次 source 削除、"原典参照" タグ除去
-  - 内受容感覚/間主観性: pd awareness-model に source 差し替え、v3 準拠で全面書き直し
-  - 4層/Layer/神経部位確定マッピング/社会的アロスタシス/α機能4層内在化/臨床療法テーブル等の LLM 構成物を除去
+  - as 2 entities: pd awareness-model に source 差し替え、v3 全面書き直し
+  - LLM 構成物 (Layer/神経部位確定マッピング/社会的アロスタシス/α機能4層内在化/臨床療法テーブル) 除去
+  - freshness-report FAIL(6) → PASS(0)
+- **内受容感覚/間主観性** pjdhiro 精読 → status: 正準 / review_state: pjdhiro確認済み(2026-04-15)
+- **#71** wiki/log.md auto-append hook — commit abc0672 → **Issue closed**（要 close）
+  - PostToolUse Bash hook + scripts/wiki-log-append.mjs
+  - 閾値 3 wiki/*.md、follow-up コミット方式、核 guard: log.md only / auto-append / --amend
+  - 実機テストで e6e606e (10件) 用 retro auto-append 成功 (c4f5996)
+- **#68 umbrella** wiki 自動追従 → **Issue closed**（要 close、#71 完了で子 issue 全クリア）
+- **wiki-gen-check 改善** — commit bc73868
+  - manifest の非PDF/ローカル不在マーカーを対象外
+  - 前日以前の wiki-gen-*.md inbox を archive へ自動退避
 
 ## 進行中
-- **#75 source 不在 6 件の修復** — 2026-04-15 着手、pjdhiro レビュー待ち（内受容感覚/間主観性 全面書き直し含む）
+- なし
 
 ## 次のステップ
-- **#68 umbrella** wiki 自動追従
-  - **#69** wiki-lint 自動実行 → **closed** (bf243c6)
-  - **#70** backlinks 自動生成 → **closed** (Quartz で対応済み)
-  - **#71** log.md auto-append（スコープ狭小化で保留）
-  - **#72** knowledge/ 編集時 stale 通知 → **closed** (84e1c6c)
-  - **#73** wiki-lint WL-1/WL-5 実装 → **closed** (84e1c6c)
-  - **#74** debounce を .cache/ に移動 → **closed** (84e1c6c)
-  - **#75** source 不在 6 件の修復（新規、WL-5 検出）
 - techo の探究系 backlog（重め、pjdhiro 判断要）:
   - techo#60 探究: 信頼とは何か
   - techo#67 origin-survey: 対照群テスト
