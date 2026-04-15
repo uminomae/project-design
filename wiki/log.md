@@ -13,6 +13,14 @@ compile 実行の履歴。append-only。
 - duration: {所要時間}
 -->
 
+## [2026-04-15] auto-append | docs(wiki): 内受容感覚/間主観性 を pjdhiro 確認済みに更新
+- commit: a4a560a
+- pages: 3 wiki/*.md 変更
+- files:
+  - wiki/entities/内受容感覚.md
+  - wiki/entities/間主観性.md
+  - wiki/index.md
+
 ## [2026-04-15] auto-append | refactor(wiki): 内受容感覚/間主観性 を v3 準拠に書き直し + #75 修復
 - commit: e6e606e
 - pages: 10 wiki/*.md 変更
