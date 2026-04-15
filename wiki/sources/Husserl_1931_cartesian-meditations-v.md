@@ -5,7 +5,7 @@ aliases: ["Cartesianische Meditationen V", "Fifth Cartesian Meditation", "第五
 tags: [source, "awareness-model", "原典解説", "哲学", "現象学", "間主観性"]
 source:
   repo: "project-design"
-  path: "knowledge/evidence/awareness-model/phenomenology-existentialism-intersubjectivity.md"
+  path: "knowledge/evidence/awareness-model/husserl-1931-cartesian-meditations-v.md"
 compiled: "2026-04-15"
 status: 正典
 review_state: 未レビュー
@@ -63,7 +63,7 @@ review_state: 未レビュー
 - 対象箇所: 第五省察（§42-§64）
 - 英訳: *Cartesian Meditations: An Introduction to Phenomenology*, trans. Dorion Cairns, Martinus Nijhoff, 1960
 - 和訳: 『デカルト的省察』浜渦辰二訳、岩波文庫、2001 など
-- access_status: knowledge/evidence/awareness-model/phenomenology-existentialism-intersubjectivity.md に summary あり、原典 PDF は未登録
+- access_status: `knowledge/evidence/awareness-model/husserl-1931-cartesian-meditations-v.md` に独立 summary ノートあり。原典 PDF は未登録（要補強）
 
 ## 関連資料
 
