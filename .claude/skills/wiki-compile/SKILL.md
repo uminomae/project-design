@@ -86,7 +86,9 @@ CLI: PDF をテキスト抽出（下記参照）→ wiki ページ生成 → 文
   ↓
 自動 commit & push to develop
   ↓
-GitHub Actions (wiki-publish.yml): develop push で自動 build & deploy
+pjdhiro が develop → main マージ（公開判定は pjdhiro 専権）
+  ↓
+GitHub Actions (wiki-publish.yml, branches:[main]): 自動 build & deploy
   ↓
 GitHub Pages に公開
 ```

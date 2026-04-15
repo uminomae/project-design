@@ -32,8 +32,9 @@ npx quartz build --directory ../wiki --output ../wiki-out
 
 ### 2. コミット & プッシュ
 
-wiki/ の変更をコミットして main にマージ（または develop → main PR）すると、
-GitHub Actions が自動でビルド & デプロイする。
+wiki/ の変更は develop にコミット & push する（ここまでは CLI 自律）。
+pjdhiro が develop → main マージした時点で GitHub Actions が自動ビルド & デプロイする。
+main マージは公開判定であり pjdhiro 専権（CLAUDE.md §委任レベル 参照）。
 
 ### 3. 公開 URL
 
@@ -54,5 +55,5 @@ wiki-compile（知識の compile）
 ## 注意事項
 
 - Dataview クエリは Quartz では非動作。wiki-compile 時に静的テーブルに変換すること
-- develop ブランチへの push でもデプロイされる（techo#119 で branches: [main, develop] に更新済み）
+- デプロイは main push のみ（`branches: [main]`）。develop push では公開されない
 - 既存サイト（index.html, src/）と wiki は統合ビルドされる
