@@ -13,6 +13,15 @@ compile 実行の履歴。append-only。
 - duration: {所要時間}
 -->
 
+## [2026-04-15] auto-append | docs(wiki): 間主観性を構造層に純化し情動伝染ページを分離
+- commit: 600e9a0
+- pages: 4 wiki/*.md 変更
+- files:
+  - wiki/concepts/アウェアネスモデル.md
+  - wiki/entities/情動伝染.md
+  - wiki/entities/間主観性.md
+  - wiki/sources/Husserl_1931_cartesian-meditations-v.md
+
 ## [2026-04-15] auto-append | docs(wiki): 内受容感覚/間主観性 を pjdhiro 確認済みに更新
 - commit: a4a560a
 - pages: 3 wiki/*.md 変更
