@@ -66,7 +66,36 @@ compile スキルとは異なり、ページの生成は行わない。検出と
 
 ## 実行方法
 
-セッション内で `/wiki-lint` または手動で各チェックを実行。
+### 自動実行（PostToolUse hook）
+
+`scripts/wiki-lint.mjs` が `.claude/hooks/content-compile.sh` から自動呼び出しされる:
+
+- トリガー: wiki/ への Edit/Write（`wiki/health/` 自体の編集は除外して無限ループ防止）
+- Debounce: 60 秒。連続編集では最初の 1 回のみ実行
+- 対象チェック（全て自動）:
+  - **WL-1** CN divergence: 禁止用語 (Withhold, F軸/O軸, D1-D4 体系) を走査
+  - **WL-3** freshness: `checked:` 日付を更新
+  - **WL-4** 孤立ページ検出: full wikilink graph を再構築
+  - **WL-5** source path 実在確認: cross-repo (pd/ks/kdt/cs/as) パスを解決して確認
+- 失敗時は stderr にメッセージを出すだけでセッションを止めない
+- Debounce 状態: `.cache/wiki-lint/last-run`
+
+### knowledge/ 編集時の stale 通知（#72）
+
+`scripts/wiki-stale-check.mjs` が同 hook から呼ばれる:
+- トリガー: `knowledge/**/*.md` への Edit/Write
+- Debounce: 60 秒、`.cache/wiki-stale/last-run`
+- 該当 knowledge を参照している wiki ページを stderr 通知（再 compile は手動）
+
+### 手動実行
+
+```bash
+node scripts/wiki-lint.mjs                                 # WL-1/3/4/5 全て
+node scripts/wiki-stale-check.mjs --knowledge <path>       # 指定 knowledge の参照元
+node scripts/wiki-stale-check.mjs --all                    # pd-local の全 source 実在確認
+```
+
+WL-2 (canonical-keywords 用語統一) は現状未実装（手動で grep）:
 
 ```bash
 # 手動実行の場合の参考コマンド
