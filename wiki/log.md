@@ -13,6 +13,14 @@ compile 実行の履歴。append-only。
 - duration: {所要時間}
 -->
 
+## [2026-04-16] auto-append | docs(wiki): 間主観性/情動伝染を文献調査に基づき書き直し・定義確認ルール追加
+- commit: 222cc3c
+- pages: 3 wiki/*.md 変更
+- files:
+  - wiki/concepts/アウェアネスモデル.md
+  - wiki/entities/情動伝染.md
+  - wiki/entities/間主観性.md
+
 ## [2026-04-15] auto-append | docs(wiki): 核心仮説を構造層/現象層併記に更新・Husserl/Hatfield 原典ノート新設
 - commit: 375680a
 - pages: 5 wiki/*.md 変更
