@@ -13,6 +13,15 @@ compile 実行の履歴。append-only。
 - duration: {所要時間}
 -->
 
+## [2026-04-16] auto-append | docs(wiki): 意識/間主観性 WT-1 core definitions 厳密化
+- commit: 6b4b487
+- pages: 4 wiki/*.md 変更
+- files:
+  - wiki/concepts/アウェアネスモデル.md
+  - wiki/entities/情動伝染.md
+  - wiki/entities/間主観性.md
+  - wiki/health/orphan-report.md
+
 ## [2026-04-16] auto-append | docs(wiki): 意識/間主観性 WT-2/WT-3 厳密化 (監査レポート優先度1-3)
 - commit: 5396c3c
 - pages: 7 wiki/*.md 変更
