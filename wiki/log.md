@@ -13,6 +13,83 @@ compile 実行の履歴。append-only。
 - duration: {所要時間}
 -->
 
+## [2026-04-16] auto-append | docs(wiki): 意識/間主観性 WT-2/WT-3 厳密化 (監査レポート優先度1-3)
+- commit: 5396c3c
+- pages: 7 wiki/*.md 変更
+- files:
+  - wiki/concepts/プロジェクトデザイン.md
+  - wiki/concepts/感情処理.md
+  - wiki/entities/シュワルツの基本的価値理論.md
+  - wiki/entities/ネガティブケイパビリティ.md
+  - wiki/entities/情動の構成.md
+  - ... (+2)
+
+## [2026-04-16] auto-append | chore(session): 2026-04-16 #02 終了 — ワークフローレビュー + health/index 追従
+- commit: 314bf7f
+- pages: 4 wiki/*.md 変更
+- files:
+  - wiki/health/cn-divergence-report.md
+  - wiki/health/freshness-report.md
+  - wiki/health/orphan-report.md
+  - wiki/index.md
+
+## [2026-04-16] auto-append | docs(wiki): 間主観性/情動伝染を文献調査に基づき書き直し・定義確認ルール追加
+- commit: 222cc3c
+- pages: 3 wiki/*.md 変更
+- files:
+  - wiki/concepts/アウェアネスモデル.md
+  - wiki/entities/情動伝染.md
+  - wiki/entities/間主観性.md
+
+## [2026-04-15] auto-append | docs(wiki): 核心仮説を構造層/現象層併記に更新・Husserl/Hatfield 原典ノート新設
+- commit: 375680a
+- pages: 5 wiki/*.md 変更
+- files:
+  - wiki/concepts/アウェアネスモデル.md
+  - wiki/entities/情動伝染.md
+  - wiki/entities/間主観性.md
+  - wiki/sources/Hatfield_1993_emotional-contagion.md
+  - wiki/sources/Husserl_1931_cartesian-meditations-v.md
+
+## [2026-04-15] auto-append | feat(wiki): 関連原典 自動追記スクリプトと既存ページへの backfill
+- commit: 29ffe17
+- pages: 13 wiki/*.md 変更
+- files:
+  - wiki/concepts/アウェアネスモデル.md
+  - wiki/entities/ネガティブケイパビリティ.md
+  - wiki/entities/内受容感覚.md
+  - wiki/entities/創造の5段階モデル.md
+  - wiki/entities/情動の構成.md
+  - ... (+8)
+
+## [2026-04-15] auto-append | docs(wiki): 間主観性を構造層に純化し情動伝染ページを分離
+- commit: 600e9a0
+- pages: 4 wiki/*.md 変更
+- files:
+  - wiki/concepts/アウェアネスモデル.md
+  - wiki/entities/情動伝染.md
+  - wiki/entities/間主観性.md
+  - wiki/sources/Husserl_1931_cartesian-meditations-v.md
+
+## [2026-04-15] auto-append | docs(wiki): 内受容感覚/間主観性 を pjdhiro 確認済みに更新
+- commit: a4a560a
+- pages: 3 wiki/*.md 変更
+- files:
+  - wiki/entities/内受容感覚.md
+  - wiki/entities/間主観性.md
+  - wiki/index.md
+
+## [2026-04-15] auto-append | refactor(wiki): 内受容感覚/間主観性 を v3 準拠に書き直し + #75 修復
+- commit: e6e606e
+- pages: 10 wiki/*.md 変更
+- files:
+  - wiki/entities/アネット・ベイアー.md
+  - wiki/entities/ウィキッド・プロブレム.md
+  - wiki/entities/ドナルド・ショーン.md
+  - wiki/entities/ナイジェル・クロス.md
+  - wiki/entities/内受容感覚.md
+  - ... (+5)
+
 ## [2026-04-11] compile | Step 3b wiki-gen auto-execute + DOI/URL 一括追加
 - scope: Step 3b（wiki-gen auto-execute, sources 書誌拡充, 原典解説追加）
 - sources: 7（未生成PDF 5件: D10_akdis, D10_rosenblum, D12_maff, D12_stern, D02_rayleigh）+ D16 Toynbee解説 + 既存 sources 103件

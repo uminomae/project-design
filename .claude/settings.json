@@ -93,6 +93,17 @@
             "statusMessage": "Content wiki-link compile..."
           }
         ]
+      },
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash .claude/hooks/wiki-log-append.sh",
+            "timeout": 20,
+            "statusMessage": "wiki/log.md auto-append check..."
+          }
+        ]
       }
     ]
   },

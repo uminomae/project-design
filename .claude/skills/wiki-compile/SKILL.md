@@ -86,7 +86,9 @@ CLI: PDF をテキスト抽出（下記参照）→ wiki ページ生成 → 文
   ↓
 自動 commit & push to develop
   ↓
-GitHub Actions (wiki-publish.yml): develop push で自動 build & deploy
+pjdhiro が develop → main マージ（公開判定は pjdhiro 専権）
+  ↓
+GitHub Actions (wiki-publish.yml, branches:[main]): 自動 build & deploy
   ↓
 GitHub Pages に公開
 ```
@@ -206,6 +208,30 @@ wiki ソースページ生成時、manifest の notes 列から DOI / OA URL を
 1. **原典の内容が解説されていること** — 最優先
 2. **原典への参照があること** — source traceability
 3. **主な読者は LLM** — 構造化・明確さ重視
+4. **用語の定義は必ず文献で確認する** — 下記「定義の文献確認ルール」参照
+
+### 定義の文献確認ルール（必須）
+
+wiki ページで扱う概念・用語は、**訓練知識からの合成ではなく必ず一次文献または信頼できる二次文献（SEP, Britannica, 査読論文, 原典）で定義を確認してから記述する**。
+
+**背景**: 2026-04-15 のレビューで、LLM が「間主観性」を訓練知識から合成して書いた結果、Trevarthen の一次的間主観性（実質は情動伝染）を間主観性ページに混入させる誤りが発生した。定義を調べずに書くと、概念の境界が曖昧になり、異なる層の現象が同じページに混ざる。これは wiki の中核責務（概念の正確な整理）を損なう。
+
+**手順**:
+1. **定義の一次ソース確認** — 概念ごとに以下の順序で確認する:
+   - (a) 概念を提唱した人物の原典（著作・論文）の該当箇所
+   - (b) Stanford Encyclopedia of Philosophy (plato.stanford.edu) — 哲学概念
+   - (c) Britannica / Cambridge dictionary — 一般概念
+   - (d) 査読論文のレビュー・メタ分析 — 経験科学概念
+2. **境界の確認** — 類似概念との区別を文献で確認する。例: 間主観性 vs 情動伝染 vs 共感 vs 調律 はすべて異なる概念であり、文献上で境界が定義されている
+3. **定義の引用** — wiki ページに定義を書く際は、出典を明示する。可能なら短い直接引用（原語＋訳）を含める
+4. **不明なら書かない** — 文献で定義が確認できない主張は wiki に書かない。調べてから書く。「たぶんこういう意味」で書いてはならない
+
+**禁止事項**:
+- 訓練知識の合成だけで概念定義を書くこと
+- 複数の異なる概念を、同一ページ内で定義の区別なく並べること
+- 「〜と言われている」「〜として知られる」のような出典の曖昧な記述を定義として使うこと
+
+**例外**: pjdhiro 独自の概念・仮説（アウェアネスモデル核心仮説など）は文献にないため例外。ただしその場合は「pjdhiro 独自」と明示する
 
 ### OCR フロー（スキャン画像 PDF 向け）
 
@@ -244,6 +270,7 @@ wiki ソースページ生成時、manifest の notes 列から DOI / OA URL を
 ### 生成後チェック
 - `grep -rl '�' wiki/ --include='*.md'` で UTF-8 文字化けチェック
 - wiki-lint WL-5 で source パスの実在確認
+- **crosslink**: `node scripts/wiki-crosslink.mjs --source wiki/sources/{新ページ}.md` を実行し、本文中で言及された concept/entity/cross-refs ページの `## 関連原典` セクションに逆向き参照を自動追記。`--dry-run` / `--all` オプションあり。冪等なので再実行しても重複追記されない。現環境では Quartz ローカルビルドが Node 25/4.5.2 非互換で OOM するため、スクリプトはデフォルトで build をスキップする。公開確認は GitHub Pages に任せる（wiki-publish SKILL 参照）
 
 ## wikilink 変換ルール
 
@@ -269,6 +296,7 @@ wiki ソースページ生成時、manifest の notes 列から DOI / OA URL を
 | wiki/*.md 追加・編集 | index.md 再生成 | PostToolUse hook → `generate-wiki-index.mjs` |
 | wiki/*.md 追加・編集 | content/ wikilink 再処理 | PostToolUse hook → `compile-content-links.mjs`（既存） |
 | wiki/*.md 追加・編集 | Quartz ビルド | PostToolUse hook → `wiki-build.sh`（既存） |
+| wiki/sources/*.md 追加 | concept/entity/cross-refs に逆向き参照 | 手動 `node scripts/wiki-crosslink.mjs --source <path>`（Step 3b 生成後に実行） |
 | knowledge/ 正本更新 | wiki ページ再コンパイル | 手動 `/wiki-compile`。WL-3 で stale 検知 |
 | cs manifest 更新 | wiki/sources/ 生成依頼 | SessionStart → `wiki-gen-check.sh`（既存） |
 
