@@ -13,6 +13,17 @@ compile 実行の履歴。append-only。
 - duration: {所要時間}
 -->
 
+## [2026-04-16] auto-append | refactor(wiki): プロジェクトデザインをトップレベルに昇格、about-project-design 削除
+- commit: b02f0ce
+- pages: 6 wiki/*.md 変更
+- files:
+  - wiki/about-project-design.md
+  - wiki/about.md
+  - wiki/concepts/プロジェクトデザイン.md
+  - wiki/health/orphan-report.md
+  - wiki/index.md
+  - ... (+1)
+
 ## [2026-04-16] auto-append | refactor(wiki): entities/ を concepts/ と keywords/ に分離、sources/pd/ 新設
 - commit: 8c6b24b
 - pages: 52 wiki/*.md 変更
