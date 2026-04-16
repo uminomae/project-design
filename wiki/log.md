@@ -13,6 +13,17 @@ compile 実行の履歴。append-only。
 - duration: {所要時間}
 -->
 
+## [2026-04-16] auto-append | refactor(wiki): entities/ を concepts/ と keywords/ に分離、sources/pd/ 新設
+- commit: 8c6b24b
+- pages: 52 wiki/*.md 変更
+- files:
+  - wiki/about.md
+  - wiki/concepts/内受容感覚.md
+  - wiki/concepts/創造の5段階モデル.md
+  - wiki/concepts/情動の構成.md
+  - wiki/concepts/情動伝染.md
+  - ... (+47)
+
 ## [2026-04-16] auto-append | docs(wiki): 意識/間主観性 WT-1 core definitions 厳密化
 - commit: 6b4b487
 - pages: 4 wiki/*.md 変更
