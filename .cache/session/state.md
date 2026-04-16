@@ -2,11 +2,11 @@
 
 ## Git
 - branch: develop
-- HEAD: bbbc394 (develop)
-- main: 948c2c4 (merged & pushed 2026-04-16 #03 — WT-1/2/3 意識/間主観性 厳密化 + wiki-crosslink + wiki-gen-check 改善 + #71 hook 公開)
+- HEAD: (2026-04-16 #04 セッション終了時点)
+- main: ff83f2f (merged & pushed 2026-04-16 #04 — WT-1 core definitions 厳密化追加)
 - remote: synced
 - dirty: .cache/session/state.md のみ
-- develop ahead of main: なし
+- develop ahead of main: なし (main は cc740d2 を含む ff83f2f)
 
 ## 完了タスク
 ### 2026-04-16 #02 (このセッション — ワークフローレビュー系)
@@ -69,7 +69,18 @@
 ## 進行中
 - なし（意識/間主観性 WT-1/2/3 全件完了・main 公開済み）
 
-## 2026-04-16 #03 (本セッション完了)
+## 2026-04-16 #04 (本セッション — WT-1 追加分)
+- **SEP 直接調査**: WebFetch で SEP Consciousness / Husserl / Empathy を直接確認
+  - 3 findings: (1) 「意識」未定義 (2) we-intentionality 欠落 (3) Trevarthen ≠ SEP Empathy
+- **wiki 監査レポート**: /tmp/claude/wiki-audit-consciousness-intersubjectivity.md (42+62件)
+- **WT-1 core definitions 厳密化** — commit 6b4b487
+  - アウェアネスモデル.md: 核心仮説「意識にのぼる」に wiki-local 操作的定義を用語注追加
+  - 間主観性.md: (i)/(ii) 二側面分解 + Hua 15/476 we-intentionality + Hua 1/139 asymmetry + Hoffman 差し替え
+  - 情動伝染.md: Hoffman 六段階モデル主要ソース明記
+- **critic review**: SPLIT → critical 2件は SEP 実在確認済み解消、major 2件は修正反映
+- **develop → main マージ公開** — merge ff83f2f (pjdhiro 明示承認)
+
+## 2026-04-16 #03 (並行セッション — WT-2/WT-3)
 - **wiki 意識/間主観性 WT-2/WT-3 厳密化** — 監査レポート駆動 (commit 5396c3c)
   - 情動の構成.md: §アウェアネスモデルにおける位置 追加
   - ネガティブケイパビリティ.md: §間主観性との関係（検証待ち仮説） 追加

@@ -13,6 +13,39 @@ compile 実行の履歴。append-only。
 - duration: {所要時間}
 -->
 
+## [2026-04-17] auto-append | feat(wiki): 信頼・価値・デザイン思考を concepts/ に格上げ、sources/ 分類追加
+- commit: 76661c0
+- pages: 35 wiki/*.md 変更
+- files:
+  - wiki/concepts/PDブリッジ保持論点.md
+  - wiki/concepts/アウェアネスモデル.md
+  - wiki/concepts/デザイン思考（PD）.md
+  - wiki/concepts/価値.md
+  - wiki/concepts/信頼.md
+  - ... (+30)
+
+## [2026-04-16] auto-append | refactor(wiki): プロジェクトデザインをトップレベルに昇格、about-project-design 削除
+- commit: b02f0ce
+- pages: 6 wiki/*.md 変更
+- files:
+  - wiki/about-project-design.md
+  - wiki/about.md
+  - wiki/concepts/プロジェクトデザイン.md
+  - wiki/health/orphan-report.md
+  - wiki/index.md
+  - ... (+1)
+
+## [2026-04-16] auto-append | refactor(wiki): entities/ を concepts/ と keywords/ に分離、sources/pd/ 新設
+- commit: 8c6b24b
+- pages: 52 wiki/*.md 変更
+- files:
+  - wiki/about.md
+  - wiki/concepts/内受容感覚.md
+  - wiki/concepts/創造の5段階モデル.md
+  - wiki/concepts/情動の構成.md
+  - wiki/concepts/情動伝染.md
+  - ... (+47)
+
 ## [2026-04-16] auto-append | docs(wiki): 意識/間主観性 WT-1 core definitions 厳密化
 - commit: 6b4b487
 - pages: 4 wiki/*.md 変更

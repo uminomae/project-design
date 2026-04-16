@@ -26,7 +26,7 @@ description: |
 | Step | スコープ | 入力 | 出力 |
 |------|---------|------|------|
 | 1 | 同一ディレクトリ内 | pd/knowledge/concepts/CN-*.md | wiki/concepts/*.md |
-| 2 | 同一リポ cross-directory | pd/knowledge/{concepts,research,meta}/* | wiki/{concepts,entities,cross-refs}/*.md |
+| 2 | 同一リポ cross-directory | pd/knowledge/{concepts,research,meta}/* | wiki/{concepts,keywords,cross-refs}/*.md |
 | 3a | cross-repo 概念 | ks/knowledge/, as/knowledge/, cs/evidence/ | wiki/cross-refs/*.md + 既存ページ追記 |
 | 3b | cross-repo 原典解説 | cs/knowledge/raw/manifest.md + PDF | wiki/sources/{domain}_{author}_{year}_{keyword}.md |
 | 3c | awareness-model 原典 | pd/knowledge/evidence/awareness-model/*.md | wiki/sources/{Author}_{year}_{keyword}.md |
@@ -47,7 +47,7 @@ status: 探索的 | 暫定 | 正典
 review_state: 未レビュー
 ```
 
-### entities/
+### keywords/
 
 ```yaml
 title, aliases, source[], compiled, tags, related_concepts[]
@@ -173,7 +173,7 @@ wiki ソースページ生成時、manifest の notes 列から DOI / OA URL を
 
 ### 高校生向け解説ルール（全ページ型共通）
 
-全 wiki ページ（concepts/, entities/, sources/, cross-refs/）の `# タイトル` 直後、最初の `## ` セクションの前に、blockquote 形式で「高校生向けのやさしい解説」を配置する。
+全 wiki ページ（concepts/, keywords/, sources/, cross-refs/）の `# タイトル` 直後、最初の `## ` セクションの前に、blockquote 形式で「高校生向けのやさしい解説」を配置する。
 
 **形式**:
 ```markdown
@@ -200,7 +200,7 @@ wiki ソースページ生成時、manifest の notes 列から DOI / OA URL を
 | ページ型 | 解説の焦点 |
 |---------|-----------|
 | concepts/ | 「この考え方が何の役に立つか」を伝える |
-| entities/ | 「この人（理論）は何を言っているのか」を伝える |
+| keywords/ | 「この人（理論）は何を言っているのか」を伝える |
 | sources/ | 「この論文（本）は何を明らかにしたのか」を伝える |
 | cross-refs/ | 「ここでは何と何のつながりを見ているか」を伝える |
 
@@ -209,6 +209,21 @@ wiki ソースページ生成時、manifest の notes 列から DOI / OA URL を
 2. **原典への参照があること** — source traceability
 3. **主な読者は LLM** — 構造化・明確さ重視
 4. **用語の定義は必ず文献で確認する** — 下記「定義の文献確認ルール」参照
+5. **概念の説明と運用の説明を混ぜない** — 下記「概念/運用 分離ルール」参照
+
+### 概念/運用 分離ルール（必須）
+
+wiki の概念ページ（concepts/ およびトップレベルの理論ページ）は、**その概念・理論が何であるかを説明する**ページである。プロジェクトの運営・実装・リポジトリ構造の説明を混入させてはならない。
+
+**背景**: 2026-04-17 のレビューで、「プロジェクトデザイン」ページに「3つのリポジトリで展開されている」「情報の流れ（knowledge/ → transform/ → 出力先）」「横断する知の領域（譬え話レベルの分野列挙）」が混入していた。これらはプロジェクトデザイン論の説明ではなく、プロジェクト運営の説明であり、理論を知りたい読者にとってノイズになる。
+
+**禁止事項**:
+- リポジトリ構造・ディレクトリ構造の記述（「3つのリポジトリで展開」等）
+- 情報フロー・パイプラインの記述（knowledge/ → transform/ → 出力先 等）
+- 実装技術の記述（Three.js、GLSL、GitHub Pages 等）ただし理論の説明に不可欠な場合を除く
+- 理論との実質的接続を示さない分野の羅列（「横断する知の領域」として挙げるなら、各分野が理論のどの部分にどう接続するかを概念レベルで説明すること）
+
+**判断基準**: そのセクションを読んで「プロジェクトデザイン論とは何か」の理解が深まるか？ 深まらないなら、それは運用情報であり about.md や README に書くべき内容である。
 
 ### 定義の文献確認ルール（必須）
 
@@ -313,7 +328,7 @@ wiki/index.md 自体の変更では再帰防止のためスキップ。
 | セクション | データソース | ソート |
 |-----------|-------------|-------|
 | Concepts | wiki/concepts/*.md | ファイル名順 |
-| Entities | wiki/entities/*.md | ファイル名順 |
+| Keywords | wiki/keywords/*.md | ファイル名順 |
 | Sources (awareness-model) | wiki/sources/ で D\d{2}_ 以外 | tags の §分類でグループ化 |
 | Sources (D01-D30) | wiki/sources/D\d{2}_*.md | ドメイン番号順 |
 | Cross References | wiki/cross-refs/*.md | ファイル名順 |

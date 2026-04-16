@@ -107,7 +107,7 @@ function generate() {
 
   // Read all pages
   const concepts = readPages(join(WIKI, "concepts"));
-  const entities = readPages(join(WIKI, "entities"));
+  const keywords = readPages(join(WIKI, "keywords"));
   const sources = readPages(join(WIKI, "sources"));
   const crossRefs = readPages(join(WIKI, "cross-refs"));
   const health = readPages(join(WIKI, "health"));
@@ -145,7 +145,7 @@ function generate() {
   // Collect all pages for "最近 compile されたページ"
   const allPages = [
     ...concepts.map((p) => ({ ...p, category: "concepts" })),
-    ...entities.map((p) => ({ ...p, category: "entities" })),
+    ...keywords.map((p) => ({ ...p, category: "keywords" })),
     ...sources.map((p) => ({ ...p, category: "sources" })),
     ...crossRefs.map((p) => ({ ...p, category: "cross-refs" })),
   ];
@@ -177,10 +177,10 @@ function generate() {
   }
   push("");
 
-  // Entities
-  push("## Entities");
-  for (const e of entities) {
-    push(wikilink("entities", e.stem, e.title, e.description));
+  // Keywords
+  push("## Keywords");
+  for (const k of keywords) {
+    push(wikilink("keywords", k.stem, k.title, k.description));
   }
   push("");
 
@@ -276,13 +276,13 @@ function generate() {
   // Stats to stderr
   const stats = {
     concepts: conceptsMain.length,
-    entities: entities.length,
+    keywords: keywords.length,
     sources: sources.length,
     crossRefs: crossRefs.length,
     domains: domainKeys.length,
   };
   process.stderr.write(
-    `Wiki index generated: ${stats.concepts}C ${stats.entities}E ${stats.sources}S ${stats.crossRefs}X ${stats.domains}D\n`
+    `Wiki index generated: ${stats.concepts}C ${stats.keywords}K ${stats.sources}S ${stats.crossRefs}X ${stats.domains}D\n`
   );
 }
 
