@@ -6,13 +6,14 @@ compiled: "2026-04-16"
 
 pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 
+> **[[プロジェクトデザイン]]** -- プロジェクトデザインとは何か。Doing + Being の出来事の設計論
+
 > **[[about|About This Wiki]]** -- ソースの所在、compile の仕組み、Obsidian との分担を解説
 
 ## Concepts
 - [[concepts/Love 駆動開発|Love 駆動開発]]
 - [[concepts/PDブリッジ保持論点|PDブリッジ保持論点]]
 - [[concepts/アウェアネスモデル|アウェアネスモデル]]
-- [[concepts/プロジェクトデザイン|プロジェクトデザイン]]
 - [[concepts/感情処理|感情処理]]
 - [[concepts/間主観性|間主観性]]
 - [[concepts/欠損|欠損]]
@@ -249,7 +250,6 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 | [[concepts/PDブリッジ保持論点\|PDブリッジ保持論点]] | 暫定 | 2026-04-06 | 未レビュー |
 | [[concepts/wikilink\|wikilink]] | 正典 | 2026-04-06 | 未レビュー |
 | [[concepts/アウェアネスモデル\|アウェアネスモデル]] | レビュー済み | 2026-04-08 | pjdhiro全件判定済(techo#120) |
-| [[concepts/プロジェクトデザイン\|プロジェクトデザイン]] | 暫定 | 2026-04-06 | 未レビュー |
 | [[concepts/感情処理\|感情処理]] | 暫定 | 2026-04-06 | 未レビュー |
 | [[concepts/間主観性\|間主観性]] | 正準 | 2026-04-15 | pjdhiro確認待ち(2026-04-15 purified) |
 | [[concepts/欠損\|欠損]] | 暫定 | 2026-04-06 | 未レビュー |
