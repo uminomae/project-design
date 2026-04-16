@@ -17,7 +17,7 @@ concepts/ と keywords/ の関係を可視化するマトリクス。
 
 ## マトリクス
 
-| Entity \ Concept | [[プロジェクトデザイン]] | [[Love 駆動開発]] | [[感情処理]] | [[信頼の定義仮説]] | [[信頼の多元的記述]] | [[測定設計原則]] | [[PDブリッジ保持論点]] |
+| Entity \ Concept | [[プロジェクトデザイン]] | [[Love 駆動開発]] | [[感情処理]] | [[信頼]] | [[信頼]] | [[測定設計原則]] | [[PDブリッジ保持論点]] |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | [[欠損]] | **参照** | | | | | | **参照** |
 | [[欠損駆動思考]] | **参照** | **参照** | | | | | **参照** |
@@ -80,14 +80,14 @@ concepts/ と keywords/ の関係を可視化するマトリクス。
 | [[欠損駆動思考]] | 欠損, 抱持, 情動の構成, PDブリッジ保持論点, デザイン思考 | entity, theory, thinking, kesson, attitude |
 | [[抱持]] | 欠損, 欠損駆動思考, 情動の構成, ネガティブケイパビリティ, 愛着理論, PDブリッジ保持論点 | entity, concept, containment, psychoanalysis, awareness |
 | [[デザイン思考]] | 欠損駆動思考, アブダクション, ウィキッド・プロブレム, ドナルド・ショーン, ナイジェル・クロス, PDブリッジ保持論点 | entity, theory, design, abduction, framing, human-centered |
-| [[アネット・ベイアー]] | 信頼の定義仮説, 信頼の多元的記述, 抱持 | entity, person, trust, philosophy, vulnerability |
+| [[アネット・ベイアー]] | 信頼, 信頼, 抱持 | entity, person, trust, philosophy, vulnerability |
 | [[アブダクション]] | デザイン思考, 欠損駆動思考, PDブリッジ保持論点 | entity, theory, logic, design-thinking, abduction |
 | [[ウィキッド・プロブレム]] | デザイン思考, 欠損駆動思考, PDブリッジ保持論点 | entity, theory, design-thinking, planning, complexity |
 | [[ドナルド・ショーン]] | デザイン思考, 抱持, 欠損駆動思考 | entity, person, design-thinking, reflection |
 | [[ナイジェル・クロス]] | デザイン思考 | entity, person, design-thinking, epistemology |
-| [[ニクラス・ルーマン]] | 信頼の定義仮説, 信頼の多元的記述 | entity, person, trust, sociology, systems-theory |
-| [[山岸俊男]] | 信頼の定義仮説, 信頼の多元的記述, 抱持 | entity, person, trust, social-psychology, japan |
-| [[愛着理論]] | 信頼の定義仮説, 信頼の多元的記述, 測定設計原則, 抱持 | entity, theory, trust, developmental-psychology, attachment |
+| [[ニクラス・ルーマン]] | 信頼, 信頼 | entity, person, trust, sociology, systems-theory |
+| [[山岸俊男]] | 信頼, 信頼, 抱持 | entity, person, trust, social-psychology, japan |
+| [[愛着理論]] | 信頼, 信頼, 測定設計原則, 抱持 | entity, theory, trust, developmental-psychology, attachment |
 | [[シュワルツの基本的価値理論]] | 感情処理, 間主観性 | entity, theory, value, social-psychology, cross-cultural |
 | [[ピエール・ブルデュー]] | 間主観性 | entity, person, value, sociology, capital |
 | [[プロスペクト理論]] | 感情処理, 欠損駆動思考 | entity, theory, value, behavioral-economics, decision-making |
@@ -99,13 +99,13 @@ concepts/ と keywords/ の関係を可視化するマトリクス。
 | [[内受容感覚]] | 間主観性, 情動の構成, 抱持, 欠損 | entity, theory, neuroscience, awareness, embodiment |
 | [[創造の5段階モデル]] | プロジェクトデザイン, 欠損駆動思考, 抱持, 情動の構成, 欠損 | entity, theory, creation, five-stages, cross-domain |
 
-## 「信頼の定義仮説」に関連する entities
+## 「信頼」に関連する entities
 
 | Entity | related_concepts |
 |--------|-----------------|
-| [[アネット・ベイアー]] | 信頼の定義仮説, 信頼の多元的記述, 抱持 |
-| [[ニクラス・ルーマン]] | 信頼の定義仮説, 信頼の多元的記述 |
-| [[山岸俊男]] | 信頼の定義仮説, 信頼の多元的記述, 抱持 |
-| [[愛着理論]] | 信頼の定義仮説, 信頼の多元的記述, 測定設計原則, 抱持 |
+| [[アネット・ベイアー]] | 信頼, 信頼, 抱持 |
+| [[ニクラス・ルーマン]] | 信頼, 信頼 |
+| [[山岸俊男]] | 信頼, 信頼, 抱持 |
+| [[愛着理論]] | 信頼, 信頼, 測定設計原則, 抱持 |
 
 > **Note**: このテーブルは wiki-compile 時に生成された静的データです。Obsidian では Dataview クエリによる動的表示も利用できます。

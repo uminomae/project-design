@@ -6,22 +6,21 @@ compiled: "2026-04-16"
 
 pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 
-> **[[プロジェクトデザイン]]** -- プロジェクトデザインとは何か。Doing + Being の出来事の設計論
-
 > **[[about|About This Wiki]]** -- ソースの所在、compile の仕組み、Obsidian との分担を解説
 
 ## Concepts
 - [[concepts/Love 駆動開発|Love 駆動開発]]
 - [[concepts/PDブリッジ保持論点|PDブリッジ保持論点]]
 - [[concepts/アウェアネスモデル|アウェアネスモデル]]
+- [[concepts/デザイン思考（PD）|デザイン思考（PD）]]
+- [[concepts/価値|価値]]
 - [[concepts/感情処理|感情処理]]
 - [[concepts/間主観性|間主観性]]
 - [[concepts/欠損|欠損]]
 - [[concepts/欠損駆動思考|欠損駆動思考]]
 - [[concepts/情動の構成|情動の構成]]
 - [[concepts/情動伝染|情動伝染]]
-- [[concepts/信頼の多元的記述|信頼の多元的記述]]
-- [[concepts/信頼の定義仮説|信頼の定義仮説]]
+- [[concepts/信頼|信頼]]
 - [[concepts/創造の5段階モデル|創造の5段階モデル]]
 - [[concepts/測定設計原則|測定設計原則]]
 - [[concepts/内受容感覚|内受容感覚]]
@@ -250,14 +249,15 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 | [[concepts/PDブリッジ保持論点\|PDブリッジ保持論点]] | 暫定 | 2026-04-06 | 未レビュー |
 | [[concepts/wikilink\|wikilink]] | 正典 | 2026-04-06 | 未レビュー |
 | [[concepts/アウェアネスモデル\|アウェアネスモデル]] | レビュー済み | 2026-04-08 | pjdhiro全件判定済(techo#120) |
+| [[concepts/デザイン思考（PD）\|デザイン思考（PD）]] | 暫定 | 2026-04-17 | 未レビュー |
+| [[concepts/価値\|価値]] | 暫定 | 2026-04-17 | 未レビュー |
 | [[concepts/感情処理\|感情処理]] | 暫定 | 2026-04-06 | 未レビュー |
 | [[concepts/間主観性\|間主観性]] | 正準 | 2026-04-15 | pjdhiro確認待ち(2026-04-15 purified) |
 | [[concepts/欠損\|欠損]] | 暫定 | 2026-04-06 | 未レビュー |
 | [[concepts/欠損駆動思考\|欠損駆動思考]] | 暫定 | 2026-04-06 | 未レビュー |
 | [[concepts/情動の構成\|情動の構成]] | 要改訂 | 2026-04-06 | v2照合中 |
 | [[concepts/情動伝染\|情動伝染]] | 正準 | 2026-04-15 | pjdhiro確認待ち(2026-04-15 split from 間主観性) |
-| [[concepts/信頼の多元的記述\|信頼の多元的記述]] | 暫定 | 2026-04-06 | 未レビュー |
-| [[concepts/信頼の定義仮説\|信頼の定義仮説]] | 探索的 | 2026-04-06 | 未レビュー |
+| [[concepts/信頼\|信頼]] | 暫定 | 2026-04-17 | 未レビュー |
 | [[concepts/創造の5段階モデル\|創造の5段階モデル]] | 暫定 | 2026-04-06 | 未レビュー |
 | [[concepts/測定設計原則\|測定設計原則]] | 正典 | 2026-04-06 | 未レビュー |
 | [[concepts/内受容感覚\|内受容感覚]] | 正準 | 2026-04-15 | pjdhiro確認済み(2026-04-15) |
@@ -267,6 +267,9 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 
 | ページ | category | compiled |
 |--------|----------|----------|
+| [[concepts/デザイン思考（PD）\|デザイン思考（PD）]] | concepts | 2026-04-17 |
+| [[concepts/価値\|価値]] | concepts | 2026-04-17 |
+| [[concepts/信頼\|信頼]] | concepts | 2026-04-17 |
 | [[concepts/間主観性\|間主観性]] | concepts | 2026-04-15 |
 | [[concepts/情動伝染\|情動伝染]] | concepts | 2026-04-15 |
 | [[concepts/内受容感覚\|内受容感覚]] | concepts | 2026-04-15 |
@@ -284,8 +287,5 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 | [[sources/D05_morgan_1968_rises-trenches\|プレートテクトニクスの数理的基礎 — 剛体球面ブロックモデルによる地殻運動の記述]] | sources | 2026-04-11 |
 | [[sources/D06_balbus-hawley_1991_shear-instability\|磁気回転不安定性 — 弱磁場降着円盤における強力な局所剪断不安定性]] | sources | 2026-04-11 |
 | [[sources/D06_jeans_1902_stability-nebula\|ジーンズ不安定性 — 自己重力ガス球の安定性条件の導出]] | sources | 2026-04-11 |
-| [[sources/D11_davies_2010_antibiotic-resistance\|抗生物質耐性の起源と進化 — 耐性遺伝子の太古からの存在と人為的加速]] | sources | 2026-04-11 |
-| [[sources/D16_braudel_1958_longue-duree\|長期持続 — 歴史と社会科学の時間的多層性]] | sources | 2026-04-11 |
-| [[sources/D16_toynbee_1934_study-of-history\|歴史の研究 — 文明の挑戦と応答]] | sources | 2026-04-11 |
 
 > このページは `scripts/generate-wiki-index.mjs` により自動生成されます。wiki/ 内のページ変更時に PostToolUse hook で自動実行されます。
