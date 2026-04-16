@@ -13,6 +13,17 @@ compile 実行の履歴。append-only。
 - duration: {所要時間}
 -->
 
+## [2026-04-16] auto-append | docs(wiki): 意識/間主観性 WT-2/WT-3 厳密化 (監査レポート優先度1-3)
+- commit: 5396c3c
+- pages: 7 wiki/*.md 変更
+- files:
+  - wiki/concepts/プロジェクトデザイン.md
+  - wiki/concepts/感情処理.md
+  - wiki/entities/シュワルツの基本的価値理論.md
+  - wiki/entities/ネガティブケイパビリティ.md
+  - wiki/entities/情動の構成.md
+  - ... (+2)
+
 ## [2026-04-16] auto-append | chore(session): 2026-04-16 #02 終了 — ワークフローレビュー + health/index 追従
 - commit: 314bf7f
 - pages: 4 wiki/*.md 変更
