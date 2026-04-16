@@ -13,7 +13,7 @@
 | 問題系 | 定義 | 代表理論 | 英語対応語 |
 |---|---|---|---|
 | 価格 | 財・サービスの交換における貨幣的表現 | 古典派経済学（Smith, Ricardo）、マルクス労働価値説 | price, market value |
-| 効用 | 目的達成や欲求充足の度合い | 限界効用理論、[プロスペクト理論](/project-design/wiki/entities/%E3%83%97%E3%83%AD%E3%82%B9%E3%83%9A%E3%82%AF%E3%83%88%E7%90%86%E8%AB%96)（Kahneman & Tversky） | utility, usefulness |
+| 効用 | 目的達成や欲求充足の度合い | 限界効用理論、プロスペクト理論（Kahneman & Tversky） | utility, usefulness |
 | 規範 | 善悪・正不正に関わる信念・基準 | 価値論 axiology（Moore, Ross）、Schwartz Basic Human Values | values, moral value |
 | 意味 | 重要性・意義・生きられた経験としての重み | 現象学的アプローチ、meaning of life 論 | significance, meaning |
 | 象徴 | 地位・名誉・威信・記号としての価値 | Bourdieu 象徴資本、Baudrillard 記号価値 | prestige, symbolic value |

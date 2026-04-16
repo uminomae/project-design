@@ -26,7 +26,7 @@ description: |
 | Step | スコープ | 入力 | 出力 |
 |------|---------|------|------|
 | 1 | 同一ディレクトリ内 | pd/knowledge/concepts/CN-*.md | wiki/concepts/*.md |
-| 2 | 同一リポ cross-directory | pd/knowledge/{concepts,research,meta}/* | wiki/{concepts,entities,cross-refs}/*.md |
+| 2 | 同一リポ cross-directory | pd/knowledge/{concepts,research,meta}/* | wiki/{concepts,keywords,cross-refs}/*.md |
 | 3a | cross-repo 概念 | ks/knowledge/, as/knowledge/, cs/evidence/ | wiki/cross-refs/*.md + 既存ページ追記 |
 | 3b | cross-repo 原典解説 | cs/knowledge/raw/manifest.md + PDF | wiki/sources/{domain}_{author}_{year}_{keyword}.md |
 | 3c | awareness-model 原典 | pd/knowledge/evidence/awareness-model/*.md | wiki/sources/{Author}_{year}_{keyword}.md |
@@ -47,7 +47,7 @@ status: 探索的 | 暫定 | 正典
 review_state: 未レビュー
 ```
 
-### entities/
+### keywords/
 
 ```yaml
 title, aliases, source[], compiled, tags, related_concepts[]
@@ -173,7 +173,7 @@ wiki ソースページ生成時、manifest の notes 列から DOI / OA URL を
 
 ### 高校生向け解説ルール（全ページ型共通）
 
-全 wiki ページ（concepts/, entities/, sources/, cross-refs/）の `# タイトル` 直後、最初の `## ` セクションの前に、blockquote 形式で「高校生向けのやさしい解説」を配置する。
+全 wiki ページ（concepts/, keywords/, sources/, cross-refs/）の `# タイトル` 直後、最初の `## ` セクションの前に、blockquote 形式で「高校生向けのやさしい解説」を配置する。
 
 **形式**:
 ```markdown
@@ -200,7 +200,7 @@ wiki ソースページ生成時、manifest の notes 列から DOI / OA URL を
 | ページ型 | 解説の焦点 |
 |---------|-----------|
 | concepts/ | 「この考え方が何の役に立つか」を伝える |
-| entities/ | 「この人（理論）は何を言っているのか」を伝える |
+| keywords/ | 「この人（理論）は何を言っているのか」を伝える |
 | sources/ | 「この論文（本）は何を明らかにしたのか」を伝える |
 | cross-refs/ | 「ここでは何と何のつながりを見ているか」を伝える |
 
@@ -313,7 +313,7 @@ wiki/index.md 自体の変更では再帰防止のためスキップ。
 | セクション | データソース | ソート |
 |-----------|-------------|-------|
 | Concepts | wiki/concepts/*.md | ファイル名順 |
-| Entities | wiki/entities/*.md | ファイル名順 |
+| Keywords | wiki/keywords/*.md | ファイル名順 |
 | Sources (awareness-model) | wiki/sources/ で D\d{2}_ 以外 | tags の §分類でグループ化 |
 | Sources (D01-D30) | wiki/sources/D\d{2}_*.md | ドメイン番号順 |
 | Cross References | wiki/cross-refs/*.md | ファイル名順 |

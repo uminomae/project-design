@@ -24,7 +24,7 @@ source パスの実在を確認する (WL-5)。
 | プロジェクトデザイン | 2026-04-06 | pd: knowledge/meta/project-overview.md, pd: knowledge/meta/project-history.md | 2026-02-13 | FRESH |
 | wikilink | 2026-04-06 | (メタページ: ソースなし) | -- | FRESH |
 
-### entities/
+### keywords/ + concepts/ (旧 entities/)
 
 | wiki ページ | compiled | source | source 最終変更 | 鮮度 |
 |---|---|---|---|---|

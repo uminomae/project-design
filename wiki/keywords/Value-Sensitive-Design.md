@@ -5,7 +5,7 @@ source:
   - repo: "project-design"
     path: "knowledge/research/value/value-integrated.md"
 compiled: "2026-04-06"
-tags: [entity, theory, value, design, HCI, ethics]
+tags: [keyword, theory, value, design, HCI, ethics]
 related_concepts: [プロジェクトデザイン, Love 駆動開発]
 status: 暫定
 review_state: 未レビュー
