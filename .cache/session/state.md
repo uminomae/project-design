@@ -2,11 +2,11 @@
 
 ## Git
 - branch: develop
-- HEAD: f909c77 (2026-04-16 #02 終了時点, 並行セッション含む)
-- main: acf2e4f (merged & pushed 2026-04-15 #01 — #69 #72 #73 #74 #75 公開)
+- HEAD: bbbc394 (develop)
+- main: 948c2c4 (merged & pushed 2026-04-16 #03 — WT-1/2/3 意識/間主観性 厳密化 + wiki-crosslink + wiki-gen-check 改善 + #71 hook 公開)
 - remote: synced
-- dirty: .cache/ 系のみ
-- develop ahead of main: wiki 間主観性/情動伝染 再整理 + 関連 crosslink 機構 + wiki-gen-check 改善 + docs ドリフト修正
+- dirty: .cache/session/state.md のみ
+- develop ahead of main: なし
 
 ## 完了タスク
 ### 2026-04-16 #02 (このセッション — ワークフローレビュー系)
@@ -67,7 +67,17 @@
   - 前日以前の wiki-gen-*.md inbox を archive へ自動退避
 
 ## 進行中
-- なし
+- なし（意識/間主観性 WT-1/2/3 全件完了・main 公開済み）
+
+## 2026-04-16 #03 (本セッション完了)
+- **wiki 意識/間主観性 WT-2/WT-3 厳密化** — 監査レポート駆動 (commit 5396c3c)
+  - 情動の構成.md: §アウェアネスモデルにおける位置 追加
+  - ネガティブケイパビリティ.md: §間主観性との関係（検証待ち仮説） 追加
+  - プロジェクトデザイン.md: デザイン思考比較表を層ベースに修正
+  - シュワルツの基本的価値理論.md: related_concepts から根拠の無い「間主観性」を削除
+  - 感情処理.md: 「意識化」列を アウェアネスモデル 定義に準拠
+- **develop → main マージ** — merge 948c2c4 (pjdhiro 指示)
+  - WT-1/2/3 + wiki-crosslink + wiki-gen-check 改善 + #71 hook 公開
 
 ## 次のステップ
 - techo の探究系 backlog（重め、pjdhiro 判断要）:
