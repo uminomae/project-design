@@ -18,7 +18,7 @@ PMBOKはスケジュール・コスト・品質を管理しますが、
 まだ完成していません。書きながら考えています。
 
 
-<a href="#" data-modal-open="slides">プレゼン資料を見る</a> / <a href="#" data-modal-open="howto">AIに読ませる</a>
+<a href="#" data-modal-open="slides">プレゼン資料を見る</a> / <a href="#" data-modal-open="howto">AIに読ませる</a> / <a href="/project-design/wiki/">Wiki</a>
 
 
 pjdhiro
