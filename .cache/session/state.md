@@ -2,14 +2,25 @@
 
 ## Git
 - branch: develop
-- HEAD: cec4c5e (2026-04-17 #03 セッション終了時点)
-- main: 09ef374 (merged & pushed 2026-04-17 #03)
+- HEAD: 58c911a (wiki-gen-check url-verified 対応 #79)
+- main: 0b56c2f (未更新、develop ahead)
 - remote: synced
-- dirty: .cache/session/state.md のみ
-- develop ahead of main: なし（マージ済み）
+- dirty: なし
+- develop ahead of main: あり（#79, About モーダル系 3件）
 
 ## 完了タスク
-### 2026-04-17 #03 (本セッション — wiki ワークフロー自動化強化)
+### 2026-04-17 #04 (本セッション — cs#225 umbrella + pd#79 hook 拡張)
+- **cs#225 Phase A 診断**: team-worker 経由で cs/pd wiki 本数ギャップを機械集計
+  - レポート: `cs/.cache/session/REPORT-cs225-wiki-gap-20260417.md`
+  - 数値: cs 201 / pd 98、pd shortage 22/30 領域
+  - cs#225 に Phase A 完了コメント投稿
+- **pd#79 実装・close** (commit 58c911a):
+  - wiki-gen-check.sh を raw-confirmed + url-verified 両対応に
+  - access_status 列追加、stem_from_title() 推定 fallback 導入
+  - 動作確認: 237 件検出（raw 10 / url 227 / TBD 0）
+- **pd#80 起票・指示書配置（未実行）**: 237 件版発生でスコープ見直し要
+
+### 2026-04-17 #03 以前 (wiki ワークフロー自動化強化)
 - **#77 stale wiki 再 compile の inbox 依頼化** — commit 40d55bc
   - `scripts/wiki-stale-check.mjs` に `--write-inbox` フラグ追加
   - `.cache/inbox/wiki-restale-{date}.md` を auto-execute 依頼として生成（同日マージ dedupe、旧日付 archive 退避）
@@ -41,9 +52,13 @@
 - entities/ → concepts/ + keywords/ 分離、sources/pd/ 新設 (8c6b24b)
 
 ## 進行中
-- なし
+- **cs#225 (OPEN, umbrella)**: wiki 生成ルール補修。Phase A 完了、Phase B-1 完了。pjdhiro が Issue 本文変更予定
+- **pd#80 (OPEN)**: wiki inbox drain。指示書配置済み、237 件版発生でスコープ再定義が必要
 
 ## 次のステップ
+- **cs#225 Issue 本文変更後の再スコープ**（pjdhiro による変更待ち）
+- **境界ケース 4 件の説明**（pjdhiro 説明要求中）: D15 nose-1940 vs nose_1944, D24 teresa-16c vs teresa_1921, D25 vangennep 2 版, D29 clauset-2009 vs clauset_2007
+- **pd#80 スコープ判定**: 13 件か 237 件版か
 - **#76 sources/pd/ の compile**: 統合分析3件(trust/value/design-thinking) + 独自調査2件(origin-survey, kesson-bridge) の wiki ページ生成
 - techo の探究系 backlog（重め、pjdhiro 判断要）:
   - techo#60 探究: 信頼とは何か
