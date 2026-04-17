@@ -177,7 +177,7 @@ lsof -i :3004 -P
 |---|---|
 | `pjdhiro` | 公開先。`_pages/pd/` の MD をホスティング |
 | `kesson-driven-thinking` | 欠損駆動思考の探索拠点。PD の重要部品 |
-| `creation-space` | 「創造とは」の探索拠点。PD の実践事例 |
+| `creation-space` | 「創造のモデル」を独立構築する拠点。PD 論の基盤部品として引用する（詳細: `.claude/rules/cs-as-component.md`） |
 | `kesson-space` | kesson-space サイト |
 
 ## 参照ガイド

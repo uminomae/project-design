@@ -11,6 +11,7 @@ CLI は docs/ を自動読み込みしない。以下の対応表に従い、タ
 | commit・push | `.claude/rules/commit-rules.md` | Git 規約 |
 | セッション管理・state.md 同期 | `.claude/rules/session-management.md` | セッション手順・state.md トリガー |
 | 参照リポの確認 | `.claude/rules/reference-repos.md` | 見本リポ・PM委任 |
+| cs 成果物の引用 | `.claude/rules/cs-as-component.md` | cs「創造のモデル」を PD 論の部品として引用する原則 |
 | UI / CSS 変更 | `docs/DESIGN-RULES.md` | グロークラス体系・レスポンシブ・カラー |
 | knowledge 追加 | `knowledge/README.md` | データ構造 |
 | 並列作業・ワークツリー | `.claude/rules/parallel-worktree.md` | 3レーン構造 |
