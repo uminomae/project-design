@@ -13,6 +13,16 @@ compile 実行の履歴。append-only。
 - duration: {所要時間}
 -->
 
+## [2026-04-17] auto-append | docs(wiki): D09 sources ×5 — schafer/fields/iliff/schultz/england (#81)
+- commit: 2b6607b
+- pages: 5 wiki/*.md 変更
+- files:
+  - wiki/sources/D09_england_2013_statistical-physics-of-self.md
+  - wiki/sources/D09_fields_2015_fields-2015-a-new.md
+  - wiki/sources/D09_iliff_2012_2012-a-paravascular-pathway.md
+  - wiki/sources/D09_schafer_2012_2012-microglia-sculpt-postnatal.md
+  - wiki/sources/D09_schultz_1997_schultz-dayan-montague-1997.md
+
 ## [2026-04-17] auto-append | feat(wiki): 信頼・価値・デザイン思考を concepts/ に格上げ、sources/ 分類追加
 - commit: 76661c0
 - pages: 35 wiki/*.md 変更
