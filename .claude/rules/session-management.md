@@ -55,10 +55,11 @@
 | パターン | 処理 |
 |---------|------|
 | `wiki-gen-*.md` | wiki-compile Step 3b を実行。PDF → wiki ページ生成 → commit & push → inbox を archive へ移動 |
+| `wiki-restale-*.md` | wiki-compile skill で該当 wiki ページを再生成 → UTF-8 チェック → commit & push → inbox を archive へ移動 (#77) |
 
 自動実行フロー:
-1. セッション開始時、inbox に `wiki-gen-*.md` があるか確認
-2. あれば依頼ファイルの未生成リストに従い、各 PDF を読んで wiki ページを生成
+1. セッション開始時、inbox に `wiki-gen-*.md` / `wiki-restale-*.md` があるか確認
+2. あれば依頼ファイルのリストに従い、各対象を再生成（wiki-gen は PDF→wiki、wiki-restale は knowledge→wiki）
 3. UTF-8 文字化けチェック
 4. `git add wiki/*.md && git commit && git push origin develop`
 5. 依頼ファイルを `.cache/inbox/archive/` に移動

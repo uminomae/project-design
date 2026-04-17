@@ -66,6 +66,12 @@
             "command": "bash .claude/hooks/wiki-gen-check.sh",
             "timeout": 15,
             "statusMessage": "Wiki generation check..."
+          },
+          {
+            "type": "command",
+            "command": "bash .claude/hooks/obsidian-diff-check.sh",
+            "timeout": 10,
+            "statusMessage": "Obsidian diff check..."
           }
         ]
       }

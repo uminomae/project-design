@@ -70,7 +70,7 @@ if is_knowledge:
                 rel_path = rel_path[idx + 1:]
             try:
                 stale_result = subprocess.run(
-                    ["node", str(stale_script), "--knowledge", rel_path],
+                    ["node", str(stale_script), "--knowledge", rel_path, "--write-inbox"],
                     cwd=str(repo_root),
                     capture_output=True,
                     text=True,
