@@ -2,14 +2,20 @@
 
 ## Git
 - branch: develop
-- HEAD: 58c911a (wiki-gen-check url-verified 対応 #79)
-- main: 0b56c2f (未更新、develop ahead)
+- HEAD: a5d0291 (2026-04-17 #04 session-close chore)
+- main: 0b56c2f (About モーダル系マージ済み、#79 以降は未反映)
 - remote: synced
 - dirty: なし
-- develop ahead of main: あり（#79, About モーダル系 3件）
+- develop ahead of main: あり（58c911a #79 + a5d0291 session-close の 2 件）
 
 ## 完了タスク
-### 2026-04-17 #04 (本セッション — cs#225 umbrella + pd#79 hook 拡張)
+### 2026-04-17 #05 (本セッション — About モーダル Wiki リンク追加)
+- **About モーダルに Wiki リンク追加** (commit b903e4a, 3d91059)
+  - `content/about-{ja,en}.md` の「プレゼン資料を見る / AIに読ませる」行に `<a href="/project-design/wiki/" target="_blank" rel="noopener">Wiki</a>` を追加
+  - compiled 版も再生成
+- **develop → main マージ公開** (6f9963d → 0b56c2f)
+
+### 2026-04-17 #04 (cs#225 umbrella + pd#79 hook 拡張)
 - **cs#225 Phase A 診断**: team-worker 経由で cs/pd wiki 本数ギャップを機械集計
   - レポート: `cs/.cache/session/REPORT-cs225-wiki-gap-20260417.md`
   - 数値: cs 201 / pd 98、pd shortage 22/30 領域
