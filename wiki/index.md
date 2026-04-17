@@ -1,6 +1,6 @@
 ---
 title: "Wiki Index"
-compiled: "2026-04-16"
+compiled: "2026-04-17"
 ---
 # Wiki -- Map of Content
 
@@ -129,6 +129,13 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D08_rao-ballard_1999_predictive-coding-visual-cortex|視覚皮質における予測符号化]]
 - [[sources/D08_varela_1991_embodied-mind|身体化された心（The Embodied Mind）— 神経科学の視点]]
 
+#### D09 生命科学 (5件)
+- [[sources/D09_england_2013_statistical-physics-of-self|自己複製の統計力学 — 熱力学的下限の導出]]
+- [[sources/D09_fields_2015_fields-2015-a-new|活動依存的ミエリン化 — 神経系可塑性の新しい機構]]
+- [[sources/D09_iliff_2012_2012-a-paravascular-pathway|脳の傍血管経路（glymphatic システム）— 脳脊髄液による間質溶質クリアランス]]
+- [[sources/D09_schafer_2012_2012-microglia-sculpt-postnatal|ミクログリアによる発達期シナプスの活動依存的・補体依存的な刈り込み]]
+- [[sources/D09_schultz_1997_schultz-dayan-montague-1997|予測と報酬の神経基盤 — ドーパミンによる予測誤差符号化]]
+
 #### D10 臨床医学 (3件)
 - [[sources/D10_akdis_2014_allergen-immunotherapy|アレルゲン免疫療法の新治療戦略]]
 - [[sources/D10_rosenblum_2015_autoimmunity|ヒト自己免疫疾患のメカニズム]]
@@ -213,6 +220,13 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D25_van-gennep_1960_rites-of-passage|通過儀礼（英訳版）]]
 - [[sources/D25_vangennep_1909_rites-of-passage|Les rites de passage（仏語原典）]]
 
+#### D26 音楽学 (5件)
+- [[sources/D26_ellamil_2016_2016|ダンスクラブ環境における集団同期と音楽特徴の相関]]
+- [[sources/D26_koelsch_2005_siebel-w-a|音楽知覚の神経基盤に向けて — 7 モジュール統合モデル]]
+- [[sources/D26_limb_2008_neural-substrates-of-spontaneous|ジャズ即興演奏の神経基盤 — 前頭前皮質の活動解離]]
+- [[sources/D26_mehr_2019_et-al|人間の歌における普遍性と多様性]]
+- [[sources/D26_schulkin_2014_the-evolution-of-music|音楽の進化と人間の社会的能力]]
+
 #### D27 建築 (1件)
 - [[sources/D27_alexander_1977_pattern-language|パタン・ランゲージ]]
 
@@ -270,6 +284,16 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 | [[concepts/デザイン思考（PD）\|デザイン思考（PD）]] | concepts | 2026-04-17 |
 | [[concepts/価値\|価値]] | concepts | 2026-04-17 |
 | [[concepts/信頼\|信頼]] | concepts | 2026-04-17 |
+| [[sources/D09_england_2013_statistical-physics-of-self\|自己複製の統計力学 — 熱力学的下限の導出]] | sources | 2026-04-17 |
+| [[sources/D09_fields_2015_fields-2015-a-new\|活動依存的ミエリン化 — 神経系可塑性の新しい機構]] | sources | 2026-04-17 |
+| [[sources/D09_iliff_2012_2012-a-paravascular-pathway\|脳の傍血管経路（glymphatic システム）— 脳脊髄液による間質溶質クリアランス]] | sources | 2026-04-17 |
+| [[sources/D09_schafer_2012_2012-microglia-sculpt-postnatal\|ミクログリアによる発達期シナプスの活動依存的・補体依存的な刈り込み]] | sources | 2026-04-17 |
+| [[sources/D09_schultz_1997_schultz-dayan-montague-1997\|予測と報酬の神経基盤 — ドーパミンによる予測誤差符号化]] | sources | 2026-04-17 |
+| [[sources/D26_ellamil_2016_2016\|ダンスクラブ環境における集団同期と音楽特徴の相関]] | sources | 2026-04-17 |
+| [[sources/D26_koelsch_2005_siebel-w-a\|音楽知覚の神経基盤に向けて — 7 モジュール統合モデル]] | sources | 2026-04-17 |
+| [[sources/D26_limb_2008_neural-substrates-of-spontaneous\|ジャズ即興演奏の神経基盤 — 前頭前皮質の活動解離]] | sources | 2026-04-17 |
+| [[sources/D26_mehr_2019_et-al\|人間の歌における普遍性と多様性]] | sources | 2026-04-17 |
+| [[sources/D26_schulkin_2014_the-evolution-of-music\|音楽の進化と人間の社会的能力]] | sources | 2026-04-17 |
 | [[concepts/間主観性\|間主観性]] | concepts | 2026-04-15 |
 | [[concepts/情動伝染\|情動伝染]] | concepts | 2026-04-15 |
 | [[concepts/内受容感覚\|内受容感覚]] | concepts | 2026-04-15 |
@@ -277,15 +301,5 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 | [[keywords/ウィキッド・プロブレム\|ウィキッド・プロブレム]] | keywords | 2026-04-15 |
 | [[keywords/ドナルド・ショーン\|ドナルド・ショーン]] | keywords | 2026-04-15 |
 | [[keywords/ナイジェル・クロス\|ナイジェル・クロス]] | keywords | 2026-04-15 |
-| [[sources/Hatfield_1993_emotional-contagion\|情動伝染 — 自動的模倣と情動の収斂]] | sources | 2026-04-15 |
-| [[sources/Husserl_1931_cartesian-meditations-v\|デカルト的省察・第五省察]] | sources | 2026-04-15 |
-| [[sources/D01_hadamard_1945_psychology-invention\|数学における発明の心理学]] | sources | 2026-04-13 |
-| [[sources/D03_field-noyes_1974_oscillations\|化学系における振動 IV: 実在する化学反応のモデルにおけるリミットサイクル挙動]] | sources | 2026-04-13 |
-| [[sources/D03_winter-chambon_1986_gel-point\|架橋ポリマーのゲル点における線形粘弾性の解析]] | sources | 2026-04-13 |
-| [[sources/D20_singapore-convention_2018_mediation\|シンガポール調停条約 (2018)]] | sources | 2026-04-13 |
-| [[sources/D20_uncitral_2021_mediation-rules\|UNCITRAL 調停規則 (2021)]] | sources | 2026-04-13 |
-| [[sources/D05_morgan_1968_rises-trenches\|プレートテクトニクスの数理的基礎 — 剛体球面ブロックモデルによる地殻運動の記述]] | sources | 2026-04-11 |
-| [[sources/D06_balbus-hawley_1991_shear-instability\|磁気回転不安定性 — 弱磁場降着円盤における強力な局所剪断不安定性]] | sources | 2026-04-11 |
-| [[sources/D06_jeans_1902_stability-nebula\|ジーンズ不安定性 — 自己重力ガス球の安定性条件の導出]] | sources | 2026-04-11 |
 
 > このページは `scripts/generate-wiki-index.mjs` により自動生成されます。wiki/ 内のページ変更時に PostToolUse hook で自動実行されます。
