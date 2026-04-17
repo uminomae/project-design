@@ -13,6 +13,17 @@ compile 実行の履歴。append-only。
 - duration: {所要時間}
 -->
 
+## [2026-04-17] auto-append | docs(wiki): D26 sources ×5 + index 再生成 — mehr/limb/schulkin/ellamil/koelsch (#81)
+- commit: 218a161
+- pages: 8 wiki/*.md 変更
+- files:
+  - wiki/health/freshness-report.md
+  - wiki/health/orphan-report.md
+  - wiki/index.md
+  - wiki/sources/D26_ellamil_2016_2016.md
+  - wiki/sources/D26_koelsch_2005_siebel-w-a.md
+  - ... (+3)
+
 ## [2026-04-17] auto-append | docs(wiki): D09 sources ×5 — schafer/fields/iliff/schultz/england (#81)
 - commit: 2b6607b
 - pages: 5 wiki/*.md 変更
