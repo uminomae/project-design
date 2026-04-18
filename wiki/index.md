@@ -147,9 +147,11 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D06_tumlinson_2017_tumlinson-peeples-werk-2017|周銀河媒質（Circumgalactic Medium）— 銀河進化の鍵を握る多相ガス領域]]
 - [[sources/D06_white_1978_white-rees-1978-core|重いハロにおけるコア凝縮 — 銀河形成と階層的クラスタリングの 2 段階理論]]
 
-#### D07 工学・情報科学 (7件)
+#### D07 工学・情報科学 (9件)
+- [[sources/D07_ashby_1956_ashby-1956-an-introduction|サイバネティクス入門 — Ashby]]
 - [[sources/D07_candes-romberg-tao_2006_robust-uncertainty|ロバスト不確実性原理――疎な信号のフーリエサンプルからの完全再構成]]
 - [[sources/D07_diffie-hellman_1976_new-directions-cryptography|暗号の新方向]]
+- [[sources/D07_doyle_2011_architecture-constraints-and-behavior|アーキテクチャ・制約・振る舞い — 層化アーキテクチャの普遍原理]]
 - [[sources/D07_jacobson_1988_jacobson-1988-congestion-avoidance|輻輳回避と制御 — TCP の輻輳制御アルゴリズム]]
 - [[sources/D07_rumelhart-hinton-williams_1986_backpropagation|誤差逆伝播法による表現学習]]
 - [[sources/D07_schultz_1997_schultz-dayan-montague-1997|予測と報酬の神経基盤（D07 文脈）— ドーパミン予測誤差]]
@@ -224,9 +226,10 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D15_vessel_2012_2012|アートに脳が動くとき — 強い美的経験はデフォルトモードネットワークを活性化する]]
 - [[sources/D15_zeami_classics|風姿花伝（花の美学）]]
 
-#### D16 歴史学 (5件)
+#### D16 歴史学 (6件)
 - [[sources/D16_braudel_1958_longue-duree|長期持続 — 歴史と社会科学の時間的多層性]]
 - [[sources/D16_ibn-khaldun_1377_muqaddimah|ムカッディマ（歴史序説）]]
+- [[sources/D16_mascareo_2022_critical-transitions-in-ecosystems|生態系と社会における臨界転移 — 社会システム理論との対話]]
 - [[sources/D16_scheffer_2012_2012|臨界転移を予兆する — 早期警告指標の統合]]
 - [[sources/D16_toynbee_1934_study-of-history|歴史の研究 — 文明の挑戦と応答]]
 - [[sources/D16_turchin_2013_war-space-evolution-old-world-complex-societies|戦争・空間・旧世界複雑社会の進化]]
@@ -238,18 +241,22 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D17_lupyan_2010_language-structure-is-partly|言語構造は社会構造によって部分的に決定される — 言語ニッチ仮説]]
 - [[sources/D17_senghas_2004_children-creating-core-properties|ニカラグア手話における言語の中核特性の創造]]
 
-#### D18 社会学 (5件)
+#### D18 社会学 (8件)
 - [[sources/D18_barabasi_1999_emergence-of-scaling-in|ランダムネットワークにおけるスケーリングの創発 — BA モデル]]
 - [[sources/D18_castellano_2009_statistical-physics-of-social|社会動態の統計物理学]]
+- [[sources/D18_coleman_1988_1988|人的資本創造における社会関係資本]]
 - [[sources/D18_durkheim_1893_division-labor|社会分業論 / De la division du travail social]]
 - [[sources/D18_granovetter_1973_1973|弱い紐帯の強さ]]
 - [[sources/D18_nadell_2010_emergence-of-spatial-structure|細胞集団における空間構造の創発と協力の進化]]
+- [[sources/D18_simmel_1903_1903|都市と精神生活 — Simmel の都市社会学]]
+- [[sources/D18_weber_1905_1905-1930|プロテスタンティズムの倫理と資本主義の精神]]
 
-#### D19 文学 (5件)
+#### D19 文学 (6件)
 - [[sources/D19_aristotle_1907_poetics|詩学 — ミメーシス・筋・カタルシスの理論]]
 - [[sources/D19_barthes_1970_s-z|S/Z — 5 つのコードによる段階的テクスト分析]]
 - [[sources/D19_bourdieu_1996_rules-of-art|芸術のルール — 文学場の生成と構造]]
 - [[sources/D19_freytag_1895_technique-of-the-drama|ドラマの技法 — 5 部構成のピラミッド]]
+- [[sources/D19_genette_1980_genette-1980-narrative-discourse|物語のディスクール — Genette の物語論]]
 - [[sources/D19_propp_1968_morphology-of-the-folktale|昔話の形態学]]
 
 #### D20 法学・政治学 (5件)
@@ -259,9 +266,11 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D20_singapore-convention_2018_mediation|シンガポール調停条約 (2018)]]
 - [[sources/D20_uncitral_2021_mediation-rules|UNCITRAL 調停規則 (2021)]]
 
-#### D21 経済学 (6件)
+#### D21 経済学 (8件)
+- [[sources/D21_deco_2008_2008|安静時のノイズが脳の動的レパートリー探索を可能にする]]
 - [[sources/D21_hayek_1945_use-of-knowledge-in-society|社会における知識の利用]]
 - [[sources/D21_hayek_2002_competition-discovery-procedure|発見手続きとしての競争]]
+- [[sources/D21_hidalgo_2009_building-blocks-of-economic|経済複雑性の構成要素 — Method of Reflections]]
 - [[sources/D21_keynes_1936_general-theory|雇用・利子および貨幣の一般理論]]
 - [[sources/D21_knight_1921_risk-uncertainty-profit|リスク・不確実性・利潤]]
 - [[sources/D21_schumpeter_1912_theorie-der-wirtschaftlichen-entwicklung|経済発展の理論（初版）]]
@@ -288,19 +297,21 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D24_suzuki_1935_manual-of-zen-buddhism|禅仏教提要]]
 - [[sources/D24_teresa_1921_interior-castle|内なる城]]
 
-#### D25 人類学 (5件)
+#### D25 人類学 (6件)
 - [[sources/D25_barth_1969_ethnic-groups-intro|民族集団と境界（序論）]]
+- [[sources/D25_cisnerosvelarde_2021_a-network-formation-game|階層出現のためのネットワーク形成ゲーム]]
 - [[sources/D25_mauss_1925_essai-sur-le-don|贈与論 — 全体的給付の体系]]
 - [[sources/D25_pratt_1991_arts-of-the-contact-zone|コンタクト・ゾーンの技法]]
 - [[sources/D25_van-gennep_1960_rites-of-passage|通過儀礼（英訳版）]]
 - [[sources/D25_vangennep_1909_rites-of-passage|Les rites de passage（仏語原典）]]
 
-#### D26 音楽学 (5件)
+#### D26 音楽学 (6件)
 - [[sources/D26_ellamil_2016_2016|ダンスクラブ環境における集団同期と音楽特徴の相関]]
 - [[sources/D26_koelsch_2005_siebel-w-a|音楽知覚の神経基盤に向けて — 7 モジュール統合モデル]]
 - [[sources/D26_limb_2008_neural-substrates-of-spontaneous|ジャズ即興演奏の神経基盤 — 前頭前皮質の活動解離]]
 - [[sources/D26_mehr_2019_et-al|人間の歌における普遍性と多様性]]
 - [[sources/D26_schulkin_2014_the-evolution-of-music|音楽の進化と人間の社会的能力]]
+- [[sources/D26_zatorre_2013_salimpoor-v-n|知覚から快へ — 音楽とその神経基盤]]
 
 #### D27 建築 (5件)
 - [[sources/D27_alexander_1977_pattern-language|パタン・ランゲージ]]
@@ -323,9 +334,10 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D29_prigogine_1977_time-structure-fluctuations|時間、構造、そしてゆらぎ — ノーベル講演]]
 - [[sources/D29_watkins_2016_25-years-self-organized-criticality|自己組織化臨界の25年：概念と論争]]
 
-#### D30 伝統知・技芸 (5件)
+#### D30 伝統知・技芸 (6件)
 - [[sources/D30_asmamaw_2020_the-role-of-local|地域知識による社会-生態系のレジリエンス強化]]
 - [[sources/D30_cbd_2018_nagoya-protocol|名古屋議定書]]
+- [[sources/D30_gmezbaggethun_2013_traditional-ecological-knowledge-and|伝統的生態学的知識と地球環境変化]]
 - [[sources/D30_ipbes_2019_ilk-methodological-guidance|IPBES 先住民・地域知識 方法論ガイダンス]]
 - [[sources/D30_matsuki_numata_2021_ichiza-konryu|茶事における場の共創：「一座建立」の意味空間]]
 - [[sources/D30_zeami_classics|風姿花伝（一座建立・場の共創）]]
