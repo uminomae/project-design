@@ -184,7 +184,8 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D10_serhan_2014_pro-resolving-lipid-mediators|炎症収束を促進する脂質メディエーター — Resolution Physiology]]
 - [[sources/D10_tonegawa_1987_nobel-lecture|抗体多様性の体細胞生成（ノーベル講演）]]
 
-#### D11 薬学 (7件)
+#### D11 薬学 (8件)
+- [[sources/D11_csermely_2011_2011|Allo-Network Drugs — 細胞ネットワークにおけるアロステリーの活用]]
 - [[sources/D11_davies_2010_antibiotic-resistance|抗生物質耐性の起源と進化 — 耐性遺伝子の太古からの存在と人為的加速]]
 - [[sources/D11_ich_2008_q10-guideline|ICH Q10 医薬品品質システムガイドライン]]
 - [[sources/D11_ich_2009_q8-r2-guideline|ICH Q8(R2) 医薬品開発ガイドライン]]
@@ -209,8 +210,9 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D13_dewey_1934_art-as-experience|経験としての芸術（探究・思考論の観点）]]
 - [[sources/D13_whitehead_1929_process-and-reality|過程と実在]]
 
-#### D14 心理学 (5件)
+#### D14 心理学 (6件)
 - [[sources/D14_bargh_1999_chartrand-t-l|存在の耐え難い自動性]]
+- [[sources/D14_clark_1998_chalmers-d|拡張された心 — Clark & Chalmers]]
 - [[sources/D14_ericsson_1993_tesch-romer-c|熟達の獲得における意図的練習の役割 — 10 年ルール]]
 - [[sources/D14_hesse_2014_self-organized-criticality-as|神経系の基本特性としての自己組織化臨界性]]
 - [[sources/D14_maslow_1943_1943|人間の動機の理論 — 欲求階層]]
@@ -241,13 +243,14 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D17_lupyan_2010_language-structure-is-partly|言語構造は社会構造によって部分的に決定される — 言語ニッチ仮説]]
 - [[sources/D17_senghas_2004_children-creating-core-properties|ニカラグア手話における言語の中核特性の創造]]
 
-#### D18 社会学 (8件)
+#### D18 社会学 (9件)
 - [[sources/D18_barabasi_1999_emergence-of-scaling-in|ランダムネットワークにおけるスケーリングの創発 — BA モデル]]
 - [[sources/D18_castellano_2009_statistical-physics-of-social|社会動態の統計物理学]]
 - [[sources/D18_coleman_1988_1988|人的資本創造における社会関係資本]]
 - [[sources/D18_durkheim_1893_division-labor|社会分業論 / De la division du travail social]]
 - [[sources/D18_granovetter_1973_1973|弱い紐帯の強さ]]
 - [[sources/D18_nadell_2010_emergence-of-spatial-structure|細胞集団における空間構造の創発と協力の進化]]
+- [[sources/D18_nowak_2006_five-rules-for-the|協力進化のための 5 つのルール]]
 - [[sources/D18_simmel_1903_1903|都市と精神生活 — Simmel の都市社会学]]
 - [[sources/D18_weber_1905_1905-1930|プロテスタンティズムの倫理と資本主義の精神]]
 
@@ -283,14 +286,17 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D22_stanford_2010_design-thinking-process-guide|デザイン思考プロセスガイド]]
 - [[sources/D22_tuckman_1965_1965|小集団の発達系列 — Tuckman の 4 段階モデル]]
 
-#### D23 発達心理学 (5件)
+#### D23 発達心理学 (7件)
+- [[sources/D23_kartner_2024_early-social-cognitive-development|初期社会-認知発達は動的発達システム — Lifeworld アプローチ]]
 - [[sources/D23_kegan_1982_evolving-self|進化する自己]]
+- [[sources/D23_kim_2024_understanding-explore-exploit-dynamics|子ども発達における探索-活用ダイナミクス]]
 - [[sources/D23_kinoshita_2001_self-image|幼児は自己映像を「自分のこと」として見ているか？]]
 - [[sources/D23_nakama_2014_dids-japanese-version|多次元アイデンティティ発達尺度（DIDS）日本語版]]
 - [[sources/D23_rochat_2003_2003|乳幼児期に展開する自己意識の 5 レベル]]
 - [[sources/D23_tononi_2014_integrated-information-theory-3|現象学からメカニズムへ — 統合情報理論 3.0]]
 
-#### D24 宗教学 (5件)
+#### D24 宗教学 (6件)
+- [[sources/D24_berkovichohana_2014_the-consciousness-state-space|意識状態空間（CSS）— 意識と自己の統合モデル]]
 - [[sources/D24_dimarzio_2019_affiliation-conversion-departure|新宗教運動への加入・改宗・脱プログラミング・離脱の経験]]
 - [[sources/D24_james_1902_varieties-of-religious-experience|宗教的経験の諸相]]
 - [[sources/D24_otto_1917_idea-of-the-holy|聖なるもの — ヌミノーゼと mysterium tremendum]]
@@ -379,6 +385,12 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 
 | ページ | category | compiled |
 |--------|----------|----------|
+| [[sources/D11_csermely_2011_2011\|Allo-Network Drugs — 細胞ネットワークにおけるアロステリーの活用]] | sources | 2026-04-19 |
+| [[sources/D14_clark_1998_chalmers-d\|拡張された心 — Clark & Chalmers]] | sources | 2026-04-19 |
+| [[sources/D18_nowak_2006_five-rules-for-the\|協力進化のための 5 つのルール]] | sources | 2026-04-19 |
+| [[sources/D23_kartner_2024_early-social-cognitive-development\|初期社会-認知発達は動的発達システム — Lifeworld アプローチ]] | sources | 2026-04-19 |
+| [[sources/D23_kim_2024_understanding-explore-exploit-dynamics\|子ども発達における探索-活用ダイナミクス]] | sources | 2026-04-19 |
+| [[sources/D24_berkovichohana_2014_the-consciousness-state-space\|意識状態空間（CSS）— 意識と自己の統合モデル]] | sources | 2026-04-19 |
 | [[sources/D01_li_1975_yorke-j-a\|周期 3 はカオスを意味する]] | sources | 2026-04-18 |
 | [[sources/D01_perelman_2002_2002\|Ricci flow のエントロピー公式と幾何学的応用 — Perelman の主論文]] | sources | 2026-04-18 |
 | [[sources/D02_friston_2012_a-free-energy-principle\|生物システムの自由エネルギー原理]] | sources | 2026-04-18 |
@@ -393,11 +405,5 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 | [[sources/D03_thompson_1917_1917\|成長と形態 — D'Arcy Thompson による形態の物理学]] | sources | 2026-04-18 |
 | [[sources/D03_unknown_0000_the-chemical-basis-of\|形態形成の化学的基礎 — Turing の反応拡散モデル]] | sources | 2026-04-18 |
 | [[sources/D04_fisher_1930_fisher-1930-the-genetical\|自然選択の遺伝学的理論 — Fisher の数理進化論]] | sources | 2026-04-18 |
-| [[sources/D04_goldenfeld_2007_biology-s-next-revolution\|生物学の次の革命 — HGT・ウイルス・集合的進化]] | sources | 2026-04-18 |
-| [[sources/D04_laland_2015_2015-the-extended-evolutionary\|拡張進化的総合説（EES）— その構造・仮定・予測]] | sources | 2026-04-18 |
-| [[sources/D04_van_1973_1973\|新しい進化の法則 — 絶滅の法則と Red Queen 仮説]] | sources | 2026-04-18 |
-| [[sources/D04_watson_2016_how-can-evolution-learn\|進化はどのように学習するか — 進化と学習の数学的等価性]] | sources | 2026-04-18 |
-| [[sources/D04_woese_2002_woese-2002-on-the\|細胞の進化について — ダーウィン閾と HGT]] | sources | 2026-04-18 |
-| [[sources/D05_bak_1988_wiesenfeld-k\|自己組織化臨界性 — Bak-Tang-Wiesenfeld の砂山モデル]] | sources | 2026-04-18 |
 
 > このページは `scripts/generate-wiki-index.mjs` により自動生成されます。wiki/ 内のページ変更時に PostToolUse hook で自動実行されます。
