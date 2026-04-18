@@ -13,6 +13,17 @@ compile 実行の履歴。append-only。
 - duration: {所要時間}
 -->
 
+## [2026-04-19] auto-append | docs(wiki): Phase C-2b — PMC 3件 (#81)
+- commit: 911e947
+- pages: 6 wiki/*.md 変更
+- files:
+  - wiki/health/freshness-report.md
+  - wiki/health/orphan-report.md
+  - wiki/index.md
+  - wiki/sources/D11_blanco_2015_principles-of-nanoparticle-design.md
+  - wiki/sources/D11_tognoli_2009_brain-coordination-dynamics-true.md
+  - ... (+1)
+
 ## [2026-04-19] auto-append | docs(wiki): Phase C-2a — WebFetch 6件 (#81)
 - commit: c02bec7
 - pages: 10 wiki/*.md 変更
