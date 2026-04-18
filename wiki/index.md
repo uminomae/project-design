@@ -184,7 +184,8 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D10_serhan_2014_pro-resolving-lipid-mediators|炎症収束を促進する脂質メディエーター — Resolution Physiology]]
 - [[sources/D10_tonegawa_1987_nobel-lecture|抗体多様性の体細胞生成（ノーベル講演）]]
 
-#### D11 薬学 (8件)
+#### D11 薬学 (10件)
+- [[sources/D11_blanco_2015_principles-of-nanoparticle-design|ナノ粒子設計の原理 — 薬物送達の生物学的バリアを越えるには]]
 - [[sources/D11_csermely_2011_2011|Allo-Network Drugs — 細胞ネットワークにおけるアロステリーの活用]]
 - [[sources/D11_davies_2010_antibiotic-resistance|抗生物質耐性の起源と進化 — 耐性遺伝子の太古からの存在と人為的加速]]
 - [[sources/D11_ich_2008_q10-guideline|ICH Q10 医薬品品質システムガイドライン]]
@@ -192,6 +193,7 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D11_ich_2023_q9-r1-guideline|ICH Q9(R1) 品質リスクマネジメントガイドライン]]
 - [[sources/D11_li_2014_network-pharmacology-qishenyiqi|漢方薬QiShenYiQiのネットワーク薬理学研究]]
 - [[sources/D11_paul_2010_m-et-al|製薬産業の R&D 生産性向上 — 大問題への分析]]
+- [[sources/D11_tognoli_2009_brain-coordination-dynamics-true|脳の協調ダイナミクス — 位相同期の真と偽]]
 - [[sources/D11_wu_2014_chinese-medicine|ネットワーク薬理学による漢方処方「君臣佐使」の検証]]
 
 #### D12 農学・生態学 (7件)
@@ -279,12 +281,13 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D21_schumpeter_1912_theorie-der-wirtschaftlichen-entwicklung|経済発展の理論（初版）]]
 - [[sources/D21_schumpeter_1939_business-cycles|景気循環論]]
 
-#### D22 経営学 (5件)
+#### D22 経営学 (6件)
 - [[sources/D22_akiike_2021_design-thinking-articles|デザイン思考論文に求められる要件とは何か]]
 - [[sources/D22_friston_2018_am-i-self-conscious|私は自己意識を持つか — 自己組織化と自己意識]]
 - [[sources/D22_hu_2021_trajectories-of-idea-emergence|対話的協働問題解決におけるアイデア出現の軌跡]]
 - [[sources/D22_stanford_2010_design-thinking-process-guide|デザイン思考プロセスガイド]]
 - [[sources/D22_tuckman_1965_1965|小集団の発達系列 — Tuckman の 4 段階モデル]]
+- [[sources/D22_wenger_2010_communities-of-practice-and|実践コミュニティと社会的学習システム]]
 
 #### D23 発達心理学 (7件)
 - [[sources/D23_kartner_2024_early-social-cognitive-development|初期社会-認知発達は動的発達システム — Lifeworld アプローチ]]
@@ -385,9 +388,12 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 
 | ページ | category | compiled |
 |--------|----------|----------|
+| [[sources/D11_blanco_2015_principles-of-nanoparticle-design\|ナノ粒子設計の原理 — 薬物送達の生物学的バリアを越えるには]] | sources | 2026-04-19 |
 | [[sources/D11_csermely_2011_2011\|Allo-Network Drugs — 細胞ネットワークにおけるアロステリーの活用]] | sources | 2026-04-19 |
+| [[sources/D11_tognoli_2009_brain-coordination-dynamics-true\|脳の協調ダイナミクス — 位相同期の真と偽]] | sources | 2026-04-19 |
 | [[sources/D14_clark_1998_chalmers-d\|拡張された心 — Clark & Chalmers]] | sources | 2026-04-19 |
 | [[sources/D18_nowak_2006_five-rules-for-the\|協力進化のための 5 つのルール]] | sources | 2026-04-19 |
+| [[sources/D22_wenger_2010_communities-of-practice-and\|実践コミュニティと社会的学習システム]] | sources | 2026-04-19 |
 | [[sources/D23_kartner_2024_early-social-cognitive-development\|初期社会-認知発達は動的発達システム — Lifeworld アプローチ]] | sources | 2026-04-19 |
 | [[sources/D23_kim_2024_understanding-explore-exploit-dynamics\|子ども発達における探索-活用ダイナミクス]] | sources | 2026-04-19 |
 | [[sources/D24_berkovichohana_2014_the-consciousness-state-space\|意識状態空間（CSS）— 意識と自己の統合モデル]] | sources | 2026-04-19 |
@@ -402,8 +408,5 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 | [[sources/D03_johnson_2011_johnson-goody-2011-the\|Michaelis-Menten 1913 論文の翻訳と現代解析]] | sources | 2026-04-18 |
 | [[sources/D03_lotka_1925_lotka-1925-elements-of\|物理的生物学の要素 — Lotka の体系]] | sources | 2026-04-18 |
 | [[sources/D03_pearson_1993_e\|単純な系における複雑なパターン — Gray-Scott 反応拡散]] | sources | 2026-04-18 |
-| [[sources/D03_thompson_1917_1917\|成長と形態 — D'Arcy Thompson による形態の物理学]] | sources | 2026-04-18 |
-| [[sources/D03_unknown_0000_the-chemical-basis-of\|形態形成の化学的基礎 — Turing の反応拡散モデル]] | sources | 2026-04-18 |
-| [[sources/D04_fisher_1930_fisher-1930-the-genetical\|自然選択の遺伝学的理論 — Fisher の数理進化論]] | sources | 2026-04-18 |
 
 > このページは `scripts/generate-wiki-index.mjs` により自動生成されます。wiki/ 内のページ変更時に PostToolUse hook で自動実行されます。
