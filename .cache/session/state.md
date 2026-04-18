@@ -2,14 +2,37 @@
 
 ## Git
 - branch: develop
-- HEAD: 93a6360 (docs(skill): wiki-compile SKILL.md を4ファイル分割)
+- HEAD: 178f537 (chore(wiki): log.md auto-append for 7c30e44) / 7c30e44 (pd#81 Phase C-2c Miller&Cohen 2001)
 - main: 0b56c2f (About モーダル系マージ済み、#79 以降は未反映)
 - remote: synced
-- dirty: state.md (本セッション未 commit)
-- develop ahead of main: 非常に大きい（#79 + cs-as-component ルール + #81 Phase A〜C-2b 計 117 件 + About モーダル系 + wiki-compile 分割 等）
+- dirty: state.md (本セッション更新)
+- develop ahead of main: 非常に大きい（#79 + cs-as-component ルール + #81 Phase A〜C-2c 計 118 件 + About モーダル系 + wiki-compile 分割 + #76 sources/pd 等）
 
 ## 完了タスク
-### 2026-04-19 #03 (本セッション — wiki-compile SKILL.md 4ファイル分割)
+### 2026-04-19 #05 (本セッション — #76 / #80 / #81 三件 close)
+- **#80 pd wiki inbox 滞留解消**: 13 件中 12 件は Phase B/C-1 で生成済と判明、残 D27_schumacher_2008 を新規 compile（`090b652`）。inbox 2 ファイル archive
+- **#76 sources/pd/ 5 件 compile**: `wiki/sources/pd/` 新規 subdir に統合分析3件 + 独自調査2件を配置（`38b2329`）
+  - trust-integrated, value-integrated, design-thinking-integrated, kesson-bridge, origin-survey
+  - kesson-bridge は CLAUDE.md 絶対原則に従い D1-D4 番号表記を用語名に置換
+- **#81 残 120 件の経路戦略**:
+  - Semantic Scholar API 試験 → abstract 不安定（publisher 依存 elision）、rate limit 厳しい → 不採用
+  - PubMed 直接 URL 経路 → full abstract 取得可。生物医学系の残件で有効
+  - Proof: D08-S04 Miller & Cohen (2001) を `access_status: pubmed-abstract-only` で生成（`7c30e44`）
+  - 残 119 件は cs#227 ≥5 達成済で必須ではなく、別 Issue 起票方針で close
+- wiki/sources/: 236 → 237 top-level + pd/ subdir 5 件 = 計 242 本
+- 3 Issue いずれも本セッション中にコメント投稿 + close 完了
+- セッションログ: `.cache/session/log-20260419-05.md`
+
+### 2026-04-19 #04 以前 (claude.ai Routines の場所特定)
+- DT app (claude.ai) の `commit-review-hourly` Routine 認証エラーの相談を受け、retired 体系（旧 cron-commit-review / Remote Trigger）と特定
+- CLI MCP `scheduled-tasks` では claude.ai Routines を操作不可と判明
+- pjdhiro 提供の正しい場所: `claude.ai/code/routines`（Claude Code on the web 配下）
+- 削除/無効化手順をメモリに記録: `reference_claude_routines.md`
+- 実削除は pjdhiro が claude.ai UI で実施（本 CLI では不可）
+- commit なし
+- セッションログ: `.cache/session/log-20260419-04.md`, `/Users/uminomae/dev/.cache/session-logs/SESSION-20260419-04.md`
+
+### 2026-04-19 #03 以前 (wiki-compile SKILL.md 4ファイル分割)
 - **wiki-compile skill の構造整理**: 364行の単一 SKILL.md を entry + 3 詳細ファイルに分割
   - `SKILL.md`（92行、entry）: 概要 / Step スコープ / フロー / 更新トリガー / CLI指示書チェックリスト / 正本方針
   - `sources-pipeline.md`（177行）: Step 3b 自動化、命名、本文構造、DOI/URL、OCR、生成後処理
@@ -131,21 +154,17 @@
 
 ## 進行中
 - **cs#225 (OPEN, umbrella)**: wiki 生成ルール補修。Phase A 完了、Phase B-1 完了。pjdhiro が Issue 本文変更予定
-- **pd#80 (OPEN)**: raw PDF 13 件の wiki 化指示書。pd#81 とは別セット。未着手
-- **pd#81 (OPEN)**: 237 件 wiki-compile バッチ。**Phase A+B+C-1+C-2a 完了 (-114)、残 123 件、≥5 不変条件 30/30 PASS**
+- **pd#82 (OPEN)**: wiki cross-check 初期実装済（pd vs cs 内容矛盾検査）。LLM 判定部の slash command 化 or 手動運用の決定待ち
 
 ## 次のステップ
-- **pd#81 Phase C-2 続き**（残 120 件 — 即時 WebFetch 経路は完全に尽きた）
-  - 第二陣の別経路を pjdhiro に相談し方針決定（Semantic Scholar API / DOI → PMC 検索 / archive.org OCR / 古典書籍の扱い）
-  - 指示書: `.cache/inbox/_instructions-81-phase-c2-fetch-routes.md`
-  - 緊急性は低下（cs#227 ≥5 不変条件は維持）
-  - 古典書籍 25 件は pjdhiro 判断待ち（訓練知識書き起こし vs 章別取得 vs Phase から除外）
-- **pd#81 コメント未投稿の解消**: 次セッションで `gh` の TLS 問題が再現するか確認し、解消後に Phase C-2b 報告コメント投稿
-- **develop → main マージ公開判定**（pjdhiro 専権、Phase A+B の +60 本を公開するか）
+- **pd#82**: wiki cross-check LLM 判定部の slash command 化 or 手動運用の決定。pairs=100 / cs-missing=6 / pd-missing=100（dry-run、今日時点）
+- **pd#81 残 119 件の別 Issue 起票判断**:
+  - 古典書籍 24 件（archive.org、著作権切れ classics — Dewey, Wallas, James, Bergson, Peirce 等）を訓練知識書き起こしで処理する Issue
+  - PubMed abstract 経路によるバッチ処理 Issue（生物医学系 30-40 件で有効）
+  - 残り 55 件程度は WebFetch 困難、必要に応じ個別判断
+- **develop → main マージ公開判定**（pjdhiro 専権、本セッションで sources/pd/ 5 件 + D27 schumacher + D08 miller + 過去 Phase 成果を公開するか）
 - **cs#225 Issue 本文変更後の再スコープ**（pjdhiro による変更待ち）
 - **境界ケース 4 件の説明**（pjdhiro 説明要求中）: D15 nose-1940 vs nose_1944, D24 teresa-16c vs teresa_1921, D25 vangennep 2 版, D29 clauset-2009 vs clauset_2007
-- **pd#80 スコープ判定**: 13 件 raw PDF を処理するか、#81 に統合 close するか
-- **#76 sources/pd/ の compile**: 統合分析3件(trust/value/design-thinking) + 独自調査2件(origin-survey, kesson-bridge) の wiki ページ生成
 - techo の探究系 backlog（重め、pjdhiro 判断要）:
   - techo#60 探究: 信頼とは何か
   - techo#67 origin-survey: 対照群テスト
@@ -158,6 +177,7 @@
   - pd knowledge/ 編集 → pd `.cache/inbox/wiki-restale-*.md`（#77）
   - pd wiki/ Obsidian 編集 → pd `state.md` Hot Topics（#78）
   - develop → main は pjdhiro 専権（維持）。main 反映後は GitHub Actions で Pages 自動デプロイ
-- **wiki 構造整理完了**: concepts/(16件) + keywords/(15件) + sources/(118件、trust/value/design-thinking サブディレクトリ化済み)
+- **wiki 構造整理完了**: concepts/(16件) + keywords/(15件) + sources/(237 件 top-level + pd/trust/value/design-thinking サブディレクトリ = 計 257 件)
+- **Phase C-2c 発見（#81）**: Semantic Scholar API は abstract 不安定で wiki 生成に不向き / PubMed 直接 URL は full abstract 取得可（生物医学系限定）
 - **概念/運用分離ルール**: wiki-compile SKILL.md に明文化
 - 保持論点は ks repo Issue #173-#179 に登録済み
