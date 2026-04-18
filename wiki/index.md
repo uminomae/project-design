@@ -1,6 +1,6 @@
 ---
 title: "Wiki Index"
-compiled: "2026-04-17"
+compiled: "2026-04-18"
 ---
 # Wiki -- Map of Content
 
@@ -96,20 +96,26 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D02_rayleigh_1916_problem-thermal-convection-horizontal-layer-fluid-heated-below|下方加熱された水平流体層における熱対流の問題]]
 - [[sources/D02_zurek_2003_decoherence-einselection-quantum-origins-classical|デコヒーレンス、アインセレクション、古典性の量子的起源]]
 
-#### D03 化学 (3件)
+#### D03 化学 (5件)
 - [[sources/D03_becker-doring_1935_keimbildung|過飽和蒸気における核形成の運動論的処理]]
 - [[sources/D03_field-noyes_1974_oscillations|化学系における振動 IV: 実在する化学反応のモデルにおけるリミットサイクル挙動]]
+- [[sources/D03_johnson_2011_johnson-goody-2011-the|Michaelis-Menten 1913 論文の翻訳と現代解析]]
+- [[sources/D03_unknown_0000_the-chemical-basis-of|形態形成の化学的基礎 — Turing の反応拡散モデル]]
 - [[sources/D03_winter-chambon_1986_gel-point|架橋ポリマーのゲル点における線形粘弾性の解析]]
 
-#### D04 進化生物学 (4件)
+#### D04 進化生物学 (5件)
 - [[sources/D04_darwin_1859_origin-of-species|種の起源]]
 - [[sources/D04_eldredge-gould_1972_punctuated-equilibria|断続平衡説]]
+- [[sources/D04_laland_2015_2015-the-extended-evolutionary|拡張進化的総合説（EES）— その構造・仮定・予測]]
 - [[sources/D04_sagan_1967_origin-mitosing-cells|有糸分裂細胞の起源]]
 - [[sources/D04_waddington_1953_genetic-assimilation|遺伝的同化――獲得形質の遺伝]]
 
-#### D05 地球科学 (2件)
+#### D05 地球科学 (5件)
+- [[sources/D05_bak_1988_wiesenfeld-k|自己組織化臨界性 — Bak-Tang-Wiesenfeld の砂山モデル]]
 - [[sources/D05_cane-zebiak_1985_enso-theory|エルニーニョと南方振動の理論]]
+- [[sources/D05_lenton_2008_2008|地球気候系のティッピング要素]]
 - [[sources/D05_morgan_1968_rises-trenches|プレートテクトニクスの数理的基礎 — 剛体球面ブロックモデルによる地殻運動の記述]]
+- [[sources/D05_watson_1983_daisyworld|Daisyworld — 生物-環境結合系のホメオスタシス寓話]]
 
 #### D06 天文学 (5件)
 - [[sources/D06_abbott_2017_gw170817|GW170817：連星中性子星合体からの重力波観測]]
@@ -125,8 +131,11 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D07_shannon_1948_mathematical-theory-communication|通信の数学的理論]]
 - [[sources/D07_wiener_1948_cybernetics|サイバネティクス——動物と機械における制御と通信]]
 
-#### D08 神経科学 (2件)
+#### D08 神経科学 (5件)
+- [[sources/D08_beggs_2003_beggs-plenz-2003-neuronal|皮質神経回路におけるニューロン雪崩]]
+- [[sources/D08_clark_2013_whatever-next-predictive-brains|予測的な脳と状況づけられたエージェント — 階層的予測処理の射程]]
 - [[sources/D08_rao-ballard_1999_predictive-coding-visual-cortex|視覚皮質における予測符号化]]
+- [[sources/D08_tononi_2004_an-information-integration-theory|意識の統合情報理論（IIT）]]
 - [[sources/D08_varela_1991_embodied-mind|身体化された心（The Embodied Mind）— 神経科学の視点]]
 
 #### D09 生命科学 (5件)
@@ -136,9 +145,11 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D09_schafer_2012_2012-microglia-sculpt-postnatal|ミクログリアによる発達期シナプスの活動依存的・補体依存的な刈り込み]]
 - [[sources/D09_schultz_1997_schultz-dayan-montague-1997|予測と報酬の神経基盤 — ドーパミンによる予測誤差符号化]]
 
-#### D10 臨床医学 (3件)
+#### D10 臨床医学 (5件)
 - [[sources/D10_akdis_2014_allergen-immunotherapy|アレルゲン免疫療法の新治療戦略]]
+- [[sources/D10_engel_1977_1977|新しい医療モデルの必要 — 生物心理社会モデル]]
 - [[sources/D10_rosenblum_2015_autoimmunity|ヒト自己免疫疾患のメカニズム]]
+- [[sources/D10_serhan_2014_pro-resolving-lipid-mediators|炎症収束を促進する脂質メディエーター — Resolution Physiology]]
 - [[sources/D10_tonegawa_1987_nobel-lecture|抗体多様性の体細胞生成（ノーベル講演）]]
 
 #### D11 薬学 (6件)
@@ -149,10 +160,11 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D11_li_2014_network-pharmacology-qishenyiqi|漢方薬QiShenYiQiのネットワーク薬理学研究]]
 - [[sources/D11_wu_2014_chinese-medicine|ネットワーク薬理学による漢方処方「君臣佐使」の検証]]
 
-#### D12 農学・生態学 (4件)
+#### D12 農学・生態学 (5件)
 - [[sources/D12_clements_1916_plant-succession|植物遷移論]]
 - [[sources/D12_holling_1973_resilience-stability|生態系のレジリエンスと安定性]]
 - [[sources/D12_maff_2005_ipm-practical-guideline|総合的病害虫・雑草管理（IPM）実践指針]]
+- [[sources/D12_scheffer_2001_et-al|生態系における破局的状態遷移]]
 - [[sources/D12_stern_1959_integrated-control-concept|総合的防除の概念]]
 
 #### D13 哲学 (5件)
@@ -281,6 +293,18 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 
 | ページ | category | compiled |
 |--------|----------|----------|
+| [[sources/D03_johnson_2011_johnson-goody-2011-the\|Michaelis-Menten 1913 論文の翻訳と現代解析]] | sources | 2026-04-18 |
+| [[sources/D03_unknown_0000_the-chemical-basis-of\|形態形成の化学的基礎 — Turing の反応拡散モデル]] | sources | 2026-04-18 |
+| [[sources/D04_laland_2015_2015-the-extended-evolutionary\|拡張進化的総合説（EES）— その構造・仮定・予測]] | sources | 2026-04-18 |
+| [[sources/D05_bak_1988_wiesenfeld-k\|自己組織化臨界性 — Bak-Tang-Wiesenfeld の砂山モデル]] | sources | 2026-04-18 |
+| [[sources/D05_lenton_2008_2008\|地球気候系のティッピング要素]] | sources | 2026-04-18 |
+| [[sources/D05_watson_1983_daisyworld\|Daisyworld — 生物-環境結合系のホメオスタシス寓話]] | sources | 2026-04-18 |
+| [[sources/D08_beggs_2003_beggs-plenz-2003-neuronal\|皮質神経回路におけるニューロン雪崩]] | sources | 2026-04-18 |
+| [[sources/D08_clark_2013_whatever-next-predictive-brains\|予測的な脳と状況づけられたエージェント — 階層的予測処理の射程]] | sources | 2026-04-18 |
+| [[sources/D08_tononi_2004_an-information-integration-theory\|意識の統合情報理論（IIT）]] | sources | 2026-04-18 |
+| [[sources/D10_engel_1977_1977\|新しい医療モデルの必要 — 生物心理社会モデル]] | sources | 2026-04-18 |
+| [[sources/D10_serhan_2014_pro-resolving-lipid-mediators\|炎症収束を促進する脂質メディエーター — Resolution Physiology]] | sources | 2026-04-18 |
+| [[sources/D12_scheffer_2001_et-al\|生態系における破局的状態遷移]] | sources | 2026-04-18 |
 | [[concepts/デザイン思考（PD）\|デザイン思考（PD）]] | concepts | 2026-04-17 |
 | [[concepts/価値\|価値]] | concepts | 2026-04-17 |
 | [[concepts/信頼\|信頼]] | concepts | 2026-04-17 |
@@ -289,17 +313,5 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 | [[sources/D09_iliff_2012_2012-a-paravascular-pathway\|脳の傍血管経路（glymphatic システム）— 脳脊髄液による間質溶質クリアランス]] | sources | 2026-04-17 |
 | [[sources/D09_schafer_2012_2012-microglia-sculpt-postnatal\|ミクログリアによる発達期シナプスの活動依存的・補体依存的な刈り込み]] | sources | 2026-04-17 |
 | [[sources/D09_schultz_1997_schultz-dayan-montague-1997\|予測と報酬の神経基盤 — ドーパミンによる予測誤差符号化]] | sources | 2026-04-17 |
-| [[sources/D26_ellamil_2016_2016\|ダンスクラブ環境における集団同期と音楽特徴の相関]] | sources | 2026-04-17 |
-| [[sources/D26_koelsch_2005_siebel-w-a\|音楽知覚の神経基盤に向けて — 7 モジュール統合モデル]] | sources | 2026-04-17 |
-| [[sources/D26_limb_2008_neural-substrates-of-spontaneous\|ジャズ即興演奏の神経基盤 — 前頭前皮質の活動解離]] | sources | 2026-04-17 |
-| [[sources/D26_mehr_2019_et-al\|人間の歌における普遍性と多様性]] | sources | 2026-04-17 |
-| [[sources/D26_schulkin_2014_the-evolution-of-music\|音楽の進化と人間の社会的能力]] | sources | 2026-04-17 |
-| [[concepts/間主観性\|間主観性]] | concepts | 2026-04-15 |
-| [[concepts/情動伝染\|情動伝染]] | concepts | 2026-04-15 |
-| [[concepts/内受容感覚\|内受容感覚]] | concepts | 2026-04-15 |
-| [[keywords/アネット・ベイアー\|アネット・ベイアー]] | keywords | 2026-04-15 |
-| [[keywords/ウィキッド・プロブレム\|ウィキッド・プロブレム]] | keywords | 2026-04-15 |
-| [[keywords/ドナルド・ショーン\|ドナルド・ショーン]] | keywords | 2026-04-15 |
-| [[keywords/ナイジェル・クロス\|ナイジェル・クロス]] | keywords | 2026-04-15 |
 
 > このページは `scripts/generate-wiki-index.mjs` により自動生成されます。wiki/ 内のページ変更時に PostToolUse hook で自動実行されます。
