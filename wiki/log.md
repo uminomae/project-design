@@ -13,6 +13,17 @@ compile 実行の履歴。append-only。
 - duration: {所要時間}
 -->
 
+## [2026-04-18] auto-append | docs(wiki): Phase C-1b — D04/D06/D07 系 +12 (#81)
+- commit: ec8c1e9
+- pages: 15 wiki/*.md 変更
+- files:
+  - wiki/health/freshness-report.md
+  - wiki/health/orphan-report.md
+  - wiki/index.md
+  - wiki/sources/D04_fisher_1930_fisher-1930-the-genetical.md
+  - wiki/sources/D04_goldenfeld_2007_biology-s-next-revolution.md
+  - ... (+10)
+
 ## [2026-04-18] auto-append | docs(wiki): Phase C-1a — D01-D04 系 +12 (#81)
 - commit: a98f747
 - pages: 15 wiki/*.md 変更
