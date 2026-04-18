@@ -13,6 +13,15 @@ compile 実行の履歴。append-only。
 - duration: {所要時間}
 -->
 
+## [2026-04-19] auto-append | docs(wiki): D27 schumacher 2008 パラメトリシスト綱領 (#80)
+- commit: 090b652
+- pages: 4 wiki/*.md 変更
+- files:
+  - wiki/health/freshness-report.md
+  - wiki/health/orphan-report.md
+  - wiki/index.md
+  - wiki/sources/D27_schumacher_2008_parametricism-as-style.md
+
 ## [2026-04-19] auto-append | docs(wiki): Phase C-2b — PMC 3件 (#81)
 - commit: 911e947
 - pages: 6 wiki/*.md 変更
