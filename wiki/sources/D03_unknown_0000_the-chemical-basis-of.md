@@ -5,7 +5,7 @@ aliases: ["The Chemical Basis of Morphogenesis", "Turing pattern", "reaction-dif
 tags: [source, "D03", "原典解説"]
 source:
   repo: "creation-space"
-  path: "knowledge/wiki/D03/D03-S05_turing-1952.md"
+  path: "knowledge/source-notes/D03/D03-S05_turing-1952.md"
   manifest_id: "D03-S05"
   oa_url: "https://www.dna.caltech.edu/courses/cs191/paperscs191/turing.pdf"
 compiled: "2026-04-18"
@@ -82,6 +82,6 @@ Turing (1952) は、組織中を拡散しながら相互に反応する化学物
 
 ## 出典メモ
 
-- cs 側読解: `creation-space/knowledge/wiki/D03/D03-S05_turing-1952.md`（2026-04-10、Claude Opus 4.6, 全 36 ページ読了）
+- cs 側読解: `creation-space/knowledge/source-notes/D03/D03-S05_turing-1952.md`（2026-04-10、Claude Opus 4.6, 全 36 ページ読了）
 - 本ページのファイル名 stem は inbox v2 の auto-derived 値（unknown_0000）に従う。本文は Turing (1952) の解説
 - 本ページは cs 要約を一次入力として pd 形式に再編した（pd#81 Phase B-1）

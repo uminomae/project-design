@@ -5,7 +5,7 @@ aliases: ["Complex Patterns in a Simple System", "Gray-Scott model", "self-repli
 tags: [source, "D03", "原典解説"]
 source:
   repo: "creation-space"
-  path: "knowledge/wiki/D03/D03-S11_pearson-1993.md"
+  path: "knowledge/source-notes/D03/D03-S11_pearson-1993.md"
   manifest_id: "D03-S11"
   oa_url: "https://arxiv.org/pdf/patt-sol/9304003"
 compiled: "2026-04-18"
@@ -74,5 +74,5 @@ Gray-Scott 反応拡散モデルの数値シミュレーションにより、従
 
 ## 出典メモ
 
-- cs 側読解: `creation-space/knowledge/wiki/D03/D03-S11_pearson-1993.md`（2026-04-10、Claude Opus 4.6, WebFetch → Read PDF 全 8 ページ）
+- cs 側読解: `creation-space/knowledge/source-notes/D03/D03-S11_pearson-1993.md`（2026-04-10、Claude Opus 4.6, WebFetch → Read PDF 全 8 ページ）
 - 本ページは cs 要約を一次入力として pd 形式に再編した（pd#81 Phase C-1a）

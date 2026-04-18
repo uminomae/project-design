@@ -5,7 +5,7 @@ aliases: ["Neural Substrates of Spontaneous Musical Performance", "jazz improvis
 tags: [source, "D26", "原典解説"]
 source:
   repo: "creation-space"
-  path: "knowledge/wiki/D26/D26-S12_limb-2008.md"
+  path: "knowledge/source-notes/D26/D26-S12_limb-2008.md"
   manifest_id: "D26-S12"
   oa_url: "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0001679&type=printable"
 compiled: "2026-04-17"
@@ -78,5 +78,5 @@ DLPFC の不活性化により意識的フィルターが弱まり、無意識�
 
 ## 出典メモ
 
-- cs 側読解: `creation-space/knowledge/wiki/D26/D26-S12_limb-2008.md`（2026-04-11、Claude Opus 4.6、WebFetch → PDF Read）
+- cs 側読解: `creation-space/knowledge/source-notes/D26/D26-S12_limb-2008.md`（2026-04-11、Claude Opus 4.6、WebFetch → PDF Read）
 - 本ページは cs 要約を一次入力として pd 形式に再編した（pd#81 Phase A）

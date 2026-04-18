@@ -5,7 +5,7 @@ aliases: ["Period Three Implies Chaos", "Li-Yorke chaos"]
 tags: [source, "D01", "原典解説"]
 source:
   repo: "creation-space"
-  path: "knowledge/wiki/D01/D01-S10_li-yorke-1975.md"
+  path: "knowledge/source-notes/D01/D01-S10_li-yorke-1975.md"
   manifest_id: "D01-S10"
   oa_url: "https://www.its.caltech.edu/~matilde/LiYorke.pdf"
 compiled: "2026-04-18"
@@ -66,5 +66,5 @@ Appendix 1 で反例を提示。周期 3 が他のすべての周期を含意す
 
 ## 出典メモ
 
-- cs 側読解: `creation-space/knowledge/wiki/D01/D01-S10_li-yorke-1975.md`（2026-04-13、Claude Opus 4.6, WebFetch → Read PDF 全 8 ページ読了）
+- cs 側読解: `creation-space/knowledge/source-notes/D01/D01-S10_li-yorke-1975.md`（2026-04-13、Claude Opus 4.6, WebFetch → Read PDF 全 8 ページ読了）
 - 本ページは cs 要約を一次入力として pd 形式に再編した（pd#81 Phase C-1a）

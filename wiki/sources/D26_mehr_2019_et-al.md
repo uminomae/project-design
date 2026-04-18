@@ -5,7 +5,7 @@ aliases: ["Universality and diversity in human song"]
 tags: [source, "D26", "原典解説"]
 source:
   repo: "creation-space"
-  path: "knowledge/wiki/D26/D26-S07_mehr-2019.md"
+  path: "knowledge/source-notes/D26/D26-S07_mehr-2019.md"
   manifest_id: "D26-S07"
   oa_url: "https://osf.io/gxzfq_v1/download"
 compiled: "2026-04-17"
@@ -77,5 +77,5 @@ Mehr ら (2019) は、315 社会の民族誌テキスト（NHS Ethnography）と
 
 ## 出典メモ
 
-- cs 側読解: `creation-space/knowledge/wiki/D26/D26-S07_mehr-2019.md`（2026-04-11、Claude Opus 4.6、WebFetch via PMC）
+- cs 側読解: `creation-space/knowledge/source-notes/D26/D26-S07_mehr-2019.md`（2026-04-11、Claude Opus 4.6、WebFetch via PMC）
 - 本ページは cs 要約を一次入力として pd 形式に再編した（pd#81 Phase A）

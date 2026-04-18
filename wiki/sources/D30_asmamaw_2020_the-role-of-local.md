@@ -5,7 +5,7 @@ aliases: ["The role of local knowledge in enhancing resilience", "indigenous kno
 tags: [source, "D30", "原典解説"]
 source:
   repo: "creation-space"
-  path: "knowledge/wiki/D30/D30-S17_asmamaw-2020.md"
+  path: "knowledge/source-notes/D30/D30-S17_asmamaw-2020.md"
   manifest_id: "D30-S17"
   oa_url: "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0238460&type=printable"
 compiled: "2026-04-18"
@@ -68,5 +68,5 @@ review_state: 未レビュー
 
 ## 出典メモ
 
-- cs 側読解: `creation-space/knowledge/wiki/D30/D30-S17_asmamaw-2020.md`（2026-04-11、Claude Opus 4.6, WebFetch via HTML 全文取得）
+- cs 側読解: `creation-space/knowledge/source-notes/D30/D30-S17_asmamaw-2020.md`（2026-04-11、Claude Opus 4.6, WebFetch via HTML 全文取得）
 - 本ページは cs 要約を一次入力として pd 形式に再編した（pd#81 Phase B-4）

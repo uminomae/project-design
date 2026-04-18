@@ -2,15 +2,15 @@
 /**
  * wiki-cross-check.mjs (pd#82)
  *
- * pd `wiki/sources/D{NN}_*.md` と cs `knowledge/wiki/D{NN}/D{NN}-S{##}_*.md` の
+ * pd `wiki/sources/D{NN}_*.md` と cs `knowledge/source-notes/D{NN}/D{NN}-S{##}_*.md` の
  * 対応ペアを cs manifest 経由で突き合わせ、矛盾検査用の候補ファイルを書き出す。
  *
  * 矛盾判定そのものは LLM に任せる（スクリプトは候補ペアと本文を用意するのみ）。
  *
  * 対応付けロジック:
  *   - 正本: cs/knowledge/raw/manifest.md
- *   - cs side: source_id (D{NN}-S{##}) で特定 → cs/knowledge/wiki/D{NN}/{source_id}_*.md
- *   - pd side: domain_id + author + year で特定 → pd/wiki/sources/D{NN}_{author}_{year}_*.md
+ *   - cs side (source-note): source_id (D{NN}-S{##}) で特定 → cs/knowledge/source-notes/D{NN}/{source_id}_*.md
+ *   - pd side (wiki): domain_id + author + year で特定 → pd/wiki/sources/D{NN}_{author}_{year}_*.md
  *
  * Usage:
  *   node scripts/wiki-cross-check.mjs --source wiki/sources/D01_bott_1988_morse-theory-indomitable.md
@@ -32,7 +32,7 @@ import { homedir } from "node:os";
 const ROOT = resolve(new URL("..", import.meta.url).pathname.replace(/\/$/, ""));
 const PD_SOURCES = join(ROOT, "wiki", "sources");
 const CS_ROOT = join(homedir(), "dev", "creation-space");
-const CS_WIKI = join(CS_ROOT, "knowledge", "wiki");
+const CS_SOURCE_NOTES = join(CS_ROOT, "knowledge", "source-notes");
 const CS_MANIFEST = join(CS_ROOT, "knowledge", "raw", "manifest.md");
 const OUT_DIR = join(ROOT, ".cache");
 
@@ -86,9 +86,9 @@ function derivePdStem(domain_id, local_file, title) {
   return null;
 }
 
-// ---------- cs wiki lookup ----------
-function findCsWiki(source_id, domain_id) {
-  const dir = join(CS_WIKI, domain_id);
+// ---------- cs source-note lookup ----------
+function findCsSourceNote(source_id, domain_id) {
+  const dir = join(CS_SOURCE_NOTES, domain_id);
   if (!existsSync(dir)) return null;
   const prefix = `${source_id}_`;
   const hit = readdirSync(dir).find((f) => f.startsWith(prefix) && f.endsWith(".md"));
@@ -114,7 +114,7 @@ const warnCsMissing = [];
 const warnPdMissing = [];
 
 for (const row of rows) {
-  const csPath = findCsWiki(row.source_id, row.domain_id);
+  const csPath = findCsSourceNote(row.source_id, row.domain_id);
   const pdPath = findPdWiki(row.pdStem);
 
   if (opts.source) {
@@ -151,7 +151,7 @@ out += `cs_missing: ${warnCsMissing.length}\n`;
 out += `pd_missing: ${warnPdMissing.length}\n`;
 out += "---\n\n";
 out += "# wiki 矛盾検査 候補ペア (pd#82)\n\n";
-out += "pd `wiki/sources/` と cs `knowledge/wiki/` の対応ペアを列挙する。\n";
+out += "pd `wiki/sources/` と cs `knowledge/source-notes/` の対応ペアを列挙する。\n";
 out += "CLI は各ペアを読み、SKILL.md「矛盾検査の対象項目」に従って判定すること。\n";
 out += "矛盾があれば `.cache/inbox/wiki-conflict-{date}.md` に起票して pjdhiro 判断を仰ぐ。\n\n";
 
@@ -166,7 +166,7 @@ for (const p of pairs) {
 if (warnCsMissing.length > 0) {
   out += `## cs 未生成 (skip, ${warnCsMissing.length})\n\n`;
   for (const w of warnCsMissing) {
-    out += `- ${w.source_id}: pd=\`${relativeTo(ROOT, w.pd)}\` / cs wiki なし\n`;
+    out += `- ${w.source_id}: pd=\`${relativeTo(ROOT, w.pd)}\` / cs source-note なし\n`;
   }
   out += "\n";
 }

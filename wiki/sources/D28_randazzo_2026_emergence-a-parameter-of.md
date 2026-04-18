@@ -5,7 +5,7 @@ aliases: ["Emergence: A Parameter of Artistic Creativity", "dance improvisation"
 tags: [source, "D28", "原典解説"]
 source:
   repo: "creation-space"
-  path: "knowledge/wiki/D28/D28-S13_randazzo-2026-emergence-dance-improvisation.md"
+  path: "knowledge/source-notes/D28/D28-S13_randazzo-2026-emergence-dance-improvisation.md"
   manifest_id: "D28-S13"
   oa_url: "https://doi.org/10.55121/card.v6i1.878"
 compiled: "2026-04-18"
@@ -74,5 +74,5 @@ review_state: 未レビュー
 
 ## 出典メモ
 
-- cs 側読解: `creation-space/knowledge/wiki/D28/D28-S13_randazzo-2026-emergence-dance-improvisation.md`（2026-04-15、Claude Opus 4.6, WebFetch → Read PDF 全 13 ページ）
+- cs 側読解: `creation-space/knowledge/source-notes/D28/D28-S13_randazzo-2026-emergence-dance-improvisation.md`（2026-04-15、Claude Opus 4.6, WebFetch → Read PDF 全 13 ページ）
 - 本ページは cs 要約を一次入力として pd 形式に再編した（pd#81 Phase B-4）

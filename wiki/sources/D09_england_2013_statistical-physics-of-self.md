@@ -5,7 +5,7 @@ aliases: ["Statistical Physics of Self-Replication"]
 tags: [source, "D09", "原典解説"]
 source:
   repo: "creation-space"
-  path: "knowledge/wiki/D09/D09-S13_england-2013.md"
+  path: "knowledge/source-notes/D09/D09-S13_england-2013.md"
   manifest_id: "D09-S13"
   oa_url: "https://arxiv.org/abs/1209.1179"
 compiled: "2026-04-17"
@@ -75,5 +75,5 @@ n_pep はペプチド結合数、τ_hyd は加水分解半減期、τ_div は分
 
 ## 出典メモ
 
-- cs 側読解: `creation-space/knowledge/wiki/D09/D09-S13_england-2013.md`（2026-04-10、claude-opus-4-6、WebFetch → PDF Read）
+- cs 側読解: `creation-space/knowledge/source-notes/D09/D09-S13_england-2013.md`（2026-04-10、claude-opus-4-6、WebFetch → PDF Read）
 - 本ページは cs 要約を一次入力として pd 形式に再編した（pd#81 Phase A）

@@ -5,7 +5,7 @@ aliases: ["Whatever next?", "Predictive brains", "hierarchical predictive proces
 tags: [source, "D08", "原典解説"]
 source:
   repo: "creation-space"
-  path: "knowledge/wiki/D08/D08-S13_clark-2013.md"
+  path: "knowledge/source-notes/D08/D08-S13_clark-2013.md"
   manifest_id: "D08-S13"
   oa_url: "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/33542C736E17E3D1D44E8D03BE5F4CD9/S0140525X12000477a.pdf"
 compiled: "2026-04-18"
@@ -76,5 +76,5 @@ Clark (2013) は「階層的予測処理（hierarchical predictive processing）
 
 ## 出典メモ
 
-- cs 側読解: `creation-space/knowledge/wiki/D08/D08-S13_clark-2013.md`（2026-04-10、Claude Opus 4.6, WebFetch → PDF Read、target article 部 pp.181-204 まで読了）
+- cs 側読解: `creation-space/knowledge/source-notes/D08/D08-S13_clark-2013.md`（2026-04-10、Claude Opus 4.6, WebFetch → PDF Read、target article 部 pp.181-204 まで読了）
 - 本ページは cs 要約を一次入力として pd 形式に再編した（pd#81 Phase B-1）

@@ -5,7 +5,7 @@ aliases: ["Integrated Information Theory 3.0", "IIT 3.0", "Phi"]
 tags: [source, "D23", "原典解説"]
 source:
   repo: "creation-space"
-  path: "knowledge/wiki/D23/D23-S17_tononi-2014.md"
+  path: "knowledge/source-notes/D23/D23-S17_tononi-2014.md"
   manifest_id: "D23-S17"
   oa_url: "https://journals.plos.org/ploscompbiol/article/file?id=10.1371/journal.pcbi.1003588&type=printable"
 compiled: "2026-04-18"
@@ -68,5 +68,5 @@ IIT の中核的アイデンティティ命題。
 
 ## 出典メモ
 
-- cs 側読解: `creation-space/knowledge/wiki/D23/D23-S17_tononi-2014.md`（2026-04-11、claude-opus-4-6, Read PDF pp.1-20）
+- cs 側読解: `creation-space/knowledge/source-notes/D23/D23-S17_tononi-2014.md`（2026-04-11、claude-opus-4-6, Read PDF pp.1-20）
 - 本ページは cs 要約を一次入力として pd 形式に再編した（pd#81 Phase B-3）

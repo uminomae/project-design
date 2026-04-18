@@ -5,7 +5,7 @@ aliases: ["Towards a neural basis of music perception"]
 tags: [source, "D26", "原典解説"]
 source:
   repo: "creation-space"
-  path: "knowledge/wiki/D26/D26-S19_koelsch-siebel-2005.md"
+  path: "knowledge/source-notes/D26/D26-S19_koelsch-siebel-2005.md"
   manifest_id: "D26-S19"
   oa_url: "https://stefan-koelsch.de/papers/TICS2005_towards-a-neural-basis-of-music-perception.pdf"
 compiled: "2026-04-17"
@@ -86,5 +86,5 @@ N400 を誘発する priming 実験は、音楽が意味情報を担えること
 
 ## 出典メモ
 
-- cs 側読解: `creation-space/knowledge/wiki/D26/D26-S19_koelsch-siebel-2005.md`（2026-04-13、Claude Opus 4.6、WebFetch → PDF バイナリ保存 → Read、全 7 ページ読了）
+- cs 側読解: `creation-space/knowledge/source-notes/D26/D26-S19_koelsch-siebel-2005.md`（2026-04-13、Claude Opus 4.6、WebFetch → PDF バイナリ保存 → Read、全 7 ページ読了）
 - 本ページは cs 要約を一次入力として pd 形式に再編した（pd#81 Phase A）

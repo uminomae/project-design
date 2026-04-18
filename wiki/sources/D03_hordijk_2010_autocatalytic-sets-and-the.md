@@ -5,7 +5,7 @@ aliases: ["Autocatalytic Sets and the Origin of Life", "RAF set", "catalytic clo
 tags: [source, "D03", "原典解説"]
 source:
   repo: "creation-space"
-  path: "knowledge/wiki/D03/D03-S14_hordijk-2010.md"
+  path: "knowledge/source-notes/D03/D03-S14_hordijk-2010.md"
   manifest_id: "D03-S14"
   oa_url: "https://www.mdpi.com/1099-4300/12/7/1733/pdf"
 compiled: "2026-04-18"
@@ -68,5 +68,5 @@ RAF: (1) 全反応が集合内の分子により触媒される（RA: Reflexivel
 
 ## 出典メモ
 
-- cs 側読解: `creation-space/knowledge/wiki/D03/D03-S14_hordijk-2010.md`（2026-04-10、Claude Opus 4.6, WebFetch via Wayback Machine、全 10 ページ読了）
+- cs 側読解: `creation-space/knowledge/source-notes/D03/D03-S14_hordijk-2010.md`（2026-04-10、Claude Opus 4.6, WebFetch via Wayback Machine、全 10 ページ読了）
 - 本ページは cs 要約を一次入力として pd 形式に再編した（pd#81 Phase C-1a）

@@ -5,7 +5,7 @@ aliases: ["An information integration theory of consciousness", "IIT", "Phi"]
 tags: [source, "D08", "原典解説"]
 source:
   repo: "creation-space"
-  path: "knowledge/wiki/D08/D08-S12_tononi-2004.md"
+  path: "knowledge/source-notes/D08/D08-S12_tononi-2004.md"
   manifest_id: "D08-S12"
   oa_url: "https://bmcneurosci.biomedcentral.com/counter/pdf/10.1186/1471-2202-5-42"
 compiled: "2026-04-18"
@@ -81,5 +81,5 @@ Tononi (2004) は、意識を「情報を統合するシステムの能力」と
 
 ## 出典メモ
 
-- cs 側読解: `creation-space/knowledge/wiki/D08/D08-S12_tononi-2004.md`（2026-04-10、Claude Opus 4.6, WebFetch via PMC）
+- cs 側読解: `creation-space/knowledge/source-notes/D08/D08-S12_tononi-2004.md`（2026-04-10、Claude Opus 4.6, WebFetch via PMC）
 - 本ページは cs 要約を一次入力として pd 形式に再編した（pd#81 Phase B-1）

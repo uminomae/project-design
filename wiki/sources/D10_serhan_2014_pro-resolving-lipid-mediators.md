@@ -5,7 +5,7 @@ aliases: ["Pro-Resolving Lipid Mediators", "Resolution Physiology", "SPM"]
 tags: [source, "D10", "原典解説"]
 source:
   repo: "creation-space"
-  path: "knowledge/wiki/D10/D10-S09_serhan-2014.md"
+  path: "knowledge/source-notes/D10/D10-S09_serhan-2014.md"
   manifest_id: "D10-S09"
   oa_url: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4263681"
 compiled: "2026-04-18"
@@ -81,5 +81,5 @@ SPM、特に MaR1 は炎症性 M1 マクロファージから修復性 M2 マク
 
 ## 出典メモ
 
-- cs 側読解: `creation-space/knowledge/wiki/D10/D10-S09_serhan-2014.md`（2026-04-10、claude-opus-4-6, WebFetch via PMC HTML）
+- cs 側読解: `creation-space/knowledge/source-notes/D10/D10-S09_serhan-2014.md`（2026-04-10、claude-opus-4-6, WebFetch via PMC HTML）
 - 本ページは cs 要約を一次入力として pd 形式に再編した（pd#81 Phase B-1）

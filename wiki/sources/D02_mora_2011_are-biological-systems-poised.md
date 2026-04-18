@@ -5,7 +5,7 @@ aliases: ["Are Biological Systems Poised at Criticality?", "Zipf's law", "critic
 tags: [source, "D02", "原典解説"]
 source:
   repo: "creation-space"
-  path: "knowledge/wiki/D02/D02-S15_mora-2011.md"
+  path: "knowledge/source-notes/D02/D02-S15_mora-2011.md"
   manifest_id: "D02-S15"
   oa_url: "https://arxiv.org/pdf/1012.2242"
 compiled: "2026-04-18"
@@ -76,5 +76,5 @@ Zipf の法則はエントロピーがエネルギーの正確に線形な関数
 
 ## 出典メモ
 
-- cs 側読解: `creation-space/knowledge/wiki/D02/D02-S15_mora-2011.md`（2026-04-10、Claude Opus 4.6, WebFetch → Read PDF 全 20 ページ）
+- cs 側読解: `creation-space/knowledge/source-notes/D02/D02-S15_mora-2011.md`（2026-04-10、Claude Opus 4.6, WebFetch → Read PDF 全 20 ページ）
 - 本ページは cs 要約を一次入力として pd 形式に再編した（pd#81 Phase C-1a）

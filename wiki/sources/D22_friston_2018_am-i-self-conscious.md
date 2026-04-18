@@ -5,7 +5,7 @@ aliases: ["Am I Self-Conscious?", "self-evidencing", "free energy principle"]
 tags: [source, "D22", "原典解説"]
 source:
   repo: "creation-space"
-  path: "knowledge/wiki/D22/D22-S17_friston-2018.md"
+  path: "knowledge/source-notes/D22/D22-S17_friston-2018.md"
   manifest_id: "D22-S17"
   oa_url: "https://www.frontiersin.org/articles/10.3389/fpsyg.2018.00579/pdf"
 compiled: "2026-04-18"
@@ -60,5 +60,5 @@ Friston は、自己意識が意識そのものの必要条件であると主張
 
 ## 出典メモ
 
-- cs 側読解: `creation-space/knowledge/wiki/D22/D22-S17_friston-2018.md`（2026-04-11、claude-opus-4-6, WebFetch via HTML、要約レベル）
+- cs 側読解: `creation-space/knowledge/source-notes/D22/D22-S17_friston-2018.md`（2026-04-11、claude-opus-4-6, WebFetch via HTML、要約レベル）
 - 本ページは cs 要約を一次入力として pd 形式に再編した（pd#81 Phase B-3）

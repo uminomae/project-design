@@ -5,7 +5,7 @@ aliases: ["Creativity and Emergence in Improvisational Theater and in Social Lif
 tags: [source, "D28", "原典解説"]
 source:
   repo: "creation-space"
-  path: "knowledge/wiki/D28/D28-S11_sawyer-2026.md"
+  path: "knowledge/source-notes/D28/D28-S11_sawyer-2026.md"
   manifest_id: "D28-S11"
   oa_url: "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/21DAA8166D961C9E50FBCD4958E53B16/S2326448925100391a.pdf"
 compiled: "2026-04-18"
@@ -68,5 +68,5 @@ review_state: 未レビュー
 
 ## 出典メモ
 
-- cs 側読解: `creation-space/knowledge/wiki/D28/D28-S11_sawyer-2026.md`（2026-04-11、Claude Opus 4.6, WebFetch → Read PDF 全 17 ページ）
+- cs 側読解: `creation-space/knowledge/source-notes/D28/D28-S11_sawyer-2026.md`（2026-04-11、Claude Opus 4.6, WebFetch → Read PDF 全 17 ページ）
 - 本ページは cs 要約を一次入力として pd 形式に再編した（pd#81 Phase B-4）

@@ -5,7 +5,7 @@ aliases: ["The Rules of Art", "Les Règles de l'art", "literary field"]
 tags: [source, "D19", "原典解説"]
 source:
   repo: "creation-space"
-  path: "knowledge/wiki/D19/D19-S09_bourdieu-1996.md"
+  path: "knowledge/source-notes/D19/D19-S09_bourdieu-1996.md"
   manifest_id: "D19-S09"
   oa_url: "https://monoskop.org/images/9/94/Pierre_Bourdieu_The_Rules_of_Art_Genesis_and_Structure_of_the_Literary_Field_1996.pdf"
 compiled: "2026-04-18"
@@ -69,5 +69,5 @@ Bourdieu は文学場（literary field）の生成と構造を分析し、芸術
 
 ## 出典メモ
 
-- cs 側読解: `creation-space/knowledge/wiki/D19/D19-S09_bourdieu-1996.md`（2026-04-16、claude-opus-4-6, Read PDF。Preface + Prologue + Notes/Index 抜粋）
+- cs 側読解: `creation-space/knowledge/source-notes/D19/D19-S09_bourdieu-1996.md`（2026-04-16、claude-opus-4-6, Read PDF。Preface + Prologue + Notes/Index 抜粋）
 - 本ページは cs 要約を一次入力として pd 形式に再編した（pd#81 Phase B-3）

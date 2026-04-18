@@ -5,7 +5,7 @@ aliases: ["The Unbearable Automaticity of Being", "automatic social behavior"]
 tags: [source, "D14", "原典解説"]
 source:
   repo: "creation-space"
-  path: "knowledge/wiki/D14/D14-S09_bargh-chartrand-1999.md"
+  path: "knowledge/source-notes/D14/D14-S09_bargh-chartrand-1999.md"
   manifest_id: "D14-S09"
   oa_url: "https://acmelab.yale.edu/sites/default/files/1999_the_unbearable_automaticity_of_being.pdf"
 compiled: "2026-04-18"
@@ -76,5 +76,5 @@ Chartrand & Bargh (1999): 共作業者の足揺らしや顔触りを非意識的
 
 ## 出典メモ
 
-- cs 側読解: `creation-space/knowledge/wiki/D14/D14-S09_bargh-chartrand-1999.md`（2026-04-13、claude-opus-4-6, WebFetch + Read PDF 全 18 ページ）
+- cs 側読解: `creation-space/knowledge/source-notes/D14/D14-S09_bargh-chartrand-1999.md`（2026-04-13、claude-opus-4-6, WebFetch + Read PDF 全 18 ページ）
 - 本ページは cs 要約を一次入力として pd 形式に再編した（pd#81 Phase B-2）

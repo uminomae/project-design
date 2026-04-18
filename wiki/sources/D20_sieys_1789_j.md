@@ -5,7 +5,7 @@ aliases: ["Qu'est-ce que le Tiers État?", "What Is the Third Estate?"]
 tags: [source, "D20", "原典解説"]
 source:
   repo: "creation-space"
-  path: "knowledge/wiki/D20/D20-S04_sieyes-1789-tiers-etat.md"
+  path: "knowledge/source-notes/D20/D20-S04_sieyes-1789-tiers-etat.md"
   manifest_id: "D20-S04"
   oa_url: "https://archive.org/download/questcequeletie00sieygoog/questcequeletie00sieygoog.pdf"
 compiled: "2026-04-18"
@@ -78,5 +78,5 @@ Ch.I 冒頭の問いへの正式な回答。
 
 ## 出典メモ
 
-- cs 側読解: `creation-space/knowledge/wiki/D20/D20-S04_sieyes-1789-tiers-etat.md`（2026-04-15、Claude Opus 4.6, WebFetch → PDF Read。Essai sur les privilèges + Tiers État 序 + Ch.I + Ch.II 冒頭まで読了）
+- cs 側読解: `creation-space/knowledge/source-notes/D20/D20-S04_sieyes-1789-tiers-etat.md`（2026-04-15、Claude Opus 4.6, WebFetch → PDF Read。Essai sur les privilèges + Tiers État 序 + Ch.I + Ch.II 冒頭まで読了）
 - 本ページは cs 要約を一次入力として pd 形式に再編した（pd#81 Phase B-3）

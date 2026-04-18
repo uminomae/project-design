@@ -5,7 +5,7 @@ aliases: ["Trajectories of Idea Emergence in Dialogic Collaborative Problem Solv
 tags: [source, "D22", "原典解説"]
 source:
   repo: "creation-space"
-  path: "knowledge/wiki/D22/D22-S16_hu-2021.md"
+  path: "knowledge/source-notes/D22/D22-S16_hu-2021.md"
   manifest_id: "D22-S16"
   oa_url: "https://www.frontiersin.org/articles/10.3389/fpsyg.2021.735534/pdf"
 compiled: "2026-04-18"
@@ -60,5 +60,5 @@ Hu & Chen (2021) は、複雑動的システム（CDS）理論とバフチンの
 
 ## 出典メモ
 
-- cs 側読解: `creation-space/knowledge/wiki/D22/D22-S16_hu-2021.md`（2026-04-11、claude-opus-4-6, WebFetch via HTML、要約レベル）
+- cs 側読解: `creation-space/knowledge/source-notes/D22/D22-S16_hu-2021.md`（2026-04-11、claude-opus-4-6, WebFetch via HTML、要約レベル）
 - 本ページは cs 要約を一次入力として pd 形式に再編した（pd#81 Phase B-3）

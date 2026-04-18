@@ -5,7 +5,7 @@ aliases: ["Elements of Physical Biology", "Lotka-Volterra equations"]
 tags: [source, "D03", "原典解説"]
 source:
   repo: "creation-space"
-  path: "knowledge/wiki/D03/D03-S13_lotka-1925.md"
+  path: "knowledge/source-notes/D03/D03-S13_lotka-1925.md"
   manifest_id: "D03-S13"
   oa_url: "https://archive.org/download/elementsofphysic0000alfr/elementsofphysic0000alfr.pdf"
 compiled: "2026-04-18"
@@ -76,5 +76,5 @@ Spencer の生命定義（内的関係の外的関係への連続的適応）を
 
 ## 出典メモ
 
-- cs 側読解: `creation-space/knowledge/wiki/D03/D03-S13_lotka-1925.md`（2026-04-10、Claude Opus 4.6, WebFetch via archive.org DjVu OCR、Preface + Ch. I-VI, VIII, XI, XIII, XVI-XVII, XX-XXI, XXIV, XXXIV を選択的に読解）
+- cs 側読解: `creation-space/knowledge/source-notes/D03/D03-S13_lotka-1925.md`（2026-04-10、Claude Opus 4.6, WebFetch via archive.org DjVu OCR、Preface + Ch. I-VI, VIII, XI, XIII, XVI-XVII, XX-XXI, XXIV, XXXIV を選択的に読解）
 - 本ページは cs 要約を一次入力として pd 形式に再編した（pd#81 Phase C-1a）

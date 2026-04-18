@@ -5,7 +5,7 @@ aliases: ["Language Structure Is Partly Determined by Social Structure", "Lingui
 tags: [source, "D17", "原典解説"]
 source:
   repo: "creation-space"
-  path: "knowledge/wiki/D17/D17-S15_lupyan-2010.md"
+  path: "knowledge/source-notes/D17/D17-S15_lupyan-2010.md"
   manifest_id: "D17-S15"
   oa_url: "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0008559&type=printable"
 compiled: "2026-04-18"
@@ -68,5 +68,5 @@ WALS の類型論データと、Ethnologue・Global Mapping International の人
 
 ## 出典メモ
 
-- cs 側読解: `creation-space/knowledge/wiki/D17/D17-S15_lupyan-2010.md`（2026-04-11、claude-opus-4-6, WebFetch → PDF Read 全 10 ページ）
+- cs 側読解: `creation-space/knowledge/source-notes/D17/D17-S15_lupyan-2010.md`（2026-04-11、claude-opus-4-6, WebFetch → PDF Read 全 10 ページ）
 - 本ページは cs 要約を一次入力として pd 形式に再編した（pd#81 Phase B-2）

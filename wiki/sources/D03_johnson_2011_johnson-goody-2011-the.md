@@ -5,7 +5,7 @@ aliases: ["The Original Michaelis Constant", "Michaelis-Menten 1913 translation"
 tags: [source, "D03", "原典解説"]
 source:
   repo: "creation-space"
-  path: "knowledge/wiki/D03/D03-S02_johnson-2011.md"
+  path: "knowledge/source-notes/D03/D03-S02_johnson-2011.md"
   manifest_id: "D03-S02"
   oa_url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC3381512/"
 compiled: "2026-04-18"
@@ -71,5 +71,5 @@ Michaelis-Menten に先立つ Henri は、生成物の変旋光を考慮せず p
 
 ## 出典メモ
 
-- cs 側読解: `creation-space/knowledge/wiki/D03/D03-S02_johnson-2011.md`（2026-04-10、Claude Opus 4.6, WebFetch via PMC HTML）
+- cs 側読解: `creation-space/knowledge/source-notes/D03/D03-S02_johnson-2011.md`（2026-04-10、Claude Opus 4.6, WebFetch via PMC HTML）
 - 本ページは cs 要約を一次入力として pd 形式に再編した（pd#81 Phase B-1）
