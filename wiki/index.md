@@ -158,11 +158,12 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D07_shannon_1948_mathematical-theory-communication|通信の数学的理論]]
 - [[sources/D07_wiener_1948_cybernetics|サイバネティクス——動物と機械における制御と通信]]
 
-#### D08 神経科学 (8件)
+#### D08 神経科学 (9件)
 - [[sources/D08_beggs_2003_beggs-plenz-2003-neuronal|皮質神経回路におけるニューロン雪崩]]
 - [[sources/D08_clark_2013_whatever-next-predictive-brains|予測的な脳と状況づけられたエージェント — 階層的予測処理の射程]]
 - [[sources/D08_gaillard_2009_2009|意識的アクセスの収束する頭蓋内マーカー]]
 - [[sources/D08_mashour_2020_2020|意識的処理と Global Neuronal Workspace 仮説 — 20 年のレビュー]]
+- [[sources/D08_miller_2001_integrative-theory-prefrontal-cortex|前頭前皮質機能の統合理論]]
 - [[sources/D08_rao-ballard_1999_predictive-coding-visual-cortex|視覚皮質における予測符号化]]
 - [[sources/D08_tononi_2004_an-information-integration-theory|意識の統合情報理論（IIT）]]
 - [[sources/D08_tononi_2015_consciousness-here-there-and|意識はここに、そこに、どこにでも？— IIT による問いの再定式化]]
@@ -389,6 +390,7 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 
 | ページ | category | compiled |
 |--------|----------|----------|
+| [[sources/D08_miller_2001_integrative-theory-prefrontal-cortex\|前頭前皮質機能の統合理論]] | sources | 2026-04-19 |
 | [[sources/D11_blanco_2015_principles-of-nanoparticle-design\|ナノ粒子設計の原理 — 薬物送達の生物学的バリアを越えるには]] | sources | 2026-04-19 |
 | [[sources/D11_csermely_2011_2011\|Allo-Network Drugs — 細胞ネットワークにおけるアロステリーの活用]] | sources | 2026-04-19 |
 | [[sources/D11_tognoli_2009_brain-coordination-dynamics-true\|脳の協調ダイナミクス — 位相同期の真と偽]] | sources | 2026-04-19 |
@@ -408,6 +410,5 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 | [[sources/D03_ameta_2021_2021\|自己触媒化学反応系における自己複製とダーウィン進化]] | sources | 2026-04-18 |
 | [[sources/D03_hordijk_2010_autocatalytic-sets-and-the\|自己触媒集合と生命の起源 — RAF 集合の数学]] | sources | 2026-04-18 |
 | [[sources/D03_johnson_2011_johnson-goody-2011-the\|Michaelis-Menten 1913 論文の翻訳と現代解析]] | sources | 2026-04-18 |
-| [[sources/D03_lotka_1925_lotka-1925-elements-of\|物理的生物学の要素 — Lotka の体系]] | sources | 2026-04-18 |
 
 > このページは `scripts/generate-wiki-index.mjs` により自動生成されます。wiki/ 内のページ変更時に PostToolUse hook で自動実行されます。
