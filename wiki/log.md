@@ -13,6 +13,82 @@ compile 実行の履歴。append-only。
 - duration: {所要時間}
 -->
 
+## [2026-04-18] auto-append | docs(wiki): Phase C-1a — D01-D04 系 +12 (#81)
+- commit: a98f747
+- pages: 15 wiki/*.md 変更
+- files:
+  - wiki/health/freshness-report.md
+  - wiki/health/orphan-report.md
+  - wiki/index.md
+  - wiki/sources/D01_li_1975_yorke-j-a.md
+  - wiki/sources/D01_perelman_2002_2002.md
+  - ... (+10)
+
+## [2026-04-18] auto-append | docs(wiki): Phase B-4 ≥5 達成 — D27/D28/D29/D30 sources +11 (#81)
+- commit: 031d088
+- pages: 14 wiki/*.md 変更
+- files:
+  - wiki/health/freshness-report.md
+  - wiki/health/orphan-report.md
+  - wiki/index.md
+  - wiki/sources/D27_chen_2011_modeling-fractal-structure-of.md
+  - wiki/sources/D27_jiang_2019_living-structure-christopher-alexander.md
+  - ... (+9)
+
+## [2026-04-18] auto-append | docs(wiki): Phase B-3 ≥5 達成 — D19/D20/D22/D23/D24/D25 sources +13 (#81)
+- commit: b5a7568
+- pages: 16 wiki/*.md 変更
+- files:
+  - wiki/health/freshness-report.md
+  - wiki/health/orphan-report.md
+  - wiki/index.md
+  - wiki/sources/D19_aristotle_1907_poetics.md
+  - wiki/sources/D19_barthes_1970_s-z.md
+  - ... (+11)
+
+## [2026-04-18] auto-append | docs(wiki): Phase B-2 ≥5 達成 — D14/D16/D17/D18 sources +14 (#81)
+- commit: 0bfe823
+- pages: 17 wiki/*.md 変更
+- files:
+  - wiki/health/freshness-report.md
+  - wiki/health/orphan-report.md
+  - wiki/index.md
+  - wiki/sources/D14_bargh_1999_chartrand-t-l.md
+  - wiki/sources/D14_ericsson_1993_tesch-romer-c.md
+  - ... (+12)
+
+## [2026-04-18] auto-append | docs(wiki): Phase B-1 ≥5 達成 — D03/D04/D05/D08/D10/D12 sources +12 (#81)
+- commit: 96b2701
+- pages: 14 wiki/*.md 変更
+- files:
+  - wiki/health/cn-divergence-report.md
+  - wiki/health/freshness-report.md
+  - wiki/health/orphan-report.md
+  - wiki/index.md
+  - wiki/sources/D03_johnson_2011_johnson-goody-2011-the.md
+  - ... (+9)
+
+## [2026-04-17] auto-append | docs(wiki): D26 sources ×5 + index 再生成 — mehr/limb/schulkin/ellamil/koelsch (#81)
+- commit: 218a161
+- pages: 8 wiki/*.md 変更
+- files:
+  - wiki/health/freshness-report.md
+  - wiki/health/orphan-report.md
+  - wiki/index.md
+  - wiki/sources/D26_ellamil_2016_2016.md
+  - wiki/sources/D26_koelsch_2005_siebel-w-a.md
+  - ... (+3)
+
+## [2026-04-17] auto-append | docs(wiki): D09 sources ×5 — schafer/fields/iliff/schultz/england (#81)
+- commit: 2b6607b
+- pages: 5 wiki/*.md 変更
+- files:
+  - wiki/sources/D09_england_2013_statistical-physics-of-self.md
+  - wiki/sources/D09_fields_2015_fields-2015-a-new.md
+  - wiki/sources/D09_iliff_2012_2012-a-paravascular-pathway.md
+  - wiki/sources/D09_schafer_2012_2012-microglia-sculpt-postnatal.md
+  - wiki/sources/D09_schultz_1997_schultz-dayan-montague-1997.md
+
 ## [2026-04-17] auto-append | feat(wiki): 信頼・価値・デザイン思考を concepts/ に格上げ、sources/ 分類追加
 - commit: 76661c0
 - pages: 35 wiki/*.md 変更
