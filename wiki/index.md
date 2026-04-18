@@ -174,7 +174,11 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D13_dewey_1934_art-as-experience|経験としての芸術（探究・思考論の観点）]]
 - [[sources/D13_whitehead_1929_process-and-reality|過程と実在]]
 
-#### D14 心理学 (1件)
+#### D14 心理学 (5件)
+- [[sources/D14_bargh_1999_chartrand-t-l|存在の耐え難い自動性]]
+- [[sources/D14_ericsson_1993_tesch-romer-c|熟達の獲得における意図的練習の役割 — 10 年ルール]]
+- [[sources/D14_hesse_2014_self-organized-criticality-as|神経系の基本特性としての自己組織化臨界性]]
+- [[sources/D14_maslow_1943_1943|人間の動機の理論 — 欲求階層]]
 - [[sources/D14_varela_1991_embodied-mind|身体化された心（The Embodied Mind）]]
 
 #### D15 美学 (5件)
@@ -184,16 +188,26 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D15_nose_1944_yugenron|幽玄論]]
 - [[sources/D15_zeami_classics|風姿花伝（花の美学）]]
 
-#### D16 歴史学 (3件)
+#### D16 歴史学 (5件)
 - [[sources/D16_braudel_1958_longue-duree|長期持続 — 歴史と社会科学の時間的多層性]]
 - [[sources/D16_ibn-khaldun_1377_muqaddimah|ムカッディマ（歴史序説）]]
+- [[sources/D16_scheffer_2012_2012|臨界転移を予兆する — 早期警告指標の統合]]
 - [[sources/D16_toynbee_1934_study-of-history|歴史の研究 — 文明の挑戦と応答]]
+- [[sources/D16_turchin_2013_war-space-evolution-old-world-complex-societies|戦争・空間・旧世界複雑社会の進化]]
 
-#### D17 言語学 (1件)
+#### D17 言語学 (5件)
+- [[sources/D17_beckner_2017_the-emergence-of-linguistic|オンライン反復学習における言語構造の創発]]
 - [[sources/D17_bickerton_1981_roots-of-language|言語の起源]]
+- [[sources/D17_jakobson_1956_halle-m|言語の基礎 — 弁別特徴と二極性（隠喩・換喩）]]
+- [[sources/D17_lupyan_2010_language-structure-is-partly|言語構造は社会構造によって部分的に決定される — 言語ニッチ仮説]]
+- [[sources/D17_senghas_2004_children-creating-core-properties|ニカラグア手話における言語の中核特性の創造]]
 
-#### D18 社会学 (1件)
+#### D18 社会学 (5件)
+- [[sources/D18_barabasi_1999_emergence-of-scaling-in|ランダムネットワークにおけるスケーリングの創発 — BA モデル]]
+- [[sources/D18_castellano_2009_statistical-physics-of-social|社会動態の統計物理学]]
 - [[sources/D18_durkheim_1893_division-labor|社会分業論 / De la division du travail social]]
+- [[sources/D18_granovetter_1973_1973|弱い紐帯の強さ]]
+- [[sources/D18_nadell_2010_emergence-of-spatial-structure|細胞集団における空間構造の創発と協力の進化]]
 
 #### D19 文学 (1件)
 - [[sources/D19_propp_1968_morphology-of-the-folktale|昔話の形態学]]
@@ -305,13 +319,13 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 | [[sources/D10_engel_1977_1977\|新しい医療モデルの必要 — 生物心理社会モデル]] | sources | 2026-04-18 |
 | [[sources/D10_serhan_2014_pro-resolving-lipid-mediators\|炎症収束を促進する脂質メディエーター — Resolution Physiology]] | sources | 2026-04-18 |
 | [[sources/D12_scheffer_2001_et-al\|生態系における破局的状態遷移]] | sources | 2026-04-18 |
-| [[concepts/デザイン思考（PD）\|デザイン思考（PD）]] | concepts | 2026-04-17 |
-| [[concepts/価値\|価値]] | concepts | 2026-04-17 |
-| [[concepts/信頼\|信頼]] | concepts | 2026-04-17 |
-| [[sources/D09_england_2013_statistical-physics-of-self\|自己複製の統計力学 — 熱力学的下限の導出]] | sources | 2026-04-17 |
-| [[sources/D09_fields_2015_fields-2015-a-new\|活動依存的ミエリン化 — 神経系可塑性の新しい機構]] | sources | 2026-04-17 |
-| [[sources/D09_iliff_2012_2012-a-paravascular-pathway\|脳の傍血管経路（glymphatic システム）— 脳脊髄液による間質溶質クリアランス]] | sources | 2026-04-17 |
-| [[sources/D09_schafer_2012_2012-microglia-sculpt-postnatal\|ミクログリアによる発達期シナプスの活動依存的・補体依存的な刈り込み]] | sources | 2026-04-17 |
-| [[sources/D09_schultz_1997_schultz-dayan-montague-1997\|予測と報酬の神経基盤 — ドーパミンによる予測誤差符号化]] | sources | 2026-04-17 |
+| [[sources/D14_bargh_1999_chartrand-t-l\|存在の耐え難い自動性]] | sources | 2026-04-18 |
+| [[sources/D14_ericsson_1993_tesch-romer-c\|熟達の獲得における意図的練習の役割 — 10 年ルール]] | sources | 2026-04-18 |
+| [[sources/D14_hesse_2014_self-organized-criticality-as\|神経系の基本特性としての自己組織化臨界性]] | sources | 2026-04-18 |
+| [[sources/D14_maslow_1943_1943\|人間の動機の理論 — 欲求階層]] | sources | 2026-04-18 |
+| [[sources/D16_scheffer_2012_2012\|臨界転移を予兆する — 早期警告指標の統合]] | sources | 2026-04-18 |
+| [[sources/D16_turchin_2013_war-space-evolution-old-world-complex-societies\|戦争・空間・旧世界複雑社会の進化]] | sources | 2026-04-18 |
+| [[sources/D17_beckner_2017_the-emergence-of-linguistic\|オンライン反復学習における言語構造の創発]] | sources | 2026-04-18 |
+| [[sources/D17_jakobson_1956_halle-m\|言語の基礎 — 弁別特徴と二極性（隠喩・換喩）]] | sources | 2026-04-18 |
 
 > このページは `scripts/generate-wiki-index.mjs` により自動生成されます。wiki/ 内のページ変更時に PostToolUse hook で自動実行されます。
