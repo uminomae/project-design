@@ -13,6 +13,17 @@ compile 実行の履歴。append-only。
 - duration: {所要時間}
 -->
 
+## [2026-04-18] auto-append | docs(wiki): Phase C-1a — D01-D04 系 +12 (#81)
+- commit: a98f747
+- pages: 15 wiki/*.md 変更
+- files:
+  - wiki/health/freshness-report.md
+  - wiki/health/orphan-report.md
+  - wiki/index.md
+  - wiki/sources/D01_li_1975_yorke-j-a.md
+  - wiki/sources/D01_perelman_2002_2002.md
+  - ... (+10)
+
 ## [2026-04-18] auto-append | docs(wiki): Phase B-4 ≥5 達成 — D27/D28/D29/D30 sources +11 (#81)
 - commit: 031d088
 - pages: 14 wiki/*.md 変更
