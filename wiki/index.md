@@ -114,13 +114,17 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D03_unknown_0000_the-chemical-basis-of|形態形成の化学的基礎 — Turing の反応拡散モデル]]
 - [[sources/D03_winter-chambon_1986_gel-point|架橋ポリマーのゲル点における線形粘弾性の解析]]
 
-#### D04 進化生物学 (6件)
+#### D04 進化生物学 (10件)
 - [[sources/D04_darwin_1859_origin-of-species|種の起源]]
 - [[sources/D04_eldredge-gould_1972_punctuated-equilibria|断続平衡説]]
+- [[sources/D04_fisher_1930_fisher-1930-the-genetical|自然選択の遺伝学的理論 — Fisher の数理進化論]]
+- [[sources/D04_goldenfeld_2007_biology-s-next-revolution|生物学の次の革命 — HGT・ウイルス・集合的進化]]
 - [[sources/D04_laland_2015_2015-the-extended-evolutionary|拡張進化的総合説（EES）— その構造・仮定・予測]]
 - [[sources/D04_sagan_1967_origin-mitosing-cells|有糸分裂細胞の起源]]
 - [[sources/D04_van_1973_1973|新しい進化の法則 — 絶滅の法則と Red Queen 仮説]]
 - [[sources/D04_waddington_1953_genetic-assimilation|遺伝的同化――獲得形質の遺伝]]
+- [[sources/D04_watson_2016_how-can-evolution-learn|進化はどのように学習するか — 進化と学習の数学的等価性]]
+- [[sources/D04_woese_2002_woese-2002-on-the|細胞の進化について — ダーウィン閾と HGT]]
 
 #### D05 地球科学 (5件)
 - [[sources/D05_bak_1988_wiesenfeld-k|自己組織化臨界性 — Bak-Tang-Wiesenfeld の砂山モデル]]
@@ -129,16 +133,24 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D05_morgan_1968_rises-trenches|プレートテクトニクスの数理的基礎 — 剛体球面ブロックモデルによる地殻運動の記述]]
 - [[sources/D05_watson_1983_daisyworld|Daisyworld — 生物-環境結合系のホメオスタシス寓話]]
 
-#### D06 天文学 (5件)
+#### D06 天文学 (12件)
 - [[sources/D06_abbott_2017_gw170817|GW170817：連星中性子星合体からの重力波観測]]
 - [[sources/D06_balbus-hawley_1991_shear-instability|磁気回転不安定性 — 弱磁場降着円盤における強力な局所剪断不安定性]]
+- [[sources/D06_blandford_1978_ostriker-j-p|天体物理学的衝撃波による粒子加速 — 一次 Fermi 加速]]
 - [[sources/D06_charbonneau_2010_dynamo-solar-cycle|太陽周期のダイナモモデル]]
+- [[sources/D06_frenk_2012_dark-matter-and-cosmic|ダークマターと宇宙構造 — LCDM 標準モデルの 40 年史]]
+- [[sources/D06_friston_2012_a-free-energy-principle|生物システムの自由エネルギー原理（D06 文脈）]]
 - [[sources/D06_jeans_1902_stability-nebula|ジーンズ不安定性 — 自己重力ガス球の安定性条件の導出]]
+- [[sources/D06_navarro_1997_universal-density-profile|階層的クラスタリングからの普遍密度プロファイル — NFW プロファイル]]
 - [[sources/D06_planck-collaboration_2016_cosmological-parameters|Planck 2015 年成果 XIII. 宇宙論的パラメータ]]
+- [[sources/D06_springel_2005_2005|Millennium Simulation — クエーサー・銀河・大規模構造の同時進化]]
+- [[sources/D06_tumlinson_2017_tumlinson-peeples-werk-2017|周銀河媒質（Circumgalactic Medium）— 銀河進化の鍵を握る多相ガス領域]]
+- [[sources/D06_white_1978_white-rees-1978-core|重いハロにおけるコア凝縮 — 銀河形成と階層的クラスタリングの 2 段階理論]]
 
-#### D07 工学・情報科学 (5件)
+#### D07 工学・情報科学 (6件)
 - [[sources/D07_candes-romberg-tao_2006_robust-uncertainty|ロバスト不確実性原理――疎な信号のフーリエサンプルからの完全再構成]]
 - [[sources/D07_diffie-hellman_1976_new-directions-cryptography|暗号の新方向]]
+- [[sources/D07_jacobson_1988_jacobson-1988-congestion-avoidance|輻輳回避と制御 — TCP の輻輳制御アルゴリズム]]
 - [[sources/D07_rumelhart-hinton-williams_1986_backpropagation|誤差逆伝播法による表現学習]]
 - [[sources/D07_shannon_1948_mathematical-theory-communication|通信の数学的理論]]
 - [[sources/D07_wiener_1948_cybernetics|サイバネティクス——動物と機械における制御と通信]]
@@ -356,12 +368,12 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 | [[sources/D03_pearson_1993_e\|単純な系における複雑なパターン — Gray-Scott 反応拡散]] | sources | 2026-04-18 |
 | [[sources/D03_thompson_1917_1917\|成長と形態 — D'Arcy Thompson による形態の物理学]] | sources | 2026-04-18 |
 | [[sources/D03_unknown_0000_the-chemical-basis-of\|形態形成の化学的基礎 — Turing の反応拡散モデル]] | sources | 2026-04-18 |
+| [[sources/D04_fisher_1930_fisher-1930-the-genetical\|自然選択の遺伝学的理論 — Fisher の数理進化論]] | sources | 2026-04-18 |
+| [[sources/D04_goldenfeld_2007_biology-s-next-revolution\|生物学の次の革命 — HGT・ウイルス・集合的進化]] | sources | 2026-04-18 |
 | [[sources/D04_laland_2015_2015-the-extended-evolutionary\|拡張進化的総合説（EES）— その構造・仮定・予測]] | sources | 2026-04-18 |
 | [[sources/D04_van_1973_1973\|新しい進化の法則 — 絶滅の法則と Red Queen 仮説]] | sources | 2026-04-18 |
+| [[sources/D04_watson_2016_how-can-evolution-learn\|進化はどのように学習するか — 進化と学習の数学的等価性]] | sources | 2026-04-18 |
+| [[sources/D04_woese_2002_woese-2002-on-the\|細胞の進化について — ダーウィン閾と HGT]] | sources | 2026-04-18 |
 | [[sources/D05_bak_1988_wiesenfeld-k\|自己組織化臨界性 — Bak-Tang-Wiesenfeld の砂山モデル]] | sources | 2026-04-18 |
-| [[sources/D05_lenton_2008_2008\|地球気候系のティッピング要素]] | sources | 2026-04-18 |
-| [[sources/D05_watson_1983_daisyworld\|Daisyworld — 生物-環境結合系のホメオスタシス寓話]] | sources | 2026-04-18 |
-| [[sources/D08_beggs_2003_beggs-plenz-2003-neuronal\|皮質神経回路におけるニューロン雪崩]] | sources | 2026-04-18 |
-| [[sources/D08_clark_2013_whatever-next-predictive-brains\|予測的な脳と状況づけられたエージェント — 階層的予測処理の射程]] | sources | 2026-04-18 |
 
 > このページは `scripts/generate-wiki-index.mjs` により自動生成されます。wiki/ 内のページ変更時に PostToolUse hook で自動実行されます。
