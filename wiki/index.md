@@ -266,18 +266,29 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D26_mehr_2019_et-al|人間の歌における普遍性と多様性]]
 - [[sources/D26_schulkin_2014_the-evolution-of-music|音楽の進化と人間の社会的能力]]
 
-#### D27 建築 (1件)
+#### D27 建築 (5件)
 - [[sources/D27_alexander_1977_pattern-language|パタン・ランゲージ]]
+- [[sources/D27_chen_2011_modeling-fractal-structure-of|都市規模分布のフラクタル構造 — 相関関数によるモデル化]]
+- [[sources/D27_jiang_2019_living-structure-christopher-alexander|生きた構造 — Christopher Alexander の遺産]]
+- [[sources/D27_moroni_2019_forms-of-self-organization-urban|自己組織化の諸形態 — 都市の複雑性と計画への含意]]
+- [[sources/D27_salingaros_1999_architecture-patterns-mathematics|建築・パターン・数学]]
 
-#### D28 舞台芸術 (1件)
+#### D28 舞台芸術 (5件)
+- [[sources/D28_mcneilly_2022_improvisation-and-emergence|即興と創発]]
+- [[sources/D28_randazzo_2026_emergence-a-parameter-of|創発 — 即興ダンスにおける芸術的創造性のパラメータ]]
+- [[sources/D28_sawyer_2026_creativity-and-emergence-in|創造性と創発 — 即興演劇と社会生活]]
+- [[sources/D28_shibolet_2018_bodyminds-in-movement-contact|動きの中の Bodyminds — Contact Improvisation の身体化された認知]]
 - [[sources/D28_zeami_classics|世阿弥十六部集]]
 
-#### D29 複雑系科学 (3件)
+#### D29 複雑系科学 (5件)
 - [[sources/D29_clauset_2007_power-law-distributions|実証データにおけるべき乗則分布]]
+- [[sources/D29_munoz_2018_criticality-and-dynamical-scaling|生物系における臨界性と動的スケーリング]]
+- [[sources/D29_newman_2003_structure-and-function-of|複雑ネットワークの構造と機能]]
 - [[sources/D29_prigogine_1977_time-structure-fluctuations|時間、構造、そしてゆらぎ — ノーベル講演]]
 - [[sources/D29_watkins_2016_25-years-self-organized-criticality|自己組織化臨界の25年：概念と論争]]
 
-#### D30 伝統知・技芸 (4件)
+#### D30 伝統知・技芸 (5件)
+- [[sources/D30_asmamaw_2020_the-role-of-local|地域知識による社会-生態系のレジリエンス強化]]
 - [[sources/D30_cbd_2018_nagoya-protocol|名古屋議定書]]
 - [[sources/D30_ipbes_2019_ilk-methodological-guidance|IPBES 先住民・地域知識 方法論ガイダンス]]
 - [[sources/D30_matsuki_numata_2021_ichiza-konryu|茶事における場の共創：「一座建立」の意味空間]]
