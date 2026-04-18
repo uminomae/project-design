@@ -13,6 +13,17 @@ compile 実行の履歴。append-only。
 - duration: {所要時間}
 -->
 
+## [2026-04-18] auto-append | docs(wiki): Phase C-1d — D07-D30 系 +12 / Phase C-1 完了 (#81)
+- commit: 07b3151
+- pages: 15 wiki/*.md 変更
+- files:
+  - wiki/health/freshness-report.md
+  - wiki/health/orphan-report.md
+  - wiki/index.md
+  - wiki/sources/D07_ashby_1956_ashby-1956-an-introduction.md
+  - wiki/sources/D07_doyle_2011_architecture-constraints-and-behavior.md
+  - ... (+10)
+
 ## [2026-04-18] auto-append | docs(wiki): Phase C-1c — D07-D15 系 +12 (#81)
 - commit: aeec8ed
 - pages: 15 wiki/*.md 変更
