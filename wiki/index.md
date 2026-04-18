@@ -209,12 +209,17 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D18_granovetter_1973_1973|弱い紐帯の強さ]]
 - [[sources/D18_nadell_2010_emergence-of-spatial-structure|細胞集団における空間構造の創発と協力の進化]]
 
-#### D19 文学 (1件)
+#### D19 文学 (5件)
+- [[sources/D19_aristotle_1907_poetics|詩学 — ミメーシス・筋・カタルシスの理論]]
+- [[sources/D19_barthes_1970_s-z|S/Z — 5 つのコードによる段階的テクスト分析]]
+- [[sources/D19_bourdieu_1996_rules-of-art|芸術のルール — 文学場の生成と構造]]
+- [[sources/D19_freytag_1895_technique-of-the-drama|ドラマの技法 — 5 部構成のピラミッド]]
 - [[sources/D19_propp_1968_morphology-of-the-folktale|昔話の形態学]]
 
-#### D20 法学・政治学 (4件)
+#### D20 法学・政治学 (5件)
 - [[sources/D20_idea_2011_practical-guide-constitution-building|憲法制定の実践ガイド]]
 - [[sources/D20_ostrom_1990_governing-the-commons|コモンズのガバナンス]]
+- [[sources/D20_sieys_1789_j|第三身分とは何か]]
 - [[sources/D20_singapore-convention_2018_mediation|シンガポール調停条約 (2018)]]
 - [[sources/D20_uncitral_2021_mediation-rules|UNCITRAL 調停規則 (2021)]]
 
@@ -226,22 +231,30 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D21_schumpeter_1912_theorie-der-wirtschaftlichen-entwicklung|経済発展の理論（初版）]]
 - [[sources/D21_schumpeter_1939_business-cycles|景気循環論]]
 
-#### D22 経営学 (2件)
+#### D22 経営学 (5件)
 - [[sources/D22_akiike_2021_design-thinking-articles|デザイン思考論文に求められる要件とは何か]]
+- [[sources/D22_friston_2018_am-i-self-conscious|私は自己意識を持つか — 自己組織化と自己意識]]
+- [[sources/D22_hu_2021_trajectories-of-idea-emergence|対話的協働問題解決におけるアイデア出現の軌跡]]
 - [[sources/D22_stanford_2010_design-thinking-process-guide|デザイン思考プロセスガイド]]
+- [[sources/D22_tuckman_1965_1965|小集団の発達系列 — Tuckman の 4 段階モデル]]
 
-#### D23 発達心理学 (3件)
+#### D23 発達心理学 (5件)
 - [[sources/D23_kegan_1982_evolving-self|進化する自己]]
 - [[sources/D23_kinoshita_2001_self-image|幼児は自己映像を「自分のこと」として見ているか？]]
 - [[sources/D23_nakama_2014_dids-japanese-version|多次元アイデンティティ発達尺度（DIDS）日本語版]]
+- [[sources/D23_rochat_2003_2003|乳幼児期に展開する自己意識の 5 レベル]]
+- [[sources/D23_tononi_2014_integrated-information-theory-3|現象学からメカニズムへ — 統合情報理論 3.0]]
 
-#### D24 宗教学 (3件)
+#### D24 宗教学 (5件)
 - [[sources/D24_dimarzio_2019_affiliation-conversion-departure|新宗教運動への加入・改宗・脱プログラミング・離脱の経験]]
+- [[sources/D24_james_1902_varieties-of-religious-experience|宗教的経験の諸相]]
+- [[sources/D24_otto_1917_idea-of-the-holy|聖なるもの — ヌミノーゼと mysterium tremendum]]
 - [[sources/D24_suzuki_1935_manual-of-zen-buddhism|禅仏教提要]]
 - [[sources/D24_teresa_1921_interior-castle|内なる城]]
 
-#### D25 人類学 (4件)
+#### D25 人類学 (5件)
 - [[sources/D25_barth_1969_ethnic-groups-intro|民族集団と境界（序論）]]
+- [[sources/D25_mauss_1925_essai-sur-le-don|贈与論 — 全体的給付の体系]]
 - [[sources/D25_pratt_1991_arts-of-the-contact-zone|コンタクト・ゾーンの技法]]
 - [[sources/D25_van-gennep_1960_rites-of-passage|通過儀礼（英訳版）]]
 - [[sources/D25_vangennep_1909_rites-of-passage|Les rites de passage（仏語原典）]]
