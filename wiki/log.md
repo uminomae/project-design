@@ -13,6 +13,17 @@ compile 実行の履歴。append-only。
 - duration: {所要時間}
 -->
 
+## [2026-04-18] auto-append | docs(wiki): Phase B-3 ≥5 達成 — D19/D20/D22/D23/D24/D25 sources +13 (#81)
+- commit: b5a7568
+- pages: 16 wiki/*.md 変更
+- files:
+  - wiki/health/freshness-report.md
+  - wiki/health/orphan-report.md
+  - wiki/index.md
+  - wiki/sources/D19_aristotle_1907_poetics.md
+  - wiki/sources/D19_barthes_1970_s-z.md
+  - ... (+11)
+
 ## [2026-04-18] auto-append | docs(wiki): Phase B-2 ≥5 達成 — D14/D16/D17/D18 sources +14 (#81)
 - commit: 0bfe823
 - pages: 17 wiki/*.md 変更
