@@ -322,12 +322,13 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D26_schulkin_2014_the-evolution-of-music|音楽の進化と人間の社会的能力]]
 - [[sources/D26_zatorre_2013_salimpoor-v-n|知覚から快へ — 音楽とその神経基盤]]
 
-#### D27 建築 (5件)
+#### D27 建築 (6件)
 - [[sources/D27_alexander_1977_pattern-language|パタン・ランゲージ]]
 - [[sources/D27_chen_2011_modeling-fractal-structure-of|都市規模分布のフラクタル構造 — 相関関数によるモデル化]]
 - [[sources/D27_jiang_2019_living-structure-christopher-alexander|生きた構造 — Christopher Alexander の遺産]]
 - [[sources/D27_moroni_2019_forms-of-self-organization-urban|自己組織化の諸形態 — 都市の複雑性と計画への含意]]
 - [[sources/D27_salingaros_1999_architecture-patterns-mathematics|建築・パターン・数学]]
+- [[sources/D27_schumacher_2008_parametricism-as-style|パラメトリシズム — スタイルとしての綱領]]
 
 #### D28 舞台芸術 (5件)
 - [[sources/D28_mcneilly_2022_improvisation-and-emergence|即興と創発]]
@@ -397,6 +398,7 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 | [[sources/D23_kartner_2024_early-social-cognitive-development\|初期社会-認知発達は動的発達システム — Lifeworld アプローチ]] | sources | 2026-04-19 |
 | [[sources/D23_kim_2024_understanding-explore-exploit-dynamics\|子ども発達における探索-活用ダイナミクス]] | sources | 2026-04-19 |
 | [[sources/D24_berkovichohana_2014_the-consciousness-state-space\|意識状態空間（CSS）— 意識と自己の統合モデル]] | sources | 2026-04-19 |
+| [[sources/D27_schumacher_2008_parametricism-as-style\|パラメトリシズム — スタイルとしての綱領]] | sources | 2026-04-19 |
 | [[sources/D01_li_1975_yorke-j-a\|周期 3 はカオスを意味する]] | sources | 2026-04-18 |
 | [[sources/D01_perelman_2002_2002\|Ricci flow のエントロピー公式と幾何学的応用 — Perelman の主論文]] | sources | 2026-04-18 |
 | [[sources/D02_friston_2012_a-free-energy-principle\|生物システムの自由エネルギー原理]] | sources | 2026-04-18 |
@@ -407,6 +409,5 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 | [[sources/D03_hordijk_2010_autocatalytic-sets-and-the\|自己触媒集合と生命の起源 — RAF 集合の数学]] | sources | 2026-04-18 |
 | [[sources/D03_johnson_2011_johnson-goody-2011-the\|Michaelis-Menten 1913 論文の翻訳と現代解析]] | sources | 2026-04-18 |
 | [[sources/D03_lotka_1925_lotka-1925-elements-of\|物理的生物学の要素 — Lotka の体系]] | sources | 2026-04-18 |
-| [[sources/D03_pearson_1993_e\|単純な系における複雑なパターン — Gray-Scott 反応拡散]] | sources | 2026-04-18 |
 
 > このページは `scripts/generate-wiki-index.mjs` により自動生成されます。wiki/ 内のページ変更時に PostToolUse hook で自動実行されます。
