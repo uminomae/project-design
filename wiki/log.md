@@ -13,6 +13,17 @@ compile 実行の履歴。append-only。
 - duration: {所要時間}
 -->
 
+## [2026-04-18] auto-append | docs(wiki): Phase B-1 ≥5 達成 — D03/D04/D05/D08/D10/D12 sources +12 (#81)
+- commit: 96b2701
+- pages: 14 wiki/*.md 変更
+- files:
+  - wiki/health/cn-divergence-report.md
+  - wiki/health/freshness-report.md
+  - wiki/health/orphan-report.md
+  - wiki/index.md
+  - wiki/sources/D03_johnson_2011_johnson-goody-2011-the.md
+  - ... (+9)
+
 ## [2026-04-17] auto-append | docs(wiki): D26 sources ×5 + index 再生成 — mehr/limb/schulkin/ellamil/koelsch (#81)
 - commit: 218a161
 - pages: 8 wiki/*.md 変更
