@@ -76,38 +76,50 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 
 ### creation-space 30ドメイン原典
 
-#### D01 数学 (7件)
+#### D01 数学 (9件)
 - [[sources/D01_bott_1988_morse-theory-indomitable|モース理論 不屈の研究]]
 - [[sources/D01_carlsson_2009_topology-and-data|トポロジーとデータ]]
 - [[sources/D01_ghrist_2008_barcodes|バーコード：データの永続的位相]]
 - [[sources/D01_hadamard_1945_psychology-invention|数学における発明の心理学]]
+- [[sources/D01_li_1975_yorke-j-a|周期 3 はカオスを意味する]]
+- [[sources/D01_perelman_2002_2002|Ricci flow のエントロピー公式と幾何学的応用 — Perelman の主論文]]
 - [[sources/D01_poincare_1908_science-and-method|科学と方法]]
 - [[sources/D01_tao_2007_good-mathematics|良い数学とは何か]]
 - [[sources/D01_thurston_1994_proof-and-progress|数学における証明と進歩について]]
 
-#### D02 物理学 (9件)
+#### D02 物理学 (13件)
 - [[sources/D02_abrikosov_1957_magnetic-properties-superconductors-second-group|第二種超伝導体の磁気的性質]]
 - [[sources/D02_anderson_1972_more-is-different|多いことは違うことだ]]
 - [[sources/D02_feynman_1948_space-time-approach-nonrelativistic-quantum-mechanics|非相対論的量子力学への時空アプローチ]]
+- [[sources/D02_friston_2012_a-free-energy-principle|生物システムの自由エネルギー原理]]
 - [[sources/D02_haken_1983_synergetics|シナジェティクス：入門]]
 - [[sources/D02_higgs_1964_broken-symmetries|対称性の破れとゲージボソンの質量]]
+- [[sources/D02_laughlin_2000_the-theory-of-everything|万物の理論 — 還元主義の限界と量子プロテクトレート]]
 - [[sources/D02_lorenz_1963_deterministic-nonperiodic-flow|決定論的非周期流]]
+- [[sources/D02_mora_2011_are-biological-systems-poised|生物系は臨界点に位置するか]]
 - [[sources/D02_nelson-kosterlitz_1977_universal-jump-superfluid|二次元超流体の超流体密度における普遍的ジャンプ]]
 - [[sources/D02_rayleigh_1916_problem-thermal-convection-horizontal-layer-fluid-heated-below|下方加熱された水平流体層における熱対流の問題]]
+- [[sources/D02_unknown_0000_observation-of-the-kibble|イオン結晶における Kibble-Zurek スケーリング則の観測]]
 - [[sources/D02_zurek_2003_decoherence-einselection-quantum-origins-classical|デコヒーレンス、アインセレクション、古典性の量子的起源]]
 
-#### D03 化学 (5件)
+#### D03 化学 (10件)
+- [[sources/D03_ameta_2021_2021|自己触媒化学反応系における自己複製とダーウィン進化]]
 - [[sources/D03_becker-doring_1935_keimbildung|過飽和蒸気における核形成の運動論的処理]]
 - [[sources/D03_field-noyes_1974_oscillations|化学系における振動 IV: 実在する化学反応のモデルにおけるリミットサイクル挙動]]
+- [[sources/D03_hordijk_2010_autocatalytic-sets-and-the|自己触媒集合と生命の起源 — RAF 集合の数学]]
 - [[sources/D03_johnson_2011_johnson-goody-2011-the|Michaelis-Menten 1913 論文の翻訳と現代解析]]
+- [[sources/D03_lotka_1925_lotka-1925-elements-of|物理的生物学の要素 — Lotka の体系]]
+- [[sources/D03_pearson_1993_e|単純な系における複雑なパターン — Gray-Scott 反応拡散]]
+- [[sources/D03_thompson_1917_1917|成長と形態 — D'Arcy Thompson による形態の物理学]]
 - [[sources/D03_unknown_0000_the-chemical-basis-of|形態形成の化学的基礎 — Turing の反応拡散モデル]]
 - [[sources/D03_winter-chambon_1986_gel-point|架橋ポリマーのゲル点における線形粘弾性の解析]]
 
-#### D04 進化生物学 (5件)
+#### D04 進化生物学 (6件)
 - [[sources/D04_darwin_1859_origin-of-species|種の起源]]
 - [[sources/D04_eldredge-gould_1972_punctuated-equilibria|断続平衡説]]
 - [[sources/D04_laland_2015_2015-the-extended-evolutionary|拡張進化的総合説（EES）— その構造・仮定・予測]]
 - [[sources/D04_sagan_1967_origin-mitosing-cells|有糸分裂細胞の起源]]
+- [[sources/D04_van_1973_1973|新しい進化の法則 — 絶滅の法則と Red Queen 仮説]]
 - [[sources/D04_waddington_1953_genetic-assimilation|遺伝的同化――獲得形質の遺伝]]
 
 #### D05 地球科学 (5件)
@@ -331,25 +343,25 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 
 | ページ | category | compiled |
 |--------|----------|----------|
+| [[sources/D01_li_1975_yorke-j-a\|周期 3 はカオスを意味する]] | sources | 2026-04-18 |
+| [[sources/D01_perelman_2002_2002\|Ricci flow のエントロピー公式と幾何学的応用 — Perelman の主論文]] | sources | 2026-04-18 |
+| [[sources/D02_friston_2012_a-free-energy-principle\|生物システムの自由エネルギー原理]] | sources | 2026-04-18 |
+| [[sources/D02_laughlin_2000_the-theory-of-everything\|万物の理論 — 還元主義の限界と量子プロテクトレート]] | sources | 2026-04-18 |
+| [[sources/D02_mora_2011_are-biological-systems-poised\|生物系は臨界点に位置するか]] | sources | 2026-04-18 |
+| [[sources/D02_unknown_0000_observation-of-the-kibble\|イオン結晶における Kibble-Zurek スケーリング則の観測]] | sources | 2026-04-18 |
+| [[sources/D03_ameta_2021_2021\|自己触媒化学反応系における自己複製とダーウィン進化]] | sources | 2026-04-18 |
+| [[sources/D03_hordijk_2010_autocatalytic-sets-and-the\|自己触媒集合と生命の起源 — RAF 集合の数学]] | sources | 2026-04-18 |
 | [[sources/D03_johnson_2011_johnson-goody-2011-the\|Michaelis-Menten 1913 論文の翻訳と現代解析]] | sources | 2026-04-18 |
+| [[sources/D03_lotka_1925_lotka-1925-elements-of\|物理的生物学の要素 — Lotka の体系]] | sources | 2026-04-18 |
+| [[sources/D03_pearson_1993_e\|単純な系における複雑なパターン — Gray-Scott 反応拡散]] | sources | 2026-04-18 |
+| [[sources/D03_thompson_1917_1917\|成長と形態 — D'Arcy Thompson による形態の物理学]] | sources | 2026-04-18 |
 | [[sources/D03_unknown_0000_the-chemical-basis-of\|形態形成の化学的基礎 — Turing の反応拡散モデル]] | sources | 2026-04-18 |
 | [[sources/D04_laland_2015_2015-the-extended-evolutionary\|拡張進化的総合説（EES）— その構造・仮定・予測]] | sources | 2026-04-18 |
+| [[sources/D04_van_1973_1973\|新しい進化の法則 — 絶滅の法則と Red Queen 仮説]] | sources | 2026-04-18 |
 | [[sources/D05_bak_1988_wiesenfeld-k\|自己組織化臨界性 — Bak-Tang-Wiesenfeld の砂山モデル]] | sources | 2026-04-18 |
 | [[sources/D05_lenton_2008_2008\|地球気候系のティッピング要素]] | sources | 2026-04-18 |
 | [[sources/D05_watson_1983_daisyworld\|Daisyworld — 生物-環境結合系のホメオスタシス寓話]] | sources | 2026-04-18 |
 | [[sources/D08_beggs_2003_beggs-plenz-2003-neuronal\|皮質神経回路におけるニューロン雪崩]] | sources | 2026-04-18 |
 | [[sources/D08_clark_2013_whatever-next-predictive-brains\|予測的な脳と状況づけられたエージェント — 階層的予測処理の射程]] | sources | 2026-04-18 |
-| [[sources/D08_tononi_2004_an-information-integration-theory\|意識の統合情報理論（IIT）]] | sources | 2026-04-18 |
-| [[sources/D10_engel_1977_1977\|新しい医療モデルの必要 — 生物心理社会モデル]] | sources | 2026-04-18 |
-| [[sources/D10_serhan_2014_pro-resolving-lipid-mediators\|炎症収束を促進する脂質メディエーター — Resolution Physiology]] | sources | 2026-04-18 |
-| [[sources/D12_scheffer_2001_et-al\|生態系における破局的状態遷移]] | sources | 2026-04-18 |
-| [[sources/D14_bargh_1999_chartrand-t-l\|存在の耐え難い自動性]] | sources | 2026-04-18 |
-| [[sources/D14_ericsson_1993_tesch-romer-c\|熟達の獲得における意図的練習の役割 — 10 年ルール]] | sources | 2026-04-18 |
-| [[sources/D14_hesse_2014_self-organized-criticality-as\|神経系の基本特性としての自己組織化臨界性]] | sources | 2026-04-18 |
-| [[sources/D14_maslow_1943_1943\|人間の動機の理論 — 欲求階層]] | sources | 2026-04-18 |
-| [[sources/D16_scheffer_2012_2012\|臨界転移を予兆する — 早期警告指標の統合]] | sources | 2026-04-18 |
-| [[sources/D16_turchin_2013_war-space-evolution-old-world-complex-societies\|戦争・空間・旧世界複雑社会の進化]] | sources | 2026-04-18 |
-| [[sources/D17_beckner_2017_the-emergence-of-linguistic\|オンライン反復学習における言語構造の創発]] | sources | 2026-04-18 |
-| [[sources/D17_jakobson_1956_halle-m\|言語の基礎 — 弁別特徴と二極性（隠喩・換喩）]] | sources | 2026-04-18 |
 
 > このページは `scripts/generate-wiki-index.mjs` により自動生成されます。wiki/ 内のページ変更時に PostToolUse hook で自動実行されます。
