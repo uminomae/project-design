@@ -13,6 +13,17 @@ compile 実行の履歴。append-only。
 - duration: {所要時間}
 -->
 
+## [2026-04-18] auto-append | docs(wiki): Phase B-4 ≥5 達成 — D27/D28/D29/D30 sources +11 (#81)
+- commit: 031d088
+- pages: 14 wiki/*.md 変更
+- files:
+  - wiki/health/freshness-report.md
+  - wiki/health/orphan-report.md
+  - wiki/index.md
+  - wiki/sources/D27_chen_2011_modeling-fractal-structure-of.md
+  - wiki/sources/D27_jiang_2019_living-structure-christopher-alexander.md
+  - ... (+9)
+
 ## [2026-04-18] auto-append | docs(wiki): Phase B-3 ≥5 達成 — D19/D20/D22/D23/D24/D25 sources +13 (#81)
 - commit: b5a7568
 - pages: 16 wiki/*.md 変更
