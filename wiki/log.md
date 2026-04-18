@@ -13,6 +13,15 @@ compile 実行の履歴。append-only。
 - duration: {所要時間}
 -->
 
+## [2026-04-19] auto-append | docs(wiki): D08 Miller & Cohen 2001 PFC 統合理論 (#81)
+- commit: 7c30e44
+- pages: 4 wiki/*.md 変更
+- files:
+  - wiki/health/freshness-report.md
+  - wiki/health/orphan-report.md
+  - wiki/index.md
+  - wiki/sources/D08_miller_2001_integrative-theory-prefrontal-cortex.md
+
 ## [2026-04-19] auto-append | docs(wiki): sources/pd/ 5 件 compile (#76)
 - commit: 38b2329
 - pages: 7 wiki/*.md 変更
