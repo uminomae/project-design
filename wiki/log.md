@@ -13,6 +13,16 @@ compile 実行の履歴。append-only。
 - duration: {所要時間}
 -->
 
+## [2026-04-19] auto-append | docs(wiki): D02 Strogatz 2001 + D29 Bak-Tang-Wiesenfeld 1988 compile
+- commit: bfa1929
+- pages: 5 wiki/*.md 変更
+- files:
+  - wiki/health/freshness-report.md
+  - wiki/health/orphan-report.md
+  - wiki/index.md
+  - wiki/sources/D02_strogatz_2001_exploring-complex-networks.md
+  - wiki/sources/D29_bak-tang-wiesenfeld_1988_self-organized-criticality.md
+
 ## [2026-04-19] auto-append | docs(wiki): D08 Miller & Cohen 2001 PFC 統合理論 (#81)
 - commit: 7c30e44
 - pages: 4 wiki/*.md 変更
