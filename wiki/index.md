@@ -1,6 +1,6 @@
 ---
 title: "Wiki Index"
-compiled: "2026-04-18"
+compiled: "2026-04-19"
 ---
 # Wiki -- Map of Content
 
@@ -87,7 +87,7 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D01_tao_2007_good-mathematics|良い数学とは何か]]
 - [[sources/D01_thurston_1994_proof-and-progress|数学における証明と進歩について]]
 
-#### D02 物理学 (13件)
+#### D02 物理学 (14件)
 - [[sources/D02_abrikosov_1957_magnetic-properties-superconductors-second-group|第二種超伝導体の磁気的性質]]
 - [[sources/D02_anderson_1972_more-is-different|多いことは違うことだ]]
 - [[sources/D02_feynman_1948_space-time-approach-nonrelativistic-quantum-mechanics|非相対論的量子力学への時空アプローチ]]
@@ -99,6 +99,7 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D02_mora_2011_are-biological-systems-poised|生物系は臨界点に位置するか]]
 - [[sources/D02_nelson-kosterlitz_1977_universal-jump-superfluid|二次元超流体の超流体密度における普遍的ジャンプ]]
 - [[sources/D02_rayleigh_1916_problem-thermal-convection-horizontal-layer-fluid-heated-below|下方加熱された水平流体層における熱対流の問題]]
+- [[sources/D02_strogatz_2001_exploring-complex-networks|複雑ネットワークの探究]]
 - [[sources/D02_unknown_0000_observation-of-the-kibble|イオン結晶における Kibble-Zurek スケーリング則の観測]]
 - [[sources/D02_zurek_2003_decoherence-einselection-quantum-origins-classical|デコヒーレンス、アインセレクション、古典性の量子的起源]]
 
@@ -114,13 +115,17 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D03_unknown_0000_the-chemical-basis-of|形態形成の化学的基礎 — Turing の反応拡散モデル]]
 - [[sources/D03_winter-chambon_1986_gel-point|架橋ポリマーのゲル点における線形粘弾性の解析]]
 
-#### D04 進化生物学 (6件)
+#### D04 進化生物学 (10件)
 - [[sources/D04_darwin_1859_origin-of-species|種の起源]]
 - [[sources/D04_eldredge-gould_1972_punctuated-equilibria|断続平衡説]]
+- [[sources/D04_fisher_1930_fisher-1930-the-genetical|自然選択の遺伝学的理論 — Fisher の数理進化論]]
+- [[sources/D04_goldenfeld_2007_biology-s-next-revolution|生物学の次の革命 — HGT・ウイルス・集合的進化]]
 - [[sources/D04_laland_2015_2015-the-extended-evolutionary|拡張進化的総合説（EES）— その構造・仮定・予測]]
 - [[sources/D04_sagan_1967_origin-mitosing-cells|有糸分裂細胞の起源]]
 - [[sources/D04_van_1973_1973|新しい進化の法則 — 絶滅の法則と Red Queen 仮説]]
 - [[sources/D04_waddington_1953_genetic-assimilation|遺伝的同化――獲得形質の遺伝]]
+- [[sources/D04_watson_2016_how-can-evolution-learn|進化はどのように学習するか — 進化と学習の数学的等価性]]
+- [[sources/D04_woese_2002_woese-2002-on-the|細胞の進化について — ダーウィン閾と HGT]]
 
 #### D05 地球科学 (5件)
 - [[sources/D05_bak_1988_wiesenfeld-k|自己組織化臨界性 — Bak-Tang-Wiesenfeld の砂山モデル]]
@@ -129,33 +134,50 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D05_morgan_1968_rises-trenches|プレートテクトニクスの数理的基礎 — 剛体球面ブロックモデルによる地殻運動の記述]]
 - [[sources/D05_watson_1983_daisyworld|Daisyworld — 生物-環境結合系のホメオスタシス寓話]]
 
-#### D06 天文学 (5件)
+#### D06 天文学 (12件)
 - [[sources/D06_abbott_2017_gw170817|GW170817：連星中性子星合体からの重力波観測]]
 - [[sources/D06_balbus-hawley_1991_shear-instability|磁気回転不安定性 — 弱磁場降着円盤における強力な局所剪断不安定性]]
+- [[sources/D06_blandford_1978_ostriker-j-p|天体物理学的衝撃波による粒子加速 — 一次 Fermi 加速]]
 - [[sources/D06_charbonneau_2010_dynamo-solar-cycle|太陽周期のダイナモモデル]]
+- [[sources/D06_frenk_2012_dark-matter-and-cosmic|ダークマターと宇宙構造 — LCDM 標準モデルの 40 年史]]
+- [[sources/D06_friston_2012_a-free-energy-principle|生物システムの自由エネルギー原理（D06 文脈）]]
 - [[sources/D06_jeans_1902_stability-nebula|ジーンズ不安定性 — 自己重力ガス球の安定性条件の導出]]
+- [[sources/D06_navarro_1997_universal-density-profile|階層的クラスタリングからの普遍密度プロファイル — NFW プロファイル]]
 - [[sources/D06_planck-collaboration_2016_cosmological-parameters|Planck 2015 年成果 XIII. 宇宙論的パラメータ]]
+- [[sources/D06_springel_2005_2005|Millennium Simulation — クエーサー・銀河・大規模構造の同時進化]]
+- [[sources/D06_tumlinson_2017_tumlinson-peeples-werk-2017|周銀河媒質（Circumgalactic Medium）— 銀河進化の鍵を握る多相ガス領域]]
+- [[sources/D06_white_1978_white-rees-1978-core|重いハロにおけるコア凝縮 — 銀河形成と階層的クラスタリングの 2 段階理論]]
 
-#### D07 工学・情報科学 (5件)
+#### D07 工学・情報科学 (9件)
+- [[sources/D07_ashby_1956_ashby-1956-an-introduction|サイバネティクス入門 — Ashby]]
 - [[sources/D07_candes-romberg-tao_2006_robust-uncertainty|ロバスト不確実性原理――疎な信号のフーリエサンプルからの完全再構成]]
 - [[sources/D07_diffie-hellman_1976_new-directions-cryptography|暗号の新方向]]
+- [[sources/D07_doyle_2011_architecture-constraints-and-behavior|アーキテクチャ・制約・振る舞い — 層化アーキテクチャの普遍原理]]
+- [[sources/D07_jacobson_1988_jacobson-1988-congestion-avoidance|輻輳回避と制御 — TCP の輻輳制御アルゴリズム]]
 - [[sources/D07_rumelhart-hinton-williams_1986_backpropagation|誤差逆伝播法による表現学習]]
+- [[sources/D07_schultz_1997_schultz-dayan-montague-1997|予測と報酬の神経基盤（D07 文脈）— ドーパミン予測誤差]]
 - [[sources/D07_shannon_1948_mathematical-theory-communication|通信の数学的理論]]
 - [[sources/D07_wiener_1948_cybernetics|サイバネティクス——動物と機械における制御と通信]]
 
-#### D08 神経科学 (5件)
+#### D08 神経科学 (9件)
 - [[sources/D08_beggs_2003_beggs-plenz-2003-neuronal|皮質神経回路におけるニューロン雪崩]]
 - [[sources/D08_clark_2013_whatever-next-predictive-brains|予測的な脳と状況づけられたエージェント — 階層的予測処理の射程]]
+- [[sources/D08_gaillard_2009_2009|意識的アクセスの収束する頭蓋内マーカー]]
+- [[sources/D08_mashour_2020_2020|意識的処理と Global Neuronal Workspace 仮説 — 20 年のレビュー]]
+- [[sources/D08_miller_2001_integrative-theory-prefrontal-cortex|前頭前皮質機能の統合理論]]
 - [[sources/D08_rao-ballard_1999_predictive-coding-visual-cortex|視覚皮質における予測符号化]]
 - [[sources/D08_tononi_2004_an-information-integration-theory|意識の統合情報理論（IIT）]]
+- [[sources/D08_tononi_2015_consciousness-here-there-and|意識はここに、そこに、どこにでも？— IIT による問いの再定式化]]
 - [[sources/D08_varela_1991_embodied-mind|身体化された心（The Embodied Mind）— 神経科学の視点]]
 
-#### D09 生命科学 (5件)
+#### D09 生命科学 (7件)
 - [[sources/D09_england_2013_statistical-physics-of-self|自己複製の統計力学 — 熱力学的下限の導出]]
 - [[sources/D09_fields_2015_fields-2015-a-new|活動依存的ミエリン化 — 神経系可塑性の新しい機構]]
 - [[sources/D09_iliff_2012_2012-a-paravascular-pathway|脳の傍血管経路（glymphatic システム）— 脳脊髄液による間質溶質クリアランス]]
+- [[sources/D09_levin_2012_molecular-bioelectricity|分子生体電気 — 膜電位勾配によるパターン形成制御]]
 - [[sources/D09_schafer_2012_2012-microglia-sculpt-postnatal|ミクログリアによる発達期シナプスの活動依存的・補体依存的な刈り込み]]
 - [[sources/D09_schultz_1997_schultz-dayan-montague-1997|予測と報酬の神経基盤 — ドーパミンによる予測誤差符号化]]
+- [[sources/D09_whitacre_2012_biological-robustness|生物学的ロバスト性 — パラダイム・メカニズム・系統原理]]
 
 #### D10 臨床医学 (5件)
 - [[sources/D10_akdis_2014_allergen-immunotherapy|アレルゲン免疫療法の新治療戦略]]
@@ -164,18 +186,24 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D10_serhan_2014_pro-resolving-lipid-mediators|炎症収束を促進する脂質メディエーター — Resolution Physiology]]
 - [[sources/D10_tonegawa_1987_nobel-lecture|抗体多様性の体細胞生成（ノーベル講演）]]
 
-#### D11 薬学 (6件)
+#### D11 薬学 (10件)
+- [[sources/D11_blanco_2015_principles-of-nanoparticle-design|ナノ粒子設計の原理 — 薬物送達の生物学的バリアを越えるには]]
+- [[sources/D11_csermely_2011_2011|Allo-Network Drugs — 細胞ネットワークにおけるアロステリーの活用]]
 - [[sources/D11_davies_2010_antibiotic-resistance|抗生物質耐性の起源と進化 — 耐性遺伝子の太古からの存在と人為的加速]]
 - [[sources/D11_ich_2008_q10-guideline|ICH Q10 医薬品品質システムガイドライン]]
 - [[sources/D11_ich_2009_q8-r2-guideline|ICH Q8(R2) 医薬品開発ガイドライン]]
 - [[sources/D11_ich_2023_q9-r1-guideline|ICH Q9(R1) 品質リスクマネジメントガイドライン]]
 - [[sources/D11_li_2014_network-pharmacology-qishenyiqi|漢方薬QiShenYiQiのネットワーク薬理学研究]]
+- [[sources/D11_paul_2010_m-et-al|製薬産業の R&D 生産性向上 — 大問題への分析]]
+- [[sources/D11_tognoli_2009_brain-coordination-dynamics-true|脳の協調ダイナミクス — 位相同期の真と偽]]
 - [[sources/D11_wu_2014_chinese-medicine|ネットワーク薬理学による漢方処方「君臣佐使」の検証]]
 
-#### D12 農学・生態学 (5件)
+#### D12 農学・生態学 (7件)
 - [[sources/D12_clements_1916_plant-succession|植物遷移論]]
+- [[sources/D12_crdoba_2020_agroecosystem-resilience|農業生態系のレジリエンス — エージェンシーと構造変革]]
 - [[sources/D12_holling_1973_resilience-stability|生態系のレジリエンスと安定性]]
 - [[sources/D12_maff_2005_ipm-practical-guideline|総合的病害虫・雑草管理（IPM）実践指針]]
+- [[sources/D12_medina_2023_developing-systems-theory-in|土壌アグロエコロジーにおけるシステム理論の発展]]
 - [[sources/D12_scheffer_2001_et-al|生態系における破局的状態遷移]]
 - [[sources/D12_stern_1959_integrated-control-concept|総合的防除の概念]]
 
@@ -186,23 +214,28 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D13_dewey_1934_art-as-experience|経験としての芸術（探究・思考論の観点）]]
 - [[sources/D13_whitehead_1929_process-and-reality|過程と実在]]
 
-#### D14 心理学 (5件)
+#### D14 心理学 (6件)
 - [[sources/D14_bargh_1999_chartrand-t-l|存在の耐え難い自動性]]
+- [[sources/D14_clark_1998_chalmers-d|拡張された心 — Clark & Chalmers]]
 - [[sources/D14_ericsson_1993_tesch-romer-c|熟達の獲得における意図的練習の役割 — 10 年ルール]]
 - [[sources/D14_hesse_2014_self-organized-criticality-as|神経系の基本特性としての自己組織化臨界性]]
 - [[sources/D14_maslow_1943_1943|人間の動機の理論 — 欲求階層]]
 - [[sources/D14_varela_1991_embodied-mind|身体化された心（The Embodied Mind）]]
 
-#### D15 美学 (5件)
+#### D15 美学 (8件)
+- [[sources/D15_botella_2018_what-are-the-stages|創造プロセスの段階とは何か — 視覚芸術学生の声から]]
 - [[sources/D15_dewey_1934_art-as-experience|経験としての芸術（美学・芸術哲学の観点）]]
 - [[sources/D15_kant_1790_kritik-der-urteilskraft|判断力批判]]
+- [[sources/D15_marin_2015_crossing-boundaries-toward-a|境界を越えて — 神経美学の一般モデルに向けて]]
 - [[sources/D15_motoori_1799_tama-no-ogushi|源氏物語玉の小櫛]]
 - [[sources/D15_nose_1944_yugenron|幽玄論]]
+- [[sources/D15_vessel_2012_2012|アートに脳が動くとき — 強い美的経験はデフォルトモードネットワークを活性化する]]
 - [[sources/D15_zeami_classics|風姿花伝（花の美学）]]
 
-#### D16 歴史学 (5件)
+#### D16 歴史学 (6件)
 - [[sources/D16_braudel_1958_longue-duree|長期持続 — 歴史と社会科学の時間的多層性]]
 - [[sources/D16_ibn-khaldun_1377_muqaddimah|ムカッディマ（歴史序説）]]
+- [[sources/D16_mascareo_2022_critical-transitions-in-ecosystems|生態系と社会における臨界転移 — 社会システム理論との対話]]
 - [[sources/D16_scheffer_2012_2012|臨界転移を予兆する — 早期警告指標の統合]]
 - [[sources/D16_toynbee_1934_study-of-history|歴史の研究 — 文明の挑戦と応答]]
 - [[sources/D16_turchin_2013_war-space-evolution-old-world-complex-societies|戦争・空間・旧世界複雑社会の進化]]
@@ -214,18 +247,23 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D17_lupyan_2010_language-structure-is-partly|言語構造は社会構造によって部分的に決定される — 言語ニッチ仮説]]
 - [[sources/D17_senghas_2004_children-creating-core-properties|ニカラグア手話における言語の中核特性の創造]]
 
-#### D18 社会学 (5件)
+#### D18 社会学 (9件)
 - [[sources/D18_barabasi_1999_emergence-of-scaling-in|ランダムネットワークにおけるスケーリングの創発 — BA モデル]]
 - [[sources/D18_castellano_2009_statistical-physics-of-social|社会動態の統計物理学]]
+- [[sources/D18_coleman_1988_1988|人的資本創造における社会関係資本]]
 - [[sources/D18_durkheim_1893_division-labor|社会分業論 / De la division du travail social]]
 - [[sources/D18_granovetter_1973_1973|弱い紐帯の強さ]]
 - [[sources/D18_nadell_2010_emergence-of-spatial-structure|細胞集団における空間構造の創発と協力の進化]]
+- [[sources/D18_nowak_2006_five-rules-for-the|協力進化のための 5 つのルール]]
+- [[sources/D18_simmel_1903_1903|都市と精神生活 — Simmel の都市社会学]]
+- [[sources/D18_weber_1905_1905-1930|プロテスタンティズムの倫理と資本主義の精神]]
 
-#### D19 文学 (5件)
+#### D19 文学 (6件)
 - [[sources/D19_aristotle_1907_poetics|詩学 — ミメーシス・筋・カタルシスの理論]]
 - [[sources/D19_barthes_1970_s-z|S/Z — 5 つのコードによる段階的テクスト分析]]
 - [[sources/D19_bourdieu_1996_rules-of-art|芸術のルール — 文学場の生成と構造]]
 - [[sources/D19_freytag_1895_technique-of-the-drama|ドラマの技法 — 5 部構成のピラミッド]]
+- [[sources/D19_genette_1980_genette-1980-narrative-discourse|物語のディスクール — Genette の物語論]]
 - [[sources/D19_propp_1968_morphology-of-the-folktale|昔話の形態学]]
 
 #### D20 法学・政治学 (5件)
@@ -235,55 +273,64 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D20_singapore-convention_2018_mediation|シンガポール調停条約 (2018)]]
 - [[sources/D20_uncitral_2021_mediation-rules|UNCITRAL 調停規則 (2021)]]
 
-#### D21 経済学 (6件)
+#### D21 経済学 (8件)
+- [[sources/D21_deco_2008_2008|安静時のノイズが脳の動的レパートリー探索を可能にする]]
 - [[sources/D21_hayek_1945_use-of-knowledge-in-society|社会における知識の利用]]
 - [[sources/D21_hayek_2002_competition-discovery-procedure|発見手続きとしての競争]]
+- [[sources/D21_hidalgo_2009_building-blocks-of-economic|経済複雑性の構成要素 — Method of Reflections]]
 - [[sources/D21_keynes_1936_general-theory|雇用・利子および貨幣の一般理論]]
 - [[sources/D21_knight_1921_risk-uncertainty-profit|リスク・不確実性・利潤]]
 - [[sources/D21_schumpeter_1912_theorie-der-wirtschaftlichen-entwicklung|経済発展の理論（初版）]]
 - [[sources/D21_schumpeter_1939_business-cycles|景気循環論]]
 
-#### D22 経営学 (5件)
+#### D22 経営学 (6件)
 - [[sources/D22_akiike_2021_design-thinking-articles|デザイン思考論文に求められる要件とは何か]]
 - [[sources/D22_friston_2018_am-i-self-conscious|私は自己意識を持つか — 自己組織化と自己意識]]
 - [[sources/D22_hu_2021_trajectories-of-idea-emergence|対話的協働問題解決におけるアイデア出現の軌跡]]
 - [[sources/D22_stanford_2010_design-thinking-process-guide|デザイン思考プロセスガイド]]
 - [[sources/D22_tuckman_1965_1965|小集団の発達系列 — Tuckman の 4 段階モデル]]
+- [[sources/D22_wenger_2010_communities-of-practice-and|実践コミュニティと社会的学習システム]]
 
-#### D23 発達心理学 (5件)
+#### D23 発達心理学 (7件)
+- [[sources/D23_kartner_2024_early-social-cognitive-development|初期社会-認知発達は動的発達システム — Lifeworld アプローチ]]
 - [[sources/D23_kegan_1982_evolving-self|進化する自己]]
+- [[sources/D23_kim_2024_understanding-explore-exploit-dynamics|子ども発達における探索-活用ダイナミクス]]
 - [[sources/D23_kinoshita_2001_self-image|幼児は自己映像を「自分のこと」として見ているか？]]
 - [[sources/D23_nakama_2014_dids-japanese-version|多次元アイデンティティ発達尺度（DIDS）日本語版]]
 - [[sources/D23_rochat_2003_2003|乳幼児期に展開する自己意識の 5 レベル]]
 - [[sources/D23_tononi_2014_integrated-information-theory-3|現象学からメカニズムへ — 統合情報理論 3.0]]
 
-#### D24 宗教学 (5件)
+#### D24 宗教学 (6件)
+- [[sources/D24_berkovichohana_2014_the-consciousness-state-space|意識状態空間（CSS）— 意識と自己の統合モデル]]
 - [[sources/D24_dimarzio_2019_affiliation-conversion-departure|新宗教運動への加入・改宗・脱プログラミング・離脱の経験]]
 - [[sources/D24_james_1902_varieties-of-religious-experience|宗教的経験の諸相]]
 - [[sources/D24_otto_1917_idea-of-the-holy|聖なるもの — ヌミノーゼと mysterium tremendum]]
 - [[sources/D24_suzuki_1935_manual-of-zen-buddhism|禅仏教提要]]
 - [[sources/D24_teresa_1921_interior-castle|内なる城]]
 
-#### D25 人類学 (5件)
+#### D25 人類学 (6件)
 - [[sources/D25_barth_1969_ethnic-groups-intro|民族集団と境界（序論）]]
+- [[sources/D25_cisnerosvelarde_2021_a-network-formation-game|階層出現のためのネットワーク形成ゲーム]]
 - [[sources/D25_mauss_1925_essai-sur-le-don|贈与論 — 全体的給付の体系]]
 - [[sources/D25_pratt_1991_arts-of-the-contact-zone|コンタクト・ゾーンの技法]]
 - [[sources/D25_van-gennep_1960_rites-of-passage|通過儀礼（英訳版）]]
 - [[sources/D25_vangennep_1909_rites-of-passage|Les rites de passage（仏語原典）]]
 
-#### D26 音楽学 (5件)
+#### D26 音楽学 (6件)
 - [[sources/D26_ellamil_2016_2016|ダンスクラブ環境における集団同期と音楽特徴の相関]]
 - [[sources/D26_koelsch_2005_siebel-w-a|音楽知覚の神経基盤に向けて — 7 モジュール統合モデル]]
 - [[sources/D26_limb_2008_neural-substrates-of-spontaneous|ジャズ即興演奏の神経基盤 — 前頭前皮質の活動解離]]
 - [[sources/D26_mehr_2019_et-al|人間の歌における普遍性と多様性]]
 - [[sources/D26_schulkin_2014_the-evolution-of-music|音楽の進化と人間の社会的能力]]
+- [[sources/D26_zatorre_2013_salimpoor-v-n|知覚から快へ — 音楽とその神経基盤]]
 
-#### D27 建築 (5件)
+#### D27 建築 (6件)
 - [[sources/D27_alexander_1977_pattern-language|パタン・ランゲージ]]
 - [[sources/D27_chen_2011_modeling-fractal-structure-of|都市規模分布のフラクタル構造 — 相関関数によるモデル化]]
 - [[sources/D27_jiang_2019_living-structure-christopher-alexander|生きた構造 — Christopher Alexander の遺産]]
 - [[sources/D27_moroni_2019_forms-of-self-organization-urban|自己組織化の諸形態 — 都市の複雑性と計画への含意]]
 - [[sources/D27_salingaros_1999_architecture-patterns-mathematics|建築・パターン・数学]]
+- [[sources/D27_schumacher_2008_parametricism-as-style|パラメトリシズム — スタイルとしての綱領]]
 
 #### D28 舞台芸術 (5件)
 - [[sources/D28_mcneilly_2022_improvisation-and-emergence|即興と創発]]
@@ -292,16 +339,18 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D28_shibolet_2018_bodyminds-in-movement-contact|動きの中の Bodyminds — Contact Improvisation の身体化された認知]]
 - [[sources/D28_zeami_classics|世阿弥十六部集]]
 
-#### D29 複雑系科学 (5件)
+#### D29 複雑系科学 (6件)
+- [[sources/D29_bak-tang-wiesenfeld_1988_self-organized-criticality|自己組織化臨界]]
 - [[sources/D29_clauset_2007_power-law-distributions|実証データにおけるべき乗則分布]]
 - [[sources/D29_munoz_2018_criticality-and-dynamical-scaling|生物系における臨界性と動的スケーリング]]
 - [[sources/D29_newman_2003_structure-and-function-of|複雑ネットワークの構造と機能]]
 - [[sources/D29_prigogine_1977_time-structure-fluctuations|時間、構造、そしてゆらぎ — ノーベル講演]]
 - [[sources/D29_watkins_2016_25-years-self-organized-criticality|自己組織化臨界の25年：概念と論争]]
 
-#### D30 伝統知・技芸 (5件)
+#### D30 伝統知・技芸 (6件)
 - [[sources/D30_asmamaw_2020_the-role-of-local|地域知識による社会-生態系のレジリエンス強化]]
 - [[sources/D30_cbd_2018_nagoya-protocol|名古屋議定書]]
+- [[sources/D30_gmezbaggethun_2013_traditional-ecological-knowledge-and|伝統的生態学的知識と地球環境変化]]
 - [[sources/D30_ipbes_2019_ilk-methodological-guidance|IPBES 先住民・地域知識 方法論ガイダンス]]
 - [[sources/D30_matsuki_numata_2021_ichiza-konryu|茶事における場の共創：「一座建立」の意味空間]]
 - [[sources/D30_zeami_classics|風姿花伝（一座建立・場の共創）]]
@@ -343,6 +392,19 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 
 | ページ | category | compiled |
 |--------|----------|----------|
+| [[sources/D02_strogatz_2001_exploring-complex-networks\|複雑ネットワークの探究]] | sources | 2026-04-19 |
+| [[sources/D08_miller_2001_integrative-theory-prefrontal-cortex\|前頭前皮質機能の統合理論]] | sources | 2026-04-19 |
+| [[sources/D11_blanco_2015_principles-of-nanoparticle-design\|ナノ粒子設計の原理 — 薬物送達の生物学的バリアを越えるには]] | sources | 2026-04-19 |
+| [[sources/D11_csermely_2011_2011\|Allo-Network Drugs — 細胞ネットワークにおけるアロステリーの活用]] | sources | 2026-04-19 |
+| [[sources/D11_tognoli_2009_brain-coordination-dynamics-true\|脳の協調ダイナミクス — 位相同期の真と偽]] | sources | 2026-04-19 |
+| [[sources/D14_clark_1998_chalmers-d\|拡張された心 — Clark & Chalmers]] | sources | 2026-04-19 |
+| [[sources/D18_nowak_2006_five-rules-for-the\|協力進化のための 5 つのルール]] | sources | 2026-04-19 |
+| [[sources/D22_wenger_2010_communities-of-practice-and\|実践コミュニティと社会的学習システム]] | sources | 2026-04-19 |
+| [[sources/D23_kartner_2024_early-social-cognitive-development\|初期社会-認知発達は動的発達システム — Lifeworld アプローチ]] | sources | 2026-04-19 |
+| [[sources/D23_kim_2024_understanding-explore-exploit-dynamics\|子ども発達における探索-活用ダイナミクス]] | sources | 2026-04-19 |
+| [[sources/D24_berkovichohana_2014_the-consciousness-state-space\|意識状態空間（CSS）— 意識と自己の統合モデル]] | sources | 2026-04-19 |
+| [[sources/D27_schumacher_2008_parametricism-as-style\|パラメトリシズム — スタイルとしての綱領]] | sources | 2026-04-19 |
+| [[sources/D29_bak-tang-wiesenfeld_1988_self-organized-criticality\|自己組織化臨界]] | sources | 2026-04-19 |
 | [[sources/D01_li_1975_yorke-j-a\|周期 3 はカオスを意味する]] | sources | 2026-04-18 |
 | [[sources/D01_perelman_2002_2002\|Ricci flow のエントロピー公式と幾何学的応用 — Perelman の主論文]] | sources | 2026-04-18 |
 | [[sources/D02_friston_2012_a-free-energy-principle\|生物システムの自由エネルギー原理]] | sources | 2026-04-18 |
@@ -350,18 +412,5 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 | [[sources/D02_mora_2011_are-biological-systems-poised\|生物系は臨界点に位置するか]] | sources | 2026-04-18 |
 | [[sources/D02_unknown_0000_observation-of-the-kibble\|イオン結晶における Kibble-Zurek スケーリング則の観測]] | sources | 2026-04-18 |
 | [[sources/D03_ameta_2021_2021\|自己触媒化学反応系における自己複製とダーウィン進化]] | sources | 2026-04-18 |
-| [[sources/D03_hordijk_2010_autocatalytic-sets-and-the\|自己触媒集合と生命の起源 — RAF 集合の数学]] | sources | 2026-04-18 |
-| [[sources/D03_johnson_2011_johnson-goody-2011-the\|Michaelis-Menten 1913 論文の翻訳と現代解析]] | sources | 2026-04-18 |
-| [[sources/D03_lotka_1925_lotka-1925-elements-of\|物理的生物学の要素 — Lotka の体系]] | sources | 2026-04-18 |
-| [[sources/D03_pearson_1993_e\|単純な系における複雑なパターン — Gray-Scott 反応拡散]] | sources | 2026-04-18 |
-| [[sources/D03_thompson_1917_1917\|成長と形態 — D'Arcy Thompson による形態の物理学]] | sources | 2026-04-18 |
-| [[sources/D03_unknown_0000_the-chemical-basis-of\|形態形成の化学的基礎 — Turing の反応拡散モデル]] | sources | 2026-04-18 |
-| [[sources/D04_laland_2015_2015-the-extended-evolutionary\|拡張進化的総合説（EES）— その構造・仮定・予測]] | sources | 2026-04-18 |
-| [[sources/D04_van_1973_1973\|新しい進化の法則 — 絶滅の法則と Red Queen 仮説]] | sources | 2026-04-18 |
-| [[sources/D05_bak_1988_wiesenfeld-k\|自己組織化臨界性 — Bak-Tang-Wiesenfeld の砂山モデル]] | sources | 2026-04-18 |
-| [[sources/D05_lenton_2008_2008\|地球気候系のティッピング要素]] | sources | 2026-04-18 |
-| [[sources/D05_watson_1983_daisyworld\|Daisyworld — 生物-環境結合系のホメオスタシス寓話]] | sources | 2026-04-18 |
-| [[sources/D08_beggs_2003_beggs-plenz-2003-neuronal\|皮質神経回路におけるニューロン雪崩]] | sources | 2026-04-18 |
-| [[sources/D08_clark_2013_whatever-next-predictive-brains\|予測的な脳と状況づけられたエージェント — 階層的予測処理の射程]] | sources | 2026-04-18 |
 
 > このページは `scripts/generate-wiki-index.mjs` により自動生成されます。wiki/ 内のページ変更時に PostToolUse hook で自動実行されます。

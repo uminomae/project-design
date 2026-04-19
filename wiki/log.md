@@ -13,6 +13,100 @@ compile 実行の履歴。append-only。
 - duration: {所要時間}
 -->
 
+## [2026-04-19] auto-append | docs(wiki): D02 Strogatz 2001 + D29 Bak-Tang-Wiesenfeld 1988 compile
+- commit: bfa1929
+- pages: 5 wiki/*.md 変更
+- files:
+  - wiki/health/freshness-report.md
+  - wiki/health/orphan-report.md
+  - wiki/index.md
+  - wiki/sources/D02_strogatz_2001_exploring-complex-networks.md
+  - wiki/sources/D29_bak-tang-wiesenfeld_1988_self-organized-criticality.md
+
+## [2026-04-19] auto-append | docs(wiki): D08 Miller & Cohen 2001 PFC 統合理論 (#81)
+- commit: 7c30e44
+- pages: 4 wiki/*.md 変更
+- files:
+  - wiki/health/freshness-report.md
+  - wiki/health/orphan-report.md
+  - wiki/index.md
+  - wiki/sources/D08_miller_2001_integrative-theory-prefrontal-cortex.md
+
+## [2026-04-19] auto-append | docs(wiki): sources/pd/ 5 件 compile (#76)
+- commit: 38b2329
+- pages: 7 wiki/*.md 変更
+- files:
+  - wiki/health/freshness-report.md
+  - wiki/health/orphan-report.md
+  - wiki/sources/pd/design-thinking-integrated.md
+  - wiki/sources/pd/kesson-bridge.md
+  - wiki/sources/pd/origin-survey.md
+  - ... (+2)
+
+## [2026-04-19] auto-append | docs(wiki): D27 schumacher 2008 パラメトリシスト綱領 (#80)
+- commit: 090b652
+- pages: 4 wiki/*.md 変更
+- files:
+  - wiki/health/freshness-report.md
+  - wiki/health/orphan-report.md
+  - wiki/index.md
+  - wiki/sources/D27_schumacher_2008_parametricism-as-style.md
+
+## [2026-04-19] auto-append | docs(wiki): Phase C-2b — PMC 3件 (#81)
+- commit: 911e947
+- pages: 6 wiki/*.md 変更
+- files:
+  - wiki/health/freshness-report.md
+  - wiki/health/orphan-report.md
+  - wiki/index.md
+  - wiki/sources/D11_blanco_2015_principles-of-nanoparticle-design.md
+  - wiki/sources/D11_tognoli_2009_brain-coordination-dynamics-true.md
+  - ... (+1)
+
+## [2026-04-19] auto-append | docs(wiki): Phase C-2a — WebFetch 6件 (#81)
+- commit: c02bec7
+- pages: 10 wiki/*.md 変更
+- files:
+  - wiki/health/cn-divergence-report.md
+  - wiki/health/freshness-report.md
+  - wiki/health/orphan-report.md
+  - wiki/index.md
+  - wiki/sources/D11_csermely_2011_2011.md
+  - ... (+5)
+
+## [2026-04-18] auto-append | docs(wiki): Phase C-1d — D07-D30 系 +12 / Phase C-1 完了 (#81)
+- commit: 07b3151
+- pages: 15 wiki/*.md 変更
+- files:
+  - wiki/health/freshness-report.md
+  - wiki/health/orphan-report.md
+  - wiki/index.md
+  - wiki/sources/D07_ashby_1956_ashby-1956-an-introduction.md
+  - wiki/sources/D07_doyle_2011_architecture-constraints-and-behavior.md
+  - ... (+10)
+
+## [2026-04-18] auto-append | docs(wiki): Phase C-1c — D07-D15 系 +12 (#81)
+- commit: aeec8ed
+- pages: 15 wiki/*.md 変更
+- files:
+  - wiki/health/freshness-report.md
+  - wiki/health/orphan-report.md
+  - wiki/index.md
+  - wiki/sources/D07_schultz_1997_schultz-dayan-montague-1997.md
+  - wiki/sources/D08_gaillard_2009_2009.md
+  - ... (+10)
+
+## [2026-04-18] auto-append | docs(wiki): Phase C-1b — D04/D06/D07 系 +12 (#81)
+- commit: ec8c1e9
+- pages: 15 wiki/*.md 変更
+- files:
+  - wiki/health/freshness-report.md
+  - wiki/health/orphan-report.md
+  - wiki/index.md
+  - wiki/sources/D04_fisher_1930_fisher-1930-the-genetical.md
+  - wiki/sources/D04_goldenfeld_2007_biology-s-next-revolution.md
+  - ... (+10)
+
 ## [2026-04-18] auto-append | docs(wiki): Phase C-1a — D01-D04 系 +12 (#81)
 - commit: a98f747
 - pages: 15 wiki/*.md 変更
