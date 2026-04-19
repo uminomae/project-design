@@ -1,6 +1,6 @@
 ---
 title: "Wiki Index"
-compiled: "2026-04-18"
+compiled: "2026-04-19"
 ---
 # Wiki -- Map of Content
 
@@ -87,7 +87,7 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D01_tao_2007_good-mathematics|良い数学とは何か]]
 - [[sources/D01_thurston_1994_proof-and-progress|数学における証明と進歩について]]
 
-#### D02 物理学 (13件)
+#### D02 物理学 (14件)
 - [[sources/D02_abrikosov_1957_magnetic-properties-superconductors-second-group|第二種超伝導体の磁気的性質]]
 - [[sources/D02_anderson_1972_more-is-different|多いことは違うことだ]]
 - [[sources/D02_feynman_1948_space-time-approach-nonrelativistic-quantum-mechanics|非相対論的量子力学への時空アプローチ]]
@@ -99,6 +99,7 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D02_mora_2011_are-biological-systems-poised|生物系は臨界点に位置するか]]
 - [[sources/D02_nelson-kosterlitz_1977_universal-jump-superfluid|二次元超流体の超流体密度における普遍的ジャンプ]]
 - [[sources/D02_rayleigh_1916_problem-thermal-convection-horizontal-layer-fluid-heated-below|下方加熱された水平流体層における熱対流の問題]]
+- [[sources/D02_strogatz_2001_exploring-complex-networks|複雑ネットワークの探究]]
 - [[sources/D02_unknown_0000_observation-of-the-kibble|イオン結晶における Kibble-Zurek スケーリング則の観測]]
 - [[sources/D02_zurek_2003_decoherence-einselection-quantum-origins-classical|デコヒーレンス、アインセレクション、古典性の量子的起源]]
 
@@ -338,7 +339,8 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D28_shibolet_2018_bodyminds-in-movement-contact|動きの中の Bodyminds — Contact Improvisation の身体化された認知]]
 - [[sources/D28_zeami_classics|世阿弥十六部集]]
 
-#### D29 複雑系科学 (5件)
+#### D29 複雑系科学 (6件)
+- [[sources/D29_bak-tang-wiesenfeld_1988_self-organized-criticality|自己組織化臨界]]
 - [[sources/D29_clauset_2007_power-law-distributions|実証データにおけるべき乗則分布]]
 - [[sources/D29_munoz_2018_criticality-and-dynamical-scaling|生物系における臨界性と動的スケーリング]]
 - [[sources/D29_newman_2003_structure-and-function-of|複雑ネットワークの構造と機能]]
@@ -390,6 +392,7 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 
 | ページ | category | compiled |
 |--------|----------|----------|
+| [[sources/D02_strogatz_2001_exploring-complex-networks\|複雑ネットワークの探究]] | sources | 2026-04-19 |
 | [[sources/D08_miller_2001_integrative-theory-prefrontal-cortex\|前頭前皮質機能の統合理論]] | sources | 2026-04-19 |
 | [[sources/D11_blanco_2015_principles-of-nanoparticle-design\|ナノ粒子設計の原理 — 薬物送達の生物学的バリアを越えるには]] | sources | 2026-04-19 |
 | [[sources/D11_csermely_2011_2011\|Allo-Network Drugs — 細胞ネットワークにおけるアロステリーの活用]] | sources | 2026-04-19 |
@@ -401,6 +404,7 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 | [[sources/D23_kim_2024_understanding-explore-exploit-dynamics\|子ども発達における探索-活用ダイナミクス]] | sources | 2026-04-19 |
 | [[sources/D24_berkovichohana_2014_the-consciousness-state-space\|意識状態空間（CSS）— 意識と自己の統合モデル]] | sources | 2026-04-19 |
 | [[sources/D27_schumacher_2008_parametricism-as-style\|パラメトリシズム — スタイルとしての綱領]] | sources | 2026-04-19 |
+| [[sources/D29_bak-tang-wiesenfeld_1988_self-organized-criticality\|自己組織化臨界]] | sources | 2026-04-19 |
 | [[sources/D01_li_1975_yorke-j-a\|周期 3 はカオスを意味する]] | sources | 2026-04-18 |
 | [[sources/D01_perelman_2002_2002\|Ricci flow のエントロピー公式と幾何学的応用 — Perelman の主論文]] | sources | 2026-04-18 |
 | [[sources/D02_friston_2012_a-free-energy-principle\|生物システムの自由エネルギー原理]] | sources | 2026-04-18 |
@@ -408,7 +412,5 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 | [[sources/D02_mora_2011_are-biological-systems-poised\|生物系は臨界点に位置するか]] | sources | 2026-04-18 |
 | [[sources/D02_unknown_0000_observation-of-the-kibble\|イオン結晶における Kibble-Zurek スケーリング則の観測]] | sources | 2026-04-18 |
 | [[sources/D03_ameta_2021_2021\|自己触媒化学反応系における自己複製とダーウィン進化]] | sources | 2026-04-18 |
-| [[sources/D03_hordijk_2010_autocatalytic-sets-and-the\|自己触媒集合と生命の起源 — RAF 集合の数学]] | sources | 2026-04-18 |
-| [[sources/D03_johnson_2011_johnson-goody-2011-the\|Michaelis-Menten 1913 論文の翻訳と現代解析]] | sources | 2026-04-18 |
 
 > このページは `scripts/generate-wiki-index.mjs` により自動生成されます。wiki/ 内のページ変更時に PostToolUse hook で自動実行されます。
