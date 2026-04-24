@@ -84,6 +84,62 @@ ln -sf ../../../project-design/.claude/hooks/{file} .claude/hooks/{file}
 
 `scripts/verify-hooks-sync.sh` で全 repo のリンク状態を検証する。
 
+## design-system の正本管理
+
+### 原則
+
+**design system (tokens / components) は pd に正本を置き、3 repo (kesson / creation / awareness) から参照する。**
+
+pd の `design-system/` を更新すれば、3 repo に反映される（参照方式は pd#86 ADR 決着による）。
+
+### 配置
+
+| ファイル | 用途 |
+|---------|------|
+| `design-system/tokens.css` | `--ds-*` 共通 token（現状 44 個、拡張可） |
+| `design-system/components.md` | SYSTEMIZE 候補 component の仕様記述（pd#90 で拡充予定） |
+| `design-system/tokens.json` | Claude Design 連携用の構造化データ（pd#91 で整備予定） |
+| `design-system/README.md` | 三層構造の説明 + 参照ガイド |
+
+### 三層構造
+
+| Layer | Prefix | 管轄 | 配置 |
+|-------|--------|------|------|
+| メタ共通 | `--ds-*` | 3 repo 値一致 token | pd `design-system/tokens.css` |
+| pd 固有 | `--pd-*`（統一予定、現状 `--bg / --ink / --gold / --navy / --coral / --glass-* / --glow-*`） | pd の light theme + warm + glow | pd `src/styles/tokens.css`（既存維持） |
+| repo 個性 | `--kesson-* / --cs-* / --as-*` | intentional difference | 各 repo `src/styles/tokens.css`（既存維持） |
+
+**注**: pd 固有の prefix 統一は pd#88 で追跡。`--kesson-*` prefix の cross-repo 汚染整理は techo#128 で追跡。
+
+### 各 repo での参照方法（現状: 相対 import）
+
+3 repo の `src/styles/tokens.css` 冒頭に以下を配置:
+
+```css
+@import url('../../../project-design/design-system/tokens.css');
+```
+
+各 token は `var(--ds-*, <既存値>)` で fallback 付き alias 化する。`@import` が解決できない場合も fallback で従来動作。
+
+**注**: 相対パス方式は本番 deploy (GitHub Pages 別 URL prefix) で解決しない可能性がある。**採用方式は pd#86 ADR で決定**（CDN / submodule / build-time inline / 絶対パスの比較）。
+
+### 新規 repo 立ち上げ時の手順
+
+1. `src/styles/tokens.css` を作成
+2. 冒頭に `@import url('../../../project-design/design-system/tokens.css');`（ADR 決着後は採用方式に従う）
+3. 必要な `--ds-*` を `var(--ds-*, <初期値>)` で alias、repo 個性 token は `--{repo}-*` prefix で定義
+4. `src/styles/tokens.css` 以外で `--ds-*` を直接参照しない（alias 経由のみ）
+
+### 参考
+
+- pd#84 (CLOSED) — design-system/ 新設、`--ds-*` 44 token
+- pd#86 — import 方式 ADR
+- pd#88 — pd 固有 token の `--pd-*` prefix 統一
+- pd#90 — components.md 拡充
+- pd#91 — Claude Design 連携口整備
+- techo#126 — design system 集約の発端 issue
+- techo#128 — `--kesson-*` prefix cross-repo 整理
+
 ## 委任レベル
 
 | レベル | 例 |
@@ -170,6 +226,7 @@ lsof -i :3004 -P
 - docs/ の構造的変更
 - develop → main マージ
 - 新しいIssueの作成
+- `design-system/tokens.css` の token 追加・削除・rename（3 repo 波及のため）
 
 ## 関連リポジトリ
 
