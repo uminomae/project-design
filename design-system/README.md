@@ -1,20 +1,17 @@
 # project-design / design-system
 
-**purpose**: dev/ 配下の UI 層で共有する token / component の**単一ソース**。
+**purpose**: pd 自身の visual language（light theme + warm + glow）の token / component。
 
-## 三層構造
+> **2026-05-03 撤回**: cs / ks / as への CDN 配信構造（pd#86 ADR）は **Superseded**。Claude Design が GitHub repo を直接読み込むため、各 repo は self-contained に戻った（`--ds-*` token を各 repo の `src/styles/tokens.css` に inline 済）。
+> 本ディレクトリは **pd 自身用** として残置する。components/ 配下の clear-storage / startup-error も pd 自身が使うときのリファレンスとして残す。
 
-| Layer | Prefix | 管轄 | 配置 |
-|-------|--------|------|------|
-| メタ共通 | `--ds-*` | 3 repo（kesson / creation / awareness）で値が一致する token | 本ディレクトリ `tokens.css` |
-| pd 固有 | `--pd-*` | pd の light theme + warm palette + glow 表現 | `../src/styles/tokens.css`（既存） |
-| repo 個性 | `--kesson-* / --cs-* / --as-*` | 各 repo の intentional difference（action 濃度 / topbar サイズ / surface 階調 など） | 各 repo `src/styles/tokens.css`（既存） |
+## 構成
 
-## 原則
-
-- pd 本体 UI（`project-design/index.html` + `project-design/src/styles/`）は**触らない**。pd は light theme + glow 表現を保持する。
-- design system は**追加レイヤー**。pd 本体と同居するが別ブランドで運用する。
-- 3 repo からの参照方式は未定（submodule / CDN / npm）。現状は同 workspace 前提で相対パス参照を想定。
+| ファイル | 用途 |
+|---------|------|
+| `tokens.css` | pd 自身の design token（参考: cs/ks/as は同じ値を inline 保持） |
+| `components/` | pd 自身の component reference |
+| `components.md` | component カタログ（pd 自身用） |
 
 ## 参照方式の現状と既知の落とし穴
 

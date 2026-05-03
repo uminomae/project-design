@@ -86,42 +86,13 @@ ln -sf ../../../project-design/.claude/hooks/{file} .claude/hooks/{file}
 
 ## design-system の正本管理
 
-### 原則
+pd は自身の visual language（light theme + warm + glow）を `design-system/` ディレクトリに保持する。
 
-**design system (tokens / components) は pd に正本を置き、3 repo (kesson / creation / awareness) から参照する。**
+**cs / ks / as への CDN 配信構造は撤回**（Claude Design 方針転換 2026-05-03）。
+各 repo は self-contained 化済（CDN `@import` 削除、`--ds-*` token を inline）。
+Claude Design は GitHub repo を直接読み込む方式のため、**各 repo 自己完結が前提**。
 
-pd の `design-system/` を更新すれば、3 repo に反映される（参照方式は pd#86 ADR 決着による）。
-
-### 配置
-
-| ファイル | 用途 |
-|---------|------|
-| `design-system/tokens.css` | `--ds-*` 共通 token（現状 44 個、拡張可） |
-| `design-system/components.md` | SYSTEMIZE 候補 component の仕様記述（pd#90 で拡充予定） |
-| `design-system/tokens.json` | Claude Design 連携用の構造化データ（pd#91 で整備予定） |
-| `design-system/README.md` | 三層構造の説明 + 参照ガイド |
-
-### 三層構造
-
-| Layer | Prefix | 管轄 | 配置 |
-|-------|--------|------|------|
-| メタ共通 | `--ds-*` | 3 repo 値一致 token | pd `design-system/tokens.css` |
-| pd 固有 | `--pd-*`（統一予定、現状 `--bg / --ink / --gold / --navy / --coral / --glass-* / --glow-*`） | pd の light theme + warm + glow | pd `src/styles/tokens.css`（既存維持） |
-| repo 個性 | `--kesson-* / --cs-* / --as-*` | intentional difference | 各 repo `src/styles/tokens.css`（既存維持） |
-
-**注**: pd 固有の prefix 統一は pd#88 で追跡。`--kesson-*` prefix の cross-repo 汚染整理は techo#128 で追跡。
-
-### 各 repo での参照方法（現状: 相対 import）
-
-3 repo の `src/styles/tokens.css` 冒頭に以下を配置:
-
-```css
-@import url('../../../project-design/design-system/tokens.css');
-```
-
-各 token は `var(--ds-*, <既存値>)` で fallback 付き alias 化する。`@import` が解決できない場合も fallback で従来動作。
-
-**注**: 相対パス方式は本番 deploy (GitHub Pages 別 URL prefix) で解決しない可能性がある。**採用方式は pd#86 ADR で決定**（CDN / submodule / build-time inline / 絶対パスの比較）。
+ADR 0001 (`docs/adr/0001-design-system-import.md`) は Superseded。
 
 ### 新規 repo 立ち上げ時の手順
 
