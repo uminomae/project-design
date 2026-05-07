@@ -201,12 +201,15 @@ lsof -i :3004 -P
 
 ## 関連リポジトリ
 
+pd と横断する 3 repo は **cs / as / ks**。pd 自身の design-system / hooks / skills / コンテンツ調査ルール等の **共通枠組み**は cs/as/ks にも適用される。横断的変更は techo を起点として行う。
+
 | リポジトリ | 関係 |
 |---|---|
+| `creation-space` (cs) | 「創造のモデル」を独立構築する拠点。PD 論の基盤部品として引用する（詳細: `.claude/rules/cs-as-component.md`） |
+| `awareness-space` (as) | 「気づき・意識のモデル」を独立構築する拠点。PD 論の基盤部品 |
+| `kesson-space` (ks) | 「欠損駆動思考」を体現するサイト。PD 論の基盤部品 |
 | `pjdhiro` | 公開先。`_pages/pd/` の MD をホスティング |
-| `kesson-driven-thinking` | 欠損駆動思考の探索拠点。PD の重要部品 |
-| `creation-space` | 「創造のモデル」を独立構築する拠点。PD 論の基盤部品として引用する（詳細: `.claude/rules/cs-as-component.md`） |
-| `kesson-space` | kesson-space サイト |
+| `kesson-driven-thinking` | 移設中（kdt）、最終的にアーカイブ予定 |
 
 ## 参照ガイド
 
