@@ -116,7 +116,7 @@ export const TRANSLATIONS = {
     "overview.definition.item2": "実行・管理方法の構想・設計",
     "overview.scope.title": "射程",
     "overview.scope.body":
-      "営利・非営利の事業を主たる適用対象とする。研究、人生など、主体が目的を持って行為する営み一般に適用できる。",
+      "営利・非営利の事業を主たる適用対象とする（論証の射程）。研究、人生など、主体が目的を持って行為する営み一般へは、構造の類似を手がかりに広げて考える（論証ではなく試み）。",
     "overview.domain.title": "領域",
     "overview.domain.body":
       "コミュニケーション（情報処理＋感情処理）と環境適応（経営学など）",
@@ -139,7 +139,7 @@ export const TRANSLATIONS = {
     "section.being.label": "Being",
     "section.being.title": "起きていること",
     "section.being.body":
-      "場（Field）が現れ、差異＝波（Wave）が立ち上がり、縁＝境界（Relation）が結ばれ、衝突が渦（Spinor）として回り、成果が束（Bundle）として成る。プロジェクトの現在地を知ること。",
+      "場（Field）が現れ、差異＝波（Wave）が立ち上がり、縁＝境界（Relation）で衝突が生まれ、渦（Spinor）として止揚・統合され、成果が束（Bundle）として成る。プロジェクトの現在地を知ること。",
     "pill.creationModel": "創造のモデル",
     "pill.awarenessModel": "意識のモデル",
     "section.direction.label": "Direction",
@@ -253,7 +253,7 @@ export const TRANSLATIONS = {
       "Envisioning and designing execution and management methods",
     "overview.scope.title": "Scope",
     "overview.scope.body":
-      "Primarily applicable to profit and non-profit enterprises. Generally applicable to any endeavor where a subject acts with purpose, such as research or life itself.",
+      "Primarily applicable to profit and non-profit enterprises (the scope of demonstration). To any purposeful endeavor — such as research or life itself — it extends by structural analogy (an attempt, not a proof).",
     "overview.domain.title": "Domain",
     "overview.domain.body":
       "Communication (information processing + emotional processing) and environmental adaptation (management studies, etc.)",
@@ -276,7 +276,7 @@ export const TRANSLATIONS = {
     "section.being.label": "Being",
     "section.being.title": "Being",
     "section.being.body":
-      "Fields emerge, waves of difference arise, relations form, collisions spiral, and outcomes bundle together. To know where the project stands.",
+      "Fields emerge, waves of difference arise, collisions emerge at the relation (boundary), are sublated and integrated as a vortex, and outcomes bundle together. To know where the project stands.",
     "pill.creationModel": "Model of Creation",
     "pill.awarenessModel": "Model of Awareness",
     "section.direction.label": "Direction",
