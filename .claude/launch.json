@@ -1,0 +1,12 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "pd",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": ["-m", "http.server", "3005", "--directory", "build/_serve"],
+      "port": 3005,
+      "autoPort": false
+    }
+  ]
+}

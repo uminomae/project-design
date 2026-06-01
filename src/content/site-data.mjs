@@ -140,6 +140,9 @@ export const TRANSLATIONS = {
     "section.being.title": "起きていること",
     "section.being.body":
       "場（Field）が現れ、差異＝波（Wave）が立ち上がり、縁＝境界（Relation）で衝突が生まれ、渦（Spinor）として止揚・統合され、成果が束（Bundle）として成る。プロジェクトの現在地を知ること。",
+    "being.faq.summary": "よくある誤解",
+    "being.faq.body":
+      "<ul><li><strong>「回転は渦だけのもの」</strong> → 回転は全段階に遍在します。波も回転です。「位相」も回転の一種で、あえて一般的・曖昧な語を当てています。</li><li><strong>「衝突は渦で統合される」</strong> → 衝突は縁（境界）で生まれ、渦はそれを止揚・統合する段階です。</li><li><strong>「束→場は同じ場に戻る閉じた循環」</strong> → 次サイクルの場へ前進する循環で、螺旋的に展開し元へは戻りません。</li></ul>",
     "pill.creationModel": "創造のモデル",
     "pill.awarenessModel": "意識のモデル",
     "section.direction.label": "Direction",
@@ -277,6 +280,9 @@ export const TRANSLATIONS = {
     "section.being.title": "Being",
     "section.being.body":
       "Fields emerge, waves of difference arise, collisions emerge at the relation (boundary), are sublated and integrated as a vortex, and outcomes bundle together. To know where the project stands.",
+    "being.faq.summary": "Common misconceptions",
+    "being.faq.body":
+      "<ul><li><strong>“Rotation belongs only to the vortex”</strong> → Rotation pervades every stage; the wave is rotation too. “Phase” is also a kind of rotation — a deliberately general, vague term.</li><li><strong>“Collisions are integrated by the vortex”</strong> → Collisions emerge at the relation (boundary); the vortex is where they are sublated and integrated.</li><li><strong>“Bundle → Field is a closed loop back to the same field”</strong> → It is a cycle forward to the next field — spiraling onward, never returning to the same point.</li></ul>",
     "pill.creationModel": "Model of Creation",
     "pill.awarenessModel": "Model of Awareness",
     "section.direction.label": "Direction",
