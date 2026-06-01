@@ -2,13 +2,22 @@
 
 ## Git
 - branch: develop
-- HEAD: dfac05a (chore(wiki): log.md auto-append for bfa1929) / bfa1929 (D02 Strogatz + D29 BTW compile)
-- main: 28eb1d3 (merge: develop → main — #76/#80/#81/#82 完了 + wiki-compile skill 分割 + cross-check)
-- remote: synced (develop/main 共に push 済)
-- dirty: state.md (本セッション更新)
-- develop ahead of main: 0（本セッションでマージ公開完了）
+- HEAD: **485ebd1** (PD推敲: 誤解FAQ Overview/Love 展開 #110)
+- main: 28eb1d3
+- remote: synced (develop push 済)
+- 関連: cs develop 3925c23、pjdhiro main 2a199c1（誤編集 revert）
 
 ## 完了タスク
+### 2026-06-01 #01 — PD総論/創造の推敲（Opus 4.8 デバッグ的レビュー）
+- 「プロジェクトデザインとは」「創造とは」を debug 的にレビュー → A群8/B群8件を issue 化（#94〜#109）
+- **編集先の誤りを発見・転換**: pjdhiro は手書き正本で対象外 → 全 revert（pjdhiro 2a199c1）。正本は pd `src/content/site-data.mjs`（PD総論）と cs `knowledge/`（創造）
+- pd 実修正: A-4 衝突=縁 / A-8 射程の構造類似化 / DESIGN-RULES §9 誤解FAQ / Being・Overview・Hero(Love) に誤解FAQ実装（日英）
+- cs: B群は正本でほぼ既達、見出し「束→場（次サイクルへの循環）」のみ修正（3925c23）
+- A-7 PMBOK は pd 元から謙虚で不要
+- close: #94 #97 #100 #101 #102〜#110。open（保持/継続）: #95 #96 #99 #98
+- ログ: `.cache/session/log-20260601-01.md` / 横断 `dev/.cache/session-logs/SESSION-20260601-01.md`
+
+### 2026-04-19 #06 (inbox 掃除 + D02/D29 compile + pd#82 close + main マージ公開)
 ### 2026-04-19 #06 (本セッション — inbox 掃除 + D02/D29 compile + pd#82 close + main マージ公開)
 - **inbox 掃除完了**: 18 件 archive（wiki-gen 5 + `_instructions-*` 13）、残 1 件 (`_instructions-83` OPEN)
   - wiki-gen: 2026-04-17-full-v2, 2026-04-19, 20260418-01, 20260418-02, 20260419-01
