@@ -102,6 +102,9 @@ export const TRANSLATIONS = {
     "controls.languageAria": "言語切替",
     "hero.notice":
       "Love駆動開発と呼びたい現象を、これまで何度も経験してきました。<br>ここでいうプロジェクトは「やること（Doing）」だけでなく「起きていること（Being）」まで含む出来事です。",
+    "love.faq.summary": "よくある誤解",
+    "love.faq.body":
+      "<ul><li><strong>「Love は恋愛・愛情のことだ」</strong> → つながりを生む引力一般を指します。縁を生む力であって、特定の感情ではありません。</li><li><strong>「『生存と同等に重要』は論証済みの事実だ」</strong> → 構え（仮説）です。生存と並ぶ駆動力ではないか、という問いとして置いています。</li></ul>",
     "hero.aboutAria": "このサイトについて",
     "section.overview.label": "Overview",
     "section.overview.title": "概要",
@@ -120,6 +123,9 @@ export const TRANSLATIONS = {
     "overview.domain.title": "領域",
     "overview.domain.body":
       "コミュニケーション（情報処理＋感情処理）と環境適応（経営学など）",
+    "overview.faq.summary": "よくある誤解",
+    "overview.faq.body":
+      "<ul><li><strong>「Doing/Being と 環境適応/コミュニケーション は四象限に組める」</strong> → これらは直交軸ではなく、一つの全体への相補的な切り口です。四象限に押し込むと現象が痩せます。</li><li><strong>「主観・客観、個はどこまでかをクリアに線引きできる」</strong> → 微細な領域では量子と古典の境界のように揺れます。切り口であって実在の分割ではありません。</li><li><strong>「構想→設計→実行は決まった順序で循環する」</strong> → 実行と設計はメタとオブジェクトをまたいで折り返す、止揚を伴うスパイラルです。同じ所に戻る循環ではありません。</li></ul>",
     "section.doing.label": "Doing",
     "section.doing.title": "やること",
     "doing.principles.title": "行動原理",
@@ -240,6 +246,9 @@ export const TRANSLATIONS = {
     "controls.languageAria": "Language switcher",
     "hero.notice":
       'Many times, I have experienced what I want to call Love-Driven Development.<br>Here, a project is an event that includes not only "Doing" but also "Being."',
+    "love.faq.summary": "Common misconceptions",
+    "love.faq.body":
+      "<ul><li><strong>“The ‘Love’ here means romance or affection”</strong> → It refers to the attractive force that creates connection in general — the force that gives rise to relation, not a specific emotion.</li><li><strong>“‘As important as survival’ is a proven fact”</strong> → It is a stance (a hypothesis), posed as the question of whether it stands alongside survival as a driver.</li></ul>",
     "hero.aboutAria": "About this site",
     "section.overview.label": "Overview",
     "section.overview.title": "Overview",
@@ -260,6 +269,9 @@ export const TRANSLATIONS = {
     "overview.domain.title": "Domain",
     "overview.domain.body":
       "Communication (information processing + emotional processing) and environmental adaptation (management studies, etc.)",
+    "overview.faq.summary": "Common misconceptions",
+    "overview.faq.body":
+      "<ul><li><strong>“Doing/Being and adaptation/communication form a 2×2 grid”</strong> → They are not orthogonal axes but complementary cuts of one whole; forcing a grid starves the phenomenon.</li><li><strong>“Subject/object, and where the individual ends, can be drawn cleanly”</strong> → At fine scales they waver like the quantum/classical boundary. They are cuts, not divisions in reality.</li><li><strong>“Envision → design → execute is a fixed cyclical order”</strong> → Execution and design fold across meta and object levels — a spiral with sublation, not a loop back to the same point.</li></ul>",
     "section.doing.label": "Doing",
     "section.doing.title": "Doing",
     "doing.principles.title": "Principles of Action",
