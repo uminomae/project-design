@@ -206,7 +206,7 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D10_serhan_2014_pro-resolving-lipid-mediators|炎症収束を促進する脂質メディエーター — Resolution Physiology]]
 - [[sources/D10_tonegawa_1987_nobel-lecture|抗体多様性の体細胞生成（ノーベル講演）]]
 
-#### D11 薬学 (10件)
+#### D11 薬学 (11件)
 - [[sources/D11_blanco_2015_principles-of-nanoparticle-design|ナノ粒子設計の原理 — 薬物送達の生物学的バリアを越えるには]]
 - [[sources/D11_csermely_2011_2011|Allo-Network Drugs — 細胞ネットワークにおけるアロステリーの活用]]
 - [[sources/D11_davies_2010_antibiotic-resistance|抗生物質耐性の起源と進化 — 耐性遺伝子の太古からの存在と人為的加速]]
@@ -214,6 +214,7 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D11_ich_2009_q8-r2-guideline|ICH Q8(R2) 医薬品開発ガイドライン]]
 - [[sources/D11_ich_2023_q9-r1-guideline|ICH Q9(R1) 品質リスクマネジメントガイドライン]]
 - [[sources/D11_li_2014_network-pharmacology-qishenyiqi|漢方薬QiShenYiQiのネットワーク薬理学研究]]
+- [[sources/D11_moffat_2017_2017|表現型創薬の機会と課題：産業界の視点（Moffat et al. 2017）]]
 - [[sources/D11_paul_2010_m-et-al|製薬産業の R&D 生産性向上 — 大問題への分析]]
 - [[sources/D11_tognoli_2009_brain-coordination-dynamics-true|脳の協調ダイナミクス — 位相同期の真と偽]]
 - [[sources/D11_wu_2014_chinese-medicine|ネットワーク薬理学による漢方処方「君臣佐使」の検証]]
@@ -233,7 +234,7 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D12_stern_1959_integrated-control-concept|総合的防除の概念]]
 - [[sources/D12_walker_2004_2004|社会生態システムにおけるレジリエンス・適応性・変革可能性（Walker et al. 2004）]]
 
-#### D13 哲学 (12件)
+#### D13 哲学 (13件)
 - [[sources/D13_bergson_1911_bergson-1911-creative-evolution|創造的進化（Creative Evolution, Bergson 1911）]]
 - [[sources/D13_deleuze_1966_1966-2001|ジルベール・シモンドン論（Deleuze, Review of Simondon 1966）]]
 - [[sources/D13_dewey_1910_how-we-think|思考の方法（1910年版）]]
@@ -242,6 +243,7 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D13_dewey_1934_art-as-experience|経験としての芸術（探究・思考論の観点）]]
 - [[sources/D13_dewey_1938_1938|論理学：探究の理論（Logic: The Theory of Inquiry, Dewey 1938）]]
 - [[sources/D13_james_1890_principles-of-psychology-vol|心理学原理（The Principles of Psychology, James 1890, Vol.1）— 意識の流れ]]
+- [[sources/D13_lewis_2005_bridging-emotion-theory-and|動的システムモデリングによる感情理論と神経生物学の架橋（Lewis 2005）]]
 - [[sources/D13_maturana_1974_autopoiesis|オートポイエーシス — 生命システムの自己産出組織]]
 - [[sources/D13_peirce_1923_peirce-1923-chance-love|偶然・愛・論理（Chance, Love, and Logic, Peirce 1923）]]
 - [[sources/D13_simondon_1958_1958|技術的対象の存在様態について（Simondon 1958）]]
@@ -259,13 +261,14 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D14_varela_1991_embodied-mind|身体化された心（The Embodied Mind）]]
 - [[sources/D14_wallas_1926_wallas-1926-the-art|思考の技法（The Art of Thought, Wallas 1926）]]
 
-#### D15 美学 (10件)
+#### D15 美学 (11件)
 - [[sources/D15_botella_2018_what-are-the-stages|創造プロセスの段階とは何か — 視覚芸術学生の声から]]
 - [[sources/D15_dewey_1934_1934|経験としての芸術（Art as Experience, Dewey 1934）]]
 - [[sources/D15_dewey_1934_art-as-experience|経験としての芸術（美学・芸術哲学の観点）]]
 - [[sources/D15_heidegger_1935_1935-36|芸術作品の起源（The Origin of the Work of Art, Heidegger 1935/36）]]
 - [[sources/D15_kant_1790_kritik-der-urteilskraft|判断力批判]]
 - [[sources/D15_marin_2015_crossing-boundaries-toward-a|境界を越えて — 神経美学の一般モデルに向けて]]
+- [[sources/D15_markovic_2012_components-of-aesthetic-experience|美的経験の構成要素：魅惑・評価・情動（Marković 2012）]]
 - [[sources/D15_motoori_1799_tama-no-ogushi|源氏物語玉の小櫛]]
 - [[sources/D15_nose_1944_yugenron|幽玄論]]
 - [[sources/D15_vessel_2012_2012|アートに脳が動くとき — 強い美的経験はデフォルトモードネットワークを活性化する]]
@@ -359,11 +362,12 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D22_tuckman_1965_1965|小集団の発達系列 — Tuckman の 4 段階モデル]]
 - [[sources/D22_wenger_2010_communities-of-practice-and|実践コミュニティと社会的学習システム]]
 
-#### D23 発達心理学 (7件)
+#### D23 発達心理学 (8件)
 - [[sources/D23_kartner_2024_early-social-cognitive-development|初期社会-認知発達は動的発達システム — Lifeworld アプローチ]]
 - [[sources/D23_kegan_1982_evolving-self|進化する自己]]
 - [[sources/D23_kim_2024_understanding-explore-exploit-dynamics|子ども発達における探索-活用ダイナミクス]]
 - [[sources/D23_kinoshita_2001_self-image|幼児は自己映像を「自分のこと」として見ているか？]]
+- [[sources/D23_luyckx_2006_2006|コミットメントと探索の解きほぐし：後期青年期アイデンティティ形成の統合モデル（Luyckx et al. 2006）]]
 - [[sources/D23_nakama_2014_dids-japanese-version|多次元アイデンティティ発達尺度（DIDS）日本語版]]
 - [[sources/D23_rochat_2003_2003|乳幼児期に展開する自己意識の 5 レベル]]
 - [[sources/D23_tononi_2014_integrated-information-theory-3|現象学からメカニズムへ — 統合情報理論 3.0]]
