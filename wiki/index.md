@@ -368,7 +368,7 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D22_tuckman_1977_jensen-m-a-c|小集団発達の諸段階・再訪（Tuckman & Jensen 1977）]]
 - [[sources/D22_wenger_2010_communities-of-practice-and|実践コミュニティと社会的学習システム]]
 
-#### D23 発達心理学 (8件)
+#### D23 発達心理学 (9件)
 - [[sources/D23_kartner_2024_early-social-cognitive-development|初期社会-認知発達は動的発達システム — Lifeworld アプローチ]]
 - [[sources/D23_kegan_1982_evolving-self|進化する自己]]
 - [[sources/D23_kim_2024_understanding-explore-exploit-dynamics|子ども発達における探索-活用ダイナミクス]]
@@ -377,6 +377,7 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D23_nakama_2014_dids-japanese-version|多次元アイデンティティ発達尺度（DIDS）日本語版]]
 - [[sources/D23_rochat_2003_2003|乳幼児期に展開する自己意識の 5 レベル]]
 - [[sources/D23_tononi_2014_integrated-information-theory-3|現象学からメカニズムへ — 統合情報理論 3.0]]
+- [[sources/D23_van_2017_2017|認知発達と知能のネットワークモデル（van der Maas et al. 2017）]]
 
 #### D24 宗教学 (10件)
 - [[sources/D24_berkovichohana_2014_the-consciousness-state-space|意識状態空間（CSS）— 意識と自己の統合モデル]]
