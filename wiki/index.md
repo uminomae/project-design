@@ -224,9 +224,10 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D13_maturana_1974_autopoiesis|オートポイエーシス — 生命システムの自己産出組織]]
 - [[sources/D13_whitehead_1929_process-and-reality|過程と実在]]
 
-#### D14 心理学 (6件)
+#### D14 心理学 (7件)
 - [[sources/D14_bargh_1999_chartrand-t-l|存在の耐え難い自動性]]
 - [[sources/D14_clark_1998_chalmers-d|拡張された心 — Clark & Chalmers]]
+- [[sources/D14_dietrich_2004_cognitive-neuroscience-of-creativity|創造性の認知神経科学 — 4類型の神経回路モデル]]
 - [[sources/D14_ericsson_1993_tesch-romer-c|熟達の獲得における意図的練習の役割 — 10 年ルール]]
 - [[sources/D14_hesse_2014_self-organized-criticality-as|神経系の基本特性としての自己組織化臨界性]]
 - [[sources/D14_maslow_1943_1943|人間の動機の理論 — 欲求階層]]
@@ -415,6 +416,7 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 | [[sources/D08_dehaene_2011_dehaene-changeux-2011-experimental\|意識的処理への実験的・理論的アプローチ — グローバル神経ワークスペース]] | sources | 2026-06-14 |
 | [[sources/D08_miller_2001_cohen-j-d\|前頭前皮質機能の統合理論 — 認知制御のバイアス信号モデル]] | sources | 2026-06-14 |
 | [[sources/D13_maturana_1974_autopoiesis\|オートポイエーシス — 生命システムの自己産出組織]] | sources | 2026-06-14 |
+| [[sources/D14_dietrich_2004_cognitive-neuroscience-of-creativity\|創造性の認知神経科学 — 4類型の神経回路モデル]] | sources | 2026-06-14 |
 | [[sources/D26_eerola_2021_anatomy-of-consonance-dissonance\|協和・不協和の解剖学]] | sources | 2026-06-13 |
 | [[sources/D26_hanslick_1854_1854-1891\|音楽美論 — 音響的に動く形式と創造]] | sources | 2026-06-13 |
 | [[sources/D26_helmholtz_1895_helmholtz-1895-on-the\|音感覚論 — 音楽理論の生理学的基礎]] | sources | 2026-06-13 |
@@ -424,6 +426,5 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 | [[sources/D11_csermely_2011_2011\|Allo-Network Drugs — 細胞ネットワークにおけるアロステリーの活用]] | sources | 2026-04-19 |
 | [[sources/D11_tognoli_2009_brain-coordination-dynamics-true\|脳の協調ダイナミクス — 位相同期の真と偽]] | sources | 2026-04-19 |
 | [[sources/D14_clark_1998_chalmers-d\|拡張された心 — Clark & Chalmers]] | sources | 2026-04-19 |
-| [[sources/D18_nowak_2006_five-rules-for-the\|協力進化のための 5 つのルール]] | sources | 2026-04-19 |
 
 > このページは `scripts/generate-wiki-index.mjs` により自動生成されます。wiki/ 内のページ変更時に PostToolUse hook で自動実行されます。
