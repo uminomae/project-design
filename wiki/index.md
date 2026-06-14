@@ -211,13 +211,15 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D11_tognoli_2009_brain-coordination-dynamics-true|脳の協調ダイナミクス — 位相同期の真と偽]]
 - [[sources/D11_wu_2014_chinese-medicine|ネットワーク薬理学による漢方処方「君臣佐使」の検証]]
 
-#### D12 農学・生態学 (10件)
+#### D12 農学・生態学 (12件)
 - [[sources/D12_clements_1916_plant-succession|植物遷移論]]
 - [[sources/D12_connell_1977_slatyer-r-o|自然群集における遷移のメカニズム]]
 - [[sources/D12_crdoba_2020_agroecosystem-resilience|農業生態系のレジリエンス — エージェンシーと構造変革]]
+- [[sources/D12_folke_2010_2010|レジリエンス思考：レジリエンス・適応性・変革可能性の統合]]
 - [[sources/D12_holling_1973_resilience-stability|生態系のレジリエンスと安定性]]
 - [[sources/D12_maff_2005_ipm-practical-guideline|総合的病害虫・雑草管理（IPM）実践指針]]
 - [[sources/D12_medina_2023_developing-systems-theory-in|土壌アグロエコロジーにおけるシステム理論の発展]]
+- [[sources/D12_pedigo_1986_et-al|経済的被害許容水準：理論と実践]]
 - [[sources/D12_robertson_2009_vitousek-p-m|農業における窒素：必須資源のコストの均衡]]
 - [[sources/D12_scheffer_2001_et-al|生態系における破局的状態遷移]]
 - [[sources/D12_scheffer_2003_carpenter-s-r|生態系の破局的レジームシフト — 理論と観測をつなぐ]]
@@ -279,7 +281,7 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D18_simmel_1903_1903|都市と精神生活 — Simmel の都市社会学]]
 - [[sources/D18_weber_1905_1905-1930|プロテスタンティズムの倫理と資本主義の精神]]
 
-#### D19 文学 (7件)
+#### D19 文学 (8件)
 - [[sources/D19_aristotle_1907_poetics|詩学 — ミメーシス・筋・カタルシスの理論]]
 - [[sources/D19_barthes_1970_s-z|S/Z — 5 つのコードによる段階的テクスト分析]]
 - [[sources/D19_bourdieu_1996_rules-of-art|芸術のルール — 文学場の生成と構造]]
@@ -287,6 +289,7 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D19_genette_1980_genette-1980-narrative-discourse|物語のディスクール — Genette の物語論]]
 - [[sources/D19_propp_1968_morphology-of-the-folktale|昔話の形態学]]
 - [[sources/D19_reagan_2016_2016|物語の感情曲線は6つの基本形に支配される]]
+- [[sources/D19_todorov_1971_1971|物語の2つの原理]]
 
 #### D20 法学・政治学 (7件)
 - [[sources/D20_folke-et-al_2005_adaptive-governance|社会生態システムの順応的ガバナンス]]
@@ -297,22 +300,27 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D20_singapore-convention_2018_mediation|シンガポール調停条約 (2018)]]
 - [[sources/D20_uncitral_2021_mediation-rules|UNCITRAL 調停規則 (2021)]]
 
-#### D21 経済学 (8件)
+#### D21 経済学 (10件)
 - [[sources/D21_deco_2008_2008|安静時のノイズが脳の動的レパートリー探索を可能にする]]
 - [[sources/D21_hayek_1945_use-of-knowledge-in-society|社会における知識の利用]]
 - [[sources/D21_hayek_2002_competition-discovery-procedure|発見手続きとしての競争]]
 - [[sources/D21_hidalgo_2009_building-blocks-of-economic|経済複雑性の構成要素 — Method of Reflections]]
 - [[sources/D21_keynes_1936_general-theory|雇用・利子および貨幣の一般理論]]
+- [[sources/D21_keynes_1937_1937|雇用の一般理論（Keynes 1937, QJE）]]
 - [[sources/D21_knight_1921_risk-uncertainty-profit|リスク・不確実性・利潤]]
 - [[sources/D21_schumpeter_1912_theorie-der-wirtschaftlichen-entwicklung|経済発展の理論（初版）]]
 - [[sources/D21_schumpeter_1939_business-cycles|景気循環論]]
+- [[sources/D21_walker_2009_2009|ゴルバーン・ブロークン流域におけるレジリエンス・適応性・変革可能性]]
 
-#### D22 経営学 (8件)
+#### D22 経営学 (11件)
 - [[sources/D22_akiike_2021_design-thinking-articles|デザイン思考論文に求められる要件とは何か]]
 - [[sources/D22_brown_2008_design-thinking|デザイン思考（Tim Brown, HBR 2008）]]
 - [[sources/D22_friston_2018_am-i-self-conscious|私は自己意識を持つか — 自己組織化と自己意識]]
 - [[sources/D22_gersick_1988_1988|ワークチームにおける時間と転換：集団発達の新モデル]]
 - [[sources/D22_hu_2021_trajectories-of-idea-emergence|対話的協働問題解決におけるアイデア出現の軌跡]]
+- [[sources/D22_lyon_2014_dreyfus-model-of-skill|ドレイファス技能習得モデルから見た教育専門性の発達]]
+- [[sources/D22_nonaka_1996_senoo-d|情報処理から知識創造へ：経営におけるパラダイム転換]]
+- [[sources/D22_nonaka_2000_konno-n|SECI、Ba、リーダーシップ：動的知識創造の統合モデル]]
 - [[sources/D22_stanford_2010_design-thinking-process-guide|デザイン思考プロセスガイド]]
 - [[sources/D22_tuckman_1965_1965|小集団の発達系列 — Tuckman の 4 段階モデル]]
 - [[sources/D22_wenger_2010_communities-of-practice-and|実践コミュニティと社会的学習システム]]
@@ -369,9 +377,10 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D28_shibolet_2018_bodyminds-in-movement-contact|動きの中の Bodyminds — Contact Improvisation の身体化された認知]]
 - [[sources/D28_zeami_classics|世阿弥十六部集]]
 
-#### D29 複雑系科学 (6件)
+#### D29 複雑系科学 (7件)
 - [[sources/D29_bak-tang-wiesenfeld_1988_self-organized-criticality|自己組織化臨界]]
 - [[sources/D29_clauset_2007_power-law-distributions|実証データにおけるべき乗則分布]]
+- [[sources/D29_langton_1990_edge-of-chaos|カオスの縁における計算]]
 - [[sources/D29_munoz_2018_criticality-and-dynamical-scaling|生物系における臨界性と動的スケーリング]]
 - [[sources/D29_newman_2003_structure-and-function-of|複雑ネットワークの構造と機能]]
 - [[sources/D29_prigogine_1977_time-structure-fluctuations|時間、構造、そしてゆらぎ — ノーベル講演]]
@@ -436,11 +445,11 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 | [[sources/D09_mcewen_1998_1998\|ストレス媒介物の保護と損傷 — アロスタシスとアロスタティック負荷]] | sources | 2026-06-14 |
 | [[sources/D10_rodrigues-et-al_2019_wound-healing-cellular-perspective\|創傷治癒：細胞の視点]] | sources | 2026-06-14 |
 | [[sources/D12_connell_1977_slatyer-r-o\|自然群集における遷移のメカニズム]] | sources | 2026-06-14 |
+| [[sources/D12_folke_2010_2010\|レジリエンス思考：レジリエンス・適応性・変革可能性の統合]] | sources | 2026-06-14 |
+| [[sources/D12_pedigo_1986_et-al\|経済的被害許容水準：理論と実践]] | sources | 2026-06-14 |
 | [[sources/D12_robertson_2009_vitousek-p-m\|農業における窒素：必須資源のコストの均衡]] | sources | 2026-06-14 |
 | [[sources/D12_scheffer_2003_carpenter-s-r\|生態系の破局的レジームシフト — 理論と観測をつなぐ]] | sources | 2026-06-14 |
 | [[sources/D13_maturana_1974_autopoiesis\|オートポイエーシス — 生命システムの自己産出組織]] | sources | 2026-06-14 |
 | [[sources/D14_dietrich_2004_cognitive-neuroscience-of-creativity\|創造性の認知神経科学 — 4類型の神経回路モデル]] | sources | 2026-06-14 |
-| [[sources/D16_mahoney_2000_2000\|歴史社会学における経路依存]] | sources | 2026-06-14 |
-| [[sources/D17_hartshorne-tenenbaum-pinker_2018_critical-period-second-language\|第二言語習得の臨界期：67万人のデータからの証拠]] | sources | 2026-06-14 |
 
 > このページは `scripts/generate-wiki-index.mjs` により自動生成されます。wiki/ 内のページ変更時に PostToolUse hook で自動実行されます。
