@@ -216,11 +216,12 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D12_scheffer_2001_et-al|生態系における破局的状態遷移]]
 - [[sources/D12_stern_1959_integrated-control-concept|総合的防除の概念]]
 
-#### D13 哲学 (5件)
+#### D13 哲学 (6件)
 - [[sources/D13_dewey_1910_how-we-think|思考の方法（1910年版）]]
 - [[sources/D13_dewey_1929_quest-for-certainty|確実性の探求]]
 - [[sources/D13_dewey_1933_how-we-think-restatement|思考の方法（1933年改訂版）]]
 - [[sources/D13_dewey_1934_art-as-experience|経験としての芸術（探究・思考論の観点）]]
+- [[sources/D13_maturana_1974_autopoiesis|オートポイエーシス — 生命システムの自己産出組織]]
 - [[sources/D13_whitehead_1929_process-and-reality|過程と実在]]
 
 #### D14 心理学 (6件)
@@ -413,6 +414,7 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 | [[sources/D07_strogatz_2001_exploring-complex-networks\|複雑ネットワークの探究 — 構造とダイナミクスの統一的視座]] | sources | 2026-06-14 |
 | [[sources/D08_dehaene_2011_dehaene-changeux-2011-experimental\|意識的処理への実験的・理論的アプローチ — グローバル神経ワークスペース]] | sources | 2026-06-14 |
 | [[sources/D08_miller_2001_cohen-j-d\|前頭前皮質機能の統合理論 — 認知制御のバイアス信号モデル]] | sources | 2026-06-14 |
+| [[sources/D13_maturana_1974_autopoiesis\|オートポイエーシス — 生命システムの自己産出組織]] | sources | 2026-06-14 |
 | [[sources/D26_eerola_2021_anatomy-of-consonance-dissonance\|協和・不協和の解剖学]] | sources | 2026-06-13 |
 | [[sources/D26_hanslick_1854_1854-1891\|音楽美論 — 音響的に動く形式と創造]] | sources | 2026-06-13 |
 | [[sources/D26_helmholtz_1895_helmholtz-1895-on-the\|音感覚論 — 音楽理論の生理学的基礎]] | sources | 2026-06-13 |
@@ -423,6 +425,5 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 | [[sources/D11_tognoli_2009_brain-coordination-dynamics-true\|脳の協調ダイナミクス — 位相同期の真と偽]] | sources | 2026-04-19 |
 | [[sources/D14_clark_1998_chalmers-d\|拡張された心 — Clark & Chalmers]] | sources | 2026-04-19 |
 | [[sources/D18_nowak_2006_five-rules-for-the\|協力進化のための 5 つのルール]] | sources | 2026-04-19 |
-| [[sources/D22_wenger_2010_communities-of-practice-and\|実践コミュニティと社会的学習システム]] | sources | 2026-04-19 |
 
 > このページは `scripts/generate-wiki-index.mjs` により自動生成されます。wiki/ 内のページ変更時に PostToolUse hook で自動実行されます。
