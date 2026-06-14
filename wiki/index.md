@@ -225,8 +225,9 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D12_scheffer_2003_carpenter-s-r|生態系の破局的レジームシフト — 理論と観測をつなぐ]]
 - [[sources/D12_stern_1959_integrated-control-concept|総合的防除の概念]]
 
-#### D13 哲学 (10件)
+#### D13 哲学 (11件)
 - [[sources/D13_bergson_1911_bergson-1911-creative-evolution|創造的進化（Creative Evolution, Bergson 1911）]]
+- [[sources/D13_deleuze_1966_1966-2001|ジルベール・シモンドン論（Deleuze, Review of Simondon 1966）]]
 - [[sources/D13_dewey_1910_how-we-think|思考の方法（1910年版）]]
 - [[sources/D13_dewey_1929_quest-for-certainty|確実性の探求]]
 - [[sources/D13_dewey_1933_how-we-think-restatement|思考の方法（1933年改訂版）]]
@@ -260,7 +261,7 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D15_vessel_2012_2012|アートに脳が動くとき — 強い美的経験はデフォルトモードネットワークを活性化する]]
 - [[sources/D15_zeami_classics|風姿花伝（花の美学）]]
 
-#### D16 歴史学 (11件)
+#### D16 歴史学 (12件)
 - [[sources/D16_braudel_1949_1949|地中海（La Méditerranée, Braudel 1949）]]
 - [[sources/D16_braudel_1958_longue-duree|長期持続 — 歴史と社会科学の時間的多層性]]
 - [[sources/D16_ibn-khaldun_1377_muqaddimah|ムカッディマ（歴史序説）]]
@@ -270,6 +271,7 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D16_scheffer_2012_2012|臨界転移を予兆する — 早期警告指標の統合]]
 - [[sources/D16_toynbee_1934_study-of-history|歴史の研究 — 文明の挑戦と応答]]
 - [[sources/D16_turchin_2013_war-space-evolution-old-world-complex-societies|戦争・空間・旧世界複雑社会の進化]]
+- [[sources/D16_turchin_2014_cultural-evolution-and-cliodynamics|文化進化とクリオダイナミクス（Turchin 2014）]]
 - [[sources/D16_unknown_0000_toynbee-a-j-a|歴史の研究（A Study of History, Toynbee）]]
 - [[sources/D16_wallerstein_1974_1974|近代世界システムI（The Modern World-System I, Wallerstein 1974）]]
 
@@ -282,7 +284,8 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D17_lupyan_2010_language-structure-is-partly|言語構造は社会構造によって部分的に決定される — 言語ニッチ仮説]]
 - [[sources/D17_senghas_2004_children-creating-core-properties|ニカラグア手話における言語の中核特性の創造]]
 
-#### D18 社会学 (9件)
+#### D18 社会学 (10件)
+- [[sources/D18_anzola_2016_self-organization-and-social|自己組織化と社会科学（Anzola, Barbrook-Johnson & Cano 2016）]]
 - [[sources/D18_barabasi_1999_emergence-of-scaling-in|ランダムネットワークにおけるスケーリングの創発 — BA モデル]]
 - [[sources/D18_castellano_2009_statistical-physics-of-social|社会動態の統計物理学]]
 - [[sources/D18_coleman_1988_1988|人的資本創造における社会関係資本]]
@@ -469,6 +472,6 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 | [[sources/D12_robertson_2009_vitousek-p-m\|農業における窒素：必須資源のコストの均衡]] | sources | 2026-06-14 |
 | [[sources/D12_scheffer_2003_carpenter-s-r\|生態系の破局的レジームシフト — 理論と観測をつなぐ]] | sources | 2026-06-14 |
 | [[sources/D13_bergson_1911_bergson-1911-creative-evolution\|創造的進化（Creative Evolution, Bergson 1911）]] | sources | 2026-06-14 |
-| [[sources/D13_dewey_1938_1938\|論理学：探究の理論（Logic: The Theory of Inquiry, Dewey 1938）]] | sources | 2026-06-14 |
+| [[sources/D13_deleuze_1966_1966-2001\|ジルベール・シモンドン論（Deleuze, Review of Simondon 1966）]] | sources | 2026-06-14 |
 
 > このページは `scripts/generate-wiki-index.mjs` により自動生成されます。wiki/ 内のページ変更時に PostToolUse hook で自動実行されます。
