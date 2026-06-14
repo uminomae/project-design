@@ -130,10 +130,12 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D04_watson_2016_how-can-evolution-learn|進化はどのように学習するか — 進化と学習の数学的等価性]]
 - [[sources/D04_woese_2002_woese-2002-on-the|細胞の進化について — ダーウィン閾と HGT]]
 
-#### D05 地球科学 (8件)
+#### D05 地球科学 (10件)
 - [[sources/D05_bak_1988_wiesenfeld-k|自己組織化臨界性 — Bak-Tang-Wiesenfeld の砂山モデル]]
+- [[sources/D05_bjerknes_1969_bjerknes-1969-atmospheric-teleconnections|赤道太平洋からの大気のテレコネクション（Bjerknes 1969）]]
 - [[sources/D05_cane-zebiak_1985_enso-theory|エルニーニョと南方振動の理論]]
 - [[sources/D05_conrad_2002_lithgow-bertelloni-c|マントルのスラブはいかにプレートテクトニクスを駆動するか]]
+- [[sources/D05_dewey_1970_dewey-bird-1970-mountain|山脈帯と新しい全地球テクトニクス（Dewey & Bird 1970）]]
 - [[sources/D05_le-pichon_1968_sea-floor-spreading|海底拡大と大陸移動]]
 - [[sources/D05_lenton_2008_2008|地球気候系のティッピング要素]]
 - [[sources/D05_morgan_1968_rises-trenches|プレートテクトニクスの数理的基礎 — 剛体球面ブロックモデルによる地殻運動の記述]]
@@ -276,7 +278,7 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D15_vessel_2012_2012|アートに脳が動くとき — 強い美的経験はデフォルトモードネットワークを活性化する]]
 - [[sources/D15_zeami_classics|風姿花伝（花の美学）]]
 
-#### D16 歴史学 (14件)
+#### D16 歴史学 (15件)
 - [[sources/D16_braudel_1949_1949|地中海（La Méditerranée, Braudel 1949）]]
 - [[sources/D16_braudel_1958_longue-duree|長期持続 — 歴史と社会科学の時間的多層性]]
 - [[sources/D16_ibn-khaldun_1377_muqaddimah|ムカッディマ（歴史序説）]]
@@ -285,6 +287,7 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D16_mascareo_2022_critical-transitions-in-ecosystems|生態系と社会における臨界転移 — 社会システム理論との対話]]
 - [[sources/D16_north_1990_1990|制度・制度変化・経済成果（North 1990）]]
 - [[sources/D16_olsson_2004_social-ecological-transformation-for|生態系管理に向けた社会生態的変革（Olsson, Folke & Hahn 2004）]]
+- [[sources/D16_pierson_2000_2000|報酬逓増・経路依存・政治の研究（Pierson 2000）]]
 - [[sources/D16_scheffer_2012_2012|臨界転移を予兆する — 早期警告指標の統合]]
 - [[sources/D16_toynbee_1934_study-of-history|歴史の研究 — 文明の挑戦と応答]]
 - [[sources/D16_turchin_2013_war-space-evolution-old-world-complex-societies|戦争・空間・旧世界複雑社会の進化]]
@@ -350,7 +353,7 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D21_schumpeter_1942_1942|資本主義・社会主義・民主主義（Schumpeter 1942）]]
 - [[sources/D21_walker_2009_2009|ゴルバーン・ブロークン流域におけるレジリエンス・適応性・変革可能性]]
 
-#### D22 経営学 (12件)
+#### D22 経営学 (13件)
 - [[sources/D22_akiike_2021_design-thinking-articles|デザイン思考論文に求められる要件とは何か]]
 - [[sources/D22_brown_2008_design-thinking|デザイン思考（Tim Brown, HBR 2008）]]
 - [[sources/D22_friston_2018_am-i-self-conscious|私は自己意識を持つか — 自己組織化と自己意識]]
@@ -362,6 +365,7 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D22_nonaka_2000_konno-n|SECI、Ba、リーダーシップ：動的知識創造の統合モデル]]
 - [[sources/D22_stanford_2010_design-thinking-process-guide|デザイン思考プロセスガイド]]
 - [[sources/D22_tuckman_1965_1965|小集団の発達系列 — Tuckman の 4 段階モデル]]
+- [[sources/D22_tuckman_1977_jensen-m-a-c|小集団発達の諸段階・再訪（Tuckman & Jensen 1977）]]
 - [[sources/D22_wenger_2010_communities-of-practice-and|実践コミュニティと社会的学習システム]]
 
 #### D23 発達心理学 (8件)
@@ -479,7 +483,9 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 | [[sources/D03_chambon-winter_1987_gel-point\|化学量論的に不均衡な架橋PDMSのゲル化点における線形粘弾性]] | sources | 2026-06-14 |
 | [[sources/D04_erwin_2015_novelty-and-innovation-in\|生命史における新奇性とイノベーション]] | sources | 2026-06-14 |
 | [[sources/D04_lane_2012_the-origin-of-membrane\|膜による生体エネルギー変換の起源]] | sources | 2026-06-14 |
+| [[sources/D05_bjerknes_1969_bjerknes-1969-atmospheric-teleconnections\|赤道太平洋からの大気のテレコネクション（Bjerknes 1969）]] | sources | 2026-06-14 |
 | [[sources/D05_conrad_2002_lithgow-bertelloni-c\|マントルのスラブはいかにプレートテクトニクスを駆動するか]] | sources | 2026-06-14 |
+| [[sources/D05_dewey_1970_dewey-bird-1970-mountain\|山脈帯と新しい全地球テクトニクス（Dewey & Bird 1970）]] | sources | 2026-06-14 |
 | [[sources/D05_le-pichon_1968_sea-floor-spreading\|海底拡大と大陸移動]] | sources | 2026-06-14 |
 | [[sources/D05_suarez_1988_schopf-p-s\|ENSO のための遅延作用振動子]] | sources | 2026-06-14 |
 | [[sources/D06_nicolis_2016_stochastic-resonance-self-organization\|確率共鳴・自己組織化・情報ダイナミクス — 多安定系の最適応答]] | sources | 2026-06-14 |
@@ -494,7 +500,5 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 | [[sources/D09_misteli_2001_self-organization-in-cellular\|細胞構築における自己組織化の概念（Misteli 2001）]] | sources | 2026-06-14 |
 | [[sources/D09_pellerin_1994_pellerin-magistretti-1994-glutamate\|グルタミン酸のアストロサイトへの取り込みが好気的解糖を刺激する（Pellerin & Magistretti 1994）]] | sources | 2026-06-14 |
 | [[sources/D09_tsukada_1993_tsukada-ohsumi-1993-isolation\|酵母オートファジー欠損変異体の単離と特徴づけ（Tsukada & Ohsumi 1993）]] | sources | 2026-06-14 |
-| [[sources/D09_wolpert_1969_1969\|位置情報と細胞分化の空間パターン（Wolpert 1969）]] | sources | 2026-06-14 |
-| [[sources/D10_burnet_1959_clonal-selection-acquired-immunity\|獲得免疫のクローン選択説（Clonal Selection Theory, Burnet 1959）]] | sources | 2026-06-14 |
 
 > このページは `scripts/generate-wiki-index.mjs` により自動生成されます。wiki/ 内のページ変更時に PostToolUse hook で自動実行されます。
