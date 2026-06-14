@@ -193,8 +193,9 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D09_whitacre_2012_biological-robustness|生物学的ロバスト性 — パラダイム・メカニズム・系統原理]]
 - [[sources/D09_wolpert_1969_1969|位置情報と細胞分化の空間パターン（Wolpert 1969）]]
 
-#### D10 臨床医学 (6件)
+#### D10 臨床医学 (7件)
 - [[sources/D10_akdis_2014_allergen-immunotherapy|アレルゲン免疫療法の新治療戦略]]
+- [[sources/D10_burnet_1959_clonal-selection-acquired-immunity|獲得免疫のクローン選択説（Clonal Selection Theory, Burnet 1959）]]
 - [[sources/D10_engel_1977_1977|新しい医療モデルの必要 — 生物心理社会モデル]]
 - [[sources/D10_rodrigues-et-al_2019_wound-healing-cellular-perspective|創傷治癒：細胞の視点]]
 - [[sources/D10_rosenblum_2015_autoimmunity|ヒト自己免疫疾患のメカニズム]]
@@ -227,7 +228,7 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D12_scheffer_2003_carpenter-s-r|生態系の破局的レジームシフト — 理論と観測をつなぐ]]
 - [[sources/D12_stern_1959_integrated-control-concept|総合的防除の概念]]
 
-#### D13 哲学 (11件)
+#### D13 哲学 (12件)
 - [[sources/D13_bergson_1911_bergson-1911-creative-evolution|創造的進化（Creative Evolution, Bergson 1911）]]
 - [[sources/D13_deleuze_1966_1966-2001|ジルベール・シモンドン論（Deleuze, Review of Simondon 1966）]]
 - [[sources/D13_dewey_1910_how-we-think|思考の方法（1910年版）]]
@@ -238,6 +239,7 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D13_james_1890_principles-of-psychology-vol|心理学原理（The Principles of Psychology, James 1890, Vol.1）— 意識の流れ]]
 - [[sources/D13_maturana_1974_autopoiesis|オートポイエーシス — 生命システムの自己産出組織]]
 - [[sources/D13_peirce_1923_peirce-1923-chance-love|偶然・愛・論理（Chance, Love, and Logic, Peirce 1923）]]
+- [[sources/D13_simondon_1958_1958|技術的対象の存在様態について（Simondon 1958）]]
 - [[sources/D13_whitehead_1929_process-and-reality|過程と実在]]
 
 #### D14 心理学 (10件)
@@ -264,10 +266,11 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D15_vessel_2012_2012|アートに脳が動くとき — 強い美的経験はデフォルトモードネットワークを活性化する]]
 - [[sources/D15_zeami_classics|風姿花伝（花の美学）]]
 
-#### D16 歴史学 (13件)
+#### D16 歴史学 (14件)
 - [[sources/D16_braudel_1949_1949|地中海（La Méditerranée, Braudel 1949）]]
 - [[sources/D16_braudel_1958_longue-duree|長期持続 — 歴史と社会科学の時間的多層性]]
 - [[sources/D16_ibn-khaldun_1377_muqaddimah|ムカッディマ（歴史序説）]]
+- [[sources/D16_ibn-khaldun_1377_muqaddimah-rosenthal|歴史序説（The Muqaddimah, Ibn Khaldun 1377）]]
 - [[sources/D16_mahoney_2000_2000|歴史社会学における経路依存]]
 - [[sources/D16_mascareo_2022_critical-transitions-in-ecosystems|生態系と社会における臨界転移 — 社会システム理論との対話]]
 - [[sources/D16_north_1990_1990|制度・制度変化・経済成果（North 1990）]]
@@ -475,11 +478,11 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 | [[sources/D09_attwell_2001_attwell-laughlin-2001-an\|脳灰白質の信号伝達のエネルギー収支]] | sources | 2026-06-14 |
 | [[sources/D09_mcewen_1998_1998\|ストレス媒介物の保護と損傷 — アロスタシスとアロスタティック負荷]] | sources | 2026-06-14 |
 | [[sources/D09_wolpert_1969_1969\|位置情報と細胞分化の空間パターン（Wolpert 1969）]] | sources | 2026-06-14 |
+| [[sources/D10_burnet_1959_clonal-selection-acquired-immunity\|獲得免疫のクローン選択説（Clonal Selection Theory, Burnet 1959）]] | sources | 2026-06-14 |
 | [[sources/D10_rodrigues-et-al_2019_wound-healing-cellular-perspective\|創傷治癒：細胞の視点]] | sources | 2026-06-14 |
 | [[sources/D12_connell_1977_slatyer-r-o\|自然群集における遷移のメカニズム]] | sources | 2026-06-14 |
 | [[sources/D12_folke_2010_2010\|レジリエンス思考：レジリエンス・適応性・変革可能性の統合]] | sources | 2026-06-14 |
 | [[sources/D12_pedigo_1986_et-al\|経済的被害許容水準：理論と実践]] | sources | 2026-06-14 |
 | [[sources/D12_robertson_2009_vitousek-p-m\|農業における窒素：必須資源のコストの均衡]] | sources | 2026-06-14 |
-| [[sources/D12_scheffer_2003_carpenter-s-r\|生態系の破局的レジームシフト — 理論と観測をつなぐ]] | sources | 2026-06-14 |
 
 > このページは `scripts/generate-wiki-index.mjs` により自動生成されます。wiki/ 内のページ変更時に PostToolUse hook で自動実行されます。
