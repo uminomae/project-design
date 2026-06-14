@@ -293,12 +293,15 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D18_simmel_1903_1903|都市と精神生活 — Simmel の都市社会学]]
 - [[sources/D18_weber_1905_1905-1930|プロテスタンティズムの倫理と資本主義の精神]]
 
-#### D19 文学 (8件)
+#### D19 文学 (11件)
 - [[sources/D19_aristotle_1907_poetics|詩学 — ミメーシス・筋・カタルシスの理論]]
 - [[sources/D19_barthes_1970_s-z|S/Z — 5 つのコードによる段階的テクスト分析]]
 - [[sources/D19_bourdieu_1996_rules-of-art|芸術のルール — 文学場の生成と構造]]
 - [[sources/D19_freytag_1895_technique-of-the-drama|ドラマの技法 — 5 部構成のピラミッド]]
 - [[sources/D19_genette_1980_genette-1980-narrative-discourse|物語のディスクール — Genette の物語論]]
+- [[sources/D19_iser_1974_1974|潜在的読者（The Implied Reader, Iser 1974）]]
+- [[sources/D19_jauss_1982_1982|挑発としての文学史／受容の美学（Jauss 1982）]]
+- [[sources/D19_polti_1895_1895-1916|三十六の劇的状況（The Thirty-Six Dramatic Situations, Polti 1895/1916）]]
 - [[sources/D19_propp_1968_morphology-of-the-folktale|昔話の形態学]]
 - [[sources/D19_reagan_2016_2016|物語の感情曲線は6つの基本形に支配される]]
 - [[sources/D19_todorov_1971_1971|物語の2つの原理]]
@@ -347,13 +350,16 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D23_rochat_2003_2003|乳幼児期に展開する自己意識の 5 レベル]]
 - [[sources/D23_tononi_2014_integrated-information-theory-3|現象学からメカニズムへ — 統合情報理論 3.0]]
 
-#### D24 宗教学 (6件)
+#### D24 宗教学 (9件)
 - [[sources/D24_berkovichohana_2014_the-consciousness-state-space|意識状態空間（CSS）— 意識と自己の統合モデル]]
+- [[sources/D24_bucke_1901_bucke-1901-cosmic-consciousness|宇宙意識（Cosmic Consciousness, Bucke 1901）]]
 - [[sources/D24_dimarzio_2019_affiliation-conversion-departure|新宗教運動への加入・改宗・脱プログラミング・離脱の経験]]
 - [[sources/D24_james_1902_varieties-of-religious-experience|宗教的経験の諸相]]
 - [[sources/D24_otto_1917_idea-of-the-holy|聖なるもの — ヌミノーゼと mysterium tremendum]]
 - [[sources/D24_suzuki_1935_manual-of-zen-buddhism|禅仏教提要]]
 - [[sources/D24_teresa_1921_interior-castle|内なる城]]
+- [[sources/D24_underhill_1911_underhill-1911-mysticism|神秘主義（Mysticism, Underhill 1911）]]
+- [[sources/D24_van_1909_1909-1960|通過儀礼（The Rites of Passage, Van Gennep 1909/1960）]]
 
 #### D25 人類学 (7件)
 - [[sources/D25_barth_1969_ethnic-groups-intro|民族集団と境界（序論）]]
