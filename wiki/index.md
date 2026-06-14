@@ -339,7 +339,7 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D20_singapore-convention_2018_mediation|シンガポール調停条約 (2018)]]
 - [[sources/D20_uncitral_2021_mediation-rules|UNCITRAL 調停規則 (2021)]]
 
-#### D21 経済学 (12件)
+#### D21 経済学 (13件)
 - [[sources/D21_deco_2008_2008|安静時のノイズが脳の動的レパートリー探索を可能にする]]
 - [[sources/D21_dickman_2000_2000|自己組織化臨界へのいくつかの道（Dickman et al. 2000）]]
 - [[sources/D21_hayek_1945_use-of-knowledge-in-society|社会における知識の利用]]
@@ -348,6 +348,7 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D21_keynes_1936_general-theory|雇用・利子および貨幣の一般理論]]
 - [[sources/D21_keynes_1937_1937|雇用の一般理論（Keynes 1937, QJE）]]
 - [[sources/D21_knight_1921_risk-uncertainty-profit|リスク・不確実性・利潤]]
+- [[sources/D21_krugman_1991_increasing-returns-and-economic|報酬逓増と経済地理（Krugman 1991）]]
 - [[sources/D21_schumpeter_1912_theorie-der-wirtschaftlichen-entwicklung|経済発展の理論（初版）]]
 - [[sources/D21_schumpeter_1939_business-cycles|景気循環論]]
 - [[sources/D21_schumpeter_1942_1942|資本主義・社会主義・民主主義（Schumpeter 1942）]]
@@ -388,10 +389,10 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D24_pew_2025_religious-switching-reports|世界の宗教スイッチング（Pew Research Center 2025）]]
 - [[sources/D24_suzuki_1935_manual-of-zen-buddhism|禅仏教提要]]
 - [[sources/D24_teresa_1921_interior-castle|内なる城]]
-- [[sources/D24_underhill_1911_underhill-1911-mysticism|神秘主義（Mysticism, Underhill 1911）]]
+- [[sources/D24_underhill_1911_underhill-1911-mysticism-methuen|神秘主義（Mysticism, Underhill 1911）]]
 - [[sources/D24_van_1909_1909-1960|通過儀礼（The Rites of Passage, Van Gennep 1909/1960）]]
 
-#### D25 人類学 (7件)
+#### D25 人類学 (8件)
 - [[sources/D25_barth_1969_ethnic-groups-intro|民族集団と境界（序論）]]
 - [[sources/D25_cisnerosvelarde_2021_a-network-formation-game|階層出現のためのネットワーク形成ゲーム]]
 - [[sources/D25_keck-sakdapolrak_2013_what-is-social-resilience|社会的レジリエンスとは何か]]
@@ -399,6 +400,7 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D25_pratt_1991_arts-of-the-contact-zone|コンタクト・ゾーンの技法]]
 - [[sources/D25_van-gennep_1960_rites-of-passage|通過儀礼（英訳版）]]
 - [[sources/D25_vangennep_1909_rites-of-passage|Les rites de passage（仏語原典）]]
+- [[sources/D25_viveiros-de-castro_2017_amerindian-perspectivism|宇宙論的ダイクシスとアメリンディアン・パースペクティヴィズム（Viveiros de Castro 1998）]]
 
 #### D26 音楽学 (9件)
 - [[sources/D26_eerola_2021_anatomy-of-consonance-dissonance|協和・不協和の解剖学]]
