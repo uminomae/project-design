@@ -214,7 +214,7 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D11_tognoli_2009_brain-coordination-dynamics-true|脳の協調ダイナミクス — 位相同期の真と偽]]
 - [[sources/D11_wu_2014_chinese-medicine|ネットワーク薬理学による漢方処方「君臣佐使」の検証]]
 
-#### D12 農学・生態学 (12件)
+#### D12 農学・生態学 (13件)
 - [[sources/D12_clements_1916_plant-succession|植物遷移論]]
 - [[sources/D12_connell_1977_slatyer-r-o|自然群集における遷移のメカニズム]]
 - [[sources/D12_crdoba_2020_agroecosystem-resilience|農業生態系のレジリエンス — エージェンシーと構造変革]]
@@ -227,6 +227,7 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D12_scheffer_2001_et-al|生態系における破局的状態遷移]]
 - [[sources/D12_scheffer_2003_carpenter-s-r|生態系の破局的レジームシフト — 理論と観測をつなぐ]]
 - [[sources/D12_stern_1959_integrated-control-concept|総合的防除の概念]]
+- [[sources/D12_walker_2004_2004|社会生態システムにおけるレジリエンス・適応性・変革可能性（Walker et al. 2004）]]
 
 #### D13 哲学 (12件)
 - [[sources/D13_bergson_1911_bergson-1911-creative-evolution|創造的進化（Creative Evolution, Bergson 1911）]]
@@ -326,8 +327,9 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D20_singapore-convention_2018_mediation|シンガポール調停条約 (2018)]]
 - [[sources/D20_uncitral_2021_mediation-rules|UNCITRAL 調停規則 (2021)]]
 
-#### D21 経済学 (11件)
+#### D21 経済学 (12件)
 - [[sources/D21_deco_2008_2008|安静時のノイズが脳の動的レパートリー探索を可能にする]]
+- [[sources/D21_dickman_2000_2000|自己組織化臨界へのいくつかの道（Dickman et al. 2000）]]
 - [[sources/D21_hayek_1945_use-of-knowledge-in-society|社会における知識の利用]]
 - [[sources/D21_hayek_2002_competition-discovery-procedure|発見手続きとしての競争]]
 - [[sources/D21_hidalgo_2009_building-blocks-of-economic|経済複雑性の構成要素 — Method of Reflections]]
