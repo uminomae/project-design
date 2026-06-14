@@ -168,11 +168,12 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D07_strogatz_2001_exploring-complex-networks|複雑ネットワークの探究 — 構造とダイナミクスの統一的視座]]
 - [[sources/D07_wiener_1948_cybernetics|サイバネティクス——動物と機械における制御と通信]]
 
-#### D08 神経科学 (11件)
+#### D08 神経科学 (12件)
 - [[sources/D08_beggs_2003_beggs-plenz-2003-neuronal|皮質神経回路におけるニューロン雪崩]]
 - [[sources/D08_clark_2013_whatever-next-predictive-brains|予測的な脳と状況づけられたエージェント — 階層的予測処理の射程]]
 - [[sources/D08_dehaene_2011_dehaene-changeux-2011-experimental|意識的処理への実験的・理論的アプローチ — グローバル神経ワークスペース]]
 - [[sources/D08_gaillard_2009_2009|意識的アクセスの収束する頭蓋内マーカー]]
+- [[sources/D08_markram_1997_1997-regulation-of-synaptic|後シナプス活動電位とEPSPの一致によるシナプス効力の調節（Markram et al. 1997）]]
 - [[sources/D08_mashour_2020_2020|意識的処理と Global Neuronal Workspace 仮説 — 20 年のレビュー]]
 - [[sources/D08_miller_2001_cohen-j-d|前頭前皮質機能の統合理論 — 認知制御のバイアス信号モデル]]
 - [[sources/D08_miller_2001_integrative-theory-prefrontal-cortex|前頭前皮質機能の統合理論]]
@@ -181,15 +182,18 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D08_tononi_2015_consciousness-here-there-and|意識はここに、そこに、どこにでも？— IIT による問いの再定式化]]
 - [[sources/D08_varela_1991_embodied-mind|身体化された心（The Embodied Mind）— 神経科学の視点]]
 
-#### D09 生命科学 (10件)
+#### D09 生命科学 (13件)
 - [[sources/D09_attwell_2001_attwell-laughlin-2001-an|脳灰白質の信号伝達のエネルギー収支]]
 - [[sources/D09_england_2013_statistical-physics-of-self|自己複製の統計力学 — 熱力学的下限の導出]]
 - [[sources/D09_fields_2015_fields-2015-a-new|活動依存的ミエリン化 — 神経系可塑性の新しい機構]]
 - [[sources/D09_iliff_2012_2012-a-paravascular-pathway|脳の傍血管経路（glymphatic システム）— 脳脊髄液による間質溶質クリアランス]]
 - [[sources/D09_levin_2012_molecular-bioelectricity|分子生体電気 — 膜電位勾配によるパターン形成制御]]
 - [[sources/D09_mcewen_1998_1998|ストレス媒介物の保護と損傷 — アロスタシスとアロスタティック負荷]]
+- [[sources/D09_misteli_2001_self-organization-in-cellular|細胞構築における自己組織化の概念（Misteli 2001）]]
+- [[sources/D09_pellerin_1994_pellerin-magistretti-1994-glutamate|グルタミン酸のアストロサイトへの取り込みが好気的解糖を刺激する（Pellerin & Magistretti 1994）]]
 - [[sources/D09_schafer_2012_2012-microglia-sculpt-postnatal|ミクログリアによる発達期シナプスの活動依存的・補体依存的な刈り込み]]
 - [[sources/D09_schultz_1997_schultz-dayan-montague-1997|予測と報酬の神経基盤 — ドーパミンによる予測誤差符号化]]
+- [[sources/D09_tsukada_1993_tsukada-ohsumi-1993-isolation|酵母オートファジー欠損変異体の単離と特徴づけ（Tsukada & Ohsumi 1993）]]
 - [[sources/D09_whitacre_2012_biological-robustness|生物学的ロバスト性 — パラダイム・メカニズム・系統原理]]
 - [[sources/D09_wolpert_1969_1969|位置情報と細胞分化の空間パターン（Wolpert 1969）]]
 
@@ -476,15 +480,15 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 | [[sources/D07_friston_2012_free-energy-principle\|生物系のための自由エネルギー原理 — 無秩序化への抵抗の数理]] | sources | 2026-06-14 |
 | [[sources/D07_strogatz_2001_exploring-complex-networks\|複雑ネットワークの探究 — 構造とダイナミクスの統一的視座]] | sources | 2026-06-14 |
 | [[sources/D08_dehaene_2011_dehaene-changeux-2011-experimental\|意識的処理への実験的・理論的アプローチ — グローバル神経ワークスペース]] | sources | 2026-06-14 |
+| [[sources/D08_markram_1997_1997-regulation-of-synaptic\|後シナプス活動電位とEPSPの一致によるシナプス効力の調節（Markram et al. 1997）]] | sources | 2026-06-14 |
 | [[sources/D08_miller_2001_cohen-j-d\|前頭前皮質機能の統合理論 — 認知制御のバイアス信号モデル]] | sources | 2026-06-14 |
 | [[sources/D09_attwell_2001_attwell-laughlin-2001-an\|脳灰白質の信号伝達のエネルギー収支]] | sources | 2026-06-14 |
 | [[sources/D09_mcewen_1998_1998\|ストレス媒介物の保護と損傷 — アロスタシスとアロスタティック負荷]] | sources | 2026-06-14 |
+| [[sources/D09_misteli_2001_self-organization-in-cellular\|細胞構築における自己組織化の概念（Misteli 2001）]] | sources | 2026-06-14 |
+| [[sources/D09_pellerin_1994_pellerin-magistretti-1994-glutamate\|グルタミン酸のアストロサイトへの取り込みが好気的解糖を刺激する（Pellerin & Magistretti 1994）]] | sources | 2026-06-14 |
+| [[sources/D09_tsukada_1993_tsukada-ohsumi-1993-isolation\|酵母オートファジー欠損変異体の単離と特徴づけ（Tsukada & Ohsumi 1993）]] | sources | 2026-06-14 |
 | [[sources/D09_wolpert_1969_1969\|位置情報と細胞分化の空間パターン（Wolpert 1969）]] | sources | 2026-06-14 |
 | [[sources/D10_burnet_1959_clonal-selection-acquired-immunity\|獲得免疫のクローン選択説（Clonal Selection Theory, Burnet 1959）]] | sources | 2026-06-14 |
 | [[sources/D10_rodrigues-et-al_2019_wound-healing-cellular-perspective\|創傷治癒：細胞の視点]] | sources | 2026-06-14 |
-| [[sources/D12_connell_1977_slatyer-r-o\|自然群集における遷移のメカニズム]] | sources | 2026-06-14 |
-| [[sources/D12_folke_2010_2010\|レジリエンス思考：レジリエンス・適応性・変革可能性の統合]] | sources | 2026-06-14 |
-| [[sources/D12_pedigo_1986_et-al\|経済的被害許容水準：理論と実践]] | sources | 2026-06-14 |
-| [[sources/D12_robertson_2009_vitousek-p-m\|農業における窒素：必須資源のコストの均衡]] | sources | 2026-06-14 |
 
 > このページは `scripts/generate-wiki-index.mjs` により自動生成されます。wiki/ 内のページ変更時に PostToolUse hook で自動実行されます。
