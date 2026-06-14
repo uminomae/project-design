@@ -182,11 +182,12 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D08_tononi_2015_consciousness-here-there-and|意識はここに、そこに、どこにでも？— IIT による問いの再定式化]]
 - [[sources/D08_varela_1991_embodied-mind|身体化された心（The Embodied Mind）— 神経科学の視点]]
 
-#### D09 生命科学 (13件)
+#### D09 生命科学 (14件)
 - [[sources/D09_attwell_2001_attwell-laughlin-2001-an|脳灰白質の信号伝達のエネルギー収支]]
 - [[sources/D09_england_2013_statistical-physics-of-self|自己複製の統計力学 — 熱力学的下限の導出]]
 - [[sources/D09_fields_2015_fields-2015-a-new|活動依存的ミエリン化 — 神経系可塑性の新しい機構]]
 - [[sources/D09_iliff_2012_2012-a-paravascular-pathway|脳の傍血管経路（glymphatic システム）— 脳脊髄液による間質溶質クリアランス]]
+- [[sources/D09_lane_2012_origin-of-membrane-bioenergetics|膜バイオエナジェティクスの起源（Lane & Martin 2012）]]
 - [[sources/D09_levin_2012_molecular-bioelectricity|分子生体電気 — 膜電位勾配によるパターン形成制御]]
 - [[sources/D09_mcewen_1998_1998|ストレス媒介物の保護と損傷 — アロスタシスとアロスタティック負荷]]
 - [[sources/D09_misteli_2001_self-organization-in-cellular|細胞構築における自己組織化の概念（Misteli 2001）]]
@@ -219,7 +220,8 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D11_tognoli_2009_brain-coordination-dynamics-true|脳の協調ダイナミクス — 位相同期の真と偽]]
 - [[sources/D11_wu_2014_chinese-medicine|ネットワーク薬理学による漢方処方「君臣佐使」の検証]]
 
-#### D12 農学・生態学 (13件)
+#### D12 農学・生態学 (14件)
+- [[sources/D12_carpenter_2006_r-brock-w|分散の増大：生態学的転移の先行指標（Carpenter & Brock 2006）]]
 - [[sources/D12_clements_1916_plant-succession|植物遷移論]]
 - [[sources/D12_connell_1977_slatyer-r-o|自然群集における遷移のメカニズム]]
 - [[sources/D12_crdoba_2020_agroecosystem-resilience|農業生態系のレジリエンス — エージェンシーと構造変革]]
@@ -487,12 +489,12 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 | [[sources/D08_markram_1997_1997-regulation-of-synaptic\|後シナプス活動電位とEPSPの一致によるシナプス効力の調節（Markram et al. 1997）]] | sources | 2026-06-14 |
 | [[sources/D08_miller_2001_cohen-j-d\|前頭前皮質機能の統合理論 — 認知制御のバイアス信号モデル]] | sources | 2026-06-14 |
 | [[sources/D09_attwell_2001_attwell-laughlin-2001-an\|脳灰白質の信号伝達のエネルギー収支]] | sources | 2026-06-14 |
+| [[sources/D09_lane_2012_origin-of-membrane-bioenergetics\|膜バイオエナジェティクスの起源（Lane & Martin 2012）]] | sources | 2026-06-14 |
 | [[sources/D09_mcewen_1998_1998\|ストレス媒介物の保護と損傷 — アロスタシスとアロスタティック負荷]] | sources | 2026-06-14 |
 | [[sources/D09_misteli_2001_self-organization-in-cellular\|細胞構築における自己組織化の概念（Misteli 2001）]] | sources | 2026-06-14 |
 | [[sources/D09_pellerin_1994_pellerin-magistretti-1994-glutamate\|グルタミン酸のアストロサイトへの取り込みが好気的解糖を刺激する（Pellerin & Magistretti 1994）]] | sources | 2026-06-14 |
 | [[sources/D09_tsukada_1993_tsukada-ohsumi-1993-isolation\|酵母オートファジー欠損変異体の単離と特徴づけ（Tsukada & Ohsumi 1993）]] | sources | 2026-06-14 |
 | [[sources/D09_wolpert_1969_1969\|位置情報と細胞分化の空間パターン（Wolpert 1969）]] | sources | 2026-06-14 |
 | [[sources/D10_burnet_1959_clonal-selection-acquired-immunity\|獲得免疫のクローン選択説（Clonal Selection Theory, Burnet 1959）]] | sources | 2026-06-14 |
-| [[sources/D10_rodrigues-et-al_2019_wound-healing-cellular-perspective\|創傷治癒：細胞の視点]] | sources | 2026-06-14 |
 
 > このページは `scripts/generate-wiki-index.mjs` により自動生成されます。wiki/ 内のページ変更時に PostToolUse hook で自動実行されます。
