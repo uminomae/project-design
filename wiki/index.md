@@ -180,7 +180,7 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D08_tononi_2015_consciousness-here-there-and|意識はここに、そこに、どこにでも？— IIT による問いの再定式化]]
 - [[sources/D08_varela_1991_embodied-mind|身体化された心（The Embodied Mind）— 神経科学の視点]]
 
-#### D09 生命科学 (9件)
+#### D09 生命科学 (10件)
 - [[sources/D09_attwell_2001_attwell-laughlin-2001-an|脳灰白質の信号伝達のエネルギー収支]]
 - [[sources/D09_england_2013_statistical-physics-of-self|自己複製の統計力学 — 熱力学的下限の導出]]
 - [[sources/D09_fields_2015_fields-2015-a-new|活動依存的ミエリン化 — 神経系可塑性の新しい機構]]
@@ -190,6 +190,7 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D09_schafer_2012_2012-microglia-sculpt-postnatal|ミクログリアによる発達期シナプスの活動依存的・補体依存的な刈り込み]]
 - [[sources/D09_schultz_1997_schultz-dayan-montague-1997|予測と報酬の神経基盤 — ドーパミンによる予測誤差符号化]]
 - [[sources/D09_whitacre_2012_biological-robustness|生物学的ロバスト性 — パラダイム・メカニズム・系統原理]]
+- [[sources/D09_wolpert_1969_1969|位置情報と細胞分化の空間パターン（Wolpert 1969）]]
 
 #### D10 臨床医学 (6件)
 - [[sources/D10_akdis_2014_allergen-immunotherapy|アレルゲン免疫療法の新治療戦略]]
@@ -297,7 +298,7 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D18_simmel_1903_1903|都市と精神生活 — Simmel の都市社会学]]
 - [[sources/D18_weber_1905_1905-1930|プロテスタンティズムの倫理と資本主義の精神]]
 
-#### D19 文学 (11件)
+#### D19 文学 (12件)
 - [[sources/D19_aristotle_1907_poetics|詩学 — ミメーシス・筋・カタルシスの理論]]
 - [[sources/D19_barthes_1970_s-z|S/Z — 5 つのコードによる段階的テクスト分析]]
 - [[sources/D19_bourdieu_1996_rules-of-art|芸術のルール — 文学場の生成と構造]]
@@ -308,6 +309,7 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D19_polti_1895_1895-1916|三十六の劇的状況（The Thirty-Six Dramatic Situations, Polti 1895/1916）]]
 - [[sources/D19_propp_1968_morphology-of-the-folktale|昔話の形態学]]
 - [[sources/D19_reagan_2016_2016|物語の感情曲線は6つの基本形に支配される]]
+- [[sources/D19_shklovsky_1917_1917-1965|手法としての芸術（Art as Technique, Shklovsky 1917）]]
 - [[sources/D19_todorov_1971_1971|物語の2つの原理]]
 
 #### D20 法学・政治学 (7件)
@@ -469,6 +471,7 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 | [[sources/D08_miller_2001_cohen-j-d\|前頭前皮質機能の統合理論 — 認知制御のバイアス信号モデル]] | sources | 2026-06-14 |
 | [[sources/D09_attwell_2001_attwell-laughlin-2001-an\|脳灰白質の信号伝達のエネルギー収支]] | sources | 2026-06-14 |
 | [[sources/D09_mcewen_1998_1998\|ストレス媒介物の保護と損傷 — アロスタシスとアロスタティック負荷]] | sources | 2026-06-14 |
+| [[sources/D09_wolpert_1969_1969\|位置情報と細胞分化の空間パターン（Wolpert 1969）]] | sources | 2026-06-14 |
 | [[sources/D10_rodrigues-et-al_2019_wound-healing-cellular-perspective\|創傷治癒：細胞の視点]] | sources | 2026-06-14 |
 | [[sources/D12_connell_1977_slatyer-r-o\|自然群集における遷移のメカニズム]] | sources | 2026-06-14 |
 | [[sources/D12_folke_2010_2010\|レジリエンス思考：レジリエンス・適応性・変革可能性の統合]] | sources | 2026-06-14 |
@@ -476,6 +479,5 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 | [[sources/D12_robertson_2009_vitousek-p-m\|農業における窒素：必須資源のコストの均衡]] | sources | 2026-06-14 |
 | [[sources/D12_scheffer_2003_carpenter-s-r\|生態系の破局的レジームシフト — 理論と観測をつなぐ]] | sources | 2026-06-14 |
 | [[sources/D13_bergson_1911_bergson-1911-creative-evolution\|創造的進化（Creative Evolution, Bergson 1911）]] | sources | 2026-06-14 |
-| [[sources/D13_deleuze_1966_1966-2001\|ジルベール・シモンドン論（Deleuze, Review of Simondon 1966）]] | sources | 2026-06-14 |
 
 > このページは `scripts/generate-wiki-index.mjs` により自動生成されます。wiki/ 内のページ変更時に PostToolUse hook で自動実行されます。
