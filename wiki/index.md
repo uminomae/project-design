@@ -261,13 +261,14 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D15_vessel_2012_2012|アートに脳が動くとき — 強い美的経験はデフォルトモードネットワークを活性化する]]
 - [[sources/D15_zeami_classics|風姿花伝（花の美学）]]
 
-#### D16 歴史学 (12件)
+#### D16 歴史学 (13件)
 - [[sources/D16_braudel_1949_1949|地中海（La Méditerranée, Braudel 1949）]]
 - [[sources/D16_braudel_1958_longue-duree|長期持続 — 歴史と社会科学の時間的多層性]]
 - [[sources/D16_ibn-khaldun_1377_muqaddimah|ムカッディマ（歴史序説）]]
 - [[sources/D16_mahoney_2000_2000|歴史社会学における経路依存]]
 - [[sources/D16_mascareo_2022_critical-transitions-in-ecosystems|生態系と社会における臨界転移 — 社会システム理論との対話]]
 - [[sources/D16_north_1990_1990|制度・制度変化・経済成果（North 1990）]]
+- [[sources/D16_olsson_2004_social-ecological-transformation-for|生態系管理に向けた社会生態的変革（Olsson, Folke & Hahn 2004）]]
 - [[sources/D16_scheffer_2012_2012|臨界転移を予兆する — 早期警告指標の統合]]
 - [[sources/D16_toynbee_1934_study-of-history|歴史の研究 — 文明の挑戦と応答]]
 - [[sources/D16_turchin_2013_war-space-evolution-old-world-complex-societies|戦争・空間・旧世界複雑社会の進化]]
@@ -331,13 +332,14 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D21_schumpeter_1942_1942|資本主義・社会主義・民主主義（Schumpeter 1942）]]
 - [[sources/D21_walker_2009_2009|ゴルバーン・ブロークン流域におけるレジリエンス・適応性・変革可能性]]
 
-#### D22 経営学 (11件)
+#### D22 経営学 (12件)
 - [[sources/D22_akiike_2021_design-thinking-articles|デザイン思考論文に求められる要件とは何か]]
 - [[sources/D22_brown_2008_design-thinking|デザイン思考（Tim Brown, HBR 2008）]]
 - [[sources/D22_friston_2018_am-i-self-conscious|私は自己意識を持つか — 自己組織化と自己意識]]
 - [[sources/D22_gersick_1988_1988|ワークチームにおける時間と転換：集団発達の新モデル]]
 - [[sources/D22_hu_2021_trajectories-of-idea-emergence|対話的協働問題解決におけるアイデア出現の軌跡]]
 - [[sources/D22_lyon_2014_dreyfus-model-of-skill|ドレイファス技能習得モデルから見た教育専門性の発達]]
+- [[sources/D22_moller_2004_2004|科学と伝統的生態学的知識の結合：共同管理のための個体群モニタリング]]
 - [[sources/D22_nonaka_1996_senoo-d|情報処理から知識創造へ：経営におけるパラダイム転換]]
 - [[sources/D22_nonaka_2000_konno-n|SECI、Ba、リーダーシップ：動的知識創造の統合モデル]]
 - [[sources/D22_stanford_2010_design-thinking-process-guide|デザイン思考プロセスガイド]]
@@ -353,12 +355,13 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D23_rochat_2003_2003|乳幼児期に展開する自己意識の 5 レベル]]
 - [[sources/D23_tononi_2014_integrated-information-theory-3|現象学からメカニズムへ — 統合情報理論 3.0]]
 
-#### D24 宗教学 (9件)
+#### D24 宗教学 (10件)
 - [[sources/D24_berkovichohana_2014_the-consciousness-state-space|意識状態空間（CSS）— 意識と自己の統合モデル]]
 - [[sources/D24_bucke_1901_bucke-1901-cosmic-consciousness|宇宙意識（Cosmic Consciousness, Bucke 1901）]]
 - [[sources/D24_dimarzio_2019_affiliation-conversion-departure|新宗教運動への加入・改宗・脱プログラミング・離脱の経験]]
 - [[sources/D24_james_1902_varieties-of-religious-experience|宗教的経験の諸相]]
 - [[sources/D24_otto_1917_idea-of-the-holy|聖なるもの — ヌミノーゼと mysterium tremendum]]
+- [[sources/D24_pew_2025_religious-switching-reports|世界の宗教スイッチング（Pew Research Center 2025）]]
 - [[sources/D24_suzuki_1935_manual-of-zen-buddhism|禅仏教提要]]
 - [[sources/D24_teresa_1921_interior-castle|内なる城]]
 - [[sources/D24_underhill_1911_underhill-1911-mysticism|神秘主義（Mysticism, Underhill 1911）]]
@@ -408,12 +411,13 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D29_prigogine_1977_time-structure-fluctuations|時間、構造、そしてゆらぎ — ノーベル講演]]
 - [[sources/D29_watkins_2016_25-years-self-organized-criticality|自己組織化臨界の25年：概念と論争]]
 
-#### D30 伝統知・技芸 (6件)
+#### D30 伝統知・技芸 (7件)
 - [[sources/D30_asmamaw_2020_the-role-of-local|地域知識による社会-生態系のレジリエンス強化]]
 - [[sources/D30_cbd_2018_nagoya-protocol|名古屋議定書]]
 - [[sources/D30_gmezbaggethun_2013_traditional-ecological-knowledge-and|伝統的生態学的知識と地球環境変化]]
 - [[sources/D30_ipbes_2019_ilk-methodological-guidance|IPBES 先住民・地域知識 方法論ガイダンス]]
 - [[sources/D30_matsuki_numata_2021_ichiza-konryu|茶事における場の共創：「一座建立」の意味空間]]
+- [[sources/D30_olsson_2004_social-ecological-transformation|社会生態的変革（Olsson, Folke & Hahn 2004, D30）]]
 - [[sources/D30_zeami_classics|風姿花伝（一座建立・場の共創）]]
 
 ## Cross References
