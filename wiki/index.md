@@ -225,22 +225,29 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D12_scheffer_2003_carpenter-s-r|生態系の破局的レジームシフト — 理論と観測をつなぐ]]
 - [[sources/D12_stern_1959_integrated-control-concept|総合的防除の概念]]
 
-#### D13 哲学 (6件)
+#### D13 哲学 (10件)
+- [[sources/D13_bergson_1911_bergson-1911-creative-evolution|創造的進化（Creative Evolution, Bergson 1911）]]
 - [[sources/D13_dewey_1910_how-we-think|思考の方法（1910年版）]]
 - [[sources/D13_dewey_1929_quest-for-certainty|確実性の探求]]
 - [[sources/D13_dewey_1933_how-we-think-restatement|思考の方法（1933年改訂版）]]
 - [[sources/D13_dewey_1934_art-as-experience|経験としての芸術（探究・思考論の観点）]]
+- [[sources/D13_dewey_1938_1938|論理学：探究の理論（Logic: The Theory of Inquiry, Dewey 1938）]]
+- [[sources/D13_james_1890_principles-of-psychology-vol|心理学原理（The Principles of Psychology, James 1890, Vol.1）— 意識の流れ]]
 - [[sources/D13_maturana_1974_autopoiesis|オートポイエーシス — 生命システムの自己産出組織]]
+- [[sources/D13_peirce_1923_peirce-1923-chance-love|偶然・愛・論理（Chance, Love, and Logic, Peirce 1923）]]
 - [[sources/D13_whitehead_1929_process-and-reality|過程と実在]]
 
-#### D14 心理学 (7件)
+#### D14 心理学 (10件)
 - [[sources/D14_bargh_1999_chartrand-t-l|存在の耐え難い自動性]]
 - [[sources/D14_clark_1998_chalmers-d|拡張された心 — Clark & Chalmers]]
+- [[sources/D14_dewey_1910_1910|思考の方法（How We Think, Dewey 1910）]]
 - [[sources/D14_dietrich_2004_cognitive-neuroscience-of-creativity|創造性の認知神経科学 — 4類型の神経回路モデル]]
 - [[sources/D14_ericsson_1993_tesch-romer-c|熟達の獲得における意図的練習の役割 — 10 年ルール]]
 - [[sources/D14_hesse_2014_self-organized-criticality-as|神経系の基本特性としての自己組織化臨界性]]
+- [[sources/D14_james_1890_1890|心理学原理（The Principles of Psychology, James 1890）— 思考と習慣]]
 - [[sources/D14_maslow_1943_1943|人間の動機の理論 — 欲求階層]]
 - [[sources/D14_varela_1991_embodied-mind|身体化された心（The Embodied Mind）]]
+- [[sources/D14_wallas_1926_wallas-1926-the-art|思考の技法（The Art of Thought, Wallas 1926）]]
 
 #### D15 美学 (8件)
 - [[sources/D15_botella_2018_what-are-the-stages|創造プロセスの段階とは何か — 視覚芸術学生の声から]]
@@ -449,7 +456,7 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 | [[sources/D12_pedigo_1986_et-al\|経済的被害許容水準：理論と実践]] | sources | 2026-06-14 |
 | [[sources/D12_robertson_2009_vitousek-p-m\|農業における窒素：必須資源のコストの均衡]] | sources | 2026-06-14 |
 | [[sources/D12_scheffer_2003_carpenter-s-r\|生態系の破局的レジームシフト — 理論と観測をつなぐ]] | sources | 2026-06-14 |
-| [[sources/D13_maturana_1974_autopoiesis\|オートポイエーシス — 生命システムの自己産出組織]] | sources | 2026-06-14 |
-| [[sources/D14_dietrich_2004_cognitive-neuroscience-of-creativity\|創造性の認知神経科学 — 4類型の神経回路モデル]] | sources | 2026-06-14 |
+| [[sources/D13_bergson_1911_bergson-1911-creative-evolution\|創造的進化（Creative Evolution, Bergson 1911）]] | sources | 2026-06-14 |
+| [[sources/D13_dewey_1938_1938\|論理学：探究の理論（Logic: The Theory of Inquiry, Dewey 1938）]] | sources | 2026-06-14 |
 
 > このページは `scripts/generate-wiki-index.mjs` により自動生成されます。wiki/ 内のページ変更時に PostToolUse hook で自動実行されます。
