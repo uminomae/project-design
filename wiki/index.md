@@ -211,12 +211,14 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D11_tognoli_2009_brain-coordination-dynamics-true|脳の協調ダイナミクス — 位相同期の真と偽]]
 - [[sources/D11_wu_2014_chinese-medicine|ネットワーク薬理学による漢方処方「君臣佐使」の検証]]
 
-#### D12 農学・生態学 (8件)
+#### D12 農学・生態学 (10件)
 - [[sources/D12_clements_1916_plant-succession|植物遷移論]]
+- [[sources/D12_connell_1977_slatyer-r-o|自然群集における遷移のメカニズム]]
 - [[sources/D12_crdoba_2020_agroecosystem-resilience|農業生態系のレジリエンス — エージェンシーと構造変革]]
 - [[sources/D12_holling_1973_resilience-stability|生態系のレジリエンスと安定性]]
 - [[sources/D12_maff_2005_ipm-practical-guideline|総合的病害虫・雑草管理（IPM）実践指針]]
 - [[sources/D12_medina_2023_developing-systems-theory-in|土壌アグロエコロジーにおけるシステム理論の発展]]
+- [[sources/D12_robertson_2009_vitousek-p-m|農業における窒素：必須資源のコストの均衡]]
 - [[sources/D12_scheffer_2001_et-al|生態系における破局的状態遷移]]
 - [[sources/D12_scheffer_2003_carpenter-s-r|生態系の破局的レジームシフト — 理論と観測をつなぐ]]
 - [[sources/D12_stern_1959_integrated-control-concept|総合的防除の概念]]
@@ -248,9 +250,10 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D15_vessel_2012_2012|アートに脳が動くとき — 強い美的経験はデフォルトモードネットワークを活性化する]]
 - [[sources/D15_zeami_classics|風姿花伝（花の美学）]]
 
-#### D16 歴史学 (6件)
+#### D16 歴史学 (7件)
 - [[sources/D16_braudel_1958_longue-duree|長期持続 — 歴史と社会科学の時間的多層性]]
 - [[sources/D16_ibn-khaldun_1377_muqaddimah|ムカッディマ（歴史序説）]]
+- [[sources/D16_mahoney_2000_2000|歴史社会学における経路依存]]
 - [[sources/D16_mascareo_2022_critical-transitions-in-ecosystems|生態系と社会における臨界転移 — 社会システム理論との対話]]
 - [[sources/D16_scheffer_2012_2012|臨界転移を予兆する — 早期警告指標の統合]]
 - [[sources/D16_toynbee_1934_study-of-history|歴史の研究 — 文明の挑戦と応答]]
@@ -304,10 +307,11 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D21_schumpeter_1912_theorie-der-wirtschaftlichen-entwicklung|経済発展の理論（初版）]]
 - [[sources/D21_schumpeter_1939_business-cycles|景気循環論]]
 
-#### D22 経営学 (7件)
+#### D22 経営学 (8件)
 - [[sources/D22_akiike_2021_design-thinking-articles|デザイン思考論文に求められる要件とは何か]]
 - [[sources/D22_brown_2008_design-thinking|デザイン思考（Tim Brown, HBR 2008）]]
 - [[sources/D22_friston_2018_am-i-self-conscious|私は自己意識を持つか — 自己組織化と自己意識]]
+- [[sources/D22_gersick_1988_1988|ワークチームにおける時間と転換：集団発達の新モデル]]
 - [[sources/D22_hu_2021_trajectories-of-idea-emergence|対話的協働問題解決におけるアイデア出現の軌跡]]
 - [[sources/D22_stanford_2010_design-thinking-process-guide|デザイン思考プロセスガイド]]
 - [[sources/D22_tuckman_1965_1965|小集団の発達系列 — Tuckman の 4 段階モデル]]
@@ -431,12 +435,12 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 | [[sources/D09_attwell_2001_attwell-laughlin-2001-an\|脳灰白質の信号伝達のエネルギー収支]] | sources | 2026-06-14 |
 | [[sources/D09_mcewen_1998_1998\|ストレス媒介物の保護と損傷 — アロスタシスとアロスタティック負荷]] | sources | 2026-06-14 |
 | [[sources/D10_rodrigues-et-al_2019_wound-healing-cellular-perspective\|創傷治癒：細胞の視点]] | sources | 2026-06-14 |
+| [[sources/D12_connell_1977_slatyer-r-o\|自然群集における遷移のメカニズム]] | sources | 2026-06-14 |
+| [[sources/D12_robertson_2009_vitousek-p-m\|農業における窒素：必須資源のコストの均衡]] | sources | 2026-06-14 |
 | [[sources/D12_scheffer_2003_carpenter-s-r\|生態系の破局的レジームシフト — 理論と観測をつなぐ]] | sources | 2026-06-14 |
 | [[sources/D13_maturana_1974_autopoiesis\|オートポイエーシス — 生命システムの自己産出組織]] | sources | 2026-06-14 |
 | [[sources/D14_dietrich_2004_cognitive-neuroscience-of-creativity\|創造性の認知神経科学 — 4類型の神経回路モデル]] | sources | 2026-06-14 |
+| [[sources/D16_mahoney_2000_2000\|歴史社会学における経路依存]] | sources | 2026-06-14 |
 | [[sources/D17_hartshorne-tenenbaum-pinker_2018_critical-period-second-language\|第二言語習得の臨界期：67万人のデータからの証拠]] | sources | 2026-06-14 |
-| [[sources/D17_lenneberg_1969_on-explaining-language\|言語を説明する（On Explaining Language）]] | sources | 2026-06-14 |
-| [[sources/D19_reagan_2016_2016\|物語の感情曲線は6つの基本形に支配される]] | sources | 2026-06-14 |
-| [[sources/D20_folke-et-al_2005_adaptive-governance\|社会生態システムの順応的ガバナンス]] | sources | 2026-06-14 |
 
 > このページは `scripts/generate-wiki-index.mjs` により自動生成されます。wiki/ 内のページ変更時に PostToolUse hook で自動実行されます。
