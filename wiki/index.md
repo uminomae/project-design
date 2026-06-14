@@ -179,11 +179,12 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D08_tononi_2015_consciousness-here-there-and|意識はここに、そこに、どこにでも？— IIT による問いの再定式化]]
 - [[sources/D08_varela_1991_embodied-mind|身体化された心（The Embodied Mind）— 神経科学の視点]]
 
-#### D09 生命科学 (7件)
+#### D09 生命科学 (8件)
 - [[sources/D09_england_2013_statistical-physics-of-self|自己複製の統計力学 — 熱力学的下限の導出]]
 - [[sources/D09_fields_2015_fields-2015-a-new|活動依存的ミエリン化 — 神経系可塑性の新しい機構]]
 - [[sources/D09_iliff_2012_2012-a-paravascular-pathway|脳の傍血管経路（glymphatic システム）— 脳脊髄液による間質溶質クリアランス]]
 - [[sources/D09_levin_2012_molecular-bioelectricity|分子生体電気 — 膜電位勾配によるパターン形成制御]]
+- [[sources/D09_mcewen_1998_1998|ストレス媒介物の保護と損傷 — アロスタシスとアロスタティック負荷]]
 - [[sources/D09_schafer_2012_2012-microglia-sculpt-postnatal|ミクログリアによる発達期シナプスの活動依存的・補体依存的な刈り込み]]
 - [[sources/D09_schultz_1997_schultz-dayan-montague-1997|予測と報酬の神経基盤 — ドーパミンによる予測誤差符号化]]
 - [[sources/D09_whitacre_2012_biological-robustness|生物学的ロバスト性 — パラダイム・メカニズム・系統原理]]
@@ -207,13 +208,14 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D11_tognoli_2009_brain-coordination-dynamics-true|脳の協調ダイナミクス — 位相同期の真と偽]]
 - [[sources/D11_wu_2014_chinese-medicine|ネットワーク薬理学による漢方処方「君臣佐使」の検証]]
 
-#### D12 農学・生態学 (7件)
+#### D12 農学・生態学 (8件)
 - [[sources/D12_clements_1916_plant-succession|植物遷移論]]
 - [[sources/D12_crdoba_2020_agroecosystem-resilience|農業生態系のレジリエンス — エージェンシーと構造変革]]
 - [[sources/D12_holling_1973_resilience-stability|生態系のレジリエンスと安定性]]
 - [[sources/D12_maff_2005_ipm-practical-guideline|総合的病害虫・雑草管理（IPM）実践指針]]
 - [[sources/D12_medina_2023_developing-systems-theory-in|土壌アグロエコロジーにおけるシステム理論の発展]]
 - [[sources/D12_scheffer_2001_et-al|生態系における破局的状態遷移]]
+- [[sources/D12_scheffer_2003_carpenter-s-r|生態系の破局的レジームシフト — 理論と観測をつなぐ]]
 - [[sources/D12_stern_1959_integrated-control-concept|総合的防除の概念]]
 
 #### D13 哲学 (6件)
@@ -269,13 +271,14 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D18_simmel_1903_1903|都市と精神生活 — Simmel の都市社会学]]
 - [[sources/D18_weber_1905_1905-1930|プロテスタンティズムの倫理と資本主義の精神]]
 
-#### D19 文学 (6件)
+#### D19 文学 (7件)
 - [[sources/D19_aristotle_1907_poetics|詩学 — ミメーシス・筋・カタルシスの理論]]
 - [[sources/D19_barthes_1970_s-z|S/Z — 5 つのコードによる段階的テクスト分析]]
 - [[sources/D19_bourdieu_1996_rules-of-art|芸術のルール — 文学場の生成と構造]]
 - [[sources/D19_freytag_1895_technique-of-the-drama|ドラマの技法 — 5 部構成のピラミッド]]
 - [[sources/D19_genette_1980_genette-1980-narrative-discourse|物語のディスクール — Genette の物語論]]
 - [[sources/D19_propp_1968_morphology-of-the-folktale|昔話の形態学]]
+- [[sources/D19_reagan_2016_2016|物語の感情曲線は6つの基本形に支配される]]
 
 #### D20 法学・政治学 (5件)
 - [[sources/D20_idea_2011_practical-guide-constitution-building|憲法制定の実践ガイド]]
@@ -415,16 +418,16 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 | [[sources/D07_strogatz_2001_exploring-complex-networks\|複雑ネットワークの探究 — 構造とダイナミクスの統一的視座]] | sources | 2026-06-14 |
 | [[sources/D08_dehaene_2011_dehaene-changeux-2011-experimental\|意識的処理への実験的・理論的アプローチ — グローバル神経ワークスペース]] | sources | 2026-06-14 |
 | [[sources/D08_miller_2001_cohen-j-d\|前頭前皮質機能の統合理論 — 認知制御のバイアス信号モデル]] | sources | 2026-06-14 |
+| [[sources/D09_mcewen_1998_1998\|ストレス媒介物の保護と損傷 — アロスタシスとアロスタティック負荷]] | sources | 2026-06-14 |
+| [[sources/D12_scheffer_2003_carpenter-s-r\|生態系の破局的レジームシフト — 理論と観測をつなぐ]] | sources | 2026-06-14 |
 | [[sources/D13_maturana_1974_autopoiesis\|オートポイエーシス — 生命システムの自己産出組織]] | sources | 2026-06-14 |
 | [[sources/D14_dietrich_2004_cognitive-neuroscience-of-creativity\|創造性の認知神経科学 — 4類型の神経回路モデル]] | sources | 2026-06-14 |
+| [[sources/D19_reagan_2016_2016\|物語の感情曲線は6つの基本形に支配される]] | sources | 2026-06-14 |
 | [[sources/D26_eerola_2021_anatomy-of-consonance-dissonance\|協和・不協和の解剖学]] | sources | 2026-06-13 |
 | [[sources/D26_hanslick_1854_1854-1891\|音楽美論 — 音響的に動く形式と創造]] | sources | 2026-06-13 |
 | [[sources/D26_helmholtz_1895_helmholtz-1895-on-the\|音感覚論 — 音楽理論の生理学的基礎]] | sources | 2026-06-13 |
 | [[sources/D02_strogatz_2001_exploring-complex-networks\|複雑ネットワークの探究]] | sources | 2026-04-19 |
 | [[sources/D08_miller_2001_integrative-theory-prefrontal-cortex\|前頭前皮質機能の統合理論]] | sources | 2026-04-19 |
 | [[sources/D11_blanco_2015_principles-of-nanoparticle-design\|ナノ粒子設計の原理 — 薬物送達の生物学的バリアを越えるには]] | sources | 2026-04-19 |
-| [[sources/D11_csermely_2011_2011\|Allo-Network Drugs — 細胞ネットワークにおけるアロステリーの活用]] | sources | 2026-04-19 |
-| [[sources/D11_tognoli_2009_brain-coordination-dynamics-true\|脳の協調ダイナミクス — 位相同期の真と偽]] | sources | 2026-04-19 |
-| [[sources/D14_clark_1998_chalmers-d\|拡張された心 — Clark & Chalmers]] | sources | 2026-04-19 |
 
 > このページは `scripts/generate-wiki-index.mjs` により自動生成されます。wiki/ 内のページ変更時に PostToolUse hook で自動実行されます。
