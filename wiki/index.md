@@ -249,8 +249,9 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D14_varela_1991_embodied-mind|身体化された心（The Embodied Mind）]]
 - [[sources/D14_wallas_1926_wallas-1926-the-art|思考の技法（The Art of Thought, Wallas 1926）]]
 
-#### D15 美学 (8件)
+#### D15 美学 (9件)
 - [[sources/D15_botella_2018_what-are-the-stages|創造プロセスの段階とは何か — 視覚芸術学生の声から]]
+- [[sources/D15_dewey_1934_1934|経験としての芸術（Art as Experience, Dewey 1934）]]
 - [[sources/D15_dewey_1934_art-as-experience|経験としての芸術（美学・芸術哲学の観点）]]
 - [[sources/D15_kant_1790_kritik-der-urteilskraft|判断力批判]]
 - [[sources/D15_marin_2015_crossing-boundaries-toward-a|境界を越えて — 神経美学の一般モデルに向けて]]
@@ -259,14 +260,18 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D15_vessel_2012_2012|アートに脳が動くとき — 強い美的経験はデフォルトモードネットワークを活性化する]]
 - [[sources/D15_zeami_classics|風姿花伝（花の美学）]]
 
-#### D16 歴史学 (7件)
+#### D16 歴史学 (11件)
+- [[sources/D16_braudel_1949_1949|地中海（La Méditerranée, Braudel 1949）]]
 - [[sources/D16_braudel_1958_longue-duree|長期持続 — 歴史と社会科学の時間的多層性]]
 - [[sources/D16_ibn-khaldun_1377_muqaddimah|ムカッディマ（歴史序説）]]
 - [[sources/D16_mahoney_2000_2000|歴史社会学における経路依存]]
 - [[sources/D16_mascareo_2022_critical-transitions-in-ecosystems|生態系と社会における臨界転移 — 社会システム理論との対話]]
+- [[sources/D16_north_1990_1990|制度・制度変化・経済成果（North 1990）]]
 - [[sources/D16_scheffer_2012_2012|臨界転移を予兆する — 早期警告指標の統合]]
 - [[sources/D16_toynbee_1934_study-of-history|歴史の研究 — 文明の挑戦と応答]]
 - [[sources/D16_turchin_2013_war-space-evolution-old-world-complex-societies|戦争・空間・旧世界複雑社会の進化]]
+- [[sources/D16_unknown_0000_toynbee-a-j-a|歴史の研究（A Study of History, Toynbee）]]
+- [[sources/D16_wallerstein_1974_1974|近代世界システムI（The Modern World-System I, Wallerstein 1974）]]
 
 #### D17 言語学 (7件)
 - [[sources/D17_beckner_2017_the-emergence-of-linguistic|オンライン反復学習における言語構造の創発]]
@@ -307,7 +312,7 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D20_singapore-convention_2018_mediation|シンガポール調停条約 (2018)]]
 - [[sources/D20_uncitral_2021_mediation-rules|UNCITRAL 調停規則 (2021)]]
 
-#### D21 経済学 (10件)
+#### D21 経済学 (11件)
 - [[sources/D21_deco_2008_2008|安静時のノイズが脳の動的レパートリー探索を可能にする]]
 - [[sources/D21_hayek_1945_use-of-knowledge-in-society|社会における知識の利用]]
 - [[sources/D21_hayek_2002_competition-discovery-procedure|発見手続きとしての競争]]
@@ -317,6 +322,7 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D21_knight_1921_risk-uncertainty-profit|リスク・不確実性・利潤]]
 - [[sources/D21_schumpeter_1912_theorie-der-wirtschaftlichen-entwicklung|経済発展の理論（初版）]]
 - [[sources/D21_schumpeter_1939_business-cycles|景気循環論]]
+- [[sources/D21_schumpeter_1942_1942|資本主義・社会主義・民主主義（Schumpeter 1942）]]
 - [[sources/D21_walker_2009_2009|ゴルバーン・ブロークン流域におけるレジリエンス・適応性・変革可能性]]
 
 #### D22 経営学 (11件)
