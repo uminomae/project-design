@@ -103,9 +103,10 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D02_unknown_0000_observation-of-the-kibble|イオン結晶における Kibble-Zurek スケーリング則の観測]]
 - [[sources/D02_zurek_2003_decoherence-einselection-quantum-origins-classical|デコヒーレンス、アインセレクション、古典性の量子的起源]]
 
-#### D03 化学 (10件)
+#### D03 化学 (11件)
 - [[sources/D03_ameta_2021_2021|自己触媒化学反応系における自己複製とダーウィン進化]]
 - [[sources/D03_becker-doring_1935_keimbildung|過飽和蒸気における核形成の運動論的処理]]
+- [[sources/D03_chambon-winter_1987_gel-point|化学量論的に不均衡な架橋PDMSのゲル化点における線形粘弾性]]
 - [[sources/D03_field-noyes_1974_oscillations|化学系における振動 IV: 実在する化学反応のモデルにおけるリミットサイクル挙動]]
 - [[sources/D03_hordijk_2010_autocatalytic-sets-and-the|自己触媒集合と生命の起源 — RAF 集合の数学]]
 - [[sources/D03_johnson_2011_johnson-goody-2011-the|Michaelis-Menten 1913 論文の翻訳と現代解析]]
@@ -251,10 +252,11 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D14_varela_1991_embodied-mind|身体化された心（The Embodied Mind）]]
 - [[sources/D14_wallas_1926_wallas-1926-the-art|思考の技法（The Art of Thought, Wallas 1926）]]
 
-#### D15 美学 (9件)
+#### D15 美学 (10件)
 - [[sources/D15_botella_2018_what-are-the-stages|創造プロセスの段階とは何か — 視覚芸術学生の声から]]
 - [[sources/D15_dewey_1934_1934|経験としての芸術（Art as Experience, Dewey 1934）]]
 - [[sources/D15_dewey_1934_art-as-experience|経験としての芸術（美学・芸術哲学の観点）]]
+- [[sources/D15_heidegger_1935_1935-36|芸術作品の起源（The Origin of the Work of Art, Heidegger 1935/36）]]
 - [[sources/D15_kant_1790_kritik-der-urteilskraft|判断力批判]]
 - [[sources/D15_marin_2015_crossing-boundaries-toward-a|境界を越えて — 神経美学の一般モデルに向けて]]
 - [[sources/D15_motoori_1799_tama-no-ogushi|源氏物語玉の小櫛]]
@@ -459,6 +461,7 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 
 | ページ | category | compiled |
 |--------|----------|----------|
+| [[sources/D03_chambon-winter_1987_gel-point\|化学量論的に不均衡な架橋PDMSのゲル化点における線形粘弾性]] | sources | 2026-06-14 |
 | [[sources/D04_erwin_2015_novelty-and-innovation-in\|生命史における新奇性とイノベーション]] | sources | 2026-06-14 |
 | [[sources/D04_lane_2012_the-origin-of-membrane\|膜による生体エネルギー変換の起源]] | sources | 2026-06-14 |
 | [[sources/D05_conrad_2002_lithgow-bertelloni-c\|マントルのスラブはいかにプレートテクトニクスを駆動するか]] | sources | 2026-06-14 |
@@ -478,6 +481,5 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 | [[sources/D12_pedigo_1986_et-al\|経済的被害許容水準：理論と実践]] | sources | 2026-06-14 |
 | [[sources/D12_robertson_2009_vitousek-p-m\|農業における窒素：必須資源のコストの均衡]] | sources | 2026-06-14 |
 | [[sources/D12_scheffer_2003_carpenter-s-r\|生態系の破局的レジームシフト — 理論と観測をつなぐ]] | sources | 2026-06-14 |
-| [[sources/D13_bergson_1911_bergson-1911-creative-evolution\|創造的進化（Creative Evolution, Bergson 1911）]] | sources | 2026-06-14 |
 
 > このページは `scripts/generate-wiki-index.mjs` により自動生成されます。wiki/ 内のページ変更時に PostToolUse hook で自動実行されます。
