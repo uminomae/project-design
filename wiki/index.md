@@ -129,10 +129,11 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D04_watson_2016_how-can-evolution-learn|進化はどのように学習するか — 進化と学習の数学的等価性]]
 - [[sources/D04_woese_2002_woese-2002-on-the|細胞の進化について — ダーウィン閾と HGT]]
 
-#### D05 地球科学 (7件)
+#### D05 地球科学 (8件)
 - [[sources/D05_bak_1988_wiesenfeld-k|自己組織化臨界性 — Bak-Tang-Wiesenfeld の砂山モデル]]
 - [[sources/D05_cane-zebiak_1985_enso-theory|エルニーニョと南方振動の理論]]
 - [[sources/D05_conrad_2002_lithgow-bertelloni-c|マントルのスラブはいかにプレートテクトニクスを駆動するか]]
+- [[sources/D05_le-pichon_1968_sea-floor-spreading|海底拡大と大陸移動]]
 - [[sources/D05_lenton_2008_2008|地球気候系のティッピング要素]]
 - [[sources/D05_morgan_1968_rises-trenches|プレートテクトニクスの数理的基礎 — 剛体球面ブロックモデルによる地殻運動の記述]]
 - [[sources/D05_suarez_1988_schopf-p-s|ENSO のための遅延作用振動子]]
@@ -190,9 +191,10 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D09_schultz_1997_schultz-dayan-montague-1997|予測と報酬の神経基盤 — ドーパミンによる予測誤差符号化]]
 - [[sources/D09_whitacre_2012_biological-robustness|生物学的ロバスト性 — パラダイム・メカニズム・系統原理]]
 
-#### D10 臨床医学 (5件)
+#### D10 臨床医学 (6件)
 - [[sources/D10_akdis_2014_allergen-immunotherapy|アレルゲン免疫療法の新治療戦略]]
 - [[sources/D10_engel_1977_1977|新しい医療モデルの必要 — 生物心理社会モデル]]
+- [[sources/D10_rodrigues-et-al_2019_wound-healing-cellular-perspective|創傷治癒：細胞の視点]]
 - [[sources/D10_rosenblum_2015_autoimmunity|ヒト自己免疫疾患のメカニズム]]
 - [[sources/D10_serhan_2014_pro-resolving-lipid-mediators|炎症収束を促進する脂質メディエーター — Resolution Physiology]]
 - [[sources/D10_tonegawa_1987_nobel-lecture|抗体多様性の体細胞生成（ノーベル講演）]]
@@ -254,10 +256,12 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D16_toynbee_1934_study-of-history|歴史の研究 — 文明の挑戦と応答]]
 - [[sources/D16_turchin_2013_war-space-evolution-old-world-complex-societies|戦争・空間・旧世界複雑社会の進化]]
 
-#### D17 言語学 (5件)
+#### D17 言語学 (7件)
 - [[sources/D17_beckner_2017_the-emergence-of-linguistic|オンライン反復学習における言語構造の創発]]
 - [[sources/D17_bickerton_1981_roots-of-language|言語の起源]]
+- [[sources/D17_hartshorne-tenenbaum-pinker_2018_critical-period-second-language|第二言語習得の臨界期：67万人のデータからの証拠]]
 - [[sources/D17_jakobson_1956_halle-m|言語の基礎 — 弁別特徴と二極性（隠喩・換喩）]]
+- [[sources/D17_lenneberg_1969_on-explaining-language|言語を説明する（On Explaining Language）]]
 - [[sources/D17_lupyan_2010_language-structure-is-partly|言語構造は社会構造によって部分的に決定される — 言語ニッチ仮説]]
 - [[sources/D17_senghas_2004_children-creating-core-properties|ニカラグア手話における言語の中核特性の創造]]
 
@@ -281,7 +285,9 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D19_propp_1968_morphology-of-the-folktale|昔話の形態学]]
 - [[sources/D19_reagan_2016_2016|物語の感情曲線は6つの基本形に支配される]]
 
-#### D20 法学・政治学 (5件)
+#### D20 法学・政治学 (7件)
+- [[sources/D20_folke-et-al_2005_adaptive-governance|社会生態システムの順応的ガバナンス]]
+- [[sources/D20_holling_1973_resilience-stability|生態系のレジリエンスと安定性]]
 - [[sources/D20_idea_2011_practical-guide-constitution-building|憲法制定の実践ガイド]]
 - [[sources/D20_ostrom_1990_governing-the-commons|コモンズのガバナンス]]
 - [[sources/D20_sieys_1789_j|第三身分とは何か]]
@@ -298,8 +304,9 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D21_schumpeter_1912_theorie-der-wirtschaftlichen-entwicklung|経済発展の理論（初版）]]
 - [[sources/D21_schumpeter_1939_business-cycles|景気循環論]]
 
-#### D22 経営学 (6件)
+#### D22 経営学 (7件)
 - [[sources/D22_akiike_2021_design-thinking-articles|デザイン思考論文に求められる要件とは何か]]
+- [[sources/D22_brown_2008_design-thinking|デザイン思考（Tim Brown, HBR 2008）]]
 - [[sources/D22_friston_2018_am-i-self-conscious|私は自己意識を持つか — 自己組織化と自己意識]]
 - [[sources/D22_hu_2021_trajectories-of-idea-emergence|対話的協働問題解決におけるアイデア出現の軌跡]]
 - [[sources/D22_stanford_2010_design-thinking-process-guide|デザイン思考プロセスガイド]]
@@ -323,9 +330,10 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D24_suzuki_1935_manual-of-zen-buddhism|禅仏教提要]]
 - [[sources/D24_teresa_1921_interior-castle|内なる城]]
 
-#### D25 人類学 (6件)
+#### D25 人類学 (7件)
 - [[sources/D25_barth_1969_ethnic-groups-intro|民族集団と境界（序論）]]
 - [[sources/D25_cisnerosvelarde_2021_a-network-formation-game|階層出現のためのネットワーク形成ゲーム]]
+- [[sources/D25_keck-sakdapolrak_2013_what-is-social-resilience|社会的レジリエンスとは何か]]
 - [[sources/D25_mauss_1925_essai-sur-le-don|贈与論 — 全体的給付の体系]]
 - [[sources/D25_pratt_1991_arts-of-the-contact-zone|コンタクト・ゾーンの技法]]
 - [[sources/D25_van-gennep_1960_rites-of-passage|通過儀礼（英訳版）]]
@@ -413,6 +421,7 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 | [[sources/D04_erwin_2015_novelty-and-innovation-in\|生命史における新奇性とイノベーション]] | sources | 2026-06-14 |
 | [[sources/D04_lane_2012_the-origin-of-membrane\|膜による生体エネルギー変換の起源]] | sources | 2026-06-14 |
 | [[sources/D05_conrad_2002_lithgow-bertelloni-c\|マントルのスラブはいかにプレートテクトニクスを駆動するか]] | sources | 2026-06-14 |
+| [[sources/D05_le-pichon_1968_sea-floor-spreading\|海底拡大と大陸移動]] | sources | 2026-06-14 |
 | [[sources/D05_suarez_1988_schopf-p-s\|ENSO のための遅延作用振動子]] | sources | 2026-06-14 |
 | [[sources/D06_nicolis_2016_stochastic-resonance-self-organization\|確率共鳴・自己組織化・情報ダイナミクス — 多安定系の最適応答]] | sources | 2026-06-14 |
 | [[sources/D07_friston_2012_free-energy-principle\|生物系のための自由エネルギー原理 — 無秩序化への抵抗の数理]] | sources | 2026-06-14 |
@@ -421,14 +430,13 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 | [[sources/D08_miller_2001_cohen-j-d\|前頭前皮質機能の統合理論 — 認知制御のバイアス信号モデル]] | sources | 2026-06-14 |
 | [[sources/D09_attwell_2001_attwell-laughlin-2001-an\|脳灰白質の信号伝達のエネルギー収支]] | sources | 2026-06-14 |
 | [[sources/D09_mcewen_1998_1998\|ストレス媒介物の保護と損傷 — アロスタシスとアロスタティック負荷]] | sources | 2026-06-14 |
+| [[sources/D10_rodrigues-et-al_2019_wound-healing-cellular-perspective\|創傷治癒：細胞の視点]] | sources | 2026-06-14 |
 | [[sources/D12_scheffer_2003_carpenter-s-r\|生態系の破局的レジームシフト — 理論と観測をつなぐ]] | sources | 2026-06-14 |
 | [[sources/D13_maturana_1974_autopoiesis\|オートポイエーシス — 生命システムの自己産出組織]] | sources | 2026-06-14 |
 | [[sources/D14_dietrich_2004_cognitive-neuroscience-of-creativity\|創造性の認知神経科学 — 4類型の神経回路モデル]] | sources | 2026-06-14 |
+| [[sources/D17_hartshorne-tenenbaum-pinker_2018_critical-period-second-language\|第二言語習得の臨界期：67万人のデータからの証拠]] | sources | 2026-06-14 |
+| [[sources/D17_lenneberg_1969_on-explaining-language\|言語を説明する（On Explaining Language）]] | sources | 2026-06-14 |
 | [[sources/D19_reagan_2016_2016\|物語の感情曲線は6つの基本形に支配される]] | sources | 2026-06-14 |
-| [[sources/D26_eerola_2021_anatomy-of-consonance-dissonance\|協和・不協和の解剖学]] | sources | 2026-06-13 |
-| [[sources/D26_hanslick_1854_1854-1891\|音楽美論 — 音響的に動く形式と創造]] | sources | 2026-06-13 |
-| [[sources/D26_helmholtz_1895_helmholtz-1895-on-the\|音感覚論 — 音楽理論の生理学的基礎]] | sources | 2026-06-13 |
-| [[sources/D02_strogatz_2001_exploring-complex-networks\|複雑ネットワークの探究]] | sources | 2026-04-19 |
-| [[sources/D08_miller_2001_integrative-theory-prefrontal-cortex\|前頭前皮質機能の統合理論]] | sources | 2026-04-19 |
+| [[sources/D20_folke-et-al_2005_adaptive-governance\|社会生態システムの順応的ガバナンス]] | sources | 2026-06-14 |
 
 > このページは `scripts/generate-wiki-index.mjs` により自動生成されます。wiki/ 内のページ変更時に PostToolUse hook で自動実行されます。
