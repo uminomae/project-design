@@ -179,7 +179,8 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D08_tononi_2015_consciousness-here-there-and|意識はここに、そこに、どこにでも？— IIT による問いの再定式化]]
 - [[sources/D08_varela_1991_embodied-mind|身体化された心（The Embodied Mind）— 神経科学の視点]]
 
-#### D09 生命科学 (8件)
+#### D09 生命科学 (9件)
+- [[sources/D09_attwell_2001_attwell-laughlin-2001-an|脳灰白質の信号伝達のエネルギー収支]]
 - [[sources/D09_england_2013_statistical-physics-of-self|自己複製の統計力学 — 熱力学的下限の導出]]
 - [[sources/D09_fields_2015_fields-2015-a-new|活動依存的ミエリン化 — 神経系可塑性の新しい機構]]
 - [[sources/D09_iliff_2012_2012-a-paravascular-pathway|脳の傍血管経路（glymphatic システム）— 脳脊髄液による間質溶質クリアランス]]
@@ -418,6 +419,7 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 | [[sources/D07_strogatz_2001_exploring-complex-networks\|複雑ネットワークの探究 — 構造とダイナミクスの統一的視座]] | sources | 2026-06-14 |
 | [[sources/D08_dehaene_2011_dehaene-changeux-2011-experimental\|意識的処理への実験的・理論的アプローチ — グローバル神経ワークスペース]] | sources | 2026-06-14 |
 | [[sources/D08_miller_2001_cohen-j-d\|前頭前皮質機能の統合理論 — 認知制御のバイアス信号モデル]] | sources | 2026-06-14 |
+| [[sources/D09_attwell_2001_attwell-laughlin-2001-an\|脳灰白質の信号伝達のエネルギー収支]] | sources | 2026-06-14 |
 | [[sources/D09_mcewen_1998_1998\|ストレス媒介物の保護と損傷 — アロスタシスとアロスタティック負荷]] | sources | 2026-06-14 |
 | [[sources/D12_scheffer_2003_carpenter-s-r\|生態系の破局的レジームシフト — 理論と観測をつなぐ]] | sources | 2026-06-14 |
 | [[sources/D13_maturana_1974_autopoiesis\|オートポイエーシス — 生命システムの自己産出組織]] | sources | 2026-06-14 |
@@ -428,6 +430,5 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 | [[sources/D26_helmholtz_1895_helmholtz-1895-on-the\|音感覚論 — 音楽理論の生理学的基礎]] | sources | 2026-06-13 |
 | [[sources/D02_strogatz_2001_exploring-complex-networks\|複雑ネットワークの探究]] | sources | 2026-04-19 |
 | [[sources/D08_miller_2001_integrative-theory-prefrontal-cortex\|前頭前皮質機能の統合理論]] | sources | 2026-04-19 |
-| [[sources/D11_blanco_2015_principles-of-nanoparticle-design\|ナノ粒子設計の原理 — 薬物送達の生物学的バリアを越えるには]] | sources | 2026-04-19 |
 
 > このページは `scripts/generate-wiki-index.mjs` により自動生成されます。wiki/ 内のページ変更時に PostToolUse hook で自動実行されます。
