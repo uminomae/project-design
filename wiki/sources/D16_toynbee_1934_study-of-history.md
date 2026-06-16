@@ -5,6 +5,7 @@ aliases: ["A Study of History", "Study of History"]
 tags: [source, "D16", "原典解説"]
 source:
   repo: "creation-space"
+  manifest_id: "D16-S03"
   path: "knowledge/raw/D16_toynbee_1934_study-of-history-vol1.pdf"
 compiled: "2026-04-11"
 status: 正典

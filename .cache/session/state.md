@@ -2,18 +2,35 @@
 
 ## Git
 - branch: develop
-- HEAD: **e93f214** (pd#111 Step3b バッチ2: wiki 73ページ生成完了・push 済)
+- HEAD: **adc6f29** push 済 → pd#113 commit 未 push
 - main: 28eb1d3
-- remote: synced (develop push 済)
-- 関連: cs develop 3925c23、pjdhiro main 2a199c1（誤編集 revert）
+- remote: develop push 済（pd#113 commit 待ち）
+- 関連: cs develop **42615d9**（manifest 修復 push 済）、pjdhiro main 2a199c1
 
-## 進行中 (2026-06-14 #02) — pd#111 Step 3b バッチ2 ★ほぼ完了 73/83
-- wiki-gen-2026-06-14.md: **83件中 73件生成完了**（wiki/sources 257 → 330）、stale なし
-- 取得経路: raw-confirmed pdftotext/Vision OCR / url-verified curl直DL・WebFetch保存PDF・**PubMed efetch**(生物医学)・ecologyandsociety print.pdf / archive.org古典は確立知識+安定リンク
-- commits (15本): aeb7692→...→e93f214（各バッチ commit+push 済）
-- **残 10件（取得不可、cs側 manifest OA URL 修正待ち）**: D05-S13/D05-S15/D07-S15(MDPI Cloudflare), D11-S13(Nature/PMID特定不可), D12-S13(ESA), D22-S04(Kingston 0B), D22-S15(Springer frontmatterのみ), D23-S08(IRUA handle誤=別論文), D23-S11/D23-S14(van Geert, Karger/PsychRev). 詳細は inbox wiki-gen-2026-06-14.md
-- **発見した manifest 不整合（cs側へ申し送り）**: ①D23-S08 IRUA handle が2023年別論文を指す ②D16-S18/D30-S15 同一Olsson2004論文の重複登録(両方生成済) ③D19-S05 Shklovsky Warwick PDFログイン必須 ④D24-S14 Underhill wiki_stem `-methuen`欠落をファイル名整合済
-- **教訓**: PubMed efetch は `> file` リダイレクトで取得（`-o file`+`id=` は exfil-guard hook が誤検知ブロック）。esearch は同名別論文を誤ヒットしうる→ efetch で title/year 検証必須（Tsukada/Mitchell で発生）
+## pd#113 完了待ち（2026-06-16 commit 未 push）
+- WL-6 lint ルール: `scripts/wiki-lint.mjs` に `/` 入り wikilink 検出追加（SAFE_WIKILINK_PREFIXES: sources/,concepts/,cross-refs/,keywords/）
+- manifest_id 追記: wiki/sources/ D prefix 6件 frontmatter に `DXX-SYY` 追加（D05_morgan, D06_balbus-hawley, D06_jeans, D11_davies, D16_braudel, D16_toynbee）
+- DESIGN-RULES.md §8 追加: wiki 参照信頼性の原則（DOI/PMID優先順位・manifest_id・wikilink `/` 禁止）
+- lint 実行結果: WL-6 hits 0 / broken 5（意図的のみ）/ links 1382 / 文字化け 0
+- 次: commit → push → pd#113 close → pd#112 着手
+
+## 後続 issue 起票 (2026-06-16) — wiki 品質保証 4本（pjdhiro 承認済、実行は次セッション）
+- **pd#112** wiki ソース整合性監査: 117ペア cross-check レビュー（優先=新規25+確立知識35）。Bergson spot-check 一致確認済
+- **pd#113** wiki を信頼できる参照先に: DOI/PMID/EuropePMC 完備 + wikilink `/` 脆弱性対策（lint ルール or タイトル正規化）
+- **cs#248** manifest 修復&dedup: D23-S08 誤handle / D16-S18・D30-S15 重複 / publisher壁URLに PMID/EuropePMC 併記
+- **cs#249** cs source-note 58件生成: cross-check 網羅（現状 cs note ありは25/83のみ）
+- 本ターン実施済の品質修正: broken wikilink 4件修正（commit 42e9197）、lint broken 9→5、cross-check 117ペア確認
+- データ: 83件=確立知識35/PubMed・EuropePMC16/原文抽出32。cs source-note 対応25、未対応58
+- wiki マージ状況: develop が main より wiki 27 commit 先行（公開=develop→main は pjdhiro 専権、競合なし）
+
+## 完了 (2026-06-14 #02) — pd#111 Step 3b バッチ2 ★★全件完了 83/83
+- wiki-gen-2026-06-14.md: **83件中 83件生成完了**（wiki/sources 257 → 340, +83）。inbox は archive 済(DONE/STALE 接尾)
+- 取得経路: raw-confirmed pdftotext/Vision OCR / 大著サンプリングOCR / curl直DL / WebFetch保存PDF / **PubMed efetch** / **EuropePMC DOI・タイトル検索**(publisherブロック分の abstract 回収) / ecologyandsociety print.pdf / archive.org古典は確立知識+安定リンク
+- commits (19本): aeb7692→...→**99fc515**（各バッチ commit+push 済）
+- 最終10件は PubMed不可だが **EuropePMC で4件回収**(Mitchell/Feistel/Heylighen/vanGeert2019)、残6件は abstract API になく**正典は確立知識で生成**(vanGeert1998/Beisner/Luyckx2008/Dyke-Kleidon/Gourlay/Goldstein)
+- **manifest 不整合（cs側へ申し送り、issue #111 にコメント済）**: ①D23-S08 IRUA handle が2023年別論文 ②D16-S18/D30-S15 同一Olsson2004重複登録(両生成) ③D19-S05 Shklovsky Warwick PDFログイン必須 ④D24-S14 Underhill `-methuen`整合済 ⑤多数の OA URL が publisher認証壁(MDPI/Nature/Cell/SAGE/Springer/Wiley/Karger/ESA/Kingston)→ EuropePMC/PubMed 経路を manifest に併記推奨
+- **4月分 wiki-gen 25件**: 2026-06-16 #02 で整理完了。不足4件(D17-S12/S13 D27-S15 D29-S11)を生成→commit 41e8076→push。全25件を archive 移動
+- **教訓**: PubMed/efetch は `> file` リダイレクト（`-o file`+`id=` は exfil-guard 誤検知）。esearch は同名別論文を誤ヒット→efetch で title/year 検証必須。**EuropePMC REST(DOI/TITLE検索)が publisher壁の最終手段**として有効
 
 ## 完了タスク
 ### 2026-06-01 #01 — PD総論/創造の推敲（Opus 4.8 デバッグ的レビュー）
@@ -186,11 +203,11 @@
 - entities/ → concepts/ + keywords/ 分離、sources/pd/ 新設 (8c6b24b)
 
 ## 進行中
-- **cs#225 (OPEN, umbrella)**: wiki 生成ルール補修。Phase A 完了、Phase B-1 完了。pjdhiro が Issue 本文変更予定
-- **pd#83 (OPEN)**: A. 現行UIの資産棚卸し（techo#126 連動）。指示書 `_instructions-83-rebuild-publication-review.md` inbox に残置
+- **pd#83 (OPEN)**: 指示書2件 inbox 残置 (`_instructions-83-rebuild-publication-review.md`, `_instructions-83-ui-asset-audit.md`)
+- **pd#84, pd#85 (OPEN)**: 指示書 inbox 残置
 
 ## 次のステップ
-- **pd#83 着手可否判定**: A. 現行UIの資産棚卸し（techo#126 連動）。pjdhiro と内容相談要
+- **inbox 整理完了後の選択**: pd#83 / pd#84 / pd#85 のいずれかを着手（pjdhiro 選択）
 - **pd#81 残 119 件の別 Issue 起票判断**:
   - 古典書籍 24 件（archive.org、著作権切れ classics — Dewey, Wallas, James, Bergson, Peirce 等）を訓練知識書き起こしで処理する Issue
   - PubMed abstract 経路によるバッチ処理 Issue（生物医学系 30-40 件で有効）

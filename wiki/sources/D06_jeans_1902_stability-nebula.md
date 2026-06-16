@@ -5,6 +5,7 @@ aliases: ["The Stability of a Spherical Nebula", "Jeans instability"]
 tags: [source, "astronomy", "原典解説", "D06"]
 source:
   repo: "creation-space"
+  manifest_id: "D06-S01"
   path: "knowledge/raw/D06_jeans_1902_stability-nebula.pdf"
 compiled: "2026-04-11"
 status: 正典

@@ -170,7 +170,23 @@ Puppeteer で `http://localhost:3004/` に対して実行。根拠は WCAG 2.2 A
 
 実行: `npm test` または `bash .claude/scripts/responsive-test.sh`
 
-## 8. 却下履歴 — 試して合わなかった手法
+## 8. wiki 参照信頼性の原則（pd#113, 2026-06-16）
+
+wiki/sources/ の各ページは、人間も Claude も本文に辿れる識別子を最低1つ持つ必要がある。
+
+| 優先順位 | 識別子 | 備考 |
+|---------|--------|------|
+| 1 | DOI | 全ドメイン共通。書誌情報セクションに必ず記載 |
+| 2 | PMID (PubMed) | 生命科学・医学・心理学系。EuropePMC REST で abstract 回収可能 |
+| 3 | PMC ID | PMC 収録論文。フルテキスト回収可能 |
+| 4 | arXiv ID | プレプリント系 |
+| 5 | 安定 OA URL | archive.org / 機関リポジトリ等 |
+
+**manifest_id**: cs source-note 由来のページは `source.manifest_id` に `DXX-SYY` 形式で記載する。
+
+**wikilink の `/` 禁止**: 年号範囲を含むタイトル（例: `van Gennep 1909/1960`）へのタイトルベース wikilink は basename 誤抽出を引き起こす。`[[sources/FILE|ラベル]]` または aliases を使用すること。`wiki-lint.mjs` WL-6 が自動検出する。
+
+## 8b. 却下履歴 — 試して合わなかった手法
 
 再提案を防ぐために記録する。削除は pjdhiro 承認が必要。
 

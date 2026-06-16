@@ -5,6 +5,7 @@ aliases: ["La longue duree", "The Long Duration", "Histoire et Sciences sociales
 tags: [source, "history", "原典解説", "D16"]
 source:
   repo: "creation-space"
+  manifest_id: "D16-S02"
   path: "knowledge/raw/D16_braudel_1958_longue-duree.pdf"
 compiled: "2026-04-11"
 status: 正典
