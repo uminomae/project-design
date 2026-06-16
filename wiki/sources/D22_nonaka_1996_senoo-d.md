@@ -51,6 +51,13 @@ IT は知識創造を支援しうるが、日本型（暗黙知重視・集団�
 - **DOI**: [10.1016/0160-791X(96)00001-2](https://doi.org/10.1016/0160-791X(96)00001-2)
 - **オープンアクセス**: [PDF (SIET Management)](http://www.sietmanagement.fr/wp-content/uploads/2016/04/nonaka-1996.pdf)
 
+## ソース参照（GitHub・検証用）
+
+- **cs マニフェスト（該当行）**: [knowledge/raw/manifest.md](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/manifest.md)（manifest_id: `D22-S02`）
+- **cs 精読ノート**: 未生成（cs#249 で生成予定。生成後 `wiki-cross-check.mjs` で照合）
+- **この wiki ページ（pd）**: [wiki/sources/D22_nonaka_1996_senoo-d.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D22_nonaka_1996_senoo-d.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
+
 ## 出典メモ
 
 - 本ページは OA PDF を curl で取得し pdftotext で抽出した本文（abstract・序論）を一次入力として生成した。

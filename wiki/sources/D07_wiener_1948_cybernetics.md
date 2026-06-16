@@ -50,3 +50,10 @@ Wienerは情報をエントロピーの概念と関連づけて定式化した�
 - 出典: MIT Press
 - access_status: raw-confirmed
 - **ISBN**: 978-0-262-73009-9
+
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/raw/D07_wiener_1948_cybernetics.pdf](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/D07_wiener_1948_cybernetics.pdf)（manifest_id: `D07-S01`）
+- **cs 精読ノート**: [knowledge/source-notes/D07/D07-S01_wiener-1948.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D07/D07-S01_wiener-1948.md)
+- **この wiki ページ（pd）**: [wiki/sources/D07_wiener_1948_cybernetics.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D07_wiener_1948_cybernetics.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照

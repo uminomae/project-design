@@ -46,3 +46,10 @@ review_state: 未レビュー
 - 出典: Librairie Felix Alcan, Paris（第4版はInternet Archive収録）
 - access_status: raw-confirmed
 - **全文**: [Internet Archive](https://archive.org/details/divisionoflabori00durk)
+
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/raw/D18_durkheim_1893_division-labor.pdf](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/D18_durkheim_1893_division-labor.pdf)（manifest_id: `D18-S01`）
+- **cs 精読ノート**: [knowledge/source-notes/D18/D18-S01_durkheim-1893.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D18/D18-S01_durkheim-1893.md)
+- **この wiki ページ（pd）**: [wiki/sources/D18_durkheim_1893_division-labor.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D18_durkheim_1893_division-labor.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照

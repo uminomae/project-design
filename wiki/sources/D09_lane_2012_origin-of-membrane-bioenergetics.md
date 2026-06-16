@@ -50,6 +50,13 @@ Nick Lane & William F. Martin (2012) は、生命のエネルギー機構の起�
 - access_status: url-verified
 - **DOI**: [10.1016/j.cell.2012.11.050](https://doi.org/10.1016/j.cell.2012.11.050)
 
+## ソース参照（GitHub・検証用）
+
+- **cs マニフェスト（該当行）**: [knowledge/raw/manifest.md](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/manifest.md)（manifest_id: `D09-S15`）
+- **cs 精読ノート**: [knowledge/source-notes/D09/D09-S15_lane-martin-2012.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D09/D09-S15_lane-martin-2012.md)
+- **この wiki ページ（pd）**: [wiki/sources/D09_lane_2012_origin-of-membrane-bioenergetics.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D09_lane_2012_origin-of-membrane-bioenergetics.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
+
 ## 出典メモ
 
 - 本ページは PubMed（PMID 23260134）の efetch 公式 abstract を一次入力として生成した。manifest 記載の OA URL（cell.com PDF）は認証で取得できなかったため、PubMed の検証済み abstract を用いた。

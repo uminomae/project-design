@@ -82,6 +82,13 @@ Bak, Tang, Wiesenfeld (1988) は、多数の等価な自由度を持つ散逸動
 - **DOI**: [10.1103/PhysRevA.38.364](https://doi.org/10.1103/PhysRevA.38.364)
 - **オープンアクセス**: [psychsafety.com PDF](https://psychsafety.com/wp-content/uploads/2025/04/SOC.pdf)
 
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/source-notes/D05/D05-S14_bak-tang-wiesenfeld-1988-self-organized-criticality.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D05/D05-S14_bak-tang-wiesenfeld-1988-self-organized-criticality.md)（manifest_id: `D05-S14`）
+- **cs 精読ノート**: [knowledge/source-notes/D05/D05-S14_bak-tang-wiesenfeld-1988-self-organized-criticality.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D05/D05-S14_bak-tang-wiesenfeld-1988-self-organized-criticality.md)
+- **この wiki ページ（pd）**: [wiki/sources/D05_bak_1988_wiesenfeld-k.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D05_bak_1988_wiesenfeld-k.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
+
 ## 出典メモ
 
 - cs 側読解: `creation-space/knowledge/source-notes/D05/D05-S14_bak-tang-wiesenfeld-1988-self-organized-criticality.md`（2026-04-15、Claude Opus 4.6, WebFetch → PDF Read 全 11 ページ）

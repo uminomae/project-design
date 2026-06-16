@@ -61,6 +61,13 @@ review_state: 未レビュー
 - access_status: url-verified
 - **オープンアクセス**: [Critical Improv PDF](https://www.criticalimprov.com/index.php/csieci/article/download/7119/6721)
 
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/source-notes/D28/D28-S12_mcneilly-2022.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D28/D28-S12_mcneilly-2022.md)（manifest_id: `D28-S12`）
+- **cs 精読ノート**: [knowledge/source-notes/D28/D28-S12_mcneilly-2022.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D28/D28-S12_mcneilly-2022.md)
+- **この wiki ページ（pd）**: [wiki/sources/D28_mcneilly_2022_improvisation-and-emergence.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D28_mcneilly_2022_improvisation-and-emergence.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
+
 ## 出典メモ
 
 - cs 側読解: `creation-space/knowledge/source-notes/D28/D28-S12_mcneilly-2022.md`（2026-04-11、Claude Opus 4.6, WebFetch → Read PDF 全 5 ページ）

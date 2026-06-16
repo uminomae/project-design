@@ -52,7 +52,6 @@ Merleau-Pontyに倣い、身体化を2つの意味で用いる。
 
 「心は世界から独立して世界を表象する」ではなく、「心と世界は相互に依存して共に形成される（co-arising）」という構造が本書全体に貫かれている。認知は生命体がその環境と「共に構成する」プロセスであり、観察者と観察対象の分離を前提としない。
 
-
 ## 書誌情報
 
 - 著者: Francisco J. Varela, Evan Thompson, Eleanor Rosch
@@ -60,3 +59,10 @@ Merleau-Pontyに倣い、身体化を2つの意味で用いる。
 - 出典: The MIT Press（Cambridge, Massachusetts）
 - access_status: raw-confirmed
 - **ISBN**: 978-0-262-72021-2
+
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/raw/D14_varela_1991_embodied-mind.pdf](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/D14_varela_1991_embodied-mind.pdf)（manifest_id: `D14-S01`）
+- **cs 精読ノート**: [knowledge/source-notes/D14/D14-S01_varela-1991.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D14/D14-S01_varela-1991.md)
+- **この wiki ページ（pd）**: [wiki/sources/D14_varela_1991_embodied-mind.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D14_varela_1991_embodied-mind.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照

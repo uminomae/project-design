@@ -51,6 +51,13 @@ CA の遷移規則において「静止（quiescent）でない状態」へ写�
 - **DOI**: [10.1016/0167-2789(90)90064-V](https://doi.org/10.1016/0167-2789(90)90064-V)
 - **オープンアクセス**: [PDF (OSTI / DOE)](https://www.osti.gov/servlets/purl/7264125)
 
+## ソース参照（GitHub・検証用）
+
+- **cs マニフェスト（該当行）**: [knowledge/raw/manifest.md](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/manifest.md)（manifest_id: `D29-S15`）
+- **cs 精読ノート**: [knowledge/source-notes/D29/D29-S15_langton-1990.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D29/D29-S15_langton-1990.md)
+- **この wiki ページ（pd）**: [wiki/sources/D29_langton_1990_edge-of-chaos.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D29_langton_1990_edge-of-chaos.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
+
 ## 出典メモ
 
 - 本ページは OSTI（DOE）公開 PDF を curl で取得したが、当該スキャン PDF は pdftotext で可読テキストを抽出できなかった（OCR 崩れ）。本ページの内容は、当該論文（Physica D 42, 1990）の確立した学術的理解に基づいて記述し、OSTI の安定リンクを出典として付した。λ・edge of chaos・相転移という核心概念は本論文の中心主張として広く引用されている。

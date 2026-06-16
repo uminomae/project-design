@@ -52,6 +52,13 @@ Charles Sanders Peirce『偶然・愛・論理 (Chance, Love, and Logic)』(1923
 - access_status: url-verified
 - **全文**: [Internet Archive](https://archive.org/download/chanceloveandlog00peiruoft/chanceloveandlog00peiruoft.pdf)
 
+## ソース参照（GitHub・検証用）
+
+- **cs マニフェスト（該当行）**: [knowledge/raw/manifest.md](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/manifest.md)（manifest_id: `D13-S13`）
+- **cs 精読ノート**: [knowledge/source-notes/D13/D13-S13_peirce-1923.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D13/D13-S13_peirce-1923.md)
+- **この wiki ページ（pd）**: [wiki/sources/D13_peirce_1923_peirce-1923-chance-love.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D13_peirce_1923_peirce-1923-chance-love.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
+
 ## 出典メモ
 
 - 本ページは archive.org 公開の原典（url-verified）を出典とし、当該古典（Peirce, ed. Cohen 1923）の確立した学術的理解に基づいて記述した。スキャン書籍 PDF のため全文 pdftotext は行わず、安定リンクを付した。

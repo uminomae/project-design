@@ -58,6 +58,13 @@ CI 実践において、視覚に頼らず触覚と固有感覚で他者と協�
 - access_status: url-verified
 - **DOI**: [10.33391/jgjh.8](https://doi.org/10.33391/jgjh.8)
 
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/source-notes/D28/D28-S15_shibolet-2018.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D28/D28-S15_shibolet-2018.md)（manifest_id: `D28-S15`）
+- **cs 精読ノート**: [knowledge/source-notes/D28/D28-S15_shibolet-2018.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D28/D28-S15_shibolet-2018.md)
+- **この wiki ページ（pd）**: [wiki/sources/D28_shibolet_2018_bodyminds-in-movement-contact.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D28_shibolet_2018_bodyminds-in-movement-contact.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
+
 ## 出典メモ
 
 - cs 側読解: `creation-space/knowledge/source-notes/D28/D28-S15_shibolet-2018.md`（2026-04-11、Claude Opus 4.6, WebFetch、要旨レベル。本文 PDF アクセス不可）

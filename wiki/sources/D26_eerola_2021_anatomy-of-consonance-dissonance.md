@@ -63,6 +63,13 @@ Eerola & Lahdelma (2021) は、協和/不協和 (consonance/dissonance, C/D) の
 - **DOI**: [10.1177/20592043211030471](https://doi.org/10.1177/20592043211030471)
 - **オープンアクセス**: [PDF (SAGE)](https://journals.sagepub.com/doi/pdf/10.1177/20592043211030471)
 
+## ソース参照（GitHub・検証用）
+
+- **cs マニフェスト（該当行）**: [knowledge/raw/manifest.md](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/manifest.md)（manifest_id: `D26-S16`）
+- **cs 精読ノート**: 未生成（cs#249 で生成予定。生成後 `wiki-cross-check.mjs` で照合）
+- **この wiki ページ（pd）**: [wiki/sources/D26_eerola_2021_anatomy-of-consonance-dissonance.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D26_eerola_2021_anatomy-of-consonance-dissonance.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
+
 ## 出典メモ
 
 - 本ページは OA 本文（SAGE full-text）を一次入力として pd 形式で生成した。**cs 側 source-note は未生成**（manifest D26-S16 として url-verified 登録のみ）。cs 側で source-note 生成後、`wiki-cross-check.mjs` で矛盾検査を再実行する

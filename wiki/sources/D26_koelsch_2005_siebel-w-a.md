@@ -84,6 +84,13 @@ N400 を誘発する priming 実験は、音楽が意味情報を担えること
 - **DOI**: [10.1016/j.tics.2005.10.001](https://doi.org/10.1016/j.tics.2005.10.001)
 - **著者公開**: [PDF (stefan-koelsch.de)](https://stefan-koelsch.de/papers/TICS2005_towards-a-neural-basis-of-music-perception.pdf)
 
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/source-notes/D26/D26-S19_koelsch-siebel-2005.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D26/D26-S19_koelsch-siebel-2005.md)（manifest_id: `D26-S19`）
+- **cs 精読ノート**: [knowledge/source-notes/D26/D26-S19_koelsch-siebel-2005.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D26/D26-S19_koelsch-siebel-2005.md)
+- **この wiki ページ（pd）**: [wiki/sources/D26_koelsch_2005_siebel-w-a.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D26_koelsch_2005_siebel-w-a.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
+
 ## 出典メモ
 
 - cs 側読解: `creation-space/knowledge/source-notes/D26/D26-S19_koelsch-siebel-2005.md`（2026-04-13、Claude Opus 4.6、WebFetch → PDF バイナリ保存 → Read、全 7 ページ読了）

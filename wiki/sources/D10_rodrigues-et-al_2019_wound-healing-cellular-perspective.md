@@ -55,6 +55,13 @@ Rodrigues ら (2019) は、創傷治癒 (wound healing) を「人体で最も複
 - **DOI**: [10.1152/physrev.00067.2017](https://doi.org/10.1152/physrev.00067.2017)
 - **オープンアクセス**: [PDF (Physiol Rev)](https://journals.physiology.org/doi/pdf/10.1152/physrev.00067.2017)
 
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/raw/D10_rodrigues-et-al_2019_wound-healing-cellular-perspective.pdf](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/D10_rodrigues-et-al_2019_wound-healing-cellular-perspective.pdf)（manifest_id: `D10-S05`）
+- **cs 精読ノート**: [knowledge/source-notes/D10/D10-S05_rodrigues-et-al-2019.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D10/D10-S05_rodrigues-et-al-2019.md)
+- **この wiki ページ（pd）**: [wiki/sources/D10_rodrigues-et-al_2019_wound-healing-cellular-perspective.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D10_rodrigues-et-al_2019_wound-healing-cellular-perspective.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
+
 ## 出典メモ
 
 - 本ページは cs ローカル raw PDF（`knowledge/raw/D10_rodrigues-et-al_2019_wound-healing-cellular-perspective.pdf`）を pdftotext で抽出した本文（abstract・目次・序論）を一次入力として生成した。

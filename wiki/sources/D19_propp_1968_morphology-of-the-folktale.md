@@ -43,3 +43,10 @@ review_state: 未レビュー
 - 出典: University of Texas Press（American Folklore Society / Indiana University Research Center in Anthropology, Folklore, and Linguistics, Publication 10）
 - access_status: raw-confirmed
 - **全文**: [Monoskop](https://monoskop.org/images/3/37/Propp_Vladimir_Morphology_of_the_Folktale_1968.pdf)
+
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/raw/D19_propp_1968_morphology-of-the-folktale.pdf](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/D19_propp_1968_morphology-of-the-folktale.pdf)（manifest_id: `D19-S01`）
+- **cs 精読ノート**: [knowledge/source-notes/D19/D19-S01_propp-1968.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D19/D19-S01_propp-1968.md)
+- **この wiki ページ（pd）**: [wiki/sources/D19_propp_1968_morphology-of-the-folktale.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D19_propp_1968_morphology-of-the-folktale.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照

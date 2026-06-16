@@ -54,6 +54,13 @@ Hartshorne, Tenenbaum & Pinker (2018) は、言語習得の臨界期 (critical p
 - access_status: raw-confirmed
 - **DOI**: [10.1016/j.cognition.2018.04.007](https://doi.org/10.1016/j.cognition.2018.04.007)
 
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/raw/D17_hartshorne-tenenbaum-pinker_2018_critical-period-second-language.pdf](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/D17_hartshorne-tenenbaum-pinker_2018_critical-period-second-language.pdf)（manifest_id: `D17-S10`）
+- **cs 精読ノート**: [knowledge/source-notes/D17/D17-S10_hartshorne-tenenbaum-pinker-2018.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D17/D17-S10_hartshorne-tenenbaum-pinker-2018.md)
+- **この wiki ページ（pd）**: [wiki/sources/D17_hartshorne-tenenbaum-pinker_2018_critical-period-second-language.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D17_hartshorne-tenenbaum-pinker_2018_critical-period-second-language.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
+
 ## 出典メモ
 
 - 本ページは cs ローカル raw PDF（`knowledge/raw/D17_hartshorne-tenenbaum-pinker_2018_critical-period-second-language.pdf`）を pdftotext で抽出した本文（abstract・序論）を一次入力として生成した。

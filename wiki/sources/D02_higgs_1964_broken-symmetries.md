@@ -51,3 +51,10 @@ Anderson が指摘したプラズモン機構（中性超伝導フェルミガ�
 - 出典: Physical Review Letters, Vol. 13, No. 16, pp. 508–509
 - access_status: raw-confirmed
 - **DOI**: [10.1103/PhysRevLett.13.508](https://doi.org/10.1103/PhysRevLett.13.508)
+
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/raw/D02_higgs_1964_broken-symmetries.pdf](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/D02_higgs_1964_broken-symmetries.pdf)（manifest_id: `D02-S05`）
+- **cs 精読ノート**: [knowledge/source-notes/D02/D02-S05_higgs-1964.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D02/D02-S05_higgs-1964.md)
+- **この wiki ページ（pd）**: [wiki/sources/D02_higgs_1964_broken-symmetries.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D02_higgs_1964_broken-symmetries.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照

@@ -51,3 +51,10 @@ review_state: 未レビュー
 - 出典: Carnegie Institution of Washington, Publication No. 242
 - access_status: raw-confirmed
 - **全文**: [Internet Archive](https://archive.org/details/cu31924000531818)
+
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/raw/D12_clements_1916_plant-succession.pdf](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/D12_clements_1916_plant-succession.pdf)（manifest_id: `D12-S01`）
+- **cs 精読ノート**: [knowledge/source-notes/D12/D12-S01_clements-1916.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D12/D12-S01_clements-1916.md)
+- **この wiki ページ（pd）**: [wiki/sources/D12_clements_1916_plant-succession.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D12_clements_1916_plant-succession.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照

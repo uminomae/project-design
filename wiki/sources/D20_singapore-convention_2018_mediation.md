@@ -98,3 +98,10 @@ review_state: 未レビュー
 - access_status: raw-confirmed
 - **公式URL**: [Singapore Convention on Mediation](https://uncitral.un.org/en/texts/mediation/conventions/international_settlement_agreements)
 - 備考: uncitral.un.org 公式 PDF から手動 DL（manifest notes）
+
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/raw/D20_singapore-convention_2018_mediation.pdf](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/D20_singapore-convention_2018_mediation.pdf)（manifest_id: `D20-S08`）
+- **cs 精読ノート**: [knowledge/source-notes/D20/D20-S08_singapore-convention-2018.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D20/D20-S08_singapore-convention-2018.md)
+- **この wiki ページ（pd）**: [wiki/sources/D20_singapore-convention_2018_mediation.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D20_singapore-convention_2018_mediation.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照

@@ -51,3 +51,10 @@ review_state: 未レビュー
 - 出典: 『歴史の書（Kitab al-Ibar）』序説部分。英訳: Franz Rosenthal訳 (Princeton University Press, 1958, 3 vols.)
 - access_status: raw-confirmed
 - **全文**: [Internet Archive](https://archive.org/details/etaoin/The%20Muqaddimah%20%E2%80%93%20An%20Introduction%20to%20History%20by%20Ibn%20Khaldun.pdf)
+
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/raw/D16_ibn-khaldun_1377_muqaddimah.pdf](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/D16_ibn-khaldun_1377_muqaddimah.pdf)（manifest_id: `D16-S08`）
+- **cs 精読ノート**: 未生成（cs#249 で生成予定。生成後 `wiki-cross-check.mjs` で照合）
+- **この wiki ページ（pd）**: [wiki/sources/D16_ibn-khaldun_1377_muqaddimah.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D16_ibn-khaldun_1377_muqaddimah.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照

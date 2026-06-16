@@ -62,6 +62,13 @@ GNW の枠組みは、麻酔・昏睡・植物状態・統合失調症といっ�
 - **DOI**: [10.1016/j.neuron.2011.03.018](https://doi.org/10.1016/j.neuron.2011.03.018)
 - **オープンアクセス**: [PDF](http://www.cell.com/article/S0896627311002583/pdf)
 
+## ソース参照（GitHub・検証用）
+
+- **cs マニフェスト（該当行）**: [knowledge/raw/manifest.md](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/manifest.md)（manifest_id: `D08-S05`）
+- **cs 精読ノート**: [knowledge/source-notes/D08/D08-S05_dehaene-changeux-2011.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D08/D08-S05_dehaene-changeux-2011.md)
+- **この wiki ページ（pd）**: [wiki/sources/D08_dehaene_2011_dehaene-changeux-2011-experimental.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D08_dehaene_2011_dehaene-changeux-2011-experimental.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
+
 ## 出典メモ
 
 - Cell/Neuron OA への直接アクセスは 403 のため、PubMed の公式 abstract・要旨を一次入力に pd 形式で生成した。本文全文は未読のため主要概念は abstract ベース。

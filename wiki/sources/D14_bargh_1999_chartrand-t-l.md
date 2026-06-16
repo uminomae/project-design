@@ -74,6 +74,13 @@ Chartrand & Bargh (1999): 共作業者の足揺らしや顔触りを非意識的
 - **DOI**: [10.1037/0003-066X.54.7.462](https://doi.org/10.1037/0003-066X.54.7.462)
 - **オープンアクセス**: [Yale ACME Lab PDF](https://acmelab.yale.edu/sites/default/files/1999_the_unbearable_automaticity_of_being.pdf)
 
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/source-notes/D14/D14-S09_bargh-chartrand-1999.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D14/D14-S09_bargh-chartrand-1999.md)（manifest_id: `D14-S09`）
+- **cs 精読ノート**: [knowledge/source-notes/D14/D14-S09_bargh-chartrand-1999.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D14/D14-S09_bargh-chartrand-1999.md)
+- **この wiki ページ（pd）**: [wiki/sources/D14_bargh_1999_chartrand-t-l.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D14_bargh_1999_chartrand-t-l.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
+
 ## 出典メモ
 
 - cs 側読解: `creation-space/knowledge/source-notes/D14/D14-S09_bargh-chartrand-1999.md`（2026-04-13、claude-opus-4-6, WebFetch + Read PDF 全 18 ページ）

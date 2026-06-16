@@ -50,6 +50,13 @@ Eduardo Viveiros de Castro『宇宙論的ダイクシスとアメリンディア
 - access_status: raw-confirmed
 - **DOI**: [10.2307/3034157](https://doi.org/10.2307/3034157)
 
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/raw/D25_viveiros-de-castro_2017_amerindian-perspectivism.pdf](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/D25_viveiros-de-castro_2017_amerindian-perspectivism.pdf)（manifest_id: `D25-S15`）
+- **cs 精読ノート**: [knowledge/source-notes/D25/D25-S15_viveiros-de-castro-1998.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D25/D25-S15_viveiros-de-castro-1998.md)
+- **この wiki ページ（pd）**: [wiki/sources/D25_viveiros-de-castro_2017_amerindian-perspectivism.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D25_viveiros-de-castro_2017_amerindian-perspectivism.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
+
 ## 出典メモ
 
 - 本ページは cs ローカル raw PDF（`knowledge/raw/D25_viveiros-de-castro_2017_amerindian-perspectivism.pdf`）を pdftotext で抽出して内容を確認した。当該 PDF は本論文（JRAI 1998「Cosmological Deixis and Amerindian Perspectivism」）の**ポーランド語訳**（*Etnografia* 2017, 3: 235–258）であり、原典は英語論文である。本文冒頭で確認できた論旨（パースペクティヴィズム＝多様な主体が各視点から世界を捉える／相対主義・普遍主義の対立を横切る／自然・文化区分の民族誌的批判）と、当該古典の確立した学術的理解（多自然主義）に基づいて記述した。

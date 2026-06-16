@@ -54,3 +54,10 @@ review_state: 未レビュー
 - 出典: 能楽会刊『世阿弥十六部集』（国立国会図書館デジタルコレクション所蔵）
 - access_status: raw-confirmed
 - **全文**: [NDL デジタルコレクション](https://dl.ndl.go.jp/)
+
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/raw/D28_zeami_classics_part1.pdf](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/D28_zeami_classics_part1.pdf)（manifest_id: `D30-S07`）
+- **cs 精読ノート**: [knowledge/source-notes/D30/D30-S07_zeami-15c.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D30/D30-S07_zeami-15c.md)
+- **この wiki ページ（pd）**: [wiki/sources/D30_zeami_classics.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D30_zeami_classics.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照

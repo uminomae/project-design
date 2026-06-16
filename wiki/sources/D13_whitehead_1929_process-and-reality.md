@@ -59,3 +59,10 @@ review_state: 未レビュー
 - 出典: The Macmillan Company, New York（Gifford Lectures, University of Edinburgh, 1927–28）
 - access_status: raw-confirmed
 - **全文**: [Wikimedia Commons](https://commons.wikimedia.org/)
+
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/raw/D13_whitehead_1929_process-and-reality.pdf](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/D13_whitehead_1929_process-and-reality.pdf)（manifest_id: `D13-S10`）
+- **cs 精読ノート**: [knowledge/source-notes/D13/D13-S10_whitehead-1929.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D13/D13-S10_whitehead-1929.md)
+- **この wiki ページ（pd）**: [wiki/sources/D13_whitehead_1929_process-and-reality.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D13_whitehead_1929_process-and-reality.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照

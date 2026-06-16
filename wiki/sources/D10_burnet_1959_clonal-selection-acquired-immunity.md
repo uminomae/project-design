@@ -50,6 +50,13 @@ Frank Macfarlane Burnet『獲得免疫のクローン選択説 (The Clonal Selec
 - access_status: raw-confirmed
 - **全文**: [Internet Archive](https://archive.org/details/clonalselectiont00burn)
 
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/raw/D10_burnet_1959_clonal-selection-acquired-immunity.pdf](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/D10_burnet_1959_clonal-selection-acquired-immunity.pdf)（manifest_id: `D10-S03`）
+- **cs 精読ノート**: [knowledge/source-notes/D10/D10-S03_burnet-1959.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D10/D10-S03_burnet-1959.md)
+- **この wiki ページ（pd）**: [wiki/sources/D10_burnet_1959_clonal-selection-acquired-immunity.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D10_burnet_1959_clonal-selection-acquired-immunity.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
+
 ## 出典メモ
 
 - 本ページは cs ローカル raw PDF（`knowledge/raw/D10_burnet_1959_clonal-selection-acquired-immunity.pdf`、スキャン書籍）を pdftoppm で画像化し版を確認した上で、当該古典（Burnet 1959, クローン選択説）の確立した学術的理解に基づいて記述した。全文 pdftotext は行わず安定リンクを付した。

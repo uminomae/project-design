@@ -58,6 +58,13 @@ David Attwell と Simon Laughlin (2001) は、げっ歯類の脳灰白質にお�
 - **DOI**: [10.1097/00004647-200110000-00001](https://doi.org/10.1097/00004647-200110000-00001)
 - **オープンアクセス**: [SAGE PDF](https://journals.sagepub.com/doi/pdf/10.1097/00004647-200110000-00001)
 
+## ソース参照（GitHub・検証用）
+
+- **cs マニフェスト（該当行）**: [knowledge/raw/manifest.md](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/manifest.md)（manifest_id: `D09-S02`）
+- **cs 精読ノート**: 未生成（cs#249 で生成予定。生成後 `wiki-cross-check.mjs` で照合）
+- **この wiki ページ（pd）**: [wiki/sources/D09_attwell_2001_attwell-laughlin-2001-an.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D09_attwell_2001_attwell-laughlin-2001-an.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
+
 ## 出典メモ
 
 - 一次入力: PubMed 公式 abstract（PMID 11598490, 2026-06-14 efetch）。出版社 PDF は SAGE で本文全文は本セッション未読。

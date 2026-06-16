@@ -51,3 +51,10 @@ Spruce-Budworm系など複数の生態学的事例から、生態系は単一の
 - 出典: IIASA Research Report RR-73-003, Institute of Resource Ecology, University of British Columbia. 後に Annual Review of Ecology and Systematics, 4, 1–23 (1973) として公刊。
 - access_status: raw-confirmed
 - **DOI**: [10.1146/annurev.es.04.110173.000245](https://doi.org/10.1146/annurev.es.04.110173.000245)
+
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/raw/D12_holling_1973_resilience-stability.pdf](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/D12_holling_1973_resilience-stability.pdf)（manifest_id: `D12-S03`）
+- **cs 精読ノート**: [knowledge/source-notes/D12/D12-S03_holling-1973.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D12/D12-S03_holling-1973.md)
+- **この wiki ページ（pd）**: [wiki/sources/D12_holling_1973_resilience-stability.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D12_holling_1973_resilience-stability.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照

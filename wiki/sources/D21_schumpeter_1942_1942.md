@@ -50,6 +50,13 @@ Joseph A. Schumpeter『資本主義・社会主義・民主主義 (Capitalism, S
 - access_status: url-verified
 - **全文**: [Internet Archive](https://archive.org/details/in.ernet.dli.2015.190072)
 
+## ソース参照（GitHub・検証用）
+
+- **cs マニフェスト（該当行）**: [knowledge/raw/manifest.md](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/manifest.md)（manifest_id: `D21-S03`）
+- **cs 精読ノート**: [knowledge/source-notes/D21/D21-S03_schumpeter-1942.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D21/D21-S03_schumpeter-1942.md)
+- **この wiki ページ（pd）**: [wiki/sources/D21_schumpeter_1942_1942.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D21_schumpeter_1942_1942.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
+
 ## 出典メモ
 
 - 本ページは archive.org 公開の原典（url-verified）を出典とし、当該古典（Schumpeter 1942）の確立した学術的理解に基づいて記述した。創造的破壊は本書第7章の中核命題として広く引用される。

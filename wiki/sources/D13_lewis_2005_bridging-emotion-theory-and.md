@@ -51,6 +51,13 @@ Marc D. Lewis (2005) は、感情理論 (emotion theory) と神経生物学 (neu
 - **DOI**: [10.1017/S0140525X0500004X](https://doi.org/10.1017/S0140525X0500004X)
 - **オープンアクセス**: [PhilArchive (PDF)](https://philpapers.org/archive/LEWBET.pdf)
 
+## ソース参照（GitHub・検証用）
+
+- **cs マニフェスト（該当行）**: [knowledge/raw/manifest.md](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/manifest.md)（manifest_id: `D13-S15`）
+- **cs 精読ノート**: 未生成（cs#249 で生成予定。生成後 `wiki-cross-check.mjs` で照合）
+- **この wiki ページ（pd）**: [wiki/sources/D13_lewis_2005_bridging-emotion-theory-and.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D13_lewis_2005_bridging-emotion-theory-and.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
+
 ## 出典メモ
 
 - 本ページは PubMed（PMID 16201458）の efetch 公式 abstract を一次入力として生成した。manifest 記載の OA URL（PhilPapers archive）は直接取得できなかったため、PubMed の検証済み abstract を用いた。

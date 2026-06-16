@@ -51,6 +51,13 @@ Tuckman & Jensen (1977) は、Bruce Tuckman が 1965 年に提唱した小集団
 - **DOI**: [10.1177/105960117700200404](https://doi.org/10.1177/105960117700200404)
 - **オープンアクセス（参考）**: [PDF (WIU mirror)](http://faculty.wiu.edu/P-Schlag/articles/Stages_of_Small_Group_Development.pdf)
 
+## ソース参照（GitHub・検証用）
+
+- **cs マニフェスト（該当行）**: [knowledge/raw/manifest.md](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/manifest.md)（manifest_id: `D22-S09`）
+- **cs 精読ノート**: 未生成（cs#249 で生成予定。生成後 `wiki-cross-check.mjs` で照合）
+- **この wiki ページ（pd）**: [wiki/sources/D22_tuckman_1977_jensen-m-a-c.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D22_tuckman_1977_jensen-m-a-c.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
+
 ## 出典メモ
 
 - 本ページは、当該古典（Tuckman & Jensen 1977）の確立した学術的理解に基づいて記述した。manifest 記載の OA URL（WIU 大学ミラー）は認証エラー（401）で直接取得できなかったため、本モデル（forming-storming-norming-performing-adjourning）の広く確立した内容に基づき記述した。cs 側 manifest の OA URL を取得可能なものへ差し替えることが望ましい。

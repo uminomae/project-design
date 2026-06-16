@@ -64,6 +64,13 @@ Turchin ら (2013) は、人類社会が小規模な対面協力集団から大�
 - **DOI**: [10.1073/pnas.1308825110](https://doi.org/10.1073/pnas.1308825110)
 - **オープンアクセス**: [PNAS PDF](https://www.pnas.org/content/pnas/110/41/16384.full.pdf)
 
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/source-notes/D16/D16-S11_turchin-2013.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D16/D16-S11_turchin-2013.md)（manifest_id: `D16-S11`）
+- **cs 精読ノート**: [knowledge/source-notes/D16/D16-S11_turchin-2013.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D16/D16-S11_turchin-2013.md)
+- **この wiki ページ（pd）**: [wiki/sources/D16_turchin_2013_war-space-evolution-old-world-complex-societies.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D16_turchin_2013_war-space-evolution-old-world-complex-societies.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
+
 ## 出典メモ
 
 - cs 側読解: `creation-space/knowledge/source-notes/D16/D16-S11_turchin-2013.md`（2026-04-16、claude-opus-4-6, Read PDF 全 6 ページ）

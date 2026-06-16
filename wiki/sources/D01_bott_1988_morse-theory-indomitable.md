@@ -51,3 +51,10 @@ M_t(f) - P_t(M; K) = (1 + t) Q_t(f; K)
 - 出典: Publications Mathématiques de l'I.H.É.S., tome 68, pp. 99-114
 - access_status: raw-confirmed
 - **DOI**: [10.1007/BF02564666](https://doi.org/10.1007/BF02564666)
+
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/raw/D01_bott_1988_morse-theory-indomitable.pdf](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/D01_bott_1988_morse-theory-indomitable.pdf)（manifest_id: `D01-S01`）
+- **cs 精読ノート**: [knowledge/source-notes/D01/D01-S01_bott-1988.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D01/D01-S01_bott-1988.md)
+- **この wiki ページ（pd）**: [wiki/sources/D01_bott_1988_morse-theory-indomitable.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D01_bott_1988_morse-theory-indomitable.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照

@@ -50,6 +50,13 @@ Pew Research Center『世界の宗教スイッチング (Religious switching)』
 - access_status: url-verified
 - **公式URL**: [Pew Research Center](https://www.pewresearch.org/religion/2025/03/26/around-the-world-many-people-are-leaving-their-childhood-religions/)
 
+## ソース参照（GitHub・検証用）
+
+- **cs マニフェスト（該当行）**: [knowledge/raw/manifest.md](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/manifest.md)（manifest_id: `D24-S03`）
+- **cs 精読ノート**: 未生成（cs#249 で生成予定。生成後 `wiki-cross-check.mjs` で照合）
+- **この wiki ページ（pd）**: [wiki/sources/D24_pew_2025_religious-switching-reports.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D24_pew_2025_religious-switching-reports.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
+
 ## 出典メモ
 
 - 本ページは Pew Research Center 公式ページ（url-verified）を WebFetch で取得した本文要約を一次入力として生成した。統計値は同ページの報告に基づく。

@@ -72,6 +72,13 @@ Mauss は、古代社会および「原始」社会における贈与交換の�
 - access_status: raw-confirmed（cs 側 PDF 確認済）
 - **オープンアクセス**: [HAU Books PDF (Guyer trans.)](https://haubooks.org/wp-content/uploads/2020/11/Marcel-Mauss-The-Gift-Expanded-Edition-Selected-Annotated-and-Translated-by-Jane-Guyer.pdf)
 
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/source-notes/D25/D25-S07_mauss-1925.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D25/D25-S07_mauss-1925.md)（manifest_id: `D25-S07`）
+- **cs 精読ノート**: [knowledge/source-notes/D25/D25-S07_mauss-1925.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D25/D25-S07_mauss-1925.md)
+- **この wiki ページ（pd）**: [wiki/sources/D25_mauss_1925_essai-sur-le-don.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D25_mauss_1925_essai-sur-le-don.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
+
 ## 出典メモ
 
 - cs 側読解: `creation-space/knowledge/source-notes/D25/D25-S07_mauss-1925.md`（2026-04-15、Claude Opus 4.6, Read PDF。序論 + 第 1 章 + 結論を読了）

@@ -55,6 +55,13 @@ Nonaka, Toyama & Konno (2000) は、組織を「知識を継続的に創造す�
 - **DOI**: [10.1016/S0024-6301(99)00115-6](https://doi.org/10.1016/S0024-6301(99)00115-6)
 - **オープンアクセス**: [PDF (Agile Consortium)](https://agileconsortium.pbworks.com/f/Nonaka_etal_2000_SECI.pdf)
 
+## ソース参照（GitHub・検証用）
+
+- **cs マニフェスト（該当行）**: [knowledge/raw/manifest.md](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/manifest.md)（manifest_id: `D22-S03`）
+- **cs 精読ノート**: 未生成（cs#249 で生成予定。生成後 `wiki-cross-check.mjs` で照合）
+- **この wiki ページ（pd）**: [wiki/sources/D22_nonaka_2000_konno-n.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D22_nonaka_2000_konno-n.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
+
 ## 出典メモ
 
 - 本ページは OA PDF を curl で取得し pdftotext で抽出した本文（abstract・序論）を一次入力として生成した。

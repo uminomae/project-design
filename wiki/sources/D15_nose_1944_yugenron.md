@@ -46,3 +46,10 @@ review_state: 未レビュー
 - 出典: 河出書房
 - access_status: raw-confirmed
 - **全文**: [Wikimedia Commons](https://commons.wikimedia.org/)
+
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/raw/D15_nose_1944_yugenron_part1.pdf](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/D15_nose_1944_yugenron_part1.pdf)（manifest_id: `D15-S06`）
+- **cs 精読ノート**: [knowledge/source-notes/D15/D15-S06_nose-1940.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D15/D15-S06_nose-1940.md)
+- **この wiki ページ（pd）**: [wiki/sources/D15_nose_1944_yugenron.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D15_nose_1944_yugenron.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照

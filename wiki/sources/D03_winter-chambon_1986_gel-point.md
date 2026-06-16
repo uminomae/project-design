@@ -89,3 +89,10 @@ G'(ω) = G''(ω)                     at p = p_c
 - access_status: raw-confirmed
 - **DOI**: [10.1122/1.549853](https://doi.org/10.1122/1.549853)
 - 備考: rheology.tripod.com 経由で手動 DL（manifest notes）。knowledge/raw/ の PDF は続編 Chambon & Winter (1987), J. Rheol. 31(8), 683-697 の本文を含む。本解説は 1986 年原論文の主要主張を中核に、続編の拡張結果を補足する形で記述した（OCR verified via pdftoppm + Claude Vision, pp.1-2）。
+
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/raw/D03_winter-chambon_1986_gel-point.pdf](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/D03_winter-chambon_1986_gel-point.pdf)（manifest_id: `D03-S08`）
+- **cs 精読ノート**: [knowledge/source-notes/D03/D03-S08_chambon-winter-1987.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D03/D03-S08_chambon-winter-1987.md)
+- **この wiki ページ（pd）**: [wiki/sources/D03_winter-chambon_1986_gel-point.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D03_winter-chambon_1986_gel-point.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照

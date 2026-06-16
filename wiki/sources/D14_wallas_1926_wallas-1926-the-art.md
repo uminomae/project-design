@@ -51,6 +51,13 @@ Graham Wallas『思考の技法 (The Art of Thought)』(1926) は、創造的・
 - access_status: url-verified
 - **全文**: [Internet Archive](https://archive.org/download/dli.ernet.527136/dli.ernet.527136.pdf)
 
+## ソース参照（GitHub・検証用）
+
+- **cs マニフェスト（該当行）**: [knowledge/raw/manifest.md](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/manifest.md)（manifest_id: `D14-S05`）
+- **cs 精読ノート**: 未生成（cs#249 で生成予定。生成後 `wiki-cross-check.mjs` で照合）
+- **この wiki ページ（pd）**: [wiki/sources/D14_wallas_1926_wallas-1926-the-art.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D14_wallas_1926_wallas-1926-the-art.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
+
 ## 出典メモ
 
 - 本ページは archive.org 公開の原典（url-verified）を出典とし、当該古典（Wallas 1926）の確立した学術的理解に基づいて記述した。スキャン書籍 PDF のため全文 pdftotext は行わず、安定リンクを付した。

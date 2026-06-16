@@ -54,3 +54,10 @@ dx/dt = σ(y - x)、dy/dt = rx - y - xz、dz/dt = xy - bz
 - access_status: raw-confirmed
 - **DOI**: [10.1175/1520-0469(1963)020<0130:DNF>2.0.CO;2](https://doi.org/10.1175/1520-0469(1963)020%3C0130:DNF%3E2.0.CO;2)
 - **オープンアクセス**: [PDF](https://journals.ametsoc.org/downloadpdf/journals/atsc/20/2/1520-0469_1963_020_0130_dnf_2_0_co_2.pdf)
+
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/raw/D02_lorenz_1963_deterministic-nonperiodic-flow.pdf](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/D02_lorenz_1963_deterministic-nonperiodic-flow.pdf)（manifest_id: `D02-S12`）
+- **cs 精読ノート**: [knowledge/source-notes/D02/D02-S12_lorenz-1963.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D02/D02-S12_lorenz-1963.md)
+- **この wiki ページ（pd）**: [wiki/sources/D02_lorenz_1963_deterministic-nonperiodic-flow.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D02_lorenz_1963_deterministic-nonperiodic-flow.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照

@@ -56,6 +56,13 @@ review_state: 未レビュー
 - **DOI**: [10.1146/annurev.neuro.24.1.167](https://doi.org/10.1146/annurev.neuro.24.1.167)
 - **オープンアクセス**: [PDF](https://ekmillerlab.mit.edu/wp-content/uploads/2013/03/Miller-Cohen-20011.pdf)（著者ラボ self-archive）
 
+## ソース参照（GitHub・検証用）
+
+- **cs マニフェスト（該当行）**: [knowledge/raw/manifest.md](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/manifest.md)（manifest_id: `D08-S04`）
+- **cs 精読ノート**: 未生成（cs#249 で生成予定。生成後 `wiki-cross-check.mjs` で照合）
+- **この wiki ページ（pd）**: [wiki/sources/D08_miller_2001_cohen-j-d.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D08_miller_2001_cohen-j-d.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
+
 ## 出典メモ
 
 - 著者ラボ self-archive PDF への直接 WebFetch は redirect/404、PubMed 検索結果から abstract・主要主張を一次入力に pd 形式で生成した。本文全文は未読のため主要概念は abstract・要旨ベース。

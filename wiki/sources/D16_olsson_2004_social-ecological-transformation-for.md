@@ -54,6 +54,13 @@ Olsson, Folke & Hahn (2004) は、南スウェーデンの湿地景観 (Kristian
 - access_status: url-verified
 - **オープンアクセス**: [PDF (Ecology and Society)](https://www.ecologyandsociety.org/vol9/iss4/art2/print.pdf)
 
+## ソース参照（GitHub・検証用）
+
+- **cs マニフェスト（該当行）**: [knowledge/raw/manifest.md](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/manifest.md)（manifest_id: `D16-S18`）
+- **cs 精読ノート**: 未生成（cs#249 で生成予定。生成後 `wiki-cross-check.mjs` で照合）
+- **この wiki ページ（pd）**: [wiki/sources/D16_olsson_2004_social-ecological-transformation-for.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D16_olsson_2004_social-ecological-transformation-for.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
+
 ## 出典メモ
 
 - 本ページは OA PDF（Ecology and Society print 版）を curl で取得し pdftotext で抽出した本文（abstract）を一次入力として生成した。

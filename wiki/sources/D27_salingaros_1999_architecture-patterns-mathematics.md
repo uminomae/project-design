@@ -66,6 +66,13 @@ Frank Lloyd Wright の建築は広範囲のスケールにわたり自己相似�
 - **DOI**: [10.1007/s00004-998-0006-0](https://doi.org/10.1007/s00004-998-0006-0)
 - **オープンアクセス**: [Springer PDF](https://link.springer.com/content/pdf/10.1007%2Fs00004-998-0006-0.pdf)
 
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/source-notes/D27/D27-S11_salingaros-1999.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D27/D27-S11_salingaros-1999.md)（manifest_id: `D27-S11`）
+- **cs 精読ノート**: [knowledge/source-notes/D27/D27-S11_salingaros-1999.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D27/D27-S11_salingaros-1999.md)
+- **この wiki ページ（pd）**: [wiki/sources/D27_salingaros_1999_architecture-patterns-mathematics.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D27_salingaros_1999_architecture-patterns-mathematics.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
+
 ## 出典メモ
 
 - cs 側読解: `creation-space/knowledge/source-notes/D27/D27-S11_salingaros-1999.md`（2026-04-15、Claude Opus 4.6, Read PDF 全 10 ページ）

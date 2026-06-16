@@ -50,6 +50,13 @@ Jacob Bjerknes (1969) は、赤道太平洋における海洋と大気の相互�
 - access_status: url-verified
 - **DOI**: [10.1175/1520-0493(1969)097<0163:ATFTEP>2.3.CO;2](https://doi.org/10.1175/1520-0493(1969)097%3C0163:ATFTEP%3E2.3.CO;2)
 
+## ソース参照（GitHub・検証用）
+
+- **cs マニフェスト（該当行）**: [knowledge/raw/manifest.md](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/manifest.md)（manifest_id: `D05-S10`）
+- **cs 精読ノート**: [knowledge/source-notes/D05/D05-S10_bjerknes-1969.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D05/D05-S10_bjerknes-1969.md)
+- **この wiki ページ（pd）**: [wiki/sources/D05_bjerknes_1969_bjerknes-1969-atmospheric-teleconnections.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D05_bjerknes_1969_bjerknes-1969-atmospheric-teleconnections.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
+
 ## 出典メモ
 
 - 本ページは、当該古典（Bjerknes 1969）の確立した学術的理解に基づいて記述した。manifest 記載の OA URL（AMS journals）は直接取得できなかったため、本論文の中核内容（ウォーカー循環の命名、海洋大気の正のフィードバック、テレコネクション）に基づき記述した。これらは ENSO 研究の基礎として広く引用される。cs 側 manifest の OA URL 取得可否の再確認が望ましい。

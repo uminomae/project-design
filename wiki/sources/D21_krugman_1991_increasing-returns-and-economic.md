@@ -51,6 +51,13 @@ Paul Krugman『報酬逓増と経済地理 (Increasing Returns and Economic Geog
 - **DOI**: [10.1086/261763](https://doi.org/10.1086/261763)
 - **オープンアクセス（関連 NBER WP）**: [NBER w3275](https://doi.org/10.3386/w3275)
 
+## ソース参照（GitHub・検証用）
+
+- **cs マニフェスト（該当行）**: [knowledge/raw/manifest.md](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/manifest.md)（manifest_id: `D21-S13`）
+- **cs 精読ノート**: 未生成（cs#249 で生成予定。生成後 `wiki-cross-check.mjs` で照合）
+- **この wiki ページ（pd）**: [wiki/sources/D21_krugman_1991_increasing-returns-and-economic.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D21_krugman_1991_increasing-returns-and-economic.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
+
 ## 出典メモ
 
 - 本ページは、当該古典（Krugman 1991, JPE）の確立した学術的理解に基づいて記述した。manifest 記載の OA URL（NBER working paper w3275）は直接取得しなかったが、本論文の中核命題（循環的因果・集積・中核-周辺の内生的形成）は新経済地理学の基礎として広く確立している。cs 側 source-note 生成後に矛盾検査を行う。

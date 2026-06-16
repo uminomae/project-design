@@ -73,6 +73,13 @@ review_state: 未レビュー
 - **DOI**: [10.1073/pnas.1301228110](https://doi.org/10.1073/pnas.1301228110)
 - **オープンアクセス**: [PMC3690607](https://europepmc.org/articles/pmc3690607?pdf=render)
 
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/source-notes/D26/D26-S20_zatorre-salimpoor-2013.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D26/D26-S20_zatorre-salimpoor-2013.md)（manifest_id: `D26-S20`）
+- **cs 精読ノート**: [knowledge/source-notes/D26/D26-S20_zatorre-salimpoor-2013.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D26/D26-S20_zatorre-salimpoor-2013.md)
+- **この wiki ページ（pd）**: [wiki/sources/D26_zatorre_2013_salimpoor-v-n.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D26_zatorre_2013_salimpoor-v-n.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
+
 ## 出典メモ
 
 - cs 側読解: `creation-space/knowledge/source-notes/D26/D26-S20_zatorre-salimpoor-2013.md`（2026-04-13、Claude Opus 4.6, WebFetch → Read PDF 全 8 ページ）

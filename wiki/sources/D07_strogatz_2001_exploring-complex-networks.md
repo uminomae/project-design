@@ -58,6 +58,13 @@ review_state: 未レビュー
 - **DOI**: [10.1038/35065725](https://doi.org/10.1038/35065725)
 - **オープンアクセス**: [PDF](https://www.nature.com/articles/35065725.pdf)
 
+## ソース参照（GitHub・検証用）
+
+- **cs マニフェスト（該当行）**: [knowledge/raw/manifest.md](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/manifest.md)（manifest_id: `D07-S13`）
+- **cs 精読ノート**: 未生成（cs#249 で生成予定。生成後 `wiki-cross-check.mjs` で照合）
+- **この wiki ページ（pd）**: [wiki/sources/D07_strogatz_2001_exploring-complex-networks.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D07_strogatz_2001_exploring-complex-networks.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
+
 ## 出典メモ
 
 - Nature 掲載ページ（HTML）から abstract・本文冒頭・図キャプションを抽出して一次入力とし、pd 形式で生成した。PDF 全文は未読。

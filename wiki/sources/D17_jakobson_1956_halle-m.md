@@ -81,6 +81,13 @@ Jakobson & Halle (1956) は二部構成。**Part I "Phonology and Phonetics"** �
 - **オープンアクセス**: [MIT Halle archive PDF](https://web.mit.edu/morrishalle/pubworks/papers/1956_Jakobson_Halle_Fundamentals_of_Language.pdf)
 - ISBN（後年版）: 978-3-11-087288-9 (de Gruyter Mouton 2011)
 
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/source-notes/D17/D17-S16_jakobson-halle-1956.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D17/D17-S16_jakobson-halle-1956.md)（manifest_id: `D17-S16`）
+- **cs 精読ノート**: [knowledge/source-notes/D17/D17-S16_jakobson-halle-1956.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D17/D17-S16_jakobson-halle-1956.md)
+- **この wiki ページ（pd）**: [wiki/sources/D17_jakobson_1956_halle-m.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D17_jakobson_1956_halle-m.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
+
 ## 出典メモ
 
 - cs 側読解: `creation-space/knowledge/source-notes/D17/D17-S16_jakobson-halle-1956.md`（2026-04-13、Claude Opus 4.6, WebFetch → PDF Read。Foreword + TOC + Part I Ch.I + Part II 全章を読了。Part I 本体 Chapters II-IV は未読）

@@ -50,6 +50,13 @@ apg1 を含む計76の変異体が15の相補群に分かれ、少なくとも15
 - access_status: url-verified
 - **DOI**: [10.1016/0014-5793(93)80398-E](https://doi.org/10.1016/0014-5793(93)80398-E)
 
+## ソース参照（GitHub・検証用）
+
+- **cs マニフェスト（該当行）**: [knowledge/raw/manifest.md](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/manifest.md)（manifest_id: `D09-S09`）
+- **cs 精読ノート**: 未生成（cs#249 で生成予定。生成後 `wiki-cross-check.mjs` で照合）
+- **この wiki ページ（pd）**: [wiki/sources/D09_tsukada_1993_tsukada-ohsumi-1993-isolation.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D09_tsukada_1993_tsukada-ohsumi-1993-isolation.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
+
 ## 出典メモ
 
 - 本ページは PubMed（PMID 8224160）の efetch 公式 abstract を一次入力として生成した。manifest 記載の OA URL（Wiley pdfdirect）は認証で取得できなかったため、PubMed の検証済み abstract を用いた。

@@ -66,6 +66,13 @@ review_state: 未レビュー
 - **DOI**: [10.1016/j.cell.2012.11.050](https://doi.org/10.1016/j.cell.2012.11.050)
 - **オープンアクセス**: [PDF](http://www.cell.com/article/S0092867412014389/pdf)
 
+## ソース参照（GitHub・検証用）
+
+- **cs マニフェスト（該当行）**: [knowledge/raw/manifest.md](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/manifest.md)（manifest_id: `D04-S15`）
+- **cs 精読ノート**: [knowledge/source-notes/D04/D04-S15_lane-martin-2012.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D04/D04-S15_lane-martin-2012.md)
+- **この wiki ページ（pd）**: [wiki/sources/D04_lane_2012_the-origin-of-membrane.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D04_lane_2012_the-origin-of-membrane.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
+
 ## 出典メモ
 
 - 出版社サイト（Cell/Elsevier）の PDF は 403 でアクセス不可だったため、PubMed (PMID 23260134) の著者抄録を一次入力に pd 形式で生成した。本文全文には未到達のため、引用は抄録範囲に限る。cs source-note は未生成。

@@ -69,6 +69,13 @@ Michaelis-Menten に先立つ Henri は、生成物の変旋光を考慮せず p
 - **DOI**: [10.1021/bi201284u](https://doi.org/10.1021/bi201284u)
 - **オープンアクセス**: [PMC3381512](https://pmc.ncbi.nlm.nih.gov/articles/PMC3381512/)
 
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/source-notes/D03/D03-S02_johnson-2011.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D03/D03-S02_johnson-2011.md)（manifest_id: `D03-S02`）
+- **cs 精読ノート**: [knowledge/source-notes/D03/D03-S02_johnson-2011.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D03/D03-S02_johnson-2011.md)
+- **この wiki ページ（pd）**: [wiki/sources/D03_johnson_2011_johnson-goody-2011-the.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D03_johnson_2011_johnson-goody-2011-the.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
+
 ## 出典メモ
 
 - cs 側読解: `creation-space/knowledge/source-notes/D03/D03-S02_johnson-2011.md`（2026-04-10、Claude Opus 4.6, WebFetch via PMC HTML）

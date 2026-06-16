@@ -50,6 +50,13 @@ Paul van Geert (1998) は、認知発達の基本的メカニズムを**動的�
 - access_status: url-verified
 - **DOI**: [10.1037/0033-295X.105.4.634](https://doi.org/10.1037/0033-295X.105.4.634)
 
+## ソース参照（GitHub・検証用）
+
+- **cs マニフェスト（該当行）**: [knowledge/raw/manifest.md](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/manifest.md)（manifest_id: `D23-S14`）
+- **cs 精読ノート**: 未生成（cs#249 で生成予定。生成後 `wiki-cross-check.mjs` で照合）
+- **この wiki ページ（pd）**: [wiki/sources/D23_van_1998_piaget-vygotsky-and-beyond.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D23_van_1998_piaget-vygotsky-and-beyond.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
+
 ## 出典メモ
 
 - 本ページは、当該古典（van Geert 1998, *Psychological Review*）の確立した学術的理解に基づいて記述した。manifest 記載の OA URL（rug.nl）はランディングページのみで本文が取得できず、PubMed・EuropePMC にも abstract 記録がなかったため、本論文の中核命題（成長子・支援/競合・ピアジェとヴィゴツキーの DS 統合）——発達心理学の DS アプローチの基礎として広く引用される——に基づいて記述した。cs 側 manifest の OA URL を取得可能なものへ差し替えることが望ましい。

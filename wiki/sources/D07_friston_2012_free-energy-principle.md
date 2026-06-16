@@ -66,6 +66,13 @@ review_state: 未レビュー
 - **DOI**: [10.3390/e14112100](https://doi.org/10.3390/e14112100)
 - **オープンアクセス**: [PDF](https://www.mdpi.com/1099-4300/14/11/2100/pdf)（GOLD OA）
 
+## ソース参照（GitHub・検証用）
+
+- **cs マニフェスト（該当行）**: [knowledge/raw/manifest.md](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/manifest.md)（manifest_id: `D07-S14`）
+- **cs 精読ノート**: 未生成（cs#249 で生成予定。生成後 `wiki-cross-check.mjs` で照合）
+- **この wiki ページ（pd）**: [wiki/sources/D07_friston_2012_free-energy-principle.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D07_friston_2012_free-energy-principle.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
+
 ## 出典メモ
 
 - OA本文（MDPI）への直接アクセスは 403 のため、PubMed (PMID 23204829) の公式 abstract 全文を一次入力に pd 形式で生成した。本文全文は未読のため主要概念は abstract ベース。

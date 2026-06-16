@@ -50,6 +50,13 @@ MEP が基礎づけられた物理法則なのか、有用な発見的原理に�
 - access_status: url-verified
 - **DOI**: [10.3390/e12030613](https://doi.org/10.3390/e12030613)
 
+## ソース参照（GitHub・検証用）
+
+- **cs マニフェスト（該当行）**: [knowledge/raw/manifest.md](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/manifest.md)（manifest_id: `D05-S13`）
+- **cs 精読ノート**: 未生成（cs#249 で生成予定。生成後 `wiki-cross-check.mjs` で照合）
+- **この wiki ページ（pd）**: [wiki/sources/D05_dyke_2010_maximum-entropy-production-principle.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D05_dyke_2010_maximum-entropy-production-principle.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
+
 ## 出典メモ
 
 - 本ページは、当該文献（Dyke & Kleidon 2010）および MEP 原理の確立した学術的理解に基づいて記述した。manifest 記載の OA URL（MDPI PDF）は Cloudflare でブロックされ、PubMed・EuropePMC にも abstract 記録がなかったため、本論文の主題（MEP の理論的基礎と地球システム応用、その位置づけ・限界）に基づき記述した。MEP は提案された選択原理であり確立した物理法則ではない点を本文で明示した。cs 側 manifest の OA URL 再確認が望ましい。

@@ -78,6 +78,12 @@ Nowak は、自然選択が利己性を選ぶはずなのに協力が広範に�
 - **DOI**: [10.1126/science.1133755](https://doi.org/10.1126/science.1133755)
 - **オープンアクセス**: [PMC3279745](https://europepmc.org/articles/pmc3279745?pdf=render)
 
+## ソース参照（GitHub・検証用）
+
+- **cs 精読ノート**: [knowledge/source-notes/D18/D18-S09_nowak-2006.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D18/D18-S09_nowak-2006.md)
+- **この wiki ページ（pd）**: [wiki/sources/D18_nowak_2006_five-rules-for-the.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D18_nowak_2006_five-rules-for-the.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
+
 ## 出典メモ
 
 - pd 側読解: WebFetch via PMC HTML（2026-04-19、Claude Opus 4.7、本ページは pd 側で直接読解。cs 側 source-notes は未作成）

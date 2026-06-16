@@ -39,7 +39,6 @@ review_state: 未レビュー
 **注釈の方法論**
 玉の小櫛は注釈書として、源氏物語の本文の語義・表現・人物・場面を丁寧に解説しつつ、理論的枠組みとしてのもののあはれ論を随所に展開する。宣長の注釈方法は、本文の細部への微細な注意と、全体の文学的意図への解釈を結びつけるものであり、近代の文学研究の先駆けとしても評価される。
 
-
 ## 書誌情報
 
 - 著者: 本居宣長
@@ -47,3 +46,10 @@ review_state: 未レビュー
 - 出典: 本居宣長全集（筑摩書房）に所収
 - access_status: raw-confirmed
 - **全文**: [Wikimedia Commons](https://commons.wikimedia.org/)
+
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/raw/D15_motoori_1799_tama-no-ogushi.pdf](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/D15_motoori_1799_tama-no-ogushi.pdf)（manifest_id: `D15-S04`）
+- **cs 精読ノート**: [knowledge/source-notes/D15/D15-S04_motoori-1799.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D15/D15-S04_motoori-1799.md)
+- **この wiki ページ（pd）**: [wiki/sources/D15_motoori_1799_tama-no-ogushi.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D15_motoori_1799_tama-no-ogushi.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照

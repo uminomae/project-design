@@ -99,3 +99,10 @@ review_state: 未レビュー
 - 謝辞: Professor and Mrs. H. C. Corben, Professor H. A. Bethe, Professor J. A. Wheeler
 - access_status: raw-confirmed（OCR 検証済み）
 - **DOI**: [10.1103/RevModPhys.20.367](https://doi.org/10.1103/RevModPhys.20.367)
+
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/raw/D02_feynman_1948_space-time-approach-nonrelativistic-quantum-mechanics.pdf](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/D02_feynman_1948_space-time-approach-nonrelativistic-quantum-mechanics.pdf)（manifest_id: `D02-S01`）
+- **cs 精読ノート**: [knowledge/source-notes/D02/D02-S01_feynman-1948.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D02/D02-S01_feynman-1948.md)
+- **この wiki ページ（pd）**: [wiki/sources/D02_feynman_1948_space-time-approach-nonrelativistic-quantum-mechanics.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D02_feynman_1948_space-time-approach-nonrelativistic-quantum-mechanics.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照

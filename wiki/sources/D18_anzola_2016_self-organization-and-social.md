@@ -51,6 +51,13 @@ Anzola, Barbrook-Johnson & Cano (2016) は、複雑性科学 (complexity science
 - **DOI**: [10.1007/s10588-016-9224-2](https://doi.org/10.1007/s10588-016-9224-2)
 - **オープンアクセス**: [PDF (Springer, Open Access)](https://link.springer.com/content/pdf/10.1007%2Fs10588-016-9224-2.pdf)
 
+## ソース参照（GitHub・検証用）
+
+- **cs マニフェスト（該当行）**: [knowledge/raw/manifest.md](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/manifest.md)（manifest_id: `D18-S05`）
+- **cs 精読ノート**: 未生成（cs#249 で生成予定。生成後 `wiki-cross-check.mjs` で照合）
+- **この wiki ページ（pd）**: [wiki/sources/D18_anzola_2016_self-organization-and-social.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D18_anzola_2016_self-organization-and-social.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
+
 ## 出典メモ
 
 - 本ページは Springer OA PDF（CC ライセンス、The Author(s) 2016）を curl（ブラウザ UA）で取得し pdftotext で抽出した本文（abstract）を一次入力として生成した。

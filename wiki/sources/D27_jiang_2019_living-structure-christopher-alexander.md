@@ -78,6 +78,13 @@ Jacobs 1961 を援用して、modernism 系統は組織化された複雑さを�
 - **DOI**: [10.3390/urbansci3030096](https://doi.org/10.3390/urbansci3030096)
 - **オープンアクセス**: [MDPI PDF](https://www.mdpi.com/2413-8851/3/3/96/pdf) / [arXiv:1909.11757](https://arxiv.org/pdf/1909.11757)
 
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/source-notes/D27/D27-S13_jiang-2019.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D27/D27-S13_jiang-2019.md)（manifest_id: `D27-S13`）
+- **cs 精読ノート**: [knowledge/source-notes/D27/D27-S13_jiang-2019.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D27/D27-S13_jiang-2019.md)
+- **この wiki ページ（pd）**: [wiki/sources/D27_jiang_2019_living-structure-christopher-alexander.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D27_jiang_2019_living-structure-christopher-alexander.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
+
 ## 出典メモ
 
 - cs 側読解: `creation-space/knowledge/source-notes/D27/D27-S13_jiang-2019.md`（2026-04-17、Claude Opus 4.7, WebFetch → Read PDF arxiv ミラー、本文 16 ページ全体）

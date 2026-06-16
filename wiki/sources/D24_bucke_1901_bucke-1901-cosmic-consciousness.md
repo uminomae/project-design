@@ -50,6 +50,13 @@ Richard Maurice Bucke『宇宙意識 (Cosmic Consciousness: A Study in the Evolu
 - access_status: url-verified
 - **全文**: [Internet Archive](https://archive.org/download/cosmconscious/cosmconscious.pdf)
 
+## ソース参照（GitHub・検証用）
+
+- **cs マニフェスト（該当行）**: [knowledge/raw/manifest.md](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/manifest.md)（manifest_id: `D24-S15`）
+- **cs 精読ノート**: 未生成（cs#249 で生成予定。生成後 `wiki-cross-check.mjs` で照合）
+- **この wiki ページ（pd）**: [wiki/sources/D24_bucke_1901_bucke-1901-cosmic-consciousness.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D24_bucke_1901_bucke-1901-cosmic-consciousness.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
+
 ## 出典メモ
 
 - 本ページは archive.org 公開の原典（url-verified）を出典とし、当該古典（Bucke 1901）の確立した学術的理解に基づいて記述した。本書の「意識進化」説は思弁的仮説であり、実証的裏づけのある定説ではない点を本文で明示した。

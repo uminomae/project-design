@@ -48,6 +48,13 @@ William James『心理学原理』(1890) 第1巻、とりわけ第9章「思考�
 - access_status: url-verified
 - **全文**: [Internet Archive (Vol.1)](https://archive.org/download/theprinciplesofp01jameuoft/theprinciplesofp01jameuoft.pdf)
 
+## ソース参照（GitHub・検証用）
+
+- **cs マニフェスト（該当行）**: [knowledge/raw/manifest.md](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/manifest.md)（manifest_id: `D13-S12`）
+- **cs 精読ノート**: 未生成（cs#249 で生成予定。生成後 `wiki-cross-check.mjs` で照合）
+- **この wiki ページ（pd）**: [wiki/sources/D13_james_1890_principles-of-psychology-vol.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D13_james_1890_principles-of-psychology-vol.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
+
 ## 出典メモ
 
 - 本ページは archive.org 公開の原典（url-verified）を出典とし、当該古典（James 1890, Vol.1）の確立した学術的理解に基づいて記述した。D13 の文脈（意識の流れ・過程・生成）に焦点を当てる。D14-S04（同書、思考・習慣・選択性）と原典を共有するが、ドメイン文脈に応じて焦点を分けている。

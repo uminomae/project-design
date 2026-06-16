@@ -51,6 +51,13 @@ EIL に達する前に防除行動を起こすべき密度（行動水準）。�
 - **DOI**: [10.1146/annurev.en.31.010186.002013](https://doi.org/10.1146/annurev.en.31.010186.002013)
 - **オープンアクセス**: [PDF (ISA ULisboa mirror)](https://fenix.isa.ulisboa.pt/downloadFile/563022967868499/Pedigo_et_al_1986_EIL_in_theory_and_practice.pdf)
 
+## ソース参照（GitHub・検証用）
+
+- **cs マニフェスト（該当行）**: [knowledge/raw/manifest.md](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/manifest.md)（manifest_id: `D12-S06`）
+- **cs 精読ノート**: 未生成（cs#249 で生成予定。生成後 `wiki-cross-check.mjs` で照合）
+- **この wiki ページ（pd）**: [wiki/sources/D12_pedigo_1986_et-al.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D12_pedigo_1986_et-al.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
+
 ## 出典メモ
 
 - 本ページは OA ミラー PDF（ULisboa）を curl で取得し pdftotext で抽出した本文（PERSPECTIVES AND OVERVIEW）を一次入力として生成した。

@@ -72,6 +72,13 @@ review_state: 未レビュー
 - **DOI**: [10.1016/j.tree.2015.11.009](https://doi.org/10.1016/j.tree.2015.11.009)
 - **オープンアクセス**: [Cell Press PDF](http://www.cell.com/article/S0169534715002931/pdf)
 
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/source-notes/D04/D04-S12_watson-szathmary-2016.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D04/D04-S12_watson-szathmary-2016.md)（manifest_id: `D04-S12`）
+- **cs 精読ノート**: [knowledge/source-notes/D04/D04-S12_watson-szathmary-2016.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D04/D04-S12_watson-szathmary-2016.md)
+- **この wiki ページ（pd）**: [wiki/sources/D04_watson_2016_how-can-evolution-learn.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D04_watson_2016_how-can-evolution-learn.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
+
 ## 出典メモ
 
 - cs 側読解: `creation-space/knowledge/source-notes/D04/D04-S12_watson-szathmary-2016.md`（2026-04-10、Claude Opus 4.6, WebFetch → Read PDF 全 11 ページ）

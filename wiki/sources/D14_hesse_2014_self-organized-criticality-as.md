@@ -62,6 +62,13 @@ Hesse & Gross (2014) はレビュー論文として、脳が自己組織化臨�
 - **DOI**: [10.3389/fnsys.2014.00166](https://doi.org/10.3389/fnsys.2014.00166)
 - **オープンアクセス**: [Frontiers PDF](https://www.frontiersin.org/articles/10.3389/fnsys.2014.00166/pdf)
 
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/source-notes/D14/D14-S07_hesse-2014.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D14/D14-S07_hesse-2014.md)（manifest_id: `D14-S07`）
+- **cs 精読ノート**: [knowledge/source-notes/D14/D14-S07_hesse-2014.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D14/D14-S07_hesse-2014.md)
+- **この wiki ページ（pd）**: [wiki/sources/D14_hesse_2014_self-organized-criticality-as.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D14_hesse_2014_self-organized-criticality-as.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
+
 ## 出典メモ
 
 - cs 側読解: `creation-space/knowledge/source-notes/D14/D14-S07_hesse-2014.md`（2026-04-10、claude-opus-4-6, WebFetch via HTML）

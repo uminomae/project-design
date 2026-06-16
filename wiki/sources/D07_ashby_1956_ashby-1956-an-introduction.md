@@ -66,6 +66,13 @@ review_state: 未レビュー
 - access_status: url-verified
 - **オープンアクセス**: [Internet Archive PDF](https://archive.org/download/introductiontocy00ashb/introductiontocy00ashb.pdf)
 
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/source-notes/D07/D07-S11_ashby-1956.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D07/D07-S11_ashby-1956.md)（manifest_id: `D07-S11`）
+- **cs 精読ノート**: [knowledge/source-notes/D07/D07-S11_ashby-1956.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D07/D07-S11_ashby-1956.md)
+- **この wiki ページ（pd）**: [wiki/sources/D07_ashby_1956_ashby-1956-an-introduction.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D07_ashby_1956_ashby-1956-an-introduction.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
+
 ## 出典メモ
 
 - cs 側読解: `creation-space/knowledge/source-notes/D07/D07-S11_ashby-1956.md`（2026-04-10、Claude Opus 4.6, WebFetch via Archive.org DjVu。目次 + 序文 + Ch.1-3 + Ch.7-14 のキーフレーズ抽出）

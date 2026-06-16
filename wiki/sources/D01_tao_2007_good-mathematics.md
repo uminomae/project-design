@@ -58,3 +58,10 @@ Szemerédi 定理の複数アプローチという事例——同じ定理を組
 - access_status: raw-confirmed
 - **DOI**: [10.1090/S0273-0979-07-01168-8](https://doi.org/10.1090/S0273-0979-07-01168-8)
 - **オープンアクセス**: [PDF](https://arxiv.org/pdf/math/0702396)
+
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/raw/D01_tao_2007_good-mathematics.pdf](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/D01_tao_2007_good-mathematics.pdf)（manifest_id: `D01-S06`）
+- **cs 精読ノート**: [knowledge/source-notes/D01/D01-S06_tao-2007.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D01/D01-S06_tao-2007.md)
+- **この wiki ページ（pd）**: [wiki/sources/D01_tao_2007_good-mathematics.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D01_tao_2007_good-mathematics.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照

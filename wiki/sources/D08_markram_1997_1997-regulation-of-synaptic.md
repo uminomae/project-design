@@ -50,6 +50,13 @@ Markram, Lübke, Frotscher & Sakmann (1997) は、新皮質 (neocortex) の錐�
 - access_status: url-verified
 - **DOI**: [10.1126/science.275.5297.213](https://doi.org/10.1126/science.275.5297.213)
 
+## ソース参照（GitHub・検証用）
+
+- **cs マニフェスト（該当行）**: [knowledge/raw/manifest.md](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/manifest.md)（manifest_id: `D08-S09`）
+- **cs 精読ノート**: 未生成（cs#249 で生成予定。生成後 `wiki-cross-check.mjs` で照合）
+- **この wiki ページ（pd）**: [wiki/sources/D08_markram_1997_1997-regulation-of-synaptic.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D08_markram_1997_1997-regulation-of-synaptic.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
+
 ## 出典メモ
 
 - 本ページは PubMed（PMID 8985014）の efetch 公式 abstract を一次入力として生成した。manifest 記載の OA URL（EPFL Infoscience）は直接の PDF 取得ができなかったため、PubMed の検証済み abstract を用いた。

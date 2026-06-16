@@ -59,3 +59,10 @@ Anderson の「多いことは違うことだ」という命題は、PD にお�
 - 出典: Science, New Series, Vol. 177, No. 4047, pp. 393–396
 - access_status: raw-confirmed
 - **DOI**: [10.1126/science.177.4047.393](https://doi.org/10.1126/science.177.4047.393)
+
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/raw/D02_anderson_1972_more-is-different.pdf](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/D02_anderson_1972_more-is-different.pdf)（manifest_id: `D02-S02`）
+- **cs 精読ノート**: [knowledge/source-notes/D02/D02-S02_anderson-1972.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D02/D02-S02_anderson-1972.md)
+- **この wiki ページ（pd）**: [wiki/sources/D02_anderson_1972_more-is-different.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D02_anderson_1972_more-is-different.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照

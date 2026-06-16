@@ -66,6 +66,13 @@ IIT の中核的アイデンティティ命題。
 - **DOI**: [10.1371/journal.pcbi.1003588](https://doi.org/10.1371/journal.pcbi.1003588)
 - **オープンアクセス**: [PLOS Comput Biol PDF](https://journals.plos.org/ploscompbiol/article/file?id=10.1371/journal.pcbi.1003588&type=printable)
 
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/source-notes/D23/D23-S17_tononi-2014.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D23/D23-S17_tononi-2014.md)（manifest_id: `D23-S17`）
+- **cs 精読ノート**: [knowledge/source-notes/D23/D23-S17_tononi-2014.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D23/D23-S17_tononi-2014.md)
+- **この wiki ページ（pd）**: [wiki/sources/D23_tononi_2014_integrated-information-theory-3.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D23_tononi_2014_integrated-information-theory-3.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
+
 ## 出典メモ
 
 - cs 側読解: `creation-space/knowledge/source-notes/D23/D23-S17_tononi-2014.md`（2026-04-11、claude-opus-4-6, Read PDF pp.1-20）

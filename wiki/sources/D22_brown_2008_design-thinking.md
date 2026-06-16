@@ -54,6 +54,13 @@ Tim Brown (IDEO CEO) による本記事は、デザイン思考 (design thinking
 - access_status: raw-confirmed
 - **全文**: [readings.design (PDF)](https://readings.design/PDF/Tim%20Brown)
 
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/raw/D22_brown_2008_design-thinking.pdf](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/D22_brown_2008_design-thinking.pdf)（manifest_id: `D22-S06`）
+- **cs 精読ノート**: [knowledge/source-notes/D22/D22-S06_brown-2008.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D22/D22-S06_brown-2008.md)
+- **この wiki ページ（pd）**: [wiki/sources/D22_brown_2008_design-thinking.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D22_brown_2008_design-thinking.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
+
 ## 出典メモ
 
 - 本ページは cs ローカル raw PDF（`knowledge/raw/D22_brown_2008_design-thinking.pdf`）を pdftotext で抽出した本文を一次入力として生成した。

@@ -72,6 +72,13 @@ Lecture XVI で神秘的状態を定義し、4 つの標識を提示する（ine
 - access_status: raw-confirmed（cs 側 PDF 確認済）
 - **オープンアクセス**: [Internet Archive PDF](https://archive.org/download/varietiesofrelig00jameuoft/varietiesofrelig00jameuoft.pdf)
 
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/source-notes/D24/D24-S11_james-1902.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D24/D24-S11_james-1902.md)（manifest_id: `D24-S11`）
+- **cs 精読ノート**: [knowledge/source-notes/D24/D24-S11_james-1902.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D24/D24-S11_james-1902.md)
+- **この wiki ページ（pd）**: [wiki/sources/D24_james_1902_varieties-of-religious-experience.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D24_james_1902_varieties-of-religious-experience.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
+
 ## 出典メモ
 
 - cs 側読解: `creation-space/knowledge/source-notes/D24/D24-S11_james-1902.md`（2026-04-16、claude-opus-4-6, Read PDF。Preface + Contents 全講義詳細要約 + Lecture I 冒頭を読了、本論詳細は Contents から把握）

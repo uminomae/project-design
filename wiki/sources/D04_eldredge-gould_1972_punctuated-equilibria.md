@@ -46,3 +46,10 @@ review_state: 未レビュー
 - 年: 1972
 - 出典: Models in Paleobiology, T.J.M. Schopf (ed.), Freeman Cooper, pp. 82-115
 - access_status: raw-confirmed
+
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/raw/D04_eldredge-gould_1972_punctuated-equilibria.pdf](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/D04_eldredge-gould_1972_punctuated-equilibria.pdf)（manifest_id: `D04-S02`）
+- **cs 精読ノート**: [knowledge/source-notes/D04/D04-S02_eldredge-gould-1972.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D04/D04-S02_eldredge-gould-1972.md)
+- **この wiki ページ（pd）**: [wiki/sources/D04_eldredge-gould_1972_punctuated-equilibria.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D04_eldredge-gould_1972_punctuated-equilibria.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照

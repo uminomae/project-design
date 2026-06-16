@@ -61,6 +61,13 @@ Hermann von Helmholtz (1821–1894) の『音感覚論』(原書 1863, Ellis 英
 - access_status: url-verified
 - **全文**: [Internet Archive](https://archive.org/details/onsensationston02helmgoog)（public domain）
 
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/source-notes/D26/D26-S15_helmholtz-1895.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D26/D26-S15_helmholtz-1895.md)（manifest_id: `D26-S15`）
+- **cs 精読ノート**: [knowledge/source-notes/D26/D26-S15_helmholtz-1895.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D26/D26-S15_helmholtz-1895.md)
+- **この wiki ページ（pd）**: [wiki/sources/D26_helmholtz_1895_helmholtz-1895-on-the.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D26_helmholtz_1895_helmholtz-1895-on-the.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
+
 ## 出典メモ
 
 - cs 側読解: `creation-space/knowledge/source-notes/D26/D26-S15_helmholtz-1895.md`（2026-04-20, Claude Opus 4.7, WebFetch djvu.txt stream で Translator's Preface・Introduction・Part I 骨子を精読。Part II-III は未精読）

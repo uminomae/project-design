@@ -72,6 +72,13 @@ Freytag はドラマの構成技法を体系的に論じ、劇的行為（dramat
 - access_status: raw-confirmed（cs 側 PDF 確認済）
 - **オープンアクセス**: [Internet Archive PDF](https://archive.org/download/freytagstechniqu0000frey/freytagstechniqu0000frey.pdf)
 
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/source-notes/D19/D19-S11_freytag-1895.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D19/D19-S11_freytag-1895.md)（manifest_id: `D19-S11`）
+- **cs 精読ノート**: [knowledge/source-notes/D19/D19-S11_freytag-1895.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D19/D19-S11_freytag-1895.md)
+- **この wiki ページ（pd）**: [wiki/sources/D19_freytag_1895_technique-of-the-drama.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D19_freytag_1895_technique-of-the-drama.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
+
 ## 出典メモ
 
 - cs 側読解: `creation-space/knowledge/source-notes/D19/D19-S11_freytag-1895.md`（2026-04-16、claude-opus-4-6, Read PDF。Biographical Note + Contents + Introduction + Ch.II §2 五部分論を読了）

@@ -64,6 +64,13 @@ Arne Dietrich (2004) は、機能的神経解剖に基づく創造性の枠組�
 - **DOI**: [10.3758/bf03196731](https://doi.org/10.3758/bf03196731)
 - **オープンアクセス**: [Springer PDF](https://link.springer.com/content/pdf/10.3758/BF03196731.pdf)（出版社版はリダイレクト認証あり）
 
+## ソース参照（GitHub・検証用）
+
+- **cs マニフェスト（該当行）**: [knowledge/raw/manifest.md](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/manifest.md)（manifest_id: `D14-S06`）
+- **cs 精読ノート**: 未生成（cs#249 で生成予定。生成後 `wiki-cross-check.mjs` で照合）
+- **この wiki ページ（pd）**: [wiki/sources/D14_dietrich_2004_cognitive-neuroscience-of-creativity.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D14_dietrich_2004_cognitive-neuroscience-of-creativity.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
+
 ## 出典メモ
 
 - 一次入力: PubMed 公式 abstract（PMID 15875970, 2026-06-14 efetch）。出版社 PDF はリダイレクト認証のため本文全文は本セッション未読。

@@ -74,6 +74,13 @@ L* 銀河で CGM 質量は恒星質量と同オーダーに達しうる。観測
 - **DOI**: [10.1146/annurev-astro-091916-055240](https://doi.org/10.1146/annurev-astro-091916-055240)
 - **オープンアクセス**: [arXiv:1709.09180](https://arxiv.org/pdf/1709.09180)
 
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/source-notes/D06/D06-S03_tumlinson-2017.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D06/D06-S03_tumlinson-2017.md)（manifest_id: `D06-S03`）
+- **cs 精読ノート**: [knowledge/source-notes/D06/D06-S03_tumlinson-2017.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D06/D06-S03_tumlinson-2017.md)
+- **この wiki ページ（pd）**: [wiki/sources/D06_tumlinson_2017_tumlinson-peeples-werk-2017.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D06_tumlinson_2017_tumlinson-peeples-werk-2017.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
+
 ## 出典メモ
 
 - cs 側読解: `creation-space/knowledge/source-notes/D06/D06-S03_tumlinson-2017.md`（2026-04-10、Claude Opus 4.6, WebFetch + Read PDF 全 46 ページ）

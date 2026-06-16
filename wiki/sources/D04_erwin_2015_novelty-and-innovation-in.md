@@ -66,6 +66,13 @@ review_state: 未レビュー
 - **DOI**: [10.1016/j.cub.2015.08.019](https://doi.org/10.1016/j.cub.2015.08.019)
 - **オープンアクセス**: [PDF](http://www.cell.com/article/S0960982215009902/pdf)
 
+## ソース参照（GitHub・検証用）
+
+- **cs マニフェスト（該当行）**: [knowledge/raw/manifest.md](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/manifest.md)（manifest_id: `D04-S11`）
+- **cs 精読ノート**: [knowledge/source-notes/D04/D04-S11_erwin-2015.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D04/D04-S11_erwin-2015.md)
+- **この wiki ページ（pd）**: [wiki/sources/D04_erwin_2015_novelty-and-innovation-in.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D04_erwin_2015_novelty-and-innovation-in.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
+
 ## 出典メモ
 
 - 出版社サイト（Cell/Elsevier）の PDF は 403 でアクセス不可だったため、PubMed (PMID 26439356) の著者抄録を一次入力に pd 形式で生成した。本文全文には未到達のため、引用は抄録範囲に限る。cs source-note は未生成。

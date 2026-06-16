@@ -56,3 +56,10 @@ IPBESが取り組む課題——科学的知識と先住民知識という異な
 - 出典: Intergovernmental Science-Policy Platform on Biodiversity and Ecosystem Services（IPBES/7/INF/8）
 - access_status: raw-confirmed
 - **公式URL**: [IPBES](https://www.ipbes.net/)
+
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/raw/D30_ipbes_2019_ilk-methodological-guidance.pdf](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/D30_ipbes_2019_ilk-methodological-guidance.pdf)（manifest_id: `D30-S03`）
+- **cs 精読ノート**: [knowledge/source-notes/D30/D30-S03_ipbes-2019.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D30/D30-S03_ipbes-2019.md)
+- **この wiki ページ（pd）**: [wiki/sources/D30_ipbes_2019_ilk-methodological-guidance.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D30_ipbes_2019_ilk-methodological-guidance.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照

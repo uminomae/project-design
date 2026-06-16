@@ -54,3 +54,10 @@ review_state: 未レビュー
 - 出典: Profession 91, MLA（後に Ways of Reading, 5th edition, Bedford/St. Martin's, 1999 に収録）
 - access_status: raw-confirmed
 - **オープンアクセス**: [PDF（Texas State University）](https://www.txstate.edu/)
+
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/raw/D25_pratt_1991_arts-of-the-contact-zone.pdf](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/D25_pratt_1991_arts-of-the-contact-zone.pdf)（manifest_id: `D25-S10`）
+- **cs 精読ノート**: [knowledge/source-notes/D25/D25-S10_pratt-1991.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D25/D25-S10_pratt-1991.md)
+- **この wiki ページ（pd）**: [wiki/sources/D25_pratt_1991_arts-of-the-contact-zone.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D25_pratt_1991_arts-of-the-contact-zone.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照

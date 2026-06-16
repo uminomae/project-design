@@ -50,6 +50,13 @@ John F. Dewey & John M. Bird (1970) は、1960年代末に確立しつつあっ�
 - access_status: url-verified
 - **DOI**: [10.1029/JB075i014p02625](https://doi.org/10.1029/JB075i014p02625)
 
+## ソース参照（GitHub・検証用）
+
+- **cs マニフェスト（該当行）**: [knowledge/raw/manifest.md](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/manifest.md)（manifest_id: `D05-S04`）
+- **cs 精読ノート**: 未生成（cs#249 で生成予定。生成後 `wiki-cross-check.mjs` で照合）
+- **この wiki ページ（pd）**: [wiki/sources/D05_dewey_1970_dewey-bird-1970-mountain.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D05_dewey_1970_dewey-bird-1970-mountain.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
+
 ## 出典メモ
 
 - 本ページは、当該古典（Dewey & Bird 1970）の確立した学術的理解に基づいて記述した。manifest 記載の OA URL（AGU/Wiley onlinelibrary）は認証で直接取得できなかったため、本論文の中核内容（プレートテクトニクスによる造山論の再構築、コルディレラ型・衝突型の分類）に基づき記述した。cs 側 manifest の OA URL 取得可否の再確認が望ましい。

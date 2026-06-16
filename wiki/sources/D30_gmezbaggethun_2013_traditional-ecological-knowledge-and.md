@@ -68,6 +68,13 @@ TEK はリスクを空間・時間・資産クラス・共同体間に分散す�
 - **DOI**: [10.5751/ES-06288-180472](https://doi.org/10.5751/ES-06288-180472)
 - **オープンアクセス**: [PMC4471132](https://pmc.ncbi.nlm.nih.gov/articles/PMC4471132/)
 
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/source-notes/D30/D30-S18_gomez-2013.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D30/D30-S18_gomez-2013.md)（manifest_id: `D30-S18`）
+- **cs 精読ノート**: [knowledge/source-notes/D30/D30-S18_gomez-2013.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D30/D30-S18_gomez-2013.md)
+- **この wiki ページ（pd）**: [wiki/sources/D30_gmezbaggethun_2013_traditional-ecological-knowledge-and.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D30_gmezbaggethun_2013_traditional-ecological-knowledge-and.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
+
 ## 出典メモ
 
 - cs 側読解: `creation-space/knowledge/source-notes/D30/D30-S18_gomez-2013.md`（2026-04-11、Claude Opus 4.6, WebFetch 全文）

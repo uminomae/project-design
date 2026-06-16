@@ -70,6 +70,13 @@ note: "cs 側読解は abstract のみ（Nature paywall により本文未取得
 - **PMID**: [20168317](https://pubmed.ncbi.nlm.nih.gov/20168317/)
 - **オープンアクセス（OA URL は paywall リンクのみ）**: [Nature](https://www.nature.com/articles/nrd2538.pdf)（実体は paywall）
 
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/source-notes/D11/D11-S01_paul-2010.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D11/D11-S01_paul-2010.md)（manifest_id: `D11-S01`）
+- **cs 精読ノート**: [knowledge/source-notes/D11/D11-S01_paul-2010.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D11/D11-S01_paul-2010.md)
+- **この wiki ページ（pd）**: [wiki/sources/D11_paul_2010_m-et-al.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D11_paul_2010_m-et-al.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
+
 ## 出典メモ
 
 - cs 側読解: `creation-space/knowledge/source-notes/D11/D11-S01_paul-2010.md`（2026-04-13、Claude Opus 4.6, PubMed 経由の abstract のみ。本文は Nature paywall により未取得）

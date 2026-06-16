@@ -51,6 +51,13 @@ Slobodan Marković (2012) は、**美的経験 (aesthetic experience)** を、�
 - **DOI**: [10.1068/i0450aap](https://doi.org/10.1068/i0450aap)
 - **オープンアクセス**: [PMC3485814](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3485814/)
 
+## ソース参照（GitHub・検証用）
+
+- **cs マニフェスト（該当行）**: [knowledge/raw/manifest.md](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/manifest.md)（manifest_id: `D15-S14`）
+- **cs 精読ノート**: 未生成（cs#249 で生成予定。生成後 `wiki-cross-check.mjs` で照合）
+- **この wiki ページ（pd）**: [wiki/sources/D15_markovic_2012_components-of-aesthetic-experience.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D15_markovic_2012_components-of-aesthetic-experience.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
+
 ## 出典メモ
 
 - 本ページは PubMed（PMID 23145263）の efetch 公式 abstract を一次入力として生成した。manifest 記載の OA URL（SAGE PDF）は直接取得できなかったため、PubMed の検証済み abstract を用いた。全文は PMC3485814 で公開。

@@ -72,6 +72,13 @@ review_state: 未レビュー
 - **DOI**: [10.1038/445369a](https://doi.org/10.1038/445369a)
 - **オープンアクセス**: [arXiv:q-bio/0702015](https://arxiv.org/pdf/q-bio/0702015)
 
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/source-notes/D04/D04-S14_goldenfeld-woese-2007.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D04/D04-S14_goldenfeld-woese-2007.md)（manifest_id: `D04-S14`）
+- **cs 精読ノート**: [knowledge/source-notes/D04/D04-S14_goldenfeld-woese-2007.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D04/D04-S14_goldenfeld-woese-2007.md)
+- **この wiki ページ（pd）**: [wiki/sources/D04_goldenfeld_2007_biology-s-next-revolution.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D04_goldenfeld_2007_biology-s-next-revolution.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
+
 ## 出典メモ
 
 - cs 側読解: `creation-space/knowledge/source-notes/D04/D04-S14_goldenfeld-woese-2007.md`（2026-04-10、Claude Opus 4.6, WebFetch + PDF Read 全 3 ページ）

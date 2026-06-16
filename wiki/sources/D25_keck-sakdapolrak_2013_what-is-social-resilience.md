@@ -54,6 +54,13 @@ Keck & Sakdapolrak (2013) は、ここ十年で急速に増えた「社会的レ
 - access_status: raw-confirmed
 - **DOI**: [10.3112/erdkunde.2013.01.02](https://doi.org/10.3112/erdkunde.2013.01.02)
 
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/raw/D25_keck-sakdapolrak_2013_what-is-social-resilience.pdf](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/D25_keck-sakdapolrak_2013_what-is-social-resilience.pdf)（manifest_id: `D25-S13`）
+- **cs 精読ノート**: [knowledge/source-notes/D25/D25-S13_keck-sakdapolrak-2013.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D25/D25-S13_keck-sakdapolrak-2013.md)
+- **この wiki ページ（pd）**: [wiki/sources/D25_keck-sakdapolrak_2013_what-is-social-resilience.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D25_keck-sakdapolrak_2013_what-is-social-resilience.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
+
 ## 出典メモ
 
 - 本ページは cs ローカル raw PDF（`knowledge/raw/D25_keck-sakdapolrak_2013_what-is-social-resilience.pdf`）を pdftotext で抽出した本文を一次入力として生成した。

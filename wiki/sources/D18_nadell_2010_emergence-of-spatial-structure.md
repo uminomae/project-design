@@ -72,6 +72,13 @@ Nadell, Foster & Xavier (2010) は、細胞集団における空間構造の自�
 - **DOI**: [10.1371/journal.pcbi.1000716](https://doi.org/10.1371/journal.pcbi.1000716)
 - **オープンアクセス**: [PLOS Comput Biol PDF](https://journals.plos.org/ploscompbiol/article/file?id=10.1371/journal.pcbi.1000716&type=printable)
 
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/source-notes/D18/D18-S10_nadell-2010.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D18/D18-S10_nadell-2010.md)（manifest_id: `D18-S10`）
+- **cs 精読ノート**: [knowledge/source-notes/D18/D18-S10_nadell-2010.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D18/D18-S10_nadell-2010.md)
+- **この wiki ページ（pd）**: [wiki/sources/D18_nadell_2010_emergence-of-spatial-structure.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D18_nadell_2010_emergence-of-spatial-structure.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
+
 ## 出典メモ
 
 - cs 側読解: `creation-space/knowledge/source-notes/D18/D18-S10_nadell-2010.md`（2026-04-11、claude-opus-4-6, Read PDF 全 9 ページ）

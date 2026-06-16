@@ -79,3 +79,10 @@ review_state: 未レビュー
 - access_status: raw-confirmed
 - **公式URL**: [UNCITRAL Mediation Rules 2021](https://uncitral.un.org/en/texts/mediation/contractualtexts/mediation_rules)
 - 備考: uncitral.un.org 公式 PDF から手動 DL（manifest notes）
+
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/raw/D20_uncitral_2021_mediation-rules.pdf](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/D20_uncitral_2021_mediation-rules.pdf)（manifest_id: `D20-S07`）
+- **cs 精読ノート**: [knowledge/source-notes/D20/D20-S07_uncitral-2021-mediation-rules.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D20/D20-S07_uncitral-2021-mediation-rules.md)
+- **この wiki ページ（pd）**: [wiki/sources/D20_uncitral_2021_mediation-rules.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D20_uncitral_2021_mediation-rules.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照

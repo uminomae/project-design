@@ -48,6 +48,13 @@ Arnold J. Toynbee『歴史の研究 (A Study of History)』（全12巻、1934–
 - access_status: url-verified
 - **全文**: [Internet Archive (Vol.10)](https://archive.org/details/studyofhistory0010toyn)
 
+## ソース参照（GitHub・検証用）
+
+- **cs マニフェスト（該当行）**: [knowledge/raw/manifest.md](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/manifest.md)（manifest_id: `D16-S04`）
+- **cs 精読ノート**: 未生成（cs#249 で生成予定。生成後 `wiki-cross-check.mjs` で照合）
+- **この wiki ページ（pd）**: [wiki/sources/D16_unknown_0000_toynbee-a-j-a.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D16_unknown_0000_toynbee-a-j-a.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
+
 ## 出典メモ
 
 - 本ページは archive.org 公開の原典（url-verified）を出典とし、当該古典（Toynbee, A Study of History）の確立した学術的理解に基づいて記述した。manifest の wiki_stem は `D16_unknown_0000_toynbee-a-j-a`（著者・年が manifest 上未確定）だが、内容は Toynbee の比較文明史にあたる。

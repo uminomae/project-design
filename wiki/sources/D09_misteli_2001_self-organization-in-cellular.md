@@ -51,6 +51,13 @@ Misteli (2001) は、細胞構築 (cellular architecture) における**自己�
 - **DOI**: [10.1083/jcb.200108110](https://doi.org/10.1083/jcb.200108110)
 - **オープンアクセス**: [PMC2198832](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2198832/)
 
+## ソース参照（GitHub・検証用）
+
+- **cs マニフェスト（該当行）**: [knowledge/raw/manifest.md](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/manifest.md)（manifest_id: `D09-S12`）
+- **cs 精読ノート**: [knowledge/source-notes/D09/D09-S12_misteli-2001.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D09/D09-S12_misteli-2001.md)
+- **この wiki ページ（pd）**: [wiki/sources/D09_misteli_2001_self-organization-in-cellular.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D09_misteli_2001_self-organization-in-cellular.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
+
 ## 出典メモ
 
 - 本ページは PubMed（PMID 11604416）の efetch 公式 abstract を一次入力として生成した。manifest 記載の OA URL（jcb.rupress.org PDF）は直接取得できなかったため、PubMed の検証済み abstract を用いた。全文は PMC2198832 で公開。

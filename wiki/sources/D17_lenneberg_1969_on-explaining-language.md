@@ -49,6 +49,13 @@ Lenneberg (1969) は、子どもにおける言語の発達は**発達生物学 
 - **DOI**: [10.1126/science.164.3880.635](https://doi.org/10.1126/science.164.3880.635)
 - **全文**: [Internet Archive — Biological Foundations of Language (1967)](https://archive.org/details/biologicalfounda0000lenn)
 
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/raw/D17_lenneberg_1969_on-explaining-language.pdf](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/D17_lenneberg_1969_on-explaining-language.pdf)（manifest_id: `D17-S08`）
+- **cs 精読ノート**: [knowledge/source-notes/D17/D17-S08_lenneberg-1967.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D17/D17-S08_lenneberg-1967.md)
+- **この wiki ページ（pd）**: [wiki/sources/D17_lenneberg_1969_on-explaining-language.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D17_lenneberg_1969_on-explaining-language.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
+
 ## 出典メモ
 
 - 本ページは cs ローカル raw PDF（`knowledge/raw/D17_lenneberg_1969_on-explaining-language.pdf`、Science 1969 論文）を pdftotext で抽出した本文を一次入力として生成した。manifest の表題は主著『Biological Foundations of Language (1967)』だが、local_file は Science 1969 の凝縮論文「On Explaining Language」であり、wiki_stem もそれに従う。

@@ -50,6 +50,13 @@ Luyckx ら (2008) は、彼らが先に提示した後期青年期のアイデ�
 - access_status: url-verified
 - **DOI**: [10.1016/j.jrp.2007.04.004](https://doi.org/10.1016/j.jrp.2007.04.004)
 
+## ソース参照（GitHub・検証用）
+
+- **cs マニフェスト（該当行）**: [knowledge/raw/manifest.md](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/manifest.md)（manifest_id: `D23-S08`）
+- **cs 精読ノート**: 未生成（cs#249 で生成予定。生成後 `wiki-cross-check.mjs` で照合）
+- **この wiki ページ（pd）**: [wiki/sources/D23_luyckx_2008_et-al.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D23_luyckx_2008_et-al.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
+
 ## 出典メモ
 
 - 本ページは、当該文献（Luyckx et al. 2008）の確立した学術的理解と、既生成の Luyckx et al. (2006) 四次元モデル（[[コミットメントと探索の解きほぐし：後期青年期アイデンティティ形成の統合モデル（Luyckx et al. 2006）]]）の文脈に基づいて記述した。**manifest 不整合注意**: manifest の OA URL（uantwerpen IRUA handle `d:irua:19968`）は本 2008 年論文でなく **2023 年の別論文**を指していた（本セッションで発見）。PubMed・EuropePMC にも当該 2008 論文の abstract 記録がなかったため、本論文の中核（反芻的探索の追加＝五次元への拡張）に基づき記述した。cs 側で正しい OA URL への差し替えが必要。

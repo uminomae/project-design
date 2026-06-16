@@ -59,3 +59,10 @@ review_state: 未レビュー
 - 出典: Nobel Lectures, Chemistry 1971-1980, pp. 263-285（Les Prix Nobel 1977所収）
 - access_status: raw-confirmed
 - **オープンアクセス**: [Nobel Lecture PDF](https://www.nobelprize.org/uploads/2018/06/prigogine-lecture.pdf)
+
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/raw/D29_prigogine_1977_time-structure-fluctuations.pdf](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/D29_prigogine_1977_time-structure-fluctuations.pdf)（manifest_id: `D29-S01`）
+- **cs 精読ノート**: [knowledge/source-notes/D29/D29-S01_prigogine-1977.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D29/D29-S01_prigogine-1977.md)
+- **この wiki ページ（pd）**: [wiki/sources/D29_prigogine_1977_time-structure-fluctuations.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D29_prigogine_1977_time-structure-fluctuations.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照

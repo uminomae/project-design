@@ -55,6 +55,13 @@ Folke ら (2005) は、生態系ベースの順応的管理 (adaptive ecosystem-
 - **DOI**: [10.1146/annurev.energy.30.050504.144511](https://doi.org/10.1146/annurev.energy.30.050504.144511)
 - **オープンアクセス**: [PDF (Annual Reviews)](https://www.annualreviews.org/doi/pdf/10.1146/annurev.energy.30.050504.144511)
 
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/raw/D20_folke-et-al_2005_adaptive-governance.pdf](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/D20_folke-et-al_2005_adaptive-governance.pdf)（manifest_id: `D20-S14`）
+- **cs 精読ノート**: [knowledge/source-notes/D20/D20-S14_folke-et-al-2005.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D20/D20-S14_folke-et-al-2005.md)
+- **この wiki ページ（pd）**: [wiki/sources/D20_folke-et-al_2005_adaptive-governance.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D20_folke-et-al_2005_adaptive-governance.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
+
 ## 出典メモ
 
 - 本ページは cs ローカル raw PDF（`knowledge/raw/D20_folke-et-al_2005_adaptive-governance.pdf`）を pdftotext で抽出した本文を一次入力として生成した。

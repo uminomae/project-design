@@ -48,6 +48,13 @@ Le Pichon (1968) は、地球表面を相互に相対運動する剛体ブロッ
 - access_status: raw-confirmed
 - **DOI**: [10.1029/JB073i012p03661](https://doi.org/10.1029/JB073i012p03661)
 
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/raw/D05_le-pichon_1968_sea-floor-spreading.pdf](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/D05_le-pichon_1968_sea-floor-spreading.pdf)（manifest_id: `D05-S03`）
+- **cs 精読ノート**: [knowledge/source-notes/D05/D05-S03_le-pichon-1968.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D05/D05-S03_le-pichon-1968.md)
+- **この wiki ページ（pd）**: [wiki/sources/D05_le-pichon_1968_sea-floor-spreading.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D05_le-pichon_1968_sea-floor-spreading.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
+
 ## 出典メモ
 
 - 本ページは cs ローカル raw PDF（`knowledge/raw/D05_le-pichon_1968_sea-floor-spreading.pdf`）を pdftotext で抽出した本文を一次入力として生成した。

@@ -52,6 +52,13 @@ Henri Bergson『創造的進化 (L'Évolution créatrice)』(1907、英訳1911) 
 - access_status: url-verified
 - **全文**: [Internet Archive](https://archive.org/download/creativeevolutio00berguoft/creativeevolutio00berguoft.pdf)
 
+## ソース参照（GitHub・検証用）
+
+- **cs マニフェスト（該当行）**: [knowledge/raw/manifest.md](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/manifest.md)（manifest_id: `D13-S11`）
+- **cs 精読ノート**: [knowledge/source-notes/D13/D13-S11_bergson-1911.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D13/D13-S11_bergson-1911.md)
+- **この wiki ページ（pd）**: [wiki/sources/D13_bergson_1911_bergson-1911-creative-evolution.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D13_bergson_1911_bergson-1911-creative-evolution.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
+
 ## 出典メモ
 
 - 本ページは archive.org 公開の英訳原典（url-verified）を出典とし、当該古典（Bergson 1907/1911）の確立した学術的理解に基づいて記述した。スキャン書籍 PDF のため全文 pdftotext は行わず、安定リンクを付した。

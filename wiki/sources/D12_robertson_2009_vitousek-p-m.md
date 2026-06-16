@@ -51,6 +51,13 @@ Robertson & Vitousek (2009) は、窒素 (N) が生命系の中心にあり、�
 - **DOI**: [10.1146/annurev.environ.032108.105046](https://doi.org/10.1146/annurev.environ.032108.105046)
 - **オープンアクセス**: [PDF (KBS-LTER mirror)](https://lter.kbs.msu.edu/docs/robertson/Robertson-Vitousek2009ARER.pdf)
 
+## ソース参照（GitHub・検証用）
+
+- **cs マニフェスト（該当行）**: [knowledge/raw/manifest.md](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/manifest.md)（manifest_id: `D12-S04`）
+- **cs 精読ノート**: 未生成（cs#249 で生成予定。生成後 `wiki-cross-check.mjs` で照合）
+- **この wiki ページ（pd）**: [wiki/sources/D12_robertson_2009_vitousek-p-m.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D12_robertson_2009_vitousek-p-m.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
+
 ## 出典メモ
 
 - 本ページは OA ミラー PDF（Michigan State KBS-LTER）を WebFetch で取得・保存し pdftotext で抽出した本文（abstract）を一次入力として生成した。

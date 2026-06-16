@@ -70,6 +70,13 @@ Daisyworld は地球の近似ではなく、仮説の構造を純化するため
 - **DOI**: [10.3402/tellusb.v35i4.14616](https://doi.org/10.3402/tellusb.v35i4.14616)
 - **オープンアクセス（CC BY）**: [Tellus B HTML / PDF](https://b.tellusjournals.se/articles/10.3402/tellusb.v35i4.14616/)
 
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/source-notes/D05/D05-S11_watson-lovelock-1983-daisyworld.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D05/D05-S11_watson-lovelock-1983-daisyworld.md)（manifest_id: `D05-S11`）
+- **cs 精読ノート**: [knowledge/source-notes/D05/D05-S11_watson-lovelock-1983-daisyworld.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D05/D05-S11_watson-lovelock-1983-daisyworld.md)
+- **この wiki ページ（pd）**: [wiki/sources/D05_watson_1983_daisyworld.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D05_watson_1983_daisyworld.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
+
 ## 出典メモ
 
 - cs 側読解: `creation-space/knowledge/source-notes/D05/D05-S11_watson-lovelock-1983-daisyworld.md`（2026-04-15、Claude Opus 4.6, WebFetch → PDF Read 全 6 ページ）

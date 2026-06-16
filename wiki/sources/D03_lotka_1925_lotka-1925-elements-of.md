@@ -74,6 +74,13 @@ Spencer の生命定義（内的関係の外的関係への連続的適応）を
 - access_status: url-verified
 - **オープンアクセス**: [Internet Archive PDF](https://archive.org/download/elementsofphysic0000alfr/elementsofphysic0000alfr.pdf)
 
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/source-notes/D03/D03-S13_lotka-1925.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D03/D03-S13_lotka-1925.md)（manifest_id: `D03-S13`）
+- **cs 精読ノート**: [knowledge/source-notes/D03/D03-S13_lotka-1925.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D03/D03-S13_lotka-1925.md)
+- **この wiki ページ（pd）**: [wiki/sources/D03_lotka_1925_lotka-1925-elements-of.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D03_lotka_1925_lotka-1925-elements-of.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
+
 ## 出典メモ
 
 - cs 側読解: `creation-space/knowledge/source-notes/D03/D03-S13_lotka-1925.md`（2026-04-10、Claude Opus 4.6, WebFetch via archive.org DjVu OCR、Preface + Ch. I-VI, VIII, XI, XIII, XVI-XVII, XX-XXI, XXIV, XXXIV を選択的に読解）

@@ -77,6 +77,13 @@ Beggs & Plenz (2003) は、ラット皮質の器官型培養と急性スライ�
 - **DOI**: [10.1523/JNEUROSCI.23-35-11167.2003](https://doi.org/10.1523/JNEUROSCI.23-35-11167.2003)
 - **オープンアクセス**: [J Neurosci PDF](https://www.jneurosci.org/content/jneuro/23/35/11167.full.pdf)
 
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/source-notes/D08/D08-S11_beggs-plenz-2003.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D08/D08-S11_beggs-plenz-2003.md)（manifest_id: `D08-S11`）
+- **cs 精読ノート**: [knowledge/source-notes/D08/D08-S11_beggs-plenz-2003.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D08/D08-S11_beggs-plenz-2003.md)
+- **この wiki ページ（pd）**: [wiki/sources/D08_beggs_2003_beggs-plenz-2003-neuronal.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D08_beggs_2003_beggs-plenz-2003-neuronal.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
+
 ## 出典メモ
 
 - cs 側読解: `creation-space/knowledge/source-notes/D08/D08-S11_beggs-plenz-2003.md`（2026-04-10、Claude Opus 4.6, WebFetch via PMC HTML）

@@ -54,6 +54,13 @@ Ibn Khaldun『歴史序説 (Muqaddimah, An Introduction to History)』(1377) は
 - access_status: raw-confirmed
 - **全文**: [Internet Archive (Dawood abridged)](https://dn720209.ca.archive.org/0/items/etaoin/The%20Muqaddimah%20%E2%80%93%20An%20Introduction%20to%20History%20by%20Ibn%20Khaldun.pdf)
 
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/raw/D16_ibn-khaldun_1377_muqaddimah-rosenthal.pdf](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/D16_ibn-khaldun_1377_muqaddimah-rosenthal.pdf)（manifest_id: `D16-S09`）
+- **cs 精読ノート**: [knowledge/source-notes/D16/D16-S09_ibn-khaldun-1377-rosenthal.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D16/D16-S09_ibn-khaldun-1377-rosenthal.md)
+- **この wiki ページ（pd）**: [wiki/sources/D16_ibn-khaldun_1377_muqaddimah-rosenthal.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D16_ibn-khaldun_1377_muqaddimah-rosenthal.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
+
 ## 出典メモ
 
 - 本ページは cs ローカル raw PDF（`knowledge/raw/D16_ibn-khaldun_1377_muqaddimah-rosenthal.pdf`、スキャン書籍）を pdftoppm で画像化し標題ページ（Rosenthal 訳・Dawood 抄訳・Lawrence 序文）を確認した上で、当該古典（Muqaddimah）の確立した学術的理解に基づいて記述した。全文 pdftotext は行わず安定リンクを付した。

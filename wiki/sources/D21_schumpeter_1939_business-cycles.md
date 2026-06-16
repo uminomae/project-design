@@ -55,3 +55,10 @@ Joseph A. Schumpeter による1939年刊行の二巻本大著。副題は「資�
 - 出典: Business Cycles: A Theoretical, Historical and Statistical Analysis of the Capitalist Process (2 vols.), New York: McGraw-Hill
 - access_status: raw-confirmed
 - **全文**: [Internet Archive](https://archive.org/details/in.ernet.dli.2015.150123)
+
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/raw/D21_schumpeter_1939_business-cycles.pdf](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/D21_schumpeter_1939_business-cycles.pdf)（manifest_id: `D21-S02`）
+- **cs 精読ノート**: [knowledge/source-notes/D21/D21-S02_schumpeter-1939.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D21/D21-S02_schumpeter-1939.md)
+- **この wiki ページ（pd）**: [wiki/sources/D21_schumpeter_1939_business-cycles.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D21_schumpeter_1939_business-cycles.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照

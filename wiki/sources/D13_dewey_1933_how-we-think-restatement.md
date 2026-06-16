@@ -55,3 +55,10 @@ review_state: 未レビュー
 - 出典: D. C. Heath & Company, Boston（1910年版の全面改訂版）
 - access_status: raw-confirmed
 - **全文**: [Internet Archive](https://archive.org/details/HowWeThink)
+
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/raw/D13_dewey_1933_how-we-think-restatement.pdf](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/D13_dewey_1933_how-we-think-restatement.pdf)（manifest_id: `D13-S06`）
+- **cs 精読ノート**: [knowledge/source-notes/D13/D13-S06_dewey-1933.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D13/D13-S06_dewey-1933.md)
+- **この wiki ページ（pd）**: [wiki/sources/D13_dewey_1933_how-we-think-restatement.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D13_dewey_1933_how-we-think-restatement.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照

@@ -55,3 +55,10 @@ Hayekは市場秩序を「真の意味での経済（economy）」——単一�
 - 出典: "Competition as a Discovery Procedure," trans. Marcellus S. Snow. *The Quarterly Journal of Austrian Economics*, Vol. 5, No. 3 (Fall 2002), pp. 9–23. 原題: "Der Wettbewerb als Entdeckungsverfahren," Kieler Vorträge, No. 56, Institut für Weltwirtschaft, Universität Kiel, 1968.
 - access_status: raw-confirmed
 - **オープンアクセス**: [Mises Institute](https://mises.org/)
+
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/raw/D21_hayek_2002_competition-discovery-procedure.pdf](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/D21_hayek_2002_competition-discovery-procedure.pdf)（manifest_id: `D21-S06`）
+- **cs 精読ノート**: [knowledge/source-notes/D21/D21-S06_hayek-2002.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D21/D21-S06_hayek-2002.md)
+- **この wiki ページ（pd）**: [wiki/sources/D21_hayek_2002_competition-discovery-procedure.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D21_hayek_2002_competition-discovery-procedure.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照

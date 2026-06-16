@@ -53,3 +53,10 @@ review_state: 未レビュー
 - 出典: Stanford University d.school（An Introduction to Design Thinking PROCESS GUIDE）
 - access_status: raw-confirmed
 - **オープンアクセス**: [Stanford d.school](https://dschool.stanford.edu/)
+
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/raw/D22_stanford_2010_design-thinking-process-guide.pdf](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/D22_stanford_2010_design-thinking-process-guide.pdf)（manifest_id: `D22-S05`）
+- **cs 精読ノート**: [knowledge/source-notes/D22/D22-S05_stanford-2010.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D22/D22-S05_stanford-2010.md)
+- **この wiki ページ（pd）**: [wiki/sources/D22_stanford_2010_design-thinking-process-guide.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D22_stanford_2010_design-thinking-process-guide.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照

@@ -51,6 +51,13 @@ Carpenter & Brock (2006) は、生態系などの複雑系における**レジ�
 - **DOI**: [10.1111/j.1461-0248.2005.00877.x](https://doi.org/10.1111/j.1461-0248.2005.00877.x)
 - **オープンアクセス**: [figshare](https://figshare.com/articles/journal_contribution/Rising_variance_A_leading_indicator_of_ecological_transition/24743784)
 
+## ソース参照（GitHub・検証用）
+
+- **cs マニフェスト（該当行）**: [knowledge/raw/manifest.md](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/manifest.md)（manifest_id: `D12-S10`）
+- **cs 精読ノート**: 未生成（cs#249 で生成予定。生成後 `wiki-cross-check.mjs` で照合）
+- **この wiki ページ（pd）**: [wiki/sources/D12_carpenter_2006_r-brock-w.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D12_carpenter_2006_r-brock-w.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
+
 ## 出典メモ
 
 - 本ページは PubMed（PMID 16958897）の efetch 公式 abstract を一次入力として生成した。manifest 記載の OA URL（figshare）は直接 PDF 取得できなかったため、PubMed の検証済み abstract を用いた。

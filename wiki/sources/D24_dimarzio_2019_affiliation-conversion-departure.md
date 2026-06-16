@@ -46,3 +46,10 @@ review_state: 未レビュー
 - 出典: The Journal of CESNUR, Volume 4, Issue 3, May-June 2020, pages 57-69
 - access_status: raw-confirmed
 - **DOI**: [10.26338/tjoc.2019.3.2.3](https://doi.org/10.26338/tjoc.2019.3.2.3)
+
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/raw/D24_dimarzio_2019_affiliation-conversion-departure.pdf](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/D24_dimarzio_2019_affiliation-conversion-departure.pdf)（manifest_id: `D24-S02`）
+- **cs 精読ノート**: [knowledge/source-notes/D24/D24-S02_dimarzio-2019.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D24/D24-S02_dimarzio-2019.md)
+- **この wiki ページ（pd）**: [wiki/sources/D24_dimarzio_2019_affiliation-conversion-departure.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D24_dimarzio_2019_affiliation-conversion-departure.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照

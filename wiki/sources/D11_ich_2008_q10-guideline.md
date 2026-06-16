@@ -61,3 +61,10 @@ ICH Q10は、医薬品産業における効果的な品質マネジメントシ�
 - 出典: ICH Harmonised Tripartite Guideline Q10
 - access_status: raw-confirmed
 - **公式URL**: [ICH Q10](https://database.ich.org/sites/default/files/Q10%20Guideline.pdf)
+
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/raw/D11_ich_2008_q10-guideline.pdf](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/D11_ich_2008_q10-guideline.pdf)（manifest_id: `D11-S11`）
+- **cs 精読ノート**: [knowledge/source-notes/D11/D11-S11_ich-q10-2008.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D11/D11-S11_ich-q10-2008.md)
+- **この wiki ページ（pd）**: [wiki/sources/D11_ich_2008_q10-guideline.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D11_ich_2008_q10-guideline.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
