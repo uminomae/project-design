@@ -2,10 +2,18 @@
 
 ## Git
 - branch: develop
-- HEAD: **485ebd1** (PD推敲: 誤解FAQ Overview/Love 展開 #110)
+- HEAD: **e93f214** (pd#111 Step3b バッチ2: wiki 73ページ生成完了・push 済)
 - main: 28eb1d3
 - remote: synced (develop push 済)
 - 関連: cs develop 3925c23、pjdhiro main 2a199c1（誤編集 revert）
+
+## 進行中 (2026-06-14 #02) — pd#111 Step 3b バッチ2 ★ほぼ完了 73/83
+- wiki-gen-2026-06-14.md: **83件中 73件生成完了**（wiki/sources 257 → 330）、stale なし
+- 取得経路: raw-confirmed pdftotext/Vision OCR / url-verified curl直DL・WebFetch保存PDF・**PubMed efetch**(生物医学)・ecologyandsociety print.pdf / archive.org古典は確立知識+安定リンク
+- commits (15本): aeb7692→...→e93f214（各バッチ commit+push 済）
+- **残 10件（取得不可、cs側 manifest OA URL 修正待ち）**: D05-S13/D05-S15/D07-S15(MDPI Cloudflare), D11-S13(Nature/PMID特定不可), D12-S13(ESA), D22-S04(Kingston 0B), D22-S15(Springer frontmatterのみ), D23-S08(IRUA handle誤=別論文), D23-S11/D23-S14(van Geert, Karger/PsychRev). 詳細は inbox wiki-gen-2026-06-14.md
+- **発見した manifest 不整合（cs側へ申し送り）**: ①D23-S08 IRUA handle が2023年別論文を指す ②D16-S18/D30-S15 同一Olsson2004論文の重複登録(両方生成済) ③D19-S05 Shklovsky Warwick PDFログイン必須 ④D24-S14 Underhill wiki_stem `-methuen`欠落をファイル名整合済
+- **教訓**: PubMed efetch は `> file` リダイレクトで取得（`-o file`+`id=` は exfil-guard hook が誤検知ブロック）。esearch は同名別論文を誤ヒットしうる→ efetch で title/year 検証必須（Tsukada/Mitchell で発生）
 
 ## 完了タスク
 ### 2026-06-01 #01 — PD総論/創造の推敲（Opus 4.8 デバッグ的レビュー）

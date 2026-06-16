@@ -1,6 +1,6 @@
 ---
 title: "Wiki Index"
-compiled: "2026-06-14"
+compiled: "2026-06-16"
 ---
 # Wiki -- Map of Content
 
@@ -130,12 +130,13 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D04_watson_2016_how-can-evolution-learn|進化はどのように学習するか — 進化と学習の数学的等価性]]
 - [[sources/D04_woese_2002_woese-2002-on-the|細胞の進化について — ダーウィン閾と HGT]]
 
-#### D05 地球科学 (10件)
+#### D05 地球科学 (11件)
 - [[sources/D05_bak_1988_wiesenfeld-k|自己組織化臨界性 — Bak-Tang-Wiesenfeld の砂山モデル]]
 - [[sources/D05_bjerknes_1969_bjerknes-1969-atmospheric-teleconnections|赤道太平洋からの大気のテレコネクション（Bjerknes 1969）]]
 - [[sources/D05_cane-zebiak_1985_enso-theory|エルニーニョと南方振動の理論]]
 - [[sources/D05_conrad_2002_lithgow-bertelloni-c|マントルのスラブはいかにプレートテクトニクスを駆動するか]]
 - [[sources/D05_dewey_1970_dewey-bird-1970-mountain|山脈帯と新しい全地球テクトニクス（Dewey & Bird 1970）]]
+- [[sources/D05_feistel_2024_origin-of-life-a|生命の起源：対称性の破れを伴う物理的相転移（Feistel 2024）]]
 - [[sources/D05_le-pichon_1968_sea-floor-spreading|海底拡大と大陸移動]]
 - [[sources/D05_lenton_2008_2008|地球気候系のティッピング要素]]
 - [[sources/D05_morgan_1968_rises-trenches|プレートテクトニクスの数理的基礎 — 剛体球面ブロックモデルによる地殻運動の記述]]
@@ -157,12 +158,13 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D06_tumlinson_2017_tumlinson-peeples-werk-2017|周銀河媒質（Circumgalactic Medium）— 銀河進化の鍵を握る多相ガス領域]]
 - [[sources/D06_white_1978_white-rees-1978-core|重いハロにおけるコア凝縮 — 銀河形成と階層的クラスタリングの 2 段階理論]]
 
-#### D07 工学・情報科学 (11件)
+#### D07 工学・情報科学 (12件)
 - [[sources/D07_ashby_1956_ashby-1956-an-introduction|サイバネティクス入門 — Ashby]]
 - [[sources/D07_candes-romberg-tao_2006_robust-uncertainty|ロバスト不確実性原理――疎な信号のフーリエサンプルからの完全再構成]]
 - [[sources/D07_diffie-hellman_1976_new-directions-cryptography|暗号の新方向]]
 - [[sources/D07_doyle_2011_architecture-constraints-and-behavior|アーキテクチャ・制約・振る舞い — 層化アーキテクチャの普遍原理]]
 - [[sources/D07_friston_2012_free-energy-principle|生物系のための自由エネルギー原理 — 無秩序化への抵抗の数理]]
+- [[sources/D07_heylighen_2025_why-emergence-and-self|創発と自己組織化はなぜ概念的に単純で、ありふれ、自然なのか（Heylighen 2025）]]
 - [[sources/D07_jacobson_1988_jacobson-1988-congestion-avoidance|輻輳回避と制御 — TCP の輻輳制御アルゴリズム]]
 - [[sources/D07_rumelhart-hinton-williams_1986_backpropagation|誤差逆伝播法による表現学習]]
 - [[sources/D07_schultz_1997_schultz-dayan-montague-1997|予測と報酬の神経基盤（D07 文脈）— ドーパミン予測誤差]]
@@ -209,7 +211,7 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D10_serhan_2014_pro-resolving-lipid-mediators|炎症収束を促進する脂質メディエーター — Resolution Physiology]]
 - [[sources/D10_tonegawa_1987_nobel-lecture|抗体多様性の体細胞生成（ノーベル講演）]]
 
-#### D11 薬学 (11件)
+#### D11 薬学 (12件)
 - [[sources/D11_blanco_2015_principles-of-nanoparticle-design|ナノ粒子設計の原理 — 薬物送達の生物学的バリアを越えるには]]
 - [[sources/D11_csermely_2011_2011|Allo-Network Drugs — 細胞ネットワークにおけるアロステリーの活用]]
 - [[sources/D11_davies_2010_antibiotic-resistance|抗生物質耐性の起源と進化 — 耐性遺伝子の太古からの存在と人為的加速]]
@@ -217,6 +219,7 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D11_ich_2009_q8-r2-guideline|ICH Q8(R2) 医薬品開発ガイドライン]]
 - [[sources/D11_ich_2023_q9-r1-guideline|ICH Q9(R1) 品質リスクマネジメントガイドライン]]
 - [[sources/D11_li_2014_network-pharmacology-qishenyiqi|漢方薬QiShenYiQiのネットワーク薬理学研究]]
+- [[sources/D11_mitchell_2021_2021|薬物送達のための精密ナノ粒子の工学（Mitchell et al. 2021）]]
 - [[sources/D11_moffat_2017_2017|表現型創薬の機会と課題：産業界の視点（Moffat et al. 2017）]]
 - [[sources/D11_paul_2010_m-et-al|製薬産業の R&D 生産性向上 — 大問題への分析]]
 - [[sources/D11_tognoli_2009_brain-coordination-dynamics-true|脳の協調ダイナミクス — 位相同期の真と偽]]
@@ -369,7 +372,7 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D22_tuckman_1977_jensen-m-a-c|小集団発達の諸段階・再訪（Tuckman & Jensen 1977）]]
 - [[sources/D22_wenger_2010_communities-of-practice-and|実践コミュニティと社会的学習システム]]
 
-#### D23 発達心理学 (9件)
+#### D23 発達心理学 (10件)
 - [[sources/D23_kartner_2024_early-social-cognitive-development|初期社会-認知発達は動的発達システム — Lifeworld アプローチ]]
 - [[sources/D23_kegan_1982_evolving-self|進化する自己]]
 - [[sources/D23_kim_2024_understanding-explore-exploit-dynamics|子ども発達における探索-活用ダイナミクス]]
@@ -379,6 +382,7 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D23_rochat_2003_2003|乳幼児期に展開する自己意識の 5 レベル]]
 - [[sources/D23_tononi_2014_integrated-information-theory-3|現象学からメカニズムへ — 統合情報理論 3.0]]
 - [[sources/D23_van_2017_2017|認知発達と知能のネットワークモデル（van der Maas et al. 2017）]]
+- [[sources/D23_van_2019_dynamic-systems-process-and|動的システム、過程、そして発達（van Geert 2019）]]
 
 #### D24 宗教学 (10件)
 - [[sources/D24_berkovichohana_2014_the-consciousness-state-space|意識状態空間（CSS）— 意識と自己の統合モデル]]
@@ -489,10 +493,12 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 | [[sources/D05_bjerknes_1969_bjerknes-1969-atmospheric-teleconnections\|赤道太平洋からの大気のテレコネクション（Bjerknes 1969）]] | sources | 2026-06-14 |
 | [[sources/D05_conrad_2002_lithgow-bertelloni-c\|マントルのスラブはいかにプレートテクトニクスを駆動するか]] | sources | 2026-06-14 |
 | [[sources/D05_dewey_1970_dewey-bird-1970-mountain\|山脈帯と新しい全地球テクトニクス（Dewey & Bird 1970）]] | sources | 2026-06-14 |
+| [[sources/D05_feistel_2024_origin-of-life-a\|生命の起源：対称性の破れを伴う物理的相転移（Feistel 2024）]] | sources | 2026-06-14 |
 | [[sources/D05_le-pichon_1968_sea-floor-spreading\|海底拡大と大陸移動]] | sources | 2026-06-14 |
 | [[sources/D05_suarez_1988_schopf-p-s\|ENSO のための遅延作用振動子]] | sources | 2026-06-14 |
 | [[sources/D06_nicolis_2016_stochastic-resonance-self-organization\|確率共鳴・自己組織化・情報ダイナミクス — 多安定系の最適応答]] | sources | 2026-06-14 |
 | [[sources/D07_friston_2012_free-energy-principle\|生物系のための自由エネルギー原理 — 無秩序化への抵抗の数理]] | sources | 2026-06-14 |
+| [[sources/D07_heylighen_2025_why-emergence-and-self\|創発と自己組織化はなぜ概念的に単純で、ありふれ、自然なのか（Heylighen 2025）]] | sources | 2026-06-14 |
 | [[sources/D07_strogatz_2001_exploring-complex-networks\|複雑ネットワークの探究 — 構造とダイナミクスの統一的視座]] | sources | 2026-06-14 |
 | [[sources/D08_dehaene_2011_dehaene-changeux-2011-experimental\|意識的処理への実験的・理論的アプローチ — グローバル神経ワークスペース]] | sources | 2026-06-14 |
 | [[sources/D08_markram_1997_1997-regulation-of-synaptic\|後シナプス活動電位とEPSPの一致によるシナプス効力の調節（Markram et al. 1997）]] | sources | 2026-06-14 |
@@ -501,7 +507,5 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 | [[sources/D09_lane_2012_origin-of-membrane-bioenergetics\|膜バイオエナジェティクスの起源（Lane & Martin 2012）]] | sources | 2026-06-14 |
 | [[sources/D09_mcewen_1998_1998\|ストレス媒介物の保護と損傷 — アロスタシスとアロスタティック負荷]] | sources | 2026-06-14 |
 | [[sources/D09_misteli_2001_self-organization-in-cellular\|細胞構築における自己組織化の概念（Misteli 2001）]] | sources | 2026-06-14 |
-| [[sources/D09_pellerin_1994_pellerin-magistretti-1994-glutamate\|グルタミン酸のアストロサイトへの取り込みが好気的解糖を刺激する（Pellerin & Magistretti 1994）]] | sources | 2026-06-14 |
-| [[sources/D09_tsukada_1993_tsukada-ohsumi-1993-isolation\|酵母オートファジー欠損変異体の単離と特徴づけ（Tsukada & Ohsumi 1993）]] | sources | 2026-06-14 |
 
 > このページは `scripts/generate-wiki-index.mjs` により自動生成されます。wiki/ 内のページ変更時に PostToolUse hook で自動実行されます。
