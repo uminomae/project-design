@@ -225,7 +225,8 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D11_tognoli_2009_brain-coordination-dynamics-true|脳の協調ダイナミクス — 位相同期の真と偽]]
 - [[sources/D11_wu_2014_chinese-medicine|ネットワーク薬理学による漢方処方「君臣佐使」の検証]]
 
-#### D12 農学・生態学 (14件)
+#### D12 農学・生態学 (15件)
+- [[sources/D12_beisner_2003_2003|生態学における代替安定状態（Beisner, Haydon & Cuddington 2003）]]
 - [[sources/D12_carpenter_2006_r-brock-w|分散の増大：生態学的転移の先行指標（Carpenter & Brock 2006）]]
 - [[sources/D12_clements_1916_plant-succession|植物遷移論]]
 - [[sources/D12_connell_1977_slatyer-r-o|自然群集における遷移のメカニズム]]
@@ -372,15 +373,17 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D22_tuckman_1977_jensen-m-a-c|小集団発達の諸段階・再訪（Tuckman & Jensen 1977）]]
 - [[sources/D22_wenger_2010_communities-of-practice-and|実践コミュニティと社会的学習システム]]
 
-#### D23 発達心理学 (10件)
+#### D23 発達心理学 (12件)
 - [[sources/D23_kartner_2024_early-social-cognitive-development|初期社会-認知発達は動的発達システム — Lifeworld アプローチ]]
 - [[sources/D23_kegan_1982_evolving-self|進化する自己]]
 - [[sources/D23_kim_2024_understanding-explore-exploit-dynamics|子ども発達における探索-活用ダイナミクス]]
 - [[sources/D23_kinoshita_2001_self-image|幼児は自己映像を「自分のこと」として見ているか？]]
 - [[sources/D23_luyckx_2006_2006|コミットメントと探索の解きほぐし：後期青年期アイデンティティ形成の統合モデル（Luyckx et al. 2006）]]
+- [[sources/D23_luyckx_2008_et-al|反芻的探索を捉える：後期青年期アイデンティティ形成の四次元モデルの拡張（Luyckx et al. 2008）]]
 - [[sources/D23_nakama_2014_dids-japanese-version|多次元アイデンティティ発達尺度（DIDS）日本語版]]
 - [[sources/D23_rochat_2003_2003|乳幼児期に展開する自己意識の 5 レベル]]
 - [[sources/D23_tononi_2014_integrated-information-theory-3|現象学からメカニズムへ — 統合情報理論 3.0]]
+- [[sources/D23_van_1998_piaget-vygotsky-and-beyond|基本的発達メカニズムの動的システムモデル：ピアジェ、ヴィゴツキー、その先へ（van Geert 1998）]]
 - [[sources/D23_van_2017_2017|認知発達と知能のネットワークモデル（van der Maas et al. 2017）]]
 - [[sources/D23_van_2019_dynamic-systems-process-and|動的システム、過程、そして発達（van Geert 2019）]]
 
