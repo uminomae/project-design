@@ -130,12 +130,13 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D04_watson_2016_how-can-evolution-learn|進化はどのように学習するか — 進化と学習の数学的等価性]]
 - [[sources/D04_woese_2002_woese-2002-on-the|細胞の進化について — ダーウィン閾と HGT]]
 
-#### D05 地球科学 (11件)
+#### D05 地球科学 (12件)
 - [[sources/D05_bak_1988_wiesenfeld-k|自己組織化臨界性 — Bak-Tang-Wiesenfeld の砂山モデル]]
 - [[sources/D05_bjerknes_1969_bjerknes-1969-atmospheric-teleconnections|赤道太平洋からの大気のテレコネクション（Bjerknes 1969）]]
 - [[sources/D05_cane-zebiak_1985_enso-theory|エルニーニョと南方振動の理論]]
 - [[sources/D05_conrad_2002_lithgow-bertelloni-c|マントルのスラブはいかにプレートテクトニクスを駆動するか]]
 - [[sources/D05_dewey_1970_dewey-bird-1970-mountain|山脈帯と新しい全地球テクトニクス（Dewey & Bird 1970）]]
+- [[sources/D05_dyke_2010_maximum-entropy-production-principle|最大エントロピー生成原理：その理論的基礎と地球システムへの応用（Dyke & Kleidon 2010）]]
 - [[sources/D05_feistel_2024_origin-of-life-a|生命の起源：対称性の破れを伴う物理的相転移（Feistel 2024）]]
 - [[sources/D05_le-pichon_1968_sea-floor-spreading|海底拡大と大陸移動]]
 - [[sources/D05_lenton_2008_2008|地球気候系のティッピング要素]]
@@ -358,11 +359,13 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D21_schumpeter_1942_1942|資本主義・社会主義・民主主義（Schumpeter 1942）]]
 - [[sources/D21_walker_2009_2009|ゴルバーン・ブロークン流域におけるレジリエンス・適応性・変革可能性]]
 
-#### D22 経営学 (13件)
+#### D22 経営学 (15件)
 - [[sources/D22_akiike_2021_design-thinking-articles|デザイン思考論文に求められる要件とは何か]]
 - [[sources/D22_brown_2008_design-thinking|デザイン思考（Tim Brown, HBR 2008）]]
 - [[sources/D22_friston_2018_am-i-self-conscious|私は自己意識を持つか — 自己組織化と自己意識]]
 - [[sources/D22_gersick_1988_1988|ワークチームにおける時間と転換：集団発達の新モデル]]
+- [[sources/D22_goldstein_2010_2010|複雑性とリーダーシップの結節点（Goldstein, Hazy & Lichtenstein 2010）]]
+- [[sources/D22_gourlay_2006_2006|知識創造の概念化：野中理論への批判（Gourlay 2006）]]
 - [[sources/D22_hu_2021_trajectories-of-idea-emergence|対話的協働問題解決におけるアイデア出現の軌跡]]
 - [[sources/D22_lyon_2014_dreyfus-model-of-skill|ドレイファス技能習得モデルから見た教育専門性の発達]]
 - [[sources/D22_moller_2004_2004|科学と伝統的生態学的知識の結合：共同管理のための個体群モニタリング]]
@@ -496,6 +499,7 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 | [[sources/D05_bjerknes_1969_bjerknes-1969-atmospheric-teleconnections\|赤道太平洋からの大気のテレコネクション（Bjerknes 1969）]] | sources | 2026-06-14 |
 | [[sources/D05_conrad_2002_lithgow-bertelloni-c\|マントルのスラブはいかにプレートテクトニクスを駆動するか]] | sources | 2026-06-14 |
 | [[sources/D05_dewey_1970_dewey-bird-1970-mountain\|山脈帯と新しい全地球テクトニクス（Dewey & Bird 1970）]] | sources | 2026-06-14 |
+| [[sources/D05_dyke_2010_maximum-entropy-production-principle\|最大エントロピー生成原理：その理論的基礎と地球システムへの応用（Dyke & Kleidon 2010）]] | sources | 2026-06-14 |
 | [[sources/D05_feistel_2024_origin-of-life-a\|生命の起源：対称性の破れを伴う物理的相転移（Feistel 2024）]] | sources | 2026-06-14 |
 | [[sources/D05_le-pichon_1968_sea-floor-spreading\|海底拡大と大陸移動]] | sources | 2026-06-14 |
 | [[sources/D05_suarez_1988_schopf-p-s\|ENSO のための遅延作用振動子]] | sources | 2026-06-14 |
@@ -509,6 +513,5 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 | [[sources/D09_attwell_2001_attwell-laughlin-2001-an\|脳灰白質の信号伝達のエネルギー収支]] | sources | 2026-06-14 |
 | [[sources/D09_lane_2012_origin-of-membrane-bioenergetics\|膜バイオエナジェティクスの起源（Lane & Martin 2012）]] | sources | 2026-06-14 |
 | [[sources/D09_mcewen_1998_1998\|ストレス媒介物の保護と損傷 — アロスタシスとアロスタティック負荷]] | sources | 2026-06-14 |
-| [[sources/D09_misteli_2001_self-organization-in-cellular\|細胞構築における自己組織化の概念（Misteli 2001）]] | sources | 2026-06-14 |
 
 > このページは `scripts/generate-wiki-index.mjs` により自動生成されます。wiki/ 内のページ変更時に PostToolUse hook で自動実行されます。
