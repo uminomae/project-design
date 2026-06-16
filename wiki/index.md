@@ -300,13 +300,15 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D16_unknown_0000_toynbee-a-j-a|歴史の研究（A Study of History, Toynbee）]]
 - [[sources/D16_wallerstein_1974_1974|近代世界システムI（The Modern World-System I, Wallerstein 1974）]]
 
-#### D17 言語学 (7件)
+#### D17 言語学 (9件)
 - [[sources/D17_beckner_2017_the-emergence-of-linguistic|オンライン反復学習における言語構造の創発]]
 - [[sources/D17_bickerton_1981_roots-of-language|言語の起源]]
 - [[sources/D17_hartshorne-tenenbaum-pinker_2018_critical-period-second-language|第二言語習得の臨界期：67万人のデータからの証拠]]
 - [[sources/D17_jakobson_1956_halle-m|言語の基礎 — 弁別特徴と二極性（隠喩・換喩）]]
+- [[sources/D17_kirby-cornish-smith_2008_cumulative-cultural-evolution-laboratory|実験室での累積的文化進化：人間言語の構造的起源への実験的アプローチ]]
 - [[sources/D17_lenneberg_1969_on-explaining-language|言語を説明する（On Explaining Language）]]
 - [[sources/D17_lupyan_2010_language-structure-is-partly|言語構造は社会構造によって部分的に決定される — 言語ニッチ仮説]]
+- [[sources/D17_raviv_2020_social-network-linguistic-structure|社会ネットワーク構造と言語構造の創発]]
 - [[sources/D17_senghas_2004_children-creating-core-properties|ニカラグア手話における言語の中核特性の創造]]
 
 #### D18 社会学 (10件)
@@ -423,12 +425,13 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D26_schulkin_2014_the-evolution-of-music|音楽の進化と人間の社会的能力]]
 - [[sources/D26_zatorre_2013_salimpoor-v-n|知覚から快へ — 音楽とその神経基盤]]
 
-#### D27 建築 (6件)
+#### D27 建築 (7件)
 - [[sources/D27_alexander_1977_pattern-language|パタン・ランゲージ]]
 - [[sources/D27_chen_2011_modeling-fractal-structure-of|都市規模分布のフラクタル構造 — 相関関数によるモデル化]]
 - [[sources/D27_jiang_2019_living-structure-christopher-alexander|生きた構造 — Christopher Alexander の遺産]]
 - [[sources/D27_moroni_2019_forms-of-self-organization-urban|自己組織化の諸形態 — 都市の複雑性と計画への含意]]
 - [[sources/D27_salingaros_1999_architecture-patterns-mathematics|建築・パターン・数学]]
+- [[sources/D27_salingaros_2025_design-epistemology-living-geometry|生きた幾何学からの設計認識論：創造性を高める環境]]
 - [[sources/D27_schumacher_2008_parametricism-as-style|パラメトリシズム — スタイルとしての綱領]]
 
 #### D28 舞台芸術 (5件)
@@ -438,9 +441,10 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D28_shibolet_2018_bodyminds-in-movement-contact|動きの中の Bodyminds — Contact Improvisation の身体化された認知]]
 - [[sources/D28_zeami_classics|世阿弥十六部集]]
 
-#### D29 複雑系科学 (7件)
+#### D29 複雑系科学 (8件)
 - [[sources/D29_bak-tang-wiesenfeld_1988_self-organized-criticality|自己組織化臨界]]
 - [[sources/D29_clauset_2007_power-law-distributions|実証データにおけるべき乗則分布]]
+- [[sources/D29_dickman-munoz-vespignani-zapperi_2000_paths-self-organized-criticality|自己組織化臨界への道筋]]
 - [[sources/D29_langton_1990_edge-of-chaos|カオスの縁における計算]]
 - [[sources/D29_munoz_2018_criticality-and-dynamical-scaling|生物系における臨界性と動的スケーリング]]
 - [[sources/D29_newman_2003_structure-and-function-of|複雑ネットワークの構造と機能]]
@@ -493,6 +497,10 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 
 | ページ | category | compiled |
 |--------|----------|----------|
+| [[sources/D17_kirby-cornish-smith_2008_cumulative-cultural-evolution-laboratory\|実験室での累積的文化進化：人間言語の構造的起源への実験的アプローチ]] | sources | 2026-06-16 |
+| [[sources/D17_raviv_2020_social-network-linguistic-structure\|社会ネットワーク構造と言語構造の創発]] | sources | 2026-06-16 |
+| [[sources/D27_salingaros_2025_design-epistemology-living-geometry\|生きた幾何学からの設計認識論：創造性を高める環境]] | sources | 2026-06-16 |
+| [[sources/D29_dickman-munoz-vespignani-zapperi_2000_paths-self-organized-criticality\|自己組織化臨界への道筋]] | sources | 2026-06-16 |
 | [[sources/D03_chambon-winter_1987_gel-point\|化学量論的に不均衡な架橋PDMSのゲル化点における線形粘弾性]] | sources | 2026-06-14 |
 | [[sources/D04_erwin_2015_novelty-and-innovation-in\|生命史における新奇性とイノベーション]] | sources | 2026-06-14 |
 | [[sources/D04_lane_2012_the-origin-of-membrane\|膜による生体エネルギー変換の起源]] | sources | 2026-06-14 |
@@ -509,9 +517,5 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 | [[sources/D07_strogatz_2001_exploring-complex-networks\|複雑ネットワークの探究 — 構造とダイナミクスの統一的視座]] | sources | 2026-06-14 |
 | [[sources/D08_dehaene_2011_dehaene-changeux-2011-experimental\|意識的処理への実験的・理論的アプローチ — グローバル神経ワークスペース]] | sources | 2026-06-14 |
 | [[sources/D08_markram_1997_1997-regulation-of-synaptic\|後シナプス活動電位とEPSPの一致によるシナプス効力の調節（Markram et al. 1997）]] | sources | 2026-06-14 |
-| [[sources/D08_miller_2001_cohen-j-d\|前頭前皮質機能の統合理論 — 認知制御のバイアス信号モデル]] | sources | 2026-06-14 |
-| [[sources/D09_attwell_2001_attwell-laughlin-2001-an\|脳灰白質の信号伝達のエネルギー収支]] | sources | 2026-06-14 |
-| [[sources/D09_lane_2012_origin-of-membrane-bioenergetics\|膜バイオエナジェティクスの起源（Lane & Martin 2012）]] | sources | 2026-06-14 |
-| [[sources/D09_mcewen_1998_1998\|ストレス媒介物の保護と損傷 — アロスタシスとアロスタティック負荷]] | sources | 2026-06-14 |
 
 > このページは `scripts/generate-wiki-index.mjs` により自動生成されます。wiki/ 内のページ変更時に PostToolUse hook で自動実行されます。
