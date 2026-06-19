@@ -56,7 +56,7 @@ review_state: 未レビュー
 - 年: 2015
 - 出典: The Journal of Clinical Investigation, 125(6):2228-2233
 - access_status: raw-confirmed
-- **DOI**: [10.1038/nm.3897](https://doi.org/10.1038/nm.3897)
+- **DOI**: [10.1172/JCI78088](https://doi.org/10.1172/JCI78088)
 
 ## ソース参照（GitHub・検証用）
 

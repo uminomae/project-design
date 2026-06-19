@@ -5,7 +5,7 @@ aliases: ["War, space, and the evolution of Old World complex societies", "ultra
 tags: [source, "D16", "原典解説"]
 source:
   repo: "creation-space"
-  path: "knowledge/source-notes/D16/D16-S11_turchin-2013.md"
+  path: "knowledge/raw/D16_turchin_2013_war-space-evolution-old-world-complex-societies.pdf"
   manifest_id: "D16-S11"
   oa_url: "https://www.pnas.org/content/pnas/110/41/16384.full.pdf"
 compiled: "2026-04-18"
@@ -66,7 +66,7 @@ Turchin ら (2013) は、人類社会が小規模な対面協力集団から大�
 
 ## ソース参照（GitHub・検証用）
 
-- **cs 原典ファイル**: [knowledge/source-notes/D16/D16-S11_turchin-2013.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D16/D16-S11_turchin-2013.md)（manifest_id: `D16-S11`）
+- **cs 原典ファイル**: [knowledge/raw/D16_turchin_2013_war-space-evolution-old-world-complex-societies.pdf](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/D16_turchin_2013_war-space-evolution-old-world-complex-societies.pdf)（manifest_id: `D16-S11`）
 - **cs 精読ノート**: [knowledge/source-notes/D16/D16-S11_turchin-2013.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D16/D16-S11_turchin-2013.md)
 - **この wiki ページ（pd）**: [wiki/sources/D16_turchin_2013_war-space-evolution-old-world-complex-societies.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D16_turchin_2013_war-space-evolution-old-world-complex-societies.md)
 - **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照

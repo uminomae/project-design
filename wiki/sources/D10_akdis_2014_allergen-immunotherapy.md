@@ -53,7 +53,7 @@ IgEが結合しない線状T細胞エピトープペプチドを使用し、ア�
 - 年: 2014
 - 出典: World Allergy Organization Journal, 7:23
 - access_status: raw-confirmed
-- **DOI**: [10.1016/j.jaci.2013.09.034](https://doi.org/10.1016/j.jaci.2013.09.034)
+- **DOI**: [10.1186/1939-4551-7-23](https://doi.org/10.1186/1939-4551-7-23)
 
 ## ソース参照（GitHub・検証用）
 
