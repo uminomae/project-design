@@ -65,4 +65,4 @@ Toynbee の歴史理論の核心は「挑戦と応答」である。文明は外
 ## 関連
 
 - [[D16_braudel_1958_longue-duree|Braudel (1958)]] — 長期持続。Toynbee の文明サイクル論と Braudel の時間多層論は歴史の構造的把握で共鳴する
-- [[D16_ibn-khaldun_1377_muqaddimah|Ibn Khaldun (1377)]] — ムカッディマ。文明の興亡サイクルの先行理論。Toynbee も Ibn Khaldun のアサビーヤ概念を参照
+- [[D16_ibn-khaldun_1377_muqaddimah-rosenthal|Ibn Khaldun (1377)]] — ムカッディマ。文明の興亡サイクルの先行理論。Toynbee も Ibn Khaldun のアサビーヤ概念を参照

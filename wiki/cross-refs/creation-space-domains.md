@@ -280,7 +280,7 @@ activator/inhibitor + 遅延負帰還がパターン形成の必要条件であ�
 | D13 | [[sources/D13_dewey_1910_how-we-think\|Dewey (1910)]], [[sources/D13_dewey_1929_quest-for-certainty\|Dewey (1929)]], [[sources/D13_dewey_1933_how-we-think-restatement\|Dewey (1933)]], [[sources/D13_dewey_1934_art-as-experience\|Dewey (1934)]], [[sources/D13_whitehead_1929_process-and-reality\|Whitehead (1929)]] |
 | D14 | [[sources/D14_varela_1991_embodied-mind\|Varela (1991) D14]] |
 | D15 | [[sources/D15_dewey_1934_art-as-experience\|Dewey (1934)]], [[sources/D15_kant_1790_kritik-der-urteilskraft\|Kant (1790)]], [[sources/D15_motoori_1799_tama-no-ogushi\|Motoori (1799)]], [[sources/D15_nose_1944_yugenron\|Nose (1944)]], [[sources/D15_zeami_classics\|世阿弥（風姿花伝）]] |
-| D16 | [[sources/D16_braudel_1958_longue-duree\|Braudel (1958)]], [[sources/D16_ibn-khaldun_1377_muqaddimah\|Ibn Khaldun (1377)]], [[sources/D16_toynbee_1934_study-of-history\|Toynbee (1934)]] |
+| D16 | [[sources/D16_braudel_1958_longue-duree\|Braudel (1958)]], [[sources/D16_ibn-khaldun_1377_muqaddimah-rosenthal\|Ibn Khaldun (1377)]], [[sources/D16_toynbee_1934_study-of-history\|Toynbee (1934)]] |
 | D17 | [[sources/D17_bickerton_1981_roots-of-language\|Bickerton (1981)]] |
 | D18 | [[sources/D18_durkheim_1893_division-labor\|Durkheim (1893)]] |
 | D19 | [[sources/D19_propp_1968_morphology-of-the-folktale\|Propp (1968)]] |

@@ -12,6 +12,8 @@ wiki-compile の Step 3b（PDF → wiki/sources/ 生成）に関する詳細。
 - 正本: `cs/knowledge/raw/manifest.md`（access_status が `raw-confirmed` かつ `local_file` が存在する行）
 - 原典 PDF: `cs/knowledge/raw/{filename}.pdf`
 
+> **取得不能原典の生成除外（pd#114 / cs#252）**: access_status が `citation-only` / `blocked-access` の行は**生成対象外**。原典全文を検証できない原典は「論や解説の根拠にしない」方針のため、source ページを生成しない。これは上記の入力フィルタ（`raw-confirmed` のみ）で構造的に満たされるが、明示する。過去に `url-verified`/`raw-confirmed` で生成され後に降格された残骸ページは削除する（再 compile で復活しない＝入力に来ないため）。原典が再び取得可能になり `raw-confirmed` に昇格した場合のみ再生成する。
+
 ## 自動化パイプライン
 
 ```

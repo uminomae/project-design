@@ -1,6 +1,6 @@
 ---
 title: "Wiki Index"
-compiled: "2026-06-16"
+compiled: "2026-06-25"
 ---
 # Wiki -- Map of Content
 
@@ -130,12 +130,11 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D04_watson_2016_how-can-evolution-learn|進化はどのように学習するか — 進化と学習の数学的等価性]]
 - [[sources/D04_woese_2002_woese-2002-on-the|細胞の進化について — ダーウィン閾と HGT]]
 
-#### D05 地球科学 (12件)
+#### D05 地球科学 (11件)
 - [[sources/D05_bak_1988_wiesenfeld-k|自己組織化臨界性 — Bak-Tang-Wiesenfeld の砂山モデル]]
 - [[sources/D05_bjerknes_1969_bjerknes-1969-atmospheric-teleconnections|赤道太平洋からの大気のテレコネクション（Bjerknes 1969）]]
 - [[sources/D05_cane-zebiak_1985_enso-theory|エルニーニョと南方振動の理論]]
 - [[sources/D05_conrad_2002_lithgow-bertelloni-c|マントルのスラブはいかにプレートテクトニクスを駆動するか]]
-- [[sources/D05_dewey_1970_dewey-bird-1970-mountain|山脈帯と新しい全地球テクトニクス（Dewey & Bird 1970）]]
 - [[sources/D05_dyke_2010_maximum-entropy-production-principle|最大エントロピー生成原理：その理論的基礎と地球システムへの応用（Dyke & Kleidon 2010）]]
 - [[sources/D05_feistel_2024_origin-of-life-a|生命の起源：対称性の破れを伴う物理的相転移（Feistel 2024）]]
 - [[sources/D05_le-pichon_1968_sea-floor-spreading|海底拡大と大陸移動]]
@@ -173,12 +172,11 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D07_strogatz_2001_exploring-complex-networks|複雑ネットワークの探究 — 構造とダイナミクスの統一的視座]]
 - [[sources/D07_wiener_1948_cybernetics|サイバネティクス——動物と機械における制御と通信]]
 
-#### D08 神経科学 (12件)
+#### D08 神経科学 (11件)
 - [[sources/D08_beggs_2003_beggs-plenz-2003-neuronal|皮質神経回路におけるニューロン雪崩]]
 - [[sources/D08_clark_2013_whatever-next-predictive-brains|予測的な脳と状況づけられたエージェント — 階層的予測処理の射程]]
 - [[sources/D08_dehaene_2011_dehaene-changeux-2011-experimental|意識的処理への実験的・理論的アプローチ — グローバル神経ワークスペース]]
 - [[sources/D08_gaillard_2009_2009|意識的アクセスの収束する頭蓋内マーカー]]
-- [[sources/D08_markram_1997_1997-regulation-of-synaptic|後シナプス活動電位とEPSPの一致によるシナプス効力の調節（Markram et al. 1997）]]
 - [[sources/D08_mashour_2020_2020|意識的処理と Global Neuronal Workspace 仮説 — 20 年のレビュー]]
 - [[sources/D08_miller_2001_cohen-j-d|前頭前皮質機能の統合理論 — 認知制御のバイアス信号モデル]]
 - [[sources/D08_miller_2001_integrative-theory-prefrontal-cortex|前頭前皮質機能の統合理論]]
@@ -226,9 +224,8 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D11_tognoli_2009_brain-coordination-dynamics-true|脳の協調ダイナミクス — 位相同期の真と偽]]
 - [[sources/D11_wu_2014_chinese-medicine|ネットワーク薬理学による漢方処方「君臣佐使」の検証]]
 
-#### D12 農学・生態学 (15件)
+#### D12 農学・生態学 (14件)
 - [[sources/D12_beisner_2003_2003|生態学における代替安定状態（Beisner, Haydon & Cuddington 2003）]]
-- [[sources/D12_carpenter_2006_r-brock-w|分散の増大：生態学的転移の先行指標（Carpenter & Brock 2006）]]
 - [[sources/D12_clements_1916_plant-succession|植物遷移論]]
 - [[sources/D12_connell_1977_slatyer-r-o|自然群集における遷移のメカニズム]]
 - [[sources/D12_crdoba_2020_agroecosystem-resilience|農業生態系のレジリエンス — エージェンシーと構造変革]]
@@ -243,7 +240,7 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D12_stern_1959_integrated-control-concept|総合的防除の概念]]
 - [[sources/D12_walker_2004_2004|社会生態システムにおけるレジリエンス・適応性・変革可能性（Walker et al. 2004）]]
 
-#### D13 哲学 (13件)
+#### D13 哲学 (11件)
 - [[sources/D13_bergson_1911_bergson-1911-creative-evolution|創造的進化（Creative Evolution, Bergson 1911）]]
 - [[sources/D13_deleuze_1966_1966-2001|ジルベール・シモンドン論（Deleuze, Review of Simondon 1966）]]
 - [[sources/D13_dewey_1910_how-we-think|思考の方法（1910年版）]]
@@ -252,8 +249,6 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D13_dewey_1934_art-as-experience|経験としての芸術（探究・思考論の観点）]]
 - [[sources/D13_dewey_1938_1938|論理学：探究の理論（Logic: The Theory of Inquiry, Dewey 1938）]]
 - [[sources/D13_james_1890_principles-of-psychology-vol|心理学原理（The Principles of Psychology, James 1890, Vol.1）— 意識の流れ]]
-- [[sources/D13_lewis_2005_bridging-emotion-theory-and|動的システムモデリングによる感情理論と神経生物学の架橋（Lewis 2005）]]
-- [[sources/D13_maturana_1974_autopoiesis|オートポイエーシス — 生命システムの自己産出組織]]
 - [[sources/D13_peirce_1923_peirce-1923-chance-love|偶然・愛・論理（Chance, Love, and Logic, Peirce 1923）]]
 - [[sources/D13_simondon_1958_1958|技術的対象の存在様態について（Simondon 1958）]]
 - [[sources/D13_whitehead_1929_process-and-reality|過程と実在]]
@@ -283,14 +278,11 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D15_vessel_2012_2012|アートに脳が動くとき — 強い美的経験はデフォルトモードネットワークを活性化する]]
 - [[sources/D15_zeami_classics|風姿花伝（花の美学）]]
 
-#### D16 歴史学 (15件)
-- [[sources/D16_braudel_1949_1949|地中海（La Méditerranée, Braudel 1949）]]
+#### D16 歴史学 (12件)
 - [[sources/D16_braudel_1958_longue-duree|長期持続 — 歴史と社会科学の時間的多層性]]
-- [[sources/D16_ibn-khaldun_1377_muqaddimah|ムカッディマ（歴史序説）]]
 - [[sources/D16_ibn-khaldun_1377_muqaddimah-rosenthal|歴史序説（The Muqaddimah, Ibn Khaldun 1377）]]
 - [[sources/D16_mahoney_2000_2000|歴史社会学における経路依存]]
 - [[sources/D16_mascareo_2022_critical-transitions-in-ecosystems|生態系と社会における臨界転移 — 社会システム理論との対話]]
-- [[sources/D16_north_1990_1990|制度・制度変化・経済成果（North 1990）]]
 - [[sources/D16_olsson_2004_social-ecological-transformation-for|生態系管理に向けた社会生態的変革（Olsson, Folke & Hahn 2004）]]
 - [[sources/D16_pierson_2000_2000|報酬逓増・経路依存・政治の研究（Pierson 2000）]]
 - [[sources/D16_scheffer_2012_2012|臨界転移を予兆する — 早期警告指標の統合]]
@@ -323,18 +315,15 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D18_simmel_1903_1903|都市と精神生活 — Simmel の都市社会学]]
 - [[sources/D18_weber_1905_1905-1930|プロテスタンティズムの倫理と資本主義の精神]]
 
-#### D19 文学 (12件)
+#### D19 文学 (9件)
 - [[sources/D19_aristotle_1907_poetics|詩学 — ミメーシス・筋・カタルシスの理論]]
 - [[sources/D19_barthes_1970_s-z|S/Z — 5 つのコードによる段階的テクスト分析]]
 - [[sources/D19_bourdieu_1996_rules-of-art|芸術のルール — 文学場の生成と構造]]
 - [[sources/D19_freytag_1895_technique-of-the-drama|ドラマの技法 — 5 部構成のピラミッド]]
 - [[sources/D19_genette_1980_genette-1980-narrative-discourse|物語のディスクール — Genette の物語論]]
-- [[sources/D19_iser_1974_1974|潜在的読者（The Implied Reader, Iser 1974）]]
-- [[sources/D19_jauss_1982_1982|挑発としての文学史／受容の美学（Jauss 1982）]]
 - [[sources/D19_polti_1895_1895-1916|三十六の劇的状況（The Thirty-Six Dramatic Situations, Polti 1895/1916）]]
 - [[sources/D19_propp_1968_morphology-of-the-folktale|昔話の形態学]]
 - [[sources/D19_reagan_2016_2016|物語の感情曲線は6つの基本形に支配される]]
-- [[sources/D19_shklovsky_1917_1917-1965|手法としての芸術（Art as Technique, Shklovsky 1917）]]
 - [[sources/D19_todorov_1971_1971|物語の2つの原理]]
 
 #### D20 法学・政治学 (7件)
@@ -361,13 +350,11 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D21_schumpeter_1942_1942|資本主義・社会主義・民主主義（Schumpeter 1942）]]
 - [[sources/D21_walker_2009_2009|ゴルバーン・ブロークン流域におけるレジリエンス・適応性・変革可能性]]
 
-#### D22 経営学 (15件)
+#### D22 経営学 (13件)
 - [[sources/D22_akiike_2021_design-thinking-articles|デザイン思考論文に求められる要件とは何か]]
 - [[sources/D22_brown_2008_design-thinking|デザイン思考（Tim Brown, HBR 2008）]]
 - [[sources/D22_friston_2018_am-i-self-conscious|私は自己意識を持つか — 自己組織化と自己意識]]
 - [[sources/D22_gersick_1988_1988|ワークチームにおける時間と転換：集団発達の新モデル]]
-- [[sources/D22_goldstein_2010_2010|複雑性とリーダーシップの結節点（Goldstein, Hazy & Lichtenstein 2010）]]
-- [[sources/D22_gourlay_2006_2006|知識創造の概念化：野中理論への批判（Gourlay 2006）]]
 - [[sources/D22_hu_2021_trajectories-of-idea-emergence|対話的協働問題解決におけるアイデア出現の軌跡]]
 - [[sources/D22_lyon_2014_dreyfus-model-of-skill|ドレイファス技能習得モデルから見た教育専門性の発達]]
 - [[sources/D22_moller_2004_2004|科学と伝統的生態学的知識の結合：共同管理のための個体群モニタリング]]
@@ -378,13 +365,12 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D22_tuckman_1977_jensen-m-a-c|小集団発達の諸段階・再訪（Tuckman & Jensen 1977）]]
 - [[sources/D22_wenger_2010_communities-of-practice-and|実践コミュニティと社会的学習システム]]
 
-#### D23 発達心理学 (12件)
+#### D23 発達心理学 (11件)
 - [[sources/D23_kartner_2024_early-social-cognitive-development|初期社会-認知発達は動的発達システム — Lifeworld アプローチ]]
 - [[sources/D23_kegan_1982_evolving-self|進化する自己]]
 - [[sources/D23_kim_2024_understanding-explore-exploit-dynamics|子ども発達における探索-活用ダイナミクス]]
 - [[sources/D23_kinoshita_2001_self-image|幼児は自己映像を「自分のこと」として見ているか？]]
 - [[sources/D23_luyckx_2006_2006|コミットメントと探索の解きほぐし：後期青年期アイデンティティ形成の統合モデル（Luyckx et al. 2006）]]
-- [[sources/D23_luyckx_2008_et-al|反芻的探索を捉える：後期青年期アイデンティティ形成の四次元モデルの拡張（Luyckx et al. 2008）]]
 - [[sources/D23_nakama_2014_dids-japanese-version|多次元アイデンティティ発達尺度（DIDS）日本語版]]
 - [[sources/D23_rochat_2003_2003|乳幼児期に展開する自己意識の 5 レベル]]
 - [[sources/D23_tononi_2014_integrated-information-theory-3|現象学からメカニズムへ — 統合情報理論 3.0]]
@@ -506,7 +492,6 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 | [[sources/D04_lane_2012_the-origin-of-membrane\|膜による生体エネルギー変換の起源]] | sources | 2026-06-14 |
 | [[sources/D05_bjerknes_1969_bjerknes-1969-atmospheric-teleconnections\|赤道太平洋からの大気のテレコネクション（Bjerknes 1969）]] | sources | 2026-06-14 |
 | [[sources/D05_conrad_2002_lithgow-bertelloni-c\|マントルのスラブはいかにプレートテクトニクスを駆動するか]] | sources | 2026-06-14 |
-| [[sources/D05_dewey_1970_dewey-bird-1970-mountain\|山脈帯と新しい全地球テクトニクス（Dewey & Bird 1970）]] | sources | 2026-06-14 |
 | [[sources/D05_dyke_2010_maximum-entropy-production-principle\|最大エントロピー生成原理：その理論的基礎と地球システムへの応用（Dyke & Kleidon 2010）]] | sources | 2026-06-14 |
 | [[sources/D05_feistel_2024_origin-of-life-a\|生命の起源：対称性の破れを伴う物理的相転移（Feistel 2024）]] | sources | 2026-06-14 |
 | [[sources/D05_le-pichon_1968_sea-floor-spreading\|海底拡大と大陸移動]] | sources | 2026-06-14 |
@@ -516,6 +501,7 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 | [[sources/D07_heylighen_2025_why-emergence-and-self\|創発と自己組織化はなぜ概念的に単純で、ありふれ、自然なのか（Heylighen 2025）]] | sources | 2026-06-14 |
 | [[sources/D07_strogatz_2001_exploring-complex-networks\|複雑ネットワークの探究 — 構造とダイナミクスの統一的視座]] | sources | 2026-06-14 |
 | [[sources/D08_dehaene_2011_dehaene-changeux-2011-experimental\|意識的処理への実験的・理論的アプローチ — グローバル神経ワークスペース]] | sources | 2026-06-14 |
-| [[sources/D08_markram_1997_1997-regulation-of-synaptic\|後シナプス活動電位とEPSPの一致によるシナプス効力の調節（Markram et al. 1997）]] | sources | 2026-06-14 |
+| [[sources/D08_miller_2001_cohen-j-d\|前頭前皮質機能の統合理論 — 認知制御のバイアス信号モデル]] | sources | 2026-06-14 |
+| [[sources/D09_attwell_2001_attwell-laughlin-2001-an\|脳灰白質の信号伝達のエネルギー収支]] | sources | 2026-06-14 |
 
 > このページは `scripts/generate-wiki-index.mjs` により自動生成されます。wiki/ 内のページ変更時に PostToolUse hook で自動実行されます。
