@@ -1,14 +1,26 @@
 # state.md — project-design
 
 ## Git
-- branch: develop
-- HEAD: dfac05a (chore(wiki): log.md auto-append for bfa1929) / bfa1929 (D02 Strogatz + D29 BTW compile)
-- main: 28eb1d3 (merge: develop → main — #76/#80/#81/#82 完了 + wiki-compile skill 分割 + cross-check)
-- remote: synced (develop/main 共に push 済)
-- dirty: state.md (本セッション更新)
-- develop ahead of main: 0（本セッションでマージ公開完了）
+- **branch: `claude/imaginary-numbers-rotation-cglofo`**（Claude Code on the web の feature ブランチ。develop ではない）
+- HEAD: 890113f (docs(CLAUDE): 公開リポジトリの閲覧を自律権限に追加)
+- 開始点: 39d3996 (merge: develop → main — design-system 集約)
+- remote: `origin/claude/imaginary-numbers-rotation-cglofo` に push 済
+- **このブランチは develop/main 未マージ**。マージ公開判定は pjdhiro 専権
+- 注: develop 系の前回状態は下記 2026-04-19 #06 を参照（HEAD dfac05a / main 28eb1d3）
 
 ## 完了タスク
+### 2026-06-26 #01 (notes/ 新設 + OVERVIEW 一次ソース接地 + 公開リポ閲覧の自律権限化)
+- **`knowledge/notes/` 新設**: pjdhiro の雑感メモ・気づきのログの集積場（発表物でなく、pjdhiro と LLM が pjdhiro の思考・価値観・視点を理解するための私的ログ）
+  - 当初 essays/ → pjdhiro 意図を受け notes/ にリネーム
+  - 第一篇: 投稿「虚数は回転のため／掛け算の経営」を原文保存
+- **`notes/OVERVIEW.md`**: 内容まとめ + cs/as/ks 一次ソース・ハーネス結合洞察
+  - 最大の発見: エッセイの震災原体験が awareness-space 中心仮説「信頼軸の問題を生存軸で解く誤適用＝苦しみの核心」の当事者記述
+  - 「向きは？」に cs＝美駆動思考 / as＝生存-信頼の二回答
+- **アクセス経路確定**: WebFetch(github.io)→egress 403 / get_file_contents→scope 拒否 / **search_code→scope 越え一次ソース取得可**
+- **CLAUDE.md ルール追加（pjdhiro 承認 2026-06-26）**: §自律権限 に「公開リポジトリの閲覧は自律実行してよい」（public 限定・読み取りのみ）
+- セッションログ: `.cache/session/log-20260626-01.md`
+
+
 ### 2026-04-19 #06 (本セッション — inbox 掃除 + D02/D29 compile + pd#82 close + main マージ公開)
 - **inbox 掃除完了**: 18 件 archive（wiki-gen 5 + `_instructions-*` 13）、残 1 件 (`_instructions-83` OPEN)
   - wiki-gen: 2026-04-17-full-v2, 2026-04-19, 20260418-01, 20260418-02, 20260419-01
