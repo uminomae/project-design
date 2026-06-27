@@ -2,7 +2,7 @@
 
 ## Git
 - **branch: `claude/imaginary-numbers-rotation-cglofo`**（Claude Code on the web の feature ブランチ。develop ではない）
-- HEAD: c8d272f (docs(knowledge/notes): 目的D（伏線回収的な統合・まとめ）を追加)
+- HEAD: fbb71ac (docs(knowledge/notes): SYNTHESIS.md 新設 — 現時点の仮案を always-latest で保持)
 - 開始点: 39d3996 (merge: develop → main — design-system 集約)
 - remote: `origin/claude/imaginary-numbers-rotation-cglofo` に push 済
 - **このブランチは develop/main 未マージ**。マージ公開判定は pjdhiro 専権
@@ -20,6 +20,8 @@
   - **目的C 追加（pjdhiro）**: エッセイ×論の重ね合わせ→本質的主題→ゆっくり素朴な物語・絵図・比喩での伝達物の創作。宛先は初学者・娘。最初の作品の置き場所（例 notes/tellings/）・形式は別途決定
   - **目的D 追加（pjdhiro）**: 論に隠れた主題・本質・全体像を見つけてから、後置再帰の後半（戻りの相）のように統合し、前半の伏線（§4 保持論点）を回収して畳む総括。順序が要（底に触れてから戻りで統合）。方法が内容を映す自己相似
   - notes/ 四目的: A コーパス / B とっかかり・喩え / C 物語的伝達物 / D 伏線回収的統合
+  - **SYNTHESIS.md 新設**: 現時点の仮案を always-latest で保持（目的D 準備層）。出所＝仮説（cs/as/ks）×論文（wiki/sources）×エッセイ（notes/）の重ね合わせと明記。仮の底＝生きる＝分離→受容→包摂的統合の大きな回転。伏線台帳6件×回収条件。底に触れるまで D 未発火
+  - notes/ メタ三層: README（運用）/ OVERVIEW（重ね合わせ素材層）/ SYNTHESIS（仮案・全体像層）
 - **`notes/OVERVIEW.md`**: 内容まとめ + cs/as/ks 一次ソース・ハーネス結合洞察
   - 最大の発見: エッセイの震災原体験が awareness-space 中心仮説「信頼軸の問題を生存軸で解く誤適用＝苦しみの核心」の当事者記述
   - 「向きは？」に cs＝美駆動思考 / as＝生存-信頼の二回答
