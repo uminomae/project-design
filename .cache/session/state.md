@@ -2,7 +2,7 @@
 
 ## Git
 - **branch: `claude/imaginary-numbers-rotation-cglofo`**（Claude Code on the web の feature ブランチ。develop ではない）
-- HEAD: c08f2ca (docs(knowledge/notes): 目的C（物語的な伝達物の創作）を追加)
+- HEAD: c8d272f (docs(knowledge/notes): 目的D（伏線回収的な統合・まとめ）を追加)
 - 開始点: 39d3996 (merge: develop → main — design-system 集約)
 - remote: `origin/claude/imaginary-numbers-rotation-cglofo` に push 済
 - **このブランチは develop/main 未マージ**。マージ公開判定は pjdhiro 専権
@@ -18,7 +18,8 @@
   - 第三篇: 投稿「止揚 — 分離と包摂的統合（身体・腸の信号）」を原文保存。分離と包摂の往復＝止揚（Aufhebung）と本人命名。病理側＝分断と侵略の袋小路。向きは身体・腸の低レイヤー信号で掴む＝as 内受容感覚に接地
   - **方針転換（pjdhiro 指摘）**: 論への接地は補助線。エッセイの主目的は「とっかかり・喩え・素朴な概念理解・気づきの誘発」（目的B）。README に anti-collapse 禁則、各篇に「喩えとしての価値（とっかかり）」、OVERVIEW に「★喩え・とっかかりカタログ」新設
   - **目的C 追加（pjdhiro）**: エッセイ×論の重ね合わせ→本質的主題→ゆっくり素朴な物語・絵図・比喩での伝達物の創作。宛先は初学者・娘。最初の作品の置き場所（例 notes/tellings/）・形式は別途決定
-  - notes/ 三目的: A コーパス / B とっかかり・喩え / C 物語的伝達物の創作
+  - **目的D 追加（pjdhiro）**: 論に隠れた主題・本質・全体像を見つけてから、後置再帰の後半（戻りの相）のように統合し、前半の伏線（§4 保持論点）を回収して畳む総括。順序が要（底に触れてから戻りで統合）。方法が内容を映す自己相似
+  - notes/ 四目的: A コーパス / B とっかかり・喩え / C 物語的伝達物 / D 伏線回収的統合
 - **`notes/OVERVIEW.md`**: 内容まとめ + cs/as/ks 一次ソース・ハーネス結合洞察
   - 最大の発見: エッセイの震災原体験が awareness-space 中心仮説「信頼軸の問題を生存軸で解く誤適用＝苦しみの核心」の当事者記述
   - 「向きは？」に cs＝美駆動思考 / as＝生存-信頼の二回答
