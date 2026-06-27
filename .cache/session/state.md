@@ -2,7 +2,7 @@
 
 ## Git
 - **branch: `claude/imaginary-numbers-rotation-cglofo`**（Claude Code on the web の feature ブランチ。develop ではない）
-- HEAD: fbb71ac (docs(knowledge/notes): SYNTHESIS.md 新設 — 現時点の仮案を always-latest で保持)
+- HEAD: 814ab23 (docs(knowledge/notes): dialogue/ 新設 — LLM対話録を参照用に記録)
 - 開始点: 39d3996 (merge: develop → main — design-system 集約)
 - remote: `origin/claude/imaginary-numbers-rotation-cglofo` に push 済
 - **このブランチは develop/main 未マージ**。マージ公開判定は pjdhiro 専権
@@ -22,6 +22,8 @@
   - notes/ 四目的: A コーパス / B とっかかり・喩え / C 物語的伝達物 / D 伏線回収的統合
   - **SYNTHESIS.md 新設**: 現時点の仮案を always-latest で保持（目的D 準備層）。出所＝仮説（cs/as/ks）×論文（wiki/sources）×エッセイ（notes/）の重ね合わせと明記。仮の底＝生きる＝分離→受容→包摂的統合の大きな回転。伏線台帳6件×回収条件。底に触れるまで D 未発火
   - notes/ メタ三層: README（運用）/ OVERVIEW（重ね合わせ素材層）/ SYNTHESIS（仮案・全体像層）
+  - **dialogue/ 新設**: LLM対話録を参照用に記録（エッセイ＝一人称原文保存とは別レイヤー、共構築・要点圧縮・参照用）。第一録「美と妙と原点0」＝妙は過剰と欠如が拮抗する不動点0＝回転の中心。SYNTHESIS v0.2 で出所に対話録追加、伏線#7（妙の0は終点か通過点か）追加
+  - notes/ 出所4種: 仮説（cs/as/ks）/ 論文（wiki/sources）/ エッセイ（notes/）/ 対話録参照（notes/dialogue/）
 - **`notes/OVERVIEW.md`**: 内容まとめ + cs/as/ks 一次ソース・ハーネス結合洞察
   - 最大の発見: エッセイの震災原体験が awareness-space 中心仮説「信頼軸の問題を生存軸で解く誤適用＝苦しみの核心」の当事者記述
   - 「向きは？」に cs＝美駆動思考 / as＝生存-信頼の二回答
