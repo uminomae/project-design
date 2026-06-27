@@ -2,7 +2,7 @@
 
 ## Git
 - **branch: `claude/imaginary-numbers-rotation-cglofo`**（Claude Code on the web の feature ブランチ。develop ではない）
-- HEAD: 9d3f454 (docs(knowledge/notes): 第三篇追加「止揚 — 分離と包摂的統合」)
+- HEAD: e9d7ff3 (docs(knowledge/notes): エッセイ主目的を「とっかかり・喩え・気づき誘発」に再定位)
 - 開始点: 39d3996 (merge: develop → main — design-system 集約)
 - remote: `origin/claude/imaginary-numbers-rotation-cglofo` に push 済
 - **このブランチは develop/main 未マージ**。マージ公開判定は pjdhiro 専権
@@ -16,6 +16,7 @@
   - 第二篇: 投稿「正規分布の丸さと回転（風神雷神）」を原文保存。雷神（分離・知能）⟂ 風神（融合・回転・叡智・抱持）が cs⟂as・波⟂渦として2篇にまたがり明示化（OVERVIEW §3-0b）
   - 「分かる」＝分離（分ける）＋共有（分け合う）の2回、を pjdhiro 確定
   - 第三篇: 投稿「止揚 — 分離と包摂的統合（身体・腸の信号）」を原文保存。分離と包摂の往復＝止揚（Aufhebung）と本人命名。病理側＝分断と侵略の袋小路。向きは身体・腸の低レイヤー信号で掴む＝as 内受容感覚に接地
+  - **方針転換（pjdhiro 指摘）**: 論への接地は補助線。エッセイの主目的は「とっかかり・喩え・素朴な概念理解・気づきの誘発」（目的B）。README に anti-collapse 禁則、各篇に「喩えとしての価値（とっかかり）」、OVERVIEW に「★喩え・とっかかりカタログ」新設
 - **`notes/OVERVIEW.md`**: 内容まとめ + cs/as/ks 一次ソース・ハーネス結合洞察
   - 最大の発見: エッセイの震災原体験が awareness-space 中心仮説「信頼軸の問題を生存軸で解く誤適用＝苦しみの核心」の当事者記述
   - 「向きは？」に cs＝美駆動思考 / as＝生存-信頼の二回答
