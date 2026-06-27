@@ -1,11 +1,11 @@
 # state.md — project-design
 
 ## Git
-- **branch: `claude/imaginary-numbers-rotation-cglofo`**（Claude Code on the web の feature ブランチ。develop ではない）
-- HEAD: 814ab23 (docs(knowledge/notes): dialogue/ 新設 — LLM対話録を参照用に記録)
+- **branch: `claude/imaginary-numbers-rotation-cglofo`**（Claude Code on the web の feature ブランチ）
+- feature HEAD: 1fe45ba (docs(knowledge/notes): README に構造と存在理由を明示)
 - 開始点: 39d3996 (merge: develop → main — design-system 集約)
-- remote: `origin/claude/imaginary-numbers-rotation-cglofo` に push 済
-- **このブランチは develop/main 未マージ**。マージ公開判定は pjdhiro 専権
+- **main へ --no-ff マージで公開済**（pjdhiro 明示指示。マージコミット SHA は git log 参照）
+- remote: `origin/claude/imaginary-numbers-rotation-cglofo` および `origin/main` に push 済
 - 注: develop 系の前回状態は下記 2026-04-19 #06 を参照（HEAD dfac05a / main 28eb1d3）
 
 ## 完了タスク
