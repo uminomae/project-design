@@ -1,14 +1,36 @@
 # state.md — project-design
 
 ## Git
-- branch: develop
-- HEAD: dfac05a (chore(wiki): log.md auto-append for bfa1929) / bfa1929 (D02 Strogatz + D29 BTW compile)
-- main: 28eb1d3 (merge: develop → main — #76/#80/#81/#82 完了 + wiki-compile skill 分割 + cross-check)
-- remote: synced (develop/main 共に push 済)
-- dirty: state.md (本セッション更新)
-- develop ahead of main: 0（本セッションでマージ公開完了）
+- **branch: `claude/imaginary-numbers-rotation-cglofo`**（Claude Code on the web の feature ブランチ）
+- feature HEAD: 1fe45ba (docs(knowledge/notes): README に構造と存在理由を明示)
+- 開始点: 39d3996 (merge: develop → main — design-system 集約)
+- **main へ --no-ff マージで公開済**（pjdhiro 明示指示。マージコミット SHA は git log 参照）
+- remote: `origin/claude/imaginary-numbers-rotation-cglofo` および `origin/main` に push 済
+- 注: develop 系の前回状態は下記 2026-04-19 #06 を参照（HEAD dfac05a / main 28eb1d3）
 
 ## 完了タスク
+### 2026-06-26 #01 (notes/ 新設 + OVERVIEW 一次ソース接地 + 公開リポ閲覧の自律権限化)
+- **`knowledge/notes/` 新設**: pjdhiro の雑感メモ・気づきのログの集積場（発表物でなく、pjdhiro と LLM が pjdhiro の思考・価値観・視点を理解するための私的ログ）
+  - 当初 essays/ → pjdhiro 意図を受け notes/ にリネーム
+  - 第一篇: 投稿「虚数は回転のため／掛け算の経営」を原文保存
+  - 第二篇: 投稿「正規分布の丸さと回転（風神雷神）」を原文保存。雷神（分離・知能）⟂ 風神（融合・回転・叡智・抱持）が cs⟂as・波⟂渦として2篇にまたがり明示化（OVERVIEW §3-0b）
+  - 「分かる」＝分離（分ける）＋共有（分け合う）の2回、を pjdhiro 確定
+  - 第三篇: 投稿「止揚 — 分離と包摂的統合（身体・腸の信号）」を原文保存。分離と包摂の往復＝止揚（Aufhebung）と本人命名。病理側＝分断と侵略の袋小路。向きは身体・腸の低レイヤー信号で掴む＝as 内受容感覚に接地
+  - **方針転換（pjdhiro 指摘）**: 論への接地は補助線。エッセイの主目的は「とっかかり・喩え・素朴な概念理解・気づきの誘発」（目的B）。README に anti-collapse 禁則、各篇に「喩えとしての価値（とっかかり）」、OVERVIEW に「★喩え・とっかかりカタログ」新設
+  - **目的C 追加（pjdhiro）**: エッセイ×論の重ね合わせ→本質的主題→ゆっくり素朴な物語・絵図・比喩での伝達物の創作。宛先は初学者・娘。最初の作品の置き場所（例 notes/tellings/）・形式は別途決定
+  - **目的D 追加（pjdhiro）**: 論に隠れた主題・本質・全体像を見つけてから、後置再帰の後半（戻りの相）のように統合し、前半の伏線（§4 保持論点）を回収して畳む総括。順序が要（底に触れてから戻りで統合）。方法が内容を映す自己相似
+  - notes/ 四目的: A コーパス / B とっかかり・喩え / C 物語的伝達物 / D 伏線回収的統合
+  - **SYNTHESIS.md 新設**: 現時点の仮案を always-latest で保持（目的D 準備層）。出所＝仮説（cs/as/ks）×論文（wiki/sources）×エッセイ（notes/）の重ね合わせと明記。仮の底＝生きる＝分離→受容→包摂的統合の大きな回転。伏線台帳6件×回収条件。底に触れるまで D 未発火
+  - notes/ メタ三層: README（運用）/ OVERVIEW（重ね合わせ素材層）/ SYNTHESIS（仮案・全体像層）
+  - **dialogue/ 新設**: LLM対話録を参照用に記録（エッセイ＝一人称原文保存とは別レイヤー、共構築・要点圧縮・参照用）。第一録「美と妙と原点0」＝妙は過剰と欠如が拮抗する不動点0＝回転の中心。SYNTHESIS v0.2 で出所に対話録追加、伏線#7（妙の0は終点か通過点か）追加
+  - notes/ 出所4種: 仮説（cs/as/ks）/ 論文（wiki/sources）/ エッセイ（notes/）/ 対話録参照（notes/dialogue/）
+- **`notes/OVERVIEW.md`**: 内容まとめ + cs/as/ks 一次ソース・ハーネス結合洞察
+  - 最大の発見: エッセイの震災原体験が awareness-space 中心仮説「信頼軸の問題を生存軸で解く誤適用＝苦しみの核心」の当事者記述
+  - 「向きは？」に cs＝美駆動思考 / as＝生存-信頼の二回答
+- **アクセス経路確定**: WebFetch(github.io)→egress 403 / get_file_contents→scope 拒否 / **search_code→scope 越え一次ソース取得可**
+- **CLAUDE.md ルール追加（pjdhiro 承認 2026-06-26）**: §自律権限 に「公開リポジトリの閲覧は自律実行してよい」（public 限定・読み取りのみ）
+- セッションログ: `.cache/session/log-20260626-01.md`
+
 ### 2026-04-19 #06 (本セッション — inbox 掃除 + D02/D29 compile + pd#82 close + main マージ公開)
 - **inbox 掃除完了**: 18 件 archive（wiki-gen 5 + `_instructions-*` 13）、残 1 件 (`_instructions-83` OPEN)
   - wiki-gen: 2026-04-17-full-v2, 2026-04-19, 20260418-01, 20260418-02, 20260419-01
