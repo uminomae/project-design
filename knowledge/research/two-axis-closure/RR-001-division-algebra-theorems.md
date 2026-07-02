@@ -3,10 +3,15 @@ id: RR-001
 title: 可除代数の壁 — 3と7を強制する定理群の成文化
 issue: "#115"
 pillar: two-axis-closure
-status: review
+status: closed
+resolution: T層採用・実証保留
 date_start: 2026-07-02
-date_end: 2026-07-02
+date_end: 2026-07-03
 ---
+
+> **採否結果（pjdhiro 裁定 2026-07-03）**: **T層（定理層）のみ採用。組織への実証適用は保留。**
+> 7次元外積の Jacobi 不成立と Steiner S(2,3,7) の一致は機械検証済みで定理レベル確定＝採用。
+> 組織適用（自然法則/設計原理としての主張）は F2/F4 未裁定・F3 実証待ちのため gate OPEN のまま。数理の確定を組織の実証と混同しないこと（[[RR-002-isomorphism-rigor]] の三層分解に従う）。
 
 ## 問い
 
