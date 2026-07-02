@@ -45,7 +45,7 @@ date_end:
 
 ## 参照
 
-- 関連ファイル: `../../concepts/CN-010_division-algebra-consciousness-organization.md`, `READER-division-algebra-consciousness-organization.md`
+- 関連ファイル: `../../concepts/CN-010_division-algebra-consciousness-organization.md`, `READER-division-algebra-consciousness-organization.md`, `RR-002-isomorphism-rigor.md`（軸④の分析枠。G₂=Aut(𝕆)・dim G₂=14・S(2,3,7) の性質・7次元外積の Jacobi 不成立 の出典成文化を本 RR に依頼）
 - 関連Issue: pd#115（epic）, #116（軸②）, #117（軸③）, #118（軸④）
 
 ## サブレポート（必要時に追加）
