@@ -6,6 +6,15 @@
 |---|---|
 | `three-and-seven.html` | `knowledge/research/two-axis-closure/READER-division-algebra-consciousness-organization.md` |
 
+## このページが何で、どう育てるか
+
+`three-and-seven.html` は **可除代数‑意識/組織仮説の万人向け公開解説ページ**（North Star）。
+ゴール・骨格・執筆ルール・検証プロセス・残タスクの正本は
+**[`knowledge/research/two-axis-closure/README.md`](../knowledge/research/two-axis-closure/README.md)**（着工前に必読）。
+
+- 骨格は完成済み。残り作業は**調査・検証で論拠を固め、進捗ごとに §9 を更新して再公開**すること
+- 執筆ルール（一人称語り・三点セット・anti-collapse・棄却の三層段差表＋比喩）も上記 README に集約
+
 ## 更新手順
 
 1. 正本の READER (MD) を編集する
