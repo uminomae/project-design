@@ -2,11 +2,12 @@
 
 ## Git
 - branch: develop
-- pd HEAD: develop=**cbdfb3e**（seq05 pd#116 含む・main 未反映）/ main=**902ed82**
+- pd HEAD: develop=**cbdfb3e** / main=**0314487**（pd#116 RR-004 + READER §9 公開済・push 済）
 - remote: synced
 - 関連: cs develop=**2cbd91e** / cs main=**6522065**（cs#254 v1 まで）
 
 ## 🔵 進行中 2026-07-03 (seq05) — pd#116 調査軸② 意識＝複素平面の検証（RR-004）+ READER §9 公開
+- **pd#116 CLOSED**（コメント https://github.com/uminomae/project-design/issues/116#issuecomment-4867283713 ）。develop cbdfb3e → main 0314487 マージ・push 済（pjdhiro「公開する」指示）
 - **pd#116 完了（RR-004 作成）**: `knowledge/research/two-axis-closure/RR-004-consciousness-complex-plane-circumplex.md`
   - **裁定＝意識＝ℂ の空虚リスク confirm**: circumplex（Russell 1980）は ℝ²-polar 層（半径=強度・角度=種類）で強く接地するが、**ℂ-field 固有の積・除・`i²=−1` は遊休**（Posner/Russell/Peterson 2005: 感情＝二次元の「線形結合」＝ℝ² ベクトル空間）。回転 U(1) のみ faint な例外だが乗法的閉包ではない
   - **前提①の再評価**: circumplex の直交対は valence×arousal であって物質×精神ではない → 前提①は circumplex から直接の裏づけを得られず、物質/精神への対応は未接地の追加措定
