@@ -2,19 +2,20 @@
 
 ## Git
 - branch: develop
-- pd HEAD: develop=**a6e09d0** / main=**3f0db2f**（全公開済・乖離解消）
+- pd HEAD: develop=**9b6e9fd** / main=**902ed82**（全公開済）
 - remote: synced
-- 関連: cs develop=**15dc2e1** / cs main=**30e9301**
+- 関連: cs develop=**1418438** / cs main=**67fb985**
 
 ## ✅ セッション 2026-07-02 (seq04) — cs#256 + pd#120 完了・CLOSE、pd#112 conflict 解消
 - **cs#256 CLOSED**（develop 15dc2e1→main 30e9301）: スキル5件 + 年ドリフト4件（取得原典の実年に是正、validate PASS）
   - 年ドリフト: D10-S04 Tonegawa=1987 Nobel講演 / D15-S06 幽玄論=1944(NDL確認) / D17-S08 Lenneberg=1969 Science論文 / D29-S06 Clauset=2007 tech report 併記
 - **pd#120 CLOSED**（develop a6e09d0→main 3f0db2f）: skill記述2件 + responsive B5(12px,5/5) + wiki-lint wikilink除外 + 孤立5件導線 + broken 3件 + access-lint FAIL 4件削除(鎖の不変条件) + cs-as-component パス(承認済) + codex-review dormant化(歴史保持) + periodic-review 手動運用確立 + outbox archive(pd59+cs61+as96) + as inbox 33件archive(issue全closed確認)
-- **pd#112 wiki-conflict 3件解消**（OPEN継続=38ペア未実施）: D13-S05 Dewey機関名(シカゴ大)/D13-S06 1910版精読注記/D24-S02 Di Marzio 実読=2020 Shincheonji論文にDOI是正
-- **develop↔main 乖離を統合公開**（pjdhiro「全情報保持」指示）: main notes/ workspace 全保持 + develop wiki/RR/reader §9 統合。CLAUDE.md 両側統合
+- **pd#112 CLOSED（原スコープ117ペア完了）**: 残38ペア(D02/D05/D06)を書誌+DOI照合+内容スポット。実誤り1件=D02-S07 Haken DOI(404)を正 DOI に修正(cs)。pd wiki は cs から compile 派生で内容逐語一致。D02-S04 は内容正・slug 誤ラベルのみ（hygiene）。299ペア拡大分は periodic-review へ委譲
+- **D18-S12 Simmel「降格」→「維持」決着**: OA 404 は GHDI ドメイン移行(ghi-dc.org→germanhistorydocs.org)が原因。生存 URL(9pp全文%PDF検証)に更新し url-verified 維持（精読済み+public domain）。cs 67fb985 / pd 902ed82
+- **develop↔main 乖離を統合公開**（pjdhiro「全情報保持」指示）: main notes/ workspace 全保持 + develop wiki/RR/reader §9 統合
 - **迷い込みディレクトリ削除**: `content/content` `src/src` を $TMPDIR 退避
-- **worktree** `heuristic-ramanujan-452e39` は破棄可（skill commit は cherry-pick 済）
-- **残（前回 seq03 からの pjdhiro 判断待ち・未着手）**: D18-S12 Simmel 降格 / DOI 列構造化 / pjdhiro repo WIP 184ファイル / RR-001 採否 / cs#254 全面拡大 / pd#112 残38ペア cross-check
+- **worktree** `heuristic-ramanujan-452e39` は破棄可
+- **残（pjdhiro 専権/判断・未着手）**: DOI 列構造化（破壊的スキーマ変更・要 go/design）/ RR-001 最終採否（理論採否=専権）/ cs#254 全面拡大（120×2 へ機械抽出+lint 化の go/no-go）/ pjdhiro repo WIP 184ファイル（所有者判断）
 
 ## ⏸ セッション終了 2026-07-02 (seq03) — 監査→cs#253/254 執行→RR-001→方針変更
 - ログ: pd `log-20260702-03.md` / cs `log-20260702-01.md` / pjdhiro `log-20260702-01.md` / 横断 `SESSION-20260702-03.md`
