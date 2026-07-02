@@ -8,6 +8,7 @@ on:
       - 'src/**'
       - 'content/**'
       - 'assets/**'
+      - 'reader/**'
       - 'wiki/**'
       - 'quartz/**'
   workflow_dispatch:
@@ -42,8 +43,8 @@ jobs:
       - name: Assemble site
         run: |
           mkdir -p _site
-          # Copy existing site (index.html, src/, content/, assets/, etc.)
-          cp -r index.html src/ content/ assets/ _site/
+          # Copy existing site (index.html, src/, content/, assets/, reader/, etc.)
+          cp -r index.html src/ content/ assets/ reader/ _site/
           # Copy Quartz wiki output into /wiki/ subpath
           cp -r wiki-out/ _site/wiki/
 

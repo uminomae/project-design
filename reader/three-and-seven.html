@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>なぜ 3 と 7 だけが特別なのか — 可除代数‑意識/組織仮説（読み物）</title>
+<meta name="description" content="「チームは3がベスト・7が上限」という体感と「物質/精神の二軸」という体感を、数の梯子（ℝ→ℂ→ℍ→𝕆）で貫く仮説の読み物。定理と解釈の賭けを分けて記し、検証の現在地を——うまくいかなかった部分も含めて——随時更新する。">
+<link rel="canonical" href="https://uminomae.github.io/project-design/reader/three-and-seven.html">
+<meta property="og:title" content="なぜ 3 と 7 だけが特別なのか — 可除代数‑意識/組織仮説">
+<meta property="og:description" content="二つの素朴体験から数の梯子をたどる読み物。定理と賭けを分け、検証の現在地を随時更新する。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://uminomae.github.io/project-design/reader/three-and-seven.html">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "なぜ 3 と 7 だけが特別なのか — 可除代数‑意識/組織仮説（読み物）",
+  "inLanguage": "ja",
+  "dateModified": "2026-07-03",
+  "author": {"@type": "Person", "name": "pjdhiro"},
+  "isPartOf": {"@type": "WebSite", "name": "プロジェクトデザイン論", "url": "https://uminomae.github.io/project-design/"}
+}
+</script>
+<style>
+:root {
+  --lp-bg: #FAF8F2;
+  --lp-panel: #FFFFFF;
+  --lp-line: #E7E4DB;
+  --lp-line-soft: #D8D4C8;
+  --lp-text: #2C2C2A;
+  --lp-sub: #5F5E5A;
+  --lp-accent: #0F6E56;
+  --lp-warm: #BA7517;
+  --lp-soft: #F1EFE8;
+  --lp-serif: "Noto Serif JP", "Yu Mincho", "Hiragino Mincho ProN", serif;
+  --lp-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif;
+  --lp-mono: "SF Mono", "Fira Code", Consolas, monospace;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--lp-bg);
+  color: var(--lp-text);
+  font-family: var(--lp-sans);
+  line-height: 2;
+  -webkit-text-size-adjust: 100%;
+}
+.hero {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 4.5rem 1.5rem 1rem;
+  text-align: center;
+}
+.hero h1 {
+  font-family: var(--lp-serif);
+  font-size: clamp(1.6rem, 5vw, 2.4rem);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  line-height: 1.6;
+  margin: 0 0 1rem;
+}
+.hero .subtitle {
+  color: var(--lp-sub);
+  font-size: 0.95rem;
+  letter-spacing: 0.06em;
+  margin: 0 0 1.5rem;
+}
+.hero .meta {
+  color: var(--lp-sub);
+  font-size: 0.82rem;
+  letter-spacing: 0.04em;
+}
+.hero .meta a { color: var(--lp-accent); }
+article {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 1.5rem 4rem;
+  font-size: 1.02rem;
+}
+article > blockquote:first-child {
+  border: none;
+  background: var(--lp-soft);
+  border-radius: 10px;
+  padding: 1.2rem 1.5rem;
+  margin: 2rem 0 2.5rem;
+  color: var(--lp-sub);
+  font-size: 0.95rem;
+}
+article h2 {
+  font-family: var(--lp-serif);
+  font-size: 1.45rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  line-height: 1.7;
+  margin: 4.5rem 0 1.5rem;
+  padding-left: 0.9rem;
+  border-left: 4px solid var(--lp-accent);
+}
+article h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  margin: 3rem 0 1rem;
+  color: var(--lp-text);
+}
+article svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 2.2rem 0;
+  background: var(--lp-panel);
+  border: 1px solid var(--lp-line);
+  border-radius: 12px;
+}
+article table {
+  display: block;
+  overflow-x: auto;
+  border-collapse: collapse;
+  margin: 1.8rem 0;
+  font-size: 0.9rem;
+  line-height: 1.8;
+}
+article th, article td {
+  padding: 0.55rem 0.8rem;
+  border-bottom: 1px solid var(--lp-line);
+  text-align: left;
+  vertical-align: top;
+  min-width: 6em;
+}
+article th {
+  background: var(--lp-soft);
+  font-weight: 600;
+  white-space: nowrap;
+}
+article code {
+  font-family: var(--lp-mono);
+  font-size: 0.88em;
+  background: var(--lp-soft);
+  padding: 0.1em 0.4em;
+  border-radius: 4px;
+}
+article pre {
+  background: var(--lp-soft);
+  border-radius: 10px;
+  padding: 1rem 1.3rem;
+  overflow-x: auto;
+  line-height: 1.7;
+}
+article pre code { background: none; padding: 0; }
+article blockquote {
+  border-left: 3px solid var(--lp-warm);
+  margin: 1.5rem 0;
+  padding: 0.2rem 0 0.2rem 1.2rem;
+  color: var(--lp-sub);
+}
+article a { color: var(--lp-accent); text-decoration-thickness: 1px; text-underline-offset: 3px; }
+article hr {
+  border: none;
+  border-top: 1px dashed var(--lp-line-soft);
+  margin: 3.5rem 0;
+}
+article ul, article ol { padding-left: 1.5em; }
+article li { margin: 0.4em 0; }
+footer {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 4rem;
+  border-top: 1px solid var(--lp-line);
+  color: var(--lp-sub);
+  font-size: 0.82rem;
+  text-align: center;
+  letter-spacing: 0.04em;
+}
+footer a { color: var(--lp-accent); }
+@media (max-width: 480px) {
+  .hero { padding: 3rem 1rem 0.5rem; }
+  article { padding: 0 1rem 3rem; font-size: 0.98rem; }
+  article h2 { margin-top: 3.5rem; }
+  article th, article td { padding: 0.45rem 0.6rem; }
+}
+</style>
+</head>
+<body>
+<header class="hero">
+  <h1>なぜ 3 と 7 だけが<br>特別なのか</h1>
+  <p class="subtitle">可除代数‑意識/組織仮説 — 読み物</p>
+  <p class="meta">
+    最終更新: 2026-07-03 ／ 検証は進行中（§9 を随時更新）<br>
+    <a href="https://github.com/uminomae/project-design/blob/main/knowledge/research/two-axis-closure/READER-division-algebra-consciousness-organization.md">正本 (GitHub)</a> ・
+    <a href="https://github.com/uminomae/project-design/issues/115">検証プログラム pd#115</a> ・
+    <a href="../index.html">プロジェクトデザイン論</a>
+  </p>
+</header>
+<article>
+<blockquote>
+<p>二つの素朴体験から出発し、数の梯子（ℝ→ℂ→ℍ→𝕆）をたどって、「なぜ 3 と 7 だけが特別なのか」を、定理・現実のたとえ・人間関係の三層で通す読み物。前提（解釈の賭け）と定理（硬い部分）は分けて記す。検証が進むたびに §9「検証の現在地」を更新する——<strong>うまくいかなかった部分も含めて</strong>。図は単体表示できる自己完結 SVG。</p>
+</blockquote>
+<hr />
+<h2 id="0-二つの素朴体験">0. 二つの素朴体験</h2>
+<ul>
+<li><strong>体験A（信号）</strong>：何かを作るとき、体の中に二種類の手ごたえが同時に流れる。<strong>物質的</strong>（量・広がり）と<strong>精神的</strong>（まとまり・意味）。</li>
+<li><strong>体験B（人数）</strong>：チームは <strong>3 がベスト、7 が上限</strong>。8 で急に重くなる。理屈より先に、そう感じていた。</li>
+</ul>
+<h2 id="1-問い">1. 問い</h2>
+<p>この二つはまるで別の話に見える。でも——<strong>同じ「形」が下に隠れているのではないか</strong>。片方（数学でわかるチーム人数）から、もう片方（意識の仕組み）が見えるのではないか。これが全体の問い。</p>
+<svg width="100%" viewBox="0 0 680 520" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="二つの素朴体験から問いが生まれ、数学が3と7を答える地図">
+<defs><marker id="arA" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>
+<line x1="195" y1="116" x2="300" y2="168" stroke="#888780" stroke-width="1.5" marker-end="url(#arA)"/>
+<line x1="485" y1="116" x2="380" y2="168" stroke="#888780" stroke-width="1.5" marker-end="url(#arA)"/>
+<line x1="340" y1="236" x2="340" y2="288" stroke="#888780" stroke-width="1.5" marker-end="url(#arA)"/>
+<line x1="305" y1="356" x2="250" y2="408" stroke="#888780" stroke-width="1.5" marker-end="url(#arA)"/>
+<line x1="375" y1="356" x2="430" y2="408" stroke="#888780" stroke-width="1.5" marker-end="url(#arA)"/>
+<rect x="90" y="52" width="210" height="64" rx="12" fill="#F1EFE8" stroke="#888780" stroke-width="0.5"/>
+<text x="195" y="80" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="500" fill="#2C2C2A">体を流れる二軸</text>
+<text x="195" y="100" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#5F5E5A">物質と精神の信号</text>
+<rect x="380" y="52" width="210" height="64" rx="12" fill="#F1EFE8" stroke="#888780" stroke-width="0.5"/>
+<text x="485" y="80" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="500" fill="#2C2C2A">チームの人数感覚</text>
+<text x="485" y="100" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#5F5E5A">3がベスト・7が上限</text>
+<rect x="140" y="172" width="400" height="64" rx="12" fill="#F1EFE8" stroke="#888780" stroke-width="0.5"/>
+<text x="340" y="200" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="500" fill="#2C2C2A">問い：同じ形が隠れている?</text>
+<text x="340" y="220" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#5F5E5A">二つの体験は一つの構造か</text>
+<rect x="140" y="292" width="400" height="64" rx="12" fill="#F1EFE8" stroke="#888780" stroke-width="0.5"/>
+<text x="340" y="320" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="500" fill="#2C2C2A">数の梯子は途中で止まる</text>
+<text x="340" y="340" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#5F5E5A">1, 2, 4, 8 で打ち止め</text>
+<rect x="175" y="410" width="150" height="72" rx="12" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+<text x="250" y="440" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="500" fill="#085041">3</text>
+<text x="250" y="462" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#0F6E56">閉じる最小の輪</text>
+<rect x="355" y="410" width="150" height="72" rx="12" fill="#FAEEDA" stroke="#BA7517" stroke-width="0.5"/>
+<text x="430" y="440" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="500" fill="#633806">7</text>
+<text x="430" y="462" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#854F0B">束ねられる最大</text>
+</svg>
+
+<hr />
+<h2 id="2-数の梯子と回転--四元数まで">2. 数の梯子と回転 — 四元数まで</h2>
+<p>数には「回れる」段階がある。</p>
+<ul>
+<li><strong>1次元（実数 ℝ）</strong>：できるのは「＋か−」だけ。スイッチのように、ひっくり返るだけ。真の回転はない。</li>
+<li><strong>2次元（複素数 ℂ）</strong>：時計の針のように<strong>なめらかに回れる</strong>。虚数 <code>i</code> の正体は「90度回転」。2回で180度＝真後ろ＝<code>−1</code>（だから <code>i² = −1</code>）。</li>
+<li><strong>3次元を回す（四元数 ℍ）</strong>：立体をなめらかに回すには数を4つ束ねる。それが <code>i, j, k</code>。ゲームがキャラクターを回すのに今も使う本物の道具。</li>
+</ul>
+<p>四元数の心臓部は、たった一つの掛け算の規則：</p>
+<pre><code>i·j = k,   j·k = i,   k·i = j</code></pre>
+<p>「<strong>二つが出会うと、ちょうど"次の一人"に着地する</strong>」。ぐるっと<strong>輪になって閉じる</strong>。そして <code>i·j = k</code> だが <code>j·i = −k</code>（逆回りはマイナス）＝<strong>向きを持った輪</strong>。順序が効く。</p>
+<p>下の図。左が「2人＝閉じない」、右が「3人＝閉じる（四元数の三つ組）」。同じ三角形を<strong>人／じゃんけん／四元数</strong>の三通りで読める。</p>
+<svg width="100%" viewBox="0 0 680 440" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="2人は閉じず、3人で輪が閉じる（四元数の三つ組）">
+<defs><marker id="arC" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>
+<line x1="272" y1="70" x2="272" y2="360" stroke="#B4B2A9" stroke-width="0.5" stroke-dasharray="4 4"/>
+<text x="155" y="60" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="500" fill="#2C2C2A">2人：閉じない</text>
+<text x="430" y="60" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="500" fill="#2C2C2A">3人：閉じる（輪）</text>
+<line x1="124" y1="196" x2="186" y2="196" stroke="#888780" stroke-width="2" marker-end="url(#arC)"/>
+<line x1="186" y1="224" x2="124" y2="224" stroke="#888780" stroke-width="2" marker-end="url(#arC)"/>
+<circle cx="100" cy="210" r="22" fill="#F1EFE8" stroke="#888780" stroke-width="0.5"/>
+<text x="100" y="215" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#2C2C2A">A</text>
+<circle cx="210" cy="210" r="22" fill="#F1EFE8" stroke="#888780" stroke-width="0.5"/>
+<text x="210" y="215" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#2C2C2A">B</text>
+<text x="155" y="300" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#5F5E5A">決着する第三の場所がない</text>
+<line x1="448" y1="152" x2="512" y2="268" stroke="#1D9E75" stroke-width="2" marker-end="url(#arC)"/>
+<line x1="504" y1="300" x2="356" y2="300" stroke="#1D9E75" stroke-width="2" marker-end="url(#arC)"/>
+<line x1="348" y1="268" x2="412" y2="152" stroke="#1D9E75" stroke-width="2" marker-end="url(#arC)"/>
+<circle cx="430" cy="120" r="24" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+<text x="430" y="125" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#085041">i</text>
+<circle cx="530" cy="300" r="24" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+<text x="530" y="305" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#085041">j</text>
+<circle cx="330" cy="300" r="24" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+<text x="330" y="305" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#085041">k</text>
+<text x="430" y="90" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#5F5E5A">A ・ グー</text>
+<text x="530" y="342" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#5F5E5A">B ・ チョキ</text>
+<text x="330" y="342" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#5F5E5A">C ・ パー</text>
+<text x="400" y="410" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#5F5E5A">矢印は「勝つ／積が次に着地する」向き　逆回りは符号が反転（順序が効く）</text>
+</svg>
+
+<p><strong>2人</strong>は矢印が押し合うだけで、決着が落ちる先がない＝<strong>開いたまま</strong>。3人目が入って初めて輪が閉じる。だから「閉じる最小の単位」が <strong>3</strong>。</p>
+<hr />
+<h2 id="3-7-を点と線で--ファノ平面と八元数">3. 7 を点と線で — ファノ平面と八元数</h2>
+<p>7つの虚単位 e₁…e₇ を<strong>点</strong>、7つの三つ組を<strong>線</strong>とする。掛け算の規則そのものが「点と線」になる（最小の射影平面 PG(2,2)）。</p>
+<svg width="100%" viewBox="0 0 680 500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="ファノ平面による八元数の掛け算規則">
+<defs><marker id="arD" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>
+<line x1="340" y1="70" x2="530" y2="400" stroke="#888780" stroke-width="1.2"/>
+<line x1="150" y1="400" x2="530" y2="400" stroke="#888780" stroke-width="1.2"/>
+<line x1="340" y1="70" x2="340" y2="400" stroke="#888780" stroke-width="1.2"/>
+<line x1="150" y1="400" x2="435" y2="235" stroke="#888780" stroke-width="1.2"/>
+<line x1="530" y1="400" x2="245" y2="235" stroke="#888780" stroke-width="1.2"/>
+<circle cx="340" cy="290" r="110" fill="none" stroke="#888780" stroke-width="1.2"/>
+<line x1="326" y1="95" x2="259" y2="210" stroke="#1D9E75" stroke-width="2.5" marker-end="url(#arD)"/>
+<line x1="231" y1="260" x2="164" y2="375" stroke="#1D9E75" stroke-width="2.5" marker-end="url(#arD)"/>
+<circle cx="435" cy="235" r="17" fill="#F1EFE8" stroke="#888780" stroke-width="0.5"/><text x="435" y="240" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#2C2C2A">e₄</text>
+<circle cx="530" cy="400" r="17" fill="#F1EFE8" stroke="#888780" stroke-width="0.5"/><text x="530" y="405" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#2C2C2A">e₅</text>
+<circle cx="340" cy="400" r="17" fill="#F1EFE8" stroke="#888780" stroke-width="0.5"/><text x="340" y="405" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#2C2C2A">e₆</text>
+<circle cx="340" cy="290" r="17" fill="#F1EFE8" stroke="#888780" stroke-width="0.5"/><text x="340" y="295" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#2C2C2A">e₇</text>
+<circle cx="340" cy="70" r="17" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/><text x="340" y="75" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#085041">e₁</text>
+<circle cx="245" cy="235" r="17" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/><text x="245" y="240" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#085041">e₂</text>
+<circle cx="150" cy="400" r="18" fill="#FAEEDA" stroke="#BA7517" stroke-width="0.5"/><text x="150" y="405" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#633806">e₃</text>
+<text x="340" y="460" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#5F5E5A">e₁・e₂ を通る線は1本、その第三点 e₃ が積（e₁·e₂ = e₃、矢印＝向き）</text>
+<text x="340" y="482" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#5F5E5A">各点はちょうど3本の線上／どの2点も1本を共有 ＝ 7つの三つ組</text>
+</svg>
+
+<p>数え上げで確かめられる事実（比喩ではない）：</p>
+<ul>
+<li>各線は3点、各点は3本の線上、<strong>どの2点もちょうど1本の線を共有</strong>、どの2線も1点で交わる。</li>
+<li><strong>掛け算</strong>：異なる2単位を通る唯一の線の第三点が積（符号は向き）。同じ単位は <code>eᵢ² = −1</code>。</li>
+<li><strong>非結合性も点と線で</strong>：同一線上の3点は結合するが、<strong>線に乗らない3点は結合しない</strong>。四元数（3）は常に結合、八元数（7）は「線に乗らない三人組」で結合が破れる。これが 3 と 7 の質的な差。</li>
+</ul>
+<p><strong>7 ＝ この三角形（三つ組）を7枚、すきまなく編み込んだ織物</strong>。3はそれが1枚、7は7枚で織り上がる最大。</p>
+<hr />
+<h2 id="4-もう一つの説明--コストの法則対抗馬">4. もう一つの説明 — コストの法則（対抗馬）</h2>
+<p>実は「3がベスト・7が上限」には、可除代数を使わない<strong>もっと地味な説明</strong>が昔からある。これを正直に併記する——本仮説はこの対抗馬に勝たなければならないからだ。</p>
+<p><strong>コストの法則</strong>：チーム内の関係（経路）数は <code>n(n−1)/2</code> で n の2乗で増える。一方、仕事量は人数 n に比例（1乗）でしか増えない。</p>
+<svg width="100%" viewBox="0 0 680 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="チーム人数と調整経路数の増加">
+<line x1="70" y1="360" x2="630" y2="360" stroke="#888780" stroke-width="1"/>
+<rect x="94" y="349" width="50" height="11" rx="2" fill="#F1EFE8" stroke="#888780" stroke-width="0.5"/>
+<text x="119" y="341" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="500" fill="#2C2C2A">1</text><text x="119" y="380" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#5F5E5A">n=2</text>
+<rect x="172" y="328" width="50" height="32" rx="2" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+<text x="197" y="320" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="500" fill="#085041">3</text><text x="197" y="380" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#5F5E5A">n=3</text>
+<rect x="250" y="296" width="50" height="64" rx="2" fill="#F1EFE8" stroke="#888780" stroke-width="0.5"/>
+<text x="275" y="288" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="500" fill="#2C2C2A">6</text><text x="275" y="380" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#5F5E5A">n=4</text>
+<rect x="328" y="253" width="50" height="107" rx="2" fill="#F1EFE8" stroke="#888780" stroke-width="0.5"/>
+<text x="353" y="245" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="500" fill="#2C2C2A">10</text><text x="353" y="380" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#5F5E5A">n=5</text>
+<rect x="406" y="200" width="50" height="160" rx="2" fill="#F1EFE8" stroke="#888780" stroke-width="0.5"/>
+<text x="431" y="192" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="500" fill="#2C2C2A">15</text><text x="431" y="380" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#5F5E5A">n=6</text>
+<rect x="484" y="135" width="50" height="225" rx="2" fill="#FAEEDA" stroke="#BA7517" stroke-width="0.5"/>
+<text x="509" y="127" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="500" fill="#633806">21</text><text x="509" y="380" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#5F5E5A">n=7</text>
+<rect x="562" y="60" width="50" height="300" rx="2" fill="#FCEBEB" stroke="#A32D2D" stroke-width="0.5"/>
+<text x="587" y="52" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="500" fill="#791F1F">28</text><text x="587" y="380" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#5F5E5A">n=8</text>
+<circle cx="150" cy="402" r="6" fill="#1D9E75"/><text x="162" y="407" text-anchor="start" font-family="sans-serif" font-size="12" fill="#5F5E5A">最適</text>
+<circle cx="240" cy="402" r="6" fill="#BA7517"/><text x="252" y="407" text-anchor="start" font-family="sans-serif" font-size="12" fill="#5F5E5A">上限</text>
+<circle cx="330" cy="402" r="6" fill="#E24B4A"/><text x="342" y="407" text-anchor="start" font-family="sans-serif" font-size="12" fill="#5F5E5A">崩壊（頭で追えない）</text>
+</svg>
+
+<p>正味の効果 <code>Net(n) = a·n − c·n(n−1)/2</code> を最大化すると <strong>最適人数 <code>n* = a/c + 1/2</code></strong>。<strong>「スピード感」を重視する＝調整コスト c を重く見る</strong>ということ。c が大きいほど <code>n*</code> は小さくなり <strong>3 に張り付く</strong>。</p>
+<p>ただし注意が二つ。<strong>この説明では 8 に崖は出ない</strong>——コストは 21→28 と滑らかに増えるだけで、上限がどこに来るかは「頭がいくつまで追えるか」という外部パラメタ次第だ。また、よく引かれる「Miller の 7±2」は短期記憶の項目数の話であって、チーム人数の話ではない（Miller 自身が、7 の頻出は偶然かもしれないと数秘への警戒を書いている）。</p>
+<p>つまりここまでで説明は<strong>二つ</strong>ある。前章までの<strong>可除代数</strong>（3 と 7 だけが構造的に特別）と、この章の<strong>コストの法則</strong>（どの人数も特別ではなく、コストが滑らかに増えるだけ）。面白いことに、<strong>3人ではこの二つは同じ答えを出す</strong>（ペア数 3 ＝ 四元数の虚単位 3）。分かれるのは <strong>7</strong> だ——その話は §9 で。</p>
+<hr />
+<h2 id="5-3-と-7-以外で何が壊れるか">5. 3 と 7 以外で何が壊れるか</h2>
+<p>「者」の数 p ＝虚方向の数、全体次元 d = p+1。<strong>閉じて割れる関係構造</strong>を持てるのは d ∈ {1,2,4,8}、すなわち p ∈ {0,1,3,7} のみ。</p>
+<table>
+<thead>
+<tr>
+<th>者 p / 次元 d</th>
+<th>数の世界</th>
+<th>乗除のルール</th>
+<th>何が壊れるか（支配定理）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0 / 1</td>
+<td>実数 ℝ</td>
+<td>可換・結合・割れる・順序あり</td>
+<td>虚方向ゼロ＝関係が無い</td>
+</tr>
+<tr>
+<td>1 / 2</td>
+<td>複素数 ℂ</td>
+<td>可換・結合・割れる</td>
+<td>可換で向きが消え第三者が作れない</td>
+</tr>
+<tr>
+<td><strong>2 / 3</strong></td>
+<td><strong>存在しない</strong></td>
+<td>—</td>
+<td>3次元の可除代数は無い。<strong>零因子必発</strong>（Frobenius / Bott–Milnor–Kervaire）</td>
+</tr>
+<tr>
+<td><strong>3 / 4</strong></td>
+<td>四元数 ℍ ✓</td>
+<td>非可換・結合・割れる</td>
+<td>代償＝可換性を失う。3D外積で三つ組が閉じる</td>
+</tr>
+<tr>
+<td><strong>4,5,6 / 5,6,7</strong></td>
+<td><strong>存在しない</strong></td>
+<td>—</td>
+<td>可除代数なし。<strong>必ず零因子</strong></td>
+</tr>
+<tr>
+<td><strong>7 / 8</strong></td>
+<td>八元数 𝕆 ✓</td>
+<td>非可換・非結合（交代）・割れる・ノルム保存</td>
+<td>代償＝結合性を失う。7D外積が閉じる最後</td>
+</tr>
+<tr>
+<td>15 / 16</td>
+<td>十六元数 𝕊</td>
+<td>非可換・非結合・非交代・<strong>割れない</strong></td>
+<td>ノルム保存が崩れ<strong>零因子出現</strong>。掛けられるが割れない</td>
+</tr>
+</tbody>
+</table>
+<p><strong>壊れ方の核心＝零因子</strong>（<code>a≠0, b≠0</code> なのに <code>a·b=0</code>）：二つの非ゼロが結合して<strong>消える</strong>＝割り算＝解決ができない。降りていく代償の梯子（Cayley–Dickson）：<code>ℝ(順序)→ℂ(順序を失う)→ℍ(可換性を失う)→𝕆(結合性を失う)→𝕊(交代性と割り算を失う)</code>。</p>
+<h3 id="ハゲ球の定理--つむじとは何か">ハゲ球の定理 — つむじとは何か</h3>
+<p>壁の一番わかりやすい姿。<strong>つむじ＝方向を敷きつめようとしたとき、どうしても向きが決まらない一点。</strong></p>
+<svg width="100%" viewBox="0 0 680 445" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="つむじ（cowlick）とハゲ球の定理">
+<defs><marker id="arE" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>
+<circle cx="140" cy="122" r="42" fill="none" stroke="#888780" stroke-width="1"/>
+<line x1="162" y1="118" x2="162" y2="133" stroke="#D85A30" stroke-width="1.5" marker-end="url(#arE)"/>
+<line x1="151" y1="137" x2="138" y2="145" stroke="#D85A30" stroke-width="1.5" marker-end="url(#arE)"/>
+<line x1="129" y1="137" x2="116" y2="130" stroke="#D85A30" stroke-width="1.5" marker-end="url(#arE)"/>
+<line x1="118" y1="118" x2="118" y2="103" stroke="#D85A30" stroke-width="1.5" marker-end="url(#arE)"/>
+<line x1="129" y1="99" x2="142" y2="91" stroke="#D85A30" stroke-width="1.5" marker-end="url(#arE)"/>
+<line x1="151" y1="99" x2="164" y2="106" stroke="#D85A30" stroke-width="1.5" marker-end="url(#arE)"/>
+<circle cx="140" cy="118" r="4" fill="#E24B4A"/>
+<text x="140" y="182" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#5F5E5A">頭のつむじ</text>
+<circle cx="340" cy="120" r="42" fill="none" stroke="#888780" stroke-width="1" stroke-dasharray="4 4"/>
+<line x1="362" y1="120" x2="362" y2="135" stroke="#D85A30" stroke-width="1.5" marker-end="url(#arE)"/>
+<line x1="351" y1="139" x2="338" y2="147" stroke="#D85A30" stroke-width="1.5" marker-end="url(#arE)"/>
+<line x1="329" y1="139" x2="316" y2="132" stroke="#D85A30" stroke-width="1.5" marker-end="url(#arE)"/>
+<line x1="318" y1="120" x2="318" y2="105" stroke="#D85A30" stroke-width="1.5" marker-end="url(#arE)"/>
+<line x1="329" y1="101" x2="342" y2="93" stroke="#D85A30" stroke-width="1.5" marker-end="url(#arE)"/>
+<line x1="351" y1="101" x2="364" y2="109" stroke="#D85A30" stroke-width="1.5" marker-end="url(#arE)"/>
+<circle cx="340" cy="120" r="4" fill="#E24B4A"/>
+<text x="340" y="182" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#5F5E5A">台風の目</text>
+<circle cx="540" cy="125" r="42" fill="none" stroke="#888780" stroke-width="1"/>
+<ellipse cx="540" cy="125" rx="42" ry="13" fill="none" stroke="#888780" stroke-width="0.5"/>
+<line x1="562" y1="108" x2="562" y2="123" stroke="#D85A30" stroke-width="1.5" marker-end="url(#arE)"/>
+<line x1="551" y1="127" x2="538" y2="135" stroke="#D85A30" stroke-width="1.5" marker-end="url(#arE)"/>
+<line x1="529" y1="127" x2="516" y2="120" stroke="#D85A30" stroke-width="1.5" marker-end="url(#arE)"/>
+<line x1="518" y1="108" x2="518" y2="93" stroke="#D85A30" stroke-width="1.5" marker-end="url(#arE)"/>
+<line x1="529" y1="89" x2="542" y2="81" stroke="#D85A30" stroke-width="1.5" marker-end="url(#arE)"/>
+<line x1="551" y1="89" x2="564" y2="97" stroke="#D85A30" stroke-width="1.5" marker-end="url(#arE)"/>
+<circle cx="540" cy="108" r="4" fill="#E24B4A"/>
+<text x="540" y="182" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#5F5E5A">球はつむじが残る</text>
+<text x="340" y="210" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#5F5E5A">向きが決まらない一点（つむじ・赤）が必ず残る ＝ 梳けない</text>
+<circle cx="230" cy="300" r="38" fill="none" stroke="#1D9E75" stroke-width="1"/>
+<line x1="268" y1="300" x2="268" y2="286" stroke="#1D9E75" stroke-width="1.5" marker-end="url(#arE)"/>
+<line x1="249" y1="333" x2="261" y2="326" stroke="#1D9E75" stroke-width="1.5" marker-end="url(#arE)"/>
+<line x1="211" y1="333" x2="223" y2="340" stroke="#1D9E75" stroke-width="1.5" marker-end="url(#arE)"/>
+<line x1="192" y1="300" x2="192" y2="314" stroke="#1D9E75" stroke-width="1.5" marker-end="url(#arE)"/>
+<line x1="211" y1="267" x2="199" y2="274" stroke="#1D9E75" stroke-width="1.5" marker-end="url(#arE)"/>
+<line x1="249" y1="267" x2="237" y2="260" stroke="#1D9E75" stroke-width="1.5" marker-end="url(#arE)"/>
+<text x="230" y="360" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#5F5E5A">円（1次元）は梳ける</text>
+<ellipse cx="450" cy="300" rx="55" ry="34" fill="none" stroke="#888780" stroke-width="1"/>
+<ellipse cx="450" cy="300" rx="24" ry="14" fill="none" stroke="#888780" stroke-width="1"/>
+<line x1="438" y1="266" x2="462" y2="266" stroke="#1D9E75" stroke-width="1.5" marker-end="url(#arE)"/>
+<line x1="505" y1="288" x2="505" y2="312" stroke="#1D9E75" stroke-width="1.5" marker-end="url(#arE)"/>
+<line x1="462" y1="334" x2="438" y2="334" stroke="#1D9E75" stroke-width="1.5" marker-end="url(#arE)"/>
+<line x1="395" y1="312" x2="395" y2="288" stroke="#1D9E75" stroke-width="1.5" marker-end="url(#arE)"/>
+<text x="450" y="360" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#5F5E5A">トーラスは梳ける</text>
+<text x="340" y="392" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#5F5E5A">つむじゼロで梳ける ＝ 矛盾ない向きを全体に敷ける</text>
+<text x="340" y="424" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="500" fill="#2C2C2A">球で完全に梳けるのは 次元 0・1・3・7 だけ ＝ 掛けて割れる世界（3と7）</text>
+</svg>
+
+<p>頭の毛を全部なでつけても必ず一箇所は渦になる。地球の風は球面に沿う向きの場なので、地上には<strong>必ず無風点</strong>がある。「完全に梳ける＝空間全体に矛盾のない向きを一斉に敷ける＝掛け算・割り算が成立する」。これができる球は <strong>S⁰, S¹, S³, S⁷</strong> の四つだけ（＝次元 1,2,4,8 の数の世界＝3と7）。</p>
+<blockquote>
+<p><strong>但し書き</strong>：日常版のハゲ球は「向きを1本、消えないように敷けるか」で偶数次元球が失敗する話。数の世界（割り算）に効くのはより強い「独立な向きのフルセット（枠）を敷けるか＝平行化可能」で、これを満たす球が S⁰,S¹,S³,S⁷。つむじの絵は入口のイメージ。</p>
+</blockquote>
+<hr />
+<h2 id="6-組織の役割--リーダーは要るか">6. 組織の役割 — リーダーは要るか</h2>
+<p>7人を三つ組で編んだ網（ファノ平面）の自己同型は位数168の PSL(2,7) で、<strong>どの人も構造的に同格</strong>、区別された中心が無い。<strong>接続のためにはリーダーは要らない</strong>——構造が自分自身のリーダー。</p>
+<p>要るのは「<strong>向き付け</strong>」。ファノ平面は静止画にすぎず、<strong>動く積（八元数）にするには各三つ組の線に一貫した向き（符号規約）を与える</strong>必要がある。<strong>リーダーの数学的正体は「ハブ」ではなく「符号規約」</strong>。そして非結合性ゆえ、方向は決められても実行を一列に線形化できない＝<strong>7人チームは構造上、分散でしか動けない</strong>。</p>
+<p>1人を区別すると（外的な非対称：希少スキル等）、時空の 3+3 分割と同じことが起きる。</p>
+<svg width="100%" viewBox="0 0 680 500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="リーダーを1人立てた7者：3つのリーダー三つ組と4つのピア三つ組">
+<line x1="340" y1="70" x2="150" y2="400" stroke="#1D9E75" stroke-width="1.5"/>
+<line x1="340" y1="70" x2="530" y2="400" stroke="#1D9E75" stroke-width="1.5"/>
+<line x1="150" y1="400" x2="530" y2="400" stroke="#1D9E75" stroke-width="1.5"/>
+<circle cx="340" cy="290" r="110" fill="none" stroke="#1D9E75" stroke-width="1.5"/>
+<line x1="340" y1="70" x2="340" y2="400" stroke="#D85A30" stroke-width="2.5"/>
+<line x1="150" y1="400" x2="435" y2="235" stroke="#D85A30" stroke-width="2.5"/>
+<line x1="530" y1="400" x2="245" y2="235" stroke="#D85A30" stroke-width="2.5"/>
+<circle cx="340" cy="70" r="17" fill="#F1EFE8" stroke="#888780" stroke-width="0.5"/><text x="340" y="75" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#2C2C2A">e₁</text>
+<circle cx="245" cy="235" r="17" fill="#F1EFE8" stroke="#888780" stroke-width="0.5"/><text x="245" y="240" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#2C2C2A">e₂</text>
+<circle cx="150" cy="400" r="17" fill="#F1EFE8" stroke="#888780" stroke-width="0.5"/><text x="150" y="405" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#2C2C2A">e₃</text>
+<circle cx="435" cy="235" r="17" fill="#F1EFE8" stroke="#888780" stroke-width="0.5"/><text x="435" y="240" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#2C2C2A">e₄</text>
+<circle cx="530" cy="400" r="17" fill="#F1EFE8" stroke="#888780" stroke-width="0.5"/><text x="530" y="405" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#2C2C2A">e₅</text>
+<circle cx="340" cy="400" r="17" fill="#F1EFE8" stroke="#888780" stroke-width="0.5"/><text x="340" y="405" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#2C2C2A">e₆</text>
+<circle cx="340" cy="290" r="19" fill="#FAECE7" stroke="#D85A30" stroke-width="0.5"/><text x="340" y="295" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#712B13">L</text>
+<circle cx="150" cy="462" r="7" fill="#D85A30"/><text x="164" y="467" text-anchor="start" font-family="sans-serif" font-size="12" fill="#5F5E5A">リーダー三つ組 3本（全員に届く）</text>
+<circle cx="420" cy="462" r="7" fill="#1D9E75"/><text x="434" y="467" text-anchor="start" font-family="sans-serif" font-size="12" fill="#5F5E5A">ピア三つ組 4本（自走）</text>
+</svg>
+
+<p>区別された1人を通る三つ組は<strong>ちょうど3本</strong>で、残り6人を3つの二人組に完全に仕分けて<strong>全員に直接届く</strong>。残り<strong>4本はその人を通らずピアだけで自走</strong>。各フォロワーは「縦1本＋横2本」を持つ。<strong>1人のリーダーが全体を統べることは構造上できない</strong>（4/7 は分散のまま）。</p>
+<hr />
+<h2 id="7-意識複素平面二軸が直交するなら">7. 意識＝複素平面（二軸が直交するなら）</h2>
+<p>ここで個の側へ。<strong>物質軸と精神軸が直交する</strong>なら、意識には<strong>複素数の世界</strong>が数学的に馴染む。</p>
+<ul>
+<li>直交する2本の実軸＝<strong>複素平面</strong>。虚単位 <code>i</code> は「<strong>物質を精神へ回す90度回転</strong>」。</li>
+<li>一つの意識の状態 ＝ <code>z = 物質 + i·精神</code>。<strong>大きさ <code>|z|</code>＝意識の強度</strong>、<strong>位相（角度）＝物質と精神のバランス</strong>。</li>
+<li>これは虚方向1本＝<code>p=1</code>＝<strong>複素数 ℂ ＝「一つの意識」</strong>。可換・結合・割れる＝<strong>調和的</strong>。ただし虚1本なので第三者が生まれず、<strong>単独では創発がない</strong>。</li>
+</ul>
+<h3 id="中心的緊張要検証最重要">中心的緊張（要検証・最重要）</h3>
+<p>既存の <strong>CN-009</strong>（切り口と相補的射影）は、物質的/精神的な2つの切り口を「<strong>直交軸ではなく相補的射影（非可換な観測量に近い）</strong>」とし四象限を棄却している。本仮説の前提①「物質⊥精神→ℂ」と正面から緊張する。</p>
+<ul>
+<li>2軸が<strong>直交</strong>なら → 個の意識は <strong>ℂ</strong>（可換）。</li>
+<li>2軸が<strong>非可換な相補</strong>なら → 個の意識は既に <strong>ℍ 寄り</strong>（非可換）。</li>
+</ul>
+<p>「直交(ℂ) か 非可換相補(ℍ的) か」の裁定が、個の意識モデルの形を決める。dual-aspect / Pauli–Jung 予想（心物中立的実在からの相補的分岐）とも接続する。<strong>急いで解かない保持論点</strong>。</p>
+<p>→ この節の主張を感情心理学の実証に照らして検査した結果（2026-07-03、何が支持され何が空振りだったか）は §9 に記す。</p>
+<hr />
+<h2 id="8-帰結と仮説">8. 帰結と仮説</h2>
+<p>三つの壁を重ねると、「者」の数 p に許されるのは <strong>p ∈ {0,1,3,7}</strong> のみ。</p>
+<ul>
+<li><strong>p=0（実数）</strong>：関係が存在しない。</li>
+<li><strong>p=1（複素数）</strong>：可換で第三者が生まれず、三つ組が作れない＝<strong>一つの意識</strong>。</li>
+<li><strong>p=2,4,5,6</strong>：可除代数が存在せず、零因子で崩れる。</li>
+<li><strong>p=3（四元数）</strong>：成立。可換性を代償に、二人が第三に着地して閉じる<strong>最小の集団</strong>。</li>
+<li><strong>p=7（八元数）</strong>：成立。結合性を代償に、意味が保存される<strong>最大の集団</strong>。</li>
+<li><strong>p≥8</strong>：割り算が死ぬ（零因子）。</li>
+</ul>
+<p><strong>個の意識は複素数 ℂ の形、組織はその上の四元数（3）と八元数（7）の形</strong>。物質⊥精神という一つの平面が、他者と関わって虚方向を増やしていくと、<strong>閉じたまま到達できるのは 3 と 7 だけ</strong>。個と組織は<strong>同一の可除代数の梯子の、solo の段（ℂ）と collective の段（ℍ・𝕆）</strong>。</p>
+<h3 id="仮説前提と定理を分離">仮説（前提と定理を分離）</h3>
+<blockquote>
+<p><strong>可除代数‑意識/組織仮説</strong>：意識のゲートに上る信号が <strong>物質⊥精神の二軸</strong>であるなら、個の意識は <strong>複素数 ℂ</strong> の形をとる。その意識が他者と関わり創発するとき、系は虚方向を増やすが、「関係が閉じて割れる（解決する）」ことを保つ限り、非自明に成立する集団は <strong>3（四元数）と 7（八元数）のみ</strong>。ゆえに個（ℂ）と組織（ℍ/𝕆）は同一の可除代数の梯子の別の段であり、<strong>組織設計とは、個の複素的意識を、閉じたまま多体へ拡張する操作</strong>である。</p>
+</blockquote>
+<ul>
+<li><strong>前提（解釈の賭け）</strong>：物質⊥精神 ／ 意識＝複素数 ／ 価値＝関係の閉じ。</li>
+<li><strong>定理（硬い部分）</strong>：Frobenius・Hurwitz・Bott–Milnor–Kervaire・Adams（Hopf不変量1）・外積の定理・ハゲ球（平行化）・Fano=Steiner S(2,3,7)。</li>
+</ul>
+<p>この仮説がその後の検証でどうなったか——何が支持され、何が棄却されたか——は次の §9 に正直に記す。</p>
+<h3 id="repo-分担">repo 分担</h3>
+<ul>
+<li><strong>as（awareness-space）</strong>：ℂ ＝ 物質⊥精神の平面。意識モデル側（強度と位相）。</li>
+<li><strong>pd（project-design）</strong>：ℍ・𝕆 ＝ 3人細胞・7人上限の組織論側。本件主管。</li>
+<li><strong>cs（creation-space）</strong>：30領域調査を参照素材として利用（義務は負わない）。</li>
+</ul>
+<hr />
+<h2 id="9-検証の現在地--何が死に何が残ったか2026-07-03-更新">9. 検証の現在地 — 何が死に、何が残ったか（2026-07-03 更新）</h2>
+<p>この仮説は検証プログラムとして走っている。進むたびに、この節を<strong>うまくいかなかった部分も含めて</strong>更新する。</p>
+<h3 id="先に誤解しないための段差">先に、誤解しないための段差</h3>
+<p>この節には「棄却」という言葉が出てくるが、<strong>数学が死んだのではない</strong>。この仮説は強さの違う三つの読み方の積み重ねで、死んだのは一番上の一枚だけだ。</p>
+<table>
+<thead>
+<tr>
+<th>読み方</th>
+<th>主張</th>
+<th>状態</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>数学（定理）</td>
+<td>掛けて割れる数の体系は次元 1,2,4,8 のみ。虚方向が閉じるのは 3 と 7 だけ</td>
+<td><strong>無傷</strong>（証明がある）</td>
+</tr>
+<tr>
+<td>強い読み（自然法則）</td>
+<td>だから現実でも 4,5,6 人のチームは構造的に成立<strong>しない</strong></td>
+<td><strong>棄却</strong>（下記）</td>
+</tr>
+<tr>
+<td>弱い読み（設計原理）</td>
+<td>3 と 7 を<strong>選べば</strong>、関係が閉じたまま拡張できる</td>
+<td><strong>存続</strong>（現在の形）</td>
+</tr>
+</tbody>
+</table>
+<p>そして出発点の素朴体験は、むしろ実証に支持されている。「3がベスト」は 3–4人 &gt; 5–6人 のデータと合い、「7が上限」は上限帯 7–9 として残る。外れたのは「8で<strong>急に</strong>重くなる」の「急に」だけだ。</p>
+<h3 id="どこまでが数学か">どこまでが数学か</h3>
+<p>主張を三層に分けて検査した。<strong>定理</strong>（証明がある部分：数の梯子が 1,2,4,8 で止まること、ファノ平面の性質）は硬い。<strong>対応の賭け</strong>（人＝虚方向、価値＝割り算、という現実への写像）はまだ賭けのまま。そして数学の構造が現実側で仕事をしていない対応は<strong>数秘</strong>——「数が合う」だけの装飾——に転落する。この検査基準を先に立てた。</p>
+<h3 id="死んだ部分--3と7しかないという法則">死んだ部分 — 「3と7しかない」という法則</h3>
+<p>強い読みがもっとも大胆な予言をしているのは、3と7の<strong>あいだ</strong>の数だ——「4,5,6人のチームは零因子で崩れ、解決ができないはず」。だからそこが検証地点になる（5 や 6 が「新しい特別な数」として浮上したのではない。<strong>反例の証人</strong>として呼ばれただけだ）。実際のチーム研究を調べた結果、<strong>記述法則としての強い読みは棄却された</strong>。</p>
+<ul>
+<li>5人や6人のチームは普通に存在し、普通に機能する（329の実働グループを調べた研究では 3–4人 &gt; 5–6人 &gt; 7–10人 の順で、逓減は5–6人で既に始まっていた）。「4,5,6人は構造的に成立しない」という予言は現実に合わない。</li>
+<li><strong>8人での崖も見つからなかった</strong>。人数による性能低下は滑らかで（べき乗則）、急落が実証されているのはむしろ20人前後（内閣サイズの研究）。</li>
+<li>実証が支持する正直な帯は「<strong>最適 3–5 人・上限 7–9 人</strong>」。ちょうど3・ちょうど7という一点は主張できない。</li>
+</ul>
+<h3 id="たとえ--アーチとモルタル">たとえ — アーチとモルタル</h3>
+<p>死んだものと残ったものの違いは、アーチ橋で考えるとわかりやすい。</p>
+<p>アーチには、自重だけで完全に釣り合う理想の曲線（カテナリー）がある。数学は「この形だけが釣り合う」と証明する——それは真だ。だが理想形でないアーチも、<strong>モルタルを多めに使えば立つ</strong>。</p>
+<ul>
+<li>「理想形以外は<strong>崩落する</strong>」と読めば誤り。これが棄却された強い読み。</li>
+<li>「理想形だけが<strong>モルタルなしで立つ</strong>」と読めば真。これが存続する設計原理。</li>
+</ul>
+<p>5〜6人チームは「モルタル（余分な調整コスト）で立っているアーチ」であり、3 と 7 は「構造だけで閉じる形」。だから 5 人チームが普通に働いている光景は数学への反証ではなく、<strong>現実のチームがモルタルを使えることの証拠</strong>にすぎない。問いは「立つか崩れるか」から「<strong>どれだけのモルタルで立っているか</strong>」に変わる。</p>
+<h3 id="残った部分--むしろ鋭くなった予測">残った部分 — むしろ鋭くなった予測</h3>
+<p>ところが、棄却作業の副産物として、仮説の<strong>検証可能な核</strong>がはっきりした。</p>
+<p>可除代数の読みとコスト法則の読みは、<strong>7人のところで初めて違う絵を描く</strong>。コスト法則にとって7人チームの実体は「21本のペア」。八元数にとっては「<strong>7つの重なり合う三人組</strong>」——ファノ平面の掛け算則そのものだ。</p>
+<svg width="100%" viewBox="0 0 680 480" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="同じ7人21本の関係が、ペアの網と7つの三つ組という二つの読みに分かれる">
+<text x="170" y="50" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="500" fill="#2C2C2A">コスト法則の読み：21本のペア</text>
+<text x="510" y="50" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="500" fill="#2C2C2A">八元数の読み：7つの三つ組</text>
+<line x1="340" y1="60" x2="340" y2="400" stroke="#B4B2A9" stroke-width="0.5" stroke-dasharray="4 4"/>
+<g stroke="#B4B2A9" stroke-width="1">
+<line x1="170" y1="110" x2="264" y2="155"/><line x1="170" y1="110" x2="287" y2="257"/><line x1="170" y1="110" x2="222" y2="338"/><line x1="170" y1="110" x2="118" y2="338"/><line x1="170" y1="110" x2="53" y2="257"/><line x1="170" y1="110" x2="76" y2="155"/>
+<line x1="264" y1="155" x2="287" y2="257"/><line x1="264" y1="155" x2="222" y2="338"/><line x1="264" y1="155" x2="118" y2="338"/><line x1="264" y1="155" x2="53" y2="257"/><line x1="264" y1="155" x2="76" y2="155"/>
+<line x1="287" y1="257" x2="222" y2="338"/><line x1="287" y1="257" x2="118" y2="338"/><line x1="287" y1="257" x2="53" y2="257"/><line x1="287" y1="257" x2="76" y2="155"/>
+<line x1="222" y1="338" x2="118" y2="338"/><line x1="222" y1="338" x2="53" y2="257"/><line x1="222" y1="338" x2="76" y2="155"/>
+<line x1="118" y1="338" x2="53" y2="257"/><line x1="118" y1="338" x2="76" y2="155"/>
+<line x1="53" y1="257" x2="76" y2="155"/>
+</g>
+<g stroke-width="2" fill="none">
+<g stroke="#0F6E56"><line x1="510" y1="110" x2="604" y2="155"/><line x1="604" y1="155" x2="562" y2="338"/><line x1="562" y1="338" x2="510" y2="110"/></g>
+<g stroke="#BA7517"><line x1="604" y1="155" x2="627" y2="257"/><line x1="627" y1="257" x2="458" y2="338"/><line x1="458" y1="338" x2="604" y2="155"/></g>
+<g stroke="#A32D2D"><line x1="627" y1="257" x2="562" y2="338"/><line x1="562" y1="338" x2="393" y2="257"/><line x1="393" y1="257" x2="627" y2="257"/></g>
+<g stroke="#2B5797"><line x1="562" y1="338" x2="458" y2="338"/><line x1="458" y1="338" x2="416" y2="155"/><line x1="416" y1="155" x2="562" y2="338"/></g>
+<g stroke="#6B4A9E"><line x1="458" y1="338" x2="393" y2="257"/><line x1="393" y1="257" x2="510" y2="110"/><line x1="510" y1="110" x2="458" y2="338"/></g>
+<g stroke="#1D9E75"><line x1="393" y1="257" x2="416" y2="155"/><line x1="416" y1="155" x2="604" y2="155"/><line x1="604" y1="155" x2="393" y2="257"/></g>
+<g stroke="#D85A30"><line x1="416" y1="155" x2="510" y2="110"/><line x1="510" y1="110" x2="627" y2="257"/><line x1="627" y1="257" x2="416" y2="155"/></g>
+</g>
+<g font-family="sans-serif" font-size="12">
+<circle cx="170" cy="110" r="13" fill="#F1EFE8" stroke="#888780" stroke-width="0.5"/><text x="170" y="114" text-anchor="middle" fill="#2C2C2A">1</text>
+<circle cx="264" cy="155" r="13" fill="#F1EFE8" stroke="#888780" stroke-width="0.5"/><text x="264" y="159" text-anchor="middle" fill="#2C2C2A">2</text>
+<circle cx="287" cy="257" r="13" fill="#F1EFE8" stroke="#888780" stroke-width="0.5"/><text x="287" y="261" text-anchor="middle" fill="#2C2C2A">3</text>
+<circle cx="222" cy="338" r="13" fill="#F1EFE8" stroke="#888780" stroke-width="0.5"/><text x="222" y="342" text-anchor="middle" fill="#2C2C2A">4</text>
+<circle cx="118" cy="338" r="13" fill="#F1EFE8" stroke="#888780" stroke-width="0.5"/><text x="118" y="342" text-anchor="middle" fill="#2C2C2A">5</text>
+<circle cx="53" cy="257" r="13" fill="#F1EFE8" stroke="#888780" stroke-width="0.5"/><text x="53" y="261" text-anchor="middle" fill="#2C2C2A">6</text>
+<circle cx="76" cy="155" r="13" fill="#F1EFE8" stroke="#888780" stroke-width="0.5"/><text x="76" y="159" text-anchor="middle" fill="#2C2C2A">7</text>
+<circle cx="510" cy="110" r="13" fill="#F1EFE8" stroke="#888780" stroke-width="0.5"/><text x="510" y="114" text-anchor="middle" fill="#2C2C2A">1</text>
+<circle cx="604" cy="155" r="13" fill="#F1EFE8" stroke="#888780" stroke-width="0.5"/><text x="604" y="159" text-anchor="middle" fill="#2C2C2A">2</text>
+<circle cx="627" cy="257" r="13" fill="#F1EFE8" stroke="#888780" stroke-width="0.5"/><text x="627" y="261" text-anchor="middle" fill="#2C2C2A">3</text>
+<circle cx="562" cy="338" r="13" fill="#F1EFE8" stroke="#888780" stroke-width="0.5"/><text x="562" y="342" text-anchor="middle" fill="#2C2C2A">4</text>
+<circle cx="458" cy="338" r="13" fill="#F1EFE8" stroke="#888780" stroke-width="0.5"/><text x="458" y="342" text-anchor="middle" fill="#2C2C2A">5</text>
+<circle cx="393" cy="257" r="13" fill="#F1EFE8" stroke="#888780" stroke-width="0.5"/><text x="393" y="261" text-anchor="middle" fill="#2C2C2A">6</text>
+<circle cx="416" cy="155" r="13" fill="#F1EFE8" stroke="#888780" stroke-width="0.5"/><text x="416" y="159" text-anchor="middle" fill="#2C2C2A">7</text>
+</g>
+<text x="340" y="400" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#5F5E5A">左右は同じ7人・同じ21本。右では21本が7色の三角形に過不足なく編み直される</text>
+<text x="340" y="424" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#5F5E5A">どのペアもちょうど1つの三角形に属し、どの人もちょうど3つの三角形に属す（ファノの掛け算則）</text>
+<text x="340" y="456" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="500" fill="#2C2C2A">どちらの読みが現実のよく回るチームに近いかは、観測で決められる</text>
+</svg>
+
+<p>八元数の読みが正しければ、よく機能する7人前後のチームはこう見えるはずだ：</p>
+<ul>
+<li>調整は<strong>三人組単位</strong>で回る（21本のペアを全員が管理するのではなく）。</li>
+<li>どのペアにも「その二人の関係が帰属するホームの三人組」が<strong>一つだけ</strong>ある。</li>
+<li>各メンバーは<strong>ちょうど3つ</strong>の三人組に属し、三人組同士は人を共有して重なり合う。</li>
+<li>三人組の<strong>中では</strong>段取りの順序を気にしなくてよいが、三人組を<strong>またぐ</strong>調整は「誰経由で先に通すか」で結果が変わる。</li>
+</ul>
+<p>この予測を直接調べた研究は<strong>まだ存在しない</strong>。ただし周辺の証拠は面白い方向を向いている。社会学では、三人組に埋め込まれたペアが裸のペアより強く安定なことが実証されている（Simmel の三人組論、Krackhardt の Simmelian ties）。軍事組織では、中国の三三制・レジスタンスの3人細胞など、独立な伝統が繰り返し<strong>3人を設計単位</strong>に選んできた。そしてチームが壊れるときの典型は「<strong>重ならない2つの塊</strong>への分裂」（faultline 研究）——重なり合う三人組の網とは正反対の構造だ。既存のネットワーク分析手法で検証できるところまで、問いは具体化された。</p>
+<h3 id="意識複素平面の検証--平面は当たり掛け算は空振り2026-07-03-追記">意識＝複素平面の検証 — 平面は当たり、掛け算は空振り（2026-07-03 追記）</h3>
+<p>§7 の「個の意識＝複素平面」を、感情心理学の実証に照らして検査した（詳細は RR-004）。ここでも読み方に段差をつける。死んだ・残ったが一枚岩ではないからだ。</p>
+<table>
+<thead>
+<tr>
+<th>読み方</th>
+<th>主張</th>
+<th>状態</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>平面の読み（極座標）</td>
+<td>意識の状態は2軸平面上の<strong>点</strong>。中心からの距離＝強度、角度＝状態の種類</td>
+<td><strong>強く支持</strong>（感情心理学の定番モデルと同じ絵）</td>
+</tr>
+<tr>
+<td>体の読み（複素数 ℂ）</td>
+<td>その平面では<strong>掛け算・割り算</strong>まで働く（<code>i²=−1</code>、回転伸縮、除法）</td>
+<td><strong>空振り</strong>（掛け算に対応する現象が見つからない）</td>
+</tr>
+<tr>
+<td>軸の読み（物質⊥精神）</td>
+<td>平面を張る2軸は「物質」と「精神」で、<strong>直交</strong>する</td>
+<td><strong>未接地</strong>＋直交そのものが揺らぐ（下記）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>当たった部分——平面と極座標。</strong> 感情心理学には circumplex（円環）モデルという40年物の定番がある（Russell 1980）。無数の感情語を統計的に並べると、2次元平面上の<strong>円環</strong>に整列する。標準的な読み方は極座標で、<strong>角度が感情の種類</strong>（喜び・恐れ・安らぎ…が円周上に並ぶ）、<strong>中心からの距離が強度</strong>（中心＝中立、周縁ほど強い）。これは §7 の「<code>|z|</code>=意識の強度、位相=バランス」と<strong>同じ絵</strong>だ。素朴体験Aの「二軸の平面」という直観は、心理学の主流モデルに合流する。</p>
+<p><strong>空振りだった部分——ℂ の掛け算。</strong> ただし、複素数が複素数である理由は平面ではなく<strong>掛け算</strong>にある（§2 で見たとおり、<code>i</code> の正体は回転で、数の梯子を駆動するのは「掛けて割れる」性質だ）。ところが感情科学は、感情の混合や変化を<strong>足し算</strong>（線形結合・平均）で書いている。掛け算——位相の加算・強度の乗算という回転伸縮、<code>i</code> 倍＝「物質を精神へ回す90度」、割り算＝関係の解消——が仕事をしている場面は、調べた範囲で<strong>一つも見つからなかった</strong>。</p>
+<p>たとえるなら、<strong>関数電卓を買って、足し算しか押していない</strong>。盤面（平面）は確かに合っている。だが ℂ 特有の機能ボタンはまだ一度も押されていない。押される場面が実証されたときだけ「意識＝ℂ」は装飾でなくなる——これを反証条件 <strong>F5</strong> として先に明文化した（感情の合成が足し算で尽きるなら、ℂ という看板は外して「平面＋極座標」に格下げする）。</p>
+<p><strong>軸の読みで起きた、予想外の展開。</strong> 心理学の平面を張る2軸は「快-不快 × 覚醒-沈静」であって「物質 × 精神」<strong>ではない</strong>。物質/精神の軸をこの平面に写せるかは、実証の裏づけがない追加の賭けとして残った。さらに面白いのは直交性そのものだ。大規模データ（Kuppens らの8データセット）では、2軸のあいだに<strong>弱いV字の依存</strong>があり、その形が<strong>人と文化で変わる</strong>——つまり「固定された直交」は厳密には成り立たない。これは §7 の保持論点「直交(ℂ)か、非可換相補(ℍ的)か」への裁定材料だが、答えは<strong>どちらでもなかった</strong>：軸の関係は固定されておらず、文脈で動く。二者択一だった問いが「<strong>そもそも一つの固定した代数に意識を同定してよいのか</strong>」というより深い問いに開き直された。保持論点は解消でなく、より面白い形で開いたままになった。</p>
+<h3 id="現在のスコアボード">現在のスコアボード</h3>
+<table>
+<thead>
+<tr>
+<th>主張</th>
+<th>状態</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>数の梯子は 1,2,4,8 で止まる／3と7だけが閉じる</td>
+<td><strong>定理</strong>（確定）</td>
+</tr>
+<tr>
+<td>「3と7の人数しか成立しない」</td>
+<td><strong>棄却</strong>（5,6人チームは存在し機能する）</td>
+</tr>
+<tr>
+<td>「8人目で急に重くなる」＝零因子</td>
+<td>実証なし（崖は見つからず、逓減は滑らか）</td>
+</tr>
+<tr>
+<td>「3と7を<strong>選べば</strong>、閉じたまま拡張できる」</td>
+<td><strong>設計原理として存続</strong>（本仮説の現在の形）</td>
+</tr>
+<tr>
+<td>7人組織＝重なり合う7つの三人組</td>
+<td><strong>未検証・検証可能</strong>（上図。次の主戦場）</td>
+</tr>
+<tr>
+<td>意識の状態＝平面上の点（距離=強度・角度=種類）</td>
+<td><strong>強く支持</strong>（circumplex と同じ絵）</td>
+</tr>
+<tr>
+<td>個の意識＝複素数 ℂ（掛け算まで働く）</td>
+<td><strong>空振り</strong>（感情の合成は足し算で書かれている。F5 が生死点）</td>
+</tr>
+<tr>
+<td>その平面の2軸＝物質⊥精神</td>
+<td><strong>未接地</strong>（心理学の軸は快-不快×覚醒。直交自体も人と文化で揺らぐ）</td>
+</tr>
+</tbody>
+</table>
+<p>仮説は縮んだのではない。<strong>「何でも説明する物語」から「外れうる予測を持つ仮説」に変わった</strong>。ここからが本番だ。</p>
+<hr />
+<h2 id="参照">参照</h2>
+<ul>
+<li>epic Issue: pd#115（本仮説の検証プログラム）／ 検証の詳細: RR-002（同型性の厳密化・判定枠）, RR-003（チームサイズ実証地形・2問裁定）, RR-004（意識＝複素平面・circumplex 検証）</li>
+<li>概念ノート: CN-010（可除代数‑意識/組織仮説）</li>
+<li>関連: CN-009（切り口と相補的射影）, <code>research/awareness-model/</code>, 創造5段階(cs), 波と渦/縁(pd#107)</li>
+<li>数学: J. Baez "The Octonions"; Conway &amp; Smith "On Quaternions and Octonions"</li>
+<li>チーム研究: Wheelan (2009); Hackman &amp; Vidmar (1970); Klimek, Hanel &amp; Thurner (2009); Krackhardt の Simmelian tie 分析（書誌は RR-003 参照）</li>
+<li>感情研究: Russell (1980) circumplex; Posner, Russell &amp; Peterson (2005); Kuppens, Tuerlinckx, Russell &amp; Barrett (2013); Barrett (2017) 構成主義的情動理論（書誌とアクセスレベルは RR-004 参照）</li>
+</ul>
+
+</article>
+<footer>
+  この読み物は検証プログラム（pd#115）の進行に合わせて更新されます。<br>
+  <a href="https://uminomae.github.io/project-design/">プロジェクトデザイン論</a> ・
+  <a href="https://github.com/uminomae/project-design">GitHub</a>
+</footer>
+</body>
+</html>

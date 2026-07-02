@@ -2,11 +2,12 @@
 
 ## Git
 - branch: develop
-- pd HEAD: develop=**9b6e9fd** / main=**902ed82**（全公開済）
+- pd HEAD: develop=**cbdfb3e** / main=**0314487**（pd#116 RR-004 + READER §9 公開済・push 済）
 - remote: synced
-- 関連: cs develop=**1418438** / cs main=**67fb985**
+- 関連: cs develop=**2cbd91e** / cs main=**6522065**（cs#254 v1 まで）
 
 ## 🔵 進行中 2026-07-03 (seq05) — pd#116 調査軸② 意識＝複素平面の検証（RR-004）+ READER §9 公開
+- **pd#116 CLOSED**（コメント https://github.com/uminomae/project-design/issues/116#issuecomment-4867283713 ）。develop cbdfb3e → main 0314487 マージ・push 済（pjdhiro「公開する」指示）
 - **pd#116 完了（RR-004 作成）**: `knowledge/research/two-axis-closure/RR-004-consciousness-complex-plane-circumplex.md`
   - **裁定＝意識＝ℂ の空虚リスク confirm**: circumplex（Russell 1980）は ℝ²-polar 層（半径=強度・角度=種類）で強く接地するが、**ℂ-field 固有の積・除・`i²=−1` は遊休**（Posner/Russell/Peterson 2005: 感情＝二次元の「線形結合」＝ℝ² ベクトル空間）。回転 U(1) のみ faint な例外だが乗法的閉包ではない
   - **前提①の再評価**: circumplex の直交対は valence×arousal であって物質×精神ではない → 前提①は circumplex から直接の裏づけを得られず、物質/精神への対応は未接地の追加措定
@@ -26,7 +27,14 @@
 - **develop↔main 乖離を統合公開**（pjdhiro「全情報保持」指示）: main notes/ workspace 全保持 + develop wiki/RR/reader §9 統合
 - **迷い込みディレクトリ削除**: `content/content` `src/src` を $TMPDIR 退避
 - **worktree** `heuristic-ramanujan-452e39` は破棄可
-- **残（pjdhiro 専権/判断・未着手）**: DOI 列構造化（破壊的スキーマ変更・要 go/design）/ RR-001 最終採否（理論採否=専権）/ cs#254 全面拡大（120×2 へ機械抽出+lint 化の go/no-go）/ pjdhiro repo WIP 184ファイル（所有者判断）
+- **【seq04 続き 2026-07-03】pjdhiro 判断5件を「順に」処理完了**:
+  - **pd#112 残38ペア cross-check 完了**（上記に統合済）: Haken DOI 修正のみ、他は整合
+  - **D18-S12 Simmel**: 降格せず維持決着（上記）
+  - **DOI 列構造化 → 見送り確定**（pjdhiro 判断）: テキスト埋め込み運用継続。破壊的スキーマ変更は ROI 低のため実施せず
+  - **RR-001 採否 → T層採用・実証保留**（pjdhiro 裁定、pd#118 コメント）: doc status review→closed(resolution)。組織適用は gate OPEN 継続（3455970）
+  - **cs#254 → 機械抽出 v1 実装**（pjdhiro: 段階拡大）: `scripts/audit-public-grounding.py`（cs main 6522065）。公開60本から §/頁アンカー抽出→tier 突合。OK107/FLAG47/REVIEW4。FLAG は真の候補（Jauss/Hart/Turner 等 T5 帰属）。削除/再接地は pjdhiro 承認要（次段）
+  - **pjdhiro repo WIP 184ファイル**: 所有者判断のまま（未着手）
+- **残（次段・pjdhiro 判断）**: cs#254 FLAG47件の処置（削除/精読昇格/教科書除外の仕分け・承認要）/ pjdhiro repo WIP 184
 
 ## ⏸ セッション終了 2026-07-02 (seq03) — 監査→cs#253/254 執行→RR-001→方針変更
 - ログ: pd `log-20260702-03.md` / cs `log-20260702-01.md` / pjdhiro `log-20260702-01.md` / 横断 `SESSION-20260702-03.md`
