@@ -158,6 +158,30 @@
     white-space: nowrap;
 }
 
+/* 誤解FAQ アコーディオン（DESIGN-RULES §9 パターン） */
+.reader-article details {
+    background: var(--glass-bg-soft);
+    border: 1px solid var(--glass-border-soft);
+    border-radius: 6px;
+    padding: 0 1.25rem;
+    margin: 1rem 0;
+}
+
+.reader-article summary {
+    cursor: pointer;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    font-family: var(--sans);
+    font-size: 0.95rem;
+    color: var(--ink);
+    padding: 0.5rem 0;
+}
+
+.reader-article details[open] {
+    padding-bottom: 1rem;
+}
+
 .reader-footer {
     max-width: 760px;
     margin: 0 auto;
