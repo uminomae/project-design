@@ -244,17 +244,21 @@ function main() {
 
   const brokenSamples = [];
   const suspiciousSlashLinks = [];
+  // wikilink.md は記法説明ページで、解決しない例示リンクを意図的に含む。
+  // broken 抽出のソースから除外する（孤立判定の EXCLUDE と同じ扱い。pd#120）。
+  const BROKEN_SRC_EXCLUDE = new Set(["wikilink"]);
   for (const f of allFiles) {
     const text = readFileSync(f, "utf8");
     const { body } = parseFrontMatter(text);
     const srcStem = basename(f, ".md");
+    const skipBroken = BROKEN_SRC_EXCLUDE.has(srcStem);
     const links = extractLinks(body);
     for (const target of links) {
       totalLinks++;
       const canonical = byStem.get(target);
       if (canonical) {
         if (canonical !== srcStem) backrefs.get(canonical).add(srcStem);
-      } else {
+      } else if (!skipBroken) {
         broken++;
         if (brokenSamples.length < 20) brokenSamples.push({ from: srcStem, target });
       }
