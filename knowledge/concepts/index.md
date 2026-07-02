@@ -18,6 +18,7 @@
 | CN-007 | [ISS-42 測定設計原則](CN-007_iss42-measurement-design-principles.md) | ISS-42, CN-005 | 正典 |
 | CN-008 | [PD 3テーマブリッジ — 保持論点](CN-008_pd-bridge-holding-issues.md) | D1, D2, D3, D3-a, D4 | active |
 | CN-009 | [切り口と相補的射影 — Being/Doing は分割でなく観測の構え](CN-009_cut-complementary-projection.md) | PD総論, 創造5段階 | 探索的 |
+| CN-010 | [可除代数‑意識/組織仮説 — 個の意識(ℂ)と組織(ℍ/𝕆)は同一の梯子](CN-010_division-algebra-consciousness-organization.md) | pd#115, CN-009, awareness-model | 探索的・草稿 |
 
 ---
 
@@ -27,3 +28,4 @@
 |------|------|
 | 2026-04-07 | 初版作成（techo#101） |
 | 2026-06-01 | CN-009 追加（PD推敲 A-2/A-3 吟味より） |
+| 2026-07-02 | CN-010 追加（可除代数‑意識/組織仮説、pd#115） |
