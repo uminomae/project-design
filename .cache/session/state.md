@@ -2,9 +2,18 @@
 
 ## Git
 - branch: develop
-- pd HEAD: **f456756**
+- pd HEAD: **288254b**（develop push 済）/ pd main は乖離（下記 seq04 警告）
 - remote: synced
-- 関連: cs develop=**8382990**
+- 関連: cs develop=**ef97b46** / cs main=**d1394c7**（マージ済）
+
+## 🔵 進行中 2026-07-02 (seq04) — スキル正本修正（cs#256 + pd#120）
+- **完了・push 済**:
+  - cs#256 スキル5件（ef97b46→main d1394c7）: source-note-gen Step3 bold 検査 / domain-report パス全面書き直し / agent-team-workflow ポインタ / commit-review-with-log RETIRED / nl-debug 期待値 135/125/0/0
+  - pd#120 スキル2件（develop 288254b、cherry-pick）: wiki-compile symlink 記述 / agent-team-workflow「全リポジトリ共通」前提
+- **迷い込みディレクトリ削除**（pjdhiro OK）: main repo の `content/content` `src/src`（再帰コピー）を $TMPDIR に退避
+- **⚠️ pd develop↔main 乖離を発見（pjdhiro 判断要）**: main のみ notes/ workspace（37ed817, 2026-06-26）/ develop のみ wiki+RR-001/002/003+reader §9 ~40 commit。develop→main は①RR 研究ドラフト公開=pjdhiro 専権 ②notes/ 突合、の両方絡み単純マージ不可。skill 修正は develop 止め
+- **本セッション worktree**: `heuristic-ramanujan-452e39`（branch claude/...）は古い develop 基点。skill commit は develop へ cherry-pick で反映済。worktree branch 自体は破棄可
+- **残（次アクション）**: cs#256 年ドリフト4件 / pd#120 responsive-test B5・wiki-lint・codex/periodic 去就・cs-as-component パス（承認要）/ 前回 seq03 の pjdhiro 判断待ち5件
 
 ## ⏸ セッション終了 2026-07-02 (seq03) — 監査→cs#253/254 執行→RR-001→方針変更
 - ログ: pd `log-20260702-03.md` / cs `log-20260702-01.md` / pjdhiro `log-20260702-01.md` / 横断 `SESSION-20260702-03.md`
