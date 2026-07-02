@@ -43,9 +43,10 @@ review_state: 未レビュー
 ## 書誌情報
 - 著者: Raffaella Di Marzio
 - 年: 2020（掲載）
-- 出典: The Journal of CESNUR, Volume 4, Issue 3, May-June 2020, pages 57-69
+- 出典: The Journal of CESNUR, Volume 4, Issue 3, May-June 2020, pages 57-69（"People Trapped Inside Shincheonji: Broadcasting the Darker Side of Deprogramming"）
 - access_status: raw-confirmed
-- **DOI**: [10.26338/tjoc.2019.3.2.3](https://doi.org/10.26338/tjoc.2019.3.2.3)
+- **DOI**: [10.26338/tjoc.2020.4.3.4](https://doi.org/10.26338/tjoc.2020.4.3.4)
+- ⚠️ **manifest 登録との不一致**: cs manifest（`D24-S02`）とファイル名は Di Marzio (2019) "Experiences of Affiliation, Conversion, 'Brainwashing,' and Departure"（DOI 10.26338/tjoc.2019.3.2.3）を登録しているが、実際に取得・精読された PDF は同著者 (2020) の Shincheonji 論文である。**本ページの内容・DOI は実読の2020年論文に準拠**。cs 側 manifest の正規化は別途（pd#112 cross-check 記録）。
 
 ## ソース参照（GitHub・検証用）
 
