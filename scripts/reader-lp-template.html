@@ -1,204 +1,78 @@
 <!DOCTYPE html>
+<!--
+  ⚠️ このファイルは生成物です。直接編集しないでください。
+  正本:   knowledge/research/two-axis-closure/READER-division-algebra-consciousness-organization.md
+  再生成: python3 scripts/build-reader-lp.py
+  手順:   reader/README.md
+
+  デザイン必須制約: docs/DESIGN-RULES.md §0a
+  - 全公開ページは index.html の VI を継承する（シェーダー背景 + グロークラス体系 + 確立パレット）
+  - カラー/タイポは src/styles/tokens.css の CSS 変数のみ。独自テーマ・埋め込み standalone CSS の新造は禁止
+  - ページ固有スタイルは src/styles/reader.css（tokens + glow の上に載せる）
+-->
 <html lang="ja">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>なぜ 3 と 7 だけが特別なのか — 可除代数‑意識/組織仮説（読み物）</title>
-<meta name="description" content="「チームは3がベスト・7が上限」という体感と「物質/精神の二軸」という体感を、数の梯子（ℝ→ℂ→ℍ→𝕆）で貫く仮説の読み物。定理と解釈の賭けを分けて記し、検証の現在地を——うまくいかなかった部分も含めて——随時更新する。">
-<link rel="canonical" href="https://uminomae.github.io/project-design/reader/three-and-seven.html">
-<meta property="og:title" content="なぜ 3 と 7 だけが特別なのか — 可除代数‑意識/組織仮説">
-<meta property="og:description" content="二つの素朴体験から数の梯子をたどる読み物。定理と賭けを分け、検証の現在地を随時更新する。">
-<meta property="og:type" content="article">
-<meta property="og:url" content="https://uminomae.github.io/project-design/reader/three-and-seven.html">
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": "なぜ 3 と 7 だけが特別なのか — 可除代数‑意識/組織仮説（読み物）",
-  "inLanguage": "ja",
-  "dateModified": "<!--UPDATED-->",
-  "author": {"@type": "Person", "name": "pjdhiro"},
-  "isPartOf": {"@type": "WebSite", "name": "プロジェクトデザイン論", "url": "https://uminomae.github.io/project-design/"}
-}
-</script>
-<style>
-:root {
-  --lp-bg: #FAF8F2;
-  --lp-panel: #FFFFFF;
-  --lp-line: #E7E4DB;
-  --lp-line-soft: #D8D4C8;
-  --lp-text: #2C2C2A;
-  --lp-sub: #5F5E5A;
-  --lp-accent: #0F6E56;
-  --lp-warm: #BA7517;
-  --lp-soft: #F1EFE8;
-  --lp-serif: "Noto Serif JP", "Yu Mincho", "Hiragino Mincho ProN", serif;
-  --lp-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif;
-  --lp-mono: "SF Mono", "Fira Code", Consolas, monospace;
-}
-* { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
-body {
-  margin: 0;
-  background: var(--lp-bg);
-  color: var(--lp-text);
-  font-family: var(--lp-sans);
-  line-height: 2;
-  -webkit-text-size-adjust: 100%;
-}
-.hero {
-  max-width: 760px;
-  margin: 0 auto;
-  padding: 4.5rem 1.5rem 1rem;
-  text-align: center;
-}
-.hero h1 {
-  font-family: var(--lp-serif);
-  font-size: clamp(1.6rem, 5vw, 2.4rem);
-  font-weight: 600;
-  letter-spacing: 0.08em;
-  line-height: 1.6;
-  margin: 0 0 1rem;
-}
-.hero .subtitle {
-  color: var(--lp-sub);
-  font-size: 0.95rem;
-  letter-spacing: 0.06em;
-  margin: 0 0 1.5rem;
-}
-.hero .meta {
-  color: var(--lp-sub);
-  font-size: 0.82rem;
-  letter-spacing: 0.04em;
-}
-.hero .meta a { color: var(--lp-accent); }
-article {
-  max-width: 760px;
-  margin: 0 auto;
-  padding: 0 1.5rem 4rem;
-  font-size: 1.02rem;
-}
-article > blockquote:first-child {
-  border: none;
-  background: var(--lp-soft);
-  border-radius: 10px;
-  padding: 1.2rem 1.5rem;
-  margin: 2rem 0 2.5rem;
-  color: var(--lp-sub);
-  font-size: 0.95rem;
-}
-article h2 {
-  font-family: var(--lp-serif);
-  font-size: 1.45rem;
-  font-weight: 600;
-  letter-spacing: 0.06em;
-  line-height: 1.7;
-  margin: 4.5rem 0 1.5rem;
-  padding-left: 0.9rem;
-  border-left: 4px solid var(--lp-accent);
-}
-article h3 {
-  font-size: 1.1rem;
-  font-weight: 600;
-  letter-spacing: 0.04em;
-  margin: 3rem 0 1rem;
-  color: var(--lp-text);
-}
-article svg {
-  display: block;
-  width: 100%;
-  height: auto;
-  margin: 2.2rem 0;
-  background: var(--lp-panel);
-  border: 1px solid var(--lp-line);
-  border-radius: 12px;
-}
-article table {
-  display: block;
-  overflow-x: auto;
-  border-collapse: collapse;
-  margin: 1.8rem 0;
-  font-size: 0.9rem;
-  line-height: 1.8;
-}
-article th, article td {
-  padding: 0.55rem 0.8rem;
-  border-bottom: 1px solid var(--lp-line);
-  text-align: left;
-  vertical-align: top;
-  min-width: 6em;
-}
-article th {
-  background: var(--lp-soft);
-  font-weight: 600;
-  white-space: nowrap;
-}
-article code {
-  font-family: var(--lp-mono);
-  font-size: 0.88em;
-  background: var(--lp-soft);
-  padding: 0.1em 0.4em;
-  border-radius: 4px;
-}
-article pre {
-  background: var(--lp-soft);
-  border-radius: 10px;
-  padding: 1rem 1.3rem;
-  overflow-x: auto;
-  line-height: 1.7;
-}
-article pre code { background: none; padding: 0; }
-article blockquote {
-  border-left: 3px solid var(--lp-warm);
-  margin: 1.5rem 0;
-  padding: 0.2rem 0 0.2rem 1.2rem;
-  color: var(--lp-sub);
-}
-article a { color: var(--lp-accent); text-decoration-thickness: 1px; text-underline-offset: 3px; }
-article hr {
-  border: none;
-  border-top: 1px dashed var(--lp-line-soft);
-  margin: 3.5rem 0;
-}
-article ul, article ol { padding-left: 1.5em; }
-article li { margin: 0.4em 0; }
-footer {
-  max-width: 760px;
-  margin: 0 auto;
-  padding: 2rem 1.5rem 4rem;
-  border-top: 1px solid var(--lp-line);
-  color: var(--lp-sub);
-  font-size: 0.82rem;
-  text-align: center;
-  letter-spacing: 0.04em;
-}
-footer a { color: var(--lp-accent); }
-@media (max-width: 480px) {
-  .hero { padding: 3rem 1rem 0.5rem; }
-  article { padding: 0 1rem 3rem; font-size: 0.98rem; }
-  article h2 { margin-top: 3.5rem; }
-  article th, article td { padding: 0.45rem 0.6rem; }
-}
-</style>
+    <script>
+    if (!/^(localhost|127\.0\.0\.1)$/.test(location.hostname)) {
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-X5WQCB3JYT';
+      document.head.appendChild(s);
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-X5WQCB3JYT');
+    }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>なぜ 3 と 7 だけが特別なのか — 可除代数‑意識/組織仮説（読み物） | Project Design</title>
+    <link rel="canonical" href="https://uminomae.github.io/project-design/reader/three-and-seven.html">
+    <link rel="icon" href="../favicon.ico">
+    <meta name="description" content="「チームは3がベスト・7が上限」という体感と「物質/精神の二軸」という体感を、数の梯子（ℝ→ℂ→ℍ→𝕆）で貫く仮説の読み物。定理と解釈の賭けを分けて記し、検証の現在地を——うまくいかなかった部分も含めて——随時更新する。">
+    <meta property="og:title" content="なぜ 3 と 7 だけが特別なのか — 可除代数‑意識/組織仮説">
+    <meta property="og:description" content="二つの素朴体験から数の梯子をたどる読み物。定理と賭けを分け、検証の現在地を随時更新する。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://uminomae.github.io/project-design/reader/three-and-seven.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Noto+Sans+JP:wght@300;400;500&family=Noto+Serif+JP:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../src/style.css">
+    <link rel="stylesheet" href="../src/styles/reader.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "なぜ 3 と 7 だけが特別なのか — 可除代数‑意識/組織仮説（読み物）",
+      "inLanguage": "ja",
+      "dateModified": "<!--UPDATED-->",
+      "author": {"@type": "Person", "name": "pjdhiro"},
+      "isPartOf": {"@type": "WebSite", "name": "プロジェクトデザイン論", "url": "https://uminomae.github.io/project-design/"}
+    }
+    </script>
 </head>
 <body>
-<header class="hero">
-  <h1>なぜ 3 と 7 だけが<br>特別なのか</h1>
-  <p class="subtitle">可除代数‑意識/組織仮説 — 読み物</p>
-  <p class="meta">
-    最終更新: <!--UPDATED--> ／ 検証は進行中（§9 を随時更新）<br>
-    <a href="https://github.com/uminomae/project-design/blob/main/knowledge/research/two-axis-closure/READER-division-algebra-consciousness-organization.md">正本 (GitHub)</a> ・
-    <a href="https://github.com/uminomae/project-design/issues/115">検証プログラム pd#115</a> ・
-    <a href="../index.html">プロジェクトデザイン論</a>
-  </p>
-</header>
-<article>
+    <div id="webgl-container" aria-hidden="true"></div>
+    <div id="content">
+        <header class="reader-hero">
+            <h1 class="glow-heading">なぜ 3 と 7 だけが特別なのか</h1>
+            <p class="reader-subtitle glow-text">可除代数‑意識/組織仮説 — 読み物</p>
+            <p class="reader-meta glow-text">
+                最終更新: <!--UPDATED--> ／ 検証は進行中（§9 を随時更新）<br>
+                <a href="https://github.com/uminomae/project-design/blob/main/knowledge/research/two-axis-closure/READER-division-algebra-consciousness-organization.md">正本 (GitHub)</a> ・
+                <a href="https://github.com/uminomae/project-design/issues/115">検証プログラム pd#115</a> ・
+                <a href="../index.html">プロジェクトデザイン論</a>
+            </p>
+        </header>
+        <article class="reader-article prose-block glow-text">
 <!--BODY-->
-</article>
-<footer>
-  この読み物は検証プログラム（pd#115）の進行に合わせて更新されます。<br>
-  <a href="https://uminomae.github.io/project-design/">プロジェクトデザイン論</a> ・
-  <a href="https://github.com/uminomae/project-design">GitHub</a>
-</footer>
+        </article>
+        <footer class="reader-footer glow-text">
+            この読み物は検証プログラム（pd#115）の進行に合わせて更新されます。<br>
+            <a href="../index.html">プロジェクトデザイン論</a> ・
+            <a href="https://github.com/uminomae/project-design">GitHub</a>
+        </footer>
+    </div>
+    <script type="module" src="../src/reader-app.js"></script>
 </body>
 </html>

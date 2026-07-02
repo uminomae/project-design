@@ -34,7 +34,10 @@
   - **RR-001 採否 → T層採用・実証保留**（pjdhiro 裁定、pd#118 コメント）: doc status review→closed(resolution)。組織適用は gate OPEN 継続（3455970）
   - **cs#254 → 機械抽出 v1 実装**（pjdhiro: 段階拡大）: `scripts/audit-public-grounding.py`（cs main 6522065）。公開60本から §/頁アンカー抽出→tier 突合。OK107/FLAG47/REVIEW4。FLAG は真の候補（Jauss/Hart/Turner 等 T5 帰属）。削除/再接地は pjdhiro 承認要（次段）
   - **pjdhiro repo WIP 184ファイル**: 所有者判断のまま（未着手）
-- **残（次段・pjdhiro 判断）**: cs#254 FLAG47件の処置（削除/精読昇格/教科書除外の仕分け・承認要）/ pjdhiro repo WIP 184
+  - **cs#254 FLAG 仕分け表 完成**（cs main 37203f1）: `knowledge/raw/audit/cs254-flag-triage.md`（P1事実として2/P2散文13/P3対応表32）
+- **⛔ cs#254 実修正の唯一のブロッカー = pjdhiro WIP 184**: 実態はヒーロー画像追加 **+ Overview節削除 + PDF59再生成の構造的作り替え（−128行・内容削除含む）**。当初「無害な画像バッチ」と誤説明→ pjdhiro が「バッチ先行コミット」承認したが、実態確認で内容削除判明のため**未実行**（独断コミットせず差し戻し）。cs#254 P1 対象(D17)がこの WIP と同一ファイルで重なる
+- **次セッションの入口（1点）**: pjdhiro が WIP 184 を commit/破棄 → cs#254 P1(D17「事実として」2件 再接地/温度↓) → P2(13) → P3(32 方針決定) を1回のクリーン作業で
+- **ログ（seq04 継続）**: pd `log-20260703-02.md` / cs `log-20260703-02.md` / 横断 `SESSION-20260703-02.md`
 
 ## ⏸ セッション終了 2026-07-02 (seq03) — 監査→cs#253/254 執行→RR-001→方針変更
 - ログ: pd `log-20260702-03.md` / cs `log-20260702-01.md` / pjdhiro `log-20260702-01.md` / 横断 `SESSION-20260702-03.md`

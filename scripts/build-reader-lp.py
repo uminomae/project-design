@@ -6,6 +6,11 @@
 使い方: python3 scripts/build-reader-lp.py
 
 READER を更新したら本スクリプトを再実行して LP を追随させる。
+
+デザイン必須制約（docs/DESIGN-RULES.md §0a）:
+- 全公開ページは index.html の VI を継承する（シェーダー背景 + グロークラス体系 + 確立パレット）
+- テンプレート（scripts/reader-lp-template.html）や後処理を変更するときも上記を満たすこと
+- 独自テーマ・埋め込み standalone CSS の新造は禁止（却下実例: DESIGN-RULES §8b 2026-07-03）
 """
 import re
 import subprocess
@@ -39,6 +44,13 @@ def main() -> None:
 
     # 先頭 H1 はテンプレートの hero と重複するため除去
     html = re.sub(r"<h1[^>]*>.*?</h1>\s*", "", html, count=1)
+
+    # DESIGN-RULES §0a: グロークラス体系を生成 HTML に適用する
+    # 見出しは .glow-heading（本文の glow は article 側の .glow-text が担う）
+    html = re.sub(r"<h([23])( |>)", lambda m: f'<h{m.group(1)} class="glow-heading"' + (" " if m.group(2) == " " else ">"), html)
+    # 図版（インライン SVG）と表は .glow-card の白ガラスパネルに載せる
+    html = re.sub(r"(<svg\b.*?</svg>)", r'<figure class="glow-card reader-figure">\1</figure>', html, flags=re.S)
+    html = re.sub(r"(<table\b.*?</table>)", r'<div class="glow-card reader-table">\1</div>', html, flags=re.S)
 
     page = TPL.read_text(encoding="utf-8")
     page = page.replace("<!--BODY-->", html).replace("<!--UPDATED-->", updated)
