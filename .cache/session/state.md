@@ -2,26 +2,19 @@
 
 ## Git
 - branch: develop
-- pd HEAD: develop=**6ad2676** / main=**0a5893c**（develop→main 全公開済・乖離解消）
+- pd HEAD: develop=**a6e09d0** / main=**3f0db2f**（全公開済・乖離解消）
 - remote: synced
-- 関連: cs develop=**ef97b46** / cs main=**d1394c7**
+- 関連: cs develop=**15dc2e1** / cs main=**30e9301**
 
-## 🔵 進行中 2026-07-02 (seq04) — スキル正本修正（cs#256）+ pd#120 保守 + develop/main 統合公開
-- **cs#256 スキル5件**（ef97b46→main d1394c7）: source-note-gen Step3 bold 検査 / domain-report パス全面書き直し / agent-team-workflow ポインタ / commit-review-with-log RETIRED / nl-debug 期待値 135/125/0/0。**残: 年ドリフト4件（pjdhiro 判断）**
-- **pd#120 スキル2件 + 保守多数**（develop 6ad2676→main 0a5893c）:
-  - skill: wiki-compile symlink 記述 / agent-team-workflow「全リポジトリ共通」前提
-  - responsive B5 FAIL 解消（footer 12px、5/5 PASS）
-  - wiki-lint: wikilink 例示ページ除外（broken ノイズ2件）
-  - 孤立5件に導線（0 orphans）/ broken wikilink 3件解消（Iser・North 平文化、Braudel 再ポイント）
-  - **access-lint FAIL 4件解消**: blocked-access 降格済み原典の wiki ページ削除（D09-S09/D11-S16/D11-S01/D23-S07、pd#114 鎖の不変条件）。index 330→326。cs#252 read-list で追跡済
-  - outbox 一斉アーカイブ: pd 59 + cs 61 + as 96 = 216 件
-- **develop↔main 乖離を統合公開（pjdhiro「全情報保持でマージ」指示）**: main の notes/ workspace 全保持 + develop の wiki/RR/reader §9 を統合。CLAUDE.md は両側統合（公開リポ閲覧権限 + design-system 撤回/関連リポ更新）。マージ 84ee5d0→pd#120 保守後 0a5893c
-- **迷い込みディレクトリ削除**（pjdhiro OK）: main repo の `content/content` `src/src` を $TMPDIR 退避
-- **worktree** `heuristic-ramanujan-452e39` は古い develop 基点。skill commit は cherry-pick 済。破棄可
-- **残（pjdhiro 判断・承認要）**:
-  - cs#256 年ドリフト4件（D10-S04/D15-S06/D17-S08/D29-S06 の正しい年確定）
-  - pd#120: codex-review 去就（mcp__codex 未設定で休眠）/ periodic-review 入口設定 / **cs-as-component.md パス誤り修正（.claude/rules 変更＝承認要）** / wiki-conflict-20260619 判断 / as inbox 33件（issue 状況確認要）
-  - 前回 seq03 の pjdhiro 判断待ち: D18-S12 Simmel 降格 / DOI 列構造化 / pjdhiro repo WIP 184ファイル / RR-001 採否 / cs#254 全面拡大
+## ✅ セッション 2026-07-02 (seq04) — cs#256 + pd#120 完了・CLOSE、pd#112 conflict 解消
+- **cs#256 CLOSED**（develop 15dc2e1→main 30e9301）: スキル5件 + 年ドリフト4件（取得原典の実年に是正、validate PASS）
+  - 年ドリフト: D10-S04 Tonegawa=1987 Nobel講演 / D15-S06 幽玄論=1944(NDL確認) / D17-S08 Lenneberg=1969 Science論文 / D29-S06 Clauset=2007 tech report 併記
+- **pd#120 CLOSED**（develop a6e09d0→main 3f0db2f）: skill記述2件 + responsive B5(12px,5/5) + wiki-lint wikilink除外 + 孤立5件導線 + broken 3件 + access-lint FAIL 4件削除(鎖の不変条件) + cs-as-component パス(承認済) + codex-review dormant化(歴史保持) + periodic-review 手動運用確立 + outbox archive(pd59+cs61+as96) + as inbox 33件archive(issue全closed確認)
+- **pd#112 wiki-conflict 3件解消**（OPEN継続=38ペア未実施）: D13-S05 Dewey機関名(シカゴ大)/D13-S06 1910版精読注記/D24-S02 Di Marzio 実読=2020 Shincheonji論文にDOI是正
+- **develop↔main 乖離を統合公開**（pjdhiro「全情報保持」指示）: main notes/ workspace 全保持 + develop wiki/RR/reader §9 統合。CLAUDE.md 両側統合
+- **迷い込みディレクトリ削除**: `content/content` `src/src` を $TMPDIR 退避
+- **worktree** `heuristic-ramanujan-452e39` は破棄可（skill commit は cherry-pick 済）
+- **残（前回 seq03 からの pjdhiro 判断待ち・未着手）**: D18-S12 Simmel 降格 / DOI 列構造化 / pjdhiro repo WIP 184ファイル / RR-001 採否 / cs#254 全面拡大 / pd#112 残38ペア cross-check
 
 ## ⏸ セッション終了 2026-07-02 (seq03) — 監査→cs#253/254 執行→RR-001→方針変更
 - ログ: pd `log-20260702-03.md` / cs `log-20260702-01.md` / pjdhiro `log-20260702-01.md` / 横断 `SESSION-20260702-03.md`
