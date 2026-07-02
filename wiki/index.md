@@ -1,6 +1,6 @@
 ---
 title: "Wiki Index"
-compiled: "2026-06-25"
+compiled: "2026-07-02"
 ---
 # Wiki -- Map of Content
 
@@ -185,7 +185,7 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D08_tononi_2015_consciousness-here-there-and|意識はここに、そこに、どこにでも？— IIT による問いの再定式化]]
 - [[sources/D08_varela_1991_embodied-mind|身体化された心（The Embodied Mind）— 神経科学の視点]]
 
-#### D09 生命科学 (14件)
+#### D09 生命科学 (13件)
 - [[sources/D09_attwell_2001_attwell-laughlin-2001-an|脳灰白質の信号伝達のエネルギー収支]]
 - [[sources/D09_england_2013_statistical-physics-of-self|自己複製の統計力学 — 熱力学的下限の導出]]
 - [[sources/D09_fields_2015_fields-2015-a-new|活動依存的ミエリン化 — 神経系可塑性の新しい機構]]
@@ -197,7 +197,6 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D09_pellerin_1994_pellerin-magistretti-1994-glutamate|グルタミン酸のアストロサイトへの取り込みが好気的解糖を刺激する（Pellerin & Magistretti 1994）]]
 - [[sources/D09_schafer_2012_2012-microglia-sculpt-postnatal|ミクログリアによる発達期シナプスの活動依存的・補体依存的な刈り込み]]
 - [[sources/D09_schultz_1997_schultz-dayan-montague-1997|予測と報酬の神経基盤 — ドーパミンによる予測誤差符号化]]
-- [[sources/D09_tsukada_1993_tsukada-ohsumi-1993-isolation|酵母オートファジー欠損変異体の単離と特徴づけ（Tsukada & Ohsumi 1993）]]
 - [[sources/D09_whitacre_2012_biological-robustness|生物学的ロバスト性 — パラダイム・メカニズム・系統原理]]
 - [[sources/D09_wolpert_1969_1969|位置情報と細胞分化の空間パターン（Wolpert 1969）]]
 
@@ -210,7 +209,7 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D10_serhan_2014_pro-resolving-lipid-mediators|炎症収束を促進する脂質メディエーター — Resolution Physiology]]
 - [[sources/D10_tonegawa_1987_nobel-lecture|抗体多様性の体細胞生成（ノーベル講演）]]
 
-#### D11 薬学 (12件)
+#### D11 薬学 (10件)
 - [[sources/D11_blanco_2015_principles-of-nanoparticle-design|ナノ粒子設計の原理 — 薬物送達の生物学的バリアを越えるには]]
 - [[sources/D11_csermely_2011_2011|Allo-Network Drugs — 細胞ネットワークにおけるアロステリーの活用]]
 - [[sources/D11_davies_2010_antibiotic-resistance|抗生物質耐性の起源と進化 — 耐性遺伝子の太古からの存在と人為的加速]]
@@ -219,8 +218,6 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D11_ich_2023_q9-r1-guideline|ICH Q9(R1) 品質リスクマネジメントガイドライン]]
 - [[sources/D11_li_2014_network-pharmacology-qishenyiqi|漢方薬QiShenYiQiのネットワーク薬理学研究]]
 - [[sources/D11_mitchell_2021_2021|薬物送達のための精密ナノ粒子の工学（Mitchell et al. 2021）]]
-- [[sources/D11_moffat_2017_2017|表現型創薬の機会と課題：産業界の視点（Moffat et al. 2017）]]
-- [[sources/D11_paul_2010_m-et-al|製薬産業の R&D 生産性向上 — 大問題への分析]]
 - [[sources/D11_tognoli_2009_brain-coordination-dynamics-true|脳の協調ダイナミクス — 位相同期の真と偽]]
 - [[sources/D11_wu_2014_chinese-medicine|ネットワーク薬理学による漢方処方「君臣佐使」の検証]]
 
@@ -365,12 +362,11 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D22_tuckman_1977_jensen-m-a-c|小集団発達の諸段階・再訪（Tuckman & Jensen 1977）]]
 - [[sources/D22_wenger_2010_communities-of-practice-and|実践コミュニティと社会的学習システム]]
 
-#### D23 発達心理学 (11件)
+#### D23 発達心理学 (10件)
 - [[sources/D23_kartner_2024_early-social-cognitive-development|初期社会-認知発達は動的発達システム — Lifeworld アプローチ]]
 - [[sources/D23_kegan_1982_evolving-self|進化する自己]]
 - [[sources/D23_kim_2024_understanding-explore-exploit-dynamics|子ども発達における探索-活用ダイナミクス]]
 - [[sources/D23_kinoshita_2001_self-image|幼児は自己映像を「自分のこと」として見ているか？]]
-- [[sources/D23_luyckx_2006_2006|コミットメントと探索の解きほぐし：後期青年期アイデンティティ形成の統合モデル（Luyckx et al. 2006）]]
 - [[sources/D23_nakama_2014_dids-japanese-version|多次元アイデンティティ発達尺度（DIDS）日本語版]]
 - [[sources/D23_rochat_2003_2003|乳幼児期に展開する自己意識の 5 レベル]]
 - [[sources/D23_tononi_2014_integrated-information-theory-3|現象学からメカニズムへ — 統合情報理論 3.0]]

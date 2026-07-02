@@ -62,6 +62,7 @@ PD は designerly thinking と business design thinking を明確に分節する
 - [[sources/design-thinking/Dorst_2011_core-of-design-thinking|Dorst (2011)]] -- design thinking の核心を framing に求める
 - [[sources/design-thinking/Rittel-Webber_1973_wicked-problems|Rittel & Webber (1973)]] -- wicked problems の原典
 - [[sources/design-thinking/Johansson-Skoldberg_2013_design-thinking-layers|Johansson-Skoldberg et al. (2013)]] -- 3層モデルの基礎
+- [[sources/pd/design-thinking-integrated|デザイン思考 — PD 統合分析]] -- 上記文献を PD 文脈で束ねた統合分析
 
 ## ソース参照
 
