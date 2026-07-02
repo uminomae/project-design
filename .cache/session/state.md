@@ -19,6 +19,8 @@
   - RR-008（零因子の事前定義=**解決不能アトラクタ対**（Gottman gridlock + 固定点アトラクタ）。**採否 pjdhiro 判断待ち**）
   - RR-009（F2 未発動維持・片刃と明記。証拠の質低=era 比較は periodic-review 監視）
   - RR-001 出典埋め完了（Massey 定理文照合 ✅照 / Aut(Fano)=168 総当たり機械検証 ✅計。全行 ✅ 到達）
+- **§0a 宣言の履行完了**: 誤解FAQ §10（4件、pd#110 表に記録→details 実装）/ responsive-test を複数 URL 化し LP を対象追加（両ページ 5/5 PASS）
+- **次フェーズ表 N1-N5 を README に起票**: 判断待ち2件 / F4' as inbox 掲示（`proposal-pd115-f4prime-order-experiment.md`）/ F3 実データ / era 監視 / FAQ 運用
 - **pjdhiro 判断待ち（新規2件）**: ①前提②の振幅読みへの移設（RR-007）②零因子事前定義の採用（RR-008）
 - 原点セッションの参照方法確立: `mcp session search_session_transcripts` → jsonl 直読み（cs worktree hopeful-noyce の quaternion セッション）
 
