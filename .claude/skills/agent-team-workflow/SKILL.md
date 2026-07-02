@@ -4,7 +4,7 @@ description: |
   マルチエージェントチームによる汎用ワークフロー。
   SURVEY → REVIEW → PLAN → REVIEW → EXECUTE → REVIEW → CLOSE の7フェーズ。
   共通REVIEWエンジンと検証プリミティブV1-V6を持つ。
-  全リポジトリ共通。正本は project-design。
+  正本は project-design。team-* agents 4種が揃うのは pd のみ（cs は 2種、as/kdt はゼロ）。
 triggers: |
   「エージェントチームで」「マルチエージェントで」「チームレビューして」
   「agent-team-workflow で」
@@ -54,6 +54,7 @@ agent: "CLI"
 
 - `CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS=1` が `.claude/settings.json` の `env` に設定されていること
 - `.claude/agents/team-researcher.md`、`.claude/agents/team-planner.md`、`.claude/agents/team-critic.md`、`.claude/agents/team-worker.md` が配置されていること
+  - **repo 別の充足状況**（2026-07-02 実測）: pd = 4種フル / cs = 2種（team-critic・team-researcher のみ）/ as・kdt = ゼロ。フル実行できるのは pd のみ。cs は planner/worker が要る Phase を Main が代行するか sub-agent を汎用 `claude` で立てる。as/kdt では本スキルの team 実行は不可（Main 単独 or agents 配置が前提）
 
 ### タスク規模判定（techo#74）
 

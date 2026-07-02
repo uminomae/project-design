@@ -12,7 +12,7 @@ description: |
 各リポの knowledge/evidence から pd/wiki/ に compiled view を生成する。
 
 **正本**: `/Users/uminomae/dev/project-design/.claude/skills/wiki-compile/`
-**他 repo からの利用**: 各 repo の `.claude/skills/wiki-compile/` に相対シンボリックリンクを張り、本正本を参照する（共通 hooks と同じパターン。CLAUDE.md §共通 hooks の正本管理 を踏襲）。
+**実行範囲**: pd 単独。wiki compile は pd の `knowledge/` → `wiki/` に対してのみ実行するため、他 repo へは symlink を張らない（張っても dead reference になる。cf. 共通 skill/hook の symlink 判断＝他 repo で実行される場合のみ symlink する）。
 
 ## ドキュメント構成
 
