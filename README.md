@@ -58,6 +58,14 @@ Project Design is the practice of not only planning, designing, and executing pr
 
 [https://uminomae.github.io/project-design/](https://uminomae.github.io/project-design/)
 
+## サイト開発の必須制約 / Site Development Rules
+
+**公開ページ（LP・サブページ）を新設・編集するときは、着工前に [docs/DESIGN-RULES.md](docs/DESIGN-RULES.md) を必読。**
+
+- §0a「公開ページ新設時の必須制約」: 全公開ページは index.html の VI（WebGL シェーダー背景＋グロークラス体系＋確立パレット）を**継承する**。独自テーマ・独自パレット・埋め込み standalone CSS の新造は**禁止**（違反実例が §8b 却下履歴にある）
+- スタイルは `src/styles/`（tokens.css の CSS 変数）を再利用する
+- `reader/` 配下は**生成物**。直接編集せず、正本（`knowledge/research/.../READER-*.md`）を編集して `python3 scripts/build-reader-lp.py` で再生成する（詳細: [reader/README.md](reader/README.md)）
+
 ## 関連プロジェクト / Related Projects
 
 | リポジトリ / Repository | 概要 / Description |

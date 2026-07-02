@@ -15,6 +15,7 @@
 | タスク別参照ガイド | `.claude/rules/docs-navigator.md` |
 | Git 規約 | `.claude/rules/commit-rules.md` |
 | セッション管理 | `.claude/rules/session-management.md` |
+| **UI / 公開ページ作成（必須制約）** | `docs/DESIGN-RULES.md` §0a — 全公開ページは index.html の VI を継承。独自テーマ新造禁止 |
 
 ## Codex 固有の差分
 

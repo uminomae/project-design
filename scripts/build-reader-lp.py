@@ -6,6 +6,11 @@
 使い方: python3 scripts/build-reader-lp.py
 
 READER を更新したら本スクリプトを再実行して LP を追随させる。
+
+デザイン必須制約（docs/DESIGN-RULES.md §0a）:
+- 全公開ページは index.html の VI を継承する（シェーダー背景 + グロークラス体系 + 確立パレット）
+- テンプレート（scripts/reader-lp-template.html）や後処理を変更するときも上記を満たすこと
+- 独自テーマ・埋め込み standalone CSS の新造は禁止（却下実例: DESIGN-RULES §8b 2026-07-03）
 """
 import re
 import subprocess
