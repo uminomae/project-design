@@ -26,7 +26,7 @@ pd repo の最終ゴール: cs を部品として積み上げ、
 
 PD 論の文書で cs の成果を引用するとき:
 
-- **粒度**: 領域レポート（`cs/transform/domains/publish/domains/report-D{NN}-*.md`）単位、または領域横断的な概念単位で引用する
+- **粒度**: 領域レポート（公開 MD の正本は `pjdhiro/assets/creation/domains/ja/md/domain-D{NN}-{slug}.md`、生成手順は cs `transform/domains/WORKFLOW.md`）単位、または領域横断的な概念単位で引用する
 - **表記**: 引用元を明示する（例: `creation-space D03 化学 領域レポート §5-段階` 等）
 - **cs の更新追随**: cs の成果が改訂された場合、PD 論側でも引用箇所を更新するか、引用時点の版を明記する
 
