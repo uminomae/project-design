@@ -1,0 +1,183 @@
+/* Reader LP（長文読み物ページ）— DESIGN-RULES §0a 準拠
+ * index.html の VI を継承し、tokens.css の変数と glow 体系の上にのみ載せる。
+ * 新色のハードコード禁止。 */
+
+.reader-hero {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 5rem 2rem 1.5rem;
+    text-align: center;
+}
+
+.reader-hero h1 {
+    font-family: var(--serif-jp);
+    font-size: clamp(2rem, 6vw, 3rem);
+    font-weight: 400;
+    color: var(--ink);
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+}
+
+.reader-subtitle {
+    font-family: var(--serif-jp);
+    font-size: 1rem;
+    color: var(--mid);
+    margin-bottom: 1.5rem;
+}
+
+.reader-meta {
+    font-family: var(--sans);
+    font-size: 0.85rem;
+    line-height: 2;
+    color: var(--mute);
+}
+
+.reader-meta a,
+.reader-footer a {
+    color: var(--navy);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    display: inline-block;
+    min-height: 44px;
+    line-height: 44px;
+}
+
+.reader-article {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 2rem 5rem;
+}
+
+.reader-article h2 {
+    margin: 4.5rem 0 1.5rem;
+}
+
+.reader-article h3 {
+    margin: 3rem 0 1rem;
+}
+
+.reader-article ul,
+.reader-article ol {
+    font-family: var(--serif-jp);
+    font-size: 0.95rem;
+    font-weight: 300;
+    line-height: 2.1;
+    color: var(--mid);
+    margin: 0 0 1.5rem;
+    padding-left: 1.5em;
+}
+
+.reader-article li {
+    margin: 0.4em 0;
+}
+
+.reader-article a {
+    color: var(--navy);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.reader-article code {
+    font-family: "SF Mono", "Consolas", monospace;
+    font-size: 0.88em;
+    background: var(--glass-bg-medium);
+    border-radius: 4px;
+    padding: 0.1em 0.4em;
+}
+
+.reader-article pre {
+    background: var(--glass-bg-strong);
+    border: 1px solid var(--glass-border-soft);
+    border-radius: 6px;
+    padding: 1rem 1.25rem;
+    overflow-x: auto;
+    margin: 0 0 1.5rem;
+    line-height: 1.7;
+}
+
+.reader-article pre code {
+    background: none;
+    padding: 0;
+}
+
+.reader-article blockquote {
+    border-left: 2px solid var(--gold);
+    padding: 0.2rem 0 0.2rem 1.25rem;
+    margin: 1.5rem 0;
+}
+
+.reader-article blockquote p {
+    color: var(--mute);
+}
+
+.reader-article hr {
+    border: none;
+    border-top: 1px solid var(--glass-border-faint);
+    margin: 3.5rem 0;
+}
+
+/* 図版・表は glow-card（白ガラスパネル）に載せる */
+.reader-figure {
+    margin: 2.5rem 0;
+    padding: 1.5rem;
+}
+
+.reader-figure svg {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.reader-table {
+    margin: 2rem 0;
+    padding: 1rem 1.5rem;
+    overflow-x: auto;
+}
+
+.reader-table table {
+    border-collapse: collapse;
+    font-family: var(--sans);
+    font-size: 0.9rem;
+    line-height: 1.8;
+    min-width: 100%;
+}
+
+.reader-table th,
+.reader-table td {
+    padding: 0.5rem 0.75rem;
+    border-bottom: 1px solid var(--glass-border-soft);
+    text-align: left;
+    vertical-align: top;
+    color: var(--mid);
+    font-weight: 300;
+}
+
+.reader-table th {
+    color: var(--ink);
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.reader-footer {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 1rem 2rem 4rem;
+    text-align: center;
+    font-family: var(--sans);
+    font-size: 0.85rem;
+    line-height: 2;
+    color: var(--mute);
+}
+
+@media (max-width: 768px) {
+    .reader-hero { padding: 4rem 1.5rem 1rem; }
+    .reader-article { padding: 0 1.5rem 4rem; }
+    .reader-figure { padding: 1rem; }
+    .reader-table { padding: 0.75rem 1rem; }
+}
+
+@media (max-width: 480px) {
+    .reader-hero { padding: 3.5rem 1rem 1rem; }
+    .reader-article { padding: 0 1rem 3rem; }
+    .reader-article h2 { margin-top: 3.5rem; }
+}

@@ -40,6 +40,13 @@ def main() -> None:
     # 先頭 H1 はテンプレートの hero と重複するため除去
     html = re.sub(r"<h1[^>]*>.*?</h1>\s*", "", html, count=1)
 
+    # DESIGN-RULES §0a: グロークラス体系を生成 HTML に適用する
+    # 見出しは .glow-heading（本文の glow は article 側の .glow-text が担う）
+    html = re.sub(r"<h([23])( |>)", lambda m: f'<h{m.group(1)} class="glow-heading"' + (" " if m.group(2) == " " else ">"), html)
+    # 図版（インライン SVG）と表は .glow-card の白ガラスパネルに載せる
+    html = re.sub(r"(<svg\b.*?</svg>)", r'<figure class="glow-card reader-figure">\1</figure>', html, flags=re.S)
+    html = re.sub(r"(<table\b.*?</table>)", r'<div class="glow-card reader-table">\1</div>', html, flags=re.S)
+
     page = TPL.read_text(encoding="utf-8")
     page = page.replace("<!--BODY-->", html).replace("<!--UPDATED-->", updated)
 
