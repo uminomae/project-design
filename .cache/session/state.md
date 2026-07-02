@@ -2,11 +2,27 @@
 
 ## Git
 - branch: develop
-- pd HEAD: develop=**cbdfb3e** / main=**0314487**（pd#116 RR-004 + READER §9 公開済・push 済）
+- pd HEAD: develop=**a46b165** / main=**6e1e192**（RR-004〜009 + LP 公開済・push 済）
 - remote: synced
 - 関連: cs develop=**2cbd91e** / cs main=**6522065**（cs#254 v1 まで）
 
-## 🔵 進行中 2026-07-03 (seq05) — pd#116 調査軸② 意識＝複素平面の検証（RR-004）+ READER §9 公開
+## 🔵 進行中 2026-07-03 (seq06) — pd#115 検証プログラム一巡 + 公開 LP 確立
+- **正本 README 新設**: `knowledge/research/two-axis-closure/README.md`（North Star・骨格・執筆ルール7項・検証ループ・残タスク表）。pd#115 に統合コメント固定
+- **公開 LP 確立**: `reader/three-and-seven.html`（https://uminomae.github.io/project-design/reader/three-and-seven.html ）
+  - 初版 warm-light 独自テーマは pjdhiro 却下 → DESIGN-RULES **§0a 新設**（公開ページは VI 継承必須・9項目）+ §8b 却下履歴 + README/AGENTS/reader/README/HTML コメントに見える化 + メモリ保存
+  - VI 準拠に作り直し（シェーダー背景 + glow + tokens。src/styles/reader.css / src/reader-app.js / scripts/build-reader-lp.py + template）
+  - コンテンツを執筆ルールに整合（一人称「私の体験/私の問い」+ 三点セット「点と線/現実のたとえ/もしも人間関係なら」）+ 体験A に as 参照
+- **残タスク6件 全消化**（各々ループ①-⑤完走・main 公開済み）:
+  - RR-005（F3 文献裁定: 生存側3系統強化 + 合格ライン=密度固定 null 超え+ホーム三つ組一意性。プロトコル v2）
+  - RR-006（軸④: 「直交(ℂ)か非可換相補(ℍ)か」は**状態と観測の取り違え＝見かけの対立で解消**。順序効果70調査・SEP Pauli–Jung 本文確認。F4 帰結条項改訂 + F4' 順序実験プロトコル）
+  - RR-007（F5 **発動確定**: affect dynamics も加法系→平面読み N。複素位相が働く層=判断の確率振幅（量子認知の干渉）→**振幅読みへの移設は pjdhiro 判断待ち**）
+  - RR-008（零因子の事前定義=**解決不能アトラクタ対**（Gottman gridlock + 固定点アトラクタ）。**採否 pjdhiro 判断待ち**）
+  - RR-009（F2 未発動維持・片刃と明記。証拠の質低=era 比較は periodic-review 監視）
+  - RR-001 出典埋め完了（Massey 定理文照合 ✅照 / Aut(Fano)=168 総当たり機械検証 ✅計。全行 ✅ 到達）
+- **pjdhiro 判断待ち（新規2件）**: ①前提②の振幅読みへの移設（RR-007）②零因子事前定義の採用（RR-008）
+- 原点セッションの参照方法確立: `mcp session search_session_transcripts` → jsonl 直読み（cs worktree hopeful-noyce の quaternion セッション）
+
+## ⏸ 完了 2026-07-03 (seq05) — pd#116 調査軸② 意識＝複素平面の検証（RR-004）+ READER §9 公開
 - **pd#116 CLOSED**（コメント https://github.com/uminomae/project-design/issues/116#issuecomment-4867283713 ）。develop cbdfb3e → main 0314487 マージ・push 済（pjdhiro「公開する」指示）
 - **pd#116 完了（RR-004 作成）**: `knowledge/research/two-axis-closure/RR-004-consciousness-complex-plane-circumplex.md`
   - **裁定＝意識＝ℂ の空虚リスク confirm**: circumplex（Russell 1980）は ℝ²-polar 層（半径=強度・角度=種類）で強く接地するが、**ℂ-field 固有の積・除・`i²=−1` は遊休**（Posner/Russell/Peterson 2005: 感情＝二次元の「線形結合」＝ℝ² ベクトル空間）。回転 U(1) のみ faint な例外だが乗法的閉包ではない

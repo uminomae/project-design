@@ -15,4 +15,11 @@ if ! curl -s -o /dev/null -w '' http://localhost:3004/ 2>/dev/null; then
 fi
 
 cd "$PROJECT_DIR"
-node .claude/scripts/responsive-test.js
+
+# 対象ページ: index + 公開サブページ（DESIGN-RULES §0a 項目7）
+rc=0
+for u in "http://localhost:3004/" "http://localhost:3004/reader/three-and-seven.html"; do
+  echo "== Testing $u =="
+  TEST_URL="$u" node .claude/scripts/responsive-test.js || rc=1
+done
+exit "$rc"
