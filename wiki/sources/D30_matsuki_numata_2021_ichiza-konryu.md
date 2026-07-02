@@ -58,3 +58,10 @@ review_state: 未レビュー
 - 出典: 香川大学大学院地域マネジメント研究科（Graduate School of Management, Kagawa University）
 - access_status: raw-confirmed
 - **オープンアクセス**: [J-STAGE](https://www.jstage.jst.go.jp/)
+
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/raw/D30_matsuki_numata_2021_ichiza-konryu.pdf](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/D30_matsuki_numata_2021_ichiza-konryu.pdf)（manifest_id: `D30-S09`）
+- **cs 精読ノート**: [knowledge/source-notes/D30/D30-S09_matsuki-2021.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D30/D30-S09_matsuki-2021.md)
+- **この wiki ページ（pd）**: [wiki/sources/D30_matsuki_numata_2021_ichiza-konryu.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D30_matsuki_numata_2021_ichiza-konryu.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照

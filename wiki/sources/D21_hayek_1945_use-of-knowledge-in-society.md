@@ -46,3 +46,10 @@ review_state: 未レビュー
 - 出典: American Economic Review, Vol. XXXV, No. 4, September 1945, pp. 519-530
 - access_status: raw-confirmed
 - **DOI**: [10.1257/aer.35.4.519](https://doi.org/10.1257/aer.35.4.519)
+
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/raw/D21_hayek_1945_use-of-knowledge-in-society.pdf](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/D21_hayek_1945_use-of-knowledge-in-society.pdf)（manifest_id: `D21-S04`）
+- **cs 精読ノート**: [knowledge/source-notes/D21/D21-S04_hayek-1945.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D21/D21-S04_hayek-1945.md)
+- **この wiki ページ（pd）**: [wiki/sources/D21_hayek_1945_use-of-knowledge-in-society.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D21_hayek_1945_use-of-knowledge-in-society.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照

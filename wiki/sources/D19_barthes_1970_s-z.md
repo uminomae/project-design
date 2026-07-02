@@ -71,6 +71,13 @@ readerly text（読まれるテクスト）と writerly text（書かれるテ�
 - ISBN: 0-631-17607-1 (paperback)
 - **オープンアクセス**: [Monoskop PDF](https://monoskop.org/images/d/d6/Barthes_Roland_S-Z_2002.pdf)
 
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/source-notes/D19/D19-S10_barthes-1970.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D19/D19-S10_barthes-1970.md)（manifest_id: `D19-S10`）
+- **cs 精読ノート**: [knowledge/source-notes/D19/D19-S10_barthes-1970.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D19/D19-S10_barthes-1970.md)
+- **この wiki ページ（pd）**: [wiki/sources/D19_barthes_1970_s-z.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D19_barthes_1970_s-z.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
+
 ## 出典メモ
 
 - cs 側読解: `creation-space/knowledge/source-notes/D19/D19-S10_barthes-1970.md`（2026-04-16、claude-opus-4-6, Read PDF。Preface + Sections I-XI 読了）

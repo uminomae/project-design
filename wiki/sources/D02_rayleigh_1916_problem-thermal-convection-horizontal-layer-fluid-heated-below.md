@@ -50,3 +50,10 @@ Ra = (g α ΔT h³) / (ν κ)
 - 出典: Philosophical Magazine Series 6, Vol. 32, No. 192, pp. 529-546
 - access_status: raw-confirmed
 - **DOI**: [10.1080/14786441608635602](https://doi.org/10.1080/14786441608635602)
+
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/raw/D02_rayleigh_1916_problem-thermal-convection-horizontal-layer-fluid-heated-below.pdf](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/D02_rayleigh_1916_problem-thermal-convection-horizontal-layer-fluid-heated-below.pdf)（manifest_id: `D02-S08`）
+- **cs 精読ノート**: [knowledge/source-notes/D02/D02-S08_rayleigh-1916.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D02/D02-S08_rayleigh-1916.md)
+- **この wiki ページ（pd）**: [wiki/sources/D02_rayleigh_1916_problem-thermal-convection-horizontal-layer-fluid-heated-below.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D02_rayleigh_1916_problem-thermal-convection-horizontal-layer-fluid-heated-below.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照

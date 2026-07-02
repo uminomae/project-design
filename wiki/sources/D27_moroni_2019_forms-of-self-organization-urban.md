@@ -70,6 +70,13 @@ self-coordination の本質は、誰かが意図的に組織したのではな�
 - **DOI**: [10.1177/2399808319857721](https://doi.org/10.1177/2399808319857721)
 - **オープンアクセス**: [pure.rug.nl PDF](https://pure.rug.nl/ws/files/120245893/2399808319857721.pdf)
 
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/source-notes/D27/D27-S12_moroni-2019.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D27/D27-S12_moroni-2019.md)（manifest_id: `D27-S12`）
+- **cs 精読ノート**: [knowledge/source-notes/D27/D27-S12_moroni-2019.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D27/D27-S12_moroni-2019.md)
+- **この wiki ページ（pd）**: [wiki/sources/D27_moroni_2019_forms-of-self-organization-urban.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D27_moroni_2019_forms-of-self-organization-urban.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
+
 ## 出典メモ
 
 - cs 側読解: `creation-space/knowledge/source-notes/D27/D27-S12_moroni-2019.md`（2026-04-11、Claude Opus 4.6, WebFetch → Read PDF 全 16 ページ）

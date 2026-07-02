@@ -72,6 +72,13 @@ Adam Smith の分業論を出発点に、経済発展とは個別活動の数と
 - **DOI**: [10.1073/pnas.0900943106](https://doi.org/10.1073/pnas.0900943106)
 - **オープンアクセス**: [arXiv:0909.3890](https://arxiv.org/pdf/0909.3890)
 
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/source-notes/D21/D21-S14_hidalgo-2009.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D21/D21-S14_hidalgo-2009.md)（manifest_id: `D21-S14`）
+- **cs 精読ノート**: [knowledge/source-notes/D21/D21-S14_hidalgo-2009.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D21/D21-S14_hidalgo-2009.md)
+- **この wiki ページ（pd）**: [wiki/sources/D21_hidalgo_2009_building-blocks-of-economic.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D21_hidalgo_2009_building-blocks-of-economic.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
+
 ## 出典メモ
 
 - cs 側読解: `creation-space/knowledge/source-notes/D21/D21-S14_hidalgo-2009.md`（2026-04-11、claude-opus-4-6, WebFetch → Read PDF 全 15 ページ）

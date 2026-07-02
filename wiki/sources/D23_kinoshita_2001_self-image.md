@@ -30,7 +30,7 @@ review_state: 未レビュー
 
 ### 時間的に拡張された自己
 
-Nelson（1997）らを参照しながら木下は、「時間的に拡張された自己（temporally extended self）」の発達を問題化する。自己を過去・現在・未来にわたる連続した存在として表象する能力は、アイデンティティ形成の土台であり、自伝的記憶の発生（3-4歳頃）と対応すると考えられる。
+Neisser（1988）らを参照しながら木下は、「時間的に拡張された自己（temporally extended self）」の発達を問題化する。自己を過去・現在・未来にわたる連続した存在として表象する能力は、アイデンティティ形成の土台であり、自伝的記憶の発生（3-4歳頃）と対応すると考えられる。
 
 ### 遅延ビデオ映像による自己認知課題
 
@@ -42,7 +42,7 @@ Povinelliらの先行研究を発展させ、木下は以下の手続きを採�
 
 ### 結果の概要
 
-4歳児の約75%が課題を達成した（シールを取る・頭部に手を伸ばす）のに対し、3歳児では約25%に留まった。この発達差は自伝的記憶の発生時期と対応しており、4歳頃に時間的に拡張された自己認知が成立することを支持する。
+4歳児15名全員（100%）が課題を達成した（シールを取る・頭部に手を伸ばす）のに対し、3歳児では14名中5名（約36%）に留まった。この発達差は自伝的記憶の発生時期と対応しており、4歳頃に時間的に拡張された自己認知が成立することを支持する。
 
 ## 関連
 
@@ -54,3 +54,10 @@ Povinelliらの先行研究を発展させ、木下は以下の手続きを採�
 - 出典: 神戸大学発達科学部研究紀要, 第8巻第2号, pp. 91-100
 - access_status: raw-confirmed
 - **オープンアクセス**: [神戸大学リポジトリ](https://da.lib.kobe-u.ac.jp/)
+
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/raw/D23_kinoshita_2001_self-image.pdf](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/D23_kinoshita_2001_self-image.pdf)（manifest_id: `D23-S06`）
+- **cs 精読ノート**: [knowledge/source-notes/D23/D23-S06_kinoshita-2001.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D23/D23-S06_kinoshita-2001.md)
+- **この wiki ページ（pd）**: [wiki/sources/D23_kinoshita_2001_self-image.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D23_kinoshita_2001_self-image.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照

@@ -77,6 +77,12 @@ P-糖タンパク質等の排出ポンプを回避するため、ナノ粒子は
 - **PMID**: 26348965
 - **オープンアクセス**: [PMC4978509](https://pmc.ncbi.nlm.nih.gov/articles/PMC4978509)
 
+## ソース参照（GitHub・検証用）
+
+- **cs 精読ノート**: [knowledge/source-notes/D11/D11-S14_blanco-shen-ferrari-2015.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D11/D11-S14_blanco-shen-ferrari-2015.md)
+- **この wiki ページ（pd）**: [wiki/sources/D11_blanco_2015_principles-of-nanoparticle-design.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D11_blanco_2015_principles-of-nanoparticle-design.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
+
 ## 出典メモ
 
 - pd 側読解: WebFetch via PMC HTML（2026-04-19、Claude Opus 4.7、本ページは pd 側で直接読解。cs 側 source-notes は未作成）

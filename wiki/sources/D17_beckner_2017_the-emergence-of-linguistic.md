@@ -66,6 +66,13 @@ generation の正の係数（0.973, p<0.001）と generation² の負の係数�
 - **DOI**: [10.1093/jole/lzx001](https://doi.org/10.1093/jole/lzx001)
 - **オープンアクセス**: [J Lang Evol PDF](https://academic.oup.com/jole/article-pdf/2/2/160/19522987/lzx001.pdf)
 
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/source-notes/D17/D17-S11_beckner-2017.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D17/D17-S11_beckner-2017.md)（manifest_id: `D17-S11`）
+- **cs 精読ノート**: [knowledge/source-notes/D17/D17-S11_beckner-2017.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D17/D17-S11_beckner-2017.md)
+- **この wiki ページ（pd）**: [wiki/sources/D17_beckner_2017_the-emergence-of-linguistic.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D17_beckner_2017_the-emergence-of-linguistic.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
+
 ## 出典メモ
 
 - cs 側読解: `creation-space/knowledge/source-notes/D17/D17-S11_beckner-2017.md`（2026-04-11、claude-opus-4-6, WebFetch via HTML）

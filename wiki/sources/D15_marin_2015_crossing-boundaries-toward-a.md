@@ -66,6 +66,13 @@ opinion article。実験やデータ分析は含まない。既存の神経美�
 - **DOI**: [10.3389/fnhum.2015.00443](https://doi.org/10.3389/fnhum.2015.00443)
 - **オープンアクセス**: [Frontiers PDF](https://www.frontiersin.org/articles/10.3389/fnhum.2015.00443/pdf)
 
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/source-notes/D15/D15-S11_marin-2015.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D15/D15-S11_marin-2015.md)（manifest_id: `D15-S11`）
+- **cs 精読ノート**: [knowledge/source-notes/D15/D15-S11_marin-2015.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D15/D15-S11_marin-2015.md)
+- **この wiki ページ（pd）**: [wiki/sources/D15_marin_2015_crossing-boundaries-toward-a.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D15_marin_2015_crossing-boundaries-toward-a.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
+
 ## 出典メモ
 
 - cs 側読解: `creation-space/knowledge/source-notes/D15/D15-S11_marin-2015.md`（2026-04-10、claude-opus-4-6, WebFetch 全文）

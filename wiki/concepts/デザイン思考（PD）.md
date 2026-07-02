@@ -66,3 +66,8 @@ PD は designerly thinking と business design thinking を明確に分節する
 ## ソース参照
 
 - `knowledge/research/design-thinking/design-thinking-integrated.md`
+
+## 関連原典
+
+- [[sources/D22_brown_2008_design-thinking|Brown (2008)]] — Tim Brown (2008, Harvard Business Review)。デザイナーの感性と方法を、製品だけでなくサービス・プロセス・戦略の革新に適用する『人間中心のイノベーション方法論』としてデザイン思考を提示し、観察・プロトタイピング・反復という実践の核を一般読者向けに定式化した記事。
+

@@ -52,3 +52,10 @@ Gunnar Carlsson による2009年の論文で、位相的データ解析（TDA: T
 - access_status: raw-confirmed
 - **DOI**: [10.1090/S0273-0979-09-01249-X](https://doi.org/10.1090/S0273-0979-09-01249-X)
 - **オープンアクセス**: [PDF](https://www.ams.org/bull/2009-46-02/S0273-0979-09-01249-X/S0273-0979-09-01249-X.pdf)
+
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/raw/D01_carlsson_2009_topology-and-data.pdf](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/D01_carlsson_2009_topology-and-data.pdf)（manifest_id: `D01-S02`）
+- **cs 精読ノート**: [knowledge/source-notes/D01/D01-S02_carlsson-2009.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D01/D01-S02_carlsson-2009.md)
+- **この wiki ページ（pd）**: [wiki/sources/D01_carlsson_2009_topology-and-data.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D01_carlsson_2009_topology-and-data.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照

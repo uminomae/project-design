@@ -60,3 +60,10 @@ Knight が峻別する「真の不確実性（計算不可能な不確かさ）�
 - 出典: Houghton Mifflin Company, Boston and New York, 1921. LSE Series of Reprints of Scarce Tracts in Economic and Political Science, No. 16, 1933.
 - access_status: raw-confirmed
 - **全文**: [Internet Archive](https://archive.org/details/riskuncertaintyp00telerich)
+
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/raw/D21_knight_1921_risk-uncertainty-profit.pdf](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/D21_knight_1921_risk-uncertainty-profit.pdf)（manifest_id: `D21-S09`）
+- **cs 精読ノート**: [knowledge/source-notes/D21/D21-S09_knight-1921.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D21/D21-S09_knight-1921.md)
+- **この wiki ページ（pd）**: [wiki/sources/D21_knight_1921_risk-uncertainty-profit.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D21_knight_1921_risk-uncertainty-profit.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照

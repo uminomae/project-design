@@ -78,6 +78,12 @@ Clark & Chalmers は、認知が脳内のみに限定されないという「能
 - **DOI**: [10.1093/analys/58.1.7](https://doi.org/10.1093/analys/58.1.7)
 - **オープンアクセス**: [TUE alice.id mirror PDF](https://www.alice.id.tue.nl/references/clark-chalmers-1998.pdf)
 
+## ソース参照（GitHub・検証用）
+
+- **cs 精読ノート**: [knowledge/source-notes/D14/D14-S02_clark-chalmers-1998.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D14/D14-S02_clark-chalmers-1998.md)
+- **この wiki ページ（pd）**: [wiki/sources/D14_clark_1998_chalmers-d.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D14_clark_1998_chalmers-d.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
+
 ## 出典メモ
 
 - pd 側読解: WebFetch via TUE PDF mirror（2026-04-19、Claude Opus 4.7）

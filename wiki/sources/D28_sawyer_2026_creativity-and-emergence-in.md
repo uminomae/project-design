@@ -66,6 +66,13 @@ review_state: 未レビュー
 - **DOI**: [10.1017/sas.2025.10039](https://doi.org/10.1017/sas.2025.10039)
 - **オープンアクセス**: [Cambridge Core PDF](https://www.cambridge.org/core/services/aop-cambridge-core/content/view/21DAA8166D961C9E50FBCD4958E53B16/S2326448925100391a.pdf)
 
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/source-notes/D28/D28-S11_sawyer-2026.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D28/D28-S11_sawyer-2026.md)（manifest_id: `D28-S11`）
+- **cs 精読ノート**: [knowledge/source-notes/D28/D28-S11_sawyer-2026.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D28/D28-S11_sawyer-2026.md)
+- **この wiki ページ（pd）**: [wiki/sources/D28_sawyer_2026_creativity-and-emergence-in.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D28_sawyer_2026_creativity-and-emergence-in.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
+
 ## 出典メモ
 
 - cs 側読解: `creation-space/knowledge/source-notes/D28/D28-S11_sawyer-2026.md`（2026-04-11、Claude Opus 4.6, WebFetch → Read PDF 全 17 ページ）

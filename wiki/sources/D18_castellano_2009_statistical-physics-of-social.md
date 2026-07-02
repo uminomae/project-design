@@ -74,6 +74,13 @@ Castellano, Fortunato & Loreto (2009) はレビュー論文として、統計物
 - **DOI**: [10.1103/RevModPhys.81.591](https://doi.org/10.1103/RevModPhys.81.591)
 - **オープンアクセス**: [arXiv:0710.3256](https://arxiv.org/pdf/0710.3256)
 
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/source-notes/D18/D18-S08_castellano-2009.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D18/D18-S08_castellano-2009.md)（manifest_id: `D18-S08`）
+- **cs 精読ノート**: [knowledge/source-notes/D18/D18-S08_castellano-2009.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D18/D18-S08_castellano-2009.md)
+- **この wiki ページ（pd）**: [wiki/sources/D18_castellano_2009_statistical-physics-of-social.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D18_castellano_2009_statistical-physics-of-social.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
+
 ## 出典メモ
 
 - cs 側読解: `creation-space/knowledge/source-notes/D18/D18-S08_castellano-2009.md`（2026-04-11、claude-opus-4-6, Read PDF arXiv 版約 60 ページ、主要章を読了）

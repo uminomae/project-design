@@ -72,6 +72,13 @@ EES の中核命題。発生システムの「探索的行動（exploratory beha
 - **DOI**: [10.1098/rspb.2015.1019](https://doi.org/10.1098/rspb.2015.1019)
 - **オープンアクセス**: [Royal Society PDF](https://royalsocietypublishing.org/doi/pdf/10.1098/rspb.2015.1019) / [PMC4632619](https://pmc.ncbi.nlm.nih.gov/articles/PMC4632619/)
 
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/source-notes/D04/D04-S04_laland-2015.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D04/D04-S04_laland-2015.md)（manifest_id: `D04-S04`）
+- **cs 精読ノート**: [knowledge/source-notes/D04/D04-S04_laland-2015.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D04/D04-S04_laland-2015.md)
+- **この wiki ページ（pd）**: [wiki/sources/D04_laland_2015_2015-the-extended-evolutionary.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D04_laland_2015_2015-the-extended-evolutionary.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
+
 ## 出典メモ
 
 - cs 側読解: `creation-space/knowledge/source-notes/D04/D04-S04_laland-2015.md`（2026-04-10、Claude Opus 4.6, WebFetch via PMC HTML）

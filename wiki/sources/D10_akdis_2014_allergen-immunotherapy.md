@@ -53,4 +53,11 @@ IgEが結合しない線状T細胞エピトープペプチドを使用し、ア�
 - 年: 2014
 - 出典: World Allergy Organization Journal, 7:23
 - access_status: raw-confirmed
-- **DOI**: [10.1016/j.jaci.2013.09.034](https://doi.org/10.1016/j.jaci.2013.09.034)
+- **DOI**: [10.1186/1939-4551-7-23](https://doi.org/10.1186/1939-4551-7-23)
+
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/raw/D10_akdis_2014_allergen-immunotherapy.pdf](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/D10_akdis_2014_allergen-immunotherapy.pdf)（manifest_id: `D10-S01`）
+- **cs 精読ノート**: [knowledge/source-notes/D10/D10-S01_akdis-2014.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D10/D10-S01_akdis-2014.md)
+- **この wiki ページ（pd）**: [wiki/sources/D10_akdis_2014_allergen-immunotherapy.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D10_akdis_2014_allergen-immunotherapy.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照

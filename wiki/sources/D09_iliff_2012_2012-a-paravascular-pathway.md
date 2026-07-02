@@ -74,6 +74,13 @@ Iliff ら (2012) は、in vivo 二光子顕微鏡と AQP4 ノックアウトマ�
 - **DOI**: [10.1126/scitranslmed.3003748](https://doi.org/10.1126/scitranslmed.3003748)
 - **オープンアクセス**: [PMC3551275](https://pmc.ncbi.nlm.nih.gov/articles/PMC3551275/)
 
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/source-notes/D09/D09-S06_iliff-2012.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D09/D09-S06_iliff-2012.md)（manifest_id: `D09-S06`）
+- **cs 精読ノート**: [knowledge/source-notes/D09/D09-S06_iliff-2012.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D09/D09-S06_iliff-2012.md)
+- **この wiki ページ（pd）**: [wiki/sources/D09_iliff_2012_2012-a-paravascular-pathway.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D09_iliff_2012_2012-a-paravascular-pathway.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
+
 ## 出典メモ
 
 - cs 側読解: `creation-space/knowledge/source-notes/D09/D09-S06_iliff-2012.md`（2026-04-10、Claude Opus 4.6、WebFetch via PMC HTML）

@@ -69,6 +69,13 @@ Cygnus A など双極電波源の hot spot で観測される電子エネルギ�
 - **DOI**: [10.1086/182658](https://doi.org/10.1086/182658)
 - **オープンアクセス**: [NASA ADS PDF](https://articles.adsabs.harvard.edu/pdf/1978ApJ...221L..29B)
 
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/source-notes/D06/D06-S06_blandford-ostriker-1978.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D06/D06-S06_blandford-ostriker-1978.md)（manifest_id: `D06-S06`）
+- **cs 精読ノート**: [knowledge/source-notes/D06/D06-S06_blandford-ostriker-1978.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D06/D06-S06_blandford-ostriker-1978.md)
+- **この wiki ページ（pd）**: [wiki/sources/D06_blandford_1978_ostriker-j-p.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D06_blandford_1978_ostriker-j-p.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
+
 ## 出典メモ
 
 - cs 側読解: `creation-space/knowledge/source-notes/D06/D06-S06_blandford-ostriker-1978.md`（2026-04-13、Claude Opus 4.6, WebFetch → Read PDF 全 4 ページ）

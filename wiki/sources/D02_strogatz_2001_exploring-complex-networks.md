@@ -70,3 +70,10 @@ Peskin は心臓の洞結節を、全ノードが互いに結合した $N$ 個�
 - access_status: raw-confirmed
 - **DOI**: [10.1038/35065725](https://doi.org/10.1038/35065725)
 - **オープンアクセス**: [PDF](https://static.squarespace.com/static/5436e695e4b07f1e91b30155/t/5445260be4b0726a1e47c383/1413817867519/exploring-complex-networks.pdf)（著者 Strogatz 個人サイト）
+
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/raw/D02_strogatz_2001_exploring-complex-networks.pdf](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/D02_strogatz_2001_exploring-complex-networks.pdf)（manifest_id: `D02-S13`）
+- **cs 精読ノート**: [knowledge/source-notes/D02/D02-S13_strogatz-2001.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D02/D02-S13_strogatz-2001.md)
+- **この wiki ページ（pd）**: [wiki/sources/D02_strogatz_2001_exploring-complex-networks.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D02_strogatz_2001_exploring-complex-networks.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照

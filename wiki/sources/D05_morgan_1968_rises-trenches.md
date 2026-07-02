@@ -5,6 +5,7 @@ aliases: ["Rises, Trenches, Great Faults, and Crustal Blocks"]
 tags: [source, "earth-science", "原典解説", "D05"]
 source:
   repo: "creation-space"
+  manifest_id: "D05-S02"
   path: "knowledge/raw/D05_morgan_1968_rises-trenches.pdf"
 compiled: "2026-04-11"
 status: 正典

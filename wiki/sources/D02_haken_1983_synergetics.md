@@ -55,3 +55,10 @@ Stuttgart 大学の Hermann Haken による著作（初版1977年、第3版1983�
 - 出典: Springer-Verlag, Berlin Heidelberg（Springer Series in Synergetics, Vol. 1）
 - access_status: raw-confirmed
 - **DOI**: [10.1007/978-3-642-88338-5](https://doi.org/10.1007/978-3-642-88338-5)
+
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/raw/D02_haken_1983_synergetics.pdf](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/D02_haken_1983_synergetics.pdf)（manifest_id: `D02-S07`）
+- **cs 精読ノート**: [knowledge/source-notes/D02/D02-S07_haken-1983.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D02/D02-S07_haken-1983.md)
+- **この wiki ページ（pd）**: [wiki/sources/D02_haken_1983_synergetics.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D02_haken_1983_synergetics.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照

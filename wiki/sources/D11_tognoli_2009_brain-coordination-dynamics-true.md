@@ -71,6 +71,12 @@ EEG の電場が頭皮を通じて拡散する性質が、空間的に近い電�
 - **PMID**: 19028542
 - **オープンアクセス**: [PMC3020160](https://pmc.ncbi.nlm.nih.gov/articles/3020160)
 
+## ソース参照（GitHub・検証用）
+
+- **cs 精読ノート**: [knowledge/source-notes/D11/D11-S17_tognoli-kelso-2009.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D11/D11-S17_tognoli-kelso-2009.md)
+- **この wiki ページ（pd）**: [wiki/sources/D11_tognoli_2009_brain-coordination-dynamics-true.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D11_tognoli_2009_brain-coordination-dynamics-true.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
+
 ## 出典メモ
 
 - pd 側読解: WebFetch via PMC HTML（2026-04-19、Claude Opus 4.7、本ページは pd 側で直接読解。cs 側 source-notes は未作成）

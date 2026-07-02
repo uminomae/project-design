@@ -76,6 +76,13 @@ DLPFC の不活性化により意識的フィルターが弱まり、無意識�
 - **DOI**: [10.1371/journal.pone.0001679](https://doi.org/10.1371/journal.pone.0001679)
 - **オープンアクセス**: [PLoS ONE PDF](https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0001679&type=printable)
 
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/source-notes/D26/D26-S12_limb-2008.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D26/D26-S12_limb-2008.md)（manifest_id: `D26-S12`）
+- **cs 精読ノート**: [knowledge/source-notes/D26/D26-S12_limb-2008.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D26/D26-S12_limb-2008.md)
+- **この wiki ページ（pd）**: [wiki/sources/D26_limb_2008_neural-substrates-of-spontaneous.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D26_limb_2008_neural-substrates-of-spontaneous.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
+
 ## 出典メモ
 
 - cs 側読解: `creation-space/knowledge/source-notes/D26/D26-S12_limb-2008.md`（2026-04-11、Claude Opus 4.6、WebFetch → PDF Read）

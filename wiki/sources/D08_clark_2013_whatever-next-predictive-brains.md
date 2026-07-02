@@ -74,6 +74,13 @@ Clark (2013) は「階層的予測処理（hierarchical predictive processing）
 - **DOI**: [10.1017/S0140525X12000477](https://doi.org/10.1017/S0140525X12000477)
 - **オープンアクセス**: [Cambridge Core PDF](https://www.cambridge.org/core/services/aop-cambridge-core/content/view/33542C736E17E3D1D44E8D03BE5F4CD9/S0140525X12000477a.pdf)
 
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/source-notes/D08/D08-S13_clark-2013.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D08/D08-S13_clark-2013.md)（manifest_id: `D08-S13`）
+- **cs 精読ノート**: [knowledge/source-notes/D08/D08-S13_clark-2013.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D08/D08-S13_clark-2013.md)
+- **この wiki ページ（pd）**: [wiki/sources/D08_clark_2013_whatever-next-predictive-brains.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D08_clark_2013_whatever-next-predictive-brains.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
+
 ## 出典メモ
 
 - cs 側読解: `creation-space/knowledge/source-notes/D08/D08-S13_clark-2013.md`（2026-04-10、Claude Opus 4.6, WebFetch → PDF Read、target article 部 pp.181-204 まで読了）

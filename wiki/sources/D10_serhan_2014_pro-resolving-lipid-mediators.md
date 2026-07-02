@@ -79,6 +79,13 @@ SPM、特に MaR1 は炎症性 M1 マクロファージから修復性 M2 マク
 - **DOI**: [10.1038/nature13479](https://doi.org/10.1038/nature13479)
 - **オープンアクセス**: [PMC4263681](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4263681)
 
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/source-notes/D10/D10-S09_serhan-2014.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D10/D10-S09_serhan-2014.md)（manifest_id: `D10-S09`）
+- **cs 精読ノート**: [knowledge/source-notes/D10/D10-S09_serhan-2014.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D10/D10-S09_serhan-2014.md)
+- **この wiki ページ（pd）**: [wiki/sources/D10_serhan_2014_pro-resolving-lipid-mediators.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D10_serhan_2014_pro-resolving-lipid-mediators.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
+
 ## 出典メモ
 
 - cs 側読解: `creation-space/knowledge/source-notes/D10/D10-S09_serhan-2014.md`（2026-04-10、claude-opus-4-6, WebFetch via PMC HTML）

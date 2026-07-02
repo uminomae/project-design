@@ -54,6 +54,13 @@ Mascareño は、この理論的統合が単なる知的訓練ではなく、社
 - **DOI**: [10.3389/fsoc.2021.763453](https://doi.org/10.3389/fsoc.2021.763453)
 - **オープンアクセス**: [Frontiers Article](https://www.frontiersin.org/journals/sociology/articles/10.3389/fsoc.2021.763453/full)
 
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/source-notes/D16/D16-S19_mascareno-2022.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D16/D16-S19_mascareno-2022.md)（manifest_id: `D16-S19`）
+- **cs 精読ノート**: [knowledge/source-notes/D16/D16-S19_mascareno-2022.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D16/D16-S19_mascareno-2022.md)
+- **この wiki ページ（pd）**: [wiki/sources/D16_mascareo_2022_critical-transitions-in-ecosystems.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D16_mascareo_2022_critical-transitions-in-ecosystems.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
+
 ## 出典メモ
 
 - cs 側読解: `creation-space/knowledge/source-notes/D16/D16-S19_mascareno-2022.md`（2026-04-10、claude-opus-4-6, WebFetch 全文要約的抽出）

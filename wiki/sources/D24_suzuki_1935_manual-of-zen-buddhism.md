@@ -94,3 +94,10 @@ review_state: 未レビュー
 - 序文日付: Kyoto, August 1935
 - 三部作の第三巻（第一巻: Introduction to Zen Buddhism, 第二巻: The Training of the Zen Monk）
 - access_status: raw-confirmed（OCR 検証済み、part1 代表ページサンプリング）
+
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/raw/D24_suzuki_1935_manual-of-zen-buddhism_part1.pdf](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/D24_suzuki_1935_manual-of-zen-buddhism_part1.pdf)（manifest_id: `D24-S10`）
+- **cs 精読ノート**: [knowledge/source-notes/D24/D24-S10_suzuki-1935-manual-of-zen-buddhism.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D24/D24-S10_suzuki-1935-manual-of-zen-buddhism.md)
+- **この wiki ページ（pd）**: [wiki/sources/D24_suzuki_1935_manual-of-zen-buddhism.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D24_suzuki_1935_manual-of-zen-buddhism.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照

@@ -47,3 +47,10 @@ Johansson-Sköldberg et al. (2013)、Seidel & Fixson (2013)、Liedtka (2015)、C
 - 出典: Annals of Business Administrative Science, Vol. 20, pp. 197-209. doi:10.7880/abas.0210930a
 - access_status: raw-confirmed
 - **DOI**: [10.7880/abas.0210930a](https://doi.org/10.7880/abas.0210930a)
+
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/raw/D22_akiike_2021_design-thinking-articles.pdf](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/D22_akiike_2021_design-thinking-articles.pdf)（manifest_id: `D22-S07`）
+- **cs 精読ノート**: [knowledge/source-notes/D22/D22-S07_akiike-2021.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D22/D22-S07_akiike-2021.md)
+- **この wiki ページ（pd）**: [wiki/sources/D22_akiike_2021_design-thinking-articles.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D22_akiike_2021_design-thinking-articles.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照

@@ -73,6 +73,13 @@ n_pep はペプチド結合数、τ_hyd は加水分解半減期、τ_div は分
 - **DOI**: [10.1063/1.4818538](https://doi.org/10.1063/1.4818538)
 - **オープンアクセス**: [arXiv:1209.1179](https://arxiv.org/abs/1209.1179)
 
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/source-notes/D09/D09-S13_england-2013.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D09/D09-S13_england-2013.md)（manifest_id: `D09-S13`）
+- **cs 精読ノート**: [knowledge/source-notes/D09/D09-S13_england-2013.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D09/D09-S13_england-2013.md)
+- **この wiki ページ（pd）**: [wiki/sources/D09_england_2013_statistical-physics-of-self.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D09_england_2013_statistical-physics-of-self.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
+
 ## 出典メモ
 
 - cs 側読解: `creation-space/knowledge/source-notes/D09/D09-S13_england-2013.md`（2026-04-10、claude-opus-4-6、WebFetch → PDF Read）

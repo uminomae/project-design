@@ -68,6 +68,13 @@ TD で学習された価値関数は、環境中の各点に「期待報酬の�
 - **DOI**: [10.1126/science.275.5306.1593](https://doi.org/10.1126/science.275.5306.1593)
 - **オープンアクセス**: [著者公開 PDF](http://www.cs.utexas.edu/~dana/Reward.pdf)
 
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/source-notes/D09/D09-S07_schultz-1997.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D09/D09-S07_schultz-1997.md)（manifest_id: `D09-S07`）
+- **cs 精読ノート**: [knowledge/source-notes/D09/D09-S07_schultz-1997.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D09/D09-S07_schultz-1997.md)
+- **この wiki ページ（pd）**: [wiki/sources/D09_schultz_1997_schultz-dayan-montague-1997.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D09_schultz_1997_schultz-dayan-montague-1997.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
+
 ## 出典メモ
 
 - cs 側読解: `creation-space/knowledge/source-notes/D09/D09-S07_schultz-1997.md`（2026-04-10、claude-opus-4-6、WebFetch → PDF Read）

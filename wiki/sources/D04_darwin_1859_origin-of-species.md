@@ -51,3 +51,10 @@ review_state: 未レビュー
 - 出典: John Murray, London
 - access_status: raw-confirmed
 - **全文**: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Origin_of_Species_1859.djvu)
+
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/raw/D04_darwin_1859_origin-of-species.pdf](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/D04_darwin_1859_origin-of-species.pdf)（manifest_id: `D04-S01`）
+- **cs 精読ノート**: [knowledge/source-notes/D04/D04-S01_darwin-1859.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D04/D04-S01_darwin-1859.md)
+- **この wiki ページ（pd）**: [wiki/sources/D04_darwin_1859_origin-of-species.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D04_darwin_1859_origin-of-species.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照

@@ -70,6 +70,13 @@ review_state: 未レビュー
 - **DOI**: [10.1086/304888](https://doi.org/10.1086/304888)
 - **オープンアクセス**: [arXiv:astro-ph/9611107](https://arxiv.org/pdf/astro-ph/9611107)
 
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/source-notes/D06/D06-S13_navarro-frenk-white-1997.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D06/D06-S13_navarro-frenk-white-1997.md)（manifest_id: `D06-S13`）
+- **cs 精読ノート**: [knowledge/source-notes/D06/D06-S13_navarro-frenk-white-1997.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D06/D06-S13_navarro-frenk-white-1997.md)
+- **この wiki ページ（pd）**: [wiki/sources/D06_navarro_1997_universal-density-profile.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D06_navarro_1997_universal-density-profile.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
+
 ## 出典メモ
 
 - cs 側読解: `creation-space/knowledge/source-notes/D06/D06-S13_navarro-frenk-white-1997.md`（2026-04-10、Claude Opus 4.6, WebFetch + PDF Read 全 20 ページ）

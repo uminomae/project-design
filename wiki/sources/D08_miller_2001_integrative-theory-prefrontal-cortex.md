@@ -61,6 +61,13 @@ Annual Review 誌のレビュー論文として、著者 2 名の既存研究と
 - **PubMed ID**: [11283309](https://pubmed.ncbi.nlm.nih.gov/11283309/)
 - **PMC**: 未登録
 
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/source-notes/D08/D08-S04_miller-2001.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D08/D08-S04_miller-2001.md)（manifest_id: `D08-S04`）
+- **cs 精読ノート**: 未生成（cs#249 で生成予定。生成後 `wiki-cross-check.mjs` で照合）
+- **この wiki ページ（pd）**: [wiki/sources/D08_miller_2001_integrative-theory-prefrontal-cortex.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D08_miller_2001_integrative-theory-prefrontal-cortex.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
+
 ## 出典メモ
 
 - cs 側対応: `creation-space/knowledge/source-notes/D08/D08-S04_miller-2001.md`（raw PDF は cs の著者個人サイト `https://ekmillerlab.mit.edu/.../Miller-Cohen-20011.pdf` 経由で取得可能 — pd 側未確認）

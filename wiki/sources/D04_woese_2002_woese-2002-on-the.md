@@ -70,6 +70,13 @@ Woese は、細胞進化の初期段階では水平遺伝子移動（HGT）が�
 - **DOI**: [10.1073/pnas.132266999](https://doi.org/10.1073/pnas.132266999)
 - **オープンアクセス**: [PMC124369](https://europepmc.org/articles/pmc124369?pdf=render)
 
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/source-notes/D04/D04-S09_woese-2002.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D04/D04-S09_woese-2002.md)（manifest_id: `D04-S09`）
+- **cs 精読ノート**: [knowledge/source-notes/D04/D04-S09_woese-2002.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D04/D04-S09_woese-2002.md)
+- **この wiki ページ（pd）**: [wiki/sources/D04_woese_2002_woese-2002-on-the.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D04_woese_2002_woese-2002-on-the.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
+
 ## 出典メモ
 
 - cs 側読解: `creation-space/knowledge/source-notes/D04/D04-S09_woese-2002.md`（2026-04-10、Claude Opus 4.6, WebFetch → PDF Read 全 6 ページ）

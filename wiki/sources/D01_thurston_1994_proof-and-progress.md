@@ -60,3 +60,10 @@ Thurston が強調する「理解の多層性」（視覚、触覚、位置感�
 - access_status: raw-confirmed
 - **DOI**: [10.1090/S0273-0979-1994-00502-6](https://doi.org/10.1090/S0273-0979-1994-00502-6)
 - **オープンアクセス**: [PDF](https://arxiv.org/pdf/math/9404236)
+
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/raw/D01_thurston_1994_proof-and-progress.pdf](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/D01_thurston_1994_proof-and-progress.pdf)（manifest_id: `D01-S04`）
+- **cs 精読ノート**: [knowledge/source-notes/D01/D01-S04_thurston-1994.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D01/D01-S04_thurston-1994.md)
+- **この wiki ページ（pd）**: [wiki/sources/D01_thurston_1994_proof-and-progress.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D01_thurston_1994_proof-and-progress.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照

@@ -61,3 +61,10 @@ Bickertonは序論で明示する通り、本書は以下三問を一つの問�
 - 出典: Language Science Press, Classics in Linguistics 3, Berlin（2016再刊版）
 - access_status: raw-confirmed
 - **全文**: [OAPEN](https://library.oapen.org/handle/20.500.12657/37580)
+
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/raw/D17_bickerton_1981_roots-of-language.pdf](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/D17_bickerton_1981_roots-of-language.pdf)（manifest_id: `D17-S07`）
+- **cs 精読ノート**: [knowledge/source-notes/D17/D17-S07_bickerton-1981.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D17/D17-S07_bickerton-1981.md)
+- **この wiki ページ（pd）**: [wiki/sources/D17_bickerton_1981_roots-of-language.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D17_bickerton_1981_roots-of-language.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照

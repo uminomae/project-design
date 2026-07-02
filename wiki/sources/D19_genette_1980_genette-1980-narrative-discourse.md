@@ -72,6 +72,13 @@ Proust『失われた時を求めて』のテクスト分析を通じて、物�
 - access_status: url-verified
 - **オープンアクセス**: [Internet Archive PDF](https://archive.org/download/NarrativeDiscourseAnEssayInMethod/NarrativeDiscourse-AnEssayInMethod.pdf)
 
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/source-notes/D19/D19-S15_genette-1980.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D19/D19-S15_genette-1980.md)（manifest_id: `D19-S15`）
+- **cs 精読ノート**: [knowledge/source-notes/D19/D19-S15_genette-1980.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D19/D19-S15_genette-1980.md)
+- **この wiki ページ（pd）**: [wiki/sources/D19_genette_1980_genette-1980-narrative-discourse.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D19_genette_1980_genette-1980-narrative-discourse.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
+
 ## 出典メモ
 
 - cs 側読解: `creation-space/knowledge/source-notes/D19/D19-S15_genette-1980.md`（2026-04-11、claude-opus-4-6, WebFetch → Read PDF。Foreword + Preface + Introduction + Ch.1-3 + Afterword 読了）

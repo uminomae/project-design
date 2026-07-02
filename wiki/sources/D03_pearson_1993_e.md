@@ -72,6 +72,13 @@ Gray-Scott 反応拡散モデルの数値シミュレーションにより、従
 - **DOI**: [10.1126/science.261.5118.189](https://doi.org/10.1126/science.261.5118.189)
 - **オープンアクセス**: [arXiv:patt-sol/9304003](https://arxiv.org/pdf/patt-sol/9304003)
 
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/source-notes/D03/D03-S11_pearson-1993.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D03/D03-S11_pearson-1993.md)（manifest_id: `D03-S11`）
+- **cs 精読ノート**: [knowledge/source-notes/D03/D03-S11_pearson-1993.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D03/D03-S11_pearson-1993.md)
+- **この wiki ページ（pd）**: [wiki/sources/D03_pearson_1993_e.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D03_pearson_1993_e.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
+
 ## 出典メモ
 
 - cs 側読解: `creation-space/knowledge/source-notes/D03/D03-S11_pearson-1993.md`（2026-04-10、Claude Opus 4.6, WebFetch → Read PDF 全 8 ページ）

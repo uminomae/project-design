@@ -68,6 +68,13 @@ Bak-Tang-Wiesenfeld sandpile 以降の展開として、conservative dynamics �
 - **DOI**: [10.1103/RevModPhys.90.031001](https://doi.org/10.1103/RevModPhys.90.031001)
 - **オープンアクセス**: [arXiv:1712.04499](https://arxiv.org/pdf/1712.04499)
 
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/source-notes/D29/D29-S13_munoz-2018-criticality-living-systems.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D29/D29-S13_munoz-2018-criticality-living-systems.md)（manifest_id: `D29-S13`）
+- **cs 精読ノート**: [knowledge/source-notes/D29/D29-S13_munoz-2018-criticality-living-systems.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D29/D29-S13_munoz-2018-criticality-living-systems.md)
+- **この wiki ページ（pd）**: [wiki/sources/D29_munoz_2018_criticality-and-dynamical-scaling.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D29_munoz_2018_criticality-and-dynamical-scaling.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
+
 ## 出典メモ
 
 - cs 側読解: `creation-space/knowledge/source-notes/D29/D29-S13_munoz-2018-criticality-living-systems.md`（2026-04-14、Claude Opus 4.6, WebFetch → Read PDF。Sec. I-V + Appendices A-D 冒頭を読了、約 30 ページ）

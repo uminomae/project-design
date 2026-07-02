@@ -57,3 +57,10 @@ Poincaré が記述する「無意識の孵化」——集中した思考の後�
 - 出典: Thomas Nelson and Sons, London（Francis Maitland 訳）
 - access_status: raw-confirmed
 - **全文**: [Internet Archive](https://archive.org/download/sciencemethod00poinuoft/sciencemethod00poinuoft.pdf)
+
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/raw/D01_poincare_1908_science-and-method.pdf](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/D01_poincare_1908_science-and-method.pdf)（manifest_id: `D01-S05`）
+- **cs 精読ノート**: [knowledge/source-notes/D01/D01-S05_poincare-1908.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D01/D01-S05_poincare-1908.md)
+- **この wiki ページ（pd）**: [wiki/sources/D01_poincare_1908_science-and-method.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D01_poincare_1908_science-and-method.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照

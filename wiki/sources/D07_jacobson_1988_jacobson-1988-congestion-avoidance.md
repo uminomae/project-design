@@ -76,6 +76,13 @@ slow-start は名前に反して指数的（log₂W ラウンドトリップ）�
 - **DOI**: [10.1145/52324.52356](https://doi.org/10.1145/52324.52356)
 - **オープンアクセス**: [LBL PDF](https://ee.lbl.gov/papers/congavoid.pdf) / [ACM PDF](https://dl.acm.org/doi/pdf/10.1145/52324.52356)
 
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/source-notes/D07/D07-S03_jacobson-1988.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D07/D07-S03_jacobson-1988.md)（manifest_id: `D07-S03`）
+- **cs 精読ノート**: [knowledge/source-notes/D07/D07-S03_jacobson-1988.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D07/D07-S03_jacobson-1988.md)
+- **この wiki ページ（pd）**: [wiki/sources/D07_jacobson_1988_jacobson-1988-congestion-avoidance.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D07_jacobson_1988_jacobson-1988-congestion-avoidance.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
+
 ## 出典メモ
 
 - cs 側読解: `creation-space/knowledge/source-notes/D07/D07-S03_jacobson-1988.md`（2026-04-13、Claude Opus 4.6, curl + Read PDF。本論 + 付録 A,B 全部、付録 C,D は未読）

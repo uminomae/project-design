@@ -64,3 +64,10 @@ Ostromはこれらが「メタファー」に過ぎず、現実の利用者が�
 - 出典: Cambridge University Press, Political Economy of Institutions and Decisions series
 - access_status: raw-confirmed
 - **DOI**: [10.1017/CBO9780511807763](https://doi.org/10.1017/CBO9780511807763)
+
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/raw/D20_ostrom_1990_governing-the-commons.pdf](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/D20_ostrom_1990_governing-the-commons.pdf)（manifest_id: `D20-S03`）
+- **cs 精読ノート**: [knowledge/source-notes/D20/D20-S03_ostrom-1990.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D20/D20-S03_ostrom-1990.md)
+- **この wiki ページ（pd）**: [wiki/sources/D20_ostrom_1990_governing-the-commons.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D20_ostrom_1990_governing-the-commons.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照

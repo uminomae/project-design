@@ -73,6 +73,13 @@ D02-S14 と同様。「生命は予測モデルを持つことで存在し続け
 - **DOI**: [10.3390/e14112100](https://doi.org/10.3390/e14112100)
 - **オープンアクセス**: [MDPI PDF](https://www.mdpi.com/1099-4300/14/11/2100/pdf) / [PMC3510653](https://pmc.ncbi.nlm.nih.gov/articles/PMC3510653/)
 
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/source-notes/D06/D06-S14_friston-2012.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D06/D06-S14_friston-2012.md)（manifest_id: `D06-S14`）
+- **cs 精読ノート**: [knowledge/source-notes/D06/D06-S14_friston-2012.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D06/D06-S14_friston-2012.md)
+- **この wiki ページ（pd）**: [wiki/sources/D06_friston_2012_a-free-energy-principle.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D06_friston_2012_a-free-energy-principle.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
+
 ## 出典メモ
 
 - cs 側読解: `creation-space/knowledge/source-notes/D06/D06-S14_friston-2012.md`（2026-04-10、Claude Opus 4.6, WebFetch via PMC HTML）

@@ -74,6 +74,13 @@ CDM モデルへの観測的挑戦が小スケールで残る。
 - **DOI**: [10.1002/andp.201200212](https://doi.org/10.1002/andp.201200212)
 - **オープンアクセス**: [arXiv:1210.0544](https://arxiv.org/pdf/1210.0544)
 
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/source-notes/D06/D06-S12_frenk-white-2012.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D06/D06-S12_frenk-white-2012.md)（manifest_id: `D06-S12`）
+- **cs 精読ノート**: [knowledge/source-notes/D06/D06-S12_frenk-white-2012.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D06/D06-S12_frenk-white-2012.md)
+- **この wiki ページ（pd）**: [wiki/sources/D06_frenk_2012_dark-matter-and-cosmic.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D06_frenk_2012_dark-matter-and-cosmic.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
+
 ## 出典メモ
 
 - cs 側読解: `creation-space/knowledge/source-notes/D06/D06-S12_frenk-white-2012.md`（2026-04-10、Claude Opus 4.6, WebFetch → Read PDF 全 25 ページ）

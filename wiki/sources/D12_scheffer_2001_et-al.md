@@ -86,6 +86,13 @@ Lake Veluwe の charophyte 植生のデータは、リン濃度の増減経路�
 - **DOI**: [10.1038/35098000](https://doi.org/10.1038/35098000)
 - **オープンアクセス**: [Gatsby UCL mirror PDF](https://www.gatsby.ucl.ac.uk/~pel/environment/catastrophe.pdf)
 
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/source-notes/D12/D12-S08_scheffer-2001.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D12/D12-S08_scheffer-2001.md)（manifest_id: `D12-S08`）
+- **cs 精読ノート**: [knowledge/source-notes/D12/D12-S08_scheffer-2001.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D12/D12-S08_scheffer-2001.md)
+- **この wiki ページ（pd）**: [wiki/sources/D12_scheffer_2001_et-al.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D12_scheffer_2001_et-al.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
+
 ## 出典メモ
 
 - cs 側読解: `creation-space/knowledge/source-notes/D12/D12-S08_scheffer-2001.md`（2026-04-13、Claude Opus 4.6, WebFetch、Abstract + 7 図キャプションのみ。本文は paywall）

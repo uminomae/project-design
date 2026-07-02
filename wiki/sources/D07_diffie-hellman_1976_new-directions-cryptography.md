@@ -51,3 +51,10 @@ review_state: 未レビュー
 - 出典: IEEE Transactions on Information Theory, IT-22(6), 644-654
 - access_status: raw-confirmed
 - **DOI**: [10.1109/TIT.1976.1055638](https://doi.org/10.1109/TIT.1976.1055638)
+
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/raw/D07_diffie-hellman_1976_new-directions-cryptography.pdf](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/D07_diffie-hellman_1976_new-directions-cryptography.pdf)（manifest_id: `D07-S10`）
+- **cs 精読ノート**: [knowledge/source-notes/D07/D07-S10_diffie-hellman-1976.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D07/D07-S10_diffie-hellman-1976.md)
+- **この wiki ページ（pd）**: [wiki/sources/D07_diffie-hellman_1976_new-directions-cryptography.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D07_diffie-hellman_1976_new-directions-cryptography.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照

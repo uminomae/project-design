@@ -56,3 +56,10 @@ review_state: 未レビュー
 - 出典: PLoS ONE, 9(5): e95004
 - access_status: raw-confirmed
 - **DOI**: [10.1371/journal.pone.0105865](https://doi.org/10.1371/journal.pone.0105865)
+
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/raw/D11_li_2014_network-pharmacology-qishenyiqi.pdf](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/D11_li_2014_network-pharmacology-qishenyiqi.pdf)（manifest_id: `D11-S09`）
+- **cs 精読ノート**: [knowledge/source-notes/D11/D11-S09_li-2014.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D11/D11-S09_li-2014.md)
+- **この wiki ページ（pd）**: [wiki/sources/D11_li_2014_network-pharmacology-qishenyiqi.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D11_li_2014_network-pharmacology-qishenyiqi.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照

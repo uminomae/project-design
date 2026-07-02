@@ -136,6 +136,32 @@ function parseSources(frontRaw) {
 // [[target]] / [[target|alias]] / [[target#section]] / [[path/target]]
 const WIKILINK_RE = /\[\[([^\]]+)\]\]/g;
 
+// WL-6: safe path prefixes that legitimately contain /
+const SAFE_WIKILINK_PREFIXES = ["sources/", "concepts/", "cross-refs/", "keywords/"];
+
+/**
+ * WL-6: Detect wikilinks whose target contains `/` but does NOT start
+ * with a known directory prefix (sources/, concepts/, etc.).
+ * These may be year-range titles like [[van Gennep 1909/1960]] where
+ * the `/` is misinterpreted as a path separator, truncating the link stem.
+ */
+function extractSuspiciousSlashLinks(text) {
+  WIKILINK_RE.lastIndex = 0;
+  const suspicious = [];
+  let m;
+  while ((m = WIKILINK_RE.exec(text)) !== null) {
+    let raw = m[1];
+    const escPipe = raw.indexOf("\\|");
+    const pipe = raw.indexOf("|");
+    const cut = escPipe >= 0 && (pipe < 0 || escPipe < pipe) ? escPipe : pipe;
+    const target = (cut >= 0 ? raw.slice(0, cut) : raw).trim();
+    if (target.includes("/") && !SAFE_WIKILINK_PREFIXES.some((pfx) => target.startsWith(pfx))) {
+      suspicious.push(target);
+    }
+  }
+  return suspicious;
+}
+
 function extractLinks(text) {
   const links = [];
   let m;
@@ -217,6 +243,7 @@ function main() {
   let broken = 0;
 
   const brokenSamples = [];
+  const suspiciousSlashLinks = [];
   for (const f of allFiles) {
     const text = readFileSync(f, "utf8");
     const { body } = parseFrontMatter(text);
@@ -231,6 +258,10 @@ function main() {
         broken++;
         if (brokenSamples.length < 20) brokenSamples.push({ from: srcStem, target });
       }
+    }
+    // WL-6: detect suspicious / in wikilink targets
+    for (const t of extractSuspiciousSlashLinks(body)) {
+      if (suspiciousSlashLinks.length < 20) suspiciousSlashLinks.push({ from: srcStem, target: t });
     }
   }
 
@@ -277,6 +308,7 @@ function main() {
   lines.push(`| 総 wikilink 数 | ${totalLinks} |`);
   lines.push(`| Orphan（除外: ${[...EXCLUDE].join(", ")}） | **${orphans.length}** |`);
   lines.push(`| Broken wikilink | ${broken} |`);
+  lines.push(`| WL-6 疑わしい / 入り wikilink | ${suspiciousSlashLinks.length} |`);
   lines.push("");
   lines.push("## ディレクトリ別");
   lines.push("");
@@ -301,7 +333,16 @@ function main() {
   if (brokenSamples.length > 0) {
     lines.push("## Broken wikilink サンプル (最大 20 件)");
     lines.push("");
-    for (const b of brokenSamples) lines.push(`- \`${b.target}\` ← ${b.from}`);
+    for (const b of brokenSamples) lines.push("- `" + b.target + "` ← " + b.from);
+    lines.push("");
+  }
+  if (suspiciousSlashLinks.length > 0) {
+    lines.push("## WL-6 疑わしい `/` 入り wikilink (最大 20 件)");
+    lines.push("");
+    lines.push("年号 `1909/1960` 等タイトルに `/` が含まれると basename 誤抽出が起きます。");
+    lines.push("pipe 形式 `[[stem|ラベル]]` または aliases を使用してください。");
+    lines.push("");
+    for (const b of suspiciousSlashLinks) lines.push("- `" + b.target + "` ← " + b.from);
     lines.push("");
   }
   const autoBlock = lines.join("\n");

@@ -55,3 +55,10 @@ review_state: 未レビュー
 - 出典: Nature Neuroscience, 2(1), 79-87
 - access_status: raw-confirmed
 - **DOI**: [10.1038/4580](https://doi.org/10.1038/4580)
+
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/raw/D08_rao-ballard_1999_predictive-coding-visual-cortex.pdf](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/D08_rao-ballard_1999_predictive-coding-visual-cortex.pdf)（manifest_id: `D08-S01`）
+- **cs 精読ノート**: [knowledge/source-notes/D08/D08-S01_rao-ballard-1999.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D08/D08-S01_rao-ballard-1999.md)
+- **この wiki ページ（pd）**: [wiki/sources/D08_rao-ballard_1999_predictive-coding-visual-cortex.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D08_rao-ballard_1999_predictive-coding-visual-cortex.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照

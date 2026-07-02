@@ -53,3 +53,10 @@ SOC は太陽フレア、地球磁気圏サブストーム、核融合プラズ�
 - 年: 2016
 - 出典: Space Science Reviews, Vol. 198, pp. 3-44. DOI: 10.1007/s11214-015-0155-x
 - access_status: raw-confirmed
+
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/raw/D29_watkins_2016_25-years-self-organized-criticality.pdf](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/D29_watkins_2016_25-years-self-organized-criticality.pdf)（manifest_id: `D29-S05`）
+- **cs 精読ノート**: [knowledge/source-notes/D29/D29-S05_watkins-2016.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D29/D29-S05_watkins-2016.md)
+- **この wiki ページ（pd）**: [wiki/sources/D29_watkins_2016_25-years-self-organized-criticality.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D29_watkins_2016_25-years-self-organized-criticality.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照

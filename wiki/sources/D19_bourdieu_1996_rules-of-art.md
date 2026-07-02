@@ -67,6 +67,13 @@ Bourdieu は文学場（literary field）の生成と構造を分析し、芸術
 - ISBN: 0-8047-2568-3 (cloth) / 0-8047-2627-2 (paper)
 - **オープンアクセス**: [Monoskop PDF](https://monoskop.org/images/9/94/Pierre_Bourdieu_The_Rules_of_Art_Genesis_and_Structure_of_the_Literary_Field_1996.pdf)
 
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/source-notes/D19/D19-S09_bourdieu-1996.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D19/D19-S09_bourdieu-1996.md)（manifest_id: `D19-S09`）
+- **cs 精読ノート**: [knowledge/source-notes/D19/D19-S09_bourdieu-1996.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D19/D19-S09_bourdieu-1996.md)
+- **この wiki ページ（pd）**: [wiki/sources/D19_bourdieu_1996_rules-of-art.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D19_bourdieu_1996_rules-of-art.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
+
 ## 出典メモ
 
 - cs 側読解: `creation-space/knowledge/source-notes/D19/D19-S09_bourdieu-1996.md`（2026-04-16、claude-opus-4-6, Read PDF。Preface + Prologue + Notes/Index 抜粋）

@@ -75,6 +75,13 @@ Mehr ら (2019) は、315 社会の民族誌テキスト（NHS Ethnography）と
 - **DOI**: [10.1126/science.aax0868](https://doi.org/10.1126/science.aax0868)
 - **オープンアクセス**: [PMC7001657](https://pmc.ncbi.nlm.nih.gov/articles/PMC7001657/) / [OSF preprint](https://osf.io/gxzfq_v1/download)
 
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/source-notes/D26/D26-S07_mehr-2019.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D26/D26-S07_mehr-2019.md)（manifest_id: `D26-S07`）
+- **cs 精読ノート**: [knowledge/source-notes/D26/D26-S07_mehr-2019.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D26/D26-S07_mehr-2019.md)
+- **この wiki ページ（pd）**: [wiki/sources/D26_mehr_2019_et-al.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D26_mehr_2019_et-al.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
+
 ## 出典メモ
 
 - cs 側読解: `creation-space/knowledge/source-notes/D26/D26-S07_mehr-2019.md`（2026-04-11、Claude Opus 4.6、WebFetch via PMC）

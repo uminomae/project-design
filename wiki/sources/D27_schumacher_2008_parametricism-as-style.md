@@ -93,6 +93,13 @@ Lakatos の「research programme」概念を明示的に援用し、避けるべ
 - access_status: url-verified（WebFetch HTML）
 - **公式 URL**: [patrikschumacher.com / Parametricism as Style](https://patrikschumacher.com/parametricism-as-style-parametricist-manifesto/)
 
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/source-notes/D27/D27-S10_schumacher-2008.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D27/D27-S10_schumacher-2008.md)（manifest_id: `D27-S10`）
+- **cs 精読ノート**: [knowledge/source-notes/D27/D27-S10_schumacher-2008.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D27/D27-S10_schumacher-2008.md)
+- **この wiki ページ（pd）**: [wiki/sources/D27_schumacher_2008_parametricism-as-style.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D27_schumacher_2008_parametricism-as-style.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
+
 ## 出典メモ
 
 - cs 側読解: `creation-space/knowledge/source-notes/D27/D27-S10_schumacher-2008.md`（2026-04-17、Claude Opus 4.7, WebFetch HTML: 冒頭 + 5 agendas 概要 + heuristics）

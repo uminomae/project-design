@@ -50,3 +50,10 @@ H_c1 < H < H_c2 の範囲（混合状態）では、磁束は量子単位 Φ_0 =
 - 年: 1957
 - 出典: Soviet Physics JETP, Vol. 5, No. 6, pp. 1174-1182（原文: Zh. Eksp. Teor. Fiz. 32, 1442-1452, 1957）
 - access_status: raw-confirmed
+
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/raw/D02_abrikosov_1957_magnetic-properties-superconductors-second-group.pdf](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/D02_abrikosov_1957_magnetic-properties-superconductors-second-group.pdf)（manifest_id: `D02-S03`）
+- **cs 精読ノート**: [knowledge/source-notes/D02/D02-S03_abrikosov-1957.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D02/D02-S03_abrikosov-1957.md)
+- **この wiki ページ（pd）**: [wiki/sources/D02_abrikosov_1957_magnetic-properties-superconductors-second-group.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D02_abrikosov_1957_magnetic-properties-superconductors-second-group.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照

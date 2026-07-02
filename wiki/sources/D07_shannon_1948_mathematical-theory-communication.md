@@ -54,7 +54,6 @@ H = - Σ p_i log p_i
 **シャノンの符号化定理（ノイズありチャンネル）**
 ノイズのあるチャンネルであっても、チャンネル容量 C を下回る速度でデータを送信するならば、誤り率をいくらでも小さくできる符号化が存在する。これは通信工学の基本限界を示す定理であり、情報の圧縮と誤り訂正の理論的根拠となった。
 
-
 ## 書誌情報
 
 - 著者: C. E. Shannon
@@ -62,3 +61,10 @@ H = - Σ p_i log p_i
 - 出典: Bell System Technical Journal, Vol. 27, pp. 379-423, 623-656（July, October 1948）
 - access_status: raw-confirmed
 - **DOI**: [10.1002/j.1538-7305.1948.tb01338.x](https://doi.org/10.1002/j.1538-7305.1948.tb01338.x)
+
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/raw/D07_shannon_1948_mathematical-theory-communication.pdf](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/D07_shannon_1948_mathematical-theory-communication.pdf)（manifest_id: `D07-S05`）
+- **cs 精読ノート**: [knowledge/source-notes/D07/D07-S05_shannon-1948.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D07/D07-S05_shannon-1948.md)
+- **この wiki ページ（pd）**: [wiki/sources/D07_shannon_1948_mathematical-theory-communication.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D07_shannon_1948_mathematical-theory-communication.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照

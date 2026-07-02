@@ -5,6 +5,7 @@ aliases: ["Balbus-Hawley instability", "MRI", "Magnetorotational instability"]
 tags: [source, "astronomy", "原典解説", "D06"]
 source:
   repo: "creation-space"
+  manifest_id: "D06-S04"
   path: "knowledge/raw/D06_balbus-hawley_1991_shear-instability.pdf"
 compiled: "2026-04-11"
 status: 正典

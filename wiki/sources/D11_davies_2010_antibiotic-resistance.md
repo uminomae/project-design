@@ -5,6 +5,7 @@ aliases: ["Origins and Evolution of Antibiotic Resistance"]
 tags: [source, "pharmacy", "原典解説", "D11"]
 source:
   repo: "creation-space"
+  manifest_id: "D11-S03"
   path: "knowledge/raw/D11_davies_2010_antibiotic-resistance.pdf"
 compiled: "2026-04-11"
 status: 正典

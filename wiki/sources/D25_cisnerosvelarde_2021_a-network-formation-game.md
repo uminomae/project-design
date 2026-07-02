@@ -66,6 +66,13 @@ Cisneros-Velarde & Bullo はネットワーク形成ゲームの枠組みを用�
 - **DOI**: [10.1371/journal.pone.0255990](https://doi.org/10.1371/journal.pone.0255990)
 - **オープンアクセス**: [PLOS ONE PDF](https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0255990&type=printable)
 
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/source-notes/D25/D25-S16_cisneros-2021.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D25/D25-S16_cisneros-2021.md)（manifest_id: `D25-S16`）
+- **cs 精読ノート**: [knowledge/source-notes/D25/D25-S16_cisneros-2021.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D25/D25-S16_cisneros-2021.md)
+- **この wiki ページ（pd）**: [wiki/sources/D25_cisnerosvelarde_2021_a-network-formation-game.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D25_cisnerosvelarde_2021_a-network-formation-game.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
+
 ## 出典メモ
 
 - cs 側読解: `creation-space/knowledge/source-notes/D25/D25-S16_cisneros-2021.md`（2026-04-11、claude-opus-4-6, WebFetch → Read PDF pp.1-20）

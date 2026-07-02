@@ -46,3 +46,10 @@ review_state: 未レビュー
 - 出典: Reviews of Modern Physics, Vol. 75, No. 3, pp. 715-775
 - access_status: raw-confirmed
 - **DOI**: [10.1103/RevModPhys.75.715](https://doi.org/10.1103/RevModPhys.75.715)
+
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/raw/D02_zurek_2003_decoherence-einselection-quantum-origins-classical.pdf](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/D02_zurek_2003_decoherence-einselection-quantum-origins-classical.pdf)（manifest_id: `D02-S09`）
+- **cs 精読ノート**: [knowledge/source-notes/D02/D02-S09_zurek-2003.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D02/D02-S09_zurek-2003.md)
+- **この wiki ページ（pd）**: [wiki/sources/D02_zurek_2003_decoherence-einselection-quantum-origins-classical.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D02_zurek_2003_decoherence-einselection-quantum-origins-classical.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照

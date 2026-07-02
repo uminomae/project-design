@@ -48,7 +48,6 @@ Varela がMarturana と共に発展させたautopoiesis 理論が背景にある
 
 enactionの中核にある「知覚は世界の受動的な受け取りではなく、身体的行為を通じた能動的な構成である」というテーゼは、神経科学における感覚-運動ループ（sensorimotor loop）の理解と対応する。知覚は身体の動きと環境の変化の相互作用のパターンとして成立し、神経システムはそのループを生成・維持するシステムとして機能する。
 
-
 ## 書誌情報
 
 - 著者: Francisco J. Varela, Evan Thompson, Eleanor Rosch
@@ -56,3 +55,10 @@ enactionの中核にある「知覚は世界の受動的な受け取りではな
 - 出典: The MIT Press（Cambridge, Massachusetts）
 - access_status: raw-confirmed
 - **ISBN**: 978-0-262-72021-2
+
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/raw/D14_varela_1991_embodied-mind.pdf](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/D14_varela_1991_embodied-mind.pdf)（manifest_id: `D08-S08`）
+- **cs 精読ノート**: [knowledge/source-notes/D08/D08-S08_varela-1991.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D08/D08-S08_varela-1991.md)
+- **この wiki ページ（pd）**: [wiki/sources/D08_varela_1991_embodied-mind.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D08_varela_1991_embodied-mind.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照

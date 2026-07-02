@@ -55,3 +55,10 @@ R. Becker と W. Döring が1935年に Annalen der Physik に発表した論文�
 - 出典: Annalen der Physik, Folge 5, Band 24, pp. 719–752（英訳: NACA Technical Memorandum 1374）
 - access_status: raw-confirmed
 - **DOI**: [10.1002/andp.19354160806](https://doi.org/10.1002/andp.19354160806)
+
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/raw/D03_becker-doring_1935_keimbildung.pdf](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/D03_becker-doring_1935_keimbildung.pdf)（manifest_id: `D03-S01`）
+- **cs 精読ノート**: [knowledge/source-notes/D03/D03-S01_becker-doring-1935.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D03/D03-S01_becker-doring-1935.md)
+- **この wiki ページ（pd）**: [wiki/sources/D03_becker-doring_1935_keimbildung.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D03_becker-doring_1935_keimbildung.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照

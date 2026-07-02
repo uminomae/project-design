@@ -52,7 +52,6 @@ review_state: 未レビュー
 
 最終章でデューイは芸術と文明の関係を論じる。芸術は文化の装飾ではなく、コミュニティが共有する経験の質の表現であり指標である。芸術が日常から隔離されているとき、コミュニティ自体が分断されている。芸術の民主化は文化的健全性の条件である。
 
-
 ## 書誌情報
 
 - 著者: John Dewey
@@ -60,3 +59,10 @@ review_state: 未レビュー
 - 出典: G. P. Putnam's Sons, New York（William James Lectureship, Harvard University, 1931年講演）
 - access_status: raw-confirmed
 - **全文**: [Internet Archive](https://archive.org/details/art-as-experience-dewey)
+
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/raw/D13_dewey_1934_art-as-experience.pdf](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/D13_dewey_1934_art-as-experience.pdf)（manifest_id: `D15-S09`）
+- **cs 精読ノート**: [knowledge/source-notes/D15/D15-S09_dewey-1934.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D15/D15-S09_dewey-1934.md)
+- **この wiki ページ（pd）**: [wiki/sources/D15_dewey_1934_art-as-experience.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D15_dewey_1934_art-as-experience.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照

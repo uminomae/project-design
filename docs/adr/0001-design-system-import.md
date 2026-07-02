@@ -1,10 +1,12 @@
 # ADR-0001: design-system tokens の import 方式
 
-**status**: Proposed
-**date**: 2026-04-28
+**status**: **Superseded** (2026-05-03, Claude Design 方針転換)
+**date**: 2026-04-28 (proposed) / 2026-04-29 (accepted) / 2026-05-03 (superseded)
 **deciders**: pjdhiro
 **parent issue**: [pd#86](https://github.com/uminomae/project-design/issues/86)
 **related**: [pd#85](https://github.com/uminomae/project-design/issues/85) major #2 / [techo#127](https://github.com/uminomae/techo/issues/127) 横断サマリ「構造的課題 3」
+
+> **Superseded note (2026-05-03)**: Claude Design は GitHub repo を直接読み込む方式のため、cross-repo CDN 配信ではなく **各 repo 自己完結 css** が前提。本 ADR の決定（CDN jsDelivr）は撤回し、3 repo は `--ds-*` token を inline 取り込み済み。pd 自身の `design-system/` ディレクトリは pd 専用 visual language として残置。
 
 ---
 
@@ -176,14 +178,16 @@ ADR draft 時の確認で判明: pd `main` には **`design-system/tokens.css` �
 
 ---
 
-## Open Questions (要 pjdhiro 判断)
+## Resolved Questions (2026-04-29 pjdhiro 判断)
 
 1. **pd `design-system/` を develop → main に merge するタイミング** (Pre-condition)
-   - 既に develop で安定動作 (e383d75 + 後続) しているので merge 可
-   - merge 後に techo#128 Phase 2 (Layer A 中継削除) も実施可能
-2. `@main` で開始するか、最初から `@v1.0.0` 等のタグを切って pin 運用するか
-3. fallback 値を CSS variable で残すか、build 時に inline 展開するか (Option C 併用)
-4. submodule 案 (Option B) を完全に排除するか、特定状況で併用するか
+   - **解消済**: 2026-04-28 merge commit 39d3996 で main 反映、jsDelivr `@main` 参照可能化
+2. **`@main` か `@v1.0.0` か**
+   - **`@main` で開始**。tag 運用 (`@v1.0.0` pin) は Step 4 で後回し
+3. **fallback 値の扱い**
+   - **各 repo `tokens.css` で fallback 値を維持**。CDN 障害時のフェイルセーフとして残す
+4. **Option B (submodule) を完全排除するか**
+   - **完全排除**。静的 site 運用で submodule overhead は割に合わない
 
 ---
 
@@ -198,4 +202,6 @@ ADR draft 時の確認で判明: pd `main` には **`design-system/tokens.css` �
 ## Status Log
 
 - 2026-04-28: draft 作成 (techo 側で起草)
-- TODO: pd `develop` に移送、pjdhiro レビュー、Decision 確定
+- 2026-04-28: pd `develop` 移送 (commit 0b369e9)
+- 2026-04-28: Pre-condition 解消 (develop → main merge commit 39d3996)
+- 2026-04-29: **Accepted** — Option A (CDN jsDelivr `@main`) 採択。Phase 2-B (3 repo 参照差替え) 着手

@@ -71,6 +71,13 @@ Barabasi & Albert (1999) は、遺伝子ネットワークから WWW まで、�
 - **DOI**: [10.1126/science.286.5439.509](https://doi.org/10.1126/science.286.5439.509)
 - **オープンアクセス**: [arXiv:cond-mat/9910332](https://arxiv.org/pdf/cond-mat/9910332)
 
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/source-notes/D18/D18-S06_barabasi-1999.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D18/D18-S06_barabasi-1999.md)（manifest_id: `D18-S06`）
+- **cs 精読ノート**: [knowledge/source-notes/D18/D18-S06_barabasi-1999.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D18/D18-S06_barabasi-1999.md)
+- **この wiki ページ（pd）**: [wiki/sources/D18_barabasi_1999_emergence-of-scaling-in.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D18_barabasi_1999_emergence-of-scaling-in.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
+
 ## 出典メモ
 
 - cs 側読解: `creation-space/knowledge/source-notes/D18/D18-S06_barabasi-1999.md`（2026-04-11、claude-opus-4-6, Read PDF 全 8 ページ、arXiv 版）

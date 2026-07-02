@@ -66,6 +66,13 @@ WALS の類型論データと、Ethnologue・Global Mapping International の人
 - **DOI**: [10.1371/journal.pone.0008559](https://doi.org/10.1371/journal.pone.0008559)
 - **オープンアクセス**: [PLoS ONE PDF](https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0008559&type=printable)
 
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/source-notes/D17/D17-S15_lupyan-2010.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D17/D17-S15_lupyan-2010.md)（manifest_id: `D17-S15`）
+- **cs 精読ノート**: [knowledge/source-notes/D17/D17-S15_lupyan-2010.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D17/D17-S15_lupyan-2010.md)
+- **この wiki ページ（pd）**: [wiki/sources/D17_lupyan_2010_language-structure-is-partly.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D17_lupyan_2010_language-structure-is-partly.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
+
 ## 出典メモ
 
 - cs 側読解: `creation-space/knowledge/source-notes/D17/D17-S15_lupyan-2010.md`（2026-04-11、claude-opus-4-6, WebFetch → PDF Read 全 10 ページ）

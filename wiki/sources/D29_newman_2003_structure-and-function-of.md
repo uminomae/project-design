@@ -75,6 +75,13 @@ clustering coefficient C は「三角形数 × 3 / 接続三項数」として�
 - **DOI**: [10.1137/S003614450342480](https://doi.org/10.1137/S003614450342480)
 - **オープンアクセス**: [arXiv:cond-mat/0303516](https://arxiv.org/pdf/cond-mat/0303516)
 
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/source-notes/D29/D29-S14_newman-2003-structure-function-complex-networks.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D29/D29-S14_newman-2003-structure-function-complex-networks.md)（manifest_id: `D29-S14`）
+- **cs 精読ノート**: [knowledge/source-notes/D29/D29-S14_newman-2003-structure-function-complex-networks.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D29/D29-S14_newman-2003-structure-function-complex-networks.md)
+- **この wiki ページ（pd）**: [wiki/sources/D29_newman_2003_structure-and-function-of.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D29_newman_2003_structure-and-function-of.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
+
 ## 出典メモ
 
 - cs 側読解: `creation-space/knowledge/source-notes/D29/D29-S14_newman-2003-structure-function-complex-networks.md`（2026-04-14、Claude Opus 4.6, WebFetch → Read PDF。Sec. I-IV 冒頭、約 41% 読了）

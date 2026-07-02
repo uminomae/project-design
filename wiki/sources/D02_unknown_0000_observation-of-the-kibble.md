@@ -69,6 +69,13 @@ Langevin 方程式に基づくシミュレーションで β = 2.53 ± 0.23 を�
 - **DOI**: [10.1038/ncomms3290](https://doi.org/10.1038/ncomms3290)
 - **オープンアクセス**: [Nature Communications PDF](https://www.nature.com/articles/ncomms3290.pdf)
 
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/source-notes/D02/D02-S04_pyka-2013.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D02/D02-S04_pyka-2013.md)（manifest_id: `D02-S04`）
+- **cs 精読ノート**: [knowledge/source-notes/D02/D02-S04_pyka-2013.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D02/D02-S04_pyka-2013.md)
+- **この wiki ページ（pd）**: [wiki/sources/D02_unknown_0000_observation-of-the-kibble.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D02_unknown_0000_observation-of-the-kibble.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
+
 ## 出典メモ
 
 - cs 側読解: `creation-space/knowledge/source-notes/D02/D02-S04_pyka-2013.md`（2026-04-10、Claude Opus 4.6, WebFetch → Read PDF 全 7 ページ）

@@ -51,3 +51,10 @@ C. H. ワディントンが1953年に発表したキイロショウジョウバ�
 - 出典: Evolution, 7(2), 118-126
 - access_status: raw-confirmed
 - **DOI**: [10.1111/j.1558-5646.1953.tb00070.x](https://doi.org/10.1111/j.1558-5646.1953.tb00070.x)
+
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/raw/D04_waddington_1953_genetic-assimilation.pdf](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/D04_waddington_1953_genetic-assimilation.pdf)（manifest_id: `D04-S05`）
+- **cs 精読ノート**: [knowledge/source-notes/D04/D04-S05_waddington-1953.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D04/D04-S05_waddington-1953.md)
+- **この wiki ページ（pd）**: [wiki/sources/D04_waddington_1953_genetic-assimilation.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D04_waddington_1953_genetic-assimilation.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照

@@ -47,3 +47,10 @@ QSYQ 全処方の NRI-ODN（864.48）は個々の生薬スコアをすべて上�
 - 出典: *Chinese Medicine* 9:24, BioMed Central
 - access_status: raw-confirmed
 - **DOI**: [10.1186/1749-8546-9-24](https://doi.org/10.1186/1749-8546-9-24)
+
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/raw/D11_wu_2014_chinese-medicine.pdf](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/D11_wu_2014_chinese-medicine.pdf)（manifest_id: `D11-S08`）
+- **cs 精読ノート**: [knowledge/source-notes/D11/D11-S08_wu-2014.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D11/D11-S08_wu-2014.md)
+- **この wiki ページ（pd）**: [wiki/sources/D11_wu_2014_chinese-medicine.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D11_wu_2014_chinese-medicine.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照

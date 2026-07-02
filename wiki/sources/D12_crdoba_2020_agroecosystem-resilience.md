@@ -70,6 +70,13 @@ review_state: 未レビュー
 - **DOI**: [10.1371/journal.pone.0220349](https://doi.org/10.1371/journal.pone.0220349)
 - **オープンアクセス**: [PLOS ONE](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0220349)
 
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/source-notes/D12/D12-S14_cordoba-2020.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D12/D12-S14_cordoba-2020.md)（manifest_id: `D12-S14`）
+- **cs 精読ノート**: [knowledge/source-notes/D12/D12-S14_cordoba-2020.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D12/D12-S14_cordoba-2020.md)
+- **この wiki ページ（pd）**: [wiki/sources/D12_crdoba_2020_agroecosystem-resilience.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D12_crdoba_2020_agroecosystem-resilience.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
+
 ## 出典メモ
 
 - cs 側読解: `creation-space/knowledge/source-notes/D12/D12-S14_cordoba-2020.md`（2026-04-10、claude-opus-4-6, WebFetch 全文）

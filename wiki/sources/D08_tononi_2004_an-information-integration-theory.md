@@ -79,6 +79,13 @@ Tononi (2004) は、意識を「情報を統合するシステムの能力」と
 - **DOI**: [10.1186/1471-2202-5-42](https://doi.org/10.1186/1471-2202-5-42)
 - **オープンアクセス**: [BMC Neurosci PDF](https://bmcneurosci.biomedcentral.com/counter/pdf/10.1186/1471-2202-5-42)
 
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/source-notes/D08/D08-S12_tononi-2004.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D08/D08-S12_tononi-2004.md)（manifest_id: `D08-S12`）
+- **cs 精読ノート**: [knowledge/source-notes/D08/D08-S12_tononi-2004.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D08/D08-S12_tononi-2004.md)
+- **この wiki ページ（pd）**: [wiki/sources/D08_tononi_2004_an-information-integration-theory.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D08_tononi_2004_an-information-integration-theory.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
+
 ## 出典メモ
 
 - cs 側読解: `creation-space/knowledge/source-notes/D08/D08-S12_tononi-2004.md`（2026-04-10、Claude Opus 4.6, WebFetch via PMC）

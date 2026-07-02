@@ -54,3 +54,10 @@ review_state: 未レビュー
 - 出典: The University of Chicago Press
 - access_status: raw-confirmed
 - **全文**: [Internet Archive](https://archive.org/details/theritesofpassage)
+
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/raw/D25_van-gennep_1960_rites-of-passage.pdf](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/D25_van-gennep_1960_rites-of-passage.pdf)（manifest_id: `D25-S01`）
+- **cs 精読ノート**: [knowledge/source-notes/D25/D25-S01_vangennep-1960.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D25/D25-S01_vangennep-1960.md)
+- **この wiki ページ（pd）**: [wiki/sources/D25_van-gennep_1960_rites-of-passage.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D25_van-gennep_1960_rites-of-passage.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照

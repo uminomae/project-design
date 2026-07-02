@@ -66,6 +66,13 @@ Tremendum の第一要素「畏怖」（awefulness）は自然的恐怖とは質
 - access_status: raw-confirmed（cs 側 PDF 確認済）
 - **オープンアクセス**: [DLI / Internet Archive PDF](https://archive.org/download/in.ernet.dli.2015.262513/2015.262513.The-Idea.pdf)
 
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/source-notes/D24/D24-S12_otto-1917.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D24/D24-S12_otto-1917.md)（manifest_id: `D24-S12`）
+- **cs 精読ノート**: [knowledge/source-notes/D24/D24-S12_otto-1917.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D24/D24-S12_otto-1917.md)
+- **この wiki ページ（pd）**: [wiki/sources/D24_otto_1917_idea-of-the-holy.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D24_otto_1917_idea-of-the-holy.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
+
 ## 出典メモ
 
 - cs 側読解: `creation-space/knowledge/source-notes/D24/D24-S12_otto-1917.md`（2026-04-16、claude-opus-4-6, Read PDF。Contents + Translator's Preface + Author's Foreword + Ch.I-IV を読了）

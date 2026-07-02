@@ -106,8 +106,23 @@ function findPdWiki(stem) {
   return hit ? join(PD_SOURCES, hit) : null;
 }
 
+// ---------- manifest_id index (url-verified フォールバック) ----------
+// pd wiki frontmatter の manifest_id: "DXX-SYY" を解析してマップを構築
+function buildManifestIdIndex() {
+  const idx = new Map(); // source_id -> pd wiki path
+  for (const f of readdirSync(PD_SOURCES)) {
+    if (!f.endsWith(".md")) continue;
+    const fullPath = join(PD_SOURCES, f);
+    const text = readFileSync(fullPath, "utf8");
+    const m = text.match(/manifest_id:\s*["']?([A-Z0-9]+-S\d+)["']?/);
+    if (m) idx.set(m[1], fullPath);
+  }
+  return idx;
+}
+
 // ---------- main ----------
 const rows = parseManifest();
+const manifestIdIndex = buildManifestIdIndex();
 
 const pairs = [];
 const warnCsMissing = [];
@@ -115,7 +130,8 @@ const warnPdMissing = [];
 
 for (const row of rows) {
   const csPath = findCsSourceNote(row.source_id, row.domain_id);
-  const pdPath = findPdWiki(row.pdStem);
+  // url-verified で pdStem=null の場合、manifest_id index でフォールバック
+  const pdPath = findPdWiki(row.pdStem) || manifestIdIndex.get(row.source_id) || null;
 
   if (opts.source) {
     // 単一 source モード: pdPath が指定と一致する行のみ
@@ -158,15 +174,15 @@ out += "矛盾があれば `.cache/inbox/wiki-conflict-{date}.md` に起票し�
 out += `## 対応ペア (${pairs.length})\n\n`;
 for (const p of pairs) {
   out += `### ${p.row.source_id} — ${p.row.title}\n`;
-  out += `- pd: \`${relativeTo(ROOT, p.pdPath)}\`\n`;
-  out += `- cs: \`${relativeTo(CS_ROOT, p.csPath)}\`\n`;
+  out += "- pd: `" + relativeTo(ROOT, p.pdPath) + "`\n";
+  out += "- cs: `" + relativeTo(CS_ROOT, p.csPath) + "`\n";
   out += `- access: ${p.row.access}\n\n`;
 }
 
 if (warnCsMissing.length > 0) {
   out += `## cs 未生成 (skip, ${warnCsMissing.length})\n\n`;
   for (const w of warnCsMissing) {
-    out += `- ${w.source_id}: pd=\`${relativeTo(ROOT, w.pd)}\` / cs source-note なし\n`;
+    out += "- " + w.source_id + ": pd=`" + relativeTo(ROOT, w.pd) + "` / cs source-note なし\n";
   }
   out += "\n";
 }
@@ -174,7 +190,7 @@ if (warnCsMissing.length > 0) {
 if (warnPdMissing.length > 0) {
   out += `## pd 未生成 (Step 3b 対象, ${warnPdMissing.length})\n\n`;
   for (const w of warnPdMissing) {
-    out += `- ${w.source_id}: cs=\`${relativeTo(CS_ROOT, w.cs)}\` / pd wiki なし\n`;
+    out += "- " + w.source_id + ": cs=`" + relativeTo(CS_ROOT, w.cs) + "` / pd wiki なし\n";
   }
   out += "\n";
 }

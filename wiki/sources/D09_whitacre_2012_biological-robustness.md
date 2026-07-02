@@ -68,6 +68,13 @@ review_state: 未レビュー
 - **DOI**: [10.3389/fgene.2012.00067](https://doi.org/10.3389/fgene.2012.00067)
 - **オープンアクセス**: [Frontiers PDF](https://www.frontiersin.org/articles/10.3389/fgene.2012.00067/pdf)
 
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/source-notes/D09/D09-S14_whitacre-2012.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D09/D09-S14_whitacre-2012.md)（manifest_id: `D09-S14`）
+- **cs 精読ノート**: [knowledge/source-notes/D09/D09-S14_whitacre-2012.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D09/D09-S14_whitacre-2012.md)
+- **この wiki ページ（pd）**: [wiki/sources/D09_whitacre_2012_biological-robustness.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D09_whitacre_2012_biological-robustness.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
+
 ## 出典メモ
 
 - cs 側読解: `creation-space/knowledge/source-notes/D09/D09-S14_whitacre-2012.md`（2026-04-10、claude-opus-4-6, WebFetch via HTML 全文）

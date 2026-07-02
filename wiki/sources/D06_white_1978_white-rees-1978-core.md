@@ -72,6 +72,13 @@ review_state: 未レビュー
 - **DOI**: [10.1093/mnras/183.3.341](https://doi.org/10.1093/mnras/183.3.341)
 - **オープンアクセス**: [MNRAS PDF](https://academic.oup.com/mnras/article-pdf/183/3/341/2943374/mnras183-0341.pdf)
 
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/source-notes/D06/D06-S02_white-rees-1978.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D06/D06-S02_white-rees-1978.md)（manifest_id: `D06-S02`）
+- **cs 精読ノート**: [knowledge/source-notes/D06/D06-S02_white-rees-1978.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D06/D06-S02_white-rees-1978.md)
+- **この wiki ページ（pd）**: [wiki/sources/D06_white_1978_white-rees-1978-core.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D06_white_1978_white-rees-1978-core.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
+
 ## 出典メモ
 
 - cs 側読解: `creation-space/knowledge/source-notes/D06/D06-S02_white-rees-1978.md`（2026-04-10、Claude Opus 4.6, WebFetch → PDF Read 全 18 ページ）

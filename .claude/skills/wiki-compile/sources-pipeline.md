@@ -12,6 +12,8 @@ wiki-compile の Step 3b（PDF → wiki/sources/ 生成）に関する詳細。
 - 正本: `cs/knowledge/raw/manifest.md`（access_status が `raw-confirmed` かつ `local_file` が存在する行）
 - 原典 PDF: `cs/knowledge/raw/{filename}.pdf`
 
+> **取得不能原典の生成除外（pd#114 / cs#252）**: access_status が `citation-only` / `blocked-access` の行は**生成対象外**。原典全文を検証できない原典は「論や解説の根拠にしない」方針のため、source ページを生成しない。これは上記の入力フィルタ（`raw-confirmed` のみ）で構造的に満たされるが、明示する。過去に `url-verified`/`raw-confirmed` で生成され後に降格された残骸ページは削除する（再 compile で復活しない＝入力に来ないため）。原典が再び取得可能になり `raw-confirmed` に昇格した場合のみ再生成する。
+
 ## 自動化パイプライン
 
 ```
@@ -149,6 +151,7 @@ wiki ソースページ生成時、manifest の notes 列から DOI / OA URL を
 ## 生成後チェック
 - `grep -rl '�' wiki/ --include='*.md'` で UTF-8 文字化けチェック
 - wiki-lint WL-5 で source パスの実在確認
+- **鎖の不変条件 (pd#114 / cs#252)**: `node scripts/wiki-access-lint.mjs` で、各 wiki/sources ページの `manifest_id` を cs manifest の access_status に突合する。取得不能（`citation-only` / `blocked-access`）原典に対応するページがあれば FAIL。検出時は当該ページを削除し（cs 側で read-list 化）、原典が `raw-confirmed` に昇格したら再生成する。cs 側の対は `validate-manifest-sync.sh` Check 11
 - **crosslink**: `node scripts/wiki-crosslink.mjs --source wiki/sources/{新ページ}.md` を実行し、本文中で言及された concept/entity/cross-refs ページの `## 関連原典` セクションに逆向き参照を自動追記。`--dry-run` / `--all` オプションあり。冪等なので再実行しても重複追記されない。現環境では Quartz ローカルビルドが Node 25/4.5.2 非互換で OOM するため、スクリプトはデフォルトで build をスキップする。公開確認は GitHub Pages に任せる（wiki-publish SKILL 参照）
 - **cross-check (cs wiki 矛盾検査)** (pd#82): `node scripts/wiki-cross-check.mjs --source wiki/sources/{新ページ}.md` を実行し、cs 対応ページ（`cs/knowledge/source-notes/D{NN}/D{NN}-S{##}_*.md`）との内容矛盾を検査する。対応ペアを `wiki-conflict-candidates-{date}.md` に書き出し、CLI が読んで判定する。cs 未生成ならスキップ。矛盾検知時は `.cache/inbox/wiki-conflict-{date}.md` に起票し、pjdhiro 判断を仰ぐ
 

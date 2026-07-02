@@ -164,3 +164,46 @@
     border-bottom-color: rgba(0, 0, 0, 0.15);
     padding-left: 1.75rem;
 }
+
+/* 誤解FAQ アコーディオン（DESIGN-RULES §9 / pd#110） */
+.misconception {
+    margin-top: 1.25rem;
+}
+
+.misconception > summary {
+    cursor: pointer;
+    list-style: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    min-height: 44px;
+    font-size: 0.85rem;
+    opacity: 0.85;
+}
+
+.misconception > summary::-webkit-details-marker {
+    display: none;
+}
+
+.misconception > summary::before {
+    content: "▸";
+    transition: transform 0.2s ease;
+}
+
+.misconception[open] > summary::before {
+    transform: rotate(90deg);
+}
+
+.misconception-body {
+    margin-top: 0.6rem;
+    font-size: 0.9rem;
+}
+
+.misconception-body ul {
+    padding-left: 1.2rem;
+    margin: 0;
+}
+
+.misconception-body li {
+    margin-bottom: 0.5rem;
+}

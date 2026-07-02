@@ -51,7 +51,6 @@ review_state: 未レビュー
 - 農業者: 経済的に受け入れ可能なコストで安全・安定な農作物生産が確保できる
 - 消費者: 化学農薬使用の最小化と農薬使用履歴などの栽培管理情報への透明なアクセス
 
-
 ## 書誌情報
 
 - 著者: 農林水産省消費・安全局（総合的病害虫管理（IPM）検討会）
@@ -59,3 +58,10 @@ review_state: 未レビュー
 - 出典: 農林水産省，総合的病害虫・雑草管理（IPM）実践指針
 - access_status: raw-confirmed
 - **公式URL**: [農林水産省 IPM実践指針](https://www.maff.go.jp/j/syouan/syokubo/ipm/)
+
+## ソース参照（GitHub・検証用）
+
+- **cs 原典ファイル**: [knowledge/raw/D12_maff_2005_ipm-practical-guideline.pdf](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/D12_maff_2005_ipm-practical-guideline.pdf)（manifest_id: `D12-S07`）
+- **cs 精読ノート**: [knowledge/source-notes/D12/D12-S07_maff-2005.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D12/D12-S07_maff-2005.md)
+- **この wiki ページ（pd）**: [wiki/sources/D12_maff_2005_ipm-practical-guideline.md](https://github.com/uminomae/project-design/blob/main/wiki/sources/D12_maff_2005_ipm-practical-guideline.md)
+- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照

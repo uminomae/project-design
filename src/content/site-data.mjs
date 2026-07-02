@@ -102,6 +102,9 @@ export const TRANSLATIONS = {
     "controls.languageAria": "言語切替",
     "hero.notice":
       "Love駆動開発と呼びたい現象を、これまで何度も経験してきました。<br>ここでいうプロジェクトは「やること（Doing）」だけでなく「起きていること（Being）」まで含む出来事です。",
+    "love.faq.summary": "よくある誤解",
+    "love.faq.body":
+      "<ul><li><strong>「Love は恋愛・愛情のことだ」</strong> → つながりを生む引力一般を指します。縁を生む力であって、特定の感情ではありません。</li><li><strong>「『生存と同等に重要』は論証済みの事実だ」</strong> → 構え（仮説）です。生存と並ぶ駆動力ではないか、という問いとして置いています。</li></ul>",
     "hero.aboutAria": "このサイトについて",
     "section.overview.label": "Overview",
     "section.overview.title": "概要",
@@ -116,10 +119,13 @@ export const TRANSLATIONS = {
     "overview.definition.item2": "実行・管理方法の構想・設計",
     "overview.scope.title": "射程",
     "overview.scope.body":
-      "営利・非営利の事業を主たる適用対象とする。研究、人生など、主体が目的を持って行為する営み一般に適用できる。",
+      "営利・非営利の事業を主たる適用対象とする（論証の射程）。研究、人生など、主体が目的を持って行為する営み一般へは、構造の類似を手がかりに広げて考える（論証ではなく試み）。",
     "overview.domain.title": "領域",
     "overview.domain.body":
       "コミュニケーション（情報処理＋感情処理）と環境適応（経営学など）",
+    "overview.faq.summary": "よくある誤解",
+    "overview.faq.body":
+      "<ul><li><strong>「Doing/Being と 環境適応/コミュニケーション は四象限に組める」</strong> → これらは直交軸ではなく、一つの全体への相補的な切り口です。四象限に押し込むと現象が痩せます。</li><li><strong>「主観・客観、個はどこまでかをクリアに線引きできる」</strong> → 微細な領域では量子と古典の境界のように揺れます。切り口であって実在の分割ではありません。</li><li><strong>「構想→設計→実行は決まった順序で循環する」</strong> → 実行と設計はメタとオブジェクトをまたいで折り返す、止揚を伴うスパイラルです。同じ所に戻る循環ではありません。</li></ul>",
     "section.doing.label": "Doing",
     "section.doing.title": "やること",
     "doing.principles.title": "行動原理",
@@ -139,7 +145,10 @@ export const TRANSLATIONS = {
     "section.being.label": "Being",
     "section.being.title": "起きていること",
     "section.being.body":
-      "場（Field）が現れ、差異＝波（Wave）が立ち上がり、縁＝境界（Relation）が結ばれ、衝突が渦（Spinor）として回り、成果が束（Bundle）として成る。プロジェクトの現在地を知ること。",
+      "場（Field）が現れ、差異＝波（Wave）が立ち上がり、縁＝境界（Relation）で衝突が生まれ、渦（Spinor）として止揚・統合され、成果が束（Bundle）として成る。プロジェクトの現在地を知ること。",
+    "being.faq.summary": "よくある誤解",
+    "being.faq.body":
+      "<ul><li><strong>「回転は渦だけのもの」</strong> → 回転は全段階に遍在します。波も回転です。「位相」も回転の一種で、あえて一般的・曖昧な語を当てています。</li><li><strong>「衝突は渦で統合される」</strong> → 衝突は縁（境界）で生まれ、渦はそれを止揚・統合する段階です。</li><li><strong>「束→場は同じ場に戻る閉じた循環」</strong> → 次サイクルの場へ前進する循環で、螺旋的に展開し元へは戻りません。</li></ul>",
     "pill.creationModel": "創造のモデル",
     "pill.awarenessModel": "意識のモデル",
     "section.direction.label": "Direction",
@@ -237,6 +246,9 @@ export const TRANSLATIONS = {
     "controls.languageAria": "Language switcher",
     "hero.notice":
       'Many times, I have experienced what I want to call Love-Driven Development.<br>Here, a project is an event that includes not only "Doing" but also "Being."',
+    "love.faq.summary": "Common misconceptions",
+    "love.faq.body":
+      "<ul><li><strong>“The ‘Love’ here means romance or affection”</strong> → It refers to the attractive force that creates connection in general — the force that gives rise to relation, not a specific emotion.</li><li><strong>“‘As important as survival’ is a proven fact”</strong> → It is a stance (a hypothesis), posed as the question of whether it stands alongside survival as a driver.</li></ul>",
     "hero.aboutAria": "About this site",
     "section.overview.label": "Overview",
     "section.overview.title": "Overview",
@@ -253,10 +265,13 @@ export const TRANSLATIONS = {
       "Envisioning and designing execution and management methods",
     "overview.scope.title": "Scope",
     "overview.scope.body":
-      "Primarily applicable to profit and non-profit enterprises. Generally applicable to any endeavor where a subject acts with purpose, such as research or life itself.",
+      "Primarily applicable to profit and non-profit enterprises (the scope of demonstration). To any purposeful endeavor — such as research or life itself — it extends by structural analogy (an attempt, not a proof).",
     "overview.domain.title": "Domain",
     "overview.domain.body":
       "Communication (information processing + emotional processing) and environmental adaptation (management studies, etc.)",
+    "overview.faq.summary": "Common misconceptions",
+    "overview.faq.body":
+      "<ul><li><strong>“Doing/Being and adaptation/communication form a 2×2 grid”</strong> → They are not orthogonal axes but complementary cuts of one whole; forcing a grid starves the phenomenon.</li><li><strong>“Subject/object, and where the individual ends, can be drawn cleanly”</strong> → At fine scales they waver like the quantum/classical boundary. They are cuts, not divisions in reality.</li><li><strong>“Envision → design → execute is a fixed cyclical order”</strong> → Execution and design fold across meta and object levels — a spiral with sublation, not a loop back to the same point.</li></ul>",
     "section.doing.label": "Doing",
     "section.doing.title": "Doing",
     "doing.principles.title": "Principles of Action",
@@ -276,7 +291,10 @@ export const TRANSLATIONS = {
     "section.being.label": "Being",
     "section.being.title": "Being",
     "section.being.body":
-      "Fields emerge, waves of difference arise, relations form, collisions spiral, and outcomes bundle together. To know where the project stands.",
+      "Fields emerge, waves of difference arise, collisions emerge at the relation (boundary), are sublated and integrated as a vortex, and outcomes bundle together. To know where the project stands.",
+    "being.faq.summary": "Common misconceptions",
+    "being.faq.body":
+      "<ul><li><strong>“Rotation belongs only to the vortex”</strong> → Rotation pervades every stage; the wave is rotation too. “Phase” is also a kind of rotation — a deliberately general, vague term.</li><li><strong>“Collisions are integrated by the vortex”</strong> → Collisions emerge at the relation (boundary); the vortex is where they are sublated and integrated.</li><li><strong>“Bundle → Field is a closed loop back to the same field”</strong> → It is a cycle forward to the next field — spiraling onward, never returning to the same point.</li></ul>",
     "pill.creationModel": "Model of Creation",
     "pill.awarenessModel": "Model of Awareness",
     "section.direction.label": "Direction",
