@@ -2,17 +2,133 @@
 
 ## Git
 - branch: develop
-- HEAD: **adc6f29** push 済 → pd#113 commit 未 push
-- main: 28eb1d3
-- remote: develop push 済（pd#113 commit 待ち）
-- 関連: cs develop **42615d9**（manifest 修復 push 済）、pjdhiro main 2a199c1
+- pd HEAD: **f456756**
+- remote: synced
+- 関連: cs develop=**8382990**
 
-## pd#113 完了待ち（2026-06-16 commit 未 push）
-- WL-6 lint ルール: `scripts/wiki-lint.mjs` に `/` 入り wikilink 検出追加（SAFE_WIKILINK_PREFIXES: sources/,concepts/,cross-refs/,keywords/）
-- manifest_id 追記: wiki/sources/ D prefix 6件 frontmatter に `DXX-SYY` 追加（D05_morgan, D06_balbus-hawley, D06_jeans, D11_davies, D16_braudel, D16_toynbee）
-- DESIGN-RULES.md §8 追加: wiki 参照信頼性の原則（DOI/PMID優先順位・manifest_id・wikilink `/` 禁止）
-- lint 実行結果: WL-6 hits 0 / broken 5（意図的のみ）/ links 1382 / 文字化け 0
-- 次: commit → push → pd#113 close → pd#112 着手
+## ⏸ セッション終了 2026-07-02 (seq03) — 監査→cs#253/254 執行→RR-001→方針変更
+- ログ: pd `log-20260702-03.md` / cs `log-20260702-01.md` / pjdhiro `log-20260702-01.md` / 横断 `SESSION-20260702-03.md`
+- **🎯 次セッション（Fable 5 〜7/7、pjdhiro 指示: 長期ルール・スキル整備）**:
+  1. **スキル正本修正**（cs#256 → pd#120 の順）: source-note-gen Step3 を Markdown bold 検査に / domain-report パスを WORKFLOW.md 実態に全面書き直し / cs pointer 誤記 / commit-review-with-log retired 化 / nl-debug 期待値 / wiki-compile symlink 記述 / agent-team-workflow 前提
+  2. **レビュー系再稼働**: codex-review 去就・periodic-review 入口（pjdhiro 判断要）+ wiki-lint の「wikilink」ページ除外
+  3. **CL-010 standing 化の設計**: 公開 MD の §付き引用 → source-note 突合 lint（cs#253 Check 13 と統合）
+  4. cs-as-component.md パス修正（承認要）/ responsive B5 フォント修正
+- **後回し確定（pjdhiro 指示）**: 3と7の組織論（#116 / F2/F4 裁定 / cs#254 全面拡大）。RR-001（T層確定・Steiner 新結果）が区切り
+- **pjdhiro 判断待ち**: D18-S12 降格 / DOI列 / pjdhiro repo WIP 184ファイル / RR-001 採否
+- **起票 3件**（2026-07-02 pjdhiro 承認済）:
+  - **pd#119**: Fable 5 集中作業計画（〜7/7）。Phase 1=cs#253/#255 信頼性監査 → Phase 2=wiki 生成（inbox 7件 auto-execute、pd#111/cs#249）→ Phase 3=pd#118 切り分け。**実行モデル: Fable 5 明示**
+  - **pd#120**: 保守バックログ（Fable 不要・7/7 以降）— responsive-test B5 FAIL（footer 11.2px）、wiki-lint ノイズ、孤立5件、skill 記述修正、codex-review/periodic-review 去就（pjdhiro 判断）、cs-as-component.md パス誤り（承認要）
+  - **cs#256**: cs 保守バックログ — source-note-gen Step3 誤報バグ、domain-report パス全面不一致、pointer パス誤記、commit-review-with-log retired 化、nl-debug 期待値、年ドリフト4件
+- **監査メモ**: wiki-lint 実走で wiki/health/ 3レポート更新（未コミット・ローカルのみ）。メモリ追加: feedback_sandbox_localhost_tests.md（sandbox 内 localhost 誤 SKIP）
+- **Phase 1 完了（自律分）**:
+  - **1a**: cs manifest STUB 21行の書誌補完（cs **e673a9f** push）。監査 33件中12件は既に補完済み＝監査アーティファクト stale と判明
+  - **1b**: cs#254 引用マップ作成（cs **7b3f2e0** push、`knowledge/raw/audit/cs254-citation-map.md`）。**削除範囲は Simondon(D13-S02) 1件に集中**。「事実として…§I」が未精読＋manifest 別著作＝偽の精密さ。残4件は教科書的/安価再接地。cs#254 に処置3択を提示（pjdhiro 判断待ち）
+  - **1c**: 真の欠陥6件の修正案を cs#253 に提示（適用は承認後）。A軸2件（D06-S11題/D11-S08題=PDF抽出）+ D24-S15（IA item 検証済）は適用可。B軸3件（D18-S12/D08-S04/D26-S08）は生存OA URL 要探索。**D26-S08 で PMC4517231=別論文(Speijer) の誤混同を検証で検出**（cs#250 実例）
+- **Phase 2 完了（生成不要と判明）**: inbox `wiki-gen-2026-07-02.md`（7件）は**全て生成済み**で stale。auto-execute せず archive。根因=wiki-gen-check.sh の stem 照合不一致（PDF名 vs 実スラッグ）→ pd#120 記録。**そのまま実行なら重複7ページ量産の事故**を回避
+- **1c 適用完了（pjdhiro「順に片付けて」承認、cs develop 50e8018 push）**: 欠陥6件を実プローブ再検証して manifest 適用 —
+  - D06-S11 実題（arXiv 照合）/ D11-S08 実題+DOI（local PDF+Crossref）/ D08-S04 生存URL（2013/03→2025/06、200 application/pdf）/ D24-S15 IA cosmicconsciousn01buck（%PDF確認、旧 4517231 型の誤混同を回避）/ D26-S08 **PMC4517223**（DOI直引きで解決、旧提案 PMC4517231=別論文 Speijer を再度回避）
+  - D18-S12 Simmel: 代替クリーンOA未発見（academia/RG/scribd bot ブロック）→ リンク切れ明記+要 pjdhiro 降格判断
+  - 併せて既存 **mojibake 6件復元**（自己組織化/著者サイト/世阿弥/デジタル/未確認/武道文化論）。validate PASS / U+FFFD 0
+- **cs#254 Simondon 深掘り（要 pjdhiro 承認で公開改変）**: 起点前提は解消済（D13-S02 は cs#249 で全章精読209行=実質T1、monoskop PDF 取得可）。**残る真の違反 = 公開 D13 §5.1（11件中最重要）が未精読・blocked-access の D13-S01『個体化』本論に「事実として(…Introduction §I)」と section 付き帰属**。再接地案（内容保持・偽の精密さのみ是正）: 同概念(metastable/前個体/transduction)を**精読済 D13-S03 Deleuze 書評**(p.44 引用)+ D13-S02 経由へ付け替え。公開 MD は pjdhiro/assets/creation → 承認要
+- **D13 再接地 適用完了（pjdhiro 承認「1です」）**: 公開 D13 ja §5.1 を精読済み文献（Deleuze *Pli* 12 pp.43-49 / Simondon 1958 pp.248-249）に付け替え、transduction 要約は「二次文献に基づく背景説明」と明示。PDF 再生成（generate-domain-pipeline --domain D13、PASS）+ manifest。**pjdhiro main cb9246c push 済**。en 版は §付き帰属なしのため非対象と判断。cs#254 にコメント済
+- **教訓の正本化（「記録して」指示、cs db46603 push 済）**:
+  - **CL-010 新設**: 偽の精密さ（未精読原典への §付き帰属は幻覚の隠れ蓑）+ 監査成果物はスナップショット（tier が6日で実態と乖離した実例）。INDEX 追加
+  - reader-rules-creation-report.md §0: 「未精読原典への精密引用の禁止」節を追加（§・頁引用は source-note 実在時のみ）
+  - audit/README.md: スナップショット注記（行動前に実物再確認）
+  - knowledge-raw-policy.md 規律1 追補: %PDF マジックバイト判定 / archive.org 貸出専用 302→HTML 罠 / PMC は DOI→pmcid 解決 / 著者サイト path 再編探索
+- **⚠️ pjdhiro repo に既存バッチ WIP 184ファイル未コミット**（全30領域 ja/en の md/pdf/presentations へのヒーロー画像挿入等、私の作業以前から）。D13 の3ファイルだけ選択コミットした。バッチの commit 判断は所有者（pjdhiro/元セッション）へ
+- **pjdhiro 判断待ち**: ①cs#254 を全120×2レポートへ拡大するか（機械抽出+lint 化、Phase 4）②D18-S12 Simmel 降格 ③DOI列構造化（破壊的）④保守バックログ pd#120/cs#256 着手時期 ⑤pjdhiro repo の WIP 184ファイル
+- **STUB 補完は完了済みと確認**: 現 manifest 実測で 33/33 補完済（前回 1a で全消化。残り1件表示は正規表現の誤検出＝D19-S12 は補完済）。書き込み不要
+- **Phase 3 着手 — RR-001 完成（pd develop a165369 push 済、#118 コメント済）**:
+  - Baez 2002 を arXiv 実取得・精読して T層を確定（CL-010 準拠: §引用は精読分のみ、原論文は 📚明示）
+  - 帰属修正: 平行化球面は Bott–Milnor/Kervaire + Adams の三段合成（Adams 単独ではない）/ Frobenius は Baez に無し→Zorn Thm2 の系
+  - **機械検証 RR-001a**（有理数CD構成）: 7次元外積の Jacobi 不成立を計算確定（28/35 不成立、反例 (e1,e2,e4)→J=−3e7）
+  - **新結果**: Jacobi 成立 7 三つ組がちょうど **Steiner S(2,3,7)** を成し全て結合的 → RR-002 B系予測（7細胞/各ペア1ホーム/各人3細胞/細胞内結合的）の**数理側が定理レベルで確定**。組織適用は F3 実証待ち（T層のみ、実証ではない）
+  - status: review（最終採否 pjdhiro）。F2/F4 は未裁定のまま gate OPEN
+- **HEAD**: pd develop=**a165369**（wiki/health 3件はローカル未コミットのまま）/ cs develop=**db46603** / pjdhiro main=**cb9246c**
+
+## ⏸ セッション終了 2026-07-02 (seq02) — pd#115 検証3タスク完了
+- ログ: pd `.cache/session/log-20260702-02.md` / 横断 `dev/.cache/session-logs/SESSION-20260702-02.md`
+- **主成果**: 仮説を「外れうる予測を持つ形」に変形。
+  - **RR-002**（#118, 4f72382）: 三層分解 T/M/N。**判別点は3でなく7**（n=3 で A/B 一致、n=7 で 21ペア vs Fano三つ組）。falsifier F1-F4 + 撤退線3本。
+  - **RR-003**（#117, 3a58f0e）: **F1発動** — 崖の実証なし・5,6人チーム常態 → **記述法則棄却、設計原理へ後退確定**。F3 は SNA 検証プロトコルに具体化。実証帯 3-5/7-9。Miller 転用=範疇誤用。
+  - **READER §9 新設**（a2b5feb→f456756）: 検証の現在地を公開下書きに接続。pjdhiro 誤読FBを受け**三層段差表**（定理=無傷/自然法則=棄却/設計原理=存続）+**アーチとモルタル比喩**を追加。
+  - CN-010 保持論点更新 + D1-D4 表記是正（絶対原則）。メモリ: feedback_public_explanation_metaphor.md
+- **Issue**: #115 OPEN（進捗コメント済）/ **#117 close候補（pjdhiro判断待ち）**/ #118 gate OPEN（F2/F4未裁定）/ #116 未着手
+- **次セッション**: ①#116 circumplex↔ℂ「積が仕事をする場面」（意識=ℂ空虚化防止の急所）②RR-001 出典埋め（Baez/Conway-Smith）③LP配信先決定（pjdhiro専権）④F3プロトコルのデータ源探し
+
+## ⏸ セッション終了 2026-06-25 (seq02)
+- ログ: pd `.cache/session/log-20260625-02.md` / cs `log-20260625-04.md` / 横断 `dev/.cache/session-logs/SESSION-20260625-04.md`
+- **主成果**: cs#252/pd#114 完遂 + **鎖の不変条件を法制化**。原則「持つ(誰でも検証可=OA)→読む→解釈→まとめる→公開」を機械可読 FAIL ゲート化。
+  - pd: 取得不能原典の wiki/sources **14本削除**（manifest_id 権威照合で手動22→14補正）+ index 再生成 + dead link 処理 + `scripts/wiki-access-lint.mjs` 新設(330ページ OK)。
+  - cs: validate **Check 11**(取得不能に source-note/確定論拠禁止) + **Check 12**(abstract-only source-note 禁止) 新設。Check 12 執行で D11-S01(破棄+降格)/D28-S15(精読義務登録) 処理。
+  - cs#252 / pd#114 とも **CLOSE**。
+- **次セッション**: B群11本 + D28-S15 の全文精読（budget 回復後 source-reader、cs `read-depth-exceptions.md` で追跡）。
+
+## ⏸ セッション終了 2026-06-21 (seq01)
+- ログ: cs `.cache/session/log-20260621-01.md` / pd 同 / 横断 `dev/.cache/session-logs/SESSION-20260621-01.md`
+- **次セッション**: cs#249 残57を **cs#250 規律**で再開（並列sub-agent reset後 or 手動DL）。D23-S08 誤URL修正
+- 主成果: cs#249 +13本 / cs#250(取得検証正本)・cs#251(roadmap)起票 / dashboard.html・sources.html 公開 / cs Pages 2ヶ月の停止を恒久復旧 / develop 全公開
+
+## 完了 (2026-06-19) — cs#248 / pd#113 / pd#112
+
+- **cs#248** CLOSED: manifest 修復（D23-S08 誤 URL・D19-S05 SSO URL 修正、8件 PMID 追記）
+- **pd#113** CLOSED: WL-6 lint + manifest_id 6件 + 参照信頼性原則（commit 8465751）
+- **pd#112** CLOSED: 79/117ペア cross-check 完了。事実誤認 3件修正（D10 DOI 2件・D23-S06 数値）。要調査 2件 → `.cache/inbox/wiki-conflict-20260619.md`
+  - D13-S06: cs が 1910 年版を誤読（1933 版のはず）
+  - D24-S02: cs が別論文（Shincheonji）を読解
+
+## 進行中 (2026-06-21) — cs#249 source-note 生成
+
+- 対象マスターリスト: `creation-space/.cache/inbox/cs-wiki-gen-2026-06-16.md`（url-verified **71件**, OA URL 付き）
+- **完了 13件**（cs develop push 済 **HEAD=89a95aa**）。cross-check **cs-missing 65→57**:
+  - sub-agent 生成: D16-S17 turchin-2014 / D21-S08 keynes-1937
+  - 主セッション直接生成（WebFetch保存/curl → pdftotext → 精読）:
+    D22-S03 nonaka-2000 / D18-S05 anzola-2016 / D14-S06 dietrich-2004 /
+    D19-S06 todorov-1971 / D09-S05 mcewen-1998 / D12-S06 pedigo-1986 /
+    D05-S05 conrad-2002 / D12-S09 scheffer-2003 / D12-S04 robertson-2009 /
+    D13-S03 deleuze-1966（高価値: 個体化=渦の典拠）/ D22-S11 lyon-2014
+- **到達経路の現実**（主セッション fetch）:
+  - 成功: `link.springer.com`(curl)、小規模/edu/repo の born-digital PDF を WebFetch 保存（davidbardschwarz, psychiatry.wisc.edu, fenix.isa.ulisboa.pt, ftp.soest.hawaii.edu, sciences.ucf.edu, lter.kbs.msu.edu, scholarworks.iu.edu, plijournal.com, pbworks）
+  - 失敗: MDPI/Nature/PNAS/Wiley/SAGE/figshare/philpapers/ecologyandsociety/karger = Akamai/Atypon 403/402、archive.org/columbia/ethz = スキャンPDF(OCR要)、wiu/kingston/warwick/uba.ar = auth/接続拒否/cert
+  - → 残り ~57 は publisher bot ブロック・スキャン・URL不整合中心。**並列 sub-agent 経路（16:50 reset 後）向き**
+- **発見: D23-S08 Luyckx 2008 の OA URL 不整合**（manifest 修正要）:
+  - master list の url `repository.uantwerpen.be/docstore/d:irua:19968` は **別論文（Luyckx et al. 2023 "Identity formation... process-oriented"）** を返す
+  - 正: D23-S08 = Luyckx (2008) "Capturing ruminative exploration" J Res Personality 42(1), DOI 10.1016/j.jrp.2007.04.004
+  - 誤論文からの生成は回避。cs#248 型の manifest URL 修正案件として記録
+
+## 完了 (2026-06-21) — cs#250 原典取得・検証の正本統合（pjdhiro 指示で cs#249 グラインドを中断して優先）
+
+- **背景**: 論文取得を毎回「わかったつもりで間違える」。教訓(cs#221 url-verified≠LLM取得可 / cs#240 書誌クロスチェック)が CLOSED issue に埋もれ正本未統合で再発見の無限ループ
+- **cs#250 起票 + 文書正本化 完了**（cs develop **1dc669e** push 済）:
+  - `docs/knowledge-raw-policy.md`: access_status に url-verified 正直化 + 「原典取得・検証の追加規律」節（規律1 取得経路の現実表 / 規律2 書誌クロスチェック必須 / 規律3 エスカレーション）
+  - `docs/lessons/CL-008` 登録 + INDEX
+  - `knowledge/source-notes/READING-PROTOCOL.md` §2 から参照
+  - `knowledge/raw/README.md` 現在地を 2026-06-21 に更新（大きな地図 + cs#249 位置づけ。closed cs#217 を指していた古い現在地を是正）
+- cs#250 は OPEN（automation = cs#240 に残す）。pjdhiro の close 判断待ち
+- **cs#251 ロードマップ起票**: OPEN issue を大きな地図で phase 整理（Phase0 取得品質ゲート cs#250/#240/#241 → Phase1 backfill cs#249 → Phase2 cross-check pd#112 → Phase3 evidence rebuild cs#224。並行: cs#244/#232/#247/#242/#238）
+
+## 解決 (2026-06-21) — cs Pages デプロイ復旧 + ダッシュボード公開
+
+- **公開成功**: https://uminomae.github.io/creation-space/dashboard.html （HTTP 200 確認済）
+- **2ヶ月の停止の真因**: `upload-pages-artifact@v3` の `tar --dereference` が `.claude/hooks/*`（project-design 向け相対 symlink、git追跡）を CI で辿れず exit 1。2026-04-14 以降デプロイ連続失敗（最後の成功 4/08）
+- **適用した修正（stopgap C）**: main の追跡から `.claude` を除去（`git rm -r --cached .claude`、commit **a082e97**）。workflow を触らないため `repo` スコープで push 可能だった。デプロイ成功
+- **恒久策（未適用・push 待ち）**: workflow に `rm -rf .claude` step を追加（develop **8e657c8** に commit 済）。`.github/workflows/` の push には **`workflow` スコープ**必須だが現 gh トークン（gho_, keyring）は `gist,read:org,repo` のみ。pjdhiro の `gh auth refresh -s workflow` が未反映
+- **注意**: stopgap C は **develop→main フル公開で .claude が戻り再発**する。フル公開の前に恒久策 8e657c8 を land すること（workflow スコープ要）
+- **develop 全公開 完了 (2026-06-21)**: main を origin/develop に同期（`-X theirs` マージ + `.claude` 削除で競合解決）。commit **80b49b2** push、デプロイ成功。`/`・`/dashboard.html`・source-notes・docs すべて 200 確認
+  - reset --hard はガードでブロック → force-push 不要のマージ方式に切替
+  - `.claude` 競合（modify/delete）は全件 `.claude` のみ → `git rm -r --cached .claude` で解決
+- **恒久対応 完了 (2026-06-21)**: pjdhiro が `workflow` スコープ付与（token=`gist,read:org,repo,workflow`）。
+  - develop **8e657c8** push（deploy-pages.yml に `rm -rf .claude` step）
+  - main **0502d64**: develop と完全一致に同期（`.claude` を戻す + workflow 修正）。デプロイ run exit 0、`/`・`/dashboard.html`・docs すべて 200
+  - 以後 **develop→main は競合フリー**、Pages デプロイは workflow が `.claude`（壊れ symlink）をビルド時除去するため恒久的に通る
+- デバイスコードは `gh auth refresh` を実行した**ターミナル**に表示される（メール等では来ない）
+
+## 保留中
+
+- **cs#249**: source-note backfill 13/71。残り ~57 は publisher bot ブロック中心 → 並列 sub-agent 経路（16:50 reset 後）or 手動DL。**cs#250 の規律を適用して再開すること**
+- **D23-S08 Luyckx 誤 URL**: 正しい OA 再特定 + manifest 修正（cs#248 後続）
+- **wiki-conflict-20260619.md**: pjdhiro に確認を仰ぐ（D13-S06 Dewey版・D24-S02 Di Marzio の2件）
 
 ## 後続 issue 起票 (2026-06-16) — wiki 品質保証 4本（pjdhiro 承認済、実行は次セッション）
 - **pd#112** wiki ソース整合性監査: 117ペア cross-check レビュー（優先=新規25+確立知識35）。Bergson spot-check 一致確認済
