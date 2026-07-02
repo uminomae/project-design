@@ -211,7 +211,17 @@
 <p><strong>もしも人間関係でいうなら</strong>——7人のチームでは、どの二人にも「その二人の関係が帰属する三人組」がちょうど一つある。そして誰もが3つの三人組をかけ持ちして、重なり合う網になる。</p>
 <h3 class="glow-heading" id="三角形が2枚や3枚ではだめなのか">三角形が2枚や3枚では、だめなのか</h3>
 <p>当然の疑問がここで立つ。1枚（3人）が閉じるなら、2枚や3枚を貼り合わせた「中くらいの織物」はなぜないのか。</p>
-<p>貼り合わせの条件——<strong>どの2人も、ちょうど1つの三角形を共有する</strong>——が、見た目よりずっと厳しいからだ。まず絵で見る。</p>
+<p>貼り合わせの条件——<strong>どの2人も、ちょうど1つの三角形を共有する</strong>——が、見た目よりずっと厳しいからだ。</p>
+<blockquote>
+<p>📖 <strong>「ホームの三角形」とは</strong> — あるペア（2人）にとって、<strong>その2人が両方入っている三角形</strong>のこと。さっきの掛け算のやり方で「e₁ と e₂ の両方を通る線」と呼んだものと同じだ。</p>
+<p>なぜ「ちょうど1つ」でなければいけないのか。<strong>ペアの掛け算の答えは、ホームの残りの1点</strong>で決まるからだ。</p>
+<ul>
+<li>ホームが<strong>ない</strong>ペア → 掛け算の答えが<strong>ない</strong>（穴）</li>
+<li>ホームが<strong>2つある</strong>ペア → 答えが<strong>2つに割れる</strong>（どちらか決まらない）</li>
+</ul>
+<p>どちらでも「掛け算の配線図」としては壊れる。だから条件は「ちょうど1つ」。</p>
+</blockquote>
+<p>まず絵で見る。</p>
 <figure class="glow-card reader-figure"><svg width="100%" viewBox="0 0 680 370" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="三角形1枚・2枚・7枚の比較 — 2枚では家のないペアが残り、7枚で全ペアに家がちょうど一つ">
 <text x="110" y="42" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="500" fill="#2C2C2A">1枚 ＝ 3人</text>
 <text x="340" y="42" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="500" fill="#2C2C2A">2枚 ＝ 5人</text>
@@ -257,7 +267,8 @@
 
 <p><text x="340" y="300" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#5F5E5A">継ぎ足しの織物には、穴（ホームなし）か重複（ホーム2つ）が必ず残る</text> <text x="340" y="330" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="500" fill="#2C2C2A">完全に編める人数は、3人（1枚）の次は、いきなり7人（7枚）</text> </svg></figure></p>
 <ul>
-<li><strong>2枚</strong>（図の中央）: 1点でつなぐと5人。またぐペア（B と D）に<strong>ホームの三角形がない</strong>。かといって {B,D,…} の三角形を足すと、今度はどこかのペアがホームを<strong>2つ</strong>持つ。継ぎ足しでは、穴か重複のどちらかが必ず残る。</li>
+<li><strong>2枚</strong>（図の中央）: 1点でつなぐと5人。またぐペア（B と D）に<strong>ホームがない</strong>。</li>
+<li>「<strong>なら {A,B,D} を足せばいいのでは?</strong>」——いい着眼で、B–D の穴は確かに埋まる（B×D の答えは A に決まる）。だが今度は <strong>A–B のホームが {A,B,C} と {A,B,D} の2つ</strong>になる（A–D も同じ）。A×B の答えが C なのか D なのか、決まらなくなった。<strong>穴を埋めると重複が生まれ、重複を消すと穴が生まれる</strong>——このモグラ叩きが終わらない。</li>
 <li>数えるだけでも壁が見える。n 人のペアの数は n(n−1)/2、三角形1枚が受け持てるペアは3つ。だから枚数 ＝ n(n−1)/6 が<strong>整数</strong>でないと始まらない。5人なら 10÷3 で<strong>割り切れない</strong>。4人・6人は割り切れるのに、<strong>並べ方が存在しない</strong>ことが知られている。</li>
 <li>結局、「全ペアにホームをちょうど1つずつ」配れる人数は、<strong>3人（1枚）の次は、いきなり7人（7枚）</strong>（この完全な配り方は数学でシュタイナー系と呼ばれ、存在する人数は限られている）。</li>
 <li>では9人（12枚）は? <strong>織物としては編める</strong>。だが今度は、その上の<strong>掛け算が「割れる」を保てない</strong>（次の §5 の壁）。「完全な織物」と「割れる掛け算」の<strong>両方</strong>が立つ交点は——1枚と7枚しかない。</li>
