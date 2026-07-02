@@ -185,9 +185,56 @@ i·j = k,   j·k = i,   k·i = j
 
 当然の疑問がここで立つ。1枚（3人）が閉じるなら、2枚や3枚を貼り合わせた「中くらいの織物」はなぜないのか。
 
-貼り合わせの条件——**どの2人も、ちょうど1つの三角形を共有する**——が、見た目よりずっと厳しいからだ。
+貼り合わせの条件——**どの2人も、ちょうど1つの三角形を共有する**——が、見た目よりずっと厳しいからだ。まず絵で見る。
 
-- **2枚**を1点でつなぐと5人になる（例: {A,B,C} と {A,D,E}）。このとき **B と D のペアには、ホームの三角形がない**。かといって {B,D,…} の三角形を新しく足すと、今度はどこかのペアがホームを**2つ**持ってしまう。継ぎ足しでは、穴か重複のどちらかが必ず残る。
+<svg width="100%" viewBox="0 0 680 370" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="三角形1枚・2枚・7枚の比較 — 2枚では家のないペアが残り、7枚で全ペアに家がちょうど一つ">
+<text x="110" y="42" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="500" fill="#2C2C2A">1枚 ＝ 3人</text>
+<text x="340" y="42" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="500" fill="#2C2C2A">2枚 ＝ 5人</text>
+<text x="570" y="42" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="500" fill="#2C2C2A">7枚 ＝ 7人</text>
+<line x1="225" y1="55" x2="225" y2="300" stroke="#B4B2A9" stroke-width="0.5" stroke-dasharray="4 4"/>
+<line x1="455" y1="55" x2="455" y2="300" stroke="#B4B2A9" stroke-width="0.5" stroke-dasharray="4 4"/>
+
+<g stroke="#1D9E75" stroke-width="2" fill="none">
+<line x1="110" y1="90" x2="62" y2="190"/><line x1="62" y1="190" x2="158" y2="190"/><line x1="158" y1="190" x2="110" y2="90"/>
+</g>
+<circle cx="110" cy="90" r="14" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/><text x="110" y="95" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#085041">A</text>
+<circle cx="62" cy="190" r="14" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/><text x="62" y="195" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#085041">B</text>
+<circle cx="158" cy="190" r="14" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/><text x="158" y="195" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#085041">C</text>
+<text x="110" y="238" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#0F6E56">✓ 完結（§3 の閉じた輪）</text>
+
+<g stroke="#1D9E75" stroke-width="2" fill="none">
+<line x1="340" y1="88" x2="264" y2="168"/><line x1="264" y1="168" x2="312" y2="212"/><line x1="312" y1="212" x2="340" y2="88"/>
+<line x1="340" y1="88" x2="416" y2="168"/><line x1="416" y1="168" x2="368" y2="212"/><line x1="368" y1="212" x2="340" y2="88"/>
+</g>
+<line x1="264" y1="168" x2="416" y2="168" stroke="#E24B4A" stroke-width="1.8" stroke-dasharray="5 4"/>
+<text x="340" y="160" text-anchor="middle" font-family="sans-serif" font-size="15" font-weight="500" fill="#A32D2D">✕</text>
+<circle cx="340" cy="88" r="14" fill="#F1EFE8" stroke="#888780" stroke-width="0.5"/><text x="340" y="93" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#2C2C2A">A</text>
+<circle cx="264" cy="168" r="14" fill="#FCEBEB" stroke="#A32D2D" stroke-width="0.5"/><text x="264" y="173" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#791F1F">B</text>
+<circle cx="312" cy="212" r="14" fill="#F1EFE8" stroke="#888780" stroke-width="0.5"/><text x="312" y="217" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#2C2C2A">C</text>
+<circle cx="416" cy="168" r="14" fill="#FCEBEB" stroke="#A32D2D" stroke-width="0.5"/><text x="416" y="173" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#791F1F">D</text>
+<circle cx="368" cy="212" r="14" fill="#F1EFE8" stroke="#888780" stroke-width="0.5"/><text x="368" y="217" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#2C2C2A">E</text>
+<text x="340" y="238" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#A32D2D">✕ B と D に「ホームの三角形」がない</text>
+<text x="340" y="258" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#5F5E5A">三角形を足すと、今度はホームが2つのペアが出る</text>
+
+<g stroke="#888780" stroke-width="1.2" fill="none">
+<line x1="570" y1="75" x2="505" y2="205"/><line x1="505" y1="205" x2="635" y2="205"/><line x1="635" y1="205" x2="570" y2="75"/>
+<line x1="570" y1="75" x2="570" y2="205"/><line x1="505" y1="205" x2="602" y2="140"/><line x1="635" y1="205" x2="538" y2="140"/>
+<circle cx="570" cy="164" r="41"/>
+</g>
+<circle cx="570" cy="75" r="10" fill="#F1EFE8" stroke="#888780" stroke-width="0.5"/>
+<circle cx="505" cy="205" r="10" fill="#F1EFE8" stroke="#888780" stroke-width="0.5"/>
+<circle cx="635" cy="205" r="10" fill="#F1EFE8" stroke="#888780" stroke-width="0.5"/>
+<circle cx="538" cy="140" r="10" fill="#F1EFE8" stroke="#888780" stroke-width="0.5"/>
+<circle cx="602" cy="140" r="10" fill="#F1EFE8" stroke="#888780" stroke-width="0.5"/>
+<circle cx="570" cy="205" r="10" fill="#F1EFE8" stroke="#888780" stroke-width="0.5"/>
+<circle cx="570" cy="164" r="10" fill="#F1EFE8" stroke="#888780" stroke-width="0.5"/>
+<text x="570" y="238" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#0F6E56">✓ 全21ペアにホームがちょうど1つ</text>
+
+<text x="340" y="300" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#5F5E5A">継ぎ足しの織物には、穴（ホームなし）か重複（ホーム2つ）が必ず残る</text>
+<text x="340" y="330" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="500" fill="#2C2C2A">完全に編める人数は、3人（1枚）の次は、いきなり7人（7枚）</text>
+</svg>
+
+- **2枚**（図の中央）: 1点でつなぐと5人。またぐペア（B と D）に**ホームの三角形がない**。かといって {B,D,…} の三角形を足すと、今度はどこかのペアがホームを**2つ**持つ。継ぎ足しでは、穴か重複のどちらかが必ず残る。
 - 数えるだけでも壁が見える。n 人のペアの数は n(n−1)/2、三角形1枚が受け持てるペアは3つ。だから枚数 ＝ n(n−1)/6 が**整数**でないと始まらない。5人なら 10÷3 で**割り切れない**。4人・6人は割り切れるのに、**並べ方が存在しない**ことが知られている。
 - 結局、「全ペアにホームをちょうど1つずつ」配れる人数は、**3人（1枚）の次は、いきなり7人（7枚）**（この完全な配り方は数学でシュタイナー系と呼ばれ、存在する人数は限られている）。
 - では9人（12枚）は? **織物としては編める**。だが今度は、その上の**掛け算が「割れる」を保てない**（次の §5 の壁）。「完全な織物」と「割れる掛け算」の**両方**が立つ交点は——1枚と7枚しかない。
