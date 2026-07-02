@@ -6,6 +6,17 @@
 - remote: synced
 - 関連: cs develop=**1418438** / cs main=**67fb985**
 
+## 🔵 進行中 2026-07-03 (seq05) — pd#116 調査軸② 意識＝複素平面の検証（RR-004）+ READER §9 公開
+- **pd#116 完了（RR-004 作成）**: `knowledge/research/two-axis-closure/RR-004-consciousness-complex-plane-circumplex.md`
+  - **裁定＝意識＝ℂ の空虚リスク confirm**: circumplex（Russell 1980）は ℝ²-polar 層（半径=強度・角度=種類）で強く接地するが、**ℂ-field 固有の積・除・`i²=−1` は遊休**（Posner/Russell/Peterson 2005: 感情＝二次元の「線形結合」＝ℝ² ベクトル空間）。回転 U(1) のみ faint な例外だが乗法的閉包ではない
+  - **前提①の再評価**: circumplex の直交対は valence×arousal であって物質×精神ではない → 前提①は circumplex から直接の裏づけを得られず、物質/精神への対応は未接地の追加措定
+  - **F4 部分発動**: 直交は person/culture 可変（Kuppens 2013, 共著 Russell・Barrett: 弱い V 字＋大きな個人差＝静的法則的関係なし）。純 ℂ も固定 ℍ も支持されず「単一固定可除代数への同定」枠自体が緊張
+  - **F5 新設**: 感情合成が加法で尽きるなら ℂ は N（装飾）。現状は空虚側
+  - 反映: CN-010 保持論点 / RR-002 判定表・falsifier 表（F5 追加）/ READER §9「平面は当たり、掛け算は空振り」（三層段差表+関数電卓比喩）
+  - 接地: Kuppens 2013 abstract 精読 / Posner 2005 本文抽出 / Barrett 2017 は既存精読 evidence / Russell 1980・Watson-Tellegen 1985 は二次資料（CL-010 準拠でアクセスレベル明記）
+- **branch**: worktree `jolly-mestorf-9084d0`（main 3f0db2f 基点）で作業 → develop へ cherry-pick（9ca917e, c41f6ec）
+- **残タスク（軸②の続き）**: 「積が仕事をする場面」の操作的定義（F5 の実証プロトコル）／軸④ #118・CN-009 との連動（文脈依存で軸間結合が動く平面という第三定式化）
+
 ## ✅ セッション 2026-07-02 (seq04) — cs#256 + pd#120 完了・CLOSE、pd#112 conflict 解消
 - **cs#256 CLOSED**（develop 15dc2e1→main 30e9301）: スキル5件 + 年ドリフト4件（取得原典の実年に是正、validate PASS）
   - 年ドリフト: D10-S04 Tonegawa=1987 Nobel講演 / D15-S06 幽玄論=1944(NDL確認) / D17-S08 Lenneberg=1969 Science論文 / D29-S06 Clauset=2007 tech report 併記
@@ -349,6 +360,24 @@
   - techo#116 欠損駆動思考ナレッジ全面見直し
 
 ## Hot Topics
+### Obsidian 差分検出 (2026-07-02T14:42:58Z)
+未 push コミット (develop ahead of origin/develop, wiki/ のみ):
+- 3f0db2f Merge develop into main: pd#112 wiki-conflict 3件解消
+- 0a5893c Merge develop into main: pd#120 保守修正（responsive B5 / wiki-lint / 孤立・broken 解消 / blocked-access 4件削除）
+- 84ee5d0 Merge develop into main: wiki生成群 + RR-001/002/003 + reader §9 + skill修正を公開
+- 28eb1d3 merge: develop → main — #76/#80/#81/#82 完了 + wiki-compile skill 分割 + cross-check
+- 5d606aa Merge branch 'develop'
+- 5f1bf6d Merge branch 'develop'
+- ff83f2f merge develop → main: 意識/間主観性 WT-1 core definitions 厳密化
+- 948c2c4 merge develop → main: 意識/間主観性 厳密化 + wiki ワークフロー改善 + 関連原典自動追記
+- acf2e4f merge: develop → main (2026-04-15 #01)
+- d5b814b merge: develop → main (2026-04-14 #01)
+- 9787bac merge: develop → main (2026-04-13 #03)
+- 996b8b1 Merge branch 'develop'
+- b54e25f Merge branch 'develop'
+- 33170a5 refactor: サイト全体から4層モデル言及を更新 (techo#121)
+→ `git diff wiki/` で内容確認してから commit/push するか pjdhiro に判断依頼
+
 - **wiki 更新ワークフロー自動化チェーン完成**:
   - cs raw PDF/wiki 改訂 → pd `.cache/inbox/wiki-gen-*.md`（cs f23edd7）
   - pd knowledge/ 編集 → pd `.cache/inbox/wiki-restale-*.md`（#77）
