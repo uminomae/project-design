@@ -8,7 +8,13 @@ applyTo: ".cache/inbox/, .cache/outbox/, .cache/reviews/, .claude/commands/"
 agent: "CLI"
 ---
 
-**ステータス**: active
+**ステータス**: dormant（休眠。2026-07-02〜）
+
+> **休眠中**: 主経路の `mcp__codex__codex` MCP が現在未設定のため、自動 dispatch は動作しない。
+> **削除せず歴史的資料として保持する**（今後 MCP 再接続時に再稼働しうる。pjdhiro 指示 2026-07-02）。
+> 再稼働の手順: `mcp__codex__codex` を接続 → 本ステータスを `active` に戻す。
+> 休眠中にコミット後レビューが要る場合は degrade 運用（§0 の REQ 記録 + WARN）か、Claude 系の `periodic-review` を使う。
+
 # codex-review SKILL
 
 **参照 Issue**: techo#64

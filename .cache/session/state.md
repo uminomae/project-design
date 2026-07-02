@@ -2,18 +2,26 @@
 
 ## Git
 - branch: develop
-- pd HEAD: **288254b**（develop push 済）/ pd main は乖離（下記 seq04 警告）
+- pd HEAD: develop=**6ad2676** / main=**0a5893c**（develop→main 全公開済・乖離解消）
 - remote: synced
-- 関連: cs develop=**ef97b46** / cs main=**d1394c7**（マージ済）
+- 関連: cs develop=**ef97b46** / cs main=**d1394c7**
 
-## 🔵 進行中 2026-07-02 (seq04) — スキル正本修正（cs#256 + pd#120）
-- **完了・push 済**:
-  - cs#256 スキル5件（ef97b46→main d1394c7）: source-note-gen Step3 bold 検査 / domain-report パス全面書き直し / agent-team-workflow ポインタ / commit-review-with-log RETIRED / nl-debug 期待値 135/125/0/0
-  - pd#120 スキル2件（develop 288254b、cherry-pick）: wiki-compile symlink 記述 / agent-team-workflow「全リポジトリ共通」前提
-- **迷い込みディレクトリ削除**（pjdhiro OK）: main repo の `content/content` `src/src`（再帰コピー）を $TMPDIR に退避
-- **⚠️ pd develop↔main 乖離を発見（pjdhiro 判断要）**: main のみ notes/ workspace（37ed817, 2026-06-26）/ develop のみ wiki+RR-001/002/003+reader §9 ~40 commit。develop→main は①RR 研究ドラフト公開=pjdhiro 専権 ②notes/ 突合、の両方絡み単純マージ不可。skill 修正は develop 止め
-- **本セッション worktree**: `heuristic-ramanujan-452e39`（branch claude/...）は古い develop 基点。skill commit は develop へ cherry-pick で反映済。worktree branch 自体は破棄可
-- **残（次アクション）**: cs#256 年ドリフト4件 / pd#120 responsive-test B5・wiki-lint・codex/periodic 去就・cs-as-component パス（承認要）/ 前回 seq03 の pjdhiro 判断待ち5件
+## 🔵 進行中 2026-07-02 (seq04) — スキル正本修正（cs#256）+ pd#120 保守 + develop/main 統合公開
+- **cs#256 スキル5件**（ef97b46→main d1394c7）: source-note-gen Step3 bold 検査 / domain-report パス全面書き直し / agent-team-workflow ポインタ / commit-review-with-log RETIRED / nl-debug 期待値 135/125/0/0。**残: 年ドリフト4件（pjdhiro 判断）**
+- **pd#120 スキル2件 + 保守多数**（develop 6ad2676→main 0a5893c）:
+  - skill: wiki-compile symlink 記述 / agent-team-workflow「全リポジトリ共通」前提
+  - responsive B5 FAIL 解消（footer 12px、5/5 PASS）
+  - wiki-lint: wikilink 例示ページ除外（broken ノイズ2件）
+  - 孤立5件に導線（0 orphans）/ broken wikilink 3件解消（Iser・North 平文化、Braudel 再ポイント）
+  - **access-lint FAIL 4件解消**: blocked-access 降格済み原典の wiki ページ削除（D09-S09/D11-S16/D11-S01/D23-S07、pd#114 鎖の不変条件）。index 330→326。cs#252 read-list で追跡済
+  - outbox 一斉アーカイブ: pd 59 + cs 61 + as 96 = 216 件
+- **develop↔main 乖離を統合公開（pjdhiro「全情報保持でマージ」指示）**: main の notes/ workspace 全保持 + develop の wiki/RR/reader §9 を統合。CLAUDE.md は両側統合（公開リポ閲覧権限 + design-system 撤回/関連リポ更新）。マージ 84ee5d0→pd#120 保守後 0a5893c
+- **迷い込みディレクトリ削除**（pjdhiro OK）: main repo の `content/content` `src/src` を $TMPDIR 退避
+- **worktree** `heuristic-ramanujan-452e39` は古い develop 基点。skill commit は cherry-pick 済。破棄可
+- **残（pjdhiro 判断・承認要）**:
+  - cs#256 年ドリフト4件（D10-S04/D15-S06/D17-S08/D29-S06 の正しい年確定）
+  - pd#120: codex-review 去就（mcp__codex 未設定で休眠）/ periodic-review 入口設定 / **cs-as-component.md パス誤り修正（.claude/rules 変更＝承認要）** / wiki-conflict-20260619 判断 / as inbox 33件（issue 状況確認要）
+  - 前回 seq03 の pjdhiro 判断待ち: D18-S12 Simmel 降格 / DOI 列構造化 / pjdhiro repo WIP 184ファイル / RR-001 採否 / cs#254 全面拡大
 
 ## ⏸ セッション終了 2026-07-02 (seq03) — 監査→cs#253/254 執行→RR-001→方針変更
 - ログ: pd `log-20260702-03.md` / cs `log-20260702-01.md` / pjdhiro `log-20260702-01.md` / 横断 `SESSION-20260702-03.md`

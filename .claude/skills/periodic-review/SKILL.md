@@ -8,7 +8,12 @@ applyTo: ".cache/, docs/, .claude/, CLAUDE.md"
 agent: "CLI"
 ---
 
-**ステータス**: active
+**ステータス**: active（入口 = **手動運用**。2026-07-02 確立）
+
+> **入口**: cloud scheduler は未接続。当面は **手動で `/periodic-review` を実行**して回す（`dev/CLAUDE.md` の「ローカルで手動実行」節に整合）。
+> 初回実行で `.cache/reviews/periodic/periodic-review-state.json` が生成される（未生成 = 未実行の意）。
+> 将来 scheduler を接続する場合は本節を更新する。非同期 Codex 経路（`codex-review`）は現在 dormant のため、コミット後レビューも当面は本スキルが主経路。
+
 # periodic-review SKILL
 
 **参照 Issue**: techo#64
