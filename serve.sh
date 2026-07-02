@@ -7,6 +7,7 @@ mkdir -p build/_serve
 ln -sf "$(pwd)/index.html" build/_serve/index.html
 ln -sf "$(pwd)/src" build/_serve/src
 ln -sf "$(pwd)/content" build/_serve/content
+ln -sf "$(pwd)/reader" build/_serve/reader
 
 if [ -d quartz ] && command -v npx &>/dev/null; then
   # Initial build
