@@ -1,6 +1,6 @@
 ---
 title: "Wiki Index"
-compiled: "2026-07-02"
+compiled: "2026-07-03"
 ---
 # Wiki -- Map of Content
 
@@ -87,7 +87,7 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D01_tao_2007_good-mathematics|良い数学とは何か]]
 - [[sources/D01_thurston_1994_proof-and-progress|数学における証明と進歩について]]
 
-#### D02 物理学 (14件)
+#### D02 物理学 (15件)
 - [[sources/D02_abrikosov_1957_magnetic-properties-superconductors-second-group|第二種超伝導体の磁気的性質]]
 - [[sources/D02_anderson_1972_more-is-different|多いことは違うことだ]]
 - [[sources/D02_feynman_1948_space-time-approach-nonrelativistic-quantum-mechanics|非相対論的量子力学への時空アプローチ]]
@@ -100,10 +100,11 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D02_nelson-kosterlitz_1977_universal-jump-superfluid|二次元超流体の超流体密度における普遍的ジャンプ]]
 - [[sources/D02_rayleigh_1916_problem-thermal-convection-horizontal-layer-fluid-heated-below|下方加熱された水平流体層における熱対流の問題]]
 - [[sources/D02_strogatz_2001_exploring-complex-networks|複雑ネットワークの探究]]
+- [[sources/D02_ulm_2013_et-al|Kibble–Zurek スケーリング則 — イオン結晶での欠陥形成の観測]]
 - [[sources/D02_unknown_0000_observation-of-the-kibble|イオン結晶における Kibble-Zurek スケーリング則の観測]]
 - [[sources/D02_zurek_2003_decoherence-einselection-quantum-origins-classical|デコヒーレンス、アインセレクション、古典性の量子的起源]]
 
-#### D03 化学 (11件)
+#### D03 化学 (12件)
 - [[sources/D03_ameta_2021_2021|自己触媒化学反応系における自己複製とダーウィン進化]]
 - [[sources/D03_becker-doring_1935_keimbildung|過飽和蒸気における核形成の運動論的処理]]
 - [[sources/D03_chambon-winter_1987_gel-point|化学量論的に不均衡な架橋PDMSのゲル化点における線形粘弾性]]
@@ -113,6 +114,7 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D03_lotka_1925_lotka-1925-elements-of|物理的生物学の要素 — Lotka の体系]]
 - [[sources/D03_pearson_1993_e|単純な系における複雑なパターン — Gray-Scott 反応拡散]]
 - [[sources/D03_thompson_1917_1917|成長と形態 — D'Arcy Thompson による形態の物理学]]
+- [[sources/D03_turing_1952_1952|形態形成の化学的基礎 — チューリングの反応拡散パターン]]
 - [[sources/D03_unknown_0000_the-chemical-basis-of|形態形成の化学的基礎 — Turing の反応拡散モデル]]
 - [[sources/D03_winter-chambon_1986_gel-point|架橋ポリマーのゲル点における線形粘弾性の解析]]
 
@@ -362,7 +364,7 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D22_tuckman_1977_jensen-m-a-c|小集団発達の諸段階・再訪（Tuckman & Jensen 1977）]]
 - [[sources/D22_wenger_2010_communities-of-practice-and|実践コミュニティと社会的学習システム]]
 
-#### D23 発達心理学 (10件)
+#### D23 発達心理学 (12件)
 - [[sources/D23_kartner_2024_early-social-cognitive-development|初期社会-認知発達は動的発達システム — Lifeworld アプローチ]]
 - [[sources/D23_kegan_1982_evolving-self|進化する自己]]
 - [[sources/D23_kim_2024_understanding-explore-exploit-dynamics|子ども発達における探索-活用ダイナミクス]]
@@ -373,6 +375,8 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D23_van_1998_piaget-vygotsky-and-beyond|基本的発達メカニズムの動的システムモデル：ピアジェ、ヴィゴツキー、その先へ（van Geert 1998）]]
 - [[sources/D23_van_2017_2017|認知発達と知能のネットワークモデル（van der Maas et al. 2017）]]
 - [[sources/D23_van_2019_dynamic-systems-process-and|動的システム、過程、そして発達（van Geert 2019）]]
+- [[sources/D23_vandermaas_2017_network-models-cognitive-development|認知発達と知能のネットワークモデル]]
+- [[sources/D23_vangeert_1998_piaget-vygotsky-beyond-dst|基本的発達メカニズムの動的システムモデル — ピアジェ・ヴィゴツキーを超えて]]
 
 #### D24 宗教学 (10件)
 - [[sources/D24_berkovichohana_2014_the-consciousness-state-space|意識状態空間（CSS）— 意識と自己の統合モデル]]
@@ -396,7 +400,7 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D25_vangennep_1909_rites-of-passage|Les rites de passage（仏語原典）]]
 - [[sources/D25_viveiros-de-castro_2017_amerindian-perspectivism|宇宙論的ダイクシスとアメリンディアン・パースペクティヴィズム（Viveiros de Castro 1998）]]
 
-#### D26 音楽学 (9件)
+#### D26 音楽学 (10件)
 - [[sources/D26_eerola_2021_anatomy-of-consonance-dissonance|協和・不協和の解剖学]]
 - [[sources/D26_ellamil_2016_2016|ダンスクラブ環境における集団同期と音楽特徴の相関]]
 - [[sources/D26_hanslick_1854_1854-1891|音楽美論 — 音響的に動く形式と創造]]
@@ -404,6 +408,7 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D26_koelsch_2005_siebel-w-a|音楽知覚の神経基盤に向けて — 7 モジュール統合モデル]]
 - [[sources/D26_limb_2008_neural-substrates-of-spontaneous|ジャズ即興演奏の神経基盤 — 前頭前皮質の活動解離]]
 - [[sources/D26_mehr_2019_et-al|人間の歌における普遍性と多様性]]
+- [[sources/D26_savage_2015_et-al|統計的普遍項が明らかにする人間の音楽の構造と機能]]
 - [[sources/D26_schulkin_2014_the-evolution-of-music|音楽の進化と人間の社会的能力]]
 - [[sources/D26_zatorre_2013_salimpoor-v-n|知覚から快へ — 音楽とその神経基盤]]
 
@@ -479,6 +484,11 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 
 | ページ | category | compiled |
 |--------|----------|----------|
+| [[sources/D02_ulm_2013_et-al\|Kibble–Zurek スケーリング則 — イオン結晶での欠陥形成の観測]] | sources | 2026-07-03 |
+| [[sources/D03_turing_1952_1952\|形態形成の化学的基礎 — チューリングの反応拡散パターン]] | sources | 2026-07-03 |
+| [[sources/D23_vandermaas_2017_network-models-cognitive-development\|認知発達と知能のネットワークモデル]] | sources | 2026-07-03 |
+| [[sources/D23_vangeert_1998_piaget-vygotsky-beyond-dst\|基本的発達メカニズムの動的システムモデル — ピアジェ・ヴィゴツキーを超えて]] | sources | 2026-07-03 |
+| [[sources/D26_savage_2015_et-al\|統計的普遍項が明らかにする人間の音楽の構造と機能]] | sources | 2026-07-03 |
 | [[sources/D17_kirby-cornish-smith_2008_cumulative-cultural-evolution-laboratory\|実験室での累積的文化進化：人間言語の構造的起源への実験的アプローチ]] | sources | 2026-06-16 |
 | [[sources/D17_raviv_2020_social-network-linguistic-structure\|社会ネットワーク構造と言語構造の創発]] | sources | 2026-06-16 |
 | [[sources/D27_salingaros_2025_design-epistemology-living-geometry\|生きた幾何学からの設計認識論：創造性を高める環境]] | sources | 2026-06-16 |
@@ -494,10 +504,5 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 | [[sources/D05_suarez_1988_schopf-p-s\|ENSO のための遅延作用振動子]] | sources | 2026-06-14 |
 | [[sources/D06_nicolis_2016_stochastic-resonance-self-organization\|確率共鳴・自己組織化・情報ダイナミクス — 多安定系の最適応答]] | sources | 2026-06-14 |
 | [[sources/D07_friston_2012_free-energy-principle\|生物系のための自由エネルギー原理 — 無秩序化への抵抗の数理]] | sources | 2026-06-14 |
-| [[sources/D07_heylighen_2025_why-emergence-and-self\|創発と自己組織化はなぜ概念的に単純で、ありふれ、自然なのか（Heylighen 2025）]] | sources | 2026-06-14 |
-| [[sources/D07_strogatz_2001_exploring-complex-networks\|複雑ネットワークの探究 — 構造とダイナミクスの統一的視座]] | sources | 2026-06-14 |
-| [[sources/D08_dehaene_2011_dehaene-changeux-2011-experimental\|意識的処理への実験的・理論的アプローチ — グローバル神経ワークスペース]] | sources | 2026-06-14 |
-| [[sources/D08_miller_2001_cohen-j-d\|前頭前皮質機能の統合理論 — 認知制御のバイアス信号モデル]] | sources | 2026-06-14 |
-| [[sources/D09_attwell_2001_attwell-laughlin-2001-an\|脳灰白質の信号伝達のエネルギー収支]] | sources | 2026-06-14 |
 
 > このページは `scripts/generate-wiki-index.mjs` により自動生成されます。wiki/ 内のページ変更時に PostToolUse hook で自動実行されます。
