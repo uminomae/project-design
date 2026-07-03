@@ -128,6 +128,14 @@
     line-height: 1.6;
 }
 
+/* 説明文: --mute では両背景で沈むため本文色 --mid + グロー（.glow-link span 既定）で可読性を確保。
+   階層差は色でなく文字サイズで付ける（title 1.1rem / desc 0.95rem） */
+.repo-card.repo-card--feature .repo-card__desc {
+    color: var(--mid);
+    font-size: 0.95rem;
+    line-height: 1.9;
+}
+
 /* === About Trigger === */
 .about-trigger {
     display: inline-flex;
