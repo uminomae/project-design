@@ -100,10 +100,10 @@
     padding: 0;
 }
 
-.reader-article blockquote {
-    border-left: 2px solid var(--gold);
-    padding: 0.2rem 0 0.2rem 1.25rem;
-    margin: 1.5rem 0;
+.reader-article blockquote.reader-callout {
+    border-left: 3px solid var(--gold);
+    padding: 1.1rem 1.4rem;
+    margin: 1.75rem 0;
 }
 
 .reader-article blockquote p {

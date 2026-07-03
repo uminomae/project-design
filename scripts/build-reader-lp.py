@@ -51,6 +51,8 @@ def main() -> None:
     # 図版（インライン SVG）と表は .glow-card の白ガラスパネルに載せる
     html = re.sub(r"(<svg\b.*?</svg>)", r'<figure class="glow-card reader-figure">\1</figure>', html, flags=re.S)
     html = re.sub(r"(<table\b.*?</table>)", r'<div class="glow-card reader-table">\1</div>', html, flags=re.S)
+    # 引用・コールアウト（lede/📖/仮説ボックス）はガラスパネルに載せる（シェーダー上の可読性）
+    html = html.replace("<blockquote>", '<blockquote class="glow-card reader-callout">')
 
     page = TPL.read_text(encoding="utf-8")
     page = page.replace("<!--BODY-->", html).replace("<!--UPDATED-->", updated)
