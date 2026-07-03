@@ -105,10 +105,10 @@
 <text x="340" y="340" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#5F5E5A">1, 2, 4, 8 で打ち止め</text>
 <rect x="175" y="410" width="150" height="72" rx="12" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
 <text x="250" y="440" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="500" fill="#085041">3</text>
-<text x="250" y="462" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#0F6E56">閉じる最小の輪</text>
+<text x="250" y="462" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#0F6E56">掛け算ができる最小</text>
 <rect x="355" y="410" width="150" height="72" rx="12" fill="#FAEEDA" stroke="#BA7517" stroke-width="0.5"/>
 <text x="430" y="440" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="500" fill="#633806">7</text>
-<text x="430" y="462" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#854F0B">束ねられる最大</text>
+<text x="430" y="462" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#854F0B">割り算ができる最大</text>
 </svg></figure>
 
 <hr />
@@ -120,29 +120,26 @@
 <li><strong>3次元を回す（四元数 ℍ）</strong>：立体をなめらかに回すには数を4つ束ねる。それが <code>i, j, k</code>。ゲームがキャラクターを回すのに今も使う本物の道具。</li>
 </ul>
 <p>この梯子を、ひとつずつ、たとえで確かめながら登っていく。</p>
-<h2 class="glow-heading" id="3-なぜ-3-は特別か--閉じる最小の輪">3. なぜ 3 は特別か — 閉じる最小の輪</h2>
+<h2 class="glow-heading" id="3-なぜ-3-は特別か--掛け算ができる最小の人数">3. なぜ 3 は特別か — 掛け算ができる最小の人数</h2>
 <p>四元数の心臓部は、たった一つの掛け算の規則：</p>
 <pre><code>i·j = k,   j·k = i,   k·i = j</code></pre>
-<p>「<strong>二つが出会うと、ちょうど"次の一人"に着地する</strong>」。ぐるっと<strong>輪になって閉じる</strong>。</p>
+<p>「<strong>二つが出会うと、ちょうど"次の一人"に着地する</strong>」。答えが、三人の中から<strong>はみ出さない</strong>。</p>
 <blockquote>
-<p>📖 <strong>「閉じる」とは</strong> — 数学の言葉なので、先にほどいておく。</p>
-<p>仲間どうしで何かをした結果が、<strong>必ずまた仲間の中に戻ってくる</strong>（外にはみ出さない）こと。</p>
-<ul>
-<li>整数＋整数は、いつも整数。だから整数の世界は足し算で「<strong>閉じている</strong>」。</li>
-<li>でも 1 ÷ 2 ＝ 0.5 は整数の外。整数の世界は割り算では「閉じていない」（はみ出す）。</li>
-</ul>
-<p>ここでは <code>i·j = k</code> のように、<strong>誰と誰を掛け合わせても、結果が3人の外にこぼれず、必ず3人の中の誰かに着地する</strong>ことを「閉じる」と呼ぶ。じゃんけんなら「勝負の結果がいつもグー・チョキ・パーの中で決まる」こと。</p>
-<p><strong>順番のことではない</strong>。順番の話はすぐ次に出てくる「<strong>向き</strong>」という<strong>別の性質</strong>だ。「閉じる＝はみ出さない」「向き＝回る方向で符号が変わる」と分けて持っておくと迷子にならない。</p>
-<p>なお、この読み物ではあとで「閉じて<strong>割れる</strong>」という言い方も出てくる。「割れる」＝<strong>割り算までできる</strong>こと。割り算の仕事は「<strong>元に戻す・割り戻す</strong>」だ——3人で1200円なら一人400円（割り勘）、「3 × □ ＝ 12」なら □ ＝ 4（見えない相手の特定）。掛け算の結果から、元を復元できる。</p>
-<p>割り算ができないと何が困るか。一発でわかるのが「<strong>×0</strong>」だ。6×0＝0、4×0＝0——<strong>結果のゼロを見ても、元が6だったか4だったか、もう誰にも分からない</strong>。ゼロを掛けると情報が消えて、二度と割り戻せない。ふつうの数の世界でこれが起きるのは「0を掛けたとき」だけ。だから普段は安心して掛け算し、必要なら割り算で戻れる。「割れる世界」とは、<strong>この復元がいつでも保証されている世界</strong>のこと（詳しくは §4 末尾のコラム「つむじと零因子」で）。</p>
+<p>📖 <strong>「掛け算ができる」とは</strong> — 答えが、同じ世界の中にあること。</p>
+<p>3×4＝12。整数×整数は、必ず整数。<strong>はみ出さない</strong>。当たり前すぎて意識しないが、これが「掛け算ができる」ということの中身だ。</p>
+<p>チームにも、同じことを求めてみる。<strong>メンバー×メンバー ＝ メンバー</strong>——二人の組み合わせの結果が、チームの外にはみ出さないこと。2人チームでは、A×B は A でも B でもない何かになり、<strong>必ずはみ出す</strong>。3人で初めて、<code>i·j = k</code> のように、<strong>どの二人を掛けても、答えが三人の中に収まる</strong>。じゃんけんなら「勝負の結果がいつもグー・チョキ・パーの中で決まる」こと。C は答えの受け取り係ではない——<strong>答えが、たまたま仲間だった</strong>ということだ。</p>
+<p><strong>順番は別の性質</strong>。すぐ次に出てくるとおり <code>i·j = k</code> だが <code>j·i = −k</code>——掛ける順で答えの<strong>向き</strong>が変わる。「はみ出さない」と「向きが変わる」は、分けて持っておくと迷子にならない。</p>
+<p>📖 <strong>「割り算ができる」とは</strong> — 結果から、掛けた相手を割り出して、戻せること。</p>
+<p>12÷4＝3。割り勘。「3 × □ ＝ 12」の □ を特定できる。関係でいえば、もつれても解いて戻せること。</p>
+<p>例外はひとつだけ——「<strong>×0</strong>」は戻せない。6×0＝0、4×0＝0。<strong>結果のゼロを見ても、元が6だったか4だったか、もう誰にも分からない</strong>。ふつうの数でこの事故が起きるのは、0を掛けたときだけ。だから普段は安心して掛け算し、必要なら割り算で戻れる。「割り算ができる世界」とは、<strong>この事故が構造的に起きないと保証されている世界</strong>のこと（詳しくは §4 末尾のコラム「つむじと零因子」で）。</p>
 </blockquote>
 <p>そして <code>i·j = k</code> だが <code>j·i = −k</code>（逆回りはマイナス）＝<strong>向きを持った輪</strong>。順序が効く。</p>
-<p>下の図。左が「2人＝閉じない」、右が「3人＝閉じる（四元数の三つ組）」。同じ三角形を<strong>人／じゃんけん／四元数</strong>の三通りで読める。</p>
-<figure class="glow-card reader-figure"><svg width="100%" viewBox="0 0 680 440" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="2人は閉じず、3人で輪が閉じる（四元数の三つ組）">
+<p>下の図。左が「2人＝はみ出す」、右が「3人＝収まる（四元数の三つ組）」。同じ三角形を<strong>人／じゃんけん／四元数</strong>の三通りで読める。</p>
+<figure class="glow-card reader-figure"><svg width="100%" viewBox="0 0 680 440" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="2人でははみ出し、3人で答えが中に収まる（四元数の三つ組）">
 <defs><marker id="arC" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>
 <line x1="272" y1="70" x2="272" y2="360" stroke="#B4B2A9" stroke-width="0.5" stroke-dasharray="4 4"/>
-<text x="155" y="60" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="500" fill="#2C2C2A">2人：閉じない</text>
-<text x="430" y="60" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="500" fill="#2C2C2A">3人：閉じる（輪）</text>
+<text x="155" y="60" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="500" fill="#2C2C2A">2人：はみ出す</text>
+<text x="430" y="60" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="500" fill="#2C2C2A">3人：収まる（輪）</text>
 <line x1="124" y1="196" x2="186" y2="196" stroke="#888780" stroke-width="2" marker-end="url(#arC)"/>
 <line x1="186" y1="224" x2="124" y2="224" stroke="#888780" stroke-width="2" marker-end="url(#arC)"/>
 <circle cx="100" cy="210" r="22" fill="#F1EFE8" stroke="#888780" stroke-width="0.5"/>
@@ -165,9 +162,9 @@
 <text x="400" y="410" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#5F5E5A">矢印は「勝つ／積が次に着地する」向き　逆回りは符号が反転（順序が効く）</text>
 </svg></figure>
 
-<p><strong>点と線でいえば</strong>——2人はただの1本の線。矢印が押し合うだけで、決着が落ちる先がない＝<strong>開いたまま</strong>。3人目の点が入って初めて、矢印は輪になって閉じる。</p>
+<p><strong>点と線でいえば</strong>——2人はただの1本の線。矢印が押し合うだけで、決着の落ちる先がない＝<strong>はみ出したまま</strong>。3人目の点が入って初めて、答えが輪の中に収まる。</p>
 <p><strong>現実のたとえでいえば</strong>——じゃんけん。グーはチョキに、チョキはパーに、パーはグーに勝つ。三すくみになって初めて、「勝ち負けの仕組み」がそれ自体で完結する。</p>
-<p><strong>もしも人間関係でいうなら</strong>——二人の言い合いは、押し合いのまま終わらない。三人目がいて初めて、「じゃあ、こうしよう」が着地する場所ができる。だから「閉じる最小の単位」が <strong>3</strong>。</p>
+<p><strong>もしも人間関係でいうなら</strong>——二人の言い合いは、押し合いのまま終わらない。三人目がいて初めて、「じゃあ、こうしよう」が着地する場所ができる。だから、<strong>掛け算ができる最小の人数</strong>が <strong>3</strong>。</p>
 <blockquote>
 <p>📖 <strong>人間関係の「掛け算」とは何か</strong> — ここがこの読み物のいちばん深い賭けで、まだ言葉が完成していない（保持論点）。問いの形はこうだ: <strong>四元数の本質と、3人の関係の本質は、同じ形をしているのではないか。だとすれば、それはどんな関係のことか</strong>。いまの見当を、出発点の二軸に忠実なかたちで書いておく。</p>
 <p>§2 を思い出してほしい。虚数 <code>i</code> の正体は「<strong>90度回す</strong>」だった。四元数の i, j, k も、すべて「回し方」だ。だから掛け算の本義は、何かを誰かに引き渡す事務の話ではない——<strong>回すことの合成</strong>だ。</p>
@@ -176,7 +173,7 @@
 <li>メンバー一人ひとりは、それぞれ**自分の回し方（自分の軸）**を持っている。同じ出来事を、それぞれ違う向きに生存↔︎信頼変換して見ている。</li>
 <li><strong>A × B ＝ A の回し方と B の回し方の合成</strong>。二人の視点を続けて通すと、状況は二段階回る。</li>
 <li><strong>四元数の急所——「あいだ」も回る</strong>: <code>i</code> を掛けると、自分の平面だけでなく <strong>(j, k) の平面も一緒に回る</strong>（i·j ＝ k、i·k ＝ −j）。人間関係でいえば——<strong>A が動くと、B と C の「あいだ」も回る</strong>。三人組には、残る一人と無関係でいられる「二人だけの私的な領域」が存在しない。三人であること自体が、全員を巻き込む構造になっている。</li>
-<li><strong>3人が閉じているとは</strong>: どの二人の回し方を合成しても、<strong>ちょうど三人目の回し方に一致する</strong>こと。二人の議論から生まれる第三の見方が、チームの外ではなく、<strong>すでにそこにいる C のもの</strong>だということ。</li>
+<li><strong>3人で掛け算ができるとは</strong>: どの二人の回し方を合成しても、<strong>ちょうど三人目の回し方に一致する</strong>こと。二人の議論から生まれる第三の見方が、チームの外ではなく、<strong>すでにそこにいる C のもの</strong>だということ。</li>
 <li><strong>C に何が起きるか</strong>: 仕事が回ってくる、ではない。<strong>A と B の関わりの帰結が、C のものの見方として着地する</strong>——C の視点が要請され、強化され、生きる。</li>
 <li><strong>足し算ではなく、掛け算</strong>: 足し算は順序を替えても同じ（3＋5 ＝ 5＋3）——頭数を寄せ集める世界。回転の合成は<strong>順序で向きが変わる</strong>: <code>i·j = k</code> だが <code>j·i = −k</code>。A の軸を先に通すか、B の軸を先に通すかで、生まれる見方の<strong>向きが逆</strong>になる。チームは頭数の足し算ではなく、<strong>順序と向きが意味を持つ掛け算</strong>でできている。§1 で立てた「その掛け算とは、どんな掛け算なのか」という問いは、ここに着地する——<strong>回転の掛け算</strong>だ。これがこの読み物の賭けの核心。</li>
 </ul>
@@ -192,7 +189,7 @@
 </details>
 
 <hr />
-<h2 class="glow-heading" id="4-なぜ-7-は特別か--三角形7枚の織物">4. なぜ 7 は特別か — 三角形7枚の織物</h2>
+<h2 class="glow-heading" id="4-なぜ-7-は特別か--割り算までできる最大の人数">4. なぜ 7 は特別か — 割り算までできる最大の人数</h2>
 <p>7つの虚単位 e₁…e₇ を<strong>点</strong>、7つの三つ組を<strong>線</strong>とする。掛け算の規則そのものが「点と線」になる（最小の射影平面 PG(2,2)）。</p>
 <figure class="glow-card reader-figure"><svg width="100%" viewBox="0 0 680 500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="ファノ平面による八元数の掛け算規則">
 <defs><marker id="arD" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>
@@ -222,7 +219,7 @@
 <li>その線の<strong>残りの1点</strong>が答え: e₁·e₂ ＝ e₃。</li>
 <li>矢印の<strong>向きに沿えば＋、逆らえば−</strong>: e₂·e₁ ＝ −e₃。自分自身との掛け算は eᵢ² ＝ −1（§2 の「90度を2回で真後ろ」と同じ）。</li>
 </ol>
-<p>つまり<strong>線1本 ＝ §3 の閉じた輪（じゃんけんの三すくみ）1個</strong>。ファノ平面とは、その輪を7本、「どの2人も必ずどれか1本を共有する」ように重ね編みした<strong>掛け算の配線図</strong>だ。</p>
+<p>つまり<strong>線1本 ＝ §3 の三すくみ1個</strong>。ファノ平面とは、その輪を7本、「どの2人も必ずどれか1本を共有する」ように重ね編みした<strong>掛け算の配線図</strong>だ。</p>
 </blockquote>
 <p>数え上げで確かめられる事実（比喩ではない）：各線は3点、各点は3本の線上、<strong>どの2点もちょうど1本の線を共有</strong>、どの2線も1点で交わる。</p>
 <blockquote>
@@ -252,7 +249,7 @@
 <p>四元数の本質（回転の合成・あいだも回る・順序で向きが変わる）は、<strong>そのまま7人に拡張されている</strong>。増えたのは「あいだ」の数と、三角形をまたぐときの段取り依存だけだ。</p>
 </blockquote>
 <h3 class="glow-heading" id="三角形が2枚や3枚ではだめなのか">三角形が2枚や3枚では、だめなのか</h3>
-<p>当然の疑問がここで立つ。1枚（3人）が閉じるなら、2枚や3枚を貼り合わせた「中くらいの織物」はなぜないのか。</p>
+<p>当然の疑問がここで立つ。1枚（3人）で掛け算ができるなら、2枚や3枚を貼り合わせた「中くらいの織物」はなぜないのか。</p>
 <p>貼り合わせの条件——<strong>どの2人も、ちょうど1つの三角形を共有する</strong>——が、見た目よりずっと厳しいからだ。</p>
 <blockquote>
 <p>📖 <strong>「ホームの三角形」とは</strong> — あるペア（2人）にとって、<strong>その2人が両方入っている三角形</strong>のこと。さっきの掛け算のやり方で「e₁ と e₂ の両方を通る線」と呼んだものと同じだ。</p>
@@ -278,7 +275,7 @@
 <circle cx="110" cy="90" r="14" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/><text x="110" y="95" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#085041">A</text>
 <circle cx="62" cy="190" r="14" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/><text x="62" y="195" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#085041">B</text>
 <circle cx="158" cy="190" r="14" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/><text x="158" y="195" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#085041">C</text>
-<text x="110" y="238" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#0F6E56">✓ 完結（§3 の閉じた輪）</text>
+<text x="110" y="238" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#0F6E56">✓ 完結（§3 の三すくみ）</text>
 
 <g stroke="#1D9E75" stroke-width="2" fill="none">
 <line x1="340" y1="88" x2="264" y2="168"/><line x1="264" y1="168" x2="312" y2="212"/><line x1="312" y1="212" x2="340" y2="88"/>
@@ -344,7 +341,7 @@
 <details>
 <summary><strong>コラム — なぜ4人や5人の「数の世界」は無いのか: つむじと零因子</strong>（深掘り。読み飛ばしても本筋は追える）</summary>
 
-<p>「者」の数 p ＝虚方向の数、全体次元 d = p+1。<strong>閉じて割れる関係構造</strong>を持てるのは d ∈ {1,2,4,8}、すなわち p ∈ {0,1,3,7} のみ。</p>
+<p>「者」の数 p ＝虚方向の数、全体次元 d = p+1。<strong>掛け算も割り算もできる関係構造</strong>を持てるのは d ∈ {1,2,4,8}、すなわち p ∈ {0,1,3,7} のみ。</p>
 <details>
 <summary><strong>もっと詳しく — 数の世界ごとの壊れ方の一覧表</strong>（読み飛ばしても本筋は追える）</summary>
 
@@ -380,7 +377,7 @@
 <td><strong>3 / 4</strong></td>
 <td>四元数 ℍ ✓</td>
 <td>非可換・結合・割れる</td>
-<td>代償＝可換性を失う。3D外積で三つ組が閉じる</td>
+<td>代償＝可換性を失う。3D外積の答えが三つ組に収まる</td>
 </tr>
 <tr>
 <td><strong>4,5,6 / 5,6,7</strong></td>
@@ -392,7 +389,7 @@
 <td><strong>7 / 8</strong></td>
 <td>八元数 𝕆 ✓</td>
 <td>非可換・非結合（交代）・割れる・ノルム保存</td>
-<td>代償＝結合性を失う。7D外積が閉じる最後</td>
+<td>代償＝結合性を失う。7D外積で答えが収まる最後</td>
 </tr>
 <tr>
 <td>15 / 16</td>
@@ -505,17 +502,17 @@
 <li><strong>p=0（実数）</strong>：関係が存在しない。</li>
 <li><strong>p=1（複素数）</strong>：可換で第三者が生まれず、三つ組が作れない＝<strong>一つの意識</strong>。</li>
 <li><strong>p=2,4,5,6</strong>：可除代数が存在せず、零因子で崩れる。</li>
-<li><strong>p=3（四元数）</strong>：成立。可換性を代償に、二人が第三に着地して閉じる<strong>最小の集団</strong>。</li>
+<li><strong>p=3（四元数）</strong>：成立。可換性を代償に、二人の積が第三の仲間に収まる<strong>最小の集団</strong>。</li>
 <li><strong>p=7（八元数）</strong>：成立。結合性を代償に、意味が保存される<strong>最大の集団</strong>。</li>
 <li><strong>p≥8</strong>：割り算が死ぬ（零因子）。</li>
 </ul>
-<p><strong>個の意識は複素数 ℂ の形、組織はその上の四元数（3）と八元数（7）の形</strong>。物質⊥精神という一つの平面が、他者と関わって虚方向を増やしていくと、<strong>閉じたまま到達できるのは 3 と 7 だけ</strong>。個と組織は<strong>同一の可除代数の梯子の、solo の段（ℂ）と collective の段（ℍ・𝕆）</strong>。</p>
+<p><strong>個の意識は複素数 ℂ の形、組織はその上の四元数（3）と八元数（7）の形</strong>。物質⊥精神という一つの平面が、他者と関わって虚方向を増やしていくと、<strong>掛け算と割り算を保ったまま到達できるのは 3 と 7 だけ</strong>。個と組織は<strong>同一の可除代数の梯子の、solo の段（ℂ）と collective の段（ℍ・𝕆）</strong>。</p>
 <h3 class="glow-heading" id="仮説前提と定理を分離">仮説（前提と定理を分離）</h3>
 <blockquote>
-<p><strong>可除代数‑意識/組織仮説</strong>：意識のゲートに上る信号が <strong>物質⊥精神の二軸</strong>であるなら、個の意識は <strong>複素数 ℂ</strong> の形をとる。その意識が他者と関わり創発するとき、系は虚方向を増やすが、「関係が閉じて割れる（解決する）」ことを保つ限り、非自明に成立する集団は <strong>3（四元数）と 7（八元数）のみ</strong>。ゆえに個（ℂ）と組織（ℍ/𝕆）は同一の可除代数の梯子の別の段であり、<strong>組織設計とは、個の複素的意識を、閉じたまま多体へ拡張する操作</strong>である。</p>
+<p><strong>可除代数‑意識/組織仮説</strong>：意識のゲートに上る信号が <strong>物質⊥精神の二軸</strong>であるなら、個の意識は <strong>複素数 ℂ</strong> の形をとる。その意識が他者と関わり創発するとき、系は虚方向を増やすが、「掛け算も割り算もできる（結果がはみ出さず、いつでも戻せる）」ことを保つ限り、非自明に成立する集団は <strong>3（四元数）と 7（八元数）のみ</strong>。ゆえに個（ℂ）と組織（ℍ/𝕆）は同一の可除代数の梯子の別の段であり、<strong>組織設計とは、個の複素的意識を、掛け算と割り算を保ったまま多体へ拡張する操作</strong>である。</p>
 </blockquote>
 <ul>
-<li><strong>前提（解釈の賭け）</strong>：物質⊥精神 ／ 意識＝複素数 ／ 価値＝関係の閉じ。</li>
+<li><strong>前提（解釈の賭け）</strong>：物質⊥精神 ／ 意識＝複素数 ／ 価値＝関係の解決（割り算ができること）。</li>
 <li><strong>定理（硬い部分）</strong>：Frobenius・Hurwitz・Bott–Milnor–Kervaire・Adams（Hopf不変量1）・外積の定理・ハゲ球（平行化）・Fano=Steiner S(2,3,7)。</li>
 </ul>
 <p>この仮説がその後の検証でどうなったか——何が支持され、何が棄却されたか——は §7 に正直に記した。検証一巡を受けた**改訂版（仮説 v2・仮）**も §7 の末尾にある。</p>
@@ -545,7 +542,7 @@
 <tbody>
 <tr>
 <td>数学（定理）</td>
-<td>掛けて割れる数の体系は次元 1,2,4,8 のみ。虚方向が閉じるのは 3 と 7 だけ</td>
+<td>掛け算も割り算もできる数の体系は次元 1,2,4,8 のみ。人数に当たる虚方向は 3 と 7 だけ</td>
 <td><strong>無傷</strong>（証明がある）</td>
 </tr>
 <tr>
@@ -555,7 +552,7 @@
 </tr>
 <tr>
 <td>弱い読み（設計原理）</td>
-<td>3 と 7 を<strong>選べば</strong>、関係が閉じたまま拡張できる</td>
+<td>3 と 7 を<strong>選べば</strong>、掛け算と割り算を保ったまま拡張できる</td>
 <td><strong>存続</strong>（現在の形）</td>
 </tr>
 </tbody>
@@ -602,7 +599,7 @@
 <li>「理想形以外は<strong>崩落する</strong>」と読めば誤り。これが棄却された強い読み。</li>
 <li>「理想形だけが<strong>モルタルなしで立つ</strong>」と読めば真。これが存続する設計原理。</li>
 </ul>
-<p>5〜6人チームは「モルタル（余分な調整コスト）で立っているアーチ」であり、3 と 7 は「構造だけで閉じる形」。だから 5 人チームが普通に働いている光景は数学への反証ではなく、<strong>現実のチームがモルタルを使えることの証拠</strong>にすぎない。問いは「立つか崩れるか」から「<strong>どれだけのモルタルで立っているか</strong>」に変わる。</p>
+<p>5〜6人チームは「モルタル（余分な調整コスト）で立っているアーチ」であり、3 と 7 は「構造だけで掛け算と割り算が立つ形」。だから 5 人チームが普通に働いている光景は数学への反証ではなく、<strong>現実のチームがモルタルを使えることの証拠</strong>にすぎない。問いは「立つか崩れるか」から「<strong>どれだけのモルタルで立っているか</strong>」に変わる。</p>
 <h3 class="glow-heading" id="結果3--生き残った牙-7人は三つ組の網という予測">結果3 — 生き残った牙: 7人は「三つ組の網」という予測</h3>
 <p>ところが、棄却作業の副産物として、仮説の<strong>検証可能な核</strong>がはっきりした。</p>
 <p>可除代数の読みとコスト法則の読みは、<strong>7人のところで初めて違う絵を描く</strong>。コスト法則にとって7人チームの実体は「21本のペア」。八元数にとっては「<strong>7つの重なり合う三人組</strong>」——ファノ平面の掛け算則そのものだ。</p>
@@ -713,7 +710,7 @@
 </thead>
 <tbody>
 <tr>
-<td>数の梯子は 1,2,4,8 で止まる／3と7だけが閉じる</td>
+<td>数の梯子は 1,2,4,8 で止まる／人数に当たる虚方向は3と7だけ</td>
 <td><strong>定理</strong>（確定）</td>
 </tr>
 <tr>
@@ -725,7 +722,7 @@
 <td>実証なし（崖は見つからず、逓減は滑らか）</td>
 </tr>
 <tr>
-<td>「3と7を<strong>選べば</strong>、閉じたまま拡張できる」</td>
+<td>「3と7を<strong>選べば</strong>、掛け算と割り算を保ったまま拡張できる」</td>
 <td><strong>設計原理として存続</strong>（本仮説の現在の形）</td>
 </tr>
 <tr>
@@ -762,11 +759,11 @@
 <li><strong>意識の状態は平面上の点</strong>。中心からの距離が強さ、角度が状態の種類（ここは心理学の定番と合流し、強く支持されている）。</li>
 <li>その平面を「物質」「精神」と測る<strong>測り方は、順序が効きうる相補的な切り口</strong>（靴下と靴）。固定した直交軸はもう仮定しない。順序が本当に効くかは、質問の順番を入れ替える実験で決められる。</li>
 <li><strong>複素数の掛け算が働く場所は、感情の平面ではなく「判断のゆらぎ（確率）」の層</strong>。「意識＝ℂ」はこの層の主張として引っ越す——人の判断が古典的な確率の足し算則を破り、位相の干渉でぴったり記述される、あの場所だ。</li>
-<li><strong>価値＝閉じ</strong>は後づけを禁じる。「どちらも単独では健全なのに、組むと吸い込み状態に入り、解体以外に出口がない」対（解決不能アトラクタ対）を<strong>先に</strong>定義しておき、それを零因子の対応物として使う。</li>
-<li><strong>組織側は変わらない</strong>: 3と7は「選べば構造だけで閉じる」設計原理。7人＝重なり合う7つの三人組という予測が主戦場（合格ライン付き）。</li>
+<li><strong>価値＝解決（割り算ができること）<strong>は後づけを禁じる。「どちらも単独では健全なのに、組むと吸い込み状態に入り、解体以外に出口がない」対（解決不能アトラクタ対）を</strong>先に</strong>定義しておき、それを零因子の対応物として使う。</li>
+<li><strong>組織側は変わらない</strong>: 3と7は「選べば、構造だけで掛け算と割り算が保てる」設計原理。7人＝重なり合う7つの三人組という予測が主戦場（合格ライン付き）。</li>
 </ol>
 </blockquote>
-<p>v1 から変わったのは2点——「平面が複素数」から「観測・判断の層が複素的」への引っ越しと、「閉じ」の測り方の事前固定。変わらないのは、数学の定理（無傷）と、出発点の二つの体験（無傷）だ。</p>
+<p>v1 から変わったのは2点——「平面が複素数」から「観測・判断の層が複素的」への引っ越しと、「解決（割り算）」の測り方の事前固定。変わらないのは、数学の定理（無傷）と、出発点の二つの体験（無傷）だ。</p>
 <p>仮説は縮んだのではない。<strong>「何でも説明する物語」から「外れうる予測を持つ仮説」に変わった</strong>。ここからが本番だ。</p>
 <hr />
 <h2 class="glow-heading" id="8-よくある誤解">8. よくある誤解</h2>
@@ -775,7 +772,7 @@
 
 <p><strong>誤解</strong>: この読み物は「チームは3人か7人でなければ成立しない」という法則を主張している。</p>
 <p><strong>なぜ違うか</strong>: その読み方（強い読み）は、実際のチーム研究に照らして<strong>すでに棄却済み</strong>（§6）。5人や6人のチームは普通に存在し、普通に機能する。</p>
-<p><strong>正しい捉え方</strong>: 残っている主張は<strong>設計原理</strong>——「3と7を<strong>選べば</strong>、余分な調整コスト（モルタル）なしに、構造だけで閉じたまま拡張できる」。5人チームはモルタルで立っているアーチであって、崩れてはいない（§7 アーチとモルタル）。</p>
+<p><strong>正しい捉え方</strong>: 残っている主張は<strong>設計原理</strong>——「3と7を<strong>選べば</strong>、余分な調整コスト（モルタル）なしに、構造だけで掛け算と割り算を保ったまま拡張できる」。5人チームはモルタルで立っているアーチであって、崩れてはいない（§7 アーチとモルタル）。</p>
 </details>
 
 <details>
