@@ -6,7 +6,16 @@
 - remote: synced
 - 関連: cs develop=**2cbd91e** / cs main=**6522065**（cs#254 v1 まで）
 
-## 🔵 進行中 2026-07-03 (seq06) — pd#115 検証プログラム一巡 + 公開 LP 確立
+## 🔵 進行中 2026-07-03 (seq06b) — ⚠️ 調査方向の転換 + 対話駆動の LP 磨き込み
+- **中心の問い確定（pjdhiro 原文）**: 「四元数の本質と3人の関係の本質は同じ形か。だとすればどんな関係か」（前提=意識の二軸のみ、7人へは八元数の特徴で拡張するだけ）。README §0 / CN-010 冒頭に正本化
+- **方向転換**: 実証・反証路線（RR-002〜009）は Claude の誤読による誤本線 → 補助線に降格。本線=解釈の構築（性質→読み候補→pjdhiro 判定→READER 反映）
+- **RR-010 新設（living・本線の作業台）**: 本質対応表。採用=あいだが回る/足し算との対比/7人拡張(3つのあいだ=ホーム配線図)。方向確定=Q5クライン/Q6エディプス/Q7逆回転・量子的可逆。保留=Q8ノルム(干渉の整理が先)。展開=Q9a-d(ℂ⊕ℂj/回転子/パウリ=切り口=CN-009合流/二重被覆=スパイラル)。却下=受け皿読み（ルール10制定）
+- **探索方向はメモリに恒久保存**（project_pd115_exploration_directions.md）。無視して進めるの禁止
+- **コンテンツ分類ルール確立**（README §3）: 視点(骨格)→数学→たとえ→人間関係→コラム→📖。LP 再構成済み（コラム3本: クライン・エディプス/逆回転・量子/分解三題）
+- **対話駆動の噛み砕き**（すべて即公開）: 閉じる📖/割れる=×0/掛け算のやり方📖/結合しない📖(機械検証例)/2枚3枚の視覚化SVG(8枚目)/ホームの三角形📖+ABD問答/ストーリー一本道再構成(§0-11)/誤解FAQ4件
+- pd HEAD: develop=**4364b5a** / main=**cd5de5e**（LP 64KB・SVG8・details10・responsive 5/5）
+
+## ⏸ 完了 2026-07-03 (seq06) — pd#115 検証プログラム一巡 + 公開 LP 確立
 - **正本 README 新設**: `knowledge/research/two-axis-closure/README.md`（North Star・骨格・執筆ルール7項・検証ループ・残タスク表）。pd#115 に統合コメント固定
 - **公開 LP 確立**: `reader/three-and-seven.html`（https://uminomae.github.io/project-design/reader/three-and-seven.html ）
   - 初版 warm-light 独自テーマは pjdhiro 却下 → DESIGN-RULES **§0a 新設**（公開ページは VI 継承必須・9項目）+ §8b 却下履歴 + README/AGENTS/reader/README/HTML コメントに見える化 + メモリ保存
@@ -389,24 +398,6 @@
   - techo#116 欠損駆動思考ナレッジ全面見直し
 
 ## Hot Topics
-### Obsidian 差分検出 (2026-07-02T14:42:58Z)
-未 push コミット (develop ahead of origin/develop, wiki/ のみ):
-- 3f0db2f Merge develop into main: pd#112 wiki-conflict 3件解消
-- 0a5893c Merge develop into main: pd#120 保守修正（responsive B5 / wiki-lint / 孤立・broken 解消 / blocked-access 4件削除）
-- 84ee5d0 Merge develop into main: wiki生成群 + RR-001/002/003 + reader §9 + skill修正を公開
-- 28eb1d3 merge: develop → main — #76/#80/#81/#82 完了 + wiki-compile skill 分割 + cross-check
-- 5d606aa Merge branch 'develop'
-- 5f1bf6d Merge branch 'develop'
-- ff83f2f merge develop → main: 意識/間主観性 WT-1 core definitions 厳密化
-- 948c2c4 merge develop → main: 意識/間主観性 厳密化 + wiki ワークフロー改善 + 関連原典自動追記
-- acf2e4f merge: develop → main (2026-04-15 #01)
-- d5b814b merge: develop → main (2026-04-14 #01)
-- 9787bac merge: develop → main (2026-04-13 #03)
-- 996b8b1 Merge branch 'develop'
-- b54e25f Merge branch 'develop'
-- 33170a5 refactor: サイト全体から4層モデル言及を更新 (techo#121)
-→ `git diff wiki/` で内容確認してから commit/push するか pjdhiro に判断依頼
-
 - **wiki 更新ワークフロー自動化チェーン完成**:
   - cs raw PDF/wiki 改訂 → pd `.cache/inbox/wiki-gen-*.md`（cs f23edd7）
   - pd knowledge/ 編集 → pd `.cache/inbox/wiki-restale-*.md`（#77）
