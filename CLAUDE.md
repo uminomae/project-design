@@ -34,6 +34,7 @@
 - 対話する人間の固有名詞は **pjdhiro** を使用
 - **取り消せない操作、価値判断を伴う操作は pjdhiro の明示的承認なしに実行しない**
 - **デザインルールは対話から拾って常にブラッシュアップする**: pjdhiro との UI 対話で生まれたデザイン判断（採用・却下とも）は `docs/DESIGN-RULES.md` に同一セッション内で反映する。品質管理の一環であり、ルールの陳腐化を防ぐ
+- **commit 前品質ループ必須**: 実質的な成果物編集は「調査 → 仮案 → レビュー → テスト → 修正」を経てから commit する。詳細は `.claude/rules/commit-rules.md` §commit 前品質ループ（2026-07-03 pjdhiro 承認）
 - **wiki compile 後の文字化けチェック**: wiki/*.md にファイルを書き込んだ後、`grep -rl '�' wiki/ --include='*.md'` で UTF-8 置換文字（U+FFFD）が混入していないか検証する。LLM が日本語テキストを生成する際に文字化けが発生する既知の問題への対策
 
 <important if="you are writing or modifying JS/TS files">
