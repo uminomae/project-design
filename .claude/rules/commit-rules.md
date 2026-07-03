@@ -29,8 +29,13 @@ type: feat, fix, docs, refactor, chore 等
 
 1. **レビュー**: commit 前に team-critic（agent-team-workflow の REVIEW、V3-V6）で仮案を検証する。
    軽微な変更でも最低限 Main 自身による V3（反例探索）を明示的に行い、結果を残す
-2. **テスト**: 該当するテストを実行する（pd なら `static-checks.js`、UI 変更なら `responsive-test.sh`、
-   wiki なら UTF-8 文字化けチェック）
+2. **テスト**: 成果物の種別に応じたテストを実行する（static-checks.js はサイト構造専用で
+   wiki/research 成果物には無関係。種別に合ったものを選ぶ）:
+   - サイト構造・シェーダー・HTML/CSS/JS: `node .claude/scripts/static-checks.js`
+   - UI・レスポンシブ: `node .claude/scripts/responsive-test.js`
+   - wiki/sources 生成: UTF-8 文字化けチェック（`grep -rl '�' wiki/ --include='*.md'`）
+     ＋ `node scripts/wiki-access-lint.mjs`（鎖の不変条件）＋ `node scripts/wiki-cross-check.mjs`（cs 矛盾検査）
+   - knowledge/research の数理主張: 該当機械検証スクリプト（`RR-0XXa-*.py` 等）を実行し ALL CHECKS PASSED を確認
 3. **修正**: レビュー/テストの指摘を反映するか、解決しない論点は保持論点として明記する
 4. 上記を経ていない成果物 commit は作らない
 
