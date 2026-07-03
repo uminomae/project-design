@@ -112,4 +112,4 @@ execution_stats:
 - `README.md` §0（回転の掛け算の経営の出どころ）・§3 ルール6/7/10/11
 - `RR-010-essence-mapping.md`（作業台。判定が出た分は RR-010 の判定欄と READER に反映する）
 - `RR-003`（チーム人数実証地形）・`RR-004`（ℂ 空振り）・`RR-006`（状態/観測分離）・`RR-007`（F5）・`RR-008`（gridlock）・`RR-012`（ノルム保存 vs 干渉）・`RR-010a`（交代法則）
-- 機械検証（scratchpad・未収蔵）: q7_verify.py（可逆性二層）/ sedenion_verify.py（零因子）。採用判定が出たら RR-013a として恒久化する
+- 機械検証（収蔵済み 2026-07-04・実行確認済み）: `RR-013a-q7-reversibility-verification.py`（可逆性二層: 逆元存在・ノルム≠1 反復の収縮・単位部分群のみ等長）/ `RR-013b-sedenion-zero-divisor-verification.py`（16元数の零因子実在・八元数の零因子なしコントロール）

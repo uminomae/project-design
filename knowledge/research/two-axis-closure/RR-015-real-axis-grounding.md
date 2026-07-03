@@ -15,7 +15,7 @@ date_end:
 
 ## 方法
 
-researcher ×2（数学接地＝機械検証＋Baez 2002 一次精読／現象学・社会科学接地＝文献調査）＋ critic 検証。機械検証スクリプト3本（scratchpad。採用判定後に RR-015a として恒久化予定）。
+researcher ×2（数学接地＝機械検証＋Baez 2002 一次精読／現象学・社会科学接地＝文献調査）＋ critic 検証。機械検証スクリプトは収蔵済み（2026-07-04・実行確認済み）: `RR-015a-center-field-verification.py`（中心・共役・実部・Im 非閉鎖）/ `RR-015b-octonion-automorphism-verification.py`（𝕆 で conjugation は自己同型でない・ただし 1 は固定）/ `RR-015c-g2-perm-automorphism-verification.py`（Fano 対称性由来の本物の自己同型が実軸を固定）。
 
 ## A. 数学側の論拠 — 「実軸だけが動かない」は定理
 
@@ -76,7 +76,7 @@ researcher ×2（数学接地＝機械検証＋Baez 2002 一次精読／現象�
 
 ## 実行統計・出典
 
-- researchers 2＋critic 1。機械検証: verify_center_field.py（CHECK1-6）／verify_octonion_g2_fix.py／verify_g2_perm_automorphism.py（scratchpad・採用判定後 RR-015a 化）
+- researchers 2＋critic 1。機械検証: RR-015a（CHECK1-6）／RR-015b／RR-015c（いずれも本ディレクトリに収蔵・再実行可能）
 - 一次: Baez 2002（arXiv:math/0105155 実取得・pdftotext 全文精読——自己同型の実軸固定・Re の定義式・G₂ 次元・Bott mod 8 の行番号記録あり）
 - 二次（アクセスレベルは調査ログに明記）: Husserl 第五省察系・Merleau-Ponty 間身体性・De Jaegher & Di Paolo 2007（原文 PDF 未取得・孫引き）・Clark・Goffman・Lewin・Tomasello・von Glasersfeld・Schutz
 
