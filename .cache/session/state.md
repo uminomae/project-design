@@ -2,9 +2,16 @@
 
 ## Git
 - branch: develop
-- pd HEAD: develop=**a46b165** / main=**6e1e192**（RR-004〜009 + LP 公開済・push 済）
+- pd HEAD: develop=**5d174c8** / main=**ef27a5b**（全公開・Pages デプロイ成功・OGP 配信確認済）
 - remote: synced
 - 関連: cs develop=**2cbd91e** / cs main=**6522065**（cs#254 v1 まで）
+
+## ⏸ セッション終了 2026-07-03 (seq06 終了) — pd#115 集中日
+- ログ: pd `log-20260703-03.md` / 横断 `SESSION-20260703-06.md`
+- **🎯 次セッション必読**: two-axis-closure/**README.md**（§0 中心の問い・§3 執筆ルール+分類）+ **RR-010**（本線の作業台・判定待ち: Q9a-d/Q8/O3/仮説v2/振幅読み移設/零因子採用）+ メモリ `project_pd115_exploration_directions.md`
+- READER 反映残: Q1修正（視点→場を取り巻くエネルギー）/ 場と人=次元−1 / D1・D2（二者=波）/ SNS「背骨の定理」ブロックの本文移植
+- pjdhiro 側の残操作: FB シェアデバッガーで再スクレイプ（OGP カード表示）
+- worktree `jolly-mestorf-9084d0` 破棄可 / デプロイはバッチ運用（Pages ~10回/時）
 
 ## 🔵 進行中 2026-07-03 (seq06b) — ⚠️ 調査方向の転換 + 対話駆動の LP 磨き込み
 - **中心の問い確定（pjdhiro 原文）**: 「四元数の本質と3人の関係の本質は同じ形か。だとすればどんな関係か」（前提=意識の二軸のみ、7人へは八元数の特徴で拡張するだけ）。README §0 / CN-010 冒頭に正本化
