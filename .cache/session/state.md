@@ -1,5 +1,15 @@
 # state.md — project-design
 
+## ⏸ セッション終了 2026-07-04 (seq02) — pd#115 マルチエージェント探索デー（RR-013〜016・ルール12〜16）
+- **セッション上限（5:40am JST リセット）で Phase 3/4 が未実行のまま中断**。自律実行の続きは下記
+- **次セッションの最優先タスク（pjdhiro 承認済みの自律実行の続き）**:
+  1. **Phase 3**: relational domain の3人拡張調査（RR-015 §E-4 の空白）——De Jaegher & Di Paolo 原文再取得／後続の集団拡張（linguistic bodies 等）／**Lausanne Trilogue Play**（父母子三者が一つの相互作用単位か——Q4「3人で閉じる」の実証接地候補・最重要）／集団即興研究。結果は RR-016 に追補 or RR-017。critic 検証→commit
+  2. **Phase 4**: LLM 読解テスト第2回（文脈ゼロ・READER 1ファイルのみ・前回障害の回帰確認＋新規曖昧点最大5件。プロンプト型は memory feedback_llm_unique_readability 参照）→ 検出を修正→LP 再生成→commit
+  3. Foulkes 一次文献の再取得（RR-016 §E-4。判定待ちだが V1 未達解消は品質タスク）
+- **判定待ちは RR-010「判定待ちキュー」一元台帳に31問**（A 本線9・B 掛け算7・C 実部=場8・D READER 構成7）。pjdhiro はこの表だけ見ればよい
+- 本日の成果: RR-013（4分野パネル）→RR-014（READER 専門家レビュー+LLM テスト）→RR-015（実部=場の論拠）→RR-016（量子/宇宙/深層心理・問い①回答候補「不変量」）。READER: 二つの声・私の問い→Fable5 の回答→私の感想の帰属構造・§9 方法公開・正確さ修正・一意性修正。ルール12〜16 新設。検証スクリプト9本収蔵（全 PASS）
+- ログ: pd `log-20260704-02.md` / 横断 `SESSION-20260704-02.md`
+
 ## Git
 - branch: develop
 - pd HEAD: develop=**11939bf** / main=**ef27a5b**（未マージ: pd#115 系 + 品質ループ復旧2 + wiki原典5件 + Q8/O3整理 + O3のV3 + ルール修正 + セッション終了。マージは pjdhiro 判断）
