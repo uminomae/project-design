@@ -64,7 +64,7 @@ for _ in range(200):
         maxs.append(norm(assoc(*trip)))
 print(f"    max |[a,a,b]|,|[a,b,b]|,|[a,b,a]| = {max(maxs):.2e}  -> effectively 0")
 
-print("\n(2) three DISTINCT elements give a live associator (break needs a third)")
+print("\n(2) generic three distinct elements give a live associator")
 lives = 0
 sample = []
 for _ in range(200):
@@ -74,11 +74,47 @@ for _ in range(200):
         lives += 1
     if len(sample) < 3:
         sample.append(round(n, 3))
-print(f"    nonzero associator with 3 distinct = {lives}/200  e.g. {sample}")
+print(f"    nonzero associator with 3 generic = {lives}/200  e.g. {sample}")
 
-ok = max(maxs) < 1e-9 and lives > 0
+# V3 counterexample pass (2026-07-03): the precise claim is NOT "3 distinct"
+# but "3 elements not all inside one 2-generated (associative) subalgebra".
+# A third element that is merely a combination of the two keeps associativity.
+def add(*xs):
+    return tuple(sum(x[i] for x in xs) for i in range(8))
+
+
+def scal(s, x):
+    return tuple(s * x[i] for i in range(8))
+
+
+E0 = tuple(1.0 if k == 0 else 0.0 for k in range(8))
+
+print("\n(3) V3: a third element INSIDE <1,a,b,ab> keeps associativity")
+inside_bad = 0
+for _ in range(300):
+    a, b = rnd(), rnd()
+    ab = omul(a, b)
+    z = add(scal(random.gauss(0, 1), E0), scal(random.gauss(0, 1), a),
+            scal(random.gauss(0, 1), b), scal(random.gauss(0, 1), ab))
+    for trip in [(a, b, z), (a, z, b), (z, a, b)]:
+        if norm(assoc(*trip)) > 1e-9:
+            inside_bad += 1
+print(f"    nonzero associator with z in <1,a,b,ab> = {inside_bad}/900  -> must be 0")
+
+print("\n(4) control: mixing an independent 4th direction breaks it (break is truly from outside)")
+outside_break = 0
+for _ in range(300):
+    a, b = rnd(), rnd()
+    zp = add(omul(a, b), scal(0.5, rnd()))
+    if norm(assoc(a, b, zp)) > 1e-9:
+        outside_break += 1
+print(f"    nonzero associator with outside direction = {outside_break}/300")
+
+ok = max(maxs) < 1e-9 and lives > 0 and inside_bad == 0 and outside_break > 0
 print("\n=== conclusion ===")
-print("The associator is alternating: with only two elements present it is 0 (associative).")
-print("Sequencing (bracketing) matters only once three distinct, off-line elements appear.")
-print("-> O3 math side fixed: the break starts from the third; between any two, order stays free.")
+print("The associator is alternating: with only two generators present it is 0 (associative).")
+print("Any third element still inside the 2-generated subalgebra stays associative (3);")
+print("the break appears only when a genuinely independent (off-subalgebra) third enters (4).")
+print("-> O3 math side fixed: the break starts from a third OUTSIDE the two's shared subalgebra;")
+print("   between any two, and for any third that is merely their combination, order stays free.")
 print("ALL CHECKS PASSED" if ok else "CHECK FAILED")
