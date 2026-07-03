@@ -158,6 +158,9 @@ export const TRANSLATIONS = {
     "repo.kesson": "欠損駆動思考",
     "repo.creation": "創造とは",
     "repo.awareness": "意識とは",
+    "repo.multiplication": "足し算ではなく、掛け算の経営 — 答えは「3 と 7」",
+    "repo.multiplicationDesc":
+      "複利の話ではない。向きと位相が振幅を決める「回転の掛け算」——チームの 3 と 7 を数学で確かめる読み物",
     "knowledge.designThinking.title": "デザイン思考とは",
     "knowledge.trust.title": "信頼とは",
     "knowledge.value.title": "価値とは",
@@ -304,6 +307,9 @@ export const TRANSLATIONS = {
     "repo.kesson": "Kesson-Driven Thinking",
     "repo.creation": "What Is Creation",
     "repo.awareness": "What Is Awareness",
+    "repo.multiplication": "Management by Multiplication, Not Addition — the Answer Is 3 and 7",
+    "repo.multiplicationDesc":
+      "Not compounding: a multiplication of rotations, where direction and phase drive amplitude. A reader that checks the 3 and 7 of teams with mathematics",
     "knowledge.designThinking.title": "What is Design Thinking?",
     "knowledge.trust.title": "What is Trust?",
     "knowledge.value.title": "What is Value?",
