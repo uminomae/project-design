@@ -115,6 +115,19 @@
     margin-top: 0.5rem;
 }
 
+/* 全幅のフィーチャーカード（読み物への導線。3カラムの下に一枚で敷く） */
+.repo-card.repo-card--feature {
+    grid-column: 1 / -1;
+    margin-top: 0.75rem;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.repo-card--feature .repo-card__title {
+    font-family: var(--serif-jp);
+    line-height: 1.6;
+}
+
 /* === About Trigger === */
 .about-trigger {
     display: inline-flex;
