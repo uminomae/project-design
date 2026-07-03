@@ -2,9 +2,55 @@
 
 ## Git
 - branch: develop
-- pd HEAD: develop=**199f4cc** / main=**ef27a5b**（未マージ3コミット: READER反映残4件 + RR-011 + 仮の説明コラム。マージは pjdhiro が他所で実施）
-- remote: synced
-- 関連: cs develop=**2cbd91e** / cs main=**6522065**（cs#254 v1 まで）
+- pd HEAD: develop=**d04b42c** / main=**ef27a5b**（未マージ: pd#115 系 + 品質ループ復旧2 + wiki原典5件 + Q8/O3整理 + O3のV3 + ルール修正。マージは pjdhiro 判断）
+- remote: synced（develop push 済み d04b42c）
+
+## ⏸ セッション終了 2026-07-04 (seq01) — wiki-gen5件 + pd#115 数学整理(Q8/O3) + 品質ループ監査
+- ログ: pd `log-20260704-01.md` / 横断 `SESSION-20260704-01.md`
+- 最終コミット: develop=**d04b42c**（push 済み。ef27a5b から 6 コミット先行）。close 対象 Issue なし（pd#115 は epic 継続）
+- **次セッション開始時の入口（1点）**: pd#115 の**読み判定**を pjdhiro から受ける。判定待ちキュー = Q9a-d(RR-011)/Q8(RR-012)/O3(RR-010a)/RR-007 振幅移設/RR-008 零因子/仮説v2。判定が出た分から READER に反映（README §0 ループ）
+- **私の自律数学固定は一巡済み**（Q8/O3 完了）。次に自律でやれる数学は当面なし＝本線は判定ドリブン
+- 品質ループ: 今回の監査で「名指し手順の実行」まで締め直し。commit-rules.md 種別分岐済み（下記 seq12c 参照）
+
+## 🧪 品質ループ 遵守状況（pjdhiro 指摘を受けた自己監査 2026-07-03 seq12c）
+- **省いていた3点を後追いで実行**（正直な報告）:
+  1. `static-checks.js`（ルール名指しの pd テスト）: 未実行だった → 実行 **11/11 PASS**。※パスは `.claude/scripts/static-checks.js`（commit-rules.md の表記 `scripts/` はズレ）
+  2. `wiki-cross-check.mjs`（cs 矛盾検査）: 未実行だった → 5ページ実行。vangeert/vandermaas/savage で cs ペア検出、4項目（事実誤認/概念ズレ/結論逆転/引用誤り）で判定 → 矛盾なし・起票不要
+  3. V3 反例探索の明示・結果保存: 自己レビュー止まりだった → O3 に V3 実行（RR-010a に恒久化）。主張を「3人が異なる」→「二人の張る部分代数の外の第三」へ精密化（27d796f）
+- **ルール綻び2件 → 修正済み（pjdhiro「直して」承認・d04b42c）**:
+  - commit-rules.md §テストを成果物種別で分岐（サイト=static-checks / UI=responsive-test / wiki=UTF-8+access-lint+cross-check / research数理=機械検証）＋パスを `.claude/scripts/` に是正
+- 関連: cs develop=**d269fdc**（dirty 26・cs#255残骸） / cs main 未確認 / pjdhiro main=**d11b083**（dirty 184 未コミットのまま）
+
+## 🔵 進行中 2026-07-03 (seq12b) — pd#115 本線 数学整理（Q8 + O3）を固定
+- **完了**: 「数学整理が先」型の保留2件を機械検証で解消・push（Q8=**d0751a3** / O3=**a3dc8cc**）
+  - Q8: `RR-012-norm-interference.md` + `RR-012a`（ALL PASSED）。ノルム保存=乗法・大きさ保存（増幅でない）／干渉=加法の交差項 2|a||b|cosΔθ／回転がダイヤル。RR-007(振幅=加法層)と整合
+  - O3: `RR-010a-alternativity-verification.py`（ALL PASSED）。associator は交代的＝2元で0・3異なる元で非0（200/200）。「破れは三人目から／どの二人でも段取り自由」を固定
+  - 両者とも数学側のみ固定（私の lane）。読みは 🟡候補として提示、採否は pjdhiro 判定
+- **これで私が自律で固定できる数学は一巡**。残りは全て pjdhiro の「読み判定」:
+  - Q9a 🔶 2枚直交束（RR-011 §1）/ Q9b 🔶 場の保全 読みv2（RR-011 §2）/ Q9c 🔶 パウリ=切り口（RR-011 §3）/ Q9d ⚠️ 二周で閉じる 読みv2（RR-011 §4）
+  - Q8 🟡 二段の読み候補（RR-012）/ O3 🟡 破れは三人目から（RR-010a）
+  - RR-007 振幅読み移設の採否 / RR-008 零因子採用の採否 / 仮説v2 レビュー
+  - 判定が出た分から READER に反映（README §0 のループ）
+
+## 🔵 進行中 2026-07-03 (seq12) — wiki-gen auto-execute 処理
+- **完了**: wiki-gen-2026-07-03（11件）を実在チェックで切り分け → 真の未生成5件を生成・push（**c835582**）
+  - 生成: D02 Ulm / D03 Turing / D23 vanGeert / D23 vanderMaas / D26 Savage（source-note 精読記録から compile）
+  - **スキップ6件**（stem不一致の誤検出＝既存）: D05 feistel / D06 springel / D07 heylighen / D09 attwell / D12 beisner / D28 shibolet
+  - 品質ループ: UTF-8 PASS / 鎖の不変条件 lint PASS / crosslink 0edits / Turing DOI 実解決検証
+  - inbox `wiki-gen-2026-07-03.md` → archive（DONE 接尾）
+- **⚠️ 恒久課題（pd#120）**: wiki-gen-check.sh の stem 推定が実スラッグと不一致 → 毎回この6件が誤フラグされる。次回も同じ切り分けが要る。hook の stem 導出修正が根治
+- **⚠️ worktree 注意**: `charming-newton-66fe71` は **main(ef27a5b) ベースで develop より遅れている**（品質ループ/pd#115 commit 未反映）。作業は本体 repo の develop で実施した。worktree でのコミットは develop へ持ち込む際に main 履歴を混ぜるため非推奨
+- **periodic-review follow-up 残**（`REVIEW-periodic-20260703-2128.md`）: pd 分の wiki-gen は消化。残りは cs/pjdhiro repo 側（dirty 後始末・staleness 判断）
+
+## ⏸ セッション終了 2026-07-03 (seq10) — 品質管理ループ復旧（pjdhiro 承認 A+B）
+- ログ: pd `log-20260703-05.md` / 横断 `SESSION-20260703-11.md`
+- 最終コミット: develop=**6708b60**（push 済み）。issue 起票なし・close 対象なし
+- **次セッション開始時**: inbox `REVIEW-periodic-20260703-2128.md`（follow-up 4件）+ `wiki-gen-2026-07-03.md`（auto-execute）を処理
+- **背景**: 旧 cron-commit-review retire 後、periodic-review が「手動入口・未実行」のまま放置 = レビュー/テストのループが約2ヶ月停止していた（pjdhiro 指摘「作業が杜撰になった」→診断で確認）
+- **A: ルール必須化**（5f95414）: CLAUDE.md 絶対原則 +「commit 前品質ループ必須」/ commit-rules.md §commit 前品質ループ（調査→仮案→レビュー→テスト→修正。team-critic V3-V6 + テスト実行）/ session-start-guard.sh に periodic-review staleness 警告（未生成 or 14日超）
+- **B: scheduler 接続**: Claude Code scheduled task `weekly-periodic-review`（毎週月曜 8:30、アプリ起動中に実行）。SKILL.md 入口注記を更新（6708b60）
+- **初回 periodic-review 実行済み**: `.cache/reviews/periodic/REVIEW-periodic-20260703-2128.md` + state.json 生成。WARN 4 repo（pjdhiro dirty184 / cs dirty26+staleness30領域 / pd state.mdズレ+wiki-gen未処理 / kdt retired残骸）。follow-up: `.cache/inbox/REVIEW-periodic-20260703-2128.md`
+- **以後の全セッション**: 成果物 commit 前に品質ループ必須（commit-rules.md 参照）
 
 ## ⏸ セッション終了 2026-07-03 (seq07) — pd#115 本線（READER 反映 + Q9a-d 判定処理）
 - ログ: pd `log-20260703-04.md` / 横断 `SESSION-20260703-07.md`
