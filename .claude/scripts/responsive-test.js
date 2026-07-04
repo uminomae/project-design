@@ -118,7 +118,8 @@ async function run() {
       const size = parseFloat(getComputedStyle(el).fontSize);
       if (size < min) {
         const tag = el.tagName.toLowerCase();
-        const cls = el.className ? `.${el.className.split(' ')[0]}` : '';
+        const clsStr = typeof el.className === 'string' ? el.className : (el.getAttribute('class') || '');
+        const cls = clsStr ? `.${clsStr.split(' ')[0]}` : '';
         failures.push(`${tag}${cls}: ${size}px`);
       }
     }
