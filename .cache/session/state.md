@@ -1,9 +1,12 @@
 # state.md — project-design
 
-## 🔵 CLI 作業中 2026-07-04 (seq07) — pd#123 READER LP 再構成（T1-T11）
-- 入口: pd#123 スコープ確定コメント（4882201972）の T1-T11 を develop で実装
-- フロー: worker（10タスク一括）→ critic → 品質ループ（LP再生成・static-checks・responsive・UTF-8）→ LLM 読解テスト第4回 → pjdhiro レビュー → main
-- 基点: develop=9777e16（READER 正本 1173行・ツリーはクリーン）
+## 🔵 CLI 作業中 2026-07-04 (seq07) — pd#123 READER LP 再構成 **実装完了・pjdhiro レビュー待ち**
+- **T1-T11 実装完了・push 済み（develop 8f92fb1 + テスト修正 0809870）**。進捗コメント: https://github.com/uminomae/project-design/issues/123#issuecomment-4882510350
+- フロー消化: worker（10タスク・3回継続指示で完遂）→ Main 一次検査 → critic（**fix-first** → major=棄却/見送りの語彙橋渡しを凡例＋README ルール16 に明記・minor=結果4 summary 最新化 反映済み）→ 品質ループ全 PASS → **LLM 読解テスト第4回=「部分的（良好寄り）」**（指摘6点反映: 結果4 保留→採用の時系列解消／SVG 空行・太字の変換漏れ／RR-019 参照補完／最適帯 3–5 橋渡し／人=軸は賭けの本文明示／エネルギー探索中注記。回帰3項目=全通過）
+- 裁定メモ: T7 の「四元数戦争」コラムは §8 見出し配下の独立コラムだったため、FAQ 8件に触れずに削除（worker は制約優先で保留→Main が pd#123 明示指定を優先と裁定）
+- 品質ループ: static-checks 11/11・responsive 両ページ 5/5（LP テストで responsive-test.js の SVG className バグ発見→修正 0809870・ファノ図キャプション 11px→12px）・UTF-8 clean・アンカー欠損0・details 32/32
+- **次アクション（pjdhiro 専権）**: develop の READER/LP をレビュー → develop→main マージ（公開判断）。critic minor 残2件（§8 内の旧語彙「棄却」は無改変指定のため据え置き・オリエンテーション文の軽い重複）は次回改訂送り
+- HEAD: develop=**0809870**（push 済み）
 
 ## ⏸ セッション終了 2026-07-04 (seq06) — 判定全消化＋READER 改稿＋LP再構成の仕様確定（pd#123）
 - **次セッションの入口（1点）**: **pd#123 の確定スコープ（T1-T11）で READER を LP 調に再構成**する。スコープ集約コメント: https://github.com/uminomae/project-design/issues/123#issuecomment-4882201972 。develop で worker（10タスク一括・旧worker未完成分は破棄済み・ツリーはクリーン）→ critic → 品質ループ → LLM 読解テスト第4回 → pjdhiro レビュー → main。
