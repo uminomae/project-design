@@ -40,8 +40,8 @@
 
 ## Git
 - branch: develop
-- pd HEAD: develop=**1c53fbb** / main=**ef27a5b**（未マージ: pd#115 系〔RR-013〜017・READER 一意性修正〕+ 品質ループ復旧2 + wiki原典5件 + Q8/O3整理 + O3のV3 + ルール修正。マージは pjdhiro 判断）
-- remote: synced（develop push 済み 1c53fbb）
+- pd HEAD: develop=**9bfcc87** / main=**722f067**（**2026-07-04 pjdhiro 指示で develop→main マージ公開済み**。RR-013〜019・判定4件決着・READER 一意性修正・wiki原典5件を含む。未マージ差分なし）
+- remote: synced（develop / main とも push 済み）
 
 ## 🔵 進行中 2026-07-04 (seq02) — pd#115 4分野パネル（回転の掛け算の経営とチーム人数）
 - **完了**: pjdhiro 依頼「3と7・回転の掛け算の経営とチーム人数に、あらゆる角度から発想と反駁」を agent-team-workflow（standard・researcher×4 + critic×2 voting）で実施 → **RR-013-rotation-management-panel.md** に固定
