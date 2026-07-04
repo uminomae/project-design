@@ -158,24 +158,70 @@
     white-space: nowrap;
 }
 
-/* 誤解FAQ アコーディオン（DESIGN-RULES §9 パターン） */
+/* 誤解FAQ アコーディオン（DESIGN-RULES §9 パターン）
+ * T11（pd#123）: 畳まれている/開けることが一目でわかる見た目に強化。
+ * 「開けるカード」らしい面（背景・影・ホバー）＋開閉マーカーの回転＋「詳しく」ラベル。 */
 .reader-article details {
     background: var(--glass-bg-soft);
     border: 1px solid var(--glass-border-soft);
-    border-radius: 6px;
+    border-radius: 10px;
     padding: 0 1.25rem;
-    margin: 1rem 0;
+    margin: 1.25rem 0;
+    box-shadow: var(--glass-shadow);
+    transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.reader-article details:hover {
+    background: var(--glass-bg-medium);
+    border-color: var(--glass-border-faint);
 }
 
 .reader-article summary {
     cursor: pointer;
+    list-style: none;
     min-height: 44px;
     display: flex;
     align-items: center;
+    gap: 0.6rem;
     font-family: var(--sans);
     font-size: 0.95rem;
     color: var(--ink);
-    padding: 0.5rem 0;
+    padding: 0.6rem 0;
+}
+
+.reader-article summary::-webkit-details-marker {
+    display: none;
+}
+
+/* 開閉マーカー（▶ が開くと ▼ へ回転）。装飾のみで意味は「詳しく」ラベル側が担う */
+.reader-article summary::before {
+    content: "▶";
+    flex: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.7em;
+    color: var(--gold);
+    transition: transform 0.2s ease;
+}
+
+.reader-article details[open] > summary::before {
+    transform: rotate(90deg);
+}
+
+/* 「詳しく」の常設ラベル。開くと「閉じる」に切り替える */
+.reader-article summary::after {
+    content: "詳しく";
+    flex: none;
+    margin-left: auto;
+    padding-left: 1rem;
+    font-size: 0.78rem;
+    color: var(--mute);
+    white-space: nowrap;
+}
+
+.reader-article details[open] > summary::after {
+    content: "閉じる";
 }
 
 .reader-article details[open] {
