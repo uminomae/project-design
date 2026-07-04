@@ -1,6 +1,15 @@
 # state.md — project-design
 
-## 🔵 CLI 作業中 2026-07-04 (seq07) — pd#123 READER LP 再構成 **実装完了・pjdhiro レビュー待ち**
+## ⏸ セッション終了 2026-07-05 (seq01) — pd#123 完遂・main 公開・CLOSE
+- **develop→main マージ公開済み（main=cb5be91・pjdhiro 指示）。pd#123 は CLOSE**
+- ログ: pd `log-20260705-01.md` / 横断 `SESSION-20260705-01.md`
+- **次セッションの入口**: pd#121（論文 PDF 化の検討）or pd#122（SEO・AI メタ強化）を pjdhiro に選んでもらう。READER 追加改稿時は README §3 ルール12-22＋RR-010 判定の記録 R23-R25 必読
+- 本セッションの対話レビュー3巡（即時反映済み）: R23 §5/§6 再設計（意識=背景・「なぜ実部を人数に数えないのか」新設）／R24 流れ確定（背景→問い→コア→結論）／R25 本筋と補足の3レベル分離（ルール22 新設・DESIGN-RULES §9a）
+- 付随: 重複3件のページ内参照化・背景シェーダープール軽量2本化（main2/main3 除外。カクつきの体感確認は pjdhiro 残タスク）・responsive-test.js SVG バグ修正
+- 残（次回改訂送り）: critic minor 2件（§8 内旧語彙「棄却」・§1 直後オリエンテーション文の軽い重複）／D1 タイトル体験ベース化（保留継続）
+- HEAD: develop=**aa1c17b**＋終了処理コミット / main=**cb5be91**（ともに push 済み）
+
+## （終了済み経過・2026-07-04 seq07）pd#123 READER LP 再構成 実装完了時点の記録
 - **T1-T11 実装完了・push 済み（develop 8f92fb1 + テスト修正 0809870）**。進捗コメント: https://github.com/uminomae/project-design/issues/123#issuecomment-4882510350
 - フロー消化: worker（10タスク・3回継続指示で完遂）→ Main 一次検査 → critic（**fix-first** → major=棄却/見送りの語彙橋渡しを凡例＋README ルール16 に明記・minor=結果4 summary 最新化 反映済み）→ 品質ループ全 PASS → **LLM 読解テスト第4回=「部分的（良好寄り）」**（指摘6点反映: 結果4 保留→採用の時系列解消／SVG 空行・太字の変換漏れ／RR-019 参照補完／最適帯 3–5 橋渡し／人=軸は賭けの本文明示／エネルギー探索中注記。回帰3項目=全通過）
 - 裁定メモ: T7 の「四元数戦争」コラムは §8 見出し配下の独立コラムだったため、FAQ 8件に触れずに削除（worker は制約優先で保留→Main が pd#123 明示指定を優先と裁定）
