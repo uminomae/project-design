@@ -1,6 +1,34 @@
 # state.md — project-design
 
-## 🔵 CLI 作業中 2026-07-04 (seq06c) — READER 全面改稿（worker 走行中）＋ pd#121 起票
+## 🔵 CLI 作業中 2026-07-04 (seq07) — pd#123 READER LP 再構成（T1-T11）
+- 入口: pd#123 スコープ確定コメント（4882201972）の T1-T11 を develop で実装
+- フロー: worker（10タスク一括）→ critic → 品質ループ（LP再生成・static-checks・responsive・UTF-8）→ LLM 読解テスト第4回 → pjdhiro レビュー → main
+- 基点: develop=9777e16（READER 正本 1173行・ツリーはクリーン）
+
+## ⏸ セッション終了 2026-07-04 (seq06) — 判定全消化＋READER 改稿＋LP再構成の仕様確定（pd#123）
+- **次セッションの入口（1点）**: **pd#123 の確定スコープ（T1-T11）で READER を LP 調に再構成**する。スコープ集約コメント: https://github.com/uminomae/project-design/issues/123#issuecomment-4882201972 。develop で worker（10タスク一括・旧worker未完成分は破棄済み・ツリーはクリーン）→ critic → 品質ループ → LLM 読解テスト第4回 → pjdhiro レビュー → main。
+- **T1-T11 の骨子**: T8 冒頭サマリー（背景・問い・結論）／T1 主張＋「4人のときは？」別トピック（ルール19: 3と7が最適でなく「掛け算も割り算もできる・バランスがあるかも」の見立て・4人はダメではない）／T3 常時オリエンテーション（ルール20）／T4 §7 は節維持・結果ごとにアコーディオン（ルール21: 最新は表・古い結果は訂正ログ）／T2 論拠反駁を畳む／T9 §5 直交の議論を畳む／T10 §6 をシンプルな結論に・実部の扱いは畳む／T11 アコーディオンの affordance 明示（reader.css）／T7 小話4件削除／§8 は現状維持（良い）／T5 平易化／T6 内部用語→末尾出典メモ・アンカー化。
+- **新設ルール（README §3・正本化済み・develop 9777e16）**: 17 文体平易 / 18 LP構成＋冒頭サマリー / 19 主張の水準 / 20 常時オリエンテーション / 21 最新は表・古い結果は訂正ログ。
+- **本セッションで完了済み（develop に push 済み）**:
+  1. **判定待ちキュー全消化**（10バッチ R10-R19）＋RR-023 の C32/R21（前提知の「一面の探究」スタンス）
+  2. **RR-020/021/022/023 固定**（感情=放出エネルギー／精神=素粒子／光はどこから／前提知レビュー。全て「あくまで構造類似 (b)」方針の下）
+  3. **READER 全面改稿**（教科書調＋判定反映＋コラム13件・critic proceed・LLM 読解テスト第3回「良好寄り」）——**ただしこの改稿版は pd#123 で LP 調に作り直すため、次セッションの再構成が本線**
+  4. **ファノ平面図の可読性修正**（e₇ を通る3本を色分け＋7つの三つ組の一覧＋各点が入る3組の表・機械検算済み）
+- **起票（pjdhiro 指示・全 OPEN）**: pd#121（論文 PDF 化の検討）／pd#122（SEO・AI メタ強化・監査済み）／pd#123（READER LP 再構成・スコープ確定 T1-T11）
+- HEAD: develop=**9777e16**（READER 正本は d4ee05a 版=Fano修正済み1173行・LP は d4ee05a 時点のまま。次セッションで再構成し再生成）
+
+## ✅ 公開ページ改稿（develop b7c242a→9777e16）2026-07-04 (seq06 前段)
+- **READER 全面改稿 完成**（1146行・LP three-and-seven.html 93,352B）:
+  - パス1（4fb0ce5）: 全文を**平易・教科書調のです・ます調**に変換（ルール17 新設）＋判定済み12項目反映（B1 割り算4層・Q8 二段・B2-B4・B6/B7・D8/D9・LTP 接地・RQT 釘・D2 出口・D4・FAQ2件）。「私」ブロック17箇所は原文保持
+  - パス2（c954c4f）: 判定済みコラム13件追加（脱線8＝ブルーム橋/四元数戦争/Graves-Cayley/ハミング/ジンバルロック/Furey/1958決着史/クライン四次曲線＋感情意識系5＝三択反復/QD/立体感情/ダム=真空/光の4見方）
+  - critic レビュー CONSENSUS-3・**proceed（公開ブロッカーなし）**——声の帰属・事実精度・係争明示は全通過。minor 修正反映（b7c242a）
+  - **LLM 読解テスト第3回=「部分的（良好寄り）」**: Q1-Q7 全て本文根拠で回答可・骨格は文脈ゼロで一意追跡可。残る局所点は既に手当て済み or pjdhiro 保護対象（感想=層1）or 記号凡例（clutter 回避で追い足さず）
+  - 品質ループ: static-checks 11/11・responsive 5/5・UTF-8 clean・details 29/29
+- **次パス（未反映・将来）**: D1 タイトル体験ベース化（保留中・候補出し継続）／pd#122 SEO・AI メタ強化／pd#121 論文 PDF 検討
+- **pjdhiro アクション**: develop の READER/LP をレビュー → develop→main マージ（公開判断）
+- HEAD: develop=**b7c242a**
+
+## （前段）READER 全面改稿（worker）＋ pd#121 起票
 - **pd#122 起票（pjdhiro 指示・あとで実装）**: SEO・AI 向けメタ強化。監査済み——robots.txt/sitemap/llms.txt/OGP/JSON-LD の基盤はあり。ギャップ=llms.txt に reader 未収載・JSON-LD が薄い・AI クローラー明示 Allow・article meta・lastmod 自動化。https://github.com/uminomae/project-design/issues/122
 - **pd#121 起票（pjdhiro 指示）**: 検討——pd#115 の論を**正規様式の論文 PDF として公開できるか**。様式（Abstract〜References への再編）・公開形態4択（self-published PDF / Zenodo DOI / プレプリント / 査読誌）・AI の扱い（ルール14）・[P][M][S] の学術翻訳・参考文献正規化・「あくまで構造類似」の claim 水準。判断は pjdhiro 専権。https://github.com/uminomae/project-design/issues/121
 - **README ルール17 新設（文体・commit 前）**: 公開ページは**平易で教科書的**（説明書・教科書の説明口調・中学生向け・カッコつけた言い回し不要。比喩は説明の道具として保持・「私」ブロックは原文保持）
