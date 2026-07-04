@@ -287,6 +287,57 @@
 <text x="340" y="500" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#5F5E5A">中心 e₇ を通るのは色分けした3本だけ（交点なので6本に見えますが、線としては3本）</text>
 </svg></figure>
 
+<p><strong>7つの三つ組（線）を、全部書き出してみます。</strong> 図だけでは組を追いにくいので、一覧にします。</p>
+<ul>
+<li><strong>e₁ ― e₂ ― e₃</strong>（三角形の左の辺・緑の矢印）</li>
+<li><strong>e₁ ― e₄ ― e₅</strong>（三角形の右の辺）</li>
+<li><strong>e₃ ― e₆ ― e₅</strong>（三角形の下の辺）</li>
+<li><strong>e₂ ― e₄ ― e₆</strong>（内側の円）</li>
+<li><strong>e₁ ― e₆ ― e₇</strong>（中心を通る・図の橙の線）</li>
+<li><strong>e₃ ― e₄ ― e₇</strong>（中心を通る・図の紫の線）</li>
+<li><strong>e₂ ― e₅ ― e₇</strong>（中心を通る・図の青の線）</li>
+</ul>
+<p>全部で7本です。中心の e₇ が入るのは、色をつけた下の3本だけです。</p>
+<p><strong>では、それぞれの点が、どの3つの組に入っているか。</strong> これも表にします。どの点も、ちょうど3つの組に入っています。</p>
+<div class="glow-card reader-table"><table>
+<thead>
+<tr>
+<th>点</th>
+<th>入っている3つの組（相手のペア）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>e₁</td>
+<td>(e₂,e₃) / (e₄,e₅) / (e₆,e₇)</td>
+</tr>
+<tr>
+<td>e₂</td>
+<td>(e₁,e₃) / (e₄,e₆) / (e₅,e₇)</td>
+</tr>
+<tr>
+<td>e₃</td>
+<td>(e₁,e₂) / (e₅,e₆) / (e₄,e₇)</td>
+</tr>
+<tr>
+<td>e₄</td>
+<td>(e₁,e₅) / (e₂,e₆) / (e₃,e₇)</td>
+</tr>
+<tr>
+<td>e₅</td>
+<td>(e₁,e₄) / (e₃,e₆) / (e₂,e₇)</td>
+</tr>
+<tr>
+<td>e₆</td>
+<td>(e₃,e₅) / (e₂,e₄) / (e₁,e₇)</td>
+</tr>
+<tr>
+<td>e₇</td>
+<td>(e₁,e₆) / (e₃,e₄) / (e₂,e₅)</td>
+</tr>
+</tbody>
+</table></div>
+<p>e₇ の行を見ると、e₇ は「e₁ と e₆」「e₃ と e₄」「e₂ と e₅」の3つの組に入っています。中心にいますが、特別扱いではなく、他の6点とまったく同じで、ちょうど3つの組に入る1つの点です。</p>
 <blockquote class="glow-card reader-callout">
 <p>📖 <strong>この図での掛け算のやり方</strong> — §3 のじゃんけんの輪が、7人に増えただけです。</p>
 <ol type="1">
