@@ -8,11 +8,14 @@ applyTo: ".cache/, docs/, .claude/, CLAUDE.md"
 agent: "CLI"
 ---
 
-**ステータス**: active（入口 = **手動運用**。2026-07-02 確立）
+**ステータス**: active（入口 = **scheduled task + 手動**。2026-07-03 scheduler 接続）
 
-> **入口**: cloud scheduler は未接続。当面は **手動で `/periodic-review` を実行**して回す（`dev/CLAUDE.md` の「ローカルで手動実行」節に整合）。
-> 初回実行で `.cache/reviews/periodic/periodic-review-state.json` が生成される（未生成 = 未実行の意）。
-> 将来 scheduler を接続する場合は本節を更新する。非同期 Codex 経路（`codex-review`）は現在 dormant のため、コミット後レビューも当面は本スキルが主経路。
+> **入口**: Claude Code の scheduled task `weekly-periodic-review`（毎週月曜 8:30 ローカル、アプリ起動中に実行）が主経路。
+> 手動で `/periodic-review` を実行してもよい（`dev/CLAUDE.md` の「ローカルで手動実行」節に整合）。
+> 状態は `.cache/reviews/periodic/periodic-review-state.json`（初回 2026-07-03 生成済み）。
+> session-start-guard hook が state の未生成/14日超を警告する（scheduler が止まった場合の保険）。
+> 非同期 Codex 経路（`codex-review`）は現在 dormant のため、コミット後レビューも当面は本スキルが主経路。
+> セッション内の commit 前レビューは `.claude/rules/commit-rules.md` §commit 前品質ループ（agent-team-workflow REVIEW / V3-V6）が担う。
 
 # periodic-review SKILL
 
@@ -220,3 +223,4 @@ grep -rl 'font-family' assets/svg/domains/ 2>/dev/null
 | 日付 | バージョン | 内容 |
 |---|---|---|
 | 2026-03-31 | 1.0 | techo#64 に対応。旧 cron-commit-review から簡素版 periodic-review へ再設計 |
+| 2026-07-03 | 1.1 | scheduler 接続（scheduled task weekly-periodic-review）。初回実行・state 生成。session-start-guard staleness 検知と commit 前品質ループを併記 |

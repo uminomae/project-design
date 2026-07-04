@@ -45,3 +45,11 @@ if {
 then
   hook_warn "session-start-guard: unprocessed review artifacts detected"
 fi
+
+# periodic-review staleness check（正本は pd。週次 Routines が主経路、これは保険）
+periodic_state="/Users/uminomae/dev/project-design/.cache/reviews/periodic/periodic-review-state.json"
+if [ ! -f "$periodic_state" ]; then
+  hook_warn "session-start-guard: periodic-review has never run (state file missing) — run /periodic-review in pd"
+elif [ -n "$(find "$periodic_state" -mtime +14 -print 2>/dev/null)" ]; then
+  hook_warn "session-start-guard: periodic-review state older than 14 days — run /periodic-review in pd"
+fi
