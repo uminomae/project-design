@@ -228,6 +228,31 @@
     padding-bottom: 1rem;
 }
 
+/* 寄り道コラム（本筋から独立の補足）: 「詳しく」より一段控えめに見せる。
+ * 本筋の深掘り（詳しく）と補足（コラム）を同列に並べないための降格表現
+ * （2026-07-05 pjdhiro 指示・DESIGN-RULES §1）。 */
+.reader-article details.pd-column {
+    background: transparent;
+    border-style: dashed;
+    box-shadow: none;
+}
+
+.reader-article details.pd-column > summary {
+    font-size: 0.9rem;
+}
+
+.reader-article details.pd-column > summary::before {
+    color: var(--mute);
+}
+
+.reader-article details.pd-column > summary::after {
+    content: "寄り道";
+}
+
+.reader-article details.pd-column[open] > summary::after {
+    content: "閉じる";
+}
+
 .reader-footer {
     max-width: 760px;
     margin: 0 auto;
