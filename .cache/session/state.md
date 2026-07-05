@@ -1,6 +1,28 @@
 # state.md — project-design
 
-## 🔵 CLI 作業中 2026-07-05 (seq02) — pd#115 READER 回りくどさ解消＋謙虚な探究トーン＋文体を普通の説明文へ（develop 7d127f7・push 済み・pjdhiro レビュー待ち）
+## 🔵 CLI 作業中 2026-07-05 (seq03) — pd#124 三者=𝕆 レビュー → 方法論の正本化（RR-010 更新・未 commit）
+- **pd#124 team-critic voting（2体独立）実施**: 「三者＝𝕆（アリティ論拠）」を検証 → 両者 SPLIT/additional_round に収束。核心の反証: アリティ階段（可換性=2→結合性=3）は 𝕆→𝕊 の交代性=2 で崩れ**2点限りの一致**（RR-010a と整合）／Q6「エディプス三者＝ℍ」既定と矛盾／RR-017 C2「3に特権性なし」と緊張。Main 補足: Artin 定理（結合子=3項交代形式）は O3 に内在済で 𝕆 丸ごと三者化は不要
+- **pjdhiro 対話で方法論を明示 → 正本化**: 意識=物質価値⊥精神価値の2軸ベクトル→二者=2ベクトルの影響=回転→2平面直交=4次元=ℍ（or 行列 SO(4)）→**三者=6次元=SO(6)/6×6 行列**（可除代数なしでも回転は行列で書ける）。**方法の順序**＝①行列（回転）が第一 ②心理学・神経現象学と構造類似(b)で仮説 ③八元数に絡む構造が現れたら機会的に採用。**八元数・3/7 は出発点でも目標でもない**（「3と7は関係ありません」）
+- **記録済み（未 commit）**: RR-010 に「## 構築の順序」節を新設＋判定の記録に2行追加。**AskUserQuestion（三者=𝕆 採否）は pjdhiro が dismiss** → 採否は保留、方法論の側から前提解消
+- **Issue #124 へ結論コメント投稿済み**: https://github.com/uminomae/project-design/issues/124#issuecomment-4885390409
+- **作業本線に着手（RR-024 新設・未 commit）**: 方法論①を三者に適用。**RR-024**（三者の行列モデル）＋**RR-024a**（機械検証・純Python・ALL PASSED）作成。核心3結果: (1) so(6)=自己回転3+ペア間結合12=15 (2) 二者 so(4) は可換2su(2)に分裂/三者 so(6)=su(4) は単純（非還元） (3) **[A↔B,B↔C]=A↔C**（媒介Bが直接A–C結合を生む非可換創発・二者に無い）。八元数は8次元(so(8) triality＝四者)で初出＝三者では不要と確認
+- **researcher 2体 完遂・RR-024 に統合済み（B-1/B-2）**: 担当A=家族システム論（三角関係化＝commutator と方向一致どまり／三者非還元は独立2系統で補強＝Family Alliance「二者は足せない」＋Coe&Davies 2020 detouring／順序=非可換の実証は未発見・"second-order effect"混同注意）。担当B=間主観性（Ogden・Britton 一次全文で「第三＝当事者どちらでもない witness」確認／**段差1 発達先行≠数学的非還元・段差2 心理=崩壊しうる達成 vs 数学=常時**＝過剰同一視(a)回避の要／共同注意は Tomasello 系 vs 二者複雑化系で理論分岐＝RR-017 C3 と同型の保持論点）
+- **深掘り追加（RR-024 D・E・E-6 節／RR-024b 新設・機械検証 ALL PASSED）**:
+  - D節=経営バランスの候補1-4（1一枚岩／2自己修復する三角形＝掛け算で三本目／3ハブ不要対称／4ノルム保存非ゼロサム）
+  - E節=2〜8名の通し表（dim so(2n)・可除代数フラグ2n∈{2,4,8}・偶奇・ペア数C(n,2)・三角自己閉包）。核 E1「鋭い転換は2→3の一回・3は自己閉包する一枚岩の最小」E2「特別な数1,2,4,8は別レンズ＝主軸(回転)では3・7は特別に出ない」E3偶奇E4負荷E5両端特異点(4=𝕆+triality/8=𝕊破綻だが回転は健全)
+  - E-6=**pjdhiro ブレスト仮説（視点として開く・未検証）**: 仮説α偶数=膠着/揺らぎ/対立・仮説β可除代数の閉包=納得感(位置が一意に決まるvs多数決)。Main 地図注記=β の3,7は見方B に乗る／α(行列)とβ(可除代数)は補完／3は両レンズ・7は可除代数のみの非対称。開いた問い(a)納得感の操作化(b)接地レンズ非対称(c)α×β の交差
+- **3と7の類似性レビュー（team-critic voting 2体・収束）→ E-6 訂正確定**: pjdhiro 指摘「3と7は似ているはず／ならば7も5と識別されるはず」を検証。両 critic 独立で一致——**pjdhiro 正しい**（積閉包は ℍ・𝕆 で完全対称・python 検証 check37b.py）。**Main の3対7非対称は誤り**（commutator 閉包は n≥3 全て〔RR-024b で n=7 も○〕で成立＝3を7から区別しない・「関係の閉包(commutator)」と「人の閉包(可除代数の積)」の混同・V6）。真の差は**結合性＋三つ組数(1 vs 7)＝別軸**（βの一意性には無関係）。critic 洞察: βの積閉包は結合性と独立（Cayley-Dickson で閉包は16元数まで保つ最基礎の性質）→ pjdhiro と Main 両直感が両立。critic A 再フレーム: 7の差は「劣り」でなく「納得の織物がより豊か（1輪 vs 絡む7輪の網）」。critic B 逆歯止め: 3≈7 を β を超えて一般化するな（READER §3/§4 の結合性段差を消す危険）→ 似/違をセットで（三層段差表）。**E-6 を訂正済み**（非対称撤回・両直感両立・似違セット・scheme A/B 術語固定を追記）
+- **行列モデルの構造類似・分野横断（researcher 4体・SURVEY 完了）→ RR-024 F節に統合**: 経営/組織・経済/ゲーム理論/社会的選択・行動経済/判断心理・精神分析。一次全文=Wang 2014 PNAS(QQ equality・F2)。**最厚=F2(順序効果・全分野)／F4(vNM 3人ゲーム core空・Foulkes matrix)**。**空白=F1(物質⊥精神2軸は既存不一致)・F6(人数偶奇は全分野で研究無し)**。**天井=F3 の代数的一意性は4分野すべて未発見(RR-017 C1 の普遍)**。**反証=手続的公正(β の単純二分を崩す・voice付き多数決は正統)**。横断収束=tertius三分岐↔Bowen/Minuchin両刃(構造は中立)。注意=多数決の閾値は選択肢数で人数でない。判定待ち G6-G8 追加
+- **F節(横断)の team-critic レビュー済（CONSENSUS-3・誠実な調査として妥当）→ 軽微修正4点反映**: vNM/core を Gillies 系に精密化／所見3「独立収束」を弱め（Simmel 系譜共有の可能性・系譜的独立未検証）／F3 セルに分野タグ／仮説αの「魅力的」を pjdhiro 帰属に。前提誤り・差し戻しなし
+- **品質ループ**: RR-024a/RR-024b 機械検証 ALL PASSED＋Main V3＋team-critic voting（3-7 論点）＋team-critic（F節横断）。RR-024 全体の team-critic フルは READER 昇格前
+- **偶奇の膠着＝フラストレーション/二部性を発見 → RR-024 G節新設＋RR-024c 機械検証 ALL PASSED**: 偶数リング=二部・完全な真逆で二陣営に一意に落ち着く(安定した対立・50:50)／奇数リング=非二部・フラストレーション・2重縮退(膠着が構造上不能→決着)。**「非一意なのは奇数の側」**。中核=「二陣営に割れる⇔対立グラフが二部⇔奇サイクルが無い」(Harary 構造均衡)。2前提=C1 対立志向(Deutsch 競争的相互依存)・C2 リング/疎トポロジー(cross-cutting cleavages)。**仮説α を「魅力的だが根拠なし」→「機構は堅い・実証未検証」に格上げ**。組織解釈=Deutsch/cross-cutting cleavages(Lipset,Coser)/faultlines(Lau&Murnighan)/Heider バランス/Moscovici 少数派/奇数委員会設計。設計レバー3つ
+- **Issue #126 作成（pjdhiro 指示「立てて」）**: [review+research] 偶奇の膠着＝フラストレーション/二部性 — 行列モデルと組織行動論・心理の構造類似。https://github.com/uminomae/project-design/issues/126 。マルチエージェントで SURVEY(cross-cutting/faultlines/Deutsch/Heider/偶奇実証)→team-critic REVIEW→RR-024 G節&CN-010 反映
+- **次アクション**: ①Issue #126 をマルチエージェントで実行（researcher 複数→critic）②RR-010/RR-024/RR-024a/b/c を commit（自律 push 範囲）③pjdhiro 判定 H1-H8（β 洗練/F2 主軸/「3と7」看板/α 格上げの READER 反映）
+- **次アクション**: ①RR-010/RR-024/RR-024a/RR-024b を commit（自律 push 範囲＝knowledge 更新・pjdhiro 確認待ち）②pjdhiro 判定: 「3と7」看板と主軸(3=最小の一体・特別数は別レンズ)の並べ方・B の構造類似の採否・四者へ進むか・blocked 資料の再取得
+- **セッション終了 2026-07-06 (seq01・worktree)**: 知識成果物 commit 済み＝**2ddc21c**（RR-024 A-G＋RR-024a/b/c＋RR-010）。ログ= `log-20260706-01.md`。次=Issue #126 をマルチエージェント実行／pjdhiro 判定 H1-H8
+- HEAD: 本ブランチ `claude/peaceful-kirch-cf6c51`=**2ddc21c**（+ 本終了処理 commit）。develop=**d5ce20d**（独立進行・別 seq03）。**develop へ回す時は state.md を慎重にマージ**（知識成果物は追加のみで無衝突）
+
+## ⏸ 2026-07-05 (seq02) — pd#115 READER 回りくどさ解消＋謙虚な探究トーン＋文体を普通の説明文へ（develop 7d127f7・push 済み・pjdhiro レビュー待ち）
 - **背景**: pjdhiro「公開ページが回りくどい・各段落が何を伝えたいか不明瞭・サブタイトルが欲しい」→「数学解説の後に必ず気づき（常識へのアンチテーゼ）が控える設計・回転の知識で世界の見え方が変わるのが底のテーマ・段落の役割を可視化」→ **決定的補正**「3・7 への執着を見せたくない。強引に回転で考えた半信半疑のメモ。仮説を証明する話でなく仮説出しプロセスが主。検証しきれず途中まで考えたノリ。真理でなく参考になる一つの側面。無理に論を勝たせる姿は恥ずかしい」
 - **実装（全提案採用・レベル2/AB併用）**:
   1. メタテーマ明示（**ルール23 新設**・README §3）: 「回転というメガネを借りると景色が違って見える」を凡例宣言。数学解説はすべて下ごしらえ。冒頭に半信半疑・発散的メモの断り。ルール23 は「気づきは一つの側面として謙虚に・真理主張/3・7執着に転じない・アイデア出しと検証のモード差明示」を絶対条件に含む
@@ -627,6 +649,26 @@
   - techo#116 欠損駆動思考ナレッジ全面見直し
 
 ## Hot Topics
+### Obsidian 差分検出 (2026-07-05T12:02:16Z)
+未 push コミット (develop ahead of origin/develop, wiki/ のみ):
+- 722f067 Merge develop into main: RR-017〜019・判定4件決着（共有=不変量・意識=ℂ引っ越し採用・仮説v2）・READER 一意性修正を公開
+- 902ed82 Merge develop into main: D18-S12 Simmel wiki OA URL 更新
+- 3f0db2f Merge develop into main: pd#112 wiki-conflict 3件解消
+- 0a5893c Merge develop into main: pd#120 保守修正（responsive B5 / wiki-lint / 孤立・broken 解消 / blocked-access 4件削除）
+- 84ee5d0 Merge develop into main: wiki生成群 + RR-001/002/003 + reader §9 + skill修正を公開
+- 28eb1d3 merge: develop → main — #76/#80/#81/#82 完了 + wiki-compile skill 分割 + cross-check
+- 5d606aa Merge branch 'develop'
+- 5f1bf6d Merge branch 'develop'
+- ff83f2f merge develop → main: 意識/間主観性 WT-1 core definitions 厳密化
+- 948c2c4 merge develop → main: 意識/間主観性 厳密化 + wiki ワークフロー改善 + 関連原典自動追記
+- acf2e4f merge: develop → main (2026-04-15 #01)
+- d5b814b merge: develop → main (2026-04-14 #01)
+- 9787bac merge: develop → main (2026-04-13 #03)
+- 996b8b1 Merge branch 'develop'
+- b54e25f Merge branch 'develop'
+- 33170a5 refactor: サイト全体から4層モデル言及を更新 (techo#121)
+→ `git diff wiki/` で内容確認してから commit/push するか pjdhiro に判断依頼
+
 - **wiki 更新ワークフロー自動化チェーン完成**:
   - cs raw PDF/wiki 改訂 → pd `.cache/inbox/wiki-gen-*.md`（cs f23edd7）
   - pd knowledge/ 編集 → pd `.cache/inbox/wiki-restale-*.md`（#77）
