@@ -3,7 +3,7 @@ id: RR-024
 title: 三者を行列（回転）で置く — SO(6) の骨格と「媒介が直接結合を生む」創発（行列第一の方法論の最初の適用）
 issue: "#124 → #115"
 pillar: two-axis-closure
-status: draft（数学側は機械検証固定 RR-024a・心理接地は researcher 2体で調査固定 B-1/B-2・Main V3 実施済み／読みの採否は pjdhiro 判定待ち）
+status: draft（数学側は機械検証固定 RR-024a・心理接地は researcher 2体で調査固定 B-1/B-2・Main V3 実施済み／G節は pd#126 review 反映済み・researcher 3体＋critic voting 2体 CONSENSUS-3／読みの採否は pjdhiro 判定待ち）
 date_start: 2026-07-05
 date_end:
 ---
@@ -158,7 +158,7 @@ pjdhiro が本セッションで開いた2つの仮説。**証明でなく視点
 | **F3 commutator・媒介** | 〔社会ネットワーク〕triadic closure（Granovetter）・tertius/structural holes（Simmel/Burt）／〔精神分析〕Lacan 大文字の他者・Foulkes matrix／〔家族療法〕Bowen 三角化（**理論系譜は異質・同一視しない**） | 中（方向一致） | **分野非依存の同一段差**：全て「三者で何かが生まれる」の方向一致どまり。「二結合の差分が**ちょうど**第三を生成する」代数的一意性は**どの分野にも無い** |
 | **F4 二者分解可/三者非還元** | **協力ゲーム理論の3人ゲーム**（core 空・複数解＝vNM の枠組み、core 自体は Gillies 1959 系形式化／2人ゼロ和は minimax で一意）／Simmel dyad-triad／**Foulkes matrix**（非還元・nodal point）／Ogden・Britton・Lacan（二者=閉じた鏡像/三項=開く） | 中〜高 | 現象側は「どこまで分解不能か」が論争的（Foulkes の揺れ・RR-017 C3 保持論点）。数学の鋭い単純性より柔らかい |
 | **F1 2軸価値・非ゼロサム** | プロスペクト理論（1軸2領域）／Fehr-Schmidt（スカラー加重和） | **低（空白）** | **「物質⊥精神の直交2軸ベクトル」に一致する既存モデルは無い**＝プロジェクト固有の賭け。非ゼロサム回転の対応も未発見 |
-| **F6 偶奇・膠着** | faultlines・balance theory（2陣営分裂）／Condorcet・Arrow・May／陪審 deadlock | **低（空白）** | **人数の偶奇そのものを変数にした研究は全分野で無し**（faultlines=属性相関・balance=符号・陪審=サイズ由来）。多数決の閾値は**選択肢数であって人数でない**（混同禁止） |
+| **F6 偶奇・膠着** | faultlines・balance theory（2陣営分裂）／Condorcet・Arrow・May／陪審 deadlock | **低（空白）→ 一部更新** | **【pd#126 で部分訂正】** 取締役会・合議体では偶奇を明示変数化した査読実証が実在（He & Luo 2018 JBF・Dougherty & Edward 2009 J. of Politics 等）。ただし**tie 回避＝多数決算術**であり G-1 の frustration 機構とは別（G-5-1）。balance theory は Cartwright-Harary を一次照合し格上げ（G-3 ※4）。陪審のパリティ実証は依然空白。多数決の閾値は**選択肢数であって人数でない**（混同禁止） |
 | **多数決/納得（仮説β）** | **Condorcet パラドックス＋Arrow 不可能性＋May の定理** | 中 | 2択=多数決一意（May）／3択以上=理想的集約なし（Condorcet/Arrow）＝「構造で決まる納得 vs 集約の破綻」。**反証＝手続的公正（Tyler）**：voice 付き多数決は正統性を持つ→単純二分は崩れうる。閾値は選択肢数 |
 
 ### F-2. 分野横断のメタ所見（3つ・これが本探索の主産物）
@@ -169,7 +169,7 @@ pjdhiro が本セッションで開いた2つの仮説。**証明でなく視点
 
 ### F-3. pjdhiro 仮説への含意
 
-- **仮説α（偶数=対立）**: 直接支持する実証は**全分野で見つからず**（人数パリティ研究の空白）。faultlines/balance/陪審は「2陣営に割れる」を扱うが原因はパリティでない。→ **α は pjdhiro の直観としては魅力的だが、実証は全分野で空白**（空白＝不支持であって支持の証拠ではない・critic 指摘。「魅力的」と「空白」を混ぜて読者を α 寄りに誘導しない）。深掘りは委員会/board サイズの偶奇研究（法学・政治学）を一次で追う要。
+- **仮説α（偶数=対立）**: 直接支持する実証は**全分野で見つからず**（人数パリティ研究の空白）。faultlines/balance/陪審は「2陣営に割れる」を扱うが原因はパリティでない。→ **α は pjdhiro の直観としては魅力的だが、実証は全分野で空白**（空白＝不支持であって支持の証拠ではない・critic 指摘。「魅力的」と「空白」を混ぜて読者を α 寄りに誘導しない）。深掘りは委員会/board サイズの偶奇研究（法学・政治学）を一次で追う要。**【pd#126 で深掘り実施】** board/合議体の偶奇実証は実在したが（He & Luo 2018・Dougherty & Edward 2009）、それは **tie 回避＝多数決算術**であり α の frustration 機構の実証ではない（G-5-1）。α の機構は依然「機構は堅い（RR-024c・Harary 一次照合）・人チームでの直接実証は空白」の段階。
 - **仮説β（多数決 vs 納得）**: Condorcet/Arrow/May で**骨格の接地はある**が、①閾値は選択肢数で人数でない ②手続的公正が反証（voice 付き多数決は納得を生む）。→ β は「構造で一意に決まる vs 集約が破綻する」に洗練でき、かつ「**手続きの公正さ**」という第3の軸を組み込む必要。
 
 ## G. 偶奇の膠着＝フラストレーション/二部性（仮説α の機構・機械検証 RR-024c）
@@ -178,37 +178,65 @@ pjdhiro が本セッションで開いた2つの仮説。**証明でなく視点
 
 ### G-1. 機構（機械検証 `RR-024c` ALL PASSED）
 
+**射程の限定（pd#126 review で明示）**: 下の「偶数＝二部・奇数＝非二部」は、**Cartwright & Harary (1956) の構造均衡定理**——符号付きグラフが均衡 ⇔ 頂点を2集合に分割でき正辺は集合内・負辺は集合間（＝二部分割）〔Psychological Review 63(5) p.286 を一次全文で逐語照合〕——を **リング（隣接対立）トポロジーに特殊化した場合に限る**。Harary の定理自体は任意の符号付きグラフの一般定理で「偶奇」を語彙に持たない。「Cartwright-Harary＝偶奇理論」ではない（researcher 独立の機械検証でも、全負リングで cycle 符号 =(−1)ⁿ・balanced ⇔ n 偶数 ⇔ 二部 が n=2..8 で一致し、RR-024c と別経路で同じ数学的事実に帰着）。
+
 隣どうしが「反対を向きたい」リング（対立志向）の基底状態:
 - **偶数(2,4,6,8)**: 交互 +/− が全辺で成立（サイクル C_n が二部）→ 1辺 −1.0（完全な真逆）→ ベクトルが**二陣営にきれいに一意に落ち着く**＝安定した対立（50:50 が成立）。
 - **奇数(3,5,7)**: 交互彩色が閉じない（奇サイクルは非二部）＝**フラストレーション**→ 最小 −cos(π/n) > −1、左右巻きの**2重縮退**→ 二陣営に落ち着けず対称な妥協（三角形=120°）→ **50:50 膠着が構造上不能**。
 - **向きの精密化（重要）**: 「ベクトルが一意に定まらない」のは実は**奇数（フラストレーション/縮退）**の側。偶数は一意に落ち着く（が、それが2陣営の対立）。奇数の"定まらなさ"こそが膠着を防ぎ決着を生む。
-- 中核: 「二陣営に割れる」⇔ 対立グラフが**二部** ⇔ **奇サイクルが無い**（構造均衡 Harary の核。F 節で researcher 1 が挙げた balance theory の再評価＝過小評価だった）。
+- 中核: 「二陣営に割れる」⇔ 対立グラフが**二部** ⇔ **奇サイクルが無い**（構造均衡 Harary の核）。**pd#126 で balance theory は一次全文照合により格上げ**——F 節で「薄い」とした評価は過小評価だった。ただし格上げは〈二部性の数学的定義の正確性〉であって〈人数偶奇そのものの実証〉ではない（両者を混同しない・G-3 ※4）。
 
 ### G-2. 2つの前提条件と組織解釈（構造類似(b)・アイデア出し）
 
 偶奇効果は無条件でない。2条件の下でだけ出る:
-- **C1 対立志向の結合** ＝ **競争的相互依存（Deutsch 協調-競争理論）**。協調的なら偶奇無関係で全員一致へ収束。
+- **C1 対立志向の結合** ＝ **競争的相互依存（Deutsch 協調-競争理論・contriently interdependent goals）**。協調的なら偶奇無関係で全員一致へ収束。
+  - **段差（pd#126 review・R2 一次照合）**: 一段目「対立志向＝競争的相互依存」は Deutsch (1949/2006) の定義と厳密一致。だが二段目「協調的なら偶奇無関係で全員一致へ収束」は **Deutsch には無く、RR-024c 数理モデルの対称性からの外挿**。Deutsch は promotive/contrient interdependence を定義するのみで、偶奇・リング・フラストレーション・全員一致収束を一切論じない。出典を「Deutsch 協調-競争理論」とだけ示して二段目まで権威づけしないこと。
 - **C2 リング/疎トポロジー** ＝ **分断線が重なるか交差するか（cross-cutting vs reinforcing cleavages・Lipset/Coser）**。単一の重なる分断＝二部＝二極化。交差＝非二部＝緩和。完全グラフ（全員対立）は n≥3 で偶奇に依らずフラストレーション。
+  - **補強（pd#126・R1）**: faultline 理論内部に既に crisscrossing（cross-cutting 相当）概念があり（Bezrukova et al. 2009／Mäs et al. 2013 Org Sci 24(3)）、強い faultline＝reinforcing 的単一分断→短期二極化、crisscrossing actor が橋渡し→長期は克服、と計算モデルで実証。C2 の「重なるか交差するか」は組織行動論内部で統合済み。ただし cleavage/faultline 理論は「分断線の重なり方」を変数にし、**人数の偶奇そのものは変数にしていない**（G-5-1 参照）。
 
 → **膠着の真因は人数でなく「単一の・重なる・敵対的な分断線」**。偶数はそれを対称で安定な睨み合いにする。
 
 ### G-3. 組織行動論・心理の構造類似候補（判定待ち・要一次接地）
 
-| 観点 | 理論 | 対応 | 確度 |
+| 観点 | 理論 | 対応 | 確度（pd#126 更新） |
 |---|---|---|---|
-| 分断の重なり/交差 | cross-cutting cleavages（Lipset/Coser）／**faultlines**（Lau & Murnighan 1998） | 二部性そのもの。faultline＝潜在的 bipartition | 中（要一次） |
-| 競争 vs 協調 | Deutsch 協調-競争理論 | C1。frustration は競争的相互依存でだけ | 中（要一次） |
-| 認知の心理基盤 | Heider バランス理論／認知的不協和 | 奇数の負の三角形＝不協和＝解消圧力 | 中（要一次） |
-| 少数派の役割 | Moscovici 少数派影響／groupthink | 奇数の吸収されない少数が dissent 保持 vs 偶数の二極 gridlock | 低（探索的） |
-| 実務設計 | 委員会/取締役会/陪審の**奇数設計** | tie-break の制度知 | 中（実務知） |
+| 分断の重なり/交差 | cross-cutting cleavages（Lipset/Coser）／**faultlines**（Lau & Murnighan 1998） | 二部性の**アナロジー**（cleavage/faultline 理論は二部グラフ形式を実際には使わない）。faultline＝潜在的 bipartition の潜在軸 | 中（方向一致・二次確認）※1 ※2 |
+| 競争 vs 協調 | Deutsch 協調-競争理論（1949/2006） | C1。frustration は競争的相互依存でだけ | 高（一次照合済）※3 |
+| 認知の心理基盤 | Heider バランス理論／**Cartwright & Harary 1956 構造均衡** | 奇数の負の三角形＝不均衡＝不協和＝解消圧力 | 高（一次照合済）※4 |
+| 少数派の役割 | Moscovici 少数派影響／groupthink | 奇数の吸収されない少数が dissent 保持 vs 偶数の二極 gridlock | 低（探索的・未接地） |
+| 実務設計 | 委員会/取締役会/陪審の**奇数設計** | tie-break の制度知（＝多数決算術・**別機構**、G-5-1 参照） | 中（実務知） |
+| 社会系の frustration 実証 | signed networks／opinion dynamics（Facchetti 2011 PNAS・Altafini 2012 PLOS ONE・Antal 2006・Chujyo 2025 Sci Rep） | 奇サイクル＝frustration／二部＝二派分極、を実データで確認 | 中〜高（一次 OA 照合・G-5 段差付き） |
 
-### G-4. 設計レバー（3条件から）
+※1 **確度は「方向一致」まで**。cleavage/faultline 理論は「分断線の数・重なり方」を変数にし、**人数の偶奇（パリティ）を変数にしていない**（変数系が異なる）。「二部性そのもの」ではなく「二部性のアナロジーとして解釈できる」程度に留める（READER 昇格時の言い回し注意）。
+※2 **事実訂正**: faultline メタ分析を下流（READER 等）で引く場合、**Thatcher & Patel (2011) は 2016 撤回済み**（PubMed 27504664）ゆえ使わず、**Zhang & Chen (2023, Management and Organization Review)** を一次候補とする。現行 RR-024 本文は T&P を直接引用していない（予防的注意）。
+※3 **段差**: 「高」は C1 一段目（対立志向＝競争的相互依存）の定義一致と原典照合を指す。二段目（協調なら偶奇無関係）は Deutsch の外挿（G-2 参照）。
+※4 **格上げの射程**: Cartwright & Harary Structure Theorem を p.286 逐語で一次照合＋独立機械検証。ただし確度「高」は**二部性の数学的定義の正確性**を指し、**人数偶奇の実証確度ではない**（Cartwright-Harary 内の実証は Jordan 1953 等の triad 実験で、リング長 n を変数にしていない）。Heider の balanced triad（3正 or 2負1正）は n=3 の負辺偶数ルールと一致。
+
+### G-4. 設計レバー（3条件から・目的依存）
 
 膠着回避＝①**奇数にする**（tie-break を構造に）②**関係を協調的に**（C1 を外す）③**交差する結び付き/役割**（C2 を外す＝bipartition を壊す）。
 
-### G-5. 段差（正直に）
+**歯止め（pd#126 review）**: frustration（奇数）が「良い」かどうかは**構造の記述からは導かれない価値判断**である（F-3 所見3「構造は中立・使われ方が機能/機能不全を分ける」）。本レバーは「膠着回避」という目的を所与とした設計提案であって、frustration を無条件に推奨するものではない。実際、signed-network 側では frustration は「解消されるべき欠陥・過渡的」と扱われる（G-5-2 の価値づけ逆転を参照）。物理・意見動学の frustration 記述を、組織デザインの規範評価へ横滑りさせないこと。
 
-フラストレーション/二部性の**数学は厳密**（RR-024c・Harary）。組織/心理への写像は**構造類似(b)・アイデア出し**。「**人数の偶奇→膠着**」の直接実証は薄い（F 節 researcher 確認済み）。ただし cross-cutting cleavages・faultlines・Deutsch は**実在の確立理論**なので〈二部→二陣営〉の骨格には社会科学の地盤がある。足りないのは「偶奇そのもの」を変数にした実証。→ **本節を pd の新 Issue でレビュー＋一次接地する**。
+### G-5. 段差（正直に・pd#126 review 反映）
+
+フラストレーション/二部性の**数学は厳密**（RR-024c・Harary、Cartwright & Harary 1956 を一次照合）。組織/心理への写像は**構造類似(b)・アイデア出し**。以下の段差を保つ。
+
+**G-5-1. 人数の偶奇 vs 二種類の実証を混同しない（pd#126 の核・最重要）**
+
+- **Q5＝頂点数の偶奇の実証**（取締役会・合議体: **He & Luo 2018, J. of Banking & Finance 93:139-150**「even number of directors」・**Dougherty & Edward 2009, J. of Politics 71(2):733-747**「Odd or Even: Assembly Size and Majority Rule」・Deng-Gao-Liu 2012・Adil & Khan 2026）は**実在する**。ゆえに F-1「F6 は全分野で空白」は governance 分野では**部分的に誤り**（→ F-1 追記）。ただしこれらの機構は **tie 回避＝多数決算術（過半数原理・Condorcet/Arrow/May 系＝むしろ仮説β寄り）**であり、**G-1 の幾何学的フラストレーション機構（対立志向リングの縮退＝仮説α系）とは別物**。He & Luo の "to avoid a tie in voting" は算術であって Cartwright-Harary frustration ではない。→ **Q5 を G-1／仮説α の実証的裏付けとして流用しない**（相互補強にしない）。本文は 403 blocked で未取得ゆえ「tie 回避か構造的 frustration か」は未確認のまま強い一般化をしない。
+- **Q6＝サイクル構造の frustration の実証**（signed networks／opinion dynamics: **Facchetti et al. 2011 PNAS 108(52)**・**Altafini 2012 PLOS ONE**・**Antal-Krapivsky-Redner 2006 Physica D 224:130-136**・**Chujyo et al. 2025 Sci Rep 15:39882**）は、G-1 と**同じ数学（奇サイクル＝frustration・二部＝二派分極）**を実データで確認しており、**社会系の構造類似(b) として格上げ材料**。Chujyo et al. 2025「unbalanced sign assignments induce perpetual opinion oscillations and prevent convergence」（一次記述）。
+- ⚠️ Q5（頂点数の偶奇）と Q6（対立関係ネットワークのサイクル構造）は、同じグラフ理論語彙（bipartite/odd cycle）を使うが**指す対象が異なる**。RR-024 のリングモデルは C2 でトポロジーをリングに限定するため**その内部でのみ頂点数＝サイクル長で一致**する（一般の signed network では別物）。両者を無条件に接続しない。
+
+**G-5-2. 価値づけの逆転**
+
+signed-network 側では frustration は「有限系が最終的に balanced（utopia か bipolar）へ収束する**過渡的**性質・解消されるべきもの」（Antal-Krapivsky-Redner 2006「a finite network must ultimately fall into a balanced state for all p」）。RR-024 側では frustration（奇数）は「膠着を防ぐ**望ましい恒久的**性質」。**同じ数理構造に対する価値方向が逆**。F-3 所見3（構造中立）と同型だが、「同じ構造だから同じ結論」とは読まない（G-4 歯止め）。
+
+**G-5-3. 系譜的独立性は未検証**
+
+Deutsch(1949)・Cartwright-Harary(1956) はいずれも Lewin／ミシガン Group Dynamics 系譜。相互の独立検証としての重みは慎重に（F-2 所見3 と同型）。
+
+**残る空白**: 依然「**偶奇そのもの（＝リング上の頂点数パリティ）を変数にした、frustration 機構による膠着の直接実証**」は無い。Q5 は別機構、Q6 はサイクル構造（人数でない）。この空白は正直に残す（pd#126 review 完了・consensus CONSENSUS-3）。
 
 ## H. pjdhiro への判定待ち
 
@@ -220,6 +248,8 @@ pjdhiro が本セッションで開いた2つの仮説。**証明でなく視点
 6. **横断調査（F節）で採るべき接地はどれか**: 最厚の **F2＝QQ equality（順序効果）** を READER の一次接地に格上げするか（既引用の再整理）。**F4＝vNM 3人ゲーム（core 空）／Foulkes matrix** を三者非還元の接地に採るか。**F3 の「代数的一意性は4分野で未発見＝天井」**を正直な限界として書くか。
 7. **仮説β の洗練**: 「多数決＝押し付け」を、Condorcet/Arrow/May（3択以上で理想的集約なし）＋**手続的公正（voice）という第3の軸**を組み込んだ形に洗練するか。**閾値は選択肢数で人数でない**注意を明記するか。
 8. **空白の扱い**: **F1（物質⊥精神の2軸）は既存モデルと一致しない賭け**・**F6（人数偶奇）は全分野で研究空白**——これらを「接地なし・仮説固有」と正直に書くか、一次追跡（委員会サイズの偶奇研究等）を発注するか。二次確認どまりの項目（tertius・Condorcet 等）の一次取得要否。
+9. **【pd#126 で新規】仮説α（偶奇＝二部性/frustration）の READER への扱い**: G-1〜G-5 で「機構は堅い（Harary/RR-024c 一次照合）・人チーム実証は薄い・規範評価は構造から独立した価値判断」の三層が固まった。これを READER に (a) 独立コラムで書くか (b) 書かず知識ノート止まりにするか。書くなら **Q5(多数決算術)と Q6(サイクル構造)を混同しない・価値づけ逆転(G-5-2)をセットで**（三層段差表方式 [[public-explanation-metaphor]]）。α は仮説β（可除代数＝納得）とは別レンズ（α＝行列/二部性）である点も。
+10. **【pd#126 で新規】一次全文の追取得要否**: 403 blocked のまま結論に使わない方針で残した項目——He & Luo 2018／Dougherty & Edward 2009／Deng-Gao-Liu 2012（board 偶奇の機構が tie 回避か frustration か）・Chujyo et al. 2025（三角形超の奇サイクル射程）・陪審/委員会 parity の追加一次。取得を発注するか、現状の段差記述で足りるとするか。
 
 ## 実行統計・検証
 
@@ -229,6 +259,7 @@ pjdhiro が本セッションで開いた2つの仮説。**証明でなく視点
 - 機械検証（偶奇フラストレーション）: `RR-024c-parity-frustration-verification.py` ALL PASSED。偶数リング＝二部・1辺 −1.0（Néel）／奇数リング＝非二部・−cos(π/n)・2重縮退（フラストレーション）。仮説α の機構（G 節）。
 - 機械検証（2〜8名）: `RR-024b-team-size-so2n-verification.py` ALL PASSED。dim so(2n)=n(2n-1)・生成子分解（自己n+ペア2n(n-1)）・可除代数フラグ（2n∈{2,4,8}）・偶奇・ペア数 C(n,2)・三角自己閉包（n≥3 で (1,3) に載る）を計上。so(2n) 単純性は Cartan 分類の標準事実として扱う（so(4)=D₂ のみ非単純の例外）。
 - 品質ループ: RR-024a/RR-024b 機械検証 ALL PASSED ＋ Main V3（反例探索・A-3 精密化に反映）。**team-critic フル（V3-V6）は READER 昇格前に実施予定**（本 RR は draft・判定待ちのため未実施）。
+- **G節の一次接地（pd#126・2026-07-06）**: SURVEY＝team-researcher 3体（R1 cleavages/faultlines・R2 Deutsch/Cartwright-Harary・R3 board偶奇実証/signed networks）。**一次全文照合＝Cartwright & Harary 1956 Structure Theorem p.286 逐語（R2）・Deutsch 1949脚注3＋2006章 pp.23-28（R2）・Antal-Krapivsky-Redner 2006 全文（R3）・Facchetti 2011 PNAS/Altafini 2012 PLOS ONE（PMC OA・R3）**。abstract/二次どまり＝He & Luo 2018・Dougherty & Edward 2009・Lau & Murnighan 1998・Mäs 2013・Chujyo 2025（本文 403 blocked）。REVIEW＝team-critic voting 2体、いずれも **CONSENSUS-3・additional_round（境界条件の明記不足・前提誤りなし）**。反映＝G-1 リング特殊化明記／G-2 C1 二段目の Deutsch 外挿明記／G-3 確度更新＋脚注4件（Deutsch/Heider を一次照合済へ・格上げは二部性の数学的定義であり実証でない・T&P2011撤回・crisscrossing 内部統合）／G-4 価値判断の歯止め／G-5 を G-5-1〜3 に拡張（Q5≠Q6・価値逆転・系譜未検証）。事実訂正＝**Thatcher & Patel 2011 メタ分析は 2016 撤回（PubMed 27504664）→ Zhang & Chen 2023 に差し替え**。
 
 ## 関連
 
@@ -236,3 +267,5 @@ pjdhiro が本セッションで開いた2つの仮説。**証明でなく視点
 - `RR-017-relational-domain-triadic-extension.md` C1-C3（三項の非還元の実証と段差・「3は原初か2から構成されるか」の保持論点）
 - `RR-016-real-axis-quantum-cosmos-psyche.md` B3（Ogden の third・深層心理）
 - pd#124（三者＝𝕆 のアリティ論拠は却下・方法論で前提解消。本 RR がその後継の本線）
+- pd#126（G節＝偶奇膠着/フラストレーション/二部性の review+research・本 RR G-1〜G-5 に反映。一次接地の外部出典＝Cartwright & Harary 1956 Psych Rev 63(5)／Deutsch 1949 Human Relations 2(2)・2006 Handbook 章／Antal-Krapivsky-Redner 2006 Physica D 224／Facchetti et al. 2011 PNAS 108(52)／Altafini 2012 PLOS ONE／Chujyo et al. 2025 Sci Rep 15:39882／He & Luo 2018 JBF 93／Dougherty & Edward 2009 J. of Politics 71(2)／Lau & Murnighan 1998 AMR 23／Mäs et al. 2013 Org Sci 24(3)／Zhang & Chen 2023 MOR 19(5)。※ Thatcher & Patel 2011 は撤回済み・不使用）
+- CN-010「## 補注: 仮説α（偶奇＝二部性）は可除代数の梯子とは別レンズ」（本 G 節の位置づけ）
