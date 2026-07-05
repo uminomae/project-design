@@ -1,8 +1,10 @@
 // 選択プールは軽量シェーダーのみ（DESIGN-RULES §1「背景シェーダーの負荷上限」参照）。
-// main2-webgpu（12ステップ体積レイマーチ×3Dノイズ）と main3-webgpu（微分FBM二重サンプル）は
-// フルスクリーン@dpr2 でフレーム落ちするためプールから除外（ファイルは保持）。
+// main2-webgpu（12ステップ体積レイマーチ×3Dノイズ）はフルスクリーン@dpr2 で
+// フレーム落ちするためプールから除外（ファイルは保持）。
+// main3-webgpu は 2026-07-05 pjdhiro 判断で復帰（重かったのは main2 の1本のみ）。
 export const SHADER_PATHS = [
   "./shaders/main-webgpu.js",
+  "./shaders/main3-webgpu.js",
   "./shaders/main4-webgpu.js",
 ];
 
