@@ -1,5 +1,17 @@
 # state.md — project-design
 
+## 🔄 セッション 2026-07-07 (seq05) — pjdhiro 待ちタスク3件の自律処理（develop push 済み）
+- **HEAD**: develop=**a68a51a**（push 済み・remote 同期）。main は **ce26973** のまま（公開は pjdhiro 判断）。
+- **①§5 最終確認（実施）**: §5 の流れ・語彙を精読。良好。**唯一の不整合を修正**——§5(L677) の §6 参照「共有するの正確さ」を、§6 実際の見出し「『共有する』の正確さ」に合わせ鉤括弧をネスト（同一文書 L202 の作法「畳み『…〈…〉…』」に統一）。UTF-8 clean。→ commit `a68a51a`
+- **②wiki-gen-2026-07-06 自動処理（stale と判定・archive）**: 依頼は「未生成6件」と主張していたが、6ソース（D05-S15 Feistel / D06-S11 Springel / D07-S15 Heylighen / D09-S02 Attwell / D12-S13 Beisner / D28-S15 Shibolet）とも **manifest_id 一致の compiled ページが別 stem 名で既存**（wiki/sources/、生成日 2026-04-18/06-14 で依頼日 07-06 より前）。再生成は重複ページを生むため**実行せず**、依頼を `.cache/inbox/archive/` へ移動（.cache は gitignore・ローカルのみ）。※依頼票が列挙した pd `knowledge/raw/*.pdf` はこの repo に存在せず（原典正本は cs 側）。
+- **③#124/#125/#126 close 判断（pjdhiro 待ち・下記 Hot Topics）**: 3件とも**作業自体は完了・成果物に反映済み**と確認。close は §委任レベルで pjdhiro 判断のため自律 close せず、根拠つきで提示。
+- ログ: 本エントリ（次の終了時に log-20260707-02.md 化予定）
+
+### Hot Topics — #124/#125/#126 close 推奨（pjdhiro 判断待ち）
+- **#124（三者=𝕆 team-critic レビュー）→ close 推奨**: レビューは収束済み（RR-010 L50「アリティ階段は ℍ・𝕆 の2点だけ・𝕊 で崩れる＝法則でない」2026-07-05 critic 2体・判定の記録に登録）。方法論確定（行列が第一・八元数は機会的）で「三者=𝕆 を先に立てる」問いは解消。READER は撤回注記のみ。→ 結論記録済み・close 可。
+- **#125（READER 骨格再設計）→ close 推奨**: 第I部/第II部の再配置は実装済み（さらに見方A は丈ごと削除され A/B 順序問題も解消）。工程完了。→ close 可（D1-D3 の設計問いは実装で決着済み）。
+- **#126（偶奇膠着=二部性 review+research）→ 判断を仰ぐ**: SURVEY→REVIEW は完了し RR-024 G節に反映済み（researcher 3体＋critic voting 2体 CONSENSUS-3）。残るは「読みの採否は pjdhiro 判定待ち」。→ close（作業完了）か、採否トラッカーとして OPEN 継続か、pjdhiro 選択。
+
 ## ⏸ セッション終了 2026-07-07 (seq04) — pd#115「賭け→仮定」統一＋§5の出発点整理（develop→main 公開済み）
 - **公開済み**: develop=**26eb358** / main=**ce26973**（ともに push 済み）。GitHub Pages 再ビルド待ち。**pjdhiro の公開後チェック待ち**。
 - **背景**: 前セッション（未ログ）が編集をファイルに適用済みだったが、**ツール呼び出しの構文エラー（`antml:` 接頭辞欠落）で commit/push できず develop 作業ツリーに未コミットのまま残っていた**。本セッションで検証の上 commit → 段階的に修正 → main 公開まで完遂
