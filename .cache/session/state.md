@@ -1,5 +1,40 @@
 # state.md — project-design
 
+## 🔄 セッション 2026-07-08 (seq04) — pd#128 Shared Spaces（L3）実装＋worktree掃除16本（公開は保留）
+- **HEAD**: develop=**a2421e8**（push 済み・同期）。main 未公開。
+- **pjdhiro 判断（今セッション）**: ①pd#128 の残り Shared Spaces を**今セッションで実装**（選択）②main 公開は**保留**（しっくり感判定を留保）③worktree 掃除は**自動生成のみ dirty な本だけ**。
+- **#1 Shared Spaces（L3）実装（commit a2421e8）**: Litt 三技法の三つ目。対話的ギミックでなく**コンテンツパターン**——共有心的モデルの実体（RR-010 判定台帳＋公開リポジトリ）を READER §9「共有の場」小節で surface し、読者の参加導線を実在させた。**scope 付き**（非同期の公開作業台・リアルタイム共同編集ではない）。
+  - バッジ「三つのうち二つ」→「三つとも」。L3 ⚠️→✅（scope 付き）。
+  - honest 監査: RR-014 §G-4（第3回・L3 ✅）／CN-011 §2・§4／DESIGN-RULES §11（Shared Spaces パターン新設）。
+  - 検証: static 11/11・アンカー欠損0・UTF-8 clean・LP 再ビルド（107,811 bytes）・localhost:3004 で配信確認（sandbox 切り分けで 200）。V3 反例探索（overclaim 検査）済み。
+  - **★公開ゲート**: 「✅ に達したか＝しっくり感」は pjdhiro 専権。今回 **公開は保留**。次アクション＝pjdhiro のしっくり判定 → OK なら develop→main マージ（Micro-worlds 3図＋Litt バッジ＋Shared Spaces を一括公開）。
+- **#3 worktree 掃除（16本削除・自律範囲）**: 自動生成のみ dirty（state.md・wiki/health・wiki/index.md）の merged worktree 16本を `worktree remove --force`＋branch -d（sandbox で `.git/worktrees` 削除が Op not permitted→非sandboxで実行）。
+  - **温存（未追跡成果物あり・要 pjdhiro 判断）**: `charming-newton-66fe71`（未追跡 wiki/sources 5件: D02_ulm/D03_turing/D23_vandermaas/D23_vangeert/D26_savage）／`clever-sutherland-c18080`（未追跡 epmc_*.json 8件: D05-S13/S15・D07-S15・D11-S13・D12-S13・D23-S08/S11/S14）。→ 採用/破棄は pjdhiro 判断。
+  - **未マージ（掃除対象外）**: `heuristic-ramanujan-452e39`・`peaceful-williamson-110408`・`stoic-sinoussi-8b76b0`(=admiring-blackburn)。未マージ commit あり＝要確認。
+- **pd#128**: OPEN 継続（L2＋L3 実装で完了条件充足だが、L3 の公開＝しっくり判定が保留のため close 保留）。
+- **次アクション**: ①pd#128 L3 のしっくり判定 → main 公開（保留中）②温存2本の未追跡成果物の採否 ③未マージ3本の確認。
+- ログ: pd `log-20260708-04.md`（未作成）/ 横断（未作成）
+
+## ⏸ セッション終了 2026-07-08 (seq03) — pd#128 Micro-worlds：720°だけ削除・他3図は採用（develop push 済み）
+- **HEAD**: develop=**b87f3ba**（push 済み・同期）。main 未公開（pjdhiro 判断）。
+- **次アクション**: ①**pd#128 close 判断**（3図採用・720°のみ不採用で機能は完了。L3 Shared Spaces を別 issue 化して close か OPEN 継続か → pjdhiro）②main 公開（Micro-worlds 3図＋Litt バッジ）は pjdhiro 判断 ③worktree `youthful-bun-bdd44d`・`stoic-sinoussi-8b76b0` 掃除候補。
+- **ログ**: pd `log-20260708-03.md` / 横断 `SESSION-20260708-03.md`
+- **★最終結論（b87f3ba）**: pjdhiro の意図は「**720度に関するものがわかりづらいので 720°だけ削除・他3つは残す**」。3bdc713 で誤って全撤去したのを訂正し、**3図を復元して 720°だけ除外**。
+  - **採用3図**（`src/reader-microworlds.js`）: ①複素数の掛け算＝回転 ②四元数の非可換回転 ④零因子。プレースホルダ・template script・reader.css `.mw-*` 復活。§9 バッジ「三つのうち二つを実装」（Explanations＋Micro-worlds）。
+  - **削除**: ③720°二重被覆（mountDoubleCover・プレースホルダ・MOUNTS 登録を除去）。「裏の針／糸の球／ベルト」の3描画を試したが不採用。
+  - **記録訂正**: RR-014 §G-3「720°の図だけ撤去・他3図維持（L2 ✅）」／CN-011 §2・§4「3図実装・720°のみ撤去」／DESIGN-RULES §10 パターン復活＋§8b「720°のみ却下」。学び=触れて直感に効く題材（回転・順序・零因子）と効かない題材（720°スピノル＝抽象度が高い）がある。
+  - 検証: 3ウィジェット描画（nonEmpty>0・ready）・720°不在・static 11/11・UTF-8 clean。
+- 経緯（commit）: ee6e775 4図実装 → 058dea6 720°を3描画化＋canvas再描画バグ修正 → 3bdc713 全撤去（誤解）→ **b87f3ba 720°だけ削除に訂正**。
+- **作業経路**: 主 worktree `/Users/uminomae/dev/project-design`（branch develop）で直接作業・1コミット。※本セッションの CLI cwd は worktree `stoic-sinoussi-8b76b0`（古い 7c93f81・別 branch）だが、編集・commit は主 worktree develop で実施。
+- **到達点（pd#128・pjdhiro スコープ判断「Micro-worlds のみ・4図全部」）**:
+  - **`src/reader-microworlds.js` 新設**（vanilla・依存なし・DESIGN-RULES §0a 準拠）。4図: ①複素数の掛け算＝回転 ②四元数の非可換回転 ③720°二重被覆 ④零因子。
+  - 数理核（Cayley–Dickson 乗算・八元数の合成則・16元数零因子 `(e₁+e₁₀)(e₅+e₁₄)=0`）を node で機械検証。
+  - md にプレースホルダ `<div data-microworld>` を4箇所（§2×2・§4・§5）。template にモジュール script、reader.css に `.mw-*`（ResizeObserver で折りたたみ内も堅牢）。
+  - **honest 更新**: §9 バッジ（三技法中二つ実装）／RR-014 §G-2 再監査（L2 ⚠️→✅）／CN-011 §2・§4／DESIGN-RULES §10 パターン明文化。
+- **品質**: static 11/11・responsive 5/5・UTF-8 clean・preview で4図の機能/描画/モバイル確認・Main V3。
+- **次アクション**: ①**pd#128 close 判断**（Micro-worlds は試作→撤去で不採用・L2/L3 とも未実装に。「対話的可視化では不採用」で close するか、将来の再考課題として OPEN 継続か → pjdhiro。撤去コメント投稿済み）②main 公開（**Micro-worlds なし**の Litt バッジ状態）は pjdhiro 判断 ③worktree `youthful-bun-bdd44d`・`stoic-sinoussi-8b76b0` はマージ/別branch＝掃除候補。
+- ログ: pd `log-20260708-03.md`（未作成）/ 横断（未作成）
+
 ## ⏸ セッション終了 2026-07-08 (seq02) — Litt「理解=ボトルネック」枠組みの取り込み＋D1-D4掃討＋pd#128（worktree→develop マージ・push 済み）
 - **HEAD**: develop=**691265d**（push 済み・同期）。main 未公開（READER §9 の Litt バッジが公開ページに出るため pjdhiro 判断待ち）。
 - **作業経路**: worktree `youthful-bun-bdd44d`（branch `claude/practical-satoshi-e04cca`）で 3 コミット → 主 worktree の develop へ `--no-ff` マージ（`691265d`・**衝突なし自動解決**。私の §9 バッジと seq01 の冒頭「ひとことで」は別領域で共存。reader html は再生成）。
