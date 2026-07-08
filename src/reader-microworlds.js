@@ -34,28 +34,31 @@ function makeCanvas(host, aspect = 0.62) {
     const ctx = canvas.getContext('2d');
     let W = 0, H = 0;
     const api = { canvas, ctx, resize, onResize: null, get W() { return W; }, get H() { return H; } };
+    // サイズが実際に変わった時だけ canvas.width を再代入する（再代入は canvas をクリアするため）。
+    // 変化なしなら no-op（既存の描画を保持）。戻り値 true = リサイズ＝クリアしたので要再描画。
     function resize() {
         const raw = host.clientWidth || canvas.parentElement?.clientWidth || 0;
-        if (raw < 1) return false;                 // 非表示（閉じた details 等）。表示され次第 Observer が再呼び出し
+        if (raw < 1) return false;                 // 非表示（閉じた details 等）。表示され次第 Observer/toggle が再呼び出し
         const cssW = Math.max(240, raw);
         const cssH = Math.round(cssW * aspect);
         const dpr = Math.min(window.devicePixelRatio || 1, 2);
+        const bw = Math.round(cssW * dpr), bh = Math.round(cssH * dpr);
+        W = cssW; H = cssH;
+        if (canvas.width === bw && canvas.height === bh) return false;  // 変化なし＝クリアしない
         canvas.style.width = cssW + 'px';
         canvas.style.height = cssH + 'px';
-        canvas.width = Math.round(cssW * dpr);
-        canvas.height = Math.round(cssH * dpr);
+        canvas.width = bw; canvas.height = bh;
         ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-        W = cssW; H = cssH;
         return true;
     }
     resize();
     if (typeof ResizeObserver !== 'undefined') {
-        let lastW = W;
-        const ro = new ResizeObserver(() => {
-            if (resize() && (W !== lastW)) { lastW = W; if (api.onResize) api.onResize(); }
-        });
+        const ro = new ResizeObserver(() => { if (resize() && api.onResize) api.onResize(); });
         ro.observe(host);
     }
+    // 折りたたみ <details> 内でマウントされた場合、開いた瞬間に確実に再描画する（ResizeObserver の保険）
+    const det = host.closest('details');
+    if (det) det.addEventListener('toggle', () => { if (resize() && api.onResize) api.onResize(); });
     return api;
 }
 
@@ -277,73 +280,127 @@ function mountQuaternionOrder(host) {
 }
 
 // ============================================================
-// 3) 720°で閉じる（二重被覆・§5 ④）
-//    360°では担い手の符号が −1（閉じたようで閉じない）、720°で +1（本当に閉じる）。
-//    符号 = cos(角/2)。ねじれの残り = (1 − cos(角/2))/2。±1 の2値で累積しない。
+// 3) 720°で閉じる（二重被覆・§5 ④）— 3つの描き方を切り替えて見る
+//    ① 裏の針（担い手は半分の速さ θ/2 で回る）② 糸でつながれた球（ディラック）③ ベルト。
+//    360°で物は戻るが担い手は真後ろ（−1）、720°で担い手も戻る（+1）。符号 = cos(角/2)、±1 の2値。
 // ============================================================
 function mountDoubleCover(host) {
     const P = PAL();
-    const view = makeCanvas(host, 0.6);
+    let ang = 0, mode = 'hands', playing = false, raf = 0;
+    // DOM 構築順: モードボタン → canvas → スライダー → status
+    const mrow = controls(host);
+    const view = makeCanvas(host, 0.74);
     const row = controls(host);
     const st = status(host);
-    let ang = 0, playing = false, raf = 0;
-
-    const sl = slider(row, {
-        label: '回す角度', min: 0, max: 720, value: 0,
-        onInput: v => { stop(); ang = v; draw(); },
-    });
+    const modeLabels = { hands: '裏の針', ball: '糸でつながれた球', belt: 'ベルト' };
+    const mbtns = {};
+    Object.entries(modeLabels).forEach(([k, label]) => { mbtns[k] = button(mrow, label, () => { mode = k; markMode(); draw(); }); });
+    const sl = slider(row, { label: '回す角度', min: 0, max: 720, value: 0, onInput: v => { stop(); ang = v; draw(); } });
     button(row, '▶ ゆっくり回す', () => { if (!playing) start(); else stop(); });
     button(row, 'リセット', () => { stop(); ang = 0; sl.value = 0; draw(); });
-
-    function start() { playing = true; let last = performance.now(); (function t(now) { const dt = now - last; last = now; ang = Math.min(720, ang + dt * 0.18); sl.value = ang; draw(); if (ang < 720 && playing) raf = requestAnimationFrame(t); else playing = false; })(performance.now()); }
+    function markMode() { Object.entries(mbtns).forEach(([k, b]) => b.classList.toggle('is-on', k === mode)); }
+    function start() { playing = true; let last = performance.now(); (function t(now) { const dt = now - last; last = now; ang = Math.min(720, ang + dt * 0.14); sl.value = ang; draw(); if (ang < 720 && playing) raf = requestAnimationFrame(t); else playing = false; })(performance.now()); }
     function stop() { playing = false; cancelAnimationFrame(raf); }
+
+    function arrow(ctx, cx, cy, aDeg, len, color, lw) {
+        const a = aDeg * Math.PI / 180, x = cx + len * Math.sin(a), y = cy - len * Math.cos(a);
+        ctx.strokeStyle = color; ctx.fillStyle = color; ctx.lineWidth = lw || 3;
+        ctx.beginPath(); ctx.moveTo(cx, cy); ctx.lineTo(x, y); ctx.stroke();
+        const hl = len * 0.18;
+        ctx.beginPath();
+        ctx.moveTo(x, y);
+        ctx.lineTo(x - hl * Math.sin(a - 0.42), y + hl * Math.cos(a - 0.42));
+        ctx.lineTo(x - hl * Math.sin(a + 0.42), y + hl * Math.cos(a + 0.42));
+        ctx.closePath(); ctx.fill();
+        return [x, y];
+    }
+
+    // ① 裏の針: 物は θ、担い手は θ/2 で回る。360°で担い手は真後ろ＝−1、720°で戻って＝+1。
+    function drawHands(ctx, W, H) {
+        const cx = W / 2, cy = H * 0.56, R = Math.min(W * 0.44, H * 0.44);
+        ctx.strokeStyle = P.mute; ctx.globalAlpha = 0.45; ctx.lineWidth = 1.5;
+        ctx.beginPath(); ctx.arc(cx, cy, R, 0, 7); ctx.stroke(); ctx.globalAlpha = 1;
+        ctx.setLineDash([5, 5]); ctx.strokeStyle = P.mute; ctx.lineWidth = 1;
+        ctx.beginPath(); ctx.moveTo(cx, cy); ctx.lineTo(cx, cy - R); ctx.stroke(); ctx.setLineDash([]);
+        ctx.fillStyle = P.mute; ctx.font = '11px sans-serif'; ctx.textAlign = 'center';
+        ctx.fillText('スタート', cx, cy - R - 8);
+        arrow(ctx, cx, cy, ang / 2, R * 0.62, P.coral, 3.5);   // 担い手（半分の速さ）
+        arrow(ctx, cx, cy, ang, R * 0.94, P.navy, 4);          // 物（見える向き）
+        ctx.fillStyle = P.ink; ctx.beginPath(); ctx.arc(cx, cy, 3.5, 0, 7); ctx.fill();
+        ctx.textAlign = 'left'; ctx.font = '600 12px sans-serif';
+        ctx.fillStyle = P.navy; ctx.fillText('● 物（見える向き）', 10, 18);
+        ctx.fillStyle = P.coral; ctx.fillText('● 担い手（半分の速さ）', 10, 36);
+        if (Math.abs(ang - 360) < 40) { ctx.fillStyle = P.coral; ctx.font = '600 13px sans-serif'; ctx.textAlign = 'center'; ctx.fillText('担い手は真後ろ ＝ −1', cx, cy + R + 22); }
+    }
+
+    // ② 糸でつながれた球（ディラック）: 中央の球を回すと周囲の固定枠との糸がねじれる。
+    function drawBall(ctx, W, H) {
+        const bc = [W / 2, H * 0.46], r = Math.min(W, H) * 0.12, rad = ang * Math.PI / 180;
+        const anchors = [[W * 0.13, H * 0.14], [W * 0.87, H * 0.14], [W * 0.87, H * 0.84], [W * 0.13, H * 0.84]];
+        anchors.forEach((an, i) => {
+            const bi = (i * 90 + 45) * Math.PI / 180 + rad;
+            const ex = bc[0] + r * Math.sin(bi), ey = bc[1] - r * Math.cos(bi);
+            const mx = (an[0] + ex) / 2, my = (an[1] + ey) / 2, dx = ex - an[0], dy = ey - an[1], L = Math.hypot(dx, dy) || 1;
+            const bow = (ang / 720) * Math.min(W, H) * 0.24;
+            const px = mx + (-dy / L) * bow, py = my + (dx / L) * bow;
+            ctx.strokeStyle = P.coral; ctx.globalAlpha = 0.8; ctx.lineWidth = 2;
+            ctx.beginPath(); ctx.moveTo(an[0], an[1]); ctx.quadraticCurveTo(px, py, ex, ey); ctx.stroke(); ctx.globalAlpha = 1;
+            ctx.fillStyle = P.mute; ctx.beginPath(); ctx.arc(an[0], an[1], 3.5, 0, 7); ctx.fill();
+        });
+        ctx.fillStyle = P.navy; ctx.beginPath(); ctx.arc(bc[0], bc[1], r, 0, 7); ctx.fill();
+        ctx.fillStyle = P.gold; ctx.beginPath(); ctx.arc(bc[0] + r * Math.sin(rad), bc[1] - r * Math.cos(rad), 4.5, 0, 7); ctx.fill();
+        ctx.fillStyle = P.mute; ctx.font = '11px sans-serif'; ctx.textAlign = 'center';
+        ctx.fillText('中央の球を回す（まわりの枠は固定）', W / 2, H * 0.97);
+    }
+
+    // ③ ベルト: 回るカードと固定端を1本の帯でつなぐ。回すほど帯がねじれる（面の色で表裏）。
+    function drawBelt(ctx, W, H) {
+        const bx = W / 2, cs = Math.min(W, H) * 0.11, rad = ang * Math.PI / 180;
+        ctx.save(); ctx.translate(bx, H * 0.16); ctx.rotate(rad);
+        ctx.fillStyle = P.navy; ctx.globalAlpha = 0.9; ctx.fillRect(-cs, -cs * 0.6, cs * 2, cs * 1.2); ctx.globalAlpha = 1;
+        ctx.strokeStyle = P.gold; ctx.lineWidth = 3; ctx.beginPath();
+        ctx.moveTo(0, cs * 0.4); ctx.lineTo(0, -cs * 0.4); ctx.lineTo(-cs * 0.22, -cs * 0.12);
+        ctx.moveTo(0, -cs * 0.4); ctx.lineTo(cs * 0.22, -cs * 0.12); ctx.stroke();
+        ctx.restore();
+        const y0 = H * 0.3, y1 = H * 0.94, hw = cs * 1.0, N = 64;
+        for (let i = 0; i < N; i++) {
+            const u0 = i / N, u1 = (i + 1) / N, p0 = rad * u0, p1 = rad * u1;
+            const yy0 = y0 + (y1 - y0) * u0, yy1 = y0 + (y1 - y0) * u1;
+            ctx.beginPath();
+            ctx.moveTo(bx + hw * Math.cos(p0), yy0);
+            ctx.lineTo(bx + hw * Math.cos(p1), yy1);
+            ctx.lineTo(bx - hw * Math.cos(p1), yy1);
+            ctx.lineTo(bx - hw * Math.cos(p0), yy0);
+            ctx.closePath();
+            ctx.fillStyle = Math.cos((p0 + p1) / 2) >= 0 ? P.navy : P.coral;
+            ctx.globalAlpha = 0.82; ctx.fill(); ctx.globalAlpha = 1;
+        }
+        ctx.fillStyle = P.mute; ctx.font = '11px sans-serif'; ctx.textAlign = 'center';
+        ctx.fillText('固定端（動かさない）', bx, y1 + 12);
+    }
+
+    const notes = {
+        hands: '担い手は物の半分の速さで回ります。だから物が一周しても担い手は半周（真後ろ＝−1）、二周でようやく戻ります（+1）。',
+        ball: '一周では糸が絡んで、そのままではほどけません。二周させると、球を回さず糸だけを動かしてほどけます（機械検証済みの ±1）。',
+        belt: '一周ぶんの帯のねじれは、そのままでは取れません。二周ぶんにすると、帯をカードの上に通して解けます（ディラックのベルトトリック）。',
+    };
 
     function draw() {
         const { ctx, W, H } = view;
         ctx.clearRect(0, 0, W, H);
-        const rad = ang * Math.PI / 180;
-        const sign = Math.cos(rad / 2);              // 担い手の符号 +1/−1
-        const twist = (1 - Math.cos(rad / 2)) / 2;   // 残るねじれ 0..1..0
-        const cardCx = W * 0.5, cardCy = H * 0.34, cs = Math.min(W, H) * 0.2;
-        // 回るカード（矢印つき）
-        ctx.save(); ctx.translate(cardCx, cardCy); ctx.rotate(rad);
-        ctx.fillStyle = P.navy; ctx.globalAlpha = 0.9;
-        ctx.fillRect(-cs, -cs * 0.66, cs * 2, cs * 1.32); ctx.globalAlpha = 1;
-        ctx.strokeStyle = P.gold; ctx.lineWidth = 3; ctx.beginPath();
-        ctx.moveTo(0, cs * 0.5); ctx.lineTo(0, -cs * 0.5); ctx.lineTo(-cs * 0.28, -cs * 0.18);
-        ctx.moveTo(0, -cs * 0.5); ctx.lineTo(cs * 0.28, -cs * 0.18); ctx.stroke();
-        ctx.restore();
-        // 下のつなぎ（ベルト）: ねじれ twist を可視化
-        const bx = W * 0.5, by0 = H * 0.58, by1 = H * 0.92, bw = Math.min(W, H) * 0.16;
-        const N = 40;
-        ctx.beginPath();
-        for (let e = 0; e < 2; e++) {
-            for (let i = 0; i <= N; i++) {
-                const u = i / N;
-                const phase = twist * Math.PI * 2 * u + (e ? Math.PI : 0);
-                const x = bx + Math.cos(phase) * bw * 0.5;
-                const y = by0 + (by1 - by0) * u;
-                i ? ctx.lineTo(x, y) : ctx.moveTo(x, y);
-            }
-        }
-        ctx.strokeStyle = P.coral; ctx.lineWidth = 2; ctx.globalAlpha = 0.85; ctx.stroke(); ctx.globalAlpha = 1;
-        ctx.fillStyle = P.mute; ctx.font = '11px sans-serif'; ctx.textAlign = 'center';
-        ctx.fillText('場とのつなぎ', bx, by1 + 4);
-        // 符号の大きな表示
-        ctx.fillStyle = sign >= 0 ? P.navy : P.coral;
-        ctx.font = '600 22px sans-serif'; ctx.textAlign = 'center';
-        ctx.fillText('符号 ' + (sign >= 0 ? '+' : '−') + Math.abs(sign).toFixed(2), W * 0.5, H * 0.5);
-
-        const closed = ang < 1 || Math.abs(ang - 720) < 1;
-        const half = Math.abs(ang - 360) < 1;
-        let msg;
-        if (closed && ang > 1) msg = '<b>720°：符号 +1・ねじれ 0 ＝ 本当に閉じた。</b>';
-        else if (half) msg = '<b>360°：物は戻ったのに符号は −1</b>。閉じたようで、つなぎのねじれが残っています。';
-        else msg = '回転 <b>' + Math.round(ang) + '°</b> ／ 担い手の符号 <b>' + (sign >= 0 ? '+' : '−') + Math.abs(sign).toFixed(2) + '</b>。';
-        st.innerHTML = msg + ' <span class="mw-note">符号は ±1 の2値で、二周でちょうど閉じ、累積しません。</span>';
+        if (mode === 'hands') drawHands(ctx, W, H);
+        else if (mode === 'ball') drawBall(ctx, W, H);
+        else drawBelt(ctx, W, H);
+        const at360 = Math.abs(ang - 360) < 2, at720 = Math.abs(ang - 720) < 2;
+        let head;
+        if (at720) head = '<b>720°（二周）：担い手も戻った ＝ +1。本当に閉じました。</b>';
+        else if (at360) head = '<b>360°（一周）：物は戻ったのに、担い手は真後ろ ＝ −1。</b>閉じたようで、閉じていません。';
+        else head = '回転 <b>' + Math.round(ang) + '°</b>（物は ' + (ang / 360).toFixed(2) + ' 周）／担い手は <b>' + Math.round(ang / 2) + '°</b>。';
+        st.innerHTML = head + ' <span class="mw-note">' + notes[mode] + '</span>';
     }
-    view.canvas.setAttribute('aria-label', '360°では符号が−1で閉じず、720°で+1になり本当に閉じる二重被覆。');
+    view.canvas.setAttribute('aria-label', '担い手は半分の速さで回るため、360°では真後ろ(−1)、720°で戻る(+1)二重被覆。裏の針・糸の球・ベルトの3通りで見る。');
     view.onResize = draw;
+    markMode();
     draw();
 }
 
