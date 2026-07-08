@@ -1,21 +1,23 @@
 # state.md — project-design
 
-## 🔄 セッション 2026-07-08 (seq04) — pd#128 Shared Spaces（L3）実装＋worktree掃除16本（公開は保留）
-- **HEAD**: develop=**a2421e8**（push 済み・同期）。main 未公開。
-- **pjdhiro 判断（今セッション）**: ①pd#128 の残り Shared Spaces を**今セッションで実装**（選択）②main 公開は**保留**（しっくり感判定を留保）③worktree 掃除は**自動生成のみ dirty な本だけ**。
+## ⏸ セッション終了 2026-07-08 (seq04) — pd#128 完了・main公開（0bd691f）・pd#128 close・worktree掃除21本
+- **HEAD**: develop=**32e24ee** / main=**0bd691f**（両方 push 済み・同期）。**Litt 三技法タスク（スキル・ワークフロー生成＋READER 適用）は main 公開まで完了**。
+- **pd#128 CLOSED**: 完了条件充足（L2 Micro-worlds 3図＋L3 Shared Spaces＋監査 RR-014 §G-4「適合 core fully adopted」＋バッジ honest 改訂）を確認しコメント付き close。
+- **main 公開**: pjdhiro 指示「いったんmainにマージして区切りましょう」→ develop 13コミット（Litt枠組み・D1-D4掃討・Micro-worlds・Shared Spaces・記録類）を --no-ff マージ。※Shared Spaces の「しっくり」明言はなし＝**暫定区切り**。磨く場合は新 issue / reopen。
+- **Litt 適合監査（最終）**: 生成物5点実在（CN-011・スキル2本・ハーネス・TEST 資産）／ルーブリック全項目 ✅（P1/P2/L1a-d/L2/L3 scope付き/K1）／総合「適合（core fully adopted）」。
+- **次アクション候補**: ①**GitHub Pages の新コンテンツ反映確認**（push 直後は旧キャッシュ・数分で反映見込み）②Shared Spaces 表現の磨き（任意）③視点ローテーション残・G10（持ち越し）④worktree `jolly-mestorf-9084d0`（本セッション実行分）の掃除。
+- **ログ**: pd `log-20260708-04.md` / 横断 `SESSION-20260708-04.md`
+- **pjdhiro 判断の経過**: ①Shared Spaces を今セッションで実装（選択）②公開は一旦保留→**「いったんマージして区切り」で公開に転換**③worktree 掃除は自動生成のみ→**全削除・齟齬防止の記録付き**に転換。
 - **#1 Shared Spaces（L3）実装（commit a2421e8）**: Litt 三技法の三つ目。対話的ギミックでなく**コンテンツパターン**——共有心的モデルの実体（RR-010 判定台帳＋公開リポジトリ）を READER §9「共有の場」小節で surface し、読者の参加導線を実在させた。**scope 付き**（非同期の公開作業台・リアルタイム共同編集ではない）。
   - バッジ「三つのうち二つ」→「三つとも」。L3 ⚠️→✅（scope 付き）。
   - honest 監査: RR-014 §G-4（第3回・L3 ✅）／CN-011 §2・§4／DESIGN-RULES §11（Shared Spaces パターン新設）。
   - 検証: static 11/11・アンカー欠損0・UTF-8 clean・LP 再ビルド（107,811 bytes）・localhost:3004 で配信確認（sandbox 切り分けで 200）。V3 反例探索（overclaim 検査）済み。
-  - **★公開ゲート**: 「✅ に達したか＝しっくり感」は pjdhiro 専権。今回 **公開は保留**。次アクション＝pjdhiro のしっくり判定 → OK なら develop→main マージ（Micro-worlds 3図＋Litt バッジ＋Shared Spaces を一括公開）。
+  - **★公開ゲート**: 「✅ に達したか＝しっくり感」は pjdhiro 専権。一旦保留の後、**「いったんマージして区切り」指示で main 公開（0bd691f）**。しっくりの明言はないため暫定区切り扱い。
 - **#3 worktree 掃除（完了・全21本削除）**: pjdhiro 指示「一度削除して必要なら作業し直す・齟齬防止に記録」。
   - **第1弾16本**（自動生成のみ dirty）＋**第2弾5本**（温存2＋未マージ3）を全削除。残存は develop 本体＋現 worktree `jolly-mestorf-9084d0`（自己削除不可）のみ。
   - **削除前に全数照合し記録**: `knowledge/meta/worktree-cleanup-20260708.md`（commit a285915）。固有コンテンツは**peaceful-williamson の SNS ファクトチェックログ1件のみ**→全文を記録に保存。他は develop/main 収録済み or 再生成可能 scratch/重複＝損失ゼロ。
   - **★齟齬発見（重要）**: `heuristic-ramanujan d1a245c fix(skills): pd#120` は **develop に別 SHA で完全収録済み**（残差0行）。ブランチ SHA だけで「未マージ=未反映」と誤認しないこと。pd#120 の「未反映」フラグ/TODO があっても実体は反映済み。
   - 温存2本の実体: charming-newton の未追跡 wiki/sources 5件は develop 追跡版と**バイト同一**（重複）／clever-sutherland の epmc_*.json 8件は EuropePMC 生応答 scratch（hitCount=0 が6件・0B 1件・hitCount=1 が2件・DOI で再取得可）。
-- **pd#128**: OPEN 継続（L2＋L3 実装で完了条件充足だが、L3 の公開＝しっくり判定が保留のため close 保留）。
-- **次アクション**: ①pd#128 L3 のしっくり判定 → main 公開（保留中）②温存2本の未追跡成果物の採否 ③未マージ3本の確認。
-- ログ: pd `log-20260708-04.md`（未作成）/ 横断（未作成）
 
 ## ⏸ セッション終了 2026-07-08 (seq03) — pd#128 Micro-worlds：720°だけ削除・他3図は採用（develop push 済み）
 - **HEAD**: develop=**b87f3ba**（push 済み・同期）。main 未公開（pjdhiro 判断）。
