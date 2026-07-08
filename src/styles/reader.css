@@ -351,6 +351,84 @@
 
 .mw-status .mw-note { color: var(--mute); }
 
+/* 理解度チェック（任意・五問）— 関門にしない自己チェック。
+ * DESIGN-RULES §0a 準拠: tokens と glow-card の上にのみ載せる。JS は src/reader-quiz.js。
+ * no-JS では選択肢は静的リストのまま、「答えと解説」details で同じ内容が読める。 */
+.reader-article .reader-quiz {
+    margin: 2.5rem 0;
+    padding: 1.75rem 1.5rem;
+}
+
+.quiz-q + .quiz-q {
+    margin-top: 1.75rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--glass-border-soft);
+}
+
+.quiz-question {
+    font-family: var(--sans);
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--ink);
+    margin: 0 0 0.75rem;
+}
+
+.quiz-choices {
+    list-style: lower-latin;
+    margin: 0 0 0.75rem;
+    padding-left: 1.75rem;
+}
+
+.quiz-choices li {
+    font-family: var(--sans);
+    font-size: 1rem;
+    margin: 0.45rem 0;
+    padding-left: 0.25rem;
+}
+
+/* JS が選択肢を包むボタン（押すとその場で答え合わせ）。タッチターゲット 44px 以上 */
+.quiz-choice {
+    display: block;
+    width: 100%;
+    text-align: left;
+    font-family: var(--sans);
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--mid);
+    background: var(--glass-bg-soft);
+    border: 1px solid var(--glass-border-soft);
+    border-radius: 8px;
+    padding: 0.6rem 0.9rem;
+    min-height: 44px;
+    cursor: pointer;
+    transition: background 0.15s ease, border-color 0.15s ease;
+}
+
+.quiz-choice:hover { background: var(--glass-bg-medium); }
+
+.quiz-choice.is-correct {
+    background: var(--navy);
+    border-color: var(--navy);
+    color: #fff;
+}
+
+.quiz-choice.is-wrong {
+    border-color: var(--coral);
+    color: var(--coral);
+}
+
+.quiz-status {
+    font-family: var(--sans);
+    font-size: 0.85rem;
+    line-height: 1.7;
+    color: var(--mid);
+    margin: 0.6rem 0 0;
+}
+
+/* 解説の details は「詳しく」ラベルでなく「答え合わせ」に */
+.reader-article details.quiz-explain > summary::after { content: "答え合わせ"; }
+.reader-article details.quiz-explain[open] > summary::after { content: "閉じる"; }
+
 .reader-footer {
     max-width: 760px;
     margin: 0 auto;
