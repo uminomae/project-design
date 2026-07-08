@@ -253,104 +253,6 @@
     content: "閉じる";
 }
 
-/* Micro-worlds（触って直感できる対話的環境・pd#128 / CN-011 §2「Micro-worlds」）
- * DESIGN-RULES §0a 準拠: 独自テーマを新造せず tokens と glow-card の上にのみ載せる。新色なし。
- * 各ウィジェットは src/reader-microworlds.js が canvas + コントロールをマウントする。 */
-.reader-article .microworld {
-    margin: 2.5rem 0;
-    padding: 1.5rem;
-}
-
-.microworld .mw-title {
-    font-family: var(--sans);
-    font-size: 0.95rem;
-    font-weight: 500;
-    color: var(--ink);
-    margin: 0 0 0.75rem;
-}
-
-.microworld .mw-fallback {
-    font-family: var(--serif-jp);
-    font-size: 0.9rem;
-    color: var(--mute);
-    margin: 0.75rem 0 0;
-}
-
-/* JS でマウントできた場合は no-JS フォールバック文を隠す（SEO/no-JS 用に DOM には残す） */
-.microworld.mw-ready .mw-fallback { display: none; }
-
-.mw-canvas {
-    display: block;
-    width: 100%;
-    height: auto;
-    touch-action: pan-y;
-}
-
-.mw-controls {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 0.6rem 0.9rem;
-    margin: 0.9rem 0 0.3rem;
-}
-
-.mw-btn {
-    font-family: var(--sans);
-    font-size: 0.85rem;
-    color: var(--navy);
-    background: var(--glass-bg-soft);
-    border: 1px solid var(--glass-border-soft);
-    border-radius: 8px;
-    padding: 0.5rem 0.9rem;
-    min-height: 44px;
-    cursor: pointer;
-    transition: background 0.15s ease, border-color 0.15s ease;
-}
-
-.mw-btn:hover { background: var(--glass-bg-medium); }
-
-.mw-btn.is-on {
-    background: var(--navy);
-    color: #fff;
-    border-color: var(--navy);
-}
-
-.mw-slider {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    font-family: var(--sans);
-    font-size: 0.82rem;
-    color: var(--mid);
-    flex: 1 1 220px;
-}
-
-.mw-slider input[type="range"] {
-    flex: 1;
-    min-width: 120px;
-    accent-color: var(--navy);
-}
-
-.mw-slider-label { white-space: nowrap; }
-
-.mw-status {
-    font-family: var(--sans);
-    font-size: 0.85rem;
-    line-height: 1.7;
-    color: var(--mid);
-    margin: 0.6rem 0 0;
-}
-
-.mw-status code {
-    font-family: "SF Mono", "Consolas", monospace;
-    font-size: 0.85em;
-    background: var(--glass-bg-medium);
-    border-radius: 4px;
-    padding: 0.05em 0.35em;
-}
-
-.mw-status .mw-note { color: var(--mute); }
-
 .reader-footer {
     max-width: 760px;
     margin: 0 auto;
@@ -367,7 +269,6 @@
     .reader-article { padding: 0 1.5rem 4rem; }
     .reader-figure { padding: 1rem; }
     .reader-table { padding: 0.75rem 1rem; }
-    .reader-article .microworld { padding: 1rem; }
 }
 
 @media (max-width: 480px) {
