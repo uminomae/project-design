@@ -52,7 +52,7 @@
       "@type": "Article",
       "headline": "なぜ 3 と 7 だけが特別なのか — 可除代数‑意識/組織仮説（読み物）",
       "inLanguage": "ja",
-      "dateModified": "2026-07-07",
+      "dateModified": "2026-07-08",
       "author": {"@type": "Person", "name": "pjdhiro"},
       "isPartOf": {"@type": "WebSite", "name": "プロジェクトデザイン論", "url": "https://uminomae.github.io/project-design/"}
     }
@@ -65,7 +65,7 @@
             <h1 class="glow-heading">なぜ 3 と 7 だけが特別なのか</h1>
             <p class="reader-subtitle glow-text">足し算ではなく、回転の掛け算の経営 — チームの 3 と 7 を数学で確かめる読み物</p>
             <p class="reader-meta glow-text">
-                最終更新: 2026-07-07 ／ 検証は進行中（§9 を随時更新）<br>
+                最終更新: 2026-07-08 ／ 検証は進行中（§9 を随時更新）<br>
                 <a href="https://github.com/uminomae/project-design/blob/main/knowledge/research/two-axis-closure/READER-division-algebra-consciousness-organization.md">正本 (GitHub)</a> ・
                 <a href="https://github.com/uminomae/project-design/issues/115">検証プログラム pd#115</a> ・
                 <a href="../index.html">プロジェクトデザイン論</a>
@@ -223,6 +223,11 @@
 <li><strong>3次元を回す（四元数 ℍ）</strong>：立体をなめらかに回すには、数を4つ束ねます。それが <code>i, j, k</code> です。四元数は、ゲームがキャラクターを回すのに今も使われている、本物の道具です。次の <a href="#3-なぜ-3-は特別か--掛け算ができる最小の人数">§3</a> の中心になります。</li>
 </ul>
 <p>この梯子を、ひとつずつ、たとえで確かめながら登っていきます。</p>
+<div class="microworld glow-card" data-microworld="complex-rotation" role="group" aria-label="対話：複素数の掛け算＝回転">
+<p class="mw-title">触ってみる — 掛けると、回る（大きさは変わらない）</p>
+<p class="mw-fallback">（この対話図は JavaScript で動きます。動かない環境では: 虚数 <code>i</code> を掛けることは「90度回す」ことです。何回掛けても大きさは 1 のまま、向きだけが 90度ずつ回ります。）</p>
+</div>
+
 <p><strong>ここで、正直に一つ。</strong> この梯子の段（数の世界の大きさ＝次元）は、1 → 2 → 4 → 8 と倍々に増え、そして 8 でぴたりと終わります。<strong>なぜ倍々で、なぜ 8 で止まるのか</strong>——その理由は、正直に言うと高校数学の外にあります。数学者たちがトポロジー（あとで出てくる「つむじ」の数学）で決着させた、深い結果です。ここは「そういう定理がある」とだけ受け取って、先へ進んで大丈夫です。この読み物で体を使って掴めるのは、各段の"性質"（掛けられる・割れる・順序が効く…）を一つずつ確かめる感触までで、"なぜ 1・2・4・8 だけなのか"の証明そのものではありません。そこは数学者にまかせる部分だ、と割り切ってください。</p>
 <hr />
 <h1 id="第i部-なぜ3と7--場と人本筋">第I部 なぜ3と7 — 場と人（本筋）</h1>
@@ -258,6 +263,11 @@
 </blockquote>
 <p>もう一つ大事なことがあります。<code>i·j = k</code> ですが <code>j·i = −k</code> です。逆回りだとマイナスになります。これは、向きを持った輪だ、ということです。つまり、順序が効きます。</p>
 <p><strong>手元で試せます。</strong> スマホ（か本）を1冊持って、机に伏せるように「前へ90度」倒し、続けて「右へ90度」回してみてください。今度は順番だけ入れ替えて、先に「右へ90度」→そのあと「前へ90度」。最後のスマホの向きが、さっきと違うはずです。同じ二つの回転でも、<strong>順番を変えると行き先が変わる</strong>——これが <code>i·j</code> と <code>j·i</code> で符号（向き）が変わる、ということの身体版です。「順序が効く」は、頭の中の話ではなく、手で確かめられる本物の現象です。</p>
+<div class="microworld glow-card" data-microworld="quaternion-order" role="group" aria-label="対話：四元数の非可換回転（順序が効く）">
+<p class="mw-title">触ってみる — 同じ2回転でも、順序で行き先が変わる</p>
+<p class="mw-fallback">（この対話図は JavaScript で動きます。動かない環境では: 左は「前へ90度→右へ90度」、右は「右へ90度→前へ90度」。同じ2つの回転でも、順序を変えると最後に手前へ来る面が違います。これが <code>i·j = k</code> と <code>j·i = −k</code> の身体版です。）</p>
+</div>
+
 <p>下の図を見てください。左が「2人＝はみ出す」、右が「3人＝収まる（四元数の三つ組）」です。同じ三角形を、人／じゃんけん／四元数の三通りで読むことができます。</p>
 <figure class="glow-card reader-figure"><svg width="100%" viewBox="0 0 680 440" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="2人でははみ出し、3人で答えが中に収まる（四元数の三つ組）">
 <defs><marker id="arC" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>
@@ -644,6 +654,11 @@
 
 <p>壊れ方の核心は、零因子です（<code>a≠0, b≠0</code> なのに <code>a·b=0</code> になること）。<a href="#3-なぜ-3-は特別か--掛け算ができる最小の人数">§3</a> で見たとおり、「×0 だけは取り消せない」のでした。結果のゼロからは、元を割り戻せません。ふつうの数では、この事故は0を掛けたときにしか起きません。ところが壊れた数の世界では、ゼロでないもの同士を掛けたのに、ゼロになります。つまり、誰も0を掛けていないのに、「復元不能」が仕組みに埋め込まれてしまいます。二つの非ゼロが結合して消える、これが割り算（解決）ができない、ということです。降りていく代償の梯子（Cayley–Dickson）は、こうです。<code>ℝ(順序)→ℂ(順序を失う)→ℍ(可換性を失う)→𝕆(結合性を失う)→𝕊(交代性と割り算を失う)</code>。（📖「交代性」とは、結合律の最後の名残です。同じ元が2回入る掛け算（x·(x·y) など）でだけカッコを外せる、という弱い保証です。𝕆 はこれをまだ持っていますが、𝕊＝16元数で失います）</p>
 <p><strong>もしも人間関係でいうなら</strong>、こうです。どちらも一人では元気なのに、組み合わさると何も生まれず、しかもほどけなくなる関係です。そう読むのが本仮説の見立てです（この対応には、まだ実証がありません。検証の現在地は <a href="#7-この調査でわかったこと--まとめ2026-07-03-更新">§7</a> です）。</p>
+<div class="microworld glow-card" data-microworld="zero-divisor" role="group" aria-label="対話：零因子（8を超えると割れなくなる）">
+<p class="mw-title">触ってみる — 非ゼロ×非ゼロ＝ゼロ が起きるのは、8 を超えてから</p>
+<p class="mw-fallback">（この対話図は JavaScript で動きます。動かない環境では: ℂ・ℍ・𝕆 では <code>|x·y| = |x|·|y|</code> がいつも成り立ち、非ゼロ同士の積は絶対にゼロになりません＝割り戻せます。ところが 𝕊（16元数）では、二つとも非ゼロなのに積がゼロになるペア、たとえば <code>(e₁+e₁₀)·(e₅+e₁₄)=0</code> があります＝割り戻せません。これが零因子で、機械検証済みです。）</p>
+</div>
+
 <details class="pd-column">
 <summary><strong>コラム（探索中の方向）— 割り算は「逆回転」: 量子のように巻き戻せる関わり</strong></summary>
 
@@ -1213,6 +1228,22 @@
 </ul>
 </details>
 
+<p><strong>この読み物のテスト方針は、「理解こそがボトルネック」という考え方に沿っています。</strong> AI が文章をいくらでも書ける時代に詰まるのは、書く速さではなく、読む側——人でも AI でも——が本当に理解できるか、です。そこでこの読み物は、Geoffrey Litt「Understanding is the new bottleneck for AI-assisted coding」（<a href="https://www.geoffreylitt.com/2026/07/02/understanding-is-the-new-bottleneck.html">参照</a>）が挙げる三つの手法にならってテストしています。三つとも、この読み物なりの形で実装しました（三つ目は、リアルタイムの共同編集ではなく、後述の「公開された作業台」という形です）。</p>
+<ul>
+<li>✅ <strong>解説を先に置き、理解度チェックで速度を調整する</strong>: 難しい話ほど背景と直感を先に出し、予備知識ゼロの AI 読者にこのページ <em>だけ</em> を読ませて、主旨や流れを取り違えないかを毎回テストします。取り違えが出たら、読者を賢くするのではなく <strong>ページのほうを直します</strong>。合格するまで公開を先に進めません。</li>
+<li>✅ <strong>触って確かめられる図（対話的な小世界）</strong>: 読むだけでなく、その場で触って挙動を直感できる図を置きました。<a href="#2-回る数--虚数そして四元数">§2</a> の「掛けると回る（大きさは変わらない）」と「同じ2回転でも順序で行き先が変わる」、<a href="#4-なぜ-7-は特別か--割り算までできる最大の人数">§4</a> の「非ゼロ×非ゼロ＝ゼロ（零因子）は 8 を超えてから」です（JavaScript が動かない環境では、同じ内容を短い文で読めるようにしてあります）。</li>
+<li>✅ <strong>読者と作り手が見方を重ねる共有の場</strong>: 見方を確定していく判定ループ（性質→読み候補→pjdhiro の判定→反映）も、その記録（判定台帳）も、この読み物と同じ公開リポジトリの中にあり、誰でも開いて「いま何が採用され・何が保留で・何が見送りか」を確かめられます。その「共有の作業台」の現在地と、あなたがそこに入る入口を、次の <a href="#共有の場--この読み物は公開の作業台の上にある">共有の場</a> にまとめました。ただしリアルタイムの共同編集ではなく、公開された非同期の作業台という形です。</li>
+</ul>
+<h3 class="glow-heading" id="共有の場--この読み物は公開の作業台の上にある">共有の場 — この読み物は、公開の作業台の上にある</h3>
+<p>この読み物は、できあがった結論を配っているのではありません。<strong>一人の人間（pjdhiro）と AI が、同じ台帳の上で「どの読み方を採るか」を少しずつ確定していく、その作業台そのものを公開しています</strong>。判定の記録（台帳）も、調査ファイルも、この文章を組み立てる手順も、すべて同じ公開リポジトリの中にあって、誰でも開けます。</p>
+<p>「共有された心の地図」というのは、大げさな言葉ではありません。pjdhiro と AI の頭の中で「いま何が決まっていて、何がまだ宙に浮いているか」がずれていると、次の一手を一緒には打てません。だから、その"いまの状態"を一枚の面にして、外からも見えるようにしてあります。</p>
+<p><strong>いま、この面の上で起きていること</strong>（詳しい中身は <a href="#7-この調査でわかったこと--まとめ2026-07-03-更新">§7 のスコアボード</a> と、リポジトリの判定台帳）:</p>
+<ul>
+<li><strong>採用</strong>: 「3 と 7 を"選べば"、掛け算と割り算を保ったまま拡張できる」（設計原理としての読み・v2）。</li>
+<li><strong>保留（まだ決めない）</strong>: 「実部・虚部が心の何に当たるか」「"解決できない組み合わせ"を単独で確定してよいか」「もつれは"二人の外にいる三人目"から始まるのか」——これらは急いで解かず、宙に浮かせたまま育てています（＝この読み物が"まだ終わっていない"中身）。</li>
+<li><strong>見送り</strong>: 「3 と 7 の人数でなければ成立しない」という強い読み（5・6 人チームは現に機能します）。</li>
+</ul>
+<p><strong>あなたも、同じ面に入れます。</strong> この読み物と台帳は公開されているので、中を読んで確かめることも、公開リポジトリを通じて見方を寄せることもできます。いちばん軽い入口は、この後の問い返し——「あなたのチームで『3人になったら急に回った／7人を超えて急に重くなった』と感じた経験はあるか」——に、あなたの手応えを重ねてみることです。それは、上の"保留"の欄を動かす、次の手がかりになります。</p>
 <hr />
 <details>
 <summary><strong>出典メモ — 本文の主張を支える調査ファイル（RR-xxx）の対応表</strong></summary>
@@ -1310,6 +1341,7 @@
 <li>数学: J. Baez "The Octonions"; Conway &amp; Smith "On Quaternions and Octonions"</li>
 <li>チーム研究: Wheelan (2009); Hackman &amp; Vidmar (1970); Klimek, Hanel &amp; Thurner (2009); Krackhardt の Simmelian tie 分析（書誌は RR-003 参照）</li>
 <li>感情研究: Russell (1980) circumplex; Posner, Russell &amp; Peterson (2005); Kuppens, Tuerlinckx, Russell &amp; Barrett (2013); Barrett (2017) 構成主義的情動理論（書誌とアクセスレベルは RR-004 参照）</li>
+<li>方法論: Geoffrey Litt "Understanding is the new bottleneck for AI-assisted coding" (2026) — 本読み物のテスト方針の下敷き（<a href="https://www.geoffreylitt.com/2026/07/02/understanding-is-the-new-bottleneck.html">geoffreylitt.com</a>）。適合監査は RR-014 §G、枠組みの接地は CN-011</li>
 </ul>
 
         </article>
@@ -1320,5 +1352,6 @@
         </footer>
     </div>
     <script type="module" src="../src/reader-app.js"></script>
+    <script type="module" src="../src/reader-microworlds.js"></script>
 </body>
 </html>
