@@ -367,11 +367,119 @@ function mountZeroDivisor(host) {
     draw();
 }
 
+// ============================================================
+// 4) ファノ平面のホーム三つ組（§4）
+//    7点・7線。どの点を選んでも、その点が入る線（ホーム三つ組）はちょうど3本。
+//    e₇（中心）も特別扱いでないことを、触って確かめられる。
+// ============================================================
+function mountFanoHome(host) {
+    const P = PAL();
+    const view = makeCanvas(host, 0.69);
+    const row = controls(host);
+    const st = status(host);
+
+    // 正本 MD の静的 SVG（viewBox 680×470 相当）と同じ配置
+    const PTS = [
+        [340, 70], [245, 235], [150, 400], [435, 235], [530, 400], [340, 400], [340, 290],
+    ]; // e1..e7（index 0..6）
+    const LINES = [
+        { m: [0, 1, 2] },                  // e1-e2-e3（左辺）
+        { m: [0, 3, 4] },                  // e1-e4-e5（右辺）
+        { m: [2, 5, 4] },                  // e3-e6-e5（下辺）
+        { m: [1, 3, 5], circle: true },    // e2-e4-e6（内接円）
+        { m: [0, 6, 5] },                  // e1-e7-e6（中線）
+        { m: [2, 6, 3] },                  // e3-e7-e4（中線）
+        { m: [1, 6, 4] },                  // e2-e7-e5（中線）
+    ];
+    const SUB = ['e₁', 'e₂', 'e₃', 'e₄', 'e₅', 'e₆', 'e₇'];
+    let sel = -1; // 選択中の点（-1 = なし）
+
+    button(row, '次の点へ', () => { sel = (sel + 1) % 7; draw(); });
+    button(row, '選択解除', () => { sel = -1; draw(); });
+
+    function xy(i) {
+        const s = view.W / 680;
+        return [PTS[i][0] * s, PTS[i][1] * s];
+    }
+    function homesOf(i) {
+        return LINES.filter(L => L.m.includes(i));
+    }
+    function strokeLine(ctx, L, color, width) {
+        ctx.strokeStyle = color; ctx.lineWidth = width;
+        const s = view.W / 680;
+        if (L.circle) {
+            ctx.beginPath(); ctx.arc(340 * s, 290 * s, 110 * s, 0, Math.PI * 2); ctx.stroke();
+        } else {
+            const ends = [L.m[0], L.m[L.m.length - 1]];
+            const [x1, y1] = xy(ends[0]), [x2, y2] = xy(ends[1]);
+            ctx.beginPath(); ctx.moveTo(x1, y1); ctx.lineTo(x2, y2); ctx.stroke();
+        }
+    }
+    function draw() {
+        const { ctx, W, H } = view;
+        ctx.clearRect(0, 0, W, H);
+        const homes = sel >= 0 ? homesOf(sel) : [];
+        const hi = [P.navy, P.gold, P.coral];
+        // 非選択の線は薄く、選択点のホーム3線は色つきで
+        LINES.forEach(L => { if (!homes.includes(L)) strokeLine(ctx, L, sel >= 0 ? P.faint : P.line, 1.2); });
+        homes.forEach((L, k) => strokeLine(ctx, L, hi[k], 2.8));
+        // 点
+        const s = W / 680;
+        const r = Math.max(10, 15 * s);
+        for (let i = 0; i < 7; i++) {
+            const [x, y] = xy(i);
+            const isSel = i === sel;
+            const inHome = homes.some(L => L.m.includes(i));
+            ctx.beginPath(); ctx.arc(x, y, isSel ? r * 1.25 : r, 0, Math.PI * 2);
+            ctx.fillStyle = isSel ? P.navy : '#fff';
+            ctx.globalAlpha = isSel ? 1 : (sel >= 0 && !inHome ? 0.45 : 1);
+            ctx.fill();
+            ctx.strokeStyle = isSel ? P.navy : P.mid; ctx.lineWidth = 1;
+            ctx.stroke();
+            ctx.fillStyle = isSel ? '#fff' : P.ink;
+            ctx.font = '13px sans-serif'; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+            ctx.fillText(SUB[i], x, y + 1);
+            ctx.globalAlpha = 1;
+        }
+        if (sel < 0) {
+            st.innerHTML = '点に触れる（タップ）か「次の点へ」で、一人を選んでください。その人が入る<b>3つの三つ組</b>が光ります。';
+        } else {
+            const partners = homesOf(sel).map(L => '(' + L.m.filter(i => i !== sel).sort((a, b) => a - b).map(i => SUB[i]).join(',') + ')').join('・');
+            st.innerHTML = '<b>' + SUB[sel] + '</b> のホーム三つ組は ' + partners + ' — <b>ちょうど3つ</b>。'
+                + (sel === 6 ? ' 中心の e₇ も、他の点と同じ扱いです。' : ' どの点を選んでも、必ず3つです。');
+        }
+    }
+    function pick(ev) {
+        const rect = view.canvas.getBoundingClientRect();
+        const px = ev.clientX - rect.left, py = ev.clientY - rect.top;
+        const s = view.W / 680;
+        const hitR = Math.max(18, 22 * s);
+        for (let i = 0; i < 7; i++) {
+            const [x, y] = xy(i);
+            if ((px - x) ** 2 + (py - y) ** 2 <= hitR * hitR) return i;
+        }
+        return -1;
+    }
+    view.canvas.addEventListener('pointermove', ev => {
+        const i = pick(ev);
+        view.canvas.style.cursor = i >= 0 ? 'pointer' : 'default';
+        if (i >= 0 && i !== sel) { sel = i; draw(); }
+    });
+    view.canvas.addEventListener('pointerdown', ev => {
+        const i = pick(ev);
+        if (i !== sel) { sel = i; draw(); }
+    });
+    view.canvas.setAttribute('aria-label', 'ファノ平面。どの点もちょうど3本の線に入っている。点を選ぶとその3本が強調される。');
+    view.onResize = draw;
+    draw();
+}
+
 // ---- ディスパッチ ----
 const MOUNTS = {
     'complex-rotation': mountComplexRotation,
     'quaternion-order': mountQuaternionOrder,
     'zero-divisor': mountZeroDivisor,
+    'fano-home': mountFanoHome,
 };
 function init() {
     document.querySelectorAll('[data-microworld]').forEach(host => {
