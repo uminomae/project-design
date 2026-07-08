@@ -107,7 +107,20 @@ critic 判定: **確度評価は全件妥当・過大評価なし**（Furey を 
 
 **総合判定: 適合（core adopted）** — Litt が最も重視する運用「解説＋speed regulator」（P・T1・L1d）は ✅ で実装済み。Micro-worlds／Shared Spaces（L2/L3）は ⚠️ 未実装だが、**欠落を明示**した上での適合。バッジ表記は honest 要件を満たす（未実装を実装済みと書かない）。
 
-**残（別 issue 候補・pjdhiro 承認待ち）**: L2 Micro-worlds（読者が触って挙動を直感できる対話的可視化）／L3 Shared Spaces（人間と AI・読者間で見方を確定する共有面）の READER 実装。CN-011 §2/§4 に記録済み。
+**残（別 issue 候補・pjdhiro 承認待ち）**: L2 Micro-worlds（読者が触って挙動を直感できる対話的可視化）／L3 Shared Spaces（人間と AI・読者間で見方を確定する共有面）の READER 実装。CN-011 §2/§4 に記録済み。→ **L2 は第2回で解消（pd#128）**。
+
+## G-2. Litt 適合監査 第2回（reader-litt-conformance・2026-07-08・pd#128 実装後）
+
+方法: 第1回と同じルーブリック。pd#128 で **Micro-worlds（L2）を READER に実装**した後の再監査。実装は `src/reader-microworlds.js`（vanilla・依存なし・DESIGN-RULES §0a 準拠）。数理核（Cayley–Dickson 乗算・八元数の合成則・16元数零因子 (e₁+e₁₀)(e₅+e₁₄)=0）は node で機械検証済み。
+
+| 項目 | 第1回 | 第2回 | ページ内の根拠（第2回） |
+|---|---|---|---|
+| L2 Micro-worlds（対話的環境） | ⚠️ | ✅ | 触れる小世界を4つ実装：§2「掛けると回る（\|z·y\|=\|z\|\|y\|）」「同じ2回転・順序で行き先が変わる（i·j=k / j·i=−k）」、§4「零因子＝非ゼロ×非ゼロ=0 は 8 を超えてから」、§5「360°で−1・720°で+1（二重被覆）」。no-JS フォールバック文つき |
+| L3 Shared Spaces（共有面） | ⚠️ | ⚠️ | 未実装のまま。判定ループはページ外。§9 バッジで**欠落を明示**（honest 維持） |
+
+**総合判定（第2回）: 適合（core adopted, 3技法中2実装）** — Explanations＋speed regulator（✅）に加え、Micro-worlds（✅）が実装され、Litt の三技法のうち二つを満たす。Shared Spaces（L3）のみ ⚠️ 未実装だが、§9 で正直に明示。バッジ表記は honest 要件を満たす（未実装を実装済みと書かない）。
+
+**残**: L3 Shared Spaces（人間と AI・読者間で見方を確定する共有面）の READER 実装のみ。pd#128 のスコープ判断（2026-07-08 pjdhiro）で「Micro-worlds のみ」を選択したため、L3 は別途。
 
 ## 関連
 

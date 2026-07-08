@@ -244,3 +244,18 @@ pjdhiro との対話で生まれたパターン（pd#110, 2026-05-31）。pd の
 | 「コラム」 | 本筋から独立した寄り道・補足 | `<details class="pd-column">` | 背景透過・破線枠・影なし・summary 縮小・開閉ラベル「寄り道」 |
 
 背景: pjdhiro 指示「全く全体の話と無関係な事柄は同列に並べるべきでない。補足的な位置付けであることが明確な方が良い」。正本ルールは two-axis-closure README §3 ルール22。
+
+## 10. Micro-worlds（触って直感できる対話的図・コンテンツパターン）
+
+pd#128（2026-07-08, pjdhiro スコープ判断「Micro-worlds のみ・4図全部」）で確立。Litt 三技法の一つ「Micro-worlds」（CN-011 §2）を読み物に実装するパターン。読者が**その場で触って挙動を直感**できる対話的可視化を置く。
+
+| 項目 | ルール |
+|------|--------|
+| 配置 | 正本 MD に空のプレースホルダ `<div class="microworld glow-card" data-microworld="{kind}" role="group" aria-label="…">` を書く。中に `<p class="mw-title">` と `<p class="mw-fallback">`（no-JS 用の短い説明文）だけを置く |
+| 実装 | `src/reader-microworlds.js`（vanilla・**依存ライブラリなし**）が `[data-microworld]` を探して canvas＋コントロールをマウントする。インライン `<script>` や埋め込み SVG は書かない（後処理で glow-card に二重包装されるため SVG は JS 生成に限る） |
+| VI | §0a 準拠。色は `getComputedStyle` で tokens（`--ink/--navy/--gold/--coral/--mid/--mute`）を読む。新色ハードコード禁止。パネルは `glow-card`、スタイルは `reader.css` の `.mw-*` |
+| 表示保証 | 折りたたみ `<details>` 内でも壊れないよう **`ResizeObserver`** で開閉・リサイズを拾って再描画する（`window.resize` だけに頼らない） |
+| アクセシビリティ | コントロールは実体 `<button>`/`<input type=range>`（キーボード可・44px 以上）。状態は `aria-live` の `.mw-status` で読み上げる。JS 不可環境は `.mw-fallback` の文が残る（`.mw-ready` で JS 時のみ隠す・SEO/no-JS 発見性 seo-llm.md 準拠） |
+| 正確さ | 図が主張する数理は機械検証してから出す（Cayley–Dickson 乗算・八元数の合成則・16元数零因子は node で検証。RR-014 §G-2） |
+
+却下しない代替として、静的 SVG は引き続き併用してよい（Micro-worlds は静的図を**置き換えず補う**）。監査は skill `reader-litt-conformance`。
