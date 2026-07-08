@@ -49,10 +49,30 @@ def main() -> None:
     # 見出しは .glow-heading（本文の glow は article 側の .glow-text が担う）
     html = re.sub(r"<h([23])( |>)", lambda m: f'<h{m.group(1)} class="glow-heading"' + (" " if m.group(2) == " " else ">"), html)
     # 図版（インライン SVG）と表は .glow-card の白ガラスパネルに載せる
-    html = re.sub(r"(<svg\b.*?</svg>)", r'<figure class="glow-card reader-figure">\1</figure>', html, flags=re.S)
+    # SVG 直後の <figcaption> は同じ figure に含める（正本 MD 側で </svg> の次行に置く）
+    html = re.sub(
+        r"(<svg\b.*?</svg>)(\s*<figcaption>.*?</figcaption>)?",
+        lambda m: '<figure class="glow-card reader-figure">' + m.group(1) + (m.group(2) or "") + "</figure>",
+        html, flags=re.S,
+    )
     html = re.sub(r"(<table\b.*?</table>)", r'<div class="glow-card reader-table">\1</div>', html, flags=re.S)
     # 引用・コールアウト（lede/📖/仮説ボックス）はガラスパネルに載せる（シェーダー上の可読性）
     html = html.replace("<blockquote>", '<blockquote class="glow-card reader-callout">')
+
+    # 目次: 本文の h1（部）/ h2（章）から生成し、正本 MD の <!--TOC--> 位置に挿す
+    toc_items = []
+    for level, hid, text in re.findall(r'<h([12])[^>]*\bid="([^"]+)"[^>]*>(.*?)</h\1>', html, flags=re.S):
+        label = re.sub(r"<[^>]+>", "", text).strip()
+        cls = ' class="reader-toc-part"' if level == "1" else ""
+        toc_items.append(f'<li{cls}><a href="#{hid}">{label}</a></li>')
+    toc_html = (
+        '<nav class="reader-toc glow-card" aria-label="目次">'
+        '<p class="reader-toc-title">目次</p>'
+        "<ol>" + "".join(toc_items) + "</ol></nav>"
+    )
+    if "<!--TOC-->" not in html:
+        sys.exit("ERROR: <!--TOC--> marker not found in generated body")
+    html = html.replace("<!--TOC-->", toc_html, 1)
 
     page = TPL.read_text(encoding="utf-8")
     page = page.replace("<!--BODY-->", html).replace("<!--UPDATED-->", updated)

@@ -362,6 +362,66 @@
     color: var(--mute);
 }
 
+/* 図のキャプション（B4: 全 SVG に 1 行要旨） */
+.reader-figure figcaption {
+    margin-top: 0.8rem;
+    font-family: var(--sans);
+    font-size: 0.82rem;
+    line-height: 1.7;
+    color: var(--mute);
+    text-align: center;
+}
+
+/* 目次（A1: build-reader-lp.py が h1/h2 から生成） */
+.reader-toc {
+    margin: 2.5rem 0;
+    padding: 1.4rem 1.8rem;
+    font-family: var(--sans);
+}
+
+.reader-toc-title {
+    margin: 0 0 0.7rem;
+    font-size: 0.95rem;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    color: var(--ink);
+}
+
+.reader-toc ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.reader-toc li {
+    margin: 0.3rem 0;
+    font-size: 0.9rem;
+    line-height: 1.7;
+}
+
+.reader-toc li.reader-toc-part {
+    margin-top: 0.9rem;
+    font-weight: 500;
+}
+
+.reader-toc li.reader-toc-part:first-child { margin-top: 0; }
+
+.reader-toc li:not(.reader-toc-part) { padding-left: 1em; }
+
+/* 検証ステータスバッジ（D3） */
+.reader-status-badge {
+    display: inline-block;
+    padding: 0.18em 0.85em;
+    margin-bottom: 0.35em;
+    border: 1px solid var(--gold);
+    border-radius: 999px;
+    background: var(--glass-bg-medium);
+    color: var(--gold);
+    font-family: var(--sans);
+    font-size: 0.78rem;
+    letter-spacing: 0.08em;
+}
+
 @media (max-width: 768px) {
     .reader-hero { padding: 4rem 1.5rem 1rem; }
     .reader-article { padding: 0 1.5rem 4rem; }
