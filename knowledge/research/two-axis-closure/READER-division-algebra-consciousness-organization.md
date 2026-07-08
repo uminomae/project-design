@@ -1152,6 +1152,11 @@ v1 から締め直したのは、「解決（割り算）」の測り方を、�
 
 </details>
 
+**この読み物のテスト方針は、「理解こそがボトルネック」という考え方に沿っています。** AI が文章をいくらでも書ける時代に詰まるのは、書く速さではなく、読む側——人でも AI でも——が本当に理解できるか、です。そこでこの読み物は、Geoffrey Litt「Understanding is the new bottleneck for AI-assisted coding」（[参照](https://www.geoffreylitt.com/2026/07/02/understanding-is-the-new-bottleneck.html)）が挙げる三つの手法にならってテストしています。正直に言うと、実装できているのは一つ目だけです。
+
+- ✅ **解説を先に置き、理解度チェックで速度を調整する**: 難しい話ほど背景と直感を先に出し、予備知識ゼロの AI 読者にこのページ *だけ* を読ませて、主旨や流れを取り違えないかを毎回テストします。取り違えが出たら、読者を賢くするのではなく **ページのほうを直します**。合格するまで公開を先に進めません。
+- ⚠️ **触って確かめられる図（対話的な小世界）／読者と作り手が見方を重ねる共有の場**: この二つはまだ実装していません。これからの宿題として、正直に残しておきます。
+
 ---
 
 <details>
@@ -1204,3 +1209,4 @@ v1 から締め直したのは、「解決（割り算）」の測り方を、�
 - 数学: J. Baez "The Octonions"; Conway & Smith "On Quaternions and Octonions"
 - チーム研究: Wheelan (2009); Hackman & Vidmar (1970); Klimek, Hanel & Thurner (2009); Krackhardt の Simmelian tie 分析（書誌は RR-003 参照）
 - 感情研究: Russell (1980) circumplex; Posner, Russell & Peterson (2005); Kuppens, Tuerlinckx, Russell & Barrett (2013); Barrett (2017) 構成主義的情動理論（書誌とアクセスレベルは RR-004 参照）
+- 方法論: Geoffrey Litt "Understanding is the new bottleneck for AI-assisted coding" (2026) — 本読み物のテスト方針の下敷き（<a href="https://www.geoffreylitt.com/2026/07/02/understanding-is-the-new-bottleneck.html">geoffreylitt.com</a>）。適合監査は RR-014 §G、枠組みの接地は CN-011

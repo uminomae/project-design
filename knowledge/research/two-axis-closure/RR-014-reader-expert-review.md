@@ -89,6 +89,26 @@ critic 判定: **確度評価は全件妥当・過大評価なし**（Furey を 
 
 **残（判定待ち・キューへ追加）**: §7 結果4 の「全国調査70件・量子論の等式」に研究名を本文表記するか（QQ 等式・RR-006 で一次確認済みの分）＝ RR-010 **D8**／§7 の匿名実証研究群（329グループ・276人組織・センサーバッジ・内閣サイズ）に書誌の一行対応をページ内に置くか＝ RR-010 **D9**。第1回からの持ち越し（CN-009 深掘り・生存-信頼軸の中身・場を取り巻くエネルギー）は既存キューのまま。
 
+## G. Litt 適合監査 第1回（reader-litt-conformance・2026-07-08）
+
+方法: スキル `reader-litt-conformance` のルーブリックで、Litt "Understanding is the new bottleneck"（`https://www.geoffreylitt.com/2026/07/02/understanding-is-the-new-bottleneck.html`）の三技法＋運用原則に対し READER を採点。支柱は CN-011。
+
+| 項目 | 判定 | ページ内の根拠 |
+|---|---|---|
+| P1 進捗ごとに育てる自己記述 | ✅ | 「この読み物は、まだ終わっていません…進捗があるたびに、このページ自体を書き直します」 |
+| P2 理解＝創造的参加のため | ✅ | §9「人間は問いと判定、AI は調査と候補」＝参加を残す設計 |
+| L1a 背景先行 | ✅ | §0 体験 → §1 問い → §2 直感「回る数」→ 形式、の順 |
+| L1b literate narration | ✅ | §7 スコアボードが「何が死んだか」を散文で語る |
+| L1c 概念の図示・比喩 | ✅ | 棄却の三層段差表＋日常比喩（ルール12）、§1 地図 SVG |
+| **L1d 理解度クイズ＝speed regulator** | ✅ | **LLM 読解テスト（TEST-*・本 RR の F/F-2）。合格まで公開を進めない（ルール16）** |
+| L2 Micro-worlds（対話的環境） | ⚠️ | 静的 SVG＋装飾 WebGL のみ。触って直感できる環境は無し |
+| L3 Shared Spaces（共有面） | ⚠️ | 判定ループはページ外（RR-010 台帳・対話）。ページ上の共有導線は無し |
+| K1 augment-not-automate | ✅ | 役割分担で人間に問い・判定を残す（Kay 系譜を体現） |
+
+**総合判定: 適合（core adopted）** — Litt が最も重視する運用「解説＋speed regulator」（P・T1・L1d）は ✅ で実装済み。Micro-worlds／Shared Spaces（L2/L3）は ⚠️ 未実装だが、**欠落を明示**した上での適合。バッジ表記は honest 要件を満たす（未実装を実装済みと書かない）。
+
+**残（別 issue 候補・pjdhiro 承認待ち）**: L2 Micro-worlds（読者が触って挙動を直感できる対話的可視化）／L3 Shared Spaces（人間と AI・読者間で見方を確定する共有面）の READER 実装。CN-011 §2/§4 に記録済み。
+
 ## 関連
 
 - 対象: `READER-division-algebra-consciousness-organization.md`（B の修正を反映済み）
