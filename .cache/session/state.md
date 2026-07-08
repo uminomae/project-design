@@ -1,5 +1,20 @@
 # state.md — project-design
 
+## ⏸ セッション終了 2026-07-08 (seq02) — Litt「理解=ボトルネック」枠組みの取り込み＋D1-D4掃討＋pd#128（worktree→develop マージ・push 済み）
+- **HEAD**: develop=**691265d**（push 済み・同期）。main 未公開（READER §9 の Litt バッジが公開ページに出るため pjdhiro 判断待ち）。
+- **作業経路**: worktree `youthful-bun-bdd44d`（branch `claude/practical-satoshi-e04cca`）で 3 コミット → 主 worktree の develop へ `--no-ff` マージ（`691265d`・**衝突なし自動解決**。私の §9 バッジと seq01 の冒頭「ひとことで」は別領域で共存。reader html は再生成）。
+- **到達点**:
+  - **Litt 枠組み取り込み**: `https://www.geoffreylitt.com/2026/07/02/understanding-is-the-new-bottleneck.html` を pd 資産に接地。
+    - CN-011 新設（三技法 × pd 対応表。READER=Explanations／LLM 読解テスト=speed regulator）。
+    - skill **reader-comprehension**（執筆＋読解テスト反復）／**reader-litt-conformance**（Litt 三技法の適合監査・✅⚠️❌ ルーブリック・公開前ゲート）。
+    - RR-014 §G 適合監査 第1回 → **「適合(core adopted)」**（speed regulator ✅／Micro-worlds・Shared Spaces ⚠️ 未実装・明示）。
+    - READER §9＋参照に「この手法に沿ってテスト」バッジ＋Litt URL（未実装2技法を honest に明示）。
+  - **D1-D4 表記の全掃討**: 概念参照を用語名へ（kesson-bridge/project-history/project-overview/CN-005/CN-007/CN-008/index）。除外＝origin-survey の30領域番号・canonical-keywords ルール文・trust pilot タグ・two-axis の"D=二者"コード/設問ID。**revert 記録** `knowledge/meta/migration-D1-D4-notation-20260708.md`＋CLAUDE.md に**⏳2027-07-08 期限の注記**。自動逆置換は禁止と明記。
+  - **pd#128 起票**（pjdhiro 承認）: [pd#127 子] READER に Micro-worlds/Shared Spaces を実装。https://github.com/uminomae/project-design/issues/128
+- **品質**: LP 再生成・static 11/11・UTF-8 clean・両機能（Litt バッジ＋ひとことで）html 反映確認。
+- **次アクション**: ①main 公開（Litt バッジ含む）は pjdhiro 判断 ②pd#128 実装着手判断 ③worktree `youthful-bun-bdd44d` はマージ済み＝remove 可（セッション内では自己削除不可・次回 Main が掃除）。
+- ログ: pd `log-20260708-02.md` / 横断 `SESSION-20260708-02.md`
+
 ## ⏸ セッション終了 2026-07-08 (seq01) — 「ひとことで（持ち帰り）」適用＋#127 develop 群を main 公開
 - **HEAD**: develop=**（下記マージ後 SHA）**。main=**（マージコミット SHA）**（公開）。両 push 済み・同期。
 - **今セッションの到達点**:
