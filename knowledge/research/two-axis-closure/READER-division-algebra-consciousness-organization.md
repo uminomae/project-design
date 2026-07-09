@@ -348,6 +348,34 @@ i·j = k,   j·k = i,   k·i = j
 （探索中の対応であり、確定した主張ではありません）
 </details>
 
+<div class="reader-quiz glow-card" data-quiz role="group" aria-label="理解度テスト（任意）">
+<p class="quiz-label">理解度テスト</p>
+<div class="quiz-q" data-quiz-answer="b">
+<p class="quiz-question"><strong>Q1.</strong> 「足し算ではなく、掛け算の経営」——この読み物で「回転の掛け算」がしていることは、どれでしょう。</p>
+<ol class="quiz-choices">
+<li data-choice="a">各人の力を掛け合わせて、一人ひとりの大きさを何倍にも増やす</li>
+<li data-choice="b">各人のタイミング（位相）をそろえる。大きさそのものは変えない</li>
+<li data-choice="c">一人が複数の役割を掛け持ちして、やりとりの経路を減らす</li>
+</ol>
+<details class="quiz-explain">
+<summary><strong>答えと解説</strong></summary>
+<p>答えは <strong>b</strong> です。回転の掛け算は、各人の大きさを変えません（<code>|x·y| = |x|·|y|</code>・機械検証済み）。「掛け算＝増幅」と感じるのはとても自然で、増える現象自体は実在します。ただしそれが起きるのは、回転（掛け算）の側ではなく、波の重ね合わせ（足し算）の側です。拍手・ブランコ・海の波と同じで、強いから大きくなるのではなく、そろうから大きくなります（<a href="#3-なぜ-3-は特別か--掛け算ができる最小の人数">§3</a>）。</p>
+</details>
+</div>
+<div class="quiz-q" data-quiz-answer="c">
+<p class="quiz-question"><strong>Q2.</strong> なぜ「3人」が特別なのか——この読み物が挙げる理由は、どれでしょう。</p>
+<ol class="quiz-choices">
+<li data-choice="a">3人なら多数決が同数で割れず、必ず決着がつくから</li>
+<li data-choice="b">心理学の実験で、3人チームが最も生産的だと証明されているから</li>
+<li data-choice="c">どの二人の掛け算（回し方の合成）も、ちょうど三人目に着地する、いちばん小さい人数だから</li>
+</ol>
+<details class="quiz-explain">
+<summary><strong>答えと解説</strong></summary>
+<p>答えは <strong>c</strong> です（<code>i·j = k</code>。答えが三人の中に収まる。<a href="#3-なぜ-3-は特別か--掛け算ができる最小の人数">§3</a>）。a の「奇数なら同数で割れない」は実在する算術ですが、それは多数決の話で、この読み物の理由ではありません。b のような「ちょうど3人が最適」という実証はなく、実証が言えるのは「最適3〜5人」という帯までです（<a href="#7-実証と突き合わせる--何が外れ何が残ったか">§7</a>）。</p>
+</details>
+</div>
+</div>
+
 ---
 
 ## 4. なぜ 7 は特別か — 割り算までできる最大の人数
@@ -548,6 +576,22 @@ i·j = k,   j·k = i,   k·i = j
 <figcaption>1人を区別すると、その人を通る3本が残り6人を3組のペアに割る——残る4本は自走のまま</figcaption>
 
 区別された1人を通る三つ組は、ちょうど3本です。この3本が、残り6人を3つの二人組に完全に仕分けて、全員に直接届きます。残りの4本は、その人を通らず、ピアだけで自走します。各フォロワーは「縦1本＋横2本」を持ちます。だから、1人のリーダーが全体を統べることは、構造上できません（7本のうち4本は、分散のままです）。
+
+<div class="reader-quiz glow-card" data-quiz role="group" aria-label="理解度テスト（任意）">
+<p class="quiz-label">理解度テスト</p>
+<div class="quiz-q" data-quiz-answer="a">
+<p class="quiz-question"><strong>Q3.</strong> なぜ「7人」が上限なのか——この読み物が挙げる理由は、どれでしょう。</p>
+<ol class="quiz-choices">
+<li data-choice="a">掛け算も割り算も閉じる数の世界が8次元で終わり、人に対応する虚の方向が7本までだから</li>
+<li data-choice="b">人間の短期記憶が「7±2項目」までだから</li>
+<li data-choice="c">8人になるとやりとりの経路が28本に増えて、管理しきれなくなるから</li>
+</ol>
+<details class="quiz-explain">
+<summary><strong>答えと解説</strong></summary>
+<p>答えは <strong>a</strong> です（分類定理。<a href="#4-なぜ-7-は特別か--割り算までできる最大の人数">§4</a>）。b の 7±2 は実在する有名な結果ですが、あれは短期記憶の項目数の話で、出どころが違います（<a href="#8-よくある誤解">§8</a>）。c のコスト計算も実在しますが、あれは「なめらかに重くなる」話で、7 と 8 のあいだに特別な崖を作りません（<a href="#1-pjdhiro-の問い">§1</a> の補足）。</p>
+</details>
+</div>
+</div>
 
 ---
 
@@ -788,6 +832,22 @@ i·j = k,   j·k = i,   k·i = j
 （いずれも仮の説明であり、読みの採否は確定していません。後から修正します）
 </details>
 
+<div class="reader-quiz glow-card" data-quiz role="group" aria-label="理解度テスト（任意）">
+<p class="quiz-label">理解度テスト</p>
+<div class="quiz-q" data-quiz-answer="c">
+<p class="quiz-question"><strong>Q4.</strong> この読み物は「人数 ＝ 次元 − 1」で数えます（4次元＝3人、8次元＝7人）。1を引くのは、なぜでしょう。</p>
+<ol class="quiz-choices">
+<li data-choice="a">リーダーの1人を、メンバーとは別枠で数えるから</li>
+<li data-choice="b">数学の慣習として、単位元の「1」は数えないことになっているから</li>
+<li data-choice="c">実軸の1本を、人ではなく「場」とみなす読み方を、この読み物が置いているから</li>
+</ol>
+<details class="quiz-explain">
+<summary><strong>答えと解説</strong></summary>
+<p>答えは <strong>c</strong> です（<a href="#5-なぜ実部を人数に数えないのか--場と人">§5</a>）。実軸が単位元 1 の方向であること自体は本当なので、b はかなり近いのですが、「慣習でそう決まっている」のではありません。場を実軸・人を虚軸とみるのは、この読み物が選んで置いた中心的な仮定で、数学の事実でも慣習でもなく、まだ検証の途中です（<a href="#7-実証と突き合わせる--何が外れ何が残ったか">§7</a>）。</p>
+</details>
+</div>
+</div>
+
 ---
 
 ## 6. 帰結 — なぜ3と7に落ち着くか
@@ -1013,6 +1073,22 @@ v1 から締め直したのは、「解決（割り算）」の測り方を、�
 
 仮説は縮んだのではありません。「何でも説明する物語」から、「外れうる予測を持つ仮説」に変わりました。
 
+<div class="reader-quiz glow-card" data-quiz role="group" aria-label="理解度テスト（任意）">
+<p class="quiz-label">理解度テスト</p>
+<div class="quiz-q" data-quiz-answer="b">
+<p class="quiz-question"><strong>Q5.</strong> ここまでで、「この読み物が言えること」として残っている範囲は、どれでしょう。</p>
+<ol class="quiz-choices">
+<li data-choice="a">チームは3人か7人で組むのがよく、5人や6人は避けたほうがいい</li>
+<li data-choice="b">「3人か7人を選ぶと、余計な調整コストなしに、構造だけで掛け算と割り算の性質を保てる」という設計上の目安</li>
+<li data-choice="c">数学の定理によって、3と7が最適な人数だと証明されている</li>
+</ol>
+<details class="quiz-explain">
+<summary><strong>答えと解説</strong></summary>
+<p>答えは <strong>b</strong> です（<a href="#7-実証と突き合わせる--何が外れ何が残ったか">§7</a>）。a のような強い読み（「3と7しかない」）は、チーム研究と突き合わせて見送りになりました。5人・6人のチームも普通に機能します。c については、定理が保証するのは「次元 1・2・4・8 で終わる」ことまでで、それを人に当てはめる部分は、この読み物が置いた仮定です（<a href="#8-よくある誤解">§8</a>）。</p>
+</details>
+</div>
+</div>
+
 ---
 
 ## 8. よくある誤解
@@ -1209,76 +1285,6 @@ v1 から締め直したのは、「解決（割り算）」の測り方を、�
 
 # 末尾（共通）
 
-## 理解度チェック — 五つの質問（任意）
-
-本筋（第I部）の内容を、五つの質問で振り返れるようにしました。**関門ではありません**。答えなくても、間違えても構いませんし、まるごと飛ばしても本筋の理解には影響しません。選択肢を押すと、その場で答え合わせができます（JavaScript が動かない環境でも、各質問の「答えと解説」を開けば同じ内容が読めます）。
-
-もう一つ、先に言っておきたいことがあります。もし違う選択肢のほうが自然に見えたなら、それはあなたの読み違いというより、**このページの書き方の欠陥かもしれません**。この読み物は「誤読はページ側の問題として直す」という方針で運用しています。
-
-<div class="reader-quiz glow-card" data-quiz role="group" aria-label="理解度チェック（任意・五問）">
-<div class="quiz-q" data-quiz-answer="b">
-<p class="quiz-question"><strong>Q1.</strong> 「足し算ではなく、掛け算の経営」——この読み物で「回転の掛け算」がしていることは、どれでしょう。</p>
-<ol class="quiz-choices">
-<li data-choice="a">各人の力を掛け合わせて、一人ひとりの大きさを何倍にも増やす</li>
-<li data-choice="b">各人のタイミング（位相）をそろえる。大きさそのものは変えない</li>
-<li data-choice="c">一人が複数の役割を掛け持ちして、やりとりの経路を減らす</li>
-</ol>
-<details class="quiz-explain">
-<summary><strong>答えと解説</strong></summary>
-<p>答えは <strong>b</strong> です。回転の掛け算は、各人の大きさを変えません（<code>|x·y| = |x|·|y|</code>・機械検証済み）。「掛け算＝増幅」と感じるのはとても自然で、増える現象自体は実在します。ただしそれが起きるのは、回転（掛け算）の側ではなく、波の重ね合わせ（足し算）の側です。拍手・ブランコ・海の波と同じで、強いから大きくなるのではなく、そろうから大きくなります（<a href="#3-なぜ-3-は特別か--掛け算ができる最小の人数">§3</a>）。</p>
-</details>
-</div>
-<div class="quiz-q" data-quiz-answer="c">
-<p class="quiz-question"><strong>Q2.</strong> なぜ「3人」が特別なのか——この読み物が挙げる理由は、どれでしょう。</p>
-<ol class="quiz-choices">
-<li data-choice="a">3人なら多数決が同数で割れず、必ず決着がつくから</li>
-<li data-choice="b">心理学の実験で、3人チームが最も生産的だと証明されているから</li>
-<li data-choice="c">どの二人の掛け算（回し方の合成）も、ちょうど三人目に着地する、いちばん小さい人数だから</li>
-</ol>
-<details class="quiz-explain">
-<summary><strong>答えと解説</strong></summary>
-<p>答えは <strong>c</strong> です（<code>i·j = k</code>。答えが三人の中に収まる。<a href="#3-なぜ-3-は特別か--掛け算ができる最小の人数">§3</a>）。a の「奇数なら同数で割れない」は実在する算術ですが、それは多数決の話で、この読み物の理由ではありません。b のような「ちょうど3人が最適」という実証はなく、実証が言えるのは「最適3〜5人」という帯までです（<a href="#7-実証と突き合わせる--何が外れ何が残ったか">§7</a>）。</p>
-</details>
-</div>
-<div class="quiz-q" data-quiz-answer="a">
-<p class="quiz-question"><strong>Q3.</strong> なぜ「7人」が上限なのか——この読み物が挙げる理由は、どれでしょう。</p>
-<ol class="quiz-choices">
-<li data-choice="a">掛け算も割り算も閉じる数の世界が8次元で終わり、人に対応する虚の方向が7本までだから</li>
-<li data-choice="b">人間の短期記憶が「7±2項目」までだから</li>
-<li data-choice="c">8人になるとやりとりの経路が28本に増えて、管理しきれなくなるから</li>
-</ol>
-<details class="quiz-explain">
-<summary><strong>答えと解説</strong></summary>
-<p>答えは <strong>a</strong> です（分類定理。<a href="#4-なぜ-7-は特別か--割り算までできる最大の人数">§4</a>）。b の 7±2 は実在する有名な結果ですが、あれは短期記憶の項目数の話で、出どころが違います（<a href="#8-よくある誤解">§8</a>）。c のコスト計算も実在しますが、あれは「なめらかに重くなる」話で、7 と 8 のあいだに特別な崖を作りません（<a href="#1-pjdhiro-の問い">§1</a> の補足）。</p>
-</details>
-</div>
-<div class="quiz-q" data-quiz-answer="c">
-<p class="quiz-question"><strong>Q4.</strong> この読み物は「人数 ＝ 次元 − 1」で数えます（4次元＝3人、8次元＝7人）。1を引くのは、なぜでしょう。</p>
-<ol class="quiz-choices">
-<li data-choice="a">リーダーの1人を、メンバーとは別枠で数えるから</li>
-<li data-choice="b">数学の慣習として、単位元の「1」は数えないことになっているから</li>
-<li data-choice="c">実軸の1本を、人ではなく「場」とみなす読み方を、この読み物が置いているから</li>
-</ol>
-<details class="quiz-explain">
-<summary><strong>答えと解説</strong></summary>
-<p>答えは <strong>c</strong> です（<a href="#5-なぜ実部を人数に数えないのか--場と人">§5</a>）。実軸が単位元 1 の方向であること自体は本当なので、b はかなり近いのですが、「慣習でそう決まっている」のではありません。場を実軸・人を虚軸とみるのは、この読み物が選んで置いた中心的な仮定で、数学の事実でも慣習でもなく、まだ検証の途中です（<a href="#7-実証と突き合わせる--何が外れ何が残ったか">§7</a>）。</p>
-</details>
-</div>
-<div class="quiz-q" data-quiz-answer="b">
-<p class="quiz-question"><strong>Q5.</strong> 読み終えたいま、「この読み物が言えること」として残っている範囲は、どれでしょう。</p>
-<ol class="quiz-choices">
-<li data-choice="a">チームは3人か7人で組むのがよく、5人や6人は避けたほうがいい</li>
-<li data-choice="b">「3人か7人を選ぶと、余計な調整コストなしに、構造だけで掛け算と割り算の性質を保てる」という設計上の目安</li>
-<li data-choice="c">数学の定理によって、3と7が最適な人数だと証明されている</li>
-</ol>
-<details class="quiz-explain">
-<summary><strong>答えと解説</strong></summary>
-<p>答えは <strong>b</strong> です（<a href="#7-実証と突き合わせる--何が外れ何が残ったか">§7</a>）。a のような強い読み（「3と7しかない」）は、チーム研究と突き合わせて見送りになりました。5人・6人のチームも普通に機能します。c については、定理が保証するのは「次元 1・2・4・8 で終わる」ことまでで、それを人に当てはめる部分は、この読み物が置いた仮定です（<a href="#8-よくある誤解">§8</a>）。</p>
-</details>
-</div>
-</div>
-
-五問とも、答えは本文のどこかに書いてあることです。手応えがどうだったかにかかわらず、ここから先（作り方・現在地）も、そのまま読めます。
 
 ## 9. この読み物の作り方 — 方法の公開（真似できるように）
 

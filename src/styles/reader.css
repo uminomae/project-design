@@ -351,12 +351,21 @@
 
 .mw-status .mw-note { color: var(--mute); }
 
-/* 理解度チェック（任意・五問）— 関門にしない自己チェック。
+/* 理解度テスト（任意）— 関門にしない自己チェック。各セクション直後にその都度置く。
  * DESIGN-RULES §0a 準拠: tokens と glow-card の上にのみ載せる。JS は src/reader-quiz.js。
  * no-JS では選択肢は静的リストのまま、「答えと解説」details で同じ内容が読める。 */
 .reader-article .reader-quiz {
     margin: 2.5rem 0;
     padding: 1.75rem 1.5rem;
+}
+
+.reader-article .quiz-label {
+    font-family: var(--sans);
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    color: var(--mute);
+    margin: 0 0 1.1rem;
 }
 
 .quiz-q + .quiz-q {
@@ -365,7 +374,7 @@
     border-top: 1px solid var(--glass-border-soft);
 }
 
-.quiz-question {
+.reader-article .quiz-question {
     font-family: var(--sans);
     font-size: 1rem;
     font-weight: 500;
@@ -373,7 +382,7 @@
     margin: 0 0 0.75rem;
 }
 
-.quiz-choices {
+.reader-article .quiz-choices {
     list-style: lower-latin;
     margin: 0 0 0.75rem;
     padding-left: 1.75rem;
@@ -417,7 +426,7 @@
     color: var(--coral);
 }
 
-.quiz-status {
+.reader-article .quiz-status {
     font-family: var(--sans);
     font-size: 0.85rem;
     line-height: 1.7;
