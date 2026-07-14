@@ -161,6 +161,13 @@ export const TRANSLATIONS = {
     "repo.kesson": "欠損駆動思考",
     "repo.creation": "創造とは",
     "repo.awareness": "意識とは",
+    "section.questions.label": "Questions",
+    "section.questions.title": "問い",
+    "section.questions.body":
+      "プロジェクトデザイン論の途中で生まれた問いを、読み物として公開し、調べながら更新しています。確定した結論ではなく、検証の現在地の共有です。",
+    "repo.energyFlow": "感情も、関係も、時代も「エネルギーの流れ」なのか",
+    "repo.energyFlowDesc":
+      "物質＝閉じ込められたエネルギーという物理の構造類似から、感情・人間関係・社会の渦までを、実証と比喩に仕分けて確かめる読み物（調査開始）",
     "repo.multiplication": "足し算ではなく、掛け算の経営 — 答えは「3 と 7」",
     "repo.multiplicationDesc":
       "複利の話ではない。向きと位相が振幅を決める「回転の掛け算」——チームの 3 と 7 を数学で確かめる読み物",
@@ -310,6 +317,13 @@ export const TRANSLATIONS = {
     "repo.kesson": "Kesson-Driven Thinking",
     "repo.creation": "What Is Creation",
     "repo.awareness": "What Is Awareness",
+    "section.questions.label": "Questions",
+    "section.questions.title": "Open Questions",
+    "section.questions.body":
+      "Questions that emerged along the way are published as readers and updated as the inquiry proceeds. Not settled conclusions — a shared view of where the verification stands.",
+    "repo.energyFlow": "Are Emotions, Relationships, and Eras All 'Flows of Energy'?",
+    "repo.energyFlowDesc":
+      "From the physics analogy of matter as confined energy to emotions, relationships, and the vortices of society — a reader that sorts evidence from metaphor (inquiry just started)",
     "repo.multiplication": "Management by Multiplication, Not Addition — the Answer Is 3 and 7",
     "repo.multiplicationDesc":
       "Not compounding: a multiplication of rotations, where direction and phase drive amplitude. A reader that checks the 3 and 7 of teams with mathematics",
