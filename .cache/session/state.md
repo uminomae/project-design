@@ -1,5 +1,15 @@
 # state.md — project-design
 
+## ⏸ セッション終了 2026-07-08 (seq05) — pd#115 READER 推敲＋Web全面改善（TOC・図解・ファノ対話図）・main 公開（f098a04）
+- **HEAD**: develop=**cd3c64b** / main=**f098a04**（両方 push 済み・同期）。
+- **作業1 文体推敲**: 「チャット回答調」基準で全文推敲（芝居がかった前置き・反復・文芸調を除去、ヘッジ/比喩/pjdhiro引用は維持）。§8 判定ラベルを「見送り」に統一。§6 タイトル語の事実齟齬修正。海の波の比喩は pjdhiro 指示で復元（拍手・ブランコ・海の3連発）。
+- **作業2 Web 改善（提案A-D全採用・実装）**: ①TOC 自動生成（build script が h1/h2 から生成）＋読む経路3本 ②§7三読み方表を畳み外へ ③冒頭 callout 圧縮・FAQ 畳み化 ④新規SVG2枚（第II部 偶奇の輪／§5 場と人）＋全10図に figcaption ⑤**ファノ平面 microworld 化（fano-home）**→pjdhiro しっくり採用→重複する一覧畳みを削除 ⑥§4/§4b 分割 ⑦JSON-LD @graph 化（Article+FAQPage 10問）・author=Claude (Fable 5)/contributor=pjdhiro（声の帰属整合）・検証進行中バッジ。
+- **品質ループ**: team-critic V3-V6 全PASS（ファノ7線・共線性・偶奇二部性を機械検証）/WARN1（旧§4参照）修正。文脈ゼロ LLM 読解テスト＝主旨・構成・帰属すべて正答、検出5件（宙に浮いた参照3・感情の平面の掛け算の唐突さ・畳み内断定調）を本文側で修正。static-checks 11/11・アンカー全解決・U+FFFD 0・モバイル横はみ出しなし。
+- **拾った事実誤り**: 第II部冒頭「可除代数は1・2・4・8人」→「3人・7人（次元4と8）」に修正。
+- **次アクション候補**: ①worktree `laughing-poincare-ba9806`（本セッション・マージ済み）と `jolly-mestorf-9084d0` の掃除 ②GitHub Pages 反映確認 ③読解テストの回帰ラウンド（次回 READER 更新時）。
+- **ログ**: pd `log-20260708-05.md` / 横断 `SESSION-20260708-05.md`
+
+
 ## ⏸ セッション終了 2026-07-08 (seq04) — pd#128 完了・main公開（0bd691f）・pd#128 close・worktree掃除21本
 - **HEAD**: develop=**32e24ee** / main=**0bd691f**（両方 push 済み・同期）。**Litt 三技法タスク（スキル・ワークフロー生成＋READER 適用）は main 公開まで完了**。
 - **pd#128 CLOSED**: 完了条件充足（L2 Micro-worlds 3図＋L3 Shared Spaces＋監査 RR-014 §G-4「適合 core fully adopted」＋バッジ honest 改訂）を確認しコメント付き close。

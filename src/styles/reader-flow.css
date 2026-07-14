@@ -1,0 +1,296 @@
+/* reader-flow.css — READER「エネルギーの流れ仮説」ページ固有スタイル（body.reader-flow スコープ）
+   参考（pjdhiro 指示 2026-07-14）:
+   - cs reader/wave-vortex.html … シェーダー背景の上に「一枚のガラス読書カラム」を敷く型
+   - pjdhiro garage/ … 章ごとの details.sec アコーディオン＋PC常設/モバイルドロワーの目次
+   制約: DESIGN-RULES §0a — 色・タイポは tokens.css の変数のみ。シェーダー背景は reader-app.js を共用。
+   tokens + style.css + reader.css の上に載せる（読み込み順は template 参照）。 */
+
+/* ===== 一枚ガラスの読書カラム（cs wave-vortex 型） ===== */
+body.reader-flow .reader-wrap {
+    max-width: 860px;
+    margin: 0 auto 48px;
+    padding: 8px clamp(16px, 4vw, 36px) 40px;
+    background: var(--glass-bg-medium);
+    border: 1px solid var(--glass-border-soft);
+    border-radius: 16px;
+    box-shadow: var(--glass-shadow);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+body.reader-flow .reader-hero,
+body.reader-flow .reader-article {
+    max-width: none;
+}
+body.reader-flow .reader-hero {
+    padding: 28px 0 8px;
+    text-align: left;
+}
+body.reader-flow .reader-hero h1 {
+    font-family: var(--serif-jp);
+    color: var(--navy);
+    text-shadow: none;
+}
+body.reader-flow .reader-subtitle,
+body.reader-flow .reader-meta {
+    text-shadow: none;
+    color: var(--mid);
+}
+
+/* 草稿バナー（cs draft-banner 型） */
+body.reader-flow .draft-banner {
+    background: var(--glass-bg-soft);
+    border: 1px solid var(--glass-border-soft);
+    border-left: 4px solid var(--gold);
+    border-radius: 10px;
+    padding: 12px 16px;
+    margin: 18px 0 8px;
+    font-size: 0.88rem;
+    color: var(--mid);
+}
+body.reader-flow .draft-banner b { color: var(--ink); }
+
+/* ガラス面の上では発光は不要（可読性はカラムが担う） */
+body.reader-flow .glow-text,
+body.reader-flow .glow-heading {
+    text-shadow: none;
+}
+
+/* リード部（ひとことで・FAQ・サマリー）のコールアウト */
+body.reader-flow .reader-article blockquote.reader-callout {
+    background: var(--glass-bg-strong);
+    border: 1px solid var(--glass-border-soft);
+    border-left: 4px solid var(--navy);
+    border-radius: 10px;
+    margin: 0 0 18px;
+    padding: 14px 20px;
+    box-shadow: none;
+}
+body.reader-flow .reader-article blockquote.reader-callout h3 {
+    margin-top: 0.4em;
+    color: var(--navy);
+}
+
+/* ===== 章アコーディオン（garage details.sec 型） ===== */
+body.reader-flow details.sec {
+    margin: 0 0 2px;
+    background: none;
+    border: none;
+    padding: 0;
+    scroll-margin-top: 12px; /* scrollIntoView の着地オフセット */
+}
+body.reader-flow details.sec > summary {
+    cursor: pointer;
+    list-style: none;
+    position: relative;
+    font-family: var(--serif-jp);
+    font-size: clamp(1.1rem, 3.4vw, 1.35rem);
+    font-weight: 600;
+    color: var(--navy);
+    line-height: 1.5;
+    padding: 26px 44px 10px 0;
+    margin-bottom: 6px;
+    border-bottom: 2px solid var(--glass-border-faint);
+}
+body.reader-flow details.sec > summary::-webkit-details-marker { display: none; }
+body.reader-flow details.sec > summary::after {
+    content: "＋";
+    position: absolute;
+    right: 8px;
+    bottom: 12px;
+    color: var(--gold);
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+body.reader-flow details.sec[open] > summary::after { content: "−"; }
+body.reader-flow details.sec > summary:hover { color: var(--gold); }
+body.reader-flow details.sec .secbody { padding: 2px 0 10px; }
+body.reader-flow details.sec .secbody > *:first-child { margin-top: 14px; }
+
+/* ===== 本文中の畳み（garage details.acc 型カード） ===== */
+body.reader-flow .reader-article details.acc {
+    background: var(--glass-bg-strong);
+    border: 1px solid var(--glass-border-soft);
+    border-radius: 12px;
+    margin: 12px 0;
+    padding: 0 20px 4px;
+    overflow: hidden;
+}
+body.reader-flow .reader-article details.acc > summary {
+    cursor: pointer;
+    list-style: none;
+    margin: 0 -20px;
+    padding: 14px 46px 14px 20px;
+    font-weight: 700;
+    font-size: 0.92rem;
+    color: var(--navy);
+    position: relative;
+}
+body.reader-flow .reader-article details.acc > summary::-webkit-details-marker { display: none; }
+body.reader-flow .reader-article details.acc > summary::after {
+    content: "＋";
+    position: absolute;
+    right: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--mute);
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+body.reader-flow .reader-article details.acc[open] > summary::after { content: "−"; }
+body.reader-flow .reader-article details.acc > summary:hover { background: var(--glass-bg-medium); }
+
+/* ===== 表（garage tablewrap 型 = 横スクロール枠） ===== */
+body.reader-flow .reader-article .tablewrap {
+    overflow-x: auto;
+    margin: 18px 0;
+    border: 1px solid var(--glass-border-soft);
+    border-radius: 12px;
+    background: var(--glass-bg-strong);
+    padding: 0;
+    box-shadow: none;
+}
+body.reader-flow .reader-article .tablewrap table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 0.88rem;
+    min-width: 520px;
+    margin: 0;
+}
+body.reader-flow .reader-article .tablewrap th,
+body.reader-flow .reader-article .tablewrap td {
+    padding: 10px 14px;
+    text-align: left;
+    border-bottom: 1px solid var(--glass-border-soft);
+    vertical-align: top;
+}
+body.reader-flow .reader-article .tablewrap thead th {
+    background: var(--glass-bg-medium);
+    color: var(--navy);
+    font-weight: 700;
+    white-space: nowrap;
+}
+body.reader-flow .reader-article .tablewrap tbody tr:last-child td { border-bottom: none; }
+
+/* ===== 目次（garage 型: PC=常設サイドバー / モバイル=右下ボタン＋ドロワー） ===== */
+body.reader-flow #toc-btn {
+    position: fixed;
+    right: 16px;
+    bottom: 16px;
+    z-index: 60;
+    background: var(--navy);
+    color: var(--white);
+    border: none;
+    border-radius: 99px;
+    padding: 12px 18px;
+    font-weight: 700;
+    font-size: 0.875rem;
+    font-family: var(--sans);
+    box-shadow: var(--glass-shadow-modal);
+    cursor: pointer;
+}
+body.reader-flow #toc-btn:active { transform: scale(0.96); }
+body.reader-flow #toc-bd {
+    position: fixed;
+    inset: 0;
+    background: rgba(15, 23, 42, 0.35);
+    z-index: 59;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s;
+}
+body.reader-flow.toc-open #toc-bd { opacity: 1; visibility: visible; }
+body.reader-flow #toc {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: min(84vw, 330px);
+    z-index: 61;
+    background: var(--glass-bg-strong);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-left: 1px solid var(--glass-border-soft);
+    padding: 20px 14px;
+    overflow-y: auto;
+    transform: translateX(105%);
+    transition: transform 0.26s ease;
+    box-shadow: var(--glass-shadow-modal);
+}
+body.reader-flow.toc-open #toc { transform: translateX(0); }
+body.reader-flow #toc .toc-h {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.75rem;
+    letter-spacing: 0.12em;
+    color: var(--gold);
+    font-weight: 700;
+    margin: 0 0 10px;
+    padding: 0 8px;
+}
+body.reader-flow #toc .toc-x {
+    background: none;
+    border: none;
+    color: var(--mute);
+    font-size: 1.4rem;
+    line-height: 1;
+    cursor: pointer;
+    padding: 0 4px;
+}
+body.reader-flow #toc ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    counter-reset: toc;
+}
+body.reader-flow #toc li { counter-increment: toc; }
+body.reader-flow #toc a {
+    display: block;
+    padding: 10px;
+    border-radius: 8px;
+    color: var(--ink);
+    text-decoration: none;
+    font-size: 0.875rem;
+    line-height: 1.45;
+}
+body.reader-flow #toc a::before {
+    content: counter(toc) ".";
+    color: var(--mute);
+    font-weight: 700;
+    margin-right: 8px;
+}
+body.reader-flow #toc a:hover { background: var(--glass-bg-medium); }
+body.reader-flow #toc a.active {
+    background: var(--glass-bg-medium);
+    color: var(--navy);
+    box-shadow: inset 3px 0 0 var(--gold);
+}
+body.reader-flow #toc a.active::before { color: var(--gold); }
+body.reader-flow #toc .toc-main { display: inline; }
+body.reader-flow #toc .toc-sub2 {
+    display: block;
+    font-size: 0.7rem;
+    font-weight: 400;
+    color: var(--mute);
+    margin: 1px 0 0 1.4em;
+    line-height: 1.35;
+}
+body.reader-flow #toc a.active .toc-sub2 { color: var(--navy); }
+@media (min-width: 1260px) {
+    /* PC: 左マージンに常設 TOC。ボタン・背景は不要 */
+    body.reader-flow #toc {
+        left: 20px;
+        right: auto;
+        top: 92px;
+        height: auto;
+        max-height: calc(100vh - 116px);
+        width: 206px;
+        transform: none;
+        box-shadow: var(--glass-shadow);
+        border: 1px solid var(--glass-border-soft);
+        border-radius: 12px;
+    }
+    body.reader-flow #toc .toc-x { display: none; }
+    body.reader-flow #toc-btn,
+    body.reader-flow #toc-bd { display: none; }
+}

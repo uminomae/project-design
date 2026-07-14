@@ -38,6 +38,7 @@ LLM 読解テスト＝埋め込みクイズ＝**speed regulator**（合格まで
 3. `TEST-reader-llm-comprehension.md`（質問群・ルーブリック・合格基準）。
 4. pd README §3 のルール12〜16・22（比喩必須／追体験／声の帰属／一意可読性／3レベル分離）。
 5. `docs/DESIGN-RULES.md` §0a（VI 継承。独自テーマ新造は禁止）。
+6. **リポジトリに READER 生成レシピがあれば、それも読む**（page_type・固定パイプライン・オプションメニュー・frontmatter スケルトン）。cs では `transform/reader/reader-recipe.md`。埋め込みクイズ（speed regulator）等のデバイスはレシピの options から選ぶ。
 
 ## 3. 反復ループ（1 ラウンド）
 
