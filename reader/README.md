@@ -5,6 +5,7 @@
 | ページ | 正本（編集はこちら） |
 |---|---|
 | `three-and-seven.html` | `knowledge/research/two-axis-closure/READER-division-algebra-consciousness-organization.md` |
+| `energy-flow.html` | `knowledge/research/energy-flow-psyche/READER-energy-flow-psyche.md` |
 
 ## このページが何で、どう育てるか
 

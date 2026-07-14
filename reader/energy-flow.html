@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<!--
+  ⚠️ このファイルは生成物です。直接編集しないでください。
+  正本:   knowledge/research/energy-flow-psyche/READER-energy-flow-psyche.md
+  再生成: python3 scripts/build-reader-lp.py
+  手順:   reader/README.md
+
+  デザイン必須制約: docs/DESIGN-RULES.md §0a
+  - 全公開ページは index.html の VI を継承する（シェーダー背景 + グロークラス体系 + 確立パレット）
+  - カラー/タイポは src/styles/tokens.css の CSS 変数のみ。独自テーマ・埋め込み standalone CSS の新造は禁止
+  - ページ固有スタイルは src/styles/reader.css（tokens + glow の上に載せる）
+-->
+<html lang="ja">
+<head>
+    <script>
+    if (!/^(localhost|127\.0\.0\.1)$/.test(location.hostname)) {
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-X5WQCB3JYT';
+      document.head.appendChild(s);
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-X5WQCB3JYT');
+    }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>感情も、関係も、時代も「エネルギーの流れ」なのか — エネルギーの流れ仮説（読み物） | Project Design</title>
+    <link rel="canonical" href="https://uminomae.github.io/project-design/reader/energy-flow.html">
+    <link rel="icon" href="../favicon.ico">
+    <meta name="description" content="物質の質量の大部分が「閉じ込められたエネルギー」なら、心の内側から湧く感情や意思もエネルギーの流れではないか。人間関係は流れの通り道、社会の成果や時代は波の干渉が作る渦ではないか——という問いを、実証・構造類似・未調査に仕分けながら確かめていく読み物。調査の現在地を随時更新する。">
+    <meta property="og:title" content="感情も、関係も、時代も「エネルギーの流れ」なのか — エネルギーの流れ仮説">
+    <meta property="og:description" content="物質＝閉じ込められたエネルギーの構造類似から、感情・人間関係・社会の渦までを仕分けて確かめる読み物。調査の現在地を随時更新する。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://uminomae.github.io/project-design/reader/energy-flow.html">
+    <meta property="og:site_name" content="Project Design">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="感情も、関係も、時代も「エネルギーの流れ」なのか — エネルギーの流れ仮説（読み物）">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Noto+Sans+JP:wght@300;400;500&family=Noto+Serif+JP:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../src/style.css">
+    <link rel="stylesheet" href="../src/styles/reader.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Article",
+          "headline": "感情も、関係も、時代も「エネルギーの流れ」なのか — エネルギーの流れ仮説（読み物）",
+          "inLanguage": "ja",
+          "dateModified": "2026-07-14",
+          "author": {"@type": "Person", "name": "Claude (Fable 5)", "description": "Anthropic の AI。本文の文責"},
+          "contributor": {"@type": "Person", "name": "pjdhiro", "description": "問いの提示と、読みの採否の判定"},
+          "isPartOf": {"@type": "WebSite", "name": "プロジェクトデザイン論", "url": "https://uminomae.github.io/project-design/"}
+        }
+      ]
+    }
+    </script>
+</head>
+<body>
+    <div id="webgl-container" aria-hidden="true"></div>
+    <div id="content">
+        <header class="reader-hero">
+            <h1 class="glow-heading">感情も、関係も、時代も「エネルギーの流れ」なのか</h1>
+            <p class="reader-subtitle glow-text">エネルギーの流れ仮説 — 個人・関係・社会の三段を、実証と構造類似に仕分けて確かめる読み物</p>
+            <p class="reader-meta glow-text">
+                <span class="reader-status-badge">調査開始 — 随時更新</span><br>
+                最終更新: 2026-07-14 ／ 調査の現在地は §6<br>
+                <a href="https://github.com/uminomae/project-design/blob/main/knowledge/research/energy-flow-psyche/READER-energy-flow-psyche.md">正本 (GitHub)</a> ・
+                <a href="./three-and-seven.html">姉妹読み物: なぜ 3 と 7 だけが特別なのか</a> ・
+                <a href="../index.html">プロジェクトデザイン論</a>
+            </p>
+        </header>
+        <article class="reader-article prose-block glow-text">
+<blockquote class="glow-card reader-callout">
+<h3 class="glow-heading" id="ひとことでまずこれだけ">ひとことで（まず、これだけ）</h3>
+<p><strong>⚠ この読み物は調査を始めたばかりです。</strong> 答えではなく、問いを正確な形にしていく途中経過を公開しています。内容は随時書き換わります。</p>
+<p>問いはこうです。物理学では「物質の質量の大部分は、閉じ込められたエネルギーだ」と言えることが分かっています。それなら、心の内側から湧いてくる感情や意思も「エネルギーの流れ」なのではないか。人間関係とは流れの通り道に、社会の成果や時代とは波の干渉が作る渦に、それぞれ名前をつけたものではないか——。</p>
+<p><strong>このページから持ち帰れること</strong>：この問いのどの部分がすでに物理で実証されていて、どの部分が「構造が似ている」という話で、どの部分がまだ調べられていないか、の仕分けです。結論はまだありません。</p>
+</blockquote>
+<blockquote class="glow-card reader-callout">
+<h3 class="glow-heading" id="先回りの3問誤解しやすいところから">先回りの3問（誤解しやすいところから）</h3>
+<p><strong>Q. これは「気」や「オーラ」のような超常的な主張ですか？</strong> いいえ。この読み物は、物理学のエネルギーと心の「エネルギー」が同じものだ、とは主張しません。調べるのは「<strong>構造が似ているか</strong>」です。どこまでが実証で、どこからが比喩かを、むしろ厳しめに仕分けることが目的です。</p>
+<p><strong>Q. 物理学が心を説明できる、と言っていますか？</strong> いいえ。物理の言葉を心に持ち込むときに何が言えて何が言えないかは、この調査の前段（別の読み物の調査）で既にいくつか段差が見つかっています。その段差を隠さずに引き継ぎます（<a href="#2-感情や意思はエネルギーの流れか--すでに分かっている段差">§2</a>）。</p>
+<p><strong>Q. 結論は出ていますか？</strong> いいえ。この読み物は調査開始の時点で公開し、調べながら更新していきます。現在地は <a href="#6-現在地スコアボード--調査計画">§6</a> の表にまとめてあります。</p>
+</blockquote>
+<blockquote class="glow-card reader-callout">
+<h3 class="glow-heading" id="サマリー先に全体像">サマリー（先に全体像）</h3>
+<p><strong>問いの構造。</strong> この問いは三段になっています。①個人：感情・欲・意思は「内側から湧く」ように感じられるが、それはエネルギーの流れなのではないか。②関係：人間関係とは、流れやすい経路や、波の干渉でできた形に名前をつけたものではないか。③社会：大勢の流れが干渉し合う場では、渦のような成果や時代のような大きな流れが同時多発的に生まれるのではないか。</p>
+<p><strong>すでに分かっていること。</strong> 出発点の「物質＝閉じ込められたエネルギー」は、物理の内側では実証済みの話です（陽子の質量の大部分は、中のクォークが持つ運動と閉じ込めのエネルギーに由来します）。一方、これを心に持ち込む部分は、先行する調査で正直な段差が見つかっています。物理で「掛け算（相互作用）」はエネルギーの放出量を直接決めない、「エネルギー」という同じ名前が別のものを指していることがある、などです。だからこの調査の大前提は「<strong>あくまで構造類似</strong>」——同じものだとは主張せず、形の対応だけを検証します。</p>
+<p><strong>これから調べること。</strong> 新しいのは②と③です。②は対人同期や情動伝染の実証研究、③は科学史の「同時発見」研究や、波と渦の存在論（姉妹調査 TH-001 で三層に接地済み）と突き合わせます。</p>
+<p><strong>この読み物の役割。</strong> 問いを立てた本人（pjdhiro）の直観を、そのまま信じることも、頭ごなしに退けることもせず、実証の厚みごとに層を分けて追いかけます。うまくいかなかった部分もそのまま公開します。</p>
+</blockquote>
+<nav class="reader-toc glow-card" aria-label="目次"><p class="reader-toc-title">目次</p><ol><li><a href="#0-pjdhiro-の問い--ここから始まった">§0 pjdhiro の問い — ここから始まった</a></li><li><a href="#1-物理の側の足場--物質閉じ込められたエネルギーはどこまで本当か">§1 物理の側の足場 — 「物質＝閉じ込められたエネルギー」はどこまで本当か</a></li><li><a href="#2-感情や意思はエネルギーの流れか--すでに分かっている段差">§2 感情や意思は「エネルギーの流れ」か — すでに分かっている段差</a></li><li><a href="#3-人間関係は流れに名前をつけたものか--これから調べる">§3 人間関係は「流れに名前をつけたもの」か — これから調べる</a></li><li><a href="#4-社会は波の干渉場か--渦のような成果時代のような流れ">§4 社会は波の干渉場か — 渦のような成果、時代のような流れ</a></li><li><a href="#5-煩悩--死に向かって途絶えるまでという言葉について">§5 煩悩 — 死に向かって途絶えるまで、という言葉について</a></li><li><a href="#6-現在地スコアボード--調査計画">§6 現在地スコアボード — 調査計画</a></li><li><a href="#7-この読み物の作り方">§7 この読み物の作り方</a></li></ol></nav>
+
+<h2 class="glow-heading" id="0-pjdhiro-の問い--ここから始まった">§0 pjdhiro の問い — ここから始まった</h2>
+<p>pjdhiro の問い（2026-07-14 原文）：</p>
+<blockquote class="glow-card reader-callout">
+<p>構造類似から発想し、もしも、エネルギーの流れが存在する物質を生み出し、そのエネルギーが質量として中に閉じ込められるならば、同様に、人間の精神、欲、本能、無意識といった先天的に、または、内側から湧出するように生まれる感情や意思は、そもそもエネルギーの流れでしかないのではないか。他者も同様で、人間関係とはエネルギーの流れが流れやすかったり、波が干渉するように形成された流れに名前をつけてるのではないか？</p>
+<p>煩悩と呼ばれるエネルギーを発しながら、死に向かって途絶えるまで、波が干渉し合うようになっている。社会は。だから大きな渦のような成果や、時代のような流れが同時多発的に生まれるのではないか？</p>
+</blockquote>
+<p>この問いは突然現れたものではありません。別の読み物（<a href="./three-and-seven.html">なぜ 3 と 7 だけが特別なのか</a>）の調査の途中で、pjdhiro は「意識はベクトル、感情はそのエネルギーのようなもの」という感触を語っていました。今回の問いは、その感触を<strong>個人 → 関係 → 社会</strong>の三段に広げて、独立した調査として立て直したものです。</p>
+<h2 class="glow-heading" id="1-物理の側の足場--物質閉じ込められたエネルギーはどこまで本当か">§1 物理の側の足場 — 「物質＝閉じ込められたエネルギー」はどこまで本当か</h2>
+<p>まず、問いの出発点になっている物理の話を確認します。ここは比喩ではなく、物理の内側で決着している部分です。</p>
+<p><strong>質量とエネルギーの関係（E=mc²）には二つの文脈があります。</strong> 一つは「等価」の文脈——質量とエネルギーは同じ量の二つの現れだ、という定義の話。もう一つは「変換」の文脈——核反応や対消滅では、質量が減った分だけエネルギーが現れる、という実際に起きる変換の話です。pjdhiro の「エネルギーが質量として中に閉じ込められる」は、後者の変換の側に接地します。</p>
+<p><strong>そして「閉じ込め」は、たとえ話ではありません。</strong> 陽子（原子核の部品）の質量のうち、中のクォーク自身の質量はわずか数%で、残りの大部分はクォークの運動エネルギーと、クォークを閉じ込めている力のエネルギーに由来する——これは量子色力学の計算で分解まで示されています。つまり「あなたの体重のほとんどは、閉じ込められたエネルギーの重さだ」という言い方は、物理としては誇張ではありません。</p>
+<details><summary>詳しく — 「粒子は場のさざ波」という見方</summary>
+
+<p>現代物理の標準的な枠組み（場の量子論）では、粒子は「場」と呼ばれる空間に広がった量の励起——さざ波のようなもの——として記述される、と言われてきました。「エネルギーの流れが物質を生み出す」という問いの前半は、この描像と方向が合っています。ただしこの読み物は、この描像の哲学的な解釈（粒子と場のどちらが実在か）には立ち入りません。それ自体が物理学の中で議論が続いている話題だからです。</p>
+</details>
+
+<p>ここまでが物理の内側の話です。問題は次の一歩——これを<strong>心に持ち込めるか</strong>です。</p>
+<h2 class="glow-heading" id="2-感情や意思はエネルギーの流れか--すでに分かっている段差">§2 感情や意思は「エネルギーの流れ」か — すでに分かっている段差</h2>
+<p>実はこの方向の調査は、先行する読み物の中で一度走らせてあります（感情＝放出エネルギー調査、精神＝素粒子構造類似調査、光の起源調査）。そこで見つかった段差を、隠さずにここへ引き継ぎます。</p>
+<p><strong>段差1：物理の「放出」は、掛け算ではなく引き算で決まる。</strong> 「他者と関わり合うとき（掛け算し合うとき）にエネルギーが放出される」という直観に対して、物理の側では、放出されるエネルギー量は例外なく<strong>差</strong>（結合前後のエネルギーの差分）で決まります。掛け算（相互作用の項）が決めるのは「どの状態からどの状態へ移れるか」であって、量ではありません。</p>
+<p>たとえるなら、掛け算は<strong>鍵</strong>です。鍵はどの部屋の扉が開くかを決めますが、部屋から出てくる中身の量は、部屋に何が入っていたかが決めます。関わり（鍵）が引き金になり、蓄えの差分（部屋の中身）が流れ出る——この<strong>二段階</strong>なら、物理の構造ときれいに対応します。「関わるとエネルギーが出る」を一段で読むと物理と合わず、二段で読むと合う。これが最初の調査の一番大きな収穫でした。</p>
+<p><strong>段差2：「エネルギー」という名前の罠。</strong> 物理の自由エネルギー、脳科学の自由エネルギー原理、心理学の「心的エネルギー」は、同じ名前で<strong>別のもの</strong>を指していることがあります。名前が同じだから同じものだ、と滑る誤りを、この調査では最初から警戒します。</p>
+<p><strong>段差3：心理学の側の「エネルギー」の歴史は、まだ調べていません。</strong> 「リビドー」など、心をエネルギーで語る伝統が心理学にあると言われてきましたが、それが現在の学術でどういう地位にあるかは、この調査のこれからの宿題です。</p>
+<p>この三つの段差を踏まえて、この調査の大前提を先に宣言しておきます。</p>
+<div class="glow-card reader-table"><table>
+<thead>
+<tr>
+<th>読み方</th>
+<th>内容</th>
+<th>この調査の扱い</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>字義の同一</td>
+<td>感情は物理学のエネルギー<strong>である</strong>（測定可能な同型がある）</td>
+<td><strong>主張しない</strong>（先行調査で等式対応が見つからなかった）</td>
+</tr>
+<tr>
+<td>構造類似</td>
+<td>感情はエネルギーの流れ<strong>のように振る舞う</strong>（形の対応がある）</td>
+<td><strong>これを検証する</strong>（二段階読みなら弁護可能、が現在地）</td>
+</tr>
+<tr>
+<td>比喩</td>
+<td>「感情のエネルギー」という日常語</td>
+<td>有効。ただし上の二つと区別して使う</td>
+</tr>
+</tbody>
+</table></div>
+<p>pjdhiro 自身の言葉でも、この方針は明言されています——「<strong>あくまで構造類似です</strong>」（2026-07-04）。</p>
+<h2 class="glow-heading" id="3-人間関係は流れに名前をつけたものか--これから調べる">§3 人間関係は「流れに名前をつけたもの」か — これから調べる</h2>
+<p>ここからが、この問いの新しい部分です。まだ調べていないので、問いの形を正確にすることだけをします。</p>
+<p>pjdhiro の読みはこうです：人間関係という「もの」がまずあるのではなく、エネルギーの流れやすい経路や、波の干渉でできた形が先にあって、人はそれに「友情」「信頼」「確執」といった名前をつけているだけではないか。川に「淵」や「瀬」という名前がつくのと同じで、名前は流れの形につけられている、という順序の逆転です。</p>
+<p>これを検証可能な形に直すと、少なくとも二つの調べ先があります。</p>
+<ul>
+<li><strong>対人同期（interpersonal synchrony）</strong>：人と人が関わるとき、動作・心拍・脳活動が同期するという実証研究の系列があると言われています。「流れやすさ」が測定されている領域の候補です。</li>
+<li><strong>情動伝染（emotional contagion）</strong>：感情が人から人へ波及する現象。pjdhiro のプロジェクトデザイン論では感情処理の主題として既に扱いのある領域で、「波の干渉」との構造対応を確かめる素材になります。</li>
+</ul>
+<p>現段階ではどちらも候補の列挙であって、結論ではありません。</p>
+<h2 class="glow-heading" id="4-社会は波の干渉場か--渦のような成果時代のような流れ">§4 社会は波の干渉場か — 渦のような成果、時代のような流れ</h2>
+<p>問いの三段目——「社会では波が干渉し合い、渦のような成果や時代のような流れが同時多発的に生まれる」——には、実は姉妹調査がすでにあります。pjdhiro の「宇宙が海の渦のような現象でできている」「創造とは波間の渦のよう」という直観を接地した調査（TH-001、正本は姉妹リポジトリ creation-space）です。</p>
+<p>その調査の結論の型を、この読み物はそのまま借ります。<strong>主張を実証の厚みで三層に分け、層をまたぐときは明示する</strong>、という型です。</p>
+<ul>
+<li><strong>実証層</strong>：流体の中の音波が「曲がった時空」の方程式と同じ形に従う、という数学的対応（アナログ重力）は実験で確立しています。ただし実証されているのはこの対応までです。</li>
+<li><strong>仮説層</strong>：「時空そのものが媒質（流体のようなもの）だ」という強い主張は、査読論文はあるものの少数派で、まだ通過できていない関門があります。</li>
+<li><strong>思想・系譜層</strong>：渦を「過程が作る実在」の比喩とする思想には長い系譜があります。比喩としての価値は、物理理論の当否とは独立に成り立ちます。</li>
+</ul>
+<p>そして防波堤も借ります——「<strong>アナロジーは同一性ではない</strong>（analogy is not identity）」。社会を波の干渉場として見ることが有効だとしても、それは社会が物理的な波<strong>である</strong>ことを意味しません。</p>
+<details><summary>詳しく — 「同時多発的に生まれる」は研究対象として実在する</summary>
+
+<p>「同じ発見や似た成果が、離れた場所でほぼ同時に生まれる」という現象は、科学史で「同時発見（multiple discovery）」として研究されてきたと言われています（微積分のニュートンとライプニッツ、進化論のダーウィンとウォレスなどが定番の例として挙げられます）。pjdhiro の「渦のような成果が同時多発的に生まれる」という直観は、少なくとも<strong>説明を要する現象としては学術の側にも登録されている</strong>、ということです。ただし、その説明として「波の干渉」型のモデルが立つかどうかは、これからの調査です。一次確認はまだ済んでいません。</p>
+</details>
+
+<h2 class="glow-heading" id="5-煩悩--死に向かって途絶えるまでという言葉について">§5 煩悩 — 死に向かって途絶えるまで、という言葉について</h2>
+<p>pjdhiro の問いには「煩悩と呼ばれるエネルギーを発しながら、死に向かって途絶えるまで」という一節があります。ここには二つの調べ先が埋まっています。</p>
+<p><strong>一つは語彙の系譜です。</strong> 仏教には、煩悩を<strong>流れ</strong>の語彙で語る伝統があると言われています——たとえば「漏（ろ）」という語は、心から「流れ出るもの」を意味する古い言葉（āsava）の訳だとされます。欲望を流体として語る語彙が、二千年以上前から存在していたことになります。これが一次資料でどこまで確認できるかは、これからの宿題です。</p>
+<p><strong>もう一つは「途絶えるまで」の側です。</strong> 渦や炎は、流れが続いている間だけ形を保つ——流れが止まれば形も消えます。生命をこの型（流れが維持する形）で語る議論は、非平衡熱力学の周辺にあると言われています。「死で流れが途絶える」という問いの一節が、この型とどう対応するかも調査候補です。</p>
+<p>どちらもまだ調べていません。この節は、問いのこの部分を落とさずに持っておくための杭です。</p>
+<h2 class="glow-heading" id="6-現在地スコアボード--調査計画">§6 現在地スコアボード — 調査計画</h2>
+<p>問いを部品に分けて、それぞれの現在地を正直に置きます。</p>
+<div class="glow-card reader-table"><table>
+<thead>
+<tr>
+<th>問いの部品</th>
+<th>現在地</th>
+<th>根拠・引用元</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>物質＝閉じ込められたエネルギー</td>
+<td><strong>物理の内側で実証済み</strong></td>
+<td>変換文脈の E=mc²・陽子質量の分解（先行調査 RR-021）</td>
+</tr>
+<tr>
+<td>感情・意思＝エネルギーの流れ（字義）</td>
+<td><strong>見送り</strong></td>
+<td>積→放出の等式対応なし・同名性の罠（先行調査 RR-020）</td>
+</tr>
+<tr>
+<td>感情・意思＝エネルギーの流れ（構造類似・二段階読み）</td>
+<td><strong>弁護可能・検証中</strong></td>
+<td>関わり＝引き金、蓄えの差分＝流出（先行調査 RR-020）</td>
+</tr>
+<tr>
+<td>心理学の「心的エネルギー」の学術的地位</td>
+<td>未調査</td>
+<td>調査計画1</td>
+</tr>
+<tr>
+<td>人間関係＝流れ・干渉に名前をつけたもの</td>
+<td>未調査</td>
+<td>調査計画2（対人同期・情動伝染）</td>
+</tr>
+<tr>
+<td>社会＝波の干渉場（比喩・思想として）</td>
+<td><strong>接地済み（三層の型で）</strong></td>
+<td>cs TH-001（波・渦の存在論）</td>
+</tr>
+<tr>
+<td>社会＝波の干渉場（字義）</td>
+<td>開いた問い</td>
+<td>cs TH-001 仮説層の関門に準ずる</td>
+</tr>
+<tr>
+<td>渦のような成果の同時多発</td>
+<td>未調査</td>
+<td>調査計画3（同時発見研究）</td>
+</tr>
+<tr>
+<td>煩悩＝流れの語彙・死まで続く流れ</td>
+<td>未調査</td>
+<td>調査計画4・5</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>進め方</strong>：未調査の部品を一つずつ調査（各テーマで一次資料に当たり、批判的検証を通す）→ この読み物の該当節を更新 → 文脈ゼロの読者（この文書だけを読んだ LLM）による読解テストで伝わり方を確認 → 公開を更新。うまくいかなかった部分も、消さずに「見送り」として残します。</p>
+<h2 class="glow-heading" id="7-この読み物の作り方">§7 この読み物の作り方</h2>
+<ul>
+<li><strong>文責は Claude（Anthropic の AI、Fable 5）</strong>。pjdhiro 本人の言葉は、すべて「pjdhiro の問い：」の形の引用で区別しています</li>
+<li>問いを立てた本人の直観を、そのまま信じることも退けることもせず、実証の厚みで層を分けて検証します</li>
+<li>大前提は「あくまで構造類似」。字義の同一（心のエネルギーは物理のエネルギーである）は主張しません</li>
+<li>前段の調査資産（感情＝放出エネルギー、精神＝素粒子、光の起源、波・渦の存在論）を引用して立ち、重複調査はしません</li>
+</ul>
+<hr />
+<h3 class="glow-heading" id="参照出典メモ--本文と別枠">参照（出典メモ — 本文と別枠）</h3>
+<ul>
+<li>先行調査（pd リポジトリ・two-axis-closure ピラー）
+<ul>
+<li><a href="https://github.com/uminomae/project-design/blob/main/knowledge/research/two-axis-closure/RR-020-emotion-release-energy-survey.md">RR-020 感情＝放出エネルギー横断調査</a> — 積→放出の等式対応なし・二段階の構造類似・free energy 同名性</li>
+<li><a href="https://github.com/uminomae/project-design/blob/main/knowledge/research/two-axis-closure/RR-021-psyche-particle-analogy-survey.md">RR-021 精神＝素粒子の構造類似調査</a> — E=mc² の二文脈・陽子質量の分解（arXiv:1710.09011）</li>
+<li><a href="https://github.com/uminomae/project-design/blob/main/knowledge/research/two-axis-closure/RR-022-light-origin-psyche-analogy-survey.md">RR-022 光はどこから現れるか</a> — 大前提「あくまで構造類似」の確定</li>
+</ul></li>
+<li>姉妹調査（creation-space リポジトリ）
+<ul>
+<li><a href="https://github.com/uminomae/creation-space/tree/develop/evidence/themes/TH-001-wave-vortex-ontology">TH-001 波・渦の存在論</a> — 三層分離（実証＝アナログ重力／仮説＝時空・媒質／思想・系譜）・「analogy is not identity」</li>
+</ul></li>
+<li>この調査の憲章: <a href="https://github.com/uminomae/project-design/blob/main/knowledge/research/energy-flow-psyche/README.md">energy-flow-psyche README</a></li>
+</ul>
+
+        </article>
+        <footer class="reader-footer glow-text">
+            この読み物は調査の進行に合わせて更新されます。<br>
+            <a href="../index.html">プロジェクトデザイン論</a> ・
+            <a href="https://github.com/uminomae/project-design">GitHub</a>
+        </footer>
+    </div>
+    <script type="module" src="../src/reader-app.js"></script>
+</body>
+</html>
