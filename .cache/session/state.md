@@ -1,5 +1,22 @@
 # state.md — project-design
 
+## 🔵 セッション進行中 2026-07-15 (seq02) — pd#129: 深掘り全6鉱脈 完了（develop 23970ec）／次段=EXECUTE(READER本体反映)＝pjdhiro しっくり判定後
+- **HEAD**: develop=**23970ec**（push 済み・remote 同期）/ main=**2c580a4**（未公開）。**pjdhiro は http://127.0.0.1:3004/reader/energy-flow.html で閲覧＝develop を最新に保つこと**。
+- **本セッションで自律完遂（pjdhiro「計画に沿って最後まで自律的に進めて・質問せず」指示）**: 深掘りメニュー全6鉱脈を消化。**READER 本体(reader/energy-flow.html)は今セッション未変更**——全て調査ノート(RR-030〜035)。次段の EXECUTE(本体書き換え)＝pjdhiro しっくり判定後。:3004 は正常。
+- **完了した4鉱脈（本セッション）**: 作法＝非相関 researcher×2(opus・鉱脈2/6 は Main 単独 weld)→統合 RR＋部品論文アコーディオン→team-critic 敵対ゲート→inline 反映→commit。
+  - **4 関係側 RR-032（841801d）**: 同期 literal・干渉 naming／"流れの符号/型"は Gernert(予後)と Racker(同一化型)の別軸の響き合い(◐)／源帰属＝精神分析(●実務)・社会統計(★S–T定理)・神経科学(○N&I介入可)が同じ交絡の族に三様の強度＝窓。critic SPLIT→2件反映。
+  - **2 背骨 RR-033（98ba5cb）**: cs TH-001 引用側の weld。二層(平衡=流れ不要/非平衡=散逸・的は非平衡のみ)／「形は過程」独立は3でなく2(共通源流サイバネ・二重カウント回避)／床(散逸★●)〜天井(過程哲学[M])。critic SPLIT→2件反映(§5にBohm/Whitehead不在=新規導入・粒子=パターンは物理少数説ヘッジ)。
+  - **5 社会側 RR-034（be0afdd）**: 部品八本(Tria隣接可能・Weitzman・Merton148件・集合脳・Liu・Kuramoto同期★・Watts percolation★・SOC/Cederman◐)は実証／合成一点(人間間バースト同期の直接測定)のみ未測定。honesty hook 二本(べき則≠SOC=CSN・相転移は熱力学的極限=Kulakowski)。合成の空白は Shalizi–Thomas 識別問題を含む構造的難所かも(◐仮説・CSN の Shalizi=RR-032 の Shalizi 同一)。critic PASS＋minor4件反映。
+  - **6 横串 RR-035（23970ec）**: 同じ数理(OU/同期/臨界減速/SOC/percolation/NESS)が全スケール反復=背骨の数理側裏づけ／だが同じ数理≠同じ物理＝"数式の罠"(topic-neutral・名前の罠より危険＝接続が本物ゆえ)。RR-031「flow literal・energy ならず」を全鉱脈へ一般化。critic SPLIT→2件反映(臨界減速とSOCを別行・"反証ですらある"を topic-neutral 自己矛盾ゆえ二段訂正)。
+- **★次アクション（pjdhiro 専権）**: ①**しっくり判定**——深掘り6ノートを読んで READER 本体へ反映するか(EXECUTE)判断。各 RR の §「改稿への含意」に反映設計メモあり。②反映するなら EXECUTE 工程(researcher 一次逐語の宿題回収→本体書き換え→品質ループ→文脈ゼロ読解テスト→main 公開判断)。③保留中の設計論点(床/天井の見せ方・アコーディオン配置・共通コラム化＝各RRに記載)。
+- **今回の到達点**: 深掘りメニュー **4(関係側)** を完遂。`RR-032-relational-flow-bridge.md` 新設（部品論文アコーディオン内蔵・単一ファイル）。作法は確立どおり（非相関 researcher×2 opus → Main 統合 → team-critic 敵対ゲート → inline 反映 → commit）。
+  - **非相関2 researcher（opus）**: A=実証/力学系側（Marci 2007 皮膚コンダクタンス concordance・Gernert 2023 正負符号→予後 N=14・Richardson 2007 HKB 結合振動子★・Palumbo 2017 レビュー・Mogan/Rennung メタ）／B=精神分析/形式識別不能側（Racker 1957 concordant/complementary・Winnicott 1949 源帰属困難・Grinberg 1962・Bion 1962・Shalizi–Thomas 2011 非識別定理）。
+  - **分水嶺（product）**: ①同期は literal(★/●)・干渉は naming(△)・エネルギーは △〜○。②"流れの符号/型" は Gernert(予後) と Racker(同一化型) の**別軸**が「二値の符号/型を持つ」点で響き合うのみ（◐・同一分類ではない）。③"源が判別できない" は精神分析(●実務)・社会統計(★S–T定理)・神経科学(○N&I 介入可)が**同じ交絡の族に三様の強度**で当たった窓＝topic-neutral な honesty の道具（「関係＝流れ」を支持も反証もしない）。
+  - **team-critic 敵対ゲート（opus）= SPLIT→要修正2件を inline 反映**: MAJOR-1（Gernert↔Racker を"同じ二分"と束ねる過大同型化＝valence 誤読・記号 ●概念同型→◐に格下げ・complementary は"悪化"でないと明示）／MAJOR-2（三分野"同じ壁"→"同じ交絡の族に三様の強度"・S–T の ★ 定理強度を臨床/神経の generic 交絡橋へ転移させない）。MINOR（topic-neutral の一句・HKB は定理でなく現象論モデル・Gernert 出版年/Marci pseudo-dyad 帰属は宿題）も反映。**致命ゼロ・逆立ち論理なし・二次引用の ★ 格上げなし＝堅いと確認**。
+  - **品質**: U+FFFD 0・残存 overclaim（●概念同型）0。RR-032=189行。
+- **次アクション**: ①**pjdhiro が次の鉱脈を選ぶ**（残り: 2=§1↔§5背骨・5=社会側=臨界/隣接可能/パーコレーション・6=力学系の横串）。Main 推奨は **2(背骨)** で軸を通してから 5。②鉱脈が出揃ったら pjdhiro しっくり判定 → READER 本体書き換え(EXECUTE) → 品質ループ → main 公開判断。**READER 本体(reader/energy-flow.html)は今回も未変更**（:3004 は正常）。
+- **worktree 掃除候補**: `kajyo-algebra-reader-61908a`（マージ済）・`laughing-poincare-ba9806`（detached・本セッション cwd）。
+
 ## ⏸ セッション区切り 2026-07-15 (seq01) — pd#129: アンカー修正公開＋深さ監査（全章）＋深掘り鉱脈1・3 完了（develop 0a8480c）／次回=鉱脈4 or 2 の深掘り→READER 反映
 - **HEAD**: develop=**0a8480c**（push 済み・remote 同期）/ main=**2c580a4**（未公開）。**pjdhiro は http://127.0.0.1:3004/reader/energy-flow.html で閲覧＝develop を常に最新に保つこと**（knowledge/ は自律 push 範囲）。
 - **重要な状態**: 今回の深掘りは全て**調査ノート（RR-030/031 等）**で、**READER 本体（reader/energy-flow.html）は未書き換え**。READER への反映は「しっくり判定」後の EXECUTE 工程（保留中）。だから :3004 の見た目は前回のアンカー修正（95a4709）のままで正常。

@@ -106,14 +106,14 @@ honesty 階層の記号：★=物理定理/数理同型（literal）／●=強�
 
 ## 深掘り調査メニュー（次段・優先順位案）
 
-leverage（深さ×取りこぼしの大きさ×章横断の効き）でランク。
+leverage（深さ×取りこぼしの大きさ×章横断の効き）でランク。**2026-07-15 seq02 で全6鉱脈 完了**（RR-030〜035）。次段は EXECUTE（READER 本体反映）＝pjdhiro しっくり判定後。
 
-1. **FEP／予測の熱力学／散逸構造の橋**（発見1・§2B+§5V-B/V-C・§1⑤）★最重要。二重抹消の解除。Still 2012 定理逐語・Friston NESS/Helmholtz 分解逐語・FEP 反証可能性の係争（Colombo/Palacios/Aguilera）を一次接地し、「橋がどこまで架かり どこから思弁か」の地図を作る。§2+§5+§1 を一挙に深くする。
-2. **§1↔§5 背骨「もの＝過程が保つパターン」**（発見2）。cs TH-001 L28 の三方面独立定式化を引用して平衡/非平衡二層を明示。構造的・比較的安価。
-3. **感情側**（§2A/C/D）：アロスタシス・身体予算（Sterling/Barrett）＋情動の力学系（Kuppens/Lewis）＋覚醒＝制御変数。RR-020 の減点処理を視点相対性で反転。目玉＝感情＝状態空間の軌道。
-4. **関係側**（§3）：投影・逆転移↔干渉/同期の生理同調の正負符号（Gernert）＋投影＝源判別不能↔Shalizi-Thomas 同型。**半分マップ済み・一次確認（Gernert 符号=帰結、Racker、Koole-Tschacher）だけ**で厚くなる。
-5. **社会側**（§4）：隣接可能・臨界・パーコレーション＝同時多発の深い機構（Tria et al 2014／Kauffman／SOC＋Clauset-Shalizi-Newman を honesty hook）。「空白」を「部品は実証済み・合成が未着手の open direction」へ精緻化。
-6. **力学系の横串**：アトラクタ・臨界/ニューロン雪崩・HKB は §1/§3/§4/§5 に同じ数理で現れる。共通コラム／横串の詳しくにできる可能性。
+1. ✅ **FEP／予測の熱力学／散逸構造の橋**（発見1）→ `RR-030-fep-dissipative-bridge.md`＋`RR-030-accordions`（seq01・ca6a051）。床(★Still 定理・Friston 分解)/天井(○as-if)の階層割れ。
+2. ✅ **§1↔§5 背骨「もの＝過程が保つパターン」**（発見2）→ `RR-033-spine-thing-as-process-pattern.md`（seq02・98ba5cb）。二層(平衡/非平衡)・独立は3でなく2。cs TH-001 引用側。
+3. ✅ **感情側**（§2A/C/D）→ `RR-031-emotion-flow-bridge.md`（seq01・0a8480c）。感情は flow=literal・energy はならない（例外=代謝一点）。
+4. ✅ **関係側**（§3）→ `RR-032-relational-flow-bridge.md`（seq02・841801d）。同期 literal・干渉 naming／源帰属＝三分野が同じ交絡の族に三様の強度（Shalizi–Thomas 窓）。
+5. ✅ **社会側**（§4）→ `RR-034-social-simultaneity-bridge.md`（seq02・be0afdd）。部品八本は実証／合成一点(人間間バースト同期)のみ未測定。べき則≠SOC・相転移は熱力学的極限を要求。
+6. ✅ **力学系の横串**→ `RR-035-dynamical-systems-crosscut.md`（seq02・23970ec）。同じ数理が全スケールに反復（背骨の数理側裏づけ）／だが同じ数理≠同じ物理＝"数式の罠"（topic-neutral）。
 
 ## honesty ガードレール（深掘りで踏み外さないため）
 - 深い橋を書くとき、この READER が §2 で警告した「名前の罠」を自ら踏まない。各鉱脈に literal〜naming の階層を必ず添える。
