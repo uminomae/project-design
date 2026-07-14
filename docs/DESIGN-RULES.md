@@ -275,3 +275,23 @@ pd#128（2026-07-08）で確立。Litt 三技法の一つ「Shared Spaces」（C
 | 判定の分離 | 「✅ に達したか＝この surface が"共有の場"としてしっくり来るか」は pjdhiro のしっくり感（専権）。CLI は誠実に実装・自己監査し、**公開前に確認を仰ぐ**（720° §8b と同じ姿勢） |
 
 監査は skill `reader-litt-conformance`（L3）。記録は RR-014 §G-4・CN-011 §2/§4。
+
+## 13. READER flow レイアウト（一枚ガラスカラム＋章アコーディオン＋常設/ドロワー目次）
+
+pjdhiro 指示（2026-07-14、energy-flow READER の対話で確立）:
+「reader html は cs の wave-vortex ページを参考に。アウトラインとアコーディオン、目次は garage のものを使う」。
+
+| 要素 | 参考元 | pd での実装 |
+|------|--------|------------|
+| 一枚ガラスの読書カラム | cs `reader/wave-vortex.html` の `.wrap` | `.reader-wrap`（`--glass-bg-medium`＋blur。シェーダーは減光せず、可読性はカラムが担う） |
+| 草稿バナー | cs `.draft-banner` | 同名クラス。左ボーダーは `--gold` |
+| 章アコーディオン | garage `details.sec`（見出しタップで開閉・＋/−） | build script `fold_sections()` が h2 章を自動で畳む。id は h2 のものを details に移す（既存アンカー互換） |
+| 本文中の畳みカード | garage `details.acc` | MD の `<details>` に build が `.acc` を付与 |
+| 目次 | garage TOC（PC=左常設サイドバー ≥1260px / モバイル=右下「☰ 目次」＋右ドロワー・スクロール連動ハイライト・主/サブタイトル分解） | `src/reader-flow.js` がクライアント側で生成。目次タップで章を開いてスクロール |
+
+制約と学び:
+
+- **VI は維持**: シェーダー背景（reader-app.js）と `tokens.css` 変数のみ使用。cs/garage の配色はコピーせず、型だけ移植する（§0a は不変）
+- スタイルは `src/styles/reader-flow.css`（`body.reader-flow` スコープ）。three-and-seven の glow 型と併存し、build script の PAGES で `style: glow|flow` を選ぶ
+- **native smooth scroll は使わない**: このシェーダー背景ページでは `scrollTo/scrollIntoView` の `behavior:'smooth'` が rAF ループと干渉して途中停止する事象を確認。`reader-flow.js` の自前イージング＋着地の遅延補正（garage の 420ms 補正と同型）で代替する
+- flow 型ページの正本 MD には `<!--TOC-->` マーカーを置かない（目次はクライアント生成。build が混入を検査する）
