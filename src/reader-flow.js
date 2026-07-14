@@ -33,8 +33,15 @@
   function jumpTo(id, animate) {
     var el = document.getElementById(id);
     if (!el) return false;
-    var sec = el.closest ? el.closest('details.sec') : null;
-    if (sec) sec.open = true;
+    /* 着地先を隠している祖先の <details> を全て開く。章の details.sec だけでなく
+       入れ子の「詳しく」（.acc 等）も含めて開かないと、閉じた要素の中へ
+       スクロールして着地が見えない破れが起きる。開いてからリフロー後に着地する。 */
+    var d = el.closest ? el.closest('details') : null;
+    while (d) {
+      d.open = true;
+      var p = d.parentNode;
+      d = p && p.closest ? p.closest('details') : null;
+    }
     requestAnimationFrame(function () { smoothTo(el, animate); });
     return true;
   }
