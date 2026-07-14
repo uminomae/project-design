@@ -75,8 +75,16 @@ RR-031 §8 宿題1 は「numbered-advantages 逐語は未取得（Barrett 引用
 
 **overclaim ガード**: 抄録レベルの確保を「本文逐語で確定」と書かない。表のアクセスレベル列（一次全文／一次アブストラクト／body paywalled）を READER 反映時も保つ。ペイウォール body が要るのは「ゲイン傾きの逆U字定式（宿題2）」と「DynAffect の OU 式そのもの（宿題4）」の二点のみで、いずれも二次で既に接地済み＝橋の主張は揺らがない。
 
+## 宿題5 残片 Scherer CPM 原典（Sander/Grandjean/Scherer 2005）＝一次アブストラクト確保
+
+RR-031 §9「自己組織化としての感情」で Lewis 2005 と並置される Scherer の Component Process Model（CPM）の原典を確定・抄録確保。
+> Sander, Grandjean & Scherer (2005) "A systems approach to appraisal mechanisms in emotion", *Neural Networks* 18(4):317–352（DOI 10.1016/j.neunet.2005.03.001）。
+
+**逐語（Abstract）**: CPM は "an appraisal-based emotion theory … particularly suited to modeling with the help of artificial neural network approaches … due to its high degree of specificity in postulating underlying mechanisms including efferent physiologi[cal]…"。＝感情を「評価サブシステムの逐次・非線形処理」として機構レベルで定式化し ANN 実装に向く、と著者が位置づけ。
+
+**橋にどう効くか（◐）**: RR-031 §9 の「感情＝自己組織化（引き金→自己増幅→自己安定化）」の一角。CPM は評価過程の**構成部品と時間展開**を機構化する枠組みで、Lewis の力学系創発と同じ「部品から全体が立ち上がる」語彙。ただし ◐（理論枠組み・fitted model ではない）。body（NN 実装詳細）は Elsevier ペイウォールだが、READER で必要なのは「機構レベルの評価過程モデルが存在する」という位置づけで、抄録で足りる。
+
 ## 残る宿題（本ノート範囲外）
 
 - 宿題2 の gain-steepness/逆U字 body 逐語・宿題4 の OU-SDE body 逐語＝ペイウォール。LOCAL で著者版 PDF（研究室頁）が入手できれば格上げ可だが、現 sandbox allowlist 外。優先度は低い（二次接地で橋は成立）。
-- Scherer CPM 原典（Sander et al. 2005）＝宿題5 の残片。未着手。
-- 合成レベル＝人間間バースト同期の直接測定（RR-034 の空白）＝別筋・最難関。
+- 合成レベル＝人間間バースト同期の直接測定（RR-034 の空白）＝別筋・**RR-038 で網羅探索を実施**（本ノートと同ラウンド）。

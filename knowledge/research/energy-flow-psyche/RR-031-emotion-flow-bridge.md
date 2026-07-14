@@ -187,7 +187,7 @@ RR-020 は allostasis/機会費用を「方向が違う/語彙の不要化＝減
 2. ~~Aston-Jones & Cohen 2005 原著本文の gain/逆U字 直接逐語。~~ **◐ 部分解消 → RR-037**（phasic/tonic・exploitation/exploration・adaptive gain を公式アブストラクトで確保。ゲイン傾き・逆U字の逐語は body 止まり＝Annual Reviews ペイウォール＝Jepma 二次を維持）。
 3. ~~van de Leemput 2014 PNAS 全文（臨界減速の定理陳述・分岐タイプ）＝§1↔§2 溶接の最優先。~~ **✅ 解消 → RR-036**（本論文＋Bos&De Jonge 批判＋著者 Reply の三論文全文を回収。臨界減速＝復元率＝支配的固有値→0＝OU の β→0、catastrophic〔fold〕分岐族、三指標、著者自身の generic 自認を一次確定。係争は対称膠着でなく著者が person-mean centering で押し返し・譲歩は設計限界一点＝"first empirical support"）。
 4. ~~DynAffect 2010 JPSP 本文の OU 定式・home base 逐語。~~ **◐ 部分解消 → RR-037**（home base＝baseline attractor・三過程〔μ・σ・β〕・diffusion modeling を公式アブストラクトで確保。OU-SDE 式そのものは body/SI 止まり＝APA ペイウォール＝継続論文経由を維持）。
-5. Rutledge 2014 PNAS happiness 方程式 **✅ 解消 → RR-037**（★方程式逐語 Happiness(t)=w₀+ΣγᵗCR+ΣγᵗEV+ΣγᵗRPE、●18,420 名追試・striatal fMRI 一致。水準でなく期待＋予測誤差＝運動量像の実証）／Scherer CPM 原典（Sander et al. 2005）は未着手。
+5. Rutledge 2014 PNAS happiness 方程式 **✅ 解消 → RR-037**（★方程式逐語 Happiness(t)=w₀+ΣγᵗCR+ΣγᵗEV+ΣγᵗRPE、●18,420 名追試・striatal fMRI 一致。水準でなく期待＋予測誤差＝運動量像の実証）／Scherer CPM 原典（Sander et al. 2005 *Neural Networks* 18:317）も **✅ 一次抄録確保 → RR-037**（機構レベルの評価過程モデル・◐）。
 6. 持ち越し F1-2（心理学史「物理エネルギー≠心的エネルギー」の一次特定）——本鉱脈と衝突しないことは確認済み（史的「別物」宣言は保存量エネルギーの話。代謝エネルギーは別レイヤー）。
 
 ## 9. pjdhiro 判断が要る設計論点（専権・保留）
