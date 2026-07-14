@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <!--
-  ⚠️ このファイルは生成物です。直接編集しないでください。
+  ⚠️ このファイルは生成物のテンプレートです。生成物 reader/energy-flow.html を直接編集しないでください。
   正本:   knowledge/research/energy-flow-psyche/READER-energy-flow-psyche.md
   再生成: python3 scripts/build-reader-lp.py
   手順:   reader/README.md
 
-  デザイン必須制約: docs/DESIGN-RULES.md §0a
-  - 全公開ページは index.html の VI を継承する（シェーダー背景 + グロークラス体系 + 確立パレット）
-  - カラー/タイポは src/styles/tokens.css の CSS 変数のみ。独自テーマ・埋め込み standalone CSS の新造は禁止
-  - ページ固有スタイルは src/styles/reader.css（tokens + glow の上に載せる）
+  デザイン制約: docs/DESIGN-RULES.md §0a ＋ §13（flow レイアウト）
+  - シェーダー背景（reader-app.js）と tokens.css の変数は pd VI を継承する
+  - レイアウトは cs reader/wave-vortex.html（一枚ガラスの読書カラム）を参考（pjdhiro 指示 2026-07-14）
+  - 章アコーディオン・目次は pjdhiro garage/ の details.sec ＋ TOC パターン（同指示）
+  - ページ固有スタイルは src/styles/reader-flow.css（tokens の上に載せる。独自パレット新造禁止）
 -->
 <html lang="ja">
 <head>
@@ -42,6 +43,7 @@
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Noto+Sans+JP:wght@300;400;500&family=Noto+Serif+JP:wght@200;300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../src/style.css">
     <link rel="stylesheet" href="../src/styles/reader.css">
+    <link rel="stylesheet" href="../src/styles/reader-flow.css">
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -59,29 +61,35 @@
     }
     </script>
 </head>
-<body>
+<body class="reader-flow">
     <div id="webgl-container" aria-hidden="true"></div>
     <div id="content">
-        <header class="reader-hero">
-            <h1 class="glow-heading">感情も、関係も、時代も「エネルギーの流れ」なのか</h1>
-            <p class="reader-subtitle glow-text">エネルギーの流れ仮説 — 個人・関係・社会の三段を、実証と構造類似に仕分けて確かめる読み物</p>
-            <p class="reader-meta glow-text">
-                <span class="reader-status-badge">調査開始 — 随時更新</span><br>
-                最終更新: <!--UPDATED--> ／ 調査の現在地は §6<br>
-                <a href="https://github.com/uminomae/project-design/blob/main/knowledge/research/energy-flow-psyche/READER-energy-flow-psyche.md">正本 (GitHub)</a> ・
-                <a href="./three-and-seven.html">姉妹読み物: なぜ 3 と 7 だけが特別なのか</a> ・
-                <a href="../index.html">プロジェクトデザイン論</a>
-            </p>
-        </header>
-        <article class="reader-article prose-block glow-text">
+        <div class="reader-wrap">
+            <div class="draft-banner">
+                ⚠️ <b>調査を始めたばかりの草稿</b>です。答えではなく、問いを正確な形にしていく途中経過を公開しています。内容は随時書き換わります。
+            </div>
+            <header class="reader-hero">
+                <h1>感情も、関係も、時代も「エネルギーの流れ」なのか</h1>
+                <p class="reader-subtitle">エネルギーの流れ仮説 — 個人・関係・社会の三段を、実証と構造類似に仕分けて確かめる読み物</p>
+                <p class="reader-meta">
+                    <span class="reader-status-badge">調査開始 — 随時更新</span><br>
+                    最終更新: <!--UPDATED--> ／ 調査の現在地は §6 ／ 各章は見出しをタップで開閉できます<br>
+                    <a href="https://github.com/uminomae/project-design/blob/main/knowledge/research/energy-flow-psyche/READER-energy-flow-psyche.md">正本 (GitHub)</a> ・
+                    <a href="./three-and-seven.html">姉妹読み物: なぜ 3 と 7 だけが特別なのか</a> ・
+                    <a href="../index.html">プロジェクトデザイン論</a>
+                </p>
+            </header>
+            <article class="reader-article prose-block">
 <!--BODY-->
-        </article>
-        <footer class="reader-footer glow-text">
-            この読み物は調査の進行に合わせて更新されます。<br>
-            <a href="../index.html">プロジェクトデザイン論</a> ・
-            <a href="https://github.com/uminomae/project-design">GitHub</a>
-        </footer>
+            </article>
+            <footer class="reader-footer">
+                この読み物は調査の進行に合わせて更新されます。<br>
+                <a href="../index.html">プロジェクトデザイン論</a> ・
+                <a href="https://github.com/uminomae/project-design">GitHub</a>
+            </footer>
+        </div>
     </div>
     <script type="module" src="../src/reader-app.js"></script>
+    <script src="../src/reader-flow.js" defer></script>
 </body>
 </html>

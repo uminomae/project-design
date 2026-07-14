@@ -2,10 +2,10 @@
 
 **このディレクトリ内の HTML は生成物。直接編集禁止。**
 
-| ページ | 正本（編集はこちら） |
-|---|---|
-| `three-and-seven.html` | `knowledge/research/two-axis-closure/READER-division-algebra-consciousness-organization.md` |
-| `energy-flow.html` | `knowledge/research/energy-flow-psyche/READER-energy-flow-psyche.md` |
+| ページ | 正本（編集はこちら） | style |
+|---|---|---|
+| `three-and-seven.html` | `knowledge/research/two-axis-closure/READER-division-algebra-consciousness-organization.md` | glow（透過記事＋glow-card） |
+| `energy-flow.html` | `knowledge/research/energy-flow-psyche/READER-energy-flow-psyche.md` | flow（一枚ガラスカラム＋章アコーディオン＋garage 型目次。DESIGN-RULES §13） |
 
 ## このページが何で、どう育てるか
 
