@@ -1,5 +1,108 @@
 # state.md — project-design
 
+## 🔵 セッション進行中 2026-07-15 (seq02) — pd#129: 深掘り全6鉱脈 完了（develop 23970ec）／次段=EXECUTE(READER本体反映)＝pjdhiro しっくり判定後
+- **HEAD**: develop=**23970ec**（push 済み・remote 同期）/ main=**2c580a4**（未公開）。**pjdhiro は http://127.0.0.1:3004/reader/energy-flow.html で閲覧＝develop を最新に保つこと**。
+- **本セッションで自律完遂（pjdhiro「計画に沿って最後まで自律的に進めて・質問せず」指示）**: 深掘りメニュー全6鉱脈を消化。**READER 本体(reader/energy-flow.html)は今セッション未変更**——全て調査ノート(RR-030〜035)。次段の EXECUTE(本体書き換え)＝pjdhiro しっくり判定後。:3004 は正常。
+- **完了した4鉱脈（本セッション）**: 作法＝非相関 researcher×2(opus・鉱脈2/6 は Main 単独 weld)→統合 RR＋部品論文アコーディオン→team-critic 敵対ゲート→inline 反映→commit。
+  - **4 関係側 RR-032（841801d）**: 同期 literal・干渉 naming／"流れの符号/型"は Gernert(予後)と Racker(同一化型)の別軸の響き合い(◐)／源帰属＝精神分析(●実務)・社会統計(★S–T定理)・神経科学(○N&I介入可)が同じ交絡の族に三様の強度＝窓。critic SPLIT→2件反映。
+  - **2 背骨 RR-033（98ba5cb）**: cs TH-001 引用側の weld。二層(平衡=流れ不要/非平衡=散逸・的は非平衡のみ)／「形は過程」独立は3でなく2(共通源流サイバネ・二重カウント回避)／床(散逸★●)〜天井(過程哲学[M])。critic SPLIT→2件反映(§5にBohm/Whitehead不在=新規導入・粒子=パターンは物理少数説ヘッジ)。
+  - **5 社会側 RR-034（be0afdd）**: 部品八本(Tria隣接可能・Weitzman・Merton148件・集合脳・Liu・Kuramoto同期★・Watts percolation★・SOC/Cederman◐)は実証／合成一点(人間間バースト同期の直接測定)のみ未測定。honesty hook 二本(べき則≠SOC=CSN・相転移は熱力学的極限=Kulakowski)。合成の空白は Shalizi–Thomas 識別問題を含む構造的難所かも(◐仮説・CSN の Shalizi=RR-032 の Shalizi 同一)。critic PASS＋minor4件反映。
+  - **6 横串 RR-035（23970ec）**: 同じ数理(OU/同期/臨界減速/SOC/percolation/NESS)が全スケール反復=背骨の数理側裏づけ／だが同じ数理≠同じ物理＝"数式の罠"(topic-neutral・名前の罠より危険＝接続が本物ゆえ)。RR-031「flow literal・energy ならず」を全鉱脈へ一般化。critic SPLIT→2件反映(臨界減速とSOCを別行・"反証ですらある"を topic-neutral 自己矛盾ゆえ二段訂正)。
+- **★次アクション（pjdhiro 専権）**: ①**しっくり判定**——深掘り6ノートを読んで READER 本体へ反映するか(EXECUTE)判断。各 RR の §「改稿への含意」に反映設計メモあり。②反映するなら EXECUTE 工程(researcher 一次逐語の宿題回収→本体書き換え→品質ループ→文脈ゼロ読解テスト→main 公開判断)。③保留中の設計論点(床/天井の見せ方・アコーディオン配置・共通コラム化＝各RRに記載)。
+- **今回の到達点**: 深掘りメニュー **4(関係側)** を完遂。`RR-032-relational-flow-bridge.md` 新設（部品論文アコーディオン内蔵・単一ファイル）。作法は確立どおり（非相関 researcher×2 opus → Main 統合 → team-critic 敵対ゲート → inline 反映 → commit）。
+  - **非相関2 researcher（opus）**: A=実証/力学系側（Marci 2007 皮膚コンダクタンス concordance・Gernert 2023 正負符号→予後 N=14・Richardson 2007 HKB 結合振動子★・Palumbo 2017 レビュー・Mogan/Rennung メタ）／B=精神分析/形式識別不能側（Racker 1957 concordant/complementary・Winnicott 1949 源帰属困難・Grinberg 1962・Bion 1962・Shalizi–Thomas 2011 非識別定理）。
+  - **分水嶺（product）**: ①同期は literal(★/●)・干渉は naming(△)・エネルギーは △〜○。②"流れの符号/型" は Gernert(予後) と Racker(同一化型) の**別軸**が「二値の符号/型を持つ」点で響き合うのみ（◐・同一分類ではない）。③"源が判別できない" は精神分析(●実務)・社会統計(★S–T定理)・神経科学(○N&I 介入可)が**同じ交絡の族に三様の強度**で当たった窓＝topic-neutral な honesty の道具（「関係＝流れ」を支持も反証もしない）。
+  - **team-critic 敵対ゲート（opus）= SPLIT→要修正2件を inline 反映**: MAJOR-1（Gernert↔Racker を"同じ二分"と束ねる過大同型化＝valence 誤読・記号 ●概念同型→◐に格下げ・complementary は"悪化"でないと明示）／MAJOR-2（三分野"同じ壁"→"同じ交絡の族に三様の強度"・S–T の ★ 定理強度を臨床/神経の generic 交絡橋へ転移させない）。MINOR（topic-neutral の一句・HKB は定理でなく現象論モデル・Gernert 出版年/Marci pseudo-dyad 帰属は宿題）も反映。**致命ゼロ・逆立ち論理なし・二次引用の ★ 格上げなし＝堅いと確認**。
+  - **品質**: U+FFFD 0・残存 overclaim（●概念同型）0。RR-032=189行。
+- **次アクション**: ①**pjdhiro が次の鉱脈を選ぶ**（残り: 2=§1↔§5背骨・5=社会側=臨界/隣接可能/パーコレーション・6=力学系の横串）。Main 推奨は **2(背骨)** で軸を通してから 5。②鉱脈が出揃ったら pjdhiro しっくり判定 → READER 本体書き換え(EXECUTE) → 品質ループ → main 公開判断。**READER 本体(reader/energy-flow.html)は今回も未変更**（:3004 は正常）。
+- **worktree 掃除候補**: `kajyo-algebra-reader-61908a`（マージ済）・`laughing-poincare-ba9806`（detached・本セッション cwd）。
+
+## ⏸ セッション区切り 2026-07-15 (seq01) — pd#129: アンカー修正公開＋深さ監査（全章）＋深掘り鉱脈1・3 完了（develop 0a8480c）／次回=鉱脈4 or 2 の深掘り→READER 反映
+- **HEAD**: develop=**0a8480c**（push 済み・remote 同期）/ main=**2c580a4**（未公開）。**pjdhiro は http://127.0.0.1:3004/reader/energy-flow.html で閲覧＝develop を常に最新に保つこと**（knowledge/ は自律 push 範囲）。
+- **重要な状態**: 今回の深掘りは全て**調査ノート（RR-030/031 等）**で、**READER 本体（reader/energy-flow.html）は未書き換え**。READER への反映は「しっくり判定」後の EXECUTE 工程（保留中）。だから :3004 の見た目は前回のアンカー修正（95a4709）のままで正常。
+
+### 🔴 次セッションの入口（pjdhiro 指示 2026-07-15）
+- **深掘りメニュー（RR-REVIEW-depth-audit の §深掘り調査メニュー）**: 1(FEP橋)✅・3(感情側)✅ 完了。**残り: 4(関係側=投影/逆転移・半分済み)・2(§1↔§5背骨)・5(社会側=同時多発の臨界/隣接可能)・6(力学系の横串)**。Main 推奨は次に **4(関係側)**（pjdhiro が最初に投げた投影・逆転移の直観を Gernert 生理同調＋Shalizi-Thomas 同型で仕上げ・問いの第二段に直結）。または 2(背骨)で軸を先に通す。**pjdhiro が次回選ぶ**。
+- **深掘りの作法（確立）**: 章/鉱脈ごとに team-researcher×2（非相関・一次逐語）→ Main 統合で RR ノート＋**部品論文アコーディオン**（pjdhiro 指示「部品論文はアコーディオンで解説」）→ team-critic 敵対ゲート（要修正を inline 反映）→ commit。model は opus 委任（Fable=設計/統合/ゲート）。
+- **保留中の設計論点（pjdhiro 専権・理解が固まってから）**: ①一本の橋の中で床(★定理)と天井(○思弁)が階層で割れるのを READER でどう見せるか ②FEP(情報側)と autopoiesis-enactivism(哲学側)を並置/層分け ③各アコーディオンを §2/§5 のどこにどの順で置くか ④感情側の literal/構造/naming 三層設計・RR-020 標的相対性の併記。
+
+### 今回の到達点（時系列）
+- **①アンカー修正を公開ライン(develop)へ（95a4709/state 08bbaa4）**: 本文の §N 相互参照10箇所をアンカー化（§5前半は h3 深リンク）。`scripts/reader-anchor-check.mjs` 新設（内部アンカー検査・回帰防止）。`src/reader-flow.js` の jumpTo を祖先全 details 開くよう堅牢化。team-critic PASS(CONSENSUS-4)。static11/11・anchor-check113件・ブラウザ実測(click/deep-link 動作)。pd#129 コメント済み。**READER 本体の唯一の実変更はこれ**。
+- **②全章 深さ監査（126e963）** `RR-REVIEW-depth-audit-20260715.md`: pjdhiro 指摘「浅い＝自明な否定の列挙・product は"物理と心がどれだけ深く似ているか"」を受け、§1-§5 を researcher+critic で監査。**横断3発見**: (1)FEP/散逸構造の橋が §2 一蹴と §5 禁止から二重抹消 (2)§1↔§5 背骨「もの＝過程が保つパターン」未溶接 (3)三層表の構造類似セル空欄化。深掘りメニュー＋honesty ガードレール付き。
+- **③深掘り鉱脈1 FEP/散逸構造の橋（ca6a051）** `RR-030-fep-dissipative-bridge.md`＋`RR-030-accordions-paper-explainers.md`: 一次逐語で「床(★=Still 2012定理・Friston 分解)と天井(○=as-if)が一本の橋で階層割れ」。§2「名前だけ同じ」の精密化(Gottwald&Braun)・§5「飛躍禁止」の三帯化。critic 要修正→反映(β復元・Friston自認の揺れ・反論の対称化)。部品論文6本のアコーディオン。
+- **④深掘り鉱脈3 感情側（0a8480c）** `RR-031-emotion-flow-bridge.md`: 分水嶺「感情では flow は literal だが energy はならない・例外=代謝一点」。床①アロスタシス(Barrett/Sterling・★物理量だが感情=read-out一段媒介)/床②力学系OU過程(★軌道=flow)/覚醒=制御変数(Aston-Jones)/機会費用=配分構造(Kurzban)/情動の力学系(Kuppens/Eldar/Lewis)。§2 反転表。RR-020 とは標的仮説の再スコープで整合。critic 要修正→反映(flow自身の同名性・van de Leemput 臨界減速の実証係争 Bos&De Jonge・RR-030境界・覚醒の媒介)。部品論文8本アコーディオン。
+- **メモリ保存**: [[feedback_resemblance_depth_over_caveats]]（類似の深掘りが product・自明な否定は無価値・留保は線引きに使う）。
+- **inbox**: wiki-gen-2026-07-14 は stale 判定で archive（6件は別 stem で compiled 済・D13 autopoiesis のみ真未生成だが取得元なし）。**D13-S14 取得経路判断が保持論点**。
+- **worktree 掃除候補**: `kajyo-algebra-reader-61908a`（マージ済）・`laughing-poincare-ba9806`（detached）。
+
+### 一次逐語の宿題（次ラウンド EXECUTE 時にまとめて・RR-030/031 §宿題に詳細）
+- 鉱脈1: Biehl 2001.06408 全文・Aguilera 本文定量・Colombo&Palacios 本文・Friston 2013 本文・Varela1974 OCR・Jarzynski/Crooks/Landauer 原典。
+- 鉱脈3: Sterling 2012 原文・Aston-Jones&Cohen 原著・**van de Leemput 2014 PNAS 全文＋Bos&De Jonge 応酬（最優先）**・DynAffect JPSP 本文・Rutledge 2014・Scherer CPM 原典。
+- **完了（pd#129 最優先タスク）**: 前回 🔴 の「アンカー相互参照欠陥＋弱いレビューの立て直し」を完遂。
+  - **アンカー化10箇所**（正本 md）: サマリー §5/§2/§3/§4/§5・本文 §2(L137)・§2(L193)・§4/§5前半/§3(L195)。`<a href="#...">§N</a>` 形式。**§5前半は §5 内の最初の h3 id `煩悩を流れで語る言葉は…` に着地**（reader-flow.js の jumpTo が親 details.sec を開くので h3 深リンクも機能）。id は pandoc gfm_auto_identifiers 生成を実 HTML から ground truth 取得して照合。
+  - **検査スクリプト新設** `scripts/reader-anchor-check.mjs`: reader/*.html の内部 `href="#..."` が実在 id に解決するか検査（回帰防止＝回遊性/内部リンク健全性のブラインドスポットを塞ぐ）。クオート/大小許容に堅牢化。負テスト exit1 確認。全113件（energy-flow 12・three-and-seven 101）解決。
+  - **reader-flow.js 堅牢化**: jumpTo を「祖先の全 details を開く」よう変更（将来「詳しく」入れ子内へリンクしても閉じたまま隠れない）。
+  - **マルチエージェント・レビュー（pjdhiro 指示）**: team-critic 1体（opus）で回遊性/内部リンク健全性に絞った独立監査 → **PASS（CONSENSUS-4・proceed）**。12アンカー全数が id 実在＋意味的着地一致、§N 以外の取りこぼしゼロ、flow deep-link 着地パス堅牢と確認。minor 2件（anchor-check 正規表現の将来堅牢性・reader-flow.js 入れ子 details）は今セッションで対処済み。
+  - **品質ループ全通過**: static 11/11・anchor-check 113件解決・U+FFFD 0・ブラウザ実測（click→章 open＋hash 更新／deep-link フレッシュロードで章 open／h3 深リンクで親章 open／コンソール0）。
+- **既知事象（未解決・私の変更外）**: ブラウザペインでスクロール**着地精度**が erratic（deep-link で §4 を約1211px 行き過ぎ・click で §3 へ未移動）。WebGL ビューポート一時0潰れの既知アーティファクト（state.md 既載・実ブラウザでは正常）。`smoothTo`/settle は今回未変更。**pjdhiro に実ブラウザでのスクロール着地スポット確認を推奨**。
+- **次アクション**: ①**pjdhiro しっくり判定**（アンカーの効き・回遊性）→ 採用なら develop→main マージで公開（公開は pjdhiro 専権）②任意: commit-rules.md のテスト一覧に reader-anchor-check を追加（.claude/rules 変更＝pjdhiro 承認要）③実ブラウザでスクロール着地確認。
+- **保持論点（inbox 整理で判明）**: wiki-gen-2026-07-14 は stale と判定し archive（7件中6件は別 stem 名で compiled 済み・D13 autopoiesis のみ真の未生成だが raw PDF/oa_url なしで取得不可）。**D13-S14 autopoiesis の取得経路判断**が残（cs 側正本の可能性）。
+- **worktree 掃除候補**: `kajyo-algebra-reader-61908a`（マージ済）・`laughing-poincare-ba9806`（detached）。
+
+## ⏸ セッション終了 2026-07-14 (seq01) — エネルギーの流れ仮説 READER 公開（pd#129）／次回=アンカー欠落をマルチエージェントでレビュー
+- **HEAD**: develop=**c6bf273** / main=**2c580a4**（両方 push 済み・remote 同期）。姉妹リンク訂正（wave-vortex へ）まで公開済み。
+
+### 🔴 次セッション最優先（pjdhiro 指示 2026-07-14）: energy-flow READER のアンカー相互参照を修正＋弱いレビューの立て直し
+- **欠陥**: 本文の「§2/§3/§4/§5」等の相互参照が**プレーンテキストのまま**でクリックできない。**アンカー化済みは冒頭FAQの §2・§6 のみ**。未リンクは約10箇所:
+  - サマリー（READER md 内 L34-38）: §5・§2・§3・§4・§5
+  - §4 本文（L137）: 「§2 の表」
+  - §5 本文（L193 §2／L195 §4・§5前半・§3）
+  - ※ §5前半は同一 §5 内なので節内アンカー（サブ見出しに id 付与）が要る可能性。build は h2→details.sec に id を振るが h3 相当のサブ見出しには id なし＝要設計。
+- **やり方（pjdhiro 指示）**: **agent-team-workflow でマルチエージェント・レビュー**を次回実施。今回の品質ループが「回遊性/内部リンク健全性」を検査できていなかった＝レビュー観点の穴。reader 用の内部アンカー検査を静的チェックに追加することも検討（three-and-seven は summary にアンカーあり＝作法は既存、energy-flow で漏れた）。
+- **関連の作り**: build-reader-lp.py の flow スタイルは h2 章を `<details class="sec" id="...">` にするが、md 本文の `§N` 文字列を自動リンク化する処理は無い。glow スタイル(three-and-seven)は正本 md 側で明示的に `<a href="#...">` を書いている。energy-flow も同様に**正本 md に明示アンカーを書く**のが筋。
+
+### 今回の到達点（公開まで完了）
+- **公開＝feature(c08a7fc)→develop(88c8853)→main(dfc6ff3)→姉妹リンク訂正(develop c6bf273/main 2c580a4) を --no-ff。**
+- **公開物**: `reader/energy-flow.html`（散逸構造的世界観からの独立探究）＋トップ「問い」章に3読み物（energy-flow・**wave-vortex 姉妹**・three-and-seven）。品質ループ全通過（SURVEY R1-R5→REVIEW SPLIT/6点反映→READER 反映→文脈ゼロ読解テスト/4点修正）。
+- **公開後アクション**: ①GitHub Pages 反映確認（energy-flow.html・トップ問い章の3カード）②pd#129 は **OPEN 継続**（次ラウンド=社会規模の同期/干渉の直接実証・一次文献逐語 フロイト草稿/ユング原典/PTS辞書）③worktree `kajyo-algebra-reader-61908a`（マージ済）掃除。
+- 旧作業ログ（以下）は公開までの経緯。**worktree branch c08a7fc はマージ済み**。
+- **★出自の訂正（pjdhiro 2026-07-14）**: energy-flow-psyche は **pd#115 とは無関係な独立した直観**。散逸構造的世界観（流れが続く間だけ形が保たれる）からのインスピレーション。README/front matter は訂正済み。**READER §0/§1 の「3と7の調査の途中で湧いた」表現は未訂正＝EXECUTE 時に直す**（pd#129 完了条件に記載）。
+- **Issue 起票（pjdhiro 指示で実行）**: **pd#129** https://github.com/uminomae/project-design/issues/129 「エネルギーの流れ仮説 — 散逸構造的世界観からの独立探究」。
+- **SURVEY 完了（agent-team-workflow full・9cdb120）**: R1-R5 を team-researcher で調査、**各テーマ独立2巡で収束**（自然な三角測量）。統合ブリーフ `knowledge/research/energy-flow-psyche/RR-SURVEY-synthesis.md`。REVIEW（team-critic 1体）= **SPLIT→additional_round**、指摘6点を反映済み（電話例係争注記・F5-1 スコープ限定・ego depletion ヘッジ復元・F4-1 経路明記・F1 字義/比喩切り分け・F1-2 決定的→示唆的）。
+- **SURVEY の要点**: R1=字義版は100年前にフロイト/ユング試み実らず（比喩版は留保つき残存）／R2=強い読み「流れが先」は識別不能で開いた問い／R3=波干渉は現行3説不要・決定論はchanceに劣勢／R4=漏/āsava実在だが方向係争・死/価値づけは仏教と逆／R5=渦炎＝散逸構造は直接一致（震源）だが意識への拡張は飛躍。
+- **EXECUTE 完了（49cd0d5・9230c07）**: READER に R1-R5 反映済み。§0 出自訂正／§2 100年前の先例／§3 弱強分離・識別不能／§4 三層＋逆風／§5 震源=散逸構造直接一致＋飛躍禁止段差表／§6 スコアボード全面更新／サマリー・FAQ・バナー更新。**文脈ゼロ LLM 読解テスト実施**＝主旨・帰属・段差(a)(b)(c)(e)○、検出4点（三層混線・§3二重否定・段差(d)△・拡大解釈リスク）を本文で修正（9230c07）。
+- **品質ループ全通過**: team-critic REVIEW(SPLIT→6点反映)／static 11/11／内部アンカー0／U+FFFD 0／モバイル横スクロールなし／三層段差表DOM確認／読解テスト1巡。
+- **HEAD 更新**: worktree branch = **9230c07**（未 push・未マージ）。
+- **次アクション（pd#129 残条件）**: ①**pjdhiro しっくり判定**（READER の問いの形・段差の置き方・§5震源の直接一致の見せ方）→ 採用なら develop マージ→push→main 公開判断 ②任意: RR-001〜005 への分割（現状は RR-SURVEY-synthesis.md 一本）③次ラウンド調査候補=社会規模の同期・干渉の直接実証（R3 空白）・一次文献逐語（フロイト草稿/ユング原典/PTS辞書原本）。**公開は pjdhiro 専権**。
+- **追加作業（0260743・pjdhiro 指示）**: index.html に**「問い」章新設**（今後の方向性の次・#questions）。energy-flow カード新設＋three-and-seven カードを移動。i18n 日英キー追加（site-data.mjs）・sitemap に energy-flow 追加。**注意: :3004 は develop 配信なのでマージまで反映されない。確認は :3005**。ブラウザのモジュールキャッシュで site-data.mjs が旧版のままになる場合あり→ハードリロードで解決（GitHub Pages は max-age 経過で自然解決）。
+- **追加作業（b83b5c5・pjdhiro 指示）**: READER を **flow レイアウト**へ——cs `reader/wave-vortex.html` 参考の一枚ガラスカラム＋pjdhiro garage/ の章アコーディオン（details.sec）・目次（PC左常設/モバイル☰ドロワー・スクロール連動）。`src/styles/reader-flow.css`＋`src/reader-flow.js` 新設、build に style(glow|flow) 分岐と fold_sections()。**DESIGN-RULES §13 新設**。VI（シェーダー＋tokens）は維持。
+- **技術学び**: シェーダー背景ページでは native smooth scroll（scrollTo/scrollIntoView behavior:smooth）が rAF と干渉して途中停止 → 自前イージング＋420ms 着地補正で代替（§13 に記録）。ブラウザペインは WebGL ページでビューポートが一時 0 に潰れる（黒スクショと同根・実ブラウザでは正常）。
+- **garage の場所**: `http://localhost:3005/garage/` は **pjdhiro repo の worktree develop** を配信していた残骸サーバーのもの（実体 `/Users/uminomae/dev/pjdhiro/.claude/worktrees/develop/garage/`）。当該サーバーは kill 済み・現 :3005 は pd worktree。pjdhiro が garage を見たい場合は別ポートで pjdhiro repo を配信し直すこと。
+- **問い（pjdhiro 2026-07-14 原文は憲章に収録）**: エネルギーの流れ→物質→質量の閉じ込め、と同型に、感情・意思＝エネルギーの流れでは／人間関係＝流れ・干渉に名前をつけたもの／社会＝波の干渉場・渦=成果・時代の同時多発、の三段。
+- **pjdhiro 判断**: Issue **なし**で開始（必要時に起票）／置き場所=**新ピラー** `knowledge/research/energy-flow-psyche/`＋新公開ページ `reader/energy-flow.html`（3と7のレンズと混ぜない）。
+- **成果（b78808f）**: 憲章 README（前提資産=RR-020/021/022・**cs TH-001 引用側**・調査計画5本）／READER v1 正本 MD（先回りFAQ 3問・段差3つ・三層扱い表・現在地スコアボード）／build-reader-lp.py **PAGES 化**（three-and-seven 差分ゼロ確認）／新テンプレート。
+- **品質ループ**: static 11/11・内部アンカー欠損0・U+FFFD 0・コンソール0・Main V3（99%→大部分、実証層言明を TH-001 準拠に、地の文一人称除去）。
+- **既知の環境事象**: ブラウザペインのスクリーンショットは WebGL 背景ページをスクロール後に撮ると黒くなる（three-and-seven でも同一再現＝ページ欠陥ではない）。DOM 検証で代替。
+- **プレビュー**: worktree の build/_serve を作り直し :3005 で配信中（launch 名 pd）。旧 :3005 残骸（pjdhiro リポジトリ向け http.server）は kill 済み。
+- **次アクション**: ①pjdhiro しっくり判定（READER v1 の問いの形・段差の置き方）②判定後 develop マージ→push、main 公開は別途判断 ③LLM 読解テスト（reader-comprehension）を公開前に1回 ④調査計画1〜5の着手順を pjdhiro と選ぶ。
+
+## ⏸ セッション終了 2026-07-09 (seq02) — 渦宇宙論深掘り TH-001（正本=cs へ・pd commit なし）
+- **HEAD**: pd は変更なし（develop=cd3c64b / main=f098a04 のまま）。作業 worktree: awesome-vaughan-e908cb（編集なし）。
+- **内容**: pjdhiro の直観「宇宙が海の渦のよう／創造とは波間の渦のよう」の深掘りを agent-team-workflow full で実行（Fable=設計・ゲート、sonnet/opus=実行）。**成果物の正本は cs**: `evidence/themes/TH-001-wave-vortex-ontology/`（別枠新設、output.md 正本、3層分離=実証/仮説/思想）。cs develop **ba1b282** push 済み。
+- **正本配置（pjdhiro 判断 2026-07-09）**: 概念・調査=cs / **pd=引用側（正本なし）** / techo=時空探索一般（従来どおり）。将来 PD 論から引用する際は cs TH-001 を部品として引く（cs-as-component）。
+- **書誌注意**: 紹介リンクの ADS bibcode 2021EPJP..136..544M は Mondal 論文で「Kandyba 重力水力モデル」とは別物（混同を検出）。Kandyba 2025 は書誌未確定のまま隔離。
+- **次アクション**: cs#258（継続調査）の保持論点6件。最初の関門は Kandyba 書誌の pjdhiro 手動確認（Academia.edu）。
+- **ログ**: pd `log-20260709-02.md` / cs `log-20260709-01.md` / 横断 `SESSION-20260709-02.md`
+
+## ⏸ セッション終了 2026-07-09 (seq01) — pd#115 理解度チェック新設＋§7 改名・平易化（judgment待ち・未マージ）
+- **HEAD**: develop=**cd3c64b** / main=**f098a04**（変化なし）。作業は worktree ブランチ **claude/interesting-allen-873dc0 = 0d8fb44**（未マージ）。
+- **作業1 理解度チェック（c0c96a2）**: READER 末尾に「理解度チェック — 五つの質問（任意）」新設。**関門にしない**（pjdhiro 指示）。静的マークアップ＋src/reader-quiz.js（押すとその場で答え合わせ・誤答は「そう読めるのも自然」＋根の実在現象）。no-JS/SEO 両立。DESIGN-RULES **§12** にパターン化。
+- **作業2 §7 改名・平易化（0d8fb44）**: 「この調査でわかったこと — まとめ」は要約と誤予告（pjdhiro 指摘）→「**実証と突き合わせる — 何が外れ、何が残ったか**」へ。結果1/2/3 ラベル廃止、見送りデータ・アーチとモルタルを本文昇格、入れ子畳みフラット化、旧アンカー19箇所更新、日付を題から外しアンカー恒久化。
+- **品質ループ**: V3（棚卸し欠落なし・details 30/30・全アンカー実在）／static-checks 11/11／ブラウザ実測（5問動作・320/375px・コンソール0）／U+FFFD 0。
+- **運用**: メモリー保存「**Fable=設計、実装=Opus/Sonnet 委任**（Agent tool model 指定）」（2026-07-09 pjdhiro 指示）。
+- **次アクション**: ①pjdhiro しっくり判定（クイズ＋§7）→ 採用なら develop マージ→main 公開判断 ②判定後 worktree 掃除 ③プレビューは worktree build/_serve を :3005 で配信（launch 設定名 pd）。常駐 :3004 には映らない。
+- **ログ**: pd `log-20260709-01.md` / 横断 `SESSION-20260709-01.md` / pd#115 コメント済み
+
 ## ⏸ セッション終了 2026-07-08 (seq05) — pd#115 READER 推敲＋Web全面改善（TOC・図解・ファノ対話図）・main 公開（f098a04）
 - **HEAD**: develop=**cd3c64b** / main=**f098a04**（両方 push 済み・同期）。
 - **作業1 文体推敲**: 「チャット回答調」基準で全文推敲（芝居がかった前置き・反復・文芸調を除去、ヘッジ/比喩/pjdhiro引用は維持）。§8 判定ラベルを「見送り」に統一。§6 タイトル語の事実齟齬修正。海の波の比喩は pjdhiro 指示で復元（拍手・ブランコ・海の3連発）。
@@ -8,7 +111,6 @@
 - **拾った事実誤り**: 第II部冒頭「可除代数は1・2・4・8人」→「3人・7人（次元4と8）」に修正。
 - **次アクション候補**: ①worktree `laughing-poincare-ba9806`（本セッション・マージ済み）と `jolly-mestorf-9084d0` の掃除 ②GitHub Pages 反映確認 ③読解テストの回帰ラウンド（次回 READER 更新時）。
 - **ログ**: pd `log-20260708-05.md` / 横断 `SESSION-20260708-05.md`
-
 
 ## ⏸ セッション終了 2026-07-08 (seq04) — pd#128 完了・main公開（0bd691f）・pd#128 close・worktree掃除21本
 - **HEAD**: develop=**32e24ee** / main=**0bd691f**（両方 push 済み・同期）。**Litt 三技法タスク（スキル・ワークフロー生成＋READER 適用）は main 公開まで完了**。
