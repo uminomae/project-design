@@ -1,7 +1,10 @@
 # state.md — project-design
 
-## 🔵 CLI 作業中 2026-07-15 (seq04) — pd#129 残宿題①②③回収（RR-039）＋READER 精密化（🟡公開判定待ち）＋判断保留②を選択C で処理（RR-040）
-- **HEAD**: develop=**1cefec6→（RR-040 コミットで更新）** / main=1eedb23（変化なし）。作業は主 worktree(develop) で直接。CLI cwd は worktree `continuation-decision-points-f4304b`。
+## ✅ セッション区切り 2026-07-15 (seq04) — pd#129 残宿題①②③回収＋READER 精密化＋判断保留②選択C ＝ main 公開完了（main b2ca6b0）
+- **HEAD**: develop=**7cc8c30** / main=**b2ca6b0**（両 push 済み・remote 同期）。**✅ 公開完了**（pjdhiro「公開して」2026-07-15）。公開 URL: https://uminomae.github.io/project-design/reader/energy-flow.html （Pages 反映は数分）。main worktree は develop に復帰。CLI cwd は worktree `continuation-decision-points-f4304b`。
+- **本セッション(seq04)で完了**: ①pd#129 残宿題①②③を RR-039 で回収（交絡分解の後続は無く Shalizi–Thomas の原理的難所と確定・idea-twins は別交絡を攻める道具）②判断保留①＝READER §4 の idea-twins 一文を精密化して**公開**（品質ループ＋文脈ゼロ読解テスト全通過）③判断保留②＝選択(C) で RR-040（束ねモデルは作らず二重の壁＝表現＋識別 を彫る・新規主張は立てず）。pd#129 に公開コメント済み（両判断保留クローズ）。
+- **pd#129 = OPEN 継続**（残＝低優先ペイウォール body 逐語のみ：Simonton/Bikard body・Aston-Jones ゲイン傾き/DynAffect OU 式。いずれも二次接地済で橋は成立）。次ラウンド着手は pjdhiro が選ぶ。
+- ログ: pd `log-20260715-04.md`（要更新）/ 横断 `SESSION-20260715-04.md`（要更新）。未追跡の自己参照 symlink（reader/reader・src/src・content/content）は配信サーバー副産物＝放置。
 - **🟡 判断保留②＝選択 (C) を pjdhiro 採択 → 処理済み（RR-040）**: 「束ねモデルを作るか」に対し pjdhiro は (C)＝モデルを作らず空白の仕様を彫る、を選択。`RR-040-synthesis-gap-specification.md` 新設。**合成が空いているのは二重の壁**——(1) 表現の壁（Kuramoto は位相／Watts は単一カスケード／Tria は単一壺／Liu は個人内…と部品の状態空間が非互換で掛け合わせられない・◐観察であって不可能性定理でない）(2) 識別の壁（書けても Shalizi–Thomas 交絡で検証不能・era ランダム化不能）。V3 自己修正＝「データ不足でなく設計不足」（引用ネットワークは現存するが共通原因と伝染を混ぜる）。**新規の合成的主張は立てず**（絶対原則「保持論点を急いで解くな」順守）。READER 反映は不要と推奨（識別の壁は 1cefec6 で反映済み・表現の壁は専門的すぎ段差増）。U+FFFD 0・[[link]] 解決。
 - **🟡 判断保留①を pjdhiro が採択（A）→ 反映済み・公開判定待ち**: READER §4 の idea-twins 一文を精密化（正本 MD line 230 → 再ビルド）。「まさにこの交絡を切り分けるために作られた道具」→「独立性を前提にアイデアの中身を固定して下流（受容・事業化）を測る道具で、切り分けるのは別の交絡」に是正し、「合成が進まない」理由を「道具が足りないから」→「観察データからは原理的に見分けにくい（Shalizi–Thomas 型）」へ差し替え。§4 の他部分（識別問題＝層①の中心論争）は正しいので不変。**品質ループ全通過**（static 11/11・アンカー137・U+FFFD 0・文脈ゼロ読解テスト Q1–Q4 意図どおり正答〔idea-twins は見分けの道具でない/空白は束ねる合成/理由は原理的難所/同期は未証明〕・Q5 の §3 参照は既存アンカーで実ページはリンク＝副作用）。READER 40,556 bytes。**develop→main 公開は pjdhiro 専権＝:3004 で しっくり確認 → 「公開して」指示待ち**。
 - **区切りサマリ**: pd#129 OPEN 継続。ログ: pd `log-20260715-04.md` / 横断 `SESSION-20260715-04.md`。未追跡の自己参照 symlink（reader/reader・src/src・content/content・配信サーバー副産物）は commit せず放置。
