@@ -1,5 +1,16 @@
 # state.md — project-design
 
+## 🔵 CLI 作業中 2026-07-15 (seq06) — energy-flow READER 品質レビュー（三レンズ）＋是正6件反映＋pd#130 起票（🟡公開判定待ち）
+- **HEAD**: develop=**513e0cd**（push 済み）/ main=**b2ca6b0**（変化なし）。cwd は worktree `continuation-7346cd`。
+- **依頼（pjdhiro）**: 「レビューを重ねて欲しい。平易か、骨格や流れはわかりやすいか、原典を読んでいるか。他の reader の品質管理を調べて同じレベルで」。→ three-and-seven（RR-014）と同レベルの**三レンズ**を新規に回した（[[RR-041-reader-review-round1]]）。
+- **① 文脈ゼロ LLM 読解テスト**: `TEST-reader-energy-flow.md` 新設＋ハーネス `reader-llm-comprehension-test.mjs` を対象引数対応に改修（後方互換維持）。Sonnet 文脈ゼロ読者で第1回→おおむね PASS・⚠️ 4件（床の二重使用／確からしさ表3種の不統一／§5位置づけ・§4→§5逆流／臨界減速が未定義語「相転移」依存）。
+- **② Litt 適合監査**: Explanations＋speed regulator＝✅（読解テストを反復可能資産化）。Micro-worlds・Shared Spaces＝❌（three-and-seven は pd#128 実装済・energy-flow 未着手）。バッジ不在＝非対称。
+- **③ 原典忠実性**: 高い。r=0.47/R²=0.429/3531名/23研究室/4000万論文/0.1%/Rennung盲検/Gottwald&Braun/Kondepudi/Still すべて RR ノートと一致。アクセスレベル（一次全文/抄録/ペイウォール）も正直＝「原典を読んでいる」。
+- **pjdhiro「①②」採択**: ①是正6件（P1-P6）を READER 正本 MD に反映→再ビルド（42,104 bytes）。P4 相転移の即席注記／P5 分水嶺の前方リンク／P1 §5「床と天井」→「土台と屋根」（§2 床①②との衝突解消）／P3 §5 冒頭オリエンテーション／P2 §5 表の役割注記／P6 §7 に Litt 適合表を honest 公開（バッジ実体化）。**読解テスト第2回（回帰）で 4件すべて「改善された」判定**。品質ループ全通過（static 11/11・U+FFFD 0・アンカー34解決）。②Micro-worlds/Shared Spaces を **pd#130 起票**（https://github.com/uminomae/project-design/issues/130）。
+- **🟡 公開判定待ち（pjdhiro 専権）**: READER 本体は是正反映済み・品質ループ全通過。**develop→main 公開は :3004 しっくり確認 →「公開して」指示待ち**。公開 URL: https://uminomae.github.io/project-design/reader/energy-flow.html 。
+- **軽微な残（次ラウンド候補・公開を止めない）**: 横串節に §番号なし／§6 スコアボードと §2・§4・§5 の3表の関係が未明示／アロスタシス・OU・臨界減速は畳みを開かないと出会わない（progressive disclosure）。
+- **次アクション**: pjdhiro が :3004 でしっくり確認 →「公開して」で develop→main マージ。または次ラウンド（軽微な残 or pd#130 着手）を選ぶ。
+
 ## ✅ セッション区切り 2026-07-15 (seq05) — pd#129 低優先ペイウォール宿題を断念でクローズ
 - **HEAD**: develop=（本コミットで更新）/ main=**b2ca6b0**（変化なし）。seq04 の主要作業（READER §4 精密化・RR-039・RR-040・main 公開）は develop=7cc8c30/main=b2ca6b0 で既に完了・push 済み。
 - **本セッションでやったこと**: pjdhiro に次アクションを確認 →「pd#129 の低優先宿題」を選択。Simonton 1978 body・Bikard body・Aston-Jones ゲイン傾き/DynAffect OU 式の body 逐語を ResearchGate 経由（4件とも掲載ページを WebSearch で発見）で再取得試行 → **全件 403（bot拒否）**。Semantic Scholar API も **429**（キー無しレート制限）。新規取得不能を再確認したのみで新情報は得られず。
