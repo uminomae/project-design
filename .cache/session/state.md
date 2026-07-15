@@ -1,16 +1,36 @@
 # state.md — project-design
 
-## 🔵 CLI 作業中 2026-07-15 (seq04) — pd#129 残宿題①②③回収（RR-039）＋READER 精密化（🟡公開判定待ち）＋判断保留②を選択C で処理（RR-040）
-- **HEAD**: develop=**1cefec6→（RR-040 コミットで更新）** / main=1eedb23（変化なし）。作業は主 worktree(develop) で直接。CLI cwd は worktree `continuation-decision-points-f4304b`。
+## 🔵 CLI 作業中 2026-07-16 (seq06) — energy-flow READER 品質レビュー＋是正＋pd#130 Micro-worlds/Shared Spaces 実装（🟡公開＆しっくり判定待ち）
+- **HEAD**: develop=**0c91146**（push 済み）/ main=**b2ca6b0**（変化なし）。cwd は worktree `continuation-7346cd`。
+- **pd#130 実装完了（L2＋L3・develop 0c91146・RR-042）**: pjdhiro「2」で pd#130 着手。**L2 Micro-worlds 2図**——`ou-well`（§2 くぼみのボール＝OU過程＋臨界減速）・`kuramoto-sync`（横串 結合振動子の同期＝相転移）を `src/reader-microworlds.js` に追加（既存4種不変・three-and-seven と同アーキテクチャ）。**L3 Shared Spaces**——§7 に「共有の場」小節（採用/保留/見送りの台帳 surface＋参加導線・scope 正直）。§7 Litt 適合表を L2/L3 とも ✅ へ。実装は Opus 委任＋Fable 統合/検証。数理 RR-042a **ALL CHECKS PASSED**。品質ループ全通過（static 11/11・U+FFFD 0・アンカー39・node --check・エラー0）。CSS は reader.css 単一ソースへ統一（reader-flow.css 移植は二重定義で差し戻し）。ブラウザ:3004 で mount/描画/status/VI 継承を確認。
+- **🟡 しっくり＆公開判定待ち（pjdhiro 専権）**: **アニメの動きは headless で検証不能**（visibilityState:hidden で rAF 停止）。pjdhiro が :3004 可視ブラウザで §2・横串を開いて Micro-worlds のしっくり感を判定（720°の前例＝落とす場合あり）→ よければ develop→main 公開。
+- **Litt 適合監査**: 第3回で三技法すべて ✅（L3 scope 付き）＝「適合（core fully adopted）」＝three-and-seven と対称化。
+- **依頼（pjdhiro）**: 「レビューを重ねて欲しい。平易か、骨格や流れはわかりやすいか、原典を読んでいるか。他の reader の品質管理を調べて同じレベルで」。→ three-and-seven（RR-014）と同レベルの**三レンズ**を新規に回した（[[RR-041-reader-review-round1]]）。
+- **① 文脈ゼロ LLM 読解テスト**: `TEST-reader-energy-flow.md` 新設＋ハーネス `reader-llm-comprehension-test.mjs` を対象引数対応に改修（後方互換維持）。Sonnet 文脈ゼロ読者で第1回→おおむね PASS・⚠️ 4件（床の二重使用／確からしさ表3種の不統一／§5位置づけ・§4→§5逆流／臨界減速が未定義語「相転移」依存）。
+- **② Litt 適合監査**: Explanations＋speed regulator＝✅（読解テストを反復可能資産化）。Micro-worlds・Shared Spaces＝❌（three-and-seven は pd#128 実装済・energy-flow 未着手）。バッジ不在＝非対称。
+- **③ 原典忠実性**: 高い。r=0.47/R²=0.429/3531名/23研究室/4000万論文/0.1%/Rennung盲検/Gottwald&Braun/Kondepudi/Still すべて RR ノートと一致。アクセスレベル（一次全文/抄録/ペイウォール）も正直＝「原典を読んでいる」。
+- **pjdhiro「①②」採択**: ①是正6件（P1-P6）を READER 正本 MD に反映→再ビルド（42,104 bytes）。P4 相転移の即席注記／P5 分水嶺の前方リンク／P1 §5「床と天井」→「土台と屋根」（§2 床①②との衝突解消）／P3 §5 冒頭オリエンテーション／P2 §5 表の役割注記／P6 §7 に Litt 適合表を honest 公開（バッジ実体化）。**読解テスト第2回（回帰）で 4件すべて「改善された」判定**。品質ループ全通過（static 11/11・U+FFFD 0・アンカー34解決）。②Micro-worlds/Shared Spaces を **pd#130 起票**（https://github.com/uminomae/project-design/issues/130）。
+- **🟡 公開判定待ち（pjdhiro 専権）**: READER 本体は是正反映済み・品質ループ全通過。**develop→main 公開は :3004 しっくり確認 →「公開して」指示待ち**。公開 URL: https://uminomae.github.io/project-design/reader/energy-flow.html 。
+- **第2ラウンド仕上げ（pjdhiro「次に進んで」2026-07-15）**: 軽微な残①②を反映——①横串節に「章をまたぐ視点だから番号を振らない」旨のリード、②§6 スコアボードに「§2/§4/§5 の各表を部品ごとに束ね直した統合版」の注記。③（畳み内定義語）は reader モードの節折り畳み設計＝3レベル分離そのものなので不変。品質ループ全通過（static 11/11・U+FFFD 0・リンク37解決・42,487 bytes）。develop に反映（要 commit）。
+- **🟡 公開判定待ち（pjdhiro 専権・変わらず）**: READER は是正6件＋仕上げ2件を反映済み・品質ループ全通過。**develop→main 公開は :3004 しっくり確認 →「公開して」指示待ち**。
+- **次アクション**: pjdhiro が :3004 でしっくり確認 →「公開して」で develop→main マージ。または pd#130（Micro-worlds/Shared Spaces）へ着手。
+
+## ✅ セッション区切り 2026-07-15 (seq05) — pd#129 低優先ペイウォール宿題を断念でクローズ
+- **HEAD**: develop=（本コミットで更新）/ main=**b2ca6b0**（変化なし）。seq04 の主要作業（READER §4 精密化・RR-039・RR-040・main 公開）は develop=7cc8c30/main=b2ca6b0 で既に完了・push 済み。
+- **本セッションでやったこと**: pjdhiro に次アクションを確認 →「pd#129 の低優先宿題」を選択。Simonton 1978 body・Bikard body・Aston-Jones ゲイン傾き/DynAffect OU 式の body 逐語を ResearchGate 経由（4件とも掲載ページを WebSearch で発見）で再取得試行 → **全件 403（bot拒否）**。Semantic Scholar API も **429**（キー無しレート制限）。新規取得不能を再確認したのみで新情報は得られず。
+- **pjdhiro 判断**: 「断念」を選択 → RR-037・RR-038 の該当箇所を「✅ 断念（2026-07-15 pjdhiro 判断・再取得試行済み）」に更新。二次接地（Jepma 学位論文・継続論文の OU 式等）で橋は既に成立しているため、これ以上の追跡は行わない。
+- **pd#129 = OPEN 継続**（残タスク無し・次ラウンド着手は pjdhiro が選ぶ）。
+- **次アクション**: ①commit & push 済み ②pd#129 にコメント。
+
+## ✅ セッション区切り 2026-07-15 (seq04) — pd#129 残宿題①②③回収＋READER 精密化＋判断保留②選択C ＝ main 公開完了（main b2ca6b0）
+- **HEAD**: develop=**7cc8c30** / main=**b2ca6b0**（両 push 済み・remote 同期）。**✅ 公開完了**（pjdhiro「公開して」2026-07-15）。公開 URL: https://uminomae.github.io/project-design/reader/energy-flow.html （Pages 反映は数分）。main worktree は develop に復帰。CLI cwd は worktree `continuation-decision-points-f4304b`。
+- **本セッション(seq04)で完了**: ①pd#129 残宿題①②③を RR-039 で回収（交絡分解の後続は無く Shalizi–Thomas の原理的難所と確定・idea-twins は別交絡を攻める道具）②判断保留①＝READER §4 の idea-twins 一文を精密化して**公開**（品質ループ＋文脈ゼロ読解テスト全通過）③判断保留②＝選択(C) で RR-040（束ねモデルは作らず二重の壁＝表現＋識別 を彫る・新規主張は立てず）。pd#129 に公開コメント済み（両判断保留クローズ）。
+- ログ: pd `log-20260715-04.md`（要更新）/ 横断 `SESSION-20260715-04.md`（要更新）。未追跡の自己参照 symlink（reader/reader・src/src・content/content）は配信サーバー副産物＝放置。
 - **🟡 判断保留②＝選択 (C) を pjdhiro 採択 → 処理済み（RR-040）**: 「束ねモデルを作るか」に対し pjdhiro は (C)＝モデルを作らず空白の仕様を彫る、を選択。`RR-040-synthesis-gap-specification.md` 新設。**合成が空いているのは二重の壁**——(1) 表現の壁（Kuramoto は位相／Watts は単一カスケード／Tria は単一壺／Liu は個人内…と部品の状態空間が非互換で掛け合わせられない・◐観察であって不可能性定理でない）(2) 識別の壁（書けても Shalizi–Thomas 交絡で検証不能・era ランダム化不能）。V3 自己修正＝「データ不足でなく設計不足」（引用ネットワークは現存するが共通原因と伝染を混ぜる）。**新規の合成的主張は立てず**（絶対原則「保持論点を急いで解くな」順守）。READER 反映は不要と推奨（識別の壁は 1cefec6 で反映済み・表現の壁は専門的すぎ段差増）。U+FFFD 0・[[link]] 解決。
-- **🟡 判断保留①を pjdhiro が採択（A）→ 反映済み・公開判定待ち**: READER §4 の idea-twins 一文を精密化（正本 MD line 230 → 再ビルド）。「まさにこの交絡を切り分けるために作られた道具」→「独立性を前提にアイデアの中身を固定して下流（受容・事業化）を測る道具で、切り分けるのは別の交絡」に是正し、「合成が進まない」理由を「道具が足りないから」→「観察データからは原理的に見分けにくい（Shalizi–Thomas 型）」へ差し替え。§4 の他部分（識別問題＝層①の中心論争）は正しいので不変。**品質ループ全通過**（static 11/11・アンカー137・U+FFFD 0・文脈ゼロ読解テスト Q1–Q4 意図どおり正答〔idea-twins は見分けの道具でない/空白は束ねる合成/理由は原理的難所/同期は未証明〕・Q5 の §3 参照は既存アンカーで実ページはリンク＝副作用）。READER 40,556 bytes。**develop→main 公開は pjdhiro 専権＝:3004 で しっくり確認 → 「公開して」指示待ち**。
-- **区切りサマリ**: pd#129 OPEN 継続。ログ: pd `log-20260715-04.md` / 横断 `SESSION-20260715-04.md`。未追跡の自己参照 symlink（reader/reader・src/src・content/content・配信サーバー副産物）は commit せず放置。
+- **🟡 判断保留①を pjdhiro が採択（A）→ 反映済み・公開判定待ち**: READER §4 の idea-twins 一文を精密化（正本 MD line 230 → 再ビルド）。「まさにこの交絡を切り分けるために作られた道具」→「独立性を前提にアイデアの中身を固定して下流（受容・事業化）を測る道具で、切り分けるのは別の交絡」に是正し、「合成が進まない」理由を「道具が足りないから」→「観察データからは原理的に見分けにくい（Shalizi–Thomas 型）」へ差し替え。§4 の他部分（識別問題＝層①の中心論争）は正しいので不変。**品質ループ全通過**（static 11/11・アンカー137・U+FFFD 0・文脈ゼロ読解テスト Q1–Q4 意図どおり正答〔idea-twins は見分けの道具でない/空白は束ねる合成/理由は原理的難所/同期は未証明〕・Q5 の §3 参照は既存アンカーで実ページはリンク＝副作用）。READER 40,556 bytes。
 - **やったこと**: RR-038 §残る宿題の①②③を一次で追い込み、`RR-039-multiples-confound-decomposition-followup.md` に回収。**三宿題とも「決着した後続なし」で一致**——①Li ら 2025 の long-tail を共通原因 vs 伝染に分解した後続は無く、無いのは Shalizi–Thomas の generic 識別障壁（観察データからは原理的に分けにくい）による。②Bikard idea-twins は独立性を前提に「アイデアの質」を固定して下流（受容・事業化：Marx&Hsu 2022・Masclans 2025）を測る道具で、"共通原因 vs 伝染" とは別の交絡を攻める＝双子間の伝染は構成上測れない。③Kleinberg burst detection はバーストを検出するが機構は判定しない。交絡を破る設計（ネットワーク RCT/IV）は個人スケールの拡散でのみ実在し era スケール創造的合成には移植不能。
 - **RR-038 も精密化**（L31/L49）: idea-twins を「Shalizi–Thomas 交絡の攻略ツール」とした記述を「別の交絡（アイデアの質）を攻める道具」に是正。§残る宿題を ✅ 回収済みに更新。
 - **品質ループ**: U+FFFD 0・[[link]] 解決・Main V3 反例探索通過（idea-twins が別交絡／Shalizi–Thomas は「設計・仮定なしには不能」＝原理的難所／era スケール移植不能、いずれも過剰断定なしを確認）。数理主張なし＝機械検証スクリプト対象外。
-- **🟡 判断保留（pjdhiro 専権）**: 公開 READER [reader/energy-flow.html:268] の「『アイデアの双子』はまさにこの交絡を切り分けるために作られた道具です」は idea-twins の目的を取り違えている（アイデアの質の交絡 ≠ 共通原因 vs 伝染）。**訂正するか＝しっくり判定＋develop→main 公開は pjdhiro 専権**。RR-039 §判断保留 に訂正文案あり（「独立性を前提にアイデアの質を固定して下流を測る道具」＋理由を「道具が無いから」→「観察データから原理的に見分けにくい（Shalizi–Thomas）」へ差し替え）。§4 の「識別問題は層①の中心論争」は正しいので維持——変えるのは idea-twins の一文だけで足りる。**READER 本体は未変更**（本セッションで公開内容は触っていない）。
-- **🟡 判断保留（pjdhiro 専権）**: 合成レベルの「束ねモデル」を新規構築するか（理論の採否）。
-- **次アクション**: ①上記 READER 精密化を pjdhiro が採否判断 ②RR-039 を pd#129 にコメント ③commit & push develop（knowledge/ 自律範囲）。
 
 ## ✅ セッション区切り 2026-07-15 (seq03) — pd#115 クイズ採用＋pd#129 宿題全回収＋READER 反映＋main 公開 完了（main 1eedb23）
 - **HEAD**: develop=**877f822** / main=**1eedb23**（両 push 済み・remote 同期）。**✅ 公開完了**（pjdhiro「公開してOK」）——READER 宿題回収反映版＋pd#115 クイズを本番公開。**GitHub Pages 反映確認済み**（92,430 bytes・「アイデアの双子」「三つとも、それぞれ別の形で」検出）。公開 URL: https://uminomae.github.io/project-design/reader/energy-flow.html 。

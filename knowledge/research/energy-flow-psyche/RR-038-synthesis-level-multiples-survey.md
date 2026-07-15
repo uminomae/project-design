@@ -64,6 +64,6 @@ RR-034 は「合成は未発見」と一枚で畳んだ。網羅探索の後、�
 
 **残る宿題 → ✅ 回収済み（RR-039）**: ①Li ら 2025 の long-tail 逸脱を common-cause vs contagion に分解した研究＝**無し**（generic identification barrier＝Shalizi–Thomas による原理的難所と判明）。②Bikard idea-twins で同期・伝染を測った後続＝**無し**（idea-twins は独立性を前提にアイデアの質を固定する別の道具で、双子間の伝染は構成上測れない）。③Kleinberg burst detection の multiples 適用＝**直接は無し**（burst は検出するが機構は判定しない）。詳細と精密化は [[RR-039-multiples-confound-decomposition-followup]]。**READER への反映（idea-twins の一文の精密化）は pjdhiro 専権＝判断保留**。
 
-**残（優先度低・body ペイウォール）**: Simonton 1978 body（SAGE）・Bikard body 詳細・RR-037 の Aston-Jones ゲイン傾き/DynAffect OU 式の body 逐語（二次接地済で橋は成立）。
+**優先度低・body ペイウォール → ✅ 断念（2026-07-15 pjdhiro 判断・再取得試行済み）**: Simonton 1978 body（SAGE）・Bikard body 詳細・RR-037 の Aston-Jones ゲイン傾き/DynAffect OU 式の body 逐語。ResearchGate 4件とも403（bot拒否）・Semantic Scholar API 429（キー無しレート制限）で新規取得不能を再確認。二次接地（Jepma 学位論文・継続論文の OU 式等）で橋は既に成立しており、これ以上の追跡は行わない。
 
 **合成レベルの「束ねモデル」→ 選択 (C) で処理済み（[[RR-040-synthesis-gap-specification]]）**: pjdhiro 判断は「モデルを作らず空白の仕様を彫る」。空白は二重の壁（表現の壁＝部品の状態空間が非互換／識別の壁＝書けても検証不能）で塞がれていることを精密化。新規の合成的主張は立てていない（保持論点は開いたまま）。

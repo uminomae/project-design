@@ -474,12 +474,176 @@ function mountFanoHome(host) {
     draw();
 }
 
+// ---- 乱数（標準正規・Box–Muller）----
+// energy-flow の OU / 蔵本ウィジェット用。RR-042a-microworld-math-check.mjs と同じ更新式で機械検証済み。
+function gaussian() {
+    let u = 0, v = 0;
+    while (u === 0) u = Math.random();
+    while (v === 0) v = Math.random();
+    return Math.sqrt(-2 * Math.log(u)) * Math.cos(2 * Math.PI * v);
+}
+
+// ============================================================
+// 5) OU 過程＝くぼみのボール（energy-flow §2「くぼみに置かれたボール」＋臨界減速）
+//    ポテンシャル井戸 U(x)=½·k·x² を、底へ引き戻す力とランダムな揺れの釣り合いで点が動く。
+//    離散化（Euler–Maruyama）: x ← x − k·x·dt + σ·√dt·N(0,1)。
+//    定常分散 σ²/(2k)、ラグτ自己相関 exp(−k·τ)、臨界減速＝k→小 で τ=1/k・分散が増大。
+//    （数理核は RR-042a-microworld-math-check.mjs で node 検証済み）
+// ============================================================
+function mountOUWell(host) {
+    const P = PAL();
+    const view = makeCanvas(host, 0.5);
+    const row = controls(host);
+    const st = status(host);
+    const dt = 0.05;
+    const XR = 3.4;                 // 描画に使う x の範囲 ±XR（視覚的クランプ兼用）
+    let k = 1.0, kTarget = 1.0, sigma = 0.6, x = 0;
+    const trace = [];
+    const TRACE_MAX = 260;
+    let raf = 0;
+
+    const slK = slider(row, {
+        label: '引き戻す力（k）', min: 0.1, max: 3, value: k, step: 0.1,
+        onInput: v => { k = v; kTarget = v; },
+    });
+    slider(row, {
+        label: '揺れ（σ）', min: 0, max: 1.5, value: sigma, step: 0.05,
+        onInput: v => { sigma = v; },
+    });
+    button(row, 'くぼみを浅く（臨界減速）', () => { kTarget = 0.15; });
+    button(row, 'リセット', () => { k = 1.0; kTarget = 1.0; sigma = 0.6; slK.value = '1'; x = 0; trace.length = 0; });
+
+    function step() {
+        // 臨界減速: k を目標値へなめらかに寄せる（井戸がじわりと浅くなる）
+        if (Math.abs(k - kTarget) > 1e-3) { k += (kTarget - k) * 0.05; slK.value = k.toFixed(2); }
+        // Euler–Maruyama（RR-042a と同一）
+        x = x - k * x * dt + sigma * Math.sqrt(dt) * gaussian();
+        if (x > XR) x = XR; else if (x < -XR) x = -XR;
+        trace.push(x);
+        if (trace.length > TRACE_MAX) trace.shift();
+    }
+    function draw() {
+        const { ctx, W, H } = view;
+        ctx.clearRect(0, 0, W, H);
+        const pad = 12, splitX = W * 0.46, topY = pad + 6, baseY = H - pad - 6;
+        // ---- 左: ポテンシャル井戸とボール ----
+        const wx0 = pad, wx1 = splitX - pad, wcx = (wx0 + wx1) / 2, wSpan = (wx1 - wx0) / 2;
+        const xToPx = xv => wcx + (xv / XR) * wSpan;
+        const Umax = 0.5 * 3 * XR * XR;                 // k=3・x=XR を縦スケール基準に
+        const Uscale = (baseY - topY) / Umax;
+        const yOf = (xv, kk) => baseY - 0.5 * kk * xv * xv * Uscale;
+        ctx.strokeStyle = P.navy; ctx.lineWidth = 2; ctx.beginPath();
+        for (let i = 0; i <= 60; i++) { const xv = -XR + 2 * XR * i / 60; const px = xToPx(xv), py = yOf(xv, k); i ? ctx.lineTo(px, py) : ctx.moveTo(px, py); }
+        ctx.stroke();
+        ctx.strokeStyle = P.faint; ctx.lineWidth = 1; ctx.beginPath(); ctx.moveTo(wx0, baseY); ctx.lineTo(wx1, baseY); ctx.stroke();
+        const bx = xToPx(x), by = yOf(x, k) - 8;
+        ctx.fillStyle = P.coral; ctx.beginPath(); ctx.arc(bx, by, 8, 0, Math.PI * 2); ctx.fill();
+        ctx.fillStyle = P.mute; ctx.font = '11px sans-serif'; ctx.textAlign = 'center';
+        ctx.fillText('U(x)=½k x²（つつくと転がり、やがて底へ）', wcx, topY);
+        // ---- 右: 時系列トレース（横=時間・縦=位置）----
+        const tx0 = splitX + pad, tx1 = W - pad, tcy = (topY + baseY) / 2, tSpan = (baseY - topY) / 2;
+        const posToPy = xv => tcy - (xv / XR) * tSpan;
+        const sd = sigma > 0 && k > 0 ? Math.min(sigma / Math.sqrt(2 * k), XR) : 0;   // 定常標準偏差 σ/√(2k)
+        ctx.fillStyle = P.faint; ctx.fillRect(tx0, posToPy(sd), tx1 - tx0, posToPy(-sd) - posToPy(sd));
+        ctx.strokeStyle = P.line; ctx.lineWidth = 1; ctx.beginPath(); ctx.moveTo(tx0, tcy); ctx.lineTo(tx1, tcy); ctx.stroke();
+        ctx.strokeStyle = P.gold; ctx.lineWidth = 1.6; ctx.beginPath();
+        for (let i = 0; i < trace.length; i++) { const px = tx0 + (tx1 - tx0) * i / (TRACE_MAX - 1); const py = posToPy(trace[i]); i ? ctx.lineTo(px, py) : ctx.moveTo(px, py); }
+        ctx.stroke();
+        ctx.fillStyle = P.mute; ctx.font = '11px sans-serif'; ctx.textAlign = 'left'; ctx.fillText('位置の時系列（時間 →）', tx0, topY);
+        ctx.strokeStyle = P.faint; ctx.beginPath(); ctx.moveTo(splitX, topY - 4); ctx.lineTo(splitX, baseY + 4); ctx.stroke();
+    }
+    function setStatus() {
+        const tau = 1 / k, varr = sigma > 0 ? (sigma * sigma) / (2 * k) : 0;
+        const note = k < 0.4 ? ' <span class="mw-note">くぼみを浅くすると、戻るのに時間がかかり（τ が伸び）ばらつきが広がります＝臨界減速。</span>' : '';
+        st.innerHTML = '戻る速さの目安 <b>τ = 1/k = ' + tau.toFixed(2) + '</b>'
+            + ' ／ ばらつき <b>σ²/2k = ' + varr.toFixed(2) + '</b>。'
+            + '底へ引き戻す力とつつく揺れの釣り合いで、動き方が決まります。' + note;
+    }
+    view.canvas.addEventListener('pointerdown', ev => {
+        // つつく: 井戸（左半分）をタップすると、その位置へボールを弾く
+        const rect = view.canvas.getBoundingClientRect();
+        const px = ev.clientX - rect.left, splitX = view.W * 0.46, pad = 12;
+        if (px < splitX) {
+            const wcx = (pad + (splitX - pad)) / 2, wSpan = (splitX - pad - pad) / 2;
+            x = Math.max(-XR, Math.min(XR, ((px - wcx) / wSpan) * XR));
+        }
+    });
+    view.canvas.style.cursor = 'pointer';
+    view.canvas.setAttribute('aria-label', 'ポテンシャル井戸（くぼみ）の中のボール。底へ引き戻す力とランダムな揺れで動き、やがて底へ戻る。');
+    view.onResize = draw;
+    (function loop() { if (host.offsetParent) { step(); draw(); setStatus(); } raf = requestAnimationFrame(loop); })();
+}
+
+// ============================================================
+// 6) 蔵本モデル＝結合振動子の同期（energy-flow 横串「同じ結合振動子（蔵本モデル）の仲間」）
+//    円周上の N 個の位相 φ_i を、結合 K で引き込み合う。
+//    更新: dφ_i = (ω_i + (K/N)·Σ_j sin(φ_j − φ_i))·dt。ω_i は固定のばらつき（標準正規×0.6）。
+//    秩序変数 r = |(1/N)Σ e^{iφ}|。K を上げると閾値以上で r が単調に増える（RR-042a 検証）。
+// ============================================================
+function mountKuramotoSync(host) {
+    const P = PAL();
+    const view = makeCanvas(host, 0.62);
+    const row = controls(host);
+    const st = status(host);
+    const N = 24, dt = 0.05;
+    let K = 0, raf = 0;
+    const phi = new Array(N), omega = new Array(N);
+    for (let i = 0; i < N; i++) omega[i] = gaussian() * 0.6;   // 固有振動数は初期化時に一度だけ
+    for (let i = 0; i < N; i++) phi[i] = Math.random() * 2 * Math.PI;
+
+    slider(row, { label: '結合の強さ K', min: 0, max: 4, value: K, step: 0.1, onInput: v => { K = v; } });
+    button(row, 'かき混ぜる', () => { for (let i = 0; i < N; i++) phi[i] = Math.random() * 2 * Math.PI; });
+
+    function order() {
+        let sx = 0, sy = 0;
+        for (let i = 0; i < N; i++) { sx += Math.cos(phi[i]); sy += Math.sin(phi[i]); }
+        return { r: Math.hypot(sx / N, sy / N), psi: Math.atan2(sy, sx) };
+    }
+    function step() {
+        const d = new Array(N);
+        for (let i = 0; i < N; i++) { let s = 0; for (let j = 0; j < N; j++) s += Math.sin(phi[j] - phi[i]); d[i] = omega[i] + (K / N) * s; }
+        for (let i = 0; i < N; i++) phi[i] += d[i] * dt;
+    }
+    function draw() {
+        const { ctx, W, H } = view;
+        ctx.clearRect(0, 0, W, H);
+        const cx = W * 0.36, cy = H * 0.52, R = Math.min(W * 0.30, H * 0.40);
+        ctx.strokeStyle = P.faint; ctx.lineWidth = 1; ctx.beginPath(); ctx.arc(cx, cy, R, 0, Math.PI * 2); ctx.stroke();
+        for (let i = 0; i < N; i++) {
+            const px = cx + R * Math.cos(phi[i]), py = cy + R * Math.sin(phi[i]);
+            ctx.fillStyle = P.navy; ctx.globalAlpha = 0.85; ctx.beginPath(); ctx.arc(px, py, 5, 0, Math.PI * 2); ctx.fill(); ctx.globalAlpha = 1;
+        }
+        const { r, psi } = order();
+        const ex = cx + R * r * Math.cos(psi), ey = cy + R * r * Math.sin(psi);
+        ctx.strokeStyle = P.coral; ctx.lineWidth = 3; ctx.beginPath(); ctx.moveTo(cx, cy); ctx.lineTo(ex, ey); ctx.stroke();
+        ctx.fillStyle = P.coral; ctx.beginPath(); ctx.arc(ex, ey, 5, 0, Math.PI * 2); ctx.fill();
+        // r バー
+        const bx = W * 0.80, bw = 22, bTop = cy - R, bH = 2 * R;
+        ctx.fillStyle = P.faint; ctx.fillRect(bx, bTop, bw, bH);
+        ctx.fillStyle = r > 0.7 ? P.coral : P.navy; ctx.fillRect(bx, bTop + bH * (1 - r), bw, bH * r);
+        ctx.strokeStyle = P.line; ctx.lineWidth = 1; ctx.strokeRect(bx, bTop, bw, bH);
+        ctx.fillStyle = P.mid; ctx.font = '12px sans-serif'; ctx.textAlign = 'center';
+        ctx.fillText('r', bx + bw / 2, bTop - 8); ctx.fillText(r.toFixed(2), bx + bw / 2, bTop + bH + 16);
+        return r;
+    }
+    function setStatus(r) {
+        const label = r < 0.3 ? '<b>バラバラ</b>' : (r < 0.7 ? '<b>揃ってきた</b>' : '<b>揃った</b>');
+        st.innerHTML = '秩序 r = <b>' + r.toFixed(2) + '</b>（0〜1）／ ' + label
+            + '。K を上げると、ある強さを超えたところで一斉に位相が揃います（相転移）。';
+    }
+    view.canvas.setAttribute('aria-label', '円周上の結合振動子。結合 K を上げると位相が一斉に揃い、中心の秩序変数ベクトル r が伸びる。');
+    view.onResize = draw;
+    (function loop() { if (host.offsetParent) { step(); setStatus(draw()); } raf = requestAnimationFrame(loop); })();
+}
+
 // ---- ディスパッチ ----
 const MOUNTS = {
     'complex-rotation': mountComplexRotation,
     'quaternion-order': mountQuaternionOrder,
     'zero-divisor': mountZeroDivisor,
     'fano-home': mountFanoHome,
+    'ou-well': mountOUWell,
+    'kuramoto-sync': mountKuramotoSync,
 };
 function init() {
     document.querySelectorAll('[data-microworld]').forEach(host => {
