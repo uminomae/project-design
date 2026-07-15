@@ -572,7 +572,7 @@ https://uminomae.github.io/project-design/reader/energy-flow.html</code></pre>
 <li><strong>文責の明記</strong>：本文を書いた LLM のモデル名を明記し、依頼者（人間）は「問いの提示と、読みの採否の判定」の役割として区別する</li>
 <li>最後に、この章と同等の「あなたの問いで、同じページを作る」章を置き、次の読者も同じ仕組みを作れるようにする</li>
 </ul>
-<p><strong>E. HTML とデザイン。</strong>このリポジトリは MIT ライセンスです。このページの HTML ソースと、&lt;head&gt; からリンクされている CSS / JS は取得して流用して構いません。核になるのは <code>src/styles/reader-flow.css</code>（一枚ガラスの読書カラム＋章アコーディオン）と <code>src/reader-flow.js</code>（章から目次を自動生成し、開閉とスクロールを制御）です。CSS は @import で分割されているので、必要な変数ごと 1 ファイルに束ねると自己完結します。WebGL の背景（reader-app.js）は<strong>任意</strong>で、無くても成立します（単色の暗い背景で置き換えてよい）。自作する場合も「読みやすい一枚のカラム／開閉できる章／目次／草稿バナー」の骨格は保ってください。</p>
+<p><strong>E. HTML とデザイン。</strong>このリポジトリは MIT ライセンスです。このページの HTML ソースと、&lt;head&gt; からリンクされている CSS / JS は取得して流用して構いません。核になるのは <code>src/styles/reader-flow.css</code>（一枚ガラスの読書カラム＋章アコーディオン）と <code>src/reader-flow.js</code>（章から目次を自動生成し、開閉とスクロールを制御）です。CSS は @import で分割されているので、必要な変数ごと 1 ファイルに束ねると自己完結します。WebGL の背景（reader-app.js、three.js のシェーダー）は<strong>任意</strong>で、無くても成立します（実物もシェーダー起動に失敗すると背景なしで続行する設計です）。置き換える場合は明るい単色（生成り〜白系）にすると、半透明の白いガラスカラムと調和します。自作する場合も「読みやすい一枚のカラム／開閉できる章／目次／草稿バナー」の骨格は保ってください。</p>
 <p><strong>F. GitHub 公開手順。</strong></p>
 <ol>
 <li>公開リポジトリを作成し（例: <code>gh repo create {name} --public</code>）、B の構成で main ブランチに push する</li>
