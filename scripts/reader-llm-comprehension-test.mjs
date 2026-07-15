@@ -22,11 +22,30 @@ import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..');
-const HTML = resolve(ROOT, 'reader/three-and-seven.html');
-const SPEC = resolve(ROOT, 'knowledge/research/two-axis-closure/TEST-reader-llm-comprehension.md');
+
+// 対象 READER をコマンドライン引数で選ぶ（既定は three-and-seven で後方互換）。
+//   node scripts/reader-llm-comprehension-test.mjs [three-and-seven|energy-flow]
+const TARGETS = {
+  'three-and-seven': {
+    html: 'reader/three-and-seven.html',
+    spec: 'knowledge/research/two-axis-closure/TEST-reader-llm-comprehension.md',
+  },
+  'energy-flow': {
+    html: 'reader/energy-flow.html',
+    spec: 'knowledge/research/energy-flow-psyche/TEST-reader-energy-flow.md',
+  },
+};
+const TARGET = process.argv[2] || 'three-and-seven';
+if (!TARGETS[TARGET]) {
+  console.error(`未知の対象: ${TARGET}. 選択肢: ${Object.keys(TARGETS).join(' / ')}`);
+  process.exit(2);
+}
+
+const HTML = resolve(ROOT, TARGETS[TARGET].html);
+const SPEC = resolve(ROOT, TARGETS[TARGET].spec);
 const OUT_DIR = resolve(ROOT, '.cache/active');
-const OUT_TEXT = resolve(OUT_DIR, 'reader-context-zero.txt');
-const OUT_PROMPT = resolve(OUT_DIR, 'reader-llm-test-prompt.md');
+const OUT_TEXT = resolve(OUT_DIR, `reader-context-zero-${TARGET}.txt`);
+const OUT_PROMPT = resolve(OUT_DIR, `reader-llm-test-prompt-${TARGET}.md`);
 
 /** HTML の本文領域を抽出して平易テキストへ落とす */
 function extractContextZero(html) {
