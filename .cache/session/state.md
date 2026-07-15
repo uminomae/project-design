@@ -1,5 +1,14 @@
 # state.md — project-design
 
+## 🔵 CLI 作業中 2026-07-15 (seq04) — pd#129 次ラウンド残宿題①②③ を回収（RR-039）／READER 精密化1件は判断保留
+- **HEAD**: develop=**325dcc0**（このコミット前）→ RR-039 追加で更新予定。main=1eedb23。作業は主 worktree(develop) で直接（knowledge/ 追加＝自律 push 範囲）。CLI cwd は worktree `continuation-decision-points-f4304b`（branch は 1eedb23・state.md 4行差のみ）。
+- **やったこと**: RR-038 §残る宿題の①②③を一次で追い込み、`RR-039-multiples-confound-decomposition-followup.md` に回収。**三宿題とも「決着した後続なし」で一致**——①Li ら 2025 の long-tail を共通原因 vs 伝染に分解した後続は無く、無いのは Shalizi–Thomas の generic 識別障壁（観察データからは原理的に分けにくい）による。②Bikard idea-twins は独立性を前提に「アイデアの質」を固定して下流（受容・事業化：Marx&Hsu 2022・Masclans 2025）を測る道具で、"共通原因 vs 伝染" とは別の交絡を攻める＝双子間の伝染は構成上測れない。③Kleinberg burst detection はバーストを検出するが機構は判定しない。交絡を破る設計（ネットワーク RCT/IV）は個人スケールの拡散でのみ実在し era スケール創造的合成には移植不能。
+- **RR-038 も精密化**（L31/L49）: idea-twins を「Shalizi–Thomas 交絡の攻略ツール」とした記述を「別の交絡（アイデアの質）を攻める道具」に是正。§残る宿題を ✅ 回収済みに更新。
+- **品質ループ**: U+FFFD 0・[[link]] 解決・Main V3 反例探索通過（idea-twins が別交絡／Shalizi–Thomas は「設計・仮定なしには不能」＝原理的難所／era スケール移植不能、いずれも過剰断定なしを確認）。数理主張なし＝機械検証スクリプト対象外。
+- **🟡 判断保留（pjdhiro 専権）**: 公開 READER [reader/energy-flow.html:268] の「『アイデアの双子』はまさにこの交絡を切り分けるために作られた道具です」は idea-twins の目的を取り違えている（アイデアの質の交絡 ≠ 共通原因 vs 伝染）。**訂正するか＝しっくり判定＋develop→main 公開は pjdhiro 専権**。RR-039 §判断保留 に訂正文案あり（「独立性を前提にアイデアの質を固定して下流を測る道具」＋理由を「道具が無いから」→「観察データから原理的に見分けにくい（Shalizi–Thomas）」へ差し替え）。§4 の「識別問題は層①の中心論争」は正しいので維持——変えるのは idea-twins の一文だけで足りる。**READER 本体は未変更**（本セッションで公開内容は触っていない）。
+- **🟡 判断保留（pjdhiro 専権）**: 合成レベルの「束ねモデル」を新規構築するか（理論の採否）。
+- **次アクション**: ①上記 READER 精密化を pjdhiro が採否判断 ②RR-039 を pd#129 にコメント ③commit & push develop（knowledge/ 自律範囲）。
+
 ## ✅ セッション区切り 2026-07-15 (seq03) — pd#115 クイズ採用＋pd#129 宿題全回収＋READER 反映＋main 公開 完了（main 1eedb23）
 - **HEAD**: develop=**877f822** / main=**1eedb23**（両 push 済み・remote 同期）。**✅ 公開完了**（pjdhiro「公開してOK」）——READER 宿題回収反映版＋pd#115 クイズを本番公開。**GitHub Pages 反映確認済み**（92,430 bytes・「アイデアの双子」「三つとも、それぞれ別の形で」検出）。公開 URL: https://uminomae.github.io/project-design/reader/energy-flow.html 。
 - **本セッションで完了した全タスク**: ①後片付け（Pages 確認・worktree 3＋ブランチ12削除）②pd#115 クイズ採用マージ（38e8b88）③pd#129 宿題全回収（RR-036 van de Leemput／RR-037 Rutledge他4＋Scherer／RR-038 合成レベル三層）④READER EXECUTE 反映（bf6ddba）⑤develop→main 公開（1eedb23）。
