@@ -1,7 +1,10 @@
 # state.md — project-design
 
-## 🔵 CLI 作業中 2026-07-15 (seq06) — energy-flow READER 品質レビュー（三レンズ）＋是正6件反映＋pd#130 起票（🟡公開判定待ち）
-- **HEAD**: develop=**513e0cd**（push 済み）/ main=**b2ca6b0**（変化なし）。cwd は worktree `continuation-7346cd`。
+## 🔵 CLI 作業中 2026-07-16 (seq06) — energy-flow READER 品質レビュー＋是正＋pd#130 Micro-worlds/Shared Spaces 実装（🟡公開＆しっくり判定待ち）
+- **HEAD**: develop=**0c91146**（push 済み）/ main=**b2ca6b0**（変化なし）。cwd は worktree `continuation-7346cd`。
+- **pd#130 実装完了（L2＋L3・develop 0c91146・RR-042）**: pjdhiro「2」で pd#130 着手。**L2 Micro-worlds 2図**——`ou-well`（§2 くぼみのボール＝OU過程＋臨界減速）・`kuramoto-sync`（横串 結合振動子の同期＝相転移）を `src/reader-microworlds.js` に追加（既存4種不変・three-and-seven と同アーキテクチャ）。**L3 Shared Spaces**——§7 に「共有の場」小節（採用/保留/見送りの台帳 surface＋参加導線・scope 正直）。§7 Litt 適合表を L2/L3 とも ✅ へ。実装は Opus 委任＋Fable 統合/検証。数理 RR-042a **ALL CHECKS PASSED**。品質ループ全通過（static 11/11・U+FFFD 0・アンカー39・node --check・エラー0）。CSS は reader.css 単一ソースへ統一（reader-flow.css 移植は二重定義で差し戻し）。ブラウザ:3004 で mount/描画/status/VI 継承を確認。
+- **🟡 しっくり＆公開判定待ち（pjdhiro 専権）**: **アニメの動きは headless で検証不能**（visibilityState:hidden で rAF 停止）。pjdhiro が :3004 可視ブラウザで §2・横串を開いて Micro-worlds のしっくり感を判定（720°の前例＝落とす場合あり）→ よければ develop→main 公開。
+- **Litt 適合監査**: 第3回で三技法すべて ✅（L3 scope 付き）＝「適合（core fully adopted）」＝three-and-seven と対称化。
 - **依頼（pjdhiro）**: 「レビューを重ねて欲しい。平易か、骨格や流れはわかりやすいか、原典を読んでいるか。他の reader の品質管理を調べて同じレベルで」。→ three-and-seven（RR-014）と同レベルの**三レンズ**を新規に回した（[[RR-041-reader-review-round1]]）。
 - **① 文脈ゼロ LLM 読解テスト**: `TEST-reader-energy-flow.md` 新設＋ハーネス `reader-llm-comprehension-test.mjs` を対象引数対応に改修（後方互換維持）。Sonnet 文脈ゼロ読者で第1回→おおむね PASS・⚠️ 4件（床の二重使用／確からしさ表3種の不統一／§5位置づけ・§4→§5逆流／臨界減速が未定義語「相転移」依存）。
 - **② Litt 適合監査**: Explanations＋speed regulator＝✅（読解テストを反復可能資産化）。Micro-worlds・Shared Spaces＝❌（three-and-seven は pd#128 実装済・energy-flow 未着手）。バッジ不在＝非対称。
