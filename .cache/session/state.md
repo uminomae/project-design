@@ -8,8 +8,9 @@
 - **③ 原典忠実性**: 高い。r=0.47/R²=0.429/3531名/23研究室/4000万論文/0.1%/Rennung盲検/Gottwald&Braun/Kondepudi/Still すべて RR ノートと一致。アクセスレベル（一次全文/抄録/ペイウォール）も正直＝「原典を読んでいる」。
 - **pjdhiro「①②」採択**: ①是正6件（P1-P6）を READER 正本 MD に反映→再ビルド（42,104 bytes）。P4 相転移の即席注記／P5 分水嶺の前方リンク／P1 §5「床と天井」→「土台と屋根」（§2 床①②との衝突解消）／P3 §5 冒頭オリエンテーション／P2 §5 表の役割注記／P6 §7 に Litt 適合表を honest 公開（バッジ実体化）。**読解テスト第2回（回帰）で 4件すべて「改善された」判定**。品質ループ全通過（static 11/11・U+FFFD 0・アンカー34解決）。②Micro-worlds/Shared Spaces を **pd#130 起票**（https://github.com/uminomae/project-design/issues/130）。
 - **🟡 公開判定待ち（pjdhiro 専権）**: READER 本体は是正反映済み・品質ループ全通過。**develop→main 公開は :3004 しっくり確認 →「公開して」指示待ち**。公開 URL: https://uminomae.github.io/project-design/reader/energy-flow.html 。
-- **軽微な残（次ラウンド候補・公開を止めない）**: 横串節に §番号なし／§6 スコアボードと §2・§4・§5 の3表の関係が未明示／アロスタシス・OU・臨界減速は畳みを開かないと出会わない（progressive disclosure）。
-- **次アクション**: pjdhiro が :3004 でしっくり確認 →「公開して」で develop→main マージ。または次ラウンド（軽微な残 or pd#130 着手）を選ぶ。
+- **第2ラウンド仕上げ（pjdhiro「次に進んで」2026-07-15）**: 軽微な残①②を反映——①横串節に「章をまたぐ視点だから番号を振らない」旨のリード、②§6 スコアボードに「§2/§4/§5 の各表を部品ごとに束ね直した統合版」の注記。③（畳み内定義語）は reader モードの節折り畳み設計＝3レベル分離そのものなので不変。品質ループ全通過（static 11/11・U+FFFD 0・リンク37解決・42,487 bytes）。develop に反映（要 commit）。
+- **🟡 公開判定待ち（pjdhiro 専権・変わらず）**: READER は是正6件＋仕上げ2件を反映済み・品質ループ全通過。**develop→main 公開は :3004 しっくり確認 →「公開して」指示待ち**。
+- **次アクション**: pjdhiro が :3004 でしっくり確認 →「公開して」で develop→main マージ。または pd#130（Micro-worlds/Shared Spaces）へ着手。
 
 ## ✅ セッション区切り 2026-07-15 (seq05) — pd#129 低優先ペイウォール宿題を断念でクローズ
 - **HEAD**: develop=（本コミットで更新）/ main=**b2ca6b0**（変化なし）。seq04 の主要作業（READER §4 精密化・RR-039・RR-040・main 公開）は develop=7cc8c30/main=b2ca6b0 で既に完了・push 済み。
