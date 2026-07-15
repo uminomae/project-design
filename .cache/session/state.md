@@ -1,7 +1,8 @@
 # state.md — project-design
 
-## 🔵 CLI 作業中 2026-07-15 (seq04) — pd#129 次ラウンド残宿題①②③ を回収（RR-039）／READER 精密化1件は判断保留
-- **HEAD**: develop=**325dcc0**（このコミット前）→ RR-039 追加で更新予定。main=1eedb23。作業は主 worktree(develop) で直接（knowledge/ 追加＝自律 push 範囲）。CLI cwd は worktree `continuation-decision-points-f4304b`（branch は 1eedb23・state.md 4行差のみ）。
+## ✅ セッション区切り 2026-07-15 (seq04) — pd#129 次ラウンド残宿題①②③ を回収（RR-039・develop ccdc325 push 済み）／READER 精密化1件は判断保留
+- **HEAD**: develop=**ccdc325**（push 済み・remote 同期）/ main=1eedb23（変化なし）。作業は主 worktree(develop) で直接（knowledge/ 追加＝自律 push 範囲）。CLI cwd は worktree `continuation-decision-points-f4304b`（branch は 1eedb23・現在は develop の後方＝作業は develop に landing 済みで問題なし）。
+- **区切りサマリ**: pd#129 は OPEN 継続（残＝判断保留2件＋低優先ペイウォール body）。次アクションは pjdhiro が下記 🟡 を選ぶか、別スレッド（pd#115 等）。ログ: pd `log-20260715-04.md` / 横断 `SESSION-20260715-04.md`。
 - **やったこと**: RR-038 §残る宿題の①②③を一次で追い込み、`RR-039-multiples-confound-decomposition-followup.md` に回収。**三宿題とも「決着した後続なし」で一致**——①Li ら 2025 の long-tail を共通原因 vs 伝染に分解した後続は無く、無いのは Shalizi–Thomas の generic 識別障壁（観察データからは原理的に分けにくい）による。②Bikard idea-twins は独立性を前提に「アイデアの質」を固定して下流（受容・事業化：Marx&Hsu 2022・Masclans 2025）を測る道具で、"共通原因 vs 伝染" とは別の交絡を攻める＝双子間の伝染は構成上測れない。③Kleinberg burst detection はバーストを検出するが機構は判定しない。交絡を破る設計（ネットワーク RCT/IV）は個人スケールの拡散でのみ実在し era スケール創造的合成には移植不能。
 - **RR-038 も精密化**（L31/L49）: idea-twins を「Shalizi–Thomas 交絡の攻略ツール」とした記述を「別の交絡（アイデアの質）を攻める道具」に是正。§残る宿題を ✅ 回収済みに更新。
 - **品質ループ**: U+FFFD 0・[[link]] 解決・Main V3 反例探索通過（idea-twins が別交絡／Shalizi–Thomas は「設計・仮定なしには不能」＝原理的難所／era スケール移植不能、いずれも過剰断定なしを確認）。数理主張なし＝機械検証スクリプト対象外。
