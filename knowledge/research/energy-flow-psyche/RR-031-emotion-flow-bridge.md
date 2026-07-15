@@ -78,7 +78,7 @@ honesty記号: ★=定理/数理同型(literal)・●=強い実証・◐=示唆�
 
 **橋にどう効くか。** 物理で相転移・分岐の直前に現れる普遍現象「臨界減速」が、**心の状態遷移でも同じ数理シグネチャとして報告**された（van de Leemput ら 2014 PNAS がうつの発症・寛解の早期警告シグナルとして報告）。アトラクタ地形が変形して谷が浅く/深くなる、という像。§1 の相転移・臨界の鉱脈と §2 を溶接する橋候補。
 
-**どこまで literal か・限界。** inertia＝自己回帰は ●。〔critic 修正〕**臨界減速は "実測された確立事実" ではなく "first empirical support"（初期的支持）段階で、公刊された批判応酬がある**——van de Leemput らは Bos & De Jonge の between-subject 批判に "Reply" で応答している（＝実証レベルで係争中）。さらに機構（なぜ谷が変形するか）は神経レベルで未解明。だから「§1↔§2 溶接の最強の橋候補」だが、**最も弱く接地された主張が最も強い橋を担う**構図に注意し、READER では「報告された・係争あり」と hedge する。〔宿題：van de Leemput 2014 PNAS 全文＋Bos & De Jonge 応酬の逐語〕
+**どこまで literal か・限界。** inertia＝自己回帰は ●。〔critic 修正〕**臨界減速は "実測された確立事実" ではなく "first empirical support"（初期的支持）段階で、公刊された批判応酬がある**——van de Leemput らは Bos & De Jonge の between-subject 批判に "Reply" で応答している（＝実証レベルで係争中）。さらに機構（なぜ谷が変形するか）は神経レベルで未解明。だから「§1↔§2 溶接の最強の橋候補」だが、READER では「報告された・係争あり」と hedge する。〔**一次回収済 → RR-036**。一次を見ると係争は**対称な膠着ではなく**、著者が person-mean centering・変動係数で統計批判を押し返し、譲歩は「遷移中の個人内時系列は未測定」の設計限界一点のみ。数理核は literal（★・臨界減速＝復元率＝支配的固有値→0＝OU の β→0・カタストロフィ〔zero-eigenvalue〕分岐族）。旧表現「最も弱く接地された主張が最も強い橋を担う」はやや強すぎ＝「初期的支持だが機構は未確定」が正確。〕
 
 出典：Kuppens & Verduyn (2017) "Emotion dynamics", *Curr. Opin. Psychol.* 17:22-26／Houben, Van den Noortgate & Kuppens (2015) *Psychol. Bull.* 141:901／van de Leemput et al. (2014) *PNAS* 111:87
 
@@ -183,11 +183,11 @@ RR-020 は allostasis/機会費用を「方向が違う/語彙の不要化＝減
 **CONFIRMED（一次逐語）**：Barrett 2017a 代謝接地（PMC 全文）／Kurzban 2013 反-枯渇・機会費用（Cambridge PDF）／Aston-Jones & Cohen ゲイン・逆U字（Jepma 2011 学位論文経由）／Kuppens & Verduyn 2017 軌道・inertia（KU Leuven 全文）／DynAffect home base=attractor（abstract）＋OU 式（PMC6433426）／Eldar 2016 momentum（PMC 全文）／Lewis 2005 abstract／ring・bump attractor 書誌（Kim 2017・Wimmer 2014）。
 
 **宿題（EXECUTE 時）**：
-1. Sterling 2012 原文 PDF の predictive-regulation 定義・numbered-advantages 逐語（ScienceDirect 403 回避）。
-2. Aston-Jones & Cohen 2005 原著本文の gain/逆U字 直接逐語。
-3. van de Leemput 2014 PNAS 全文（臨界減速の定理陳述・分岐タイプ）＝§1↔§2 溶接の最優先。
-4. DynAffect 2010 JPSP 本文の OU 定式・home base 逐語。
-5. Rutledge 2014 PNAS happiness 方程式の実証アンカー／Scherer CPM 原典（Sander et al. 2005）。
+1. ~~Sterling 2012 原文 PDF の predictive-regulation 定義・numbered-advantages 逐語（ScienceDirect 403 回避）。~~ **◐ 核を解消 → RR-037**（numbered-advantages i–iv と predictive-regulation 定義を Sterling 自身の公式アブストラクトで逐語確保。body 詳細のみ ScienceDirect ペイウォール残）。
+2. ~~Aston-Jones & Cohen 2005 原著本文の gain/逆U字 直接逐語。~~ **◐ 部分解消 → RR-037**（phasic/tonic・exploitation/exploration・adaptive gain を公式アブストラクトで確保。ゲイン傾き・逆U字の逐語は body 止まり＝Annual Reviews ペイウォール＝Jepma 二次を維持）。
+3. ~~van de Leemput 2014 PNAS 全文（臨界減速の定理陳述・分岐タイプ）＝§1↔§2 溶接の最優先。~~ **✅ 解消 → RR-036**（本論文＋Bos&De Jonge 批判＋著者 Reply の三論文全文を回収。臨界減速＝復元率＝支配的固有値→0＝OU の β→0、catastrophic〔fold〕分岐族、三指標、著者自身の generic 自認を一次確定。係争は対称膠着でなく著者が person-mean centering で押し返し・譲歩は設計限界一点＝"first empirical support"）。
+4. ~~DynAffect 2010 JPSP 本文の OU 定式・home base 逐語。~~ **◐ 部分解消 → RR-037**（home base＝baseline attractor・三過程〔μ・σ・β〕・diffusion modeling を公式アブストラクトで確保。OU-SDE 式そのものは body/SI 止まり＝APA ペイウォール＝継続論文経由を維持）。
+5. Rutledge 2014 PNAS happiness 方程式 **✅ 解消 → RR-037**（★方程式逐語 Happiness(t)=w₀+ΣγᵗCR+ΣγᵗEV+ΣγᵗRPE、●18,420 名追試・striatal fMRI 一致。水準でなく期待＋予測誤差＝運動量像の実証）／Scherer CPM 原典（Sander et al. 2005 *Neural Networks* 18:317）も **✅ 一次抄録確保 → RR-037**（機構レベルの評価過程モデル・◐）。
 6. 持ち越し F1-2（心理学史「物理エネルギー≠心的エネルギー」の一次特定）——本鉱脈と衝突しないことは確認済み（史的「別物」宣言は保存量エネルギーの話。代謝エネルギーは別レイヤー）。
 
 ## 9. pjdhiro 判断が要る設計論点（専権・保留）
