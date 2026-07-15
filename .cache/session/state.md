@@ -1,7 +1,10 @@
 # state.md — project-design
 
-## 🔵 CLI 作業中 2026-07-16 (seq06) — energy-flow READER 品質レビュー＋是正＋pd#130 Micro-worlds/Shared Spaces 実装（🟡公開＆しっくり判定待ち）
-- **HEAD**: develop=**0c91146**（push 済み）/ main=**b2ca6b0**（変化なし）。cwd は worktree `continuation-7346cd`。
+## ✅ セッション終了 2026-07-16 (seq06) — energy-flow READER 品質レビュー＋是正＋pd#130 Micro-worlds/Shared Spaces 実装 → main 公開完了
+- **HEAD**: develop=**2fc981f**（＋別セッション merge 分）/ main=**c7ab80b**（✅ 公開完了・pjdhiro「マージして」2026-07-16）。cwd は worktree `continuation-7346cd`。公開 URL: https://uminomae.github.io/project-design/reader/energy-flow.html
+- **本セッションの成果**: ①pd#129 三レンズ品質レビュー（文脈ゼロ読解テスト＋Litt 適合監査＋原典忠実性・RR-041/TEST-reader-energy-flow）→ 是正6件＋第2ラウンド仕上げ2件。②pd#130 Micro-worlds 2図（ou-well/kuramoto-sync）＋Shared Spaces（§7 共有の場）実装（RR-042・数理 RR-042a 検証済）＝Litt 三技法すべて ✅。③develop→main マージで公開（main c7ab80b、別セッションの自己複製章＋正本参照チェーンも同時公開）。**pd#130 = CLOSED**（完了条件充足）。**pd#129 = OPEN 継続**（ピラートラッカー）。
+- **pd#129 残（低優先・次ラウンド候補）**: 横串節の §番号／§6 と他3表の関係／畳み内定義語（progressive disclosure・設計どおり）。Micro-worlds 題材追加や動き微調整も必要が出れば pd#129 で。ペイウォール body 逐語は seq05 で断念確定。
+- **ログ**: pd `log-20260716-06.md`（要作成）。REMOTE 判定不要（LOCAL）。
 - **pd#130 実装完了（L2＋L3・develop 0c91146・RR-042）**: pjdhiro「2」で pd#130 着手。**L2 Micro-worlds 2図**——`ou-well`（§2 くぼみのボール＝OU過程＋臨界減速）・`kuramoto-sync`（横串 結合振動子の同期＝相転移）を `src/reader-microworlds.js` に追加（既存4種不変・three-and-seven と同アーキテクチャ）。**L3 Shared Spaces**——§7 に「共有の場」小節（採用/保留/見送りの台帳 surface＋参加導線・scope 正直）。§7 Litt 適合表を L2/L3 とも ✅ へ。実装は Opus 委任＋Fable 統合/検証。数理 RR-042a **ALL CHECKS PASSED**。品質ループ全通過（static 11/11・U+FFFD 0・アンカー39・node --check・エラー0）。CSS は reader.css 単一ソースへ統一（reader-flow.css 移植は二重定義で差し戻し）。ブラウザ:3004 で mount/描画/status/VI 継承を確認。
 - **🟡 しっくり＆公開判定待ち（pjdhiro 専権）**: **アニメの動きは headless で検証不能**（visibilityState:hidden で rAF 停止）。pjdhiro が :3004 可視ブラウザで §2・横串を開いて Micro-worlds のしっくり感を判定（720°の前例＝落とす場合あり）→ よければ develop→main 公開。
 - **Litt 適合監査**: 第3回で三技法すべて ✅（L3 scope 付き）＝「適合（core fully adopted）」＝three-and-seven と対称化。
