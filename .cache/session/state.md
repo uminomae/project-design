@@ -1,7 +1,9 @@
 # state.md — project-design
 
-## 🔵 CLI 作業中 2026-07-15 (seq03) — pd#115 クイズ採用＋pd#129 宿題全回収＋READER EXECUTE 反映（develop bf6ddba push 済み）
-- **HEAD**: develop=**bf6ddba**（push 済み・remote 同期） / main=**1e111f2**（未変更＝未公開）。
+## ✅ セッション区切り 2026-07-15 (seq03) — pd#115 クイズ採用＋pd#129 宿題全回収＋READER 反映＋main 公開 完了（main 1eedb23）
+- **HEAD**: develop=**877f822** / main=**1eedb23**（両 push 済み・remote 同期）。**✅ 公開完了**（pjdhiro「公開してOK」）——READER 宿題回収反映版＋pd#115 クイズを本番公開。**GitHub Pages 反映確認済み**（92,430 bytes・「アイデアの双子」「三つとも、それぞれ別の形で」検出）。公開 URL: https://uminomae.github.io/project-design/reader/energy-flow.html 。
+- **本セッションで完了した全タスク**: ①後片付け（Pages 確認・worktree 3＋ブランチ12削除）②pd#115 クイズ採用マージ（38e8b88）③pd#129 宿題全回収（RR-036 van de Leemput／RR-037 Rutledge他4＋Scherer／RR-038 合成レベル三層）④READER EXECUTE 反映（bf6ddba）⑤develop→main 公開（1eedb23）。
+- **pd#129 は OPEN 継続**（残宿題＝ペイウォール body 逐語2件〔二次接地済〕・Li2025 long-tail の交絡分解・合成レベルの束ねモデル）。次ラウンド着手は pjdhiro が選ぶ。
 - **✅ pd#129 READER EXECUTE 反映 完了（bf6ddba・pjdhiro「反映して」指示 2026-07-15）**: 一次回収 RR-036/037/038 を READER 本体へ反映。RR-037 は主張不変（接地格上げのみ）ゆえ本文改変なし＝正直に据え置き。変更＝§2 臨界減速（数理の芯＝復元率＝OU 戻す力の字義共有・van de Leemput 応酬は著者が押し返し＝初期的支持）／横串（提唱者自身の generic 自認＝諸刃の一次アンカー）／§4 社会（空白を三層に精密化＝①同時発見の大規模計測 Simonton/Bikard/Li2025 4000万論文が Poisson を long-tail 棄却②hyperscanning 秒〜分③collective attention 注意／三層とも測定済で束ねる合成のみ空白・識別問題は層①の中心論争）／§6 スコアボード2行。**品質ループ全通過**: 文脈ゼロ LLM 読解テスト（段差の区別4問すべて正答・sonnet subagent）＋Main V3（「三層のうち二つ」誤り→「三つとも測定済み」是正）／static11/11・アンカー137・U+FFFD0・モバイル横スクロールなし・コンソール0。READER 38→40KB。
 - **★次アクション（pjdhiro 専権）**: :3004 で最終確認（http://127.0.0.1:3004/reader/energy-flow.html）→ しっくり来れば **develop→main マージで公開**。前回同様「公開して」指示で実行。**READER 本体は反映済み**（深掘り6鉱脈＋宿題回収 RR-036/038）。
 - **✅ pd#129 宿題 全回収 完了（6f83199）**: 本ラウンド宿題を三ノートで回収。RR-036（宿題3 van de Leemput 三論文 一次全文）・RR-037（宿題1・2・4・5＋Scherer）・**RR-038（合成レベル網羅探索）**。**RR-038 が本ラウンドの目玉**: RR-034 の「人間間バースト同期の直接測定」空白を網羅探索し、空白を三層に精密化——層A 同時発見(multiples)の大規模定量は半世紀の蓄積あり（Simonton 1978 Poisson=独立 null／Bikard 2020 idea-twins 識別ツール／**Li,Lin&Wu 2025 arXiv:2502.06190 が 4000万論文で Poisson を long-tail 棄却**＝独立からの逸脱を初検出）／層B hyperscanning＝人間間同期の直接測定は実在だが秒〜分・対面／層C Lorenz-Spreen 2019 collective attention＝population 規模だが注意。RR-034 の◐仮説「識別問題を含む構造的難所」は思弁でなく層Aの中心論争（Poisson vs long-tail＝Shalizi–Thomas 交絡）として実在＝研究フロンティア。真の空白は「三層を一つのモデルに束ねた合成」のみ。honesty 線引き維持（Poisson 棄却≠同期証明・era 外挿禁止・干渉は naming）。自己 V3 で Simonton 未照合ページ落とし。U+FFFD 0。pd#129 コメント済み。
