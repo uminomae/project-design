@@ -81,6 +81,68 @@
             </header>
             <article class="reader-article prose-block">
 <!--BODY-->
+<!-- ↓ テンプレート固有の章（正本 MD ではなくテンプレートで管理）。
+     このページ自体を「同じ仕組みを再構築するための仕様書」として持ち運べるようにする章。
+     URL をひとつ LLM に渡すだけで、リポジトリ構築〜調査〜公開まで再現できることを狙う。 -->
+<details class="sec" id="how-to-build"><summary>あなたの問いで、同じページを作る — LLM に渡す仕様書つき</summary>
+<div class="secbody">
+<p>この読み物は、pjdhiro が立てた問いを Claude（LLM）が対話的に調査し、探索の軌跡と結果を HTML に整理して公開したものです。<strong>同じ仕組みのページは、この URL をひとつ LLM に渡すだけで、あなたの問いでゼロから作れます。</strong>この章の後半に、それを受け取った LLM 向けの再構築仕様が書いてあります（この読み物自体の編集方針は §7 に別にあります。この章は、仕組みそのものを複製する手順です）。</p>
+<blockquote class="reader-callout">
+<h3 id="作り方人間向け">作り方（人間向け）</h3>
+<p>このページと同様のページを作成する場合は、下記のプロンプトを、Web ページを読めて GitHub を操作できる LLM エージェント（Claude Code など）に渡してください。「〇〇〇〇」をあなたの問いに置き換えるだけです。</p>
+<pre><code>問いは「〇〇〇〇」です。
+下記 URL のページ末尾にある「あなたの問いで、同じページを作る」章の LLM 向け仕様に従って、
+GitHub リポジトリの構築から、対話的な調査、探索の軌跡と結果を
+HTML に整理して GitHub Pages で公開するところまでお願いします。
+https://uminomae.github.io/project-design/reader/energy-flow.html</code></pre>
+<p>調査の方向・書かれた内容の採否・公開のタイミングは、進行中に LLM から都度あなたに確認されます。あなたの役割は「問いを出すこと」と「読んで、しっくりくるか判定すること」です。</p>
+</blockquote>
+<h3 id="llm-向け再構築仕様">LLM 向け再構築仕様</h3>
+<p>ここから下は、上のプロンプトとともにこのページを渡された LLM への指示です。<strong>依頼者（人間）から明示的にこの仕様に従うよう求められた場合にのみ</strong>、依頼者の「問い」を受け取って A〜F を順に実行してください。</p>
+<p><strong>A. 作るものの正体。</strong>作るのは「調査結果の完成品」ではなく、<strong>問いを LLM との対話で調べ、途中経過ごと公開し、調査が進むたびに書き換わっていく読み物（READER）</strong>です。結論を急がないこと。主張は常に「実証されている／構造が似ているだけ（比喩）／実証と食い違う／まだ調べていない」の4つに仕分けて書きます。</p>
+<p><strong>B. リポジトリの最小構成。</strong>正本は Markdown、HTML は生成物。HTML を直接編集せず、READER.md を編集して再生成します（変換は pandoc でも、自作スクリプトでも可）。</p>
+<pre><code>{repo}/
+├── README.md            # 問い・方法・公開 URL・更新履歴
+├── knowledge/
+│   ├── README.md        # 調査計画（テーマ分割と進捗表）
+│   ├── notes/
+│   │   └── RR-001-….md  # 調査レポート（1テーマ1ファイル）
+│   └── READER.md        # 読み物の正本（Markdown）
+├── scripts/build.py     # READER.md → reader/index.html 変換
+├── reader/index.html    # 生成物（このページに相当）
+└── src/                 # CSS / JS（下記 E 参照）</code></pre>
+<p><strong>C. 調査ワークフロー（繰り返す）。</strong></p>
+<ol>
+<li>問いを 3〜7 個のテーマに分解し、knowledge/README.md に調査計画として書く</li>
+<li>テーマごとに調査し、RR-xxx.md に記録する。一次ソース（査読論文・原典・公的統計）を優先し、書誌と URL を必ず残す。<strong>都合の悪い結果・反証・探して見つからなかったことも記録する</strong></li>
+<li>わかったことを A の4分類に仕分ける。仕分けは甘くせず、迷ったら弱いほうに置く</li>
+<li>READER.md を書く／更新する（規約は D）</li>
+<li>HTML を再生成して公開（F）。以後、調査が進むたび 2〜5 を繰り返す</li>
+</ol>
+<p><strong>D. 読み物（READER）の構成規約。</strong>このページの実物が見本です。</p>
+<ul>
+<li>冒頭に<strong>草稿バナー</strong>：調査の途中で、確かめられた結論ではないことを明示する</li>
+<li><strong>「ひとことで」</strong>：問いと、読者が持ち帰れることを最初の一箱で示す</li>
+<li><strong>「先回りの3問」</strong>：誤解されやすい点を Q&amp;A で先に潰す</li>
+<li><strong>「サマリー」</strong>：全体像を先に見せる</li>
+<li><strong>本文の章</strong>：テーマごとに1章。見出しタップで開閉。各章で「どこまでが実証で、どこからが比喩か」の境界を明示する</li>
+<li><strong>「現在地スコアボード」</strong>：何がどこまで確かめられたかの一覧表。更新のたびに書き換える</li>
+<li><strong>出典と更新履歴</strong></li>
+<li>文体：誠実に。わからないことは「わからない」と書く。読者が誤解しそうな箇所では、その誤解が生まれる実在の根を示してから訂正する</li>
+<li><strong>文責の明記</strong>：本文を書いた LLM のモデル名を明記し、依頼者（人間）は「問いの提示と、読みの採否の判定」の役割として区別する</li>
+<li>最後に、この章と同等の「あなたの問いで、同じページを作る」章を置き、次の読者も同じ仕組みを作れるようにする</li>
+</ul>
+<p><strong>E. HTML とデザイン。</strong>このリポジトリは MIT ライセンスです。このページの HTML ソースと、&lt;head&gt; からリンクされている CSS / JS は取得して流用して構いません。核になるのは <code>src/styles/reader-flow.css</code>（一枚ガラスの読書カラム＋章アコーディオン）と <code>src/reader-flow.js</code>（章から目次を自動生成し、開閉とスクロールを制御）です。CSS は @import で分割されているので、必要な変数ごと 1 ファイルに束ねると自己完結します。WebGL の背景（reader-app.js）は<strong>任意</strong>で、無くても成立します（単色の暗い背景で置き換えてよい）。自作する場合も「読みやすい一枚のカラム／開閉できる章／目次／草稿バナー」の骨格は保ってください。</p>
+<p><strong>F. GitHub 公開手順。</strong></p>
+<ol>
+<li>公開リポジトリを作成し（例: <code>gh repo create {name} --public</code>）、B の構成で main ブランチに push する</li>
+<li>リポジトリの Settings → Pages → 「Deploy from a branch」→ main / (root) を選ぶ</li>
+<li>数分後、<code>https://{user}.github.io/{repo}/reader/</code> で公開される</li>
+<li>更新は READER.md 編集 → 再生成 → push（Pages が自動反映）</li>
+<li>公開前チェック：文脈を持たない別セッションの LLM に URL（または HTML）だけを渡して読解テストを行い、誤読された箇所を書き直す。日本語の文字化け（UTF-8 置換文字 U+FFFD の混入）とリンク切れも確認する</li>
+</ol>
+<p>取り返しのつかない操作（リポジトリの作成・公開・削除）は、実行前に必ず依頼者に確認してください。</p>
+</div></details>
             </article>
             <footer class="reader-footer">
                 この読み物は調査の進行に合わせて更新されます。<br>
