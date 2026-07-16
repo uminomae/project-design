@@ -1,5 +1,15 @@
 # state.md — project-design
 
+## 🔵 CLI 作業中 2026-07-16 (seq10) — やり残しタスクの小粒一掃
+- **HEAD**: develop=**68f4b6f**（push 済み）/ main=e68caad（変更なし）。cwd worktree `remaining-tasks-564adb`（編集は main checkout の develop で実施）。
+- **✅ GitHub Pages 反映確認（seq09 の残り次アクション）**: three-and-seven（§7 日付 07-04・Lavanchy 孫引き注記）・energy-flow（確からしさのものさし×7）とも本番反映済み。
+- **✅ pd#89 CLOSED**: `--bg` dead token を選択肢A（削除）で処理（68f4b6f）。`var(--bg)` 全域 grep 参照0件再確認・static-checks 11/11。
+- **✅ .cache/active/ 整理**: 関連 Issue が全 CLOSED の残留 11 件（issue50/53 フェーズ×8・TASK-6・PLAN-value-llm-comparison=#36/#33・techo115-paper-search-results）＋ハーネス再生成可能な reader 読解テスト生成物 6 件を archive/ へ移動。active/ は README のみに。
+- **✅ #119 / #127 CLOSED（pjdhiro「両方 close」承認）**: #119＝到達点コメント付き close（引き継ぎ先: pd#111・pd#118・D13-S14 保持論点）。#127＝成果物3点納品済み・実運用実績ありで close（継続推敲は #129/#115 品質ゲート運用に吸収）。OPEN Issue は 15→12 件（#129/#126/#122/#121/#118/#117/#115/#111/#99/#98/#96/#95）。
+- **✅ pd#122 実装完了（develop 40f0c42・push 済み）**: SEO/AI メタ強化——robots.txt AI クローラー9種明示 Allow／llms.txt+llms-full.txt に reader 2ページ収載／reader テンプレ2種の JSON-LD 拡充（description/about×5/citation×5・citation は正本 MD 引用実在照合済み・Rutledge→Gottwald&Braun 差替）／og:locale+article:published/modified_time／index.html @graph+seo-summary に reader 追加／build-reader-lp.py の日付陳腐化バグ修正（未コミット編集時は当日）＋sitemap lastmod 自動追随。品質ループ全通過（static 11/11・アンカー149・U+FFFD 0・JSON-LD 妥当・:3004 コンソール0・差分 head 限定）。Issue コメント済み。**残＝ScholarlyArticle 格上げのみ（pd#121 待ち）**。
+- **🟡 pjdhiro 判断待ち**: ①pd#122 分の develop→main 公開（メタ情報のみ・本文不変）②pd#122 を close するか（残項目は pd#121 側で追う）。
+- **保持論点（変わらず）**: D13-S14 autopoiesis 取得経路・pd#129 次ラウンド。
+
 ## ✅ セッション終了 2026-07-16 (seq09) — 持ち越し一括クローズ＋両 READER 念入りレビュー（4回 main 公開）
 - **HEAD（最終）**: develop=**287959f**（push 済み）/ main=**e68caad**（push 済み・origin 同期）。cwd worktree `continuation-e477dc`。**公開物はすべて main 反映済み**（develop の 287959f はセッション記録 chore のみ・main 未マージで可）。
 - **本セッションの 4 回 main 公開**: ①487746e（持ち越しクローズ：背景2修正＋mw-ready）②496c020（energy-flow §3 事実誤り 6万→約69万人・Kramer 2014）③b34532d（energy-flow 二つのものさし命名リファクタ）④e68caad（three-and-seven polish 2件）。
