@@ -293,3 +293,39 @@ created: 2026-07-16
 5. **著者名欠落が多いのは Frontiers 系・arXiv 系**（D-5/D-6/D-8）。誌名+年のみで著者が RR に落ちていない。References 正規化前に著者・正式タイトルの取得が要る。
 6. **標準事実（教科書）扱いの数学項**（A18–A21）は原典を持たない書き方が多い。論文では「standard, see Baez 2002」等の扱い方針を決める必要。
 7. **査読前プレプリント**（B36 arXiv:2601.07283, C60 Hoffreumon & Woods 2026）は「係争中/未査読」注記付きでのみ引用可の方針が RR 内に既にある。
+
+---
+
+## 工程2 本番: 発見の解消記録（2026-07-16・Fable5 一次確認）
+
+前段（棚卸し）で挙げた3発見を、一次ソースの確認で解消した。以下を References 正規化の確定入力とする。
+
+### 発見①（撤回文献）— 解消: 不掲載＋撤回注記
+- **Thatcher & Patel (2011)**（B46）は 2016 撤回済み（PubMed 27504664）。RR-024 本文は直接引用していない。→ **References に本体エントリを載せない**。faultline メタ分析の生きた引用が要る箇所は **Zhang & Chen (2023)**（B45・*Management and Organization Review* 19(5)）で代替。撤回の事実は「撤回文献につき不掲載」の一行注記としてのみ残す（下流での誤引用予防）。READER §II 出典メモにも既に「Thatcher & Patel 2011 は撤回済みのため使いません」と明記済み＝整合。
+
+### 発見②（Wang 2014 の精読レベル不整合）— 解消: ★一次全文に一本化
+- **Wang, Solloway, Shiffrin & Busemeyer (2014)**（C20/D-7）は **PMC4084470 で OA 全文アクセス可**（2026-07-16 Fable5 が本文取得・独立照合）。QQ equality の定義式 `q=[p(AyBy)+p(AnBn)]−[p(ByAy)+p(BnAy)]=…=0`（パラメータフリー）と「**70 の全国代表調査＋2 実験**で支持」を本文で確認。→ 精読レベルを **★一次全文** に確定。RR-024 F2 の「一次全文」が正・RR-006/021 の「本文403未直読📚」は**古いアクセス経路の記録**（403 でブロックされた経路のみを見た時点の注記）であり、PMC 経由で解消済み。References は ★ で記載。DOI 10.1073/pnas.1407756111。
+
+### 発見③（著者名欠落）— 解消: 学術文献は一次確認で著者確定／灰色文献は要確認フラグ維持
+2026-07-16 に arXiv / OA 一次ソースで著者・正式書誌を確認（Fable5）:
+
+| 旧# | 確定した書誌 | 経路 |
+|---|---|---|
+| C16 | Pattisapu, Verbelen, Pitliya, Kiefer & Albarracin (2024). "Free Energy in a Circumplex Model of Emotion." arXiv:2407.02474 | arXiv |
+| C25 | Moreira & Wichert (2016). "Quantum Probabilistic Models Revisited: The Case of Disjunction Effects in Cognition." *Frontiers in Physics* 4:26. doi:10.3389/fphy.2016.00026 | Frontiers OA |
+| C26 | Lebedev & Khrennikov (2018). "Quantum-like modeling of the order effect in decision making: POVM viewpoint on the Wang–Busemeyer QQ-equality." arXiv:1811.00045 | arXiv |
+| C50 | Favez, Frascarolo & Tissot (2017). "The Family Alliance Model: A Way to Study and Characterize Early Family Interactions." *Frontiers in Psychology* 8:1441. doi:10.3389/fpsyg.2017.01441 | Frontiers OA |
+| C63 | Yīng, Ciudad Alañón, Centeno, Surace, Maciel Ansanelli, Liu, Schmid & Spekkens (2025). "On whether quantum theory needs complex numbers: the foil theories perspective." arXiv:2506.08091 | arXiv（Yìlè Yīng 表記確定） |
+| C73 | Ma & Wang (2026). "Quantum theories of consciousness: a critical review of feasibility, philosophical sufficiency, and empirical testability." *Frontiers in Psychology* 17:1730965. doi:10.3389/fpsyg.2026.1730965 | Frontiers OA |
+| C76 | Yang, Chen, Draper, Liang & Liu (2017). "Proton mass decomposition." arXiv:1710.09011（Lattice2017） | arXiv |
+| C86 | Yoon, T.H. & Cho, M. (2021). "Quantitative Complementarity of Wave-Particle Duality." *Science Advances* 7(34):eabi9268. arXiv:2104.04230（PMC8373128 で巻号確認: vol 7, issue 34, 2021-08-18） | arXiv/Sci Adv OA。※本論文の関係式は `P²+V²=μₛ²`。RR-022 に記した一般形 `D²+V²≤1`（Englert 型）とは別式＝正規化時に精密化 |
+| B5 | Harada (2021). "Examining learning coherence in group decision-making: triads vs. tetrads." *Scientific Reports* 11:20463. doi:10.1038/s41598-021-00089-w（PMC8516953） | Nature/PMC OA |
+| B8 | Mac Carron, Kaski & Dunbar (2016). "Calling Dunbar's numbers." *Social Networks* 47:151–155. arXiv:1604.02400 | ScienceDirect/arXiv |
+
+**未解消（灰色文献・ペイウォールにつき「書誌未確定・要確認」を維持）**:
+- D-1 Gallup「平均12.1人」= 商用調査レポート（学術一次でない）。論文で使うなら Gallup 報告書名・年の特定が要る。RR-013 由来。
+- D-2 Spotify squad 失敗事例 = ブログ/記事系の灰色文献。出典特定できず。
+- D-9 Deng, Gao & Liu (2012) / Adil & Khan (2026)（board 偶奇）= 403/ペイウォールで書誌断片のみ。RR-024 F-1 表の周辺証拠どまり。
+- D-10 De Longis et al. (2022) *Applied Psychology* / Oravecz-Tuerlinckx-Vandekerckhove（DynAffect 実装系）= 巻号・DOI 未取得。同一群の複数論文が1行に束ねられており分離が要る。RR-007 由来。
+- B39/B40 Deng-Gao-Liu 2012 / Adil & Khan 2026（D-9 と同一）。
+- これらは論文本文が実際に引用する場合のみ工程3/工程4 で個別に追う。灰色文献は References では二次経由を明示（"as reported in …" / "cited in RR-013"）。
