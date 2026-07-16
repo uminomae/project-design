@@ -1,5 +1,17 @@
 # state.md — project-design
 
+## ✅ セッション終了 2026-07-16 (seq12) — pd#121 全工程完了・論文 PDF 公開（CLOSED）
+- **HEAD（最終）**: develop=**1de9a50**（push 済み）/ main=**95669f6**（push 済み・論文公開＋Pages workflow 修正）/ pjdhiro main=**bcc322e**（PDF 配信）。cwd worktree `pd121-remaining-tasks-efb6c4`（ブランチ `claude/pd121-remaining-tasks-efb6c4`・develop へマージ済み・掃除候補）。OPEN Issue 10 件（pd#121 CLOSED）。
+- **🔴 潜在バグ発見・修正（公開後検証）**: Pages 配信 workflow `wiki-publish.yml` の Assemble site が robots.txt / llms.txt / llms-full.txt / sitemap.xml / favicon.ico をコピーしておらず**本番 404 のままだった**（pd#122 実装分も未配信だった）。cp＋paths トリガーに追加（f47005d→main 95669f6）。**再デプロイ success 後、robots/llms/llms-full/sitemap すべて 200・llms.txt の論文収載を本番確認済み**。
+- **pjdhiro 判定（AskUserQuestion）**: 配信場所＝**pjdhiro repo**（ワークフロー正本準拠）／範囲＝**公開まで一気に**。
+- **✅ 工程5 完了**: build-pdf.sh で 19 ページ生成。**グリフ欠落バグ発見・修正**＝黒板太字 ℝℂℍ𝕆 が Hiragino/Latin Modern に無く空白落ち → `transform/scripts/build-pdf.sh` にコードスパン・数式外限定の $\mathbb{}$ 置換前処理を追加（単体テスト済・全リポ共通正本の汎用修正）。全 19 ページ目視検品・Missing character 0・U+FFFD 0。論文正本 status draft→**final**（published/pdf を front matter に記録）。冒頭メタ情報に明示改行（1段落連結の解消）。
+- **✅ PDF 配信**: `pjdhiro/assets/project-design/knowledge/ja/pdf/PAPER-division-algebra-ja.pdf`（bcc322e・push 済み・**HTTP 200 確認**）。URL: https://uminomae.github.io/pjdhiro/assets/project-design/knowledge/ja/pdf/PAPER-division-algebra-ja.pdf
+- **✅ 工程6 完了（pd#122 移管分）**: reader-lp-template の JSON-LD を Article→**ScholarlyArticle**＋sameAs=PDF、hero/footer に「論文版 (PDF)」可視リンク、index.html @graph も同様に格上げ、llms.txt / llms-full.txt に論文収載。品質ループ＝static 11/11・アンカー149・U+FFFD 0・JSON-LD 構文妥当。
+- **✅ 公開**: develop 891e268 → main **e5566ce**（--no-ff）。工程4 の reader 零因子式修正（d571c91）も同時に main 反映。Pages 反映確認は数分後（三七ページに「論文版 (PDF)」リンク表示）。
+- **✅ pd#121 CLOSED**（全工程 1-6 完了・完了コメント済み）。
+- **運用メモ**: この worktree は main 起点で作られていたため origin/develop をマージしてから作業（reset --hard は pjdhiro 却下→merge 方式）。develop checkout に残っていた seq11 の未コミット state.md は 5e4cdf5 で先にコミットしてからマージ。
+- **ログ**: pd `log-20260716-12.md` / 横断 `SESSION-20260716-13.md`（横断 seq12 は並行 pjdhiro セッション使用済み）
+
 ## ✅ セッション終了 2026-07-16 (seq11) — pd#121 工程2+3+4 完了（論文 draft・レビュー済）＋公開 reader バグ発見修正・公開
 - **HEAD（最終）**: develop=**d571c91**（push 済み）/ main=**6925488**（push 済み・reader バグ修正を公開）。cwd worktree `continuation-e3551d`。OPEN Issue 11 件（pd#121 継続）。
 - **次セッションの入口**: **pd#121 工程5（pjdhiro 専権）**＝`transform/scripts/build-pdf.sh` で論文 PDF 生成 → 公開判定（PDF 配信＋three-and-seven.html から論文版リンク＋JSON-LD ScholarlyArticle 格上げ・pd#122 移管分）。論文正本は `knowledge/research/two-axis-closure/PAPER-division-algebra-ja.md`（status: draft・全8節＋要旨＋付録・レビュー済）。工程全体は pd#121 コメント（2026-07-16）参照。
