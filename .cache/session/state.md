@@ -1,8 +1,20 @@
 # state.md — project-design
 
-## ✅ セッション区切り 2026-07-16 (seq09) — 持ち越し作業の一括クローズ（main 公開＋掃除）
-- **HEAD**: develop=**f8f61f3**（変化なし・push 済み）/ main=**487746e**（本セッションで公開・push 済み・origin 同期）。cwd worktree `continuation-e477dc`。
-- **pjdhiro 指示**: 「持ち越してる作業を全て終えたい」。棚卸し → 安全な自律分を実行 → 専権2件を pjdhiro 判定（「今すぐ公開」「worktree 削除」）で実行。
+## 🔵 CLI 作業中 2026-07-16 (seq10) — やり残しタスクの小粒一掃
+- **HEAD**: develop=**68f4b6f**（push 済み）/ main=e68caad（変更なし）。cwd worktree `remaining-tasks-564adb`（編集は main checkout の develop で実施）。
+- **✅ GitHub Pages 反映確認（seq09 の残り次アクション）**: three-and-seven（§7 日付 07-04・Lavanchy 孫引き注記）・energy-flow（確からしさのものさし×7）とも本番反映済み。
+- **✅ pd#89 CLOSED**: `--bg` dead token を選択肢A（削除）で処理（68f4b6f）。`var(--bg)` 全域 grep 参照0件再確認・static-checks 11/11。
+- **✅ .cache/active/ 整理**: 関連 Issue が全 CLOSED の残留 11 件（issue50/53 フェーズ×8・TASK-6・PLAN-value-llm-comparison=#36/#33・techo115-paper-search-results）＋ハーネス再生成可能な reader 読解テスト生成物 6 件を archive/ へ移動。active/ は README のみに。
+- **✅ #119 / #127 CLOSED（pjdhiro「両方 close」承認）**: #119＝到達点コメント付き close（引き継ぎ先: pd#111・pd#118・D13-S14 保持論点）。#127＝成果物3点納品済み・実運用実績ありで close（継続推敲は #129/#115 品質ゲート運用に吸収）。OPEN Issue は 15→12 件（#129/#126/#122/#121/#118/#117/#115/#111/#99/#98/#96/#95）。
+- **✅ pd#122 実装完了（develop 40f0c42・push 済み）**: SEO/AI メタ強化——robots.txt AI クローラー9種明示 Allow／llms.txt+llms-full.txt に reader 2ページ収載／reader テンプレ2種の JSON-LD 拡充（description/about×5/citation×5・citation は正本 MD 引用実在照合済み・Rutledge→Gottwald&Braun 差替）／og:locale+article:published/modified_time／index.html @graph+seo-summary に reader 追加／build-reader-lp.py の日付陳腐化バグ修正（未コミット編集時は当日）＋sitemap lastmod 自動追随。品質ループ全通過（static 11/11・アンカー149・U+FFFD 0・JSON-LD 妥当・:3004 コンソール0・差分 head 限定）。Issue コメント済み。**残＝ScholarlyArticle 格上げのみ（pd#121 待ち）**。
+- **🟡 pjdhiro 判断待ち**: ①pd#122 分の develop→main 公開（メタ情報のみ・本文不変）②pd#122 を close するか（残項目は pd#121 側で追う）。
+- **保持論点（変わらず）**: D13-S14 autopoiesis 取得経路・pd#129 次ラウンド。
+
+## ✅ セッション終了 2026-07-16 (seq09) — 持ち越し一括クローズ＋両 READER 念入りレビュー（4回 main 公開）
+- **HEAD（最終）**: develop=**287959f**（push 済み）/ main=**e68caad**（push 済み・origin 同期）。cwd worktree `continuation-e477dc`。**公開物はすべて main 反映済み**（develop の 287959f はセッション記録 chore のみ・main 未マージで可）。
+- **本セッションの 4 回 main 公開**: ①487746e（持ち越しクローズ：背景2修正＋mw-ready）②496c020（energy-flow §3 事実誤り 6万→約69万人・Kramer 2014）③b34532d（energy-flow 二つのものさし命名リファクタ）④e68caad（three-and-seven polish 2件）。
+- **次アクション**: なし（一区切り）。残る恒常待ち＝pd#129 OPEN（次ラウンドは pjdhiro 選択）・D13-S14 autopoiesis 取得経路（取得元なし）。GitHub Pages 反映確認（数分後）。
+- **pjdhiro 指示（前半）**: 「持ち越してる作業を全て終えたい」。棚卸し → 安全な自律分を実行 → 専権2件を pjdhiro 判定（「今すぐ公開」「worktree 削除」）で実行。
 - **✅ main 公開（487746e・pjdhiro「今すぐ公開」）**: c7ab80b..487746e を --no-ff マージ＋push。公開内容＝自己複製章の再構築仕様E（背景記述の訂正 暗い→明るい単色 43b86af／背景を仕様の対象外に分離 d1faff9）＋energy-flow READER 再生成（7894154/8b58d75）＋mw-ready マウント失敗時フォールバック修正（5af1a8b）。各コミット品質ループ通過済み。公開 URL: https://uminomae.github.io/project-design/reader/energy-flow.html（Pages 反映は数分）。
 - **✅ 自己参照 symlink 3本を削除**（`content/content`・`reader/reader`・`src/src`＝dev サーバー副産物・再帰走査ハザード。seq07 で削除判断ペンディングだったもの）。
 - **✅ inbox wiki-gen-2026-07-15 を stale 判定で archive**: 7件中6件は別 stem で compiled 済み（ドメイン ID 一致）、D13-S14 autopoiesis のみ真に未生成だが raw PDF 不在＝取得元なし（保持論点「D13-S14 取得経路＝cs 側正本の可能性」継続）。判定根拠を依頼ファイルに追記して archive。
@@ -10,6 +22,7 @@
 - **保持論点（未解決・持ち越し）**: ①D13-S14 autopoiesis の取得経路（cs 側正本の可能性・取得元なし）②pd#129 OPEN 継続（次ラウンド着手は pjdhiro 選択）③periodic review WARN の cs/kdt 分は別リポジトリのセッション事項。
 - **✅ energy-flow READER 念入りレビュー＋事実誤り訂正を公開（main 496c020・pjdhiro「修正＋main 再公開」）**: pjdhiro 依頼「reader ページのレビュー・念入りに」。正本 MD 全文精読＋機械チェック（static 11/11・アンカー39・U+FFFD 0・JS OK・再ビルド差分ゼロ）＋原典抜き取り照合（r=0.47/R²=0.429/3531/23研究室/0.1%/4000万/148/Still2012/Gottwald/Kondepudi 一致）＋Litt 三技法実装確認（ou-well・kuramoto-sync 実体あり／Shared Spaces scope 正直）。**発見＝CONFIRMED 事実誤り1件**: §3 Facebook 感情伝染実験「6万人規模」は約69万人の誤り（Kramer et al. 2014 PNAS N=689,003）。誤源は RR-041 review round1 照合表の「6万規模」誤記→READER に伝播（RR-SURVEY は 69万と正記）。READER 本文＋RR-041 を訂正＋inline 引用補足→再ビルド→品質ループ通過→develop e9ec614→main 496c020 公開。効果量 0.1% 未満は不変。**設計上の検討（バグでない・pjdhiro 判断）**: §2〈読み方の種類〉と §4/§5〈確からしさの段〉の2種類の3分割表に両方「構造類似」が出て読解負荷（現状は3か所の注記で打ち消し済・破綻なし）。
 - **✅ READER 二つの表の軸を命名し混同解消・公開（main b34532d・pjdhiro「今すぐ公開」）**: レビューで挙げた設計上の検討（§2〈読み方の種類〉と §4/§5〈確からしさの段〉の2種類3分割表が読解負荷）を修正。**方針＝establish once＋タグ**: §2 表の直前に凡例を1つ新設し「**意味のものさし**（字義／構造類似／比喩）」「**確からしさのものさし**（実証→仮説→飛躍の濃淡）」を定義＋直交する例1つ（感情＝力学系の軌道＝意味:字義／確からしさ:実証）、各表に見出しタグ、§4/§5/§6 の3か所の長い打ち消し注記を短い参照に置換、§6 は統合表ゆえ「二つ混じる」と明示。自己 V3 修正＝確からしさは節で段数が違う（§4:実証/仮説/比喩系譜・§5:4段）ため固定3値でなく gradient として記述。:3004 でレンダリング・コンソール0 確認。品質ループ全通過。develop 3d0b3c5→main b34532d 公開。
+- **✅ three-and-seven READER 念入りレビュー＋polish 2件公開（main e68caad）**: 全1385行精読＋機械検証照合（i·j=k／ノルム乗法／ファノ PG(2,2)／168=PGL(3,2)≅PSL(2,7)／非結合 (e₁e₂)e₄=+e₇ vs e₁(e₂e₄)=−e₇／零因子 (e₁+e₁₀)(e₅+e₁₄)=0／S⁰S¹S³S⁷／ハミング[7,4]、RR-002/024 と一致）＋実証数値照合（McHale 97%/38人・Wheelan 329・Klimek 内閣崖≈20・Cartwright&Harary 1956、RR ノート一致）。**energy-flow のような事実誤り・軸混同なし**——第I部（可除代数3人=4次元）と第II部（行列 SO(2n) 三者=6次元）は line 1180 で明示分離、判定ラベル・3レベル畳みも一度定義し一貫使用。声帰属・撤回研究除外・720°取り下げも徹底。ブラウザ:3004 で4 Micro-worlds mw-ready・4クイズ・コンソール0。**発見＝polish 2件のみ（要修正でない）**: ①§7 冒頭「最終更新 2026-07-03」を含有する仮説v2(採用07-04)と整合させ 07-04 に更新 ②§3 コラム McHale 97% に原典 Lavanchy 2002 孫引きの旨を一句追加（RR-017 の明記＋他所の一次未取得注記と基準統一）。develop 24448d8→main e68caad 公開。static 11/11・アンカー149・U+FFFD 0・再ビルド整合。
 - **次アクション**: GitHub Pages 反映確認（数分後）。それ以外の持ち越しは解消済み。
 
 ## ✅ 単発修正 2026-07-16 (seq08) — mw-ready 2行修正（seq07 次アクション②完了）
