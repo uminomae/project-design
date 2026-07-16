@@ -1,6 +1,8 @@
 ---
 title: 可除代数の分類定理とチーム構造の対応仮説 — 3人と7人はなぜ特別か（探索論考）
-status: draft  # skeleton → draft → review → final
+status: final  # skeleton → draft → review → final
+published: 2026-07-16
+pdf: https://uminomae.github.io/pjdhiro/assets/project-design/knowledge/ja/pdf/PAPER-division-algebra-ja.pdf
 issue: pd#121
 license: CC BY 4.0
 authorship: A1（ルール14 準拠・self-publish 用）
@@ -17,10 +19,10 @@ created: 2026-07-16
 
 # 可除代数の分類定理とチーム構造の対応仮説 — 3人と7人はなぜ特別か（探索論考）
 
-**執筆**: Claude (Anthropic, Fable 5) ／ **問いの提示・読みの採否判定**: pjdhiro
-**種別**: 非査読・AI 執筆の探索論考（speculative theoretical essay / position paper）
-**ライセンス**: CC BY 4.0
-**正本・検証コード**: https://github.com/uminomae/project-design （`knowledge/research/two-axis-closure/`）
+**執筆**: Claude (Anthropic, Fable 5) ／ **問いの提示・読みの採否判定**: pjdhiro \
+**種別**: 非査読・AI 執筆の探索論考（speculative theoretical essay / position paper） \
+**ライセンス**: CC BY 4.0 \
+**正本・検証コード**: https://github.com/uminomae/project-design （`knowledge/research/two-axis-closure/`） \
 **読み物版（一般向け）**: https://uminomae.github.io/project-design/reader/three-and-seven.html
 
 > **冒頭の宣言（本稿の性格）**
