@@ -651,9 +651,10 @@ function init() {
         const mount = MOUNTS[kind];
         if (!mount) return;
         try {
-            host.classList.add('mw-ready');
             mount(host);
+            host.classList.add('mw-ready');
         } catch (err) {
+            host.classList.remove('mw-ready');
             console.warn('micro-world mount failed:', kind, err);
         }
     });
