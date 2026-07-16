@@ -1,8 +1,10 @@
 # state.md — project-design
 
-## ✅ セッション区切り 2026-07-16 (seq09) — 持ち越し作業の一括クローズ（main 公開＋掃除）
-- **HEAD**: develop=**f8f61f3**（変化なし・push 済み）/ main=**487746e**（本セッションで公開・push 済み・origin 同期）。cwd worktree `continuation-e477dc`。
-- **pjdhiro 指示**: 「持ち越してる作業を全て終えたい」。棚卸し → 安全な自律分を実行 → 専権2件を pjdhiro 判定（「今すぐ公開」「worktree 削除」）で実行。
+## ✅ セッション終了 2026-07-16 (seq09) — 持ち越し一括クローズ＋両 READER 念入りレビュー（4回 main 公開）
+- **HEAD（最終）**: develop=**287959f**（push 済み）/ main=**e68caad**（push 済み・origin 同期）。cwd worktree `continuation-e477dc`。**公開物はすべて main 反映済み**（develop の 287959f はセッション記録 chore のみ・main 未マージで可）。
+- **本セッションの 4 回 main 公開**: ①487746e（持ち越しクローズ：背景2修正＋mw-ready）②496c020（energy-flow §3 事実誤り 6万→約69万人・Kramer 2014）③b34532d（energy-flow 二つのものさし命名リファクタ）④e68caad（three-and-seven polish 2件）。
+- **次アクション**: なし（一区切り）。残る恒常待ち＝pd#129 OPEN（次ラウンドは pjdhiro 選択）・D13-S14 autopoiesis 取得経路（取得元なし）。GitHub Pages 反映確認（数分後）。
+- **pjdhiro 指示（前半）**: 「持ち越してる作業を全て終えたい」。棚卸し → 安全な自律分を実行 → 専権2件を pjdhiro 判定（「今すぐ公開」「worktree 削除」）で実行。
 - **✅ main 公開（487746e・pjdhiro「今すぐ公開」）**: c7ab80b..487746e を --no-ff マージ＋push。公開内容＝自己複製章の再構築仕様E（背景記述の訂正 暗い→明るい単色 43b86af／背景を仕様の対象外に分離 d1faff9）＋energy-flow READER 再生成（7894154/8b58d75）＋mw-ready マウント失敗時フォールバック修正（5af1a8b）。各コミット品質ループ通過済み。公開 URL: https://uminomae.github.io/project-design/reader/energy-flow.html（Pages 反映は数分）。
 - **✅ 自己参照 symlink 3本を削除**（`content/content`・`reader/reader`・`src/src`＝dev サーバー副産物・再帰走査ハザード。seq07 で削除判断ペンディングだったもの）。
 - **✅ inbox wiki-gen-2026-07-15 を stale 判定で archive**: 7件中6件は別 stem で compiled 済み（ドメイン ID 一致）、D13-S14 autopoiesis のみ真に未生成だが raw PDF 不在＝取得元なし（保持論点「D13-S14 取得経路＝cs 側正本の可能性」継続）。判定根拠を依頼ファイルに追記して archive。
