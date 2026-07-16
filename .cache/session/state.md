@@ -1,13 +1,36 @@
 # state.md — project-design
 
-## 🔵 CLI 作業中 2026-07-16 (seq10) — やり残しタスクの小粒一掃
-- **HEAD**: develop=**68f4b6f**（push 済み）/ main=e68caad（変更なし）。cwd worktree `remaining-tasks-564adb`（編集は main checkout の develop で実施）。
+## ✅ セッション終了 2026-07-16 (seq11) — pd#121 工程2+3+4 完了（論文 draft・レビュー済）＋公開 reader バグ発見修正・公開
+- **HEAD（最終）**: develop=**d571c91**（push 済み）/ main=**6925488**（push 済み・reader バグ修正を公開）。cwd worktree `continuation-e3551d`。OPEN Issue 11 件（pd#121 継続）。
+- **次セッションの入口**: **pd#121 工程5（pjdhiro 専権）**＝`transform/scripts/build-pdf.sh` で論文 PDF 生成 → 公開判定（PDF 配信＋three-and-seven.html から論文版リンク＋JSON-LD ScholarlyArticle 格上げ・pd#122 移管分）。論文正本は `knowledge/research/two-axis-closure/PAPER-division-algebra-ja.md`（status: draft・全8節＋要旨＋付録・レビュー済）。工程全体は pd#121 コメント（2026-07-16）参照。
+- **ログ**: pd `log-20260716-11.md` / 横断 `SESSION-20260716-11.md`
+- **✅ main 公開（6925488・pjdhiro「pushして」）**: reader バグ修正を cherry-pick で main へ（論文 draft は混ぜず・工程5 判定を温存）。GitHub Pages 反映は数分後。
+- **✅ 工程4 完了**: ①References 剪定（172→**104**・意識/energy-flow/光 系 約65件は §7 未接地につき inventory に温存・02450da）②**team-critic 敵対レビュー**（SPLIT→CRITICAL1/MAJOR2/MINOR1 反映・01bd434）③**文脈ゼロ読解テスト**（sonnet・PASS「取れた」＝主旨/水準/二レンズ正答・著者側欠陥なし）。
+  - **C-1（CRITICAL）**: sedenion 零因子式を実検証形へ訂正。RR-013b 再実行で (e₁+e₁₀)(e₅+e₁₄) は当該規約で**非零**（|x·y|=2.83）→総当たりで零になるのは **(e₁+e₁₀)(e₄−e₁₅)**。§4本文・付録A・SOURCE を訂正＋規約依存明示。
+  - M-1 McHale 97% の誤帰属分離／M-2 Lewin 場理論を「場＝実軸」への最強反証として §5 に明示（References に Lewin 復帰）／m-1 経験則帯と実証帯の別レイヤー注記。
+- **🔴 公開 reader バグ発見→修正（pd#115・d571c91）**: 上記 C-1 の誤式が**公開ページ reader/three-and-seven.html にも「機械検証済み」表記で存在**（正本 READER MD L640 由来）。正本 MD を実検証形へ訂正＋build-reader-lp.py 再生成＋RR-014 注記訂正。static 11/11・アンカー149・U+FFFD 0・energy-flow 差分なし。**develop のみ・公開（main マージ）は pjdhiro 判定**。
+- **🔜 残（工程5・pjdhiro 専権）**: build-pdf.sh で論文 PDF 生成 → **公開判定**（PDF 配信＋three-and-seven.html リンク＋JSON-LD ScholarlyArticle 格上げ・pd#122 移管分）。＋上記 reader バグ修正の main 公開判定。
+- **✅ 工程2 本番完了（773e314）**: インベントリ180件 → `PAPER-division-algebra-ja.md` の References へ著者-年形式で正規化（**172件**: 数学17/チーム53/意識102＋標準事実・灰色文献は注へ集約）。精読レベル（★/○/△〔as cited in〕/？）保持。実装 Opus 委任・Fable 検収。
+- **発見3件 解消（一次確認）**: ①Thatcher&Patel 2011（撤回）本体不掲載→Zhang&Chen 2023 一本化 ②Wang 2014 は PMC4084470 OA 全文確認で ★一次に一本化（403注は古い経路記録） ③著者名欠落10件を arXiv/OA で確定（Pattisapu/Moreira&Wichert/Lebedev&Khrennikov/Favez/Yīng/Ma&Wang/Yang/Yoon&Cho/Harada/Mac Carron）。
+- **検収で転記誤り1件修正**: Yoon&Cho を Sci Adv 7(35)→**7(34):eabi9268**（PMC8373128 で確認）。灰色文献（Gallup/Spotify/board偶奇/DynAffect実装系）は書誌未確定→注で二次経由明示。
+- **品質**: U+FFFD 0・D1-D4 表記なし・エントリ172・インベントリとの照合スポットチェック一致。工程4 剪定メモを inline 記載（本文執筆後に未引用項目〔RR-020/021/022 の energy-flow 系物理・思想史項目〕を削除）。
+- **✅ 工程3 完了（develop 156a77d・push 済み）**: `PAPER-division-algebra-ja.md` を skeleton→**draft**。全8節＋要旨＋付録A/B 執筆。分業＝Fable(要旨/§1/§6/§7/§8/付録・統合/honesty ゲート)、Opus worker×2(§2先行言説+§3方法／§4数学+§5対応仮説)。声帰属(無主語学術文体・pjdhiro は引用)・主張水準(構造類似まで・字義同一を明示否定)・第I部/第II部の数の当て方の別を明示。**品質ループ**: 機械検証20本 ALL CHECKS PASSED(Steiner S(2,3,7)・交代律・sedenion零因子・so(6)=su(4)非還元・偶奇二部性・ノルム保存=干渉ダイヤル)・U+FFFD 0・プレースホルダ0・[P][M][S]/D1-D4 本文露出なし・接続チェック整合。スパインは scratchpad `PAPER-spine.md`、worker 出力は `PAPER-sec23.md`/`PAPER-sec45.md`。
+- **🔜 工程4（次）**: ①References 剪定（意識区分の energy-flow 系＝RR-020/021/022 由来の未引用項目を削除。§5/§6 が引く RR-015/016/019 分は残す・剪定メモは References 冒頭 inline）②team-critic 敵対レビュー（V3-V6）③文脈ゼロ LLM 読解テスト → ④build-pdf.sh → ⑤公開判定（pjdhiro 専権）→ ⑥three-and-seven.html リンク＋ScholarlyArticle 格上げ（pd#122 移管分）。
+
+## ✅ セッション終了 2026-07-16 (seq10) — やり残し一掃（Issue 4件 close）＋pd#122 完遂・公開＋pd#121 Phase A 着手（骨格＋出典棚卸し180件）
+- **HEAD（最終）**: develop=**2cb5056**（push 済み・本ログ commit 分を除く）/ main=**09f3478**（pd#122 公開済み・push 済み）。OPEN Issue **11 件**。
+- **次セッションの入口**: pd#121 工程2 本番（`PAPER-references-inventory.md` 180件 → 論文 References 形式へ正規化＋発見3件〔Thatcher&Patel 撤回・Wang 2014 精読レベル矛盾・著者名欠落〕解消）→ 工程3 節ごと本文執筆（Opus 委任・Fable 統合。素材マップは `PAPER-division-algebra-ja.md` の SOURCE コメント）。工程全体は pd#121 コメント参照。
+- **ログ**: pd `log-20260716-10.md` / 横断 `SESSION-20260716-10.md`
+- **HEAD**: develop=**e7c9587**（push 済み）/ main=**09f3478**（pd#122 公開済み）。cwd worktree `remaining-tasks-564adb`（編集は main checkout の develop で実施）。
+- **✅ pd#121 検討完了→Phase A 着手（pjdhiro「Phase A に着手」承認）**: 検討メモを issue に投稿（結論=実現可能・二段構え推奨・arXiv 非推奨・最大論点=著者表記とルール14 の緊張。外部事実: arXiv moderation/endorsement・Jxiv・Zenodo・ICMJE 確認済み）。確定=A1 著者表記（執筆 Claude/判定 pjdhiro）・CC BY 4.0・和文先行。**骨格 commit e7c9587**: `knowledge/research/two-axis-closure/PAPER-division-algebra-ja.md` 新設（8節＋References＋付録2・節ごと SOURCE 素材マップ・機械検証は20本〔16は誤記・issue で訂正済み〕）。
+- **✅ pd#121 工程2前段完了（develop 18c340f）**: References 出典棚卸しインベントリ `PAPER-references-inventory.md` 180件（Opus 委任・Fable 検収・issue コメント済み）。数学21/実証56/意識ほか103/要確認10。精読 ★20/○36/△119/？5。**発見3件**=①Thatcher&Patel 2011 撤回済み ②Wang 2014 精読レベル RR 間矛盾（要一本化）③著者名欠落 Frontiers/arXiv 系数件。
+- **🔜 pd#121 次工程（次セッション）**: ②本番=インベントリ→論文 References 形式へ正規化＋発見3件解消 →③節ごと本文執筆（Opus 委任・Fable 統合）→④接続チェック＋品質ループ→⑤build-pdf.sh→公開判定（pjdhiro 専権）→⑥three-and-seven.html リンク＋ScholarlyArticle 格上げ（pd#122 移管分）。工程詳細は issue コメント参照。
 - **✅ GitHub Pages 反映確認（seq09 の残り次アクション）**: three-and-seven（§7 日付 07-04・Lavanchy 孫引き注記）・energy-flow（確からしさのものさし×7）とも本番反映済み。
 - **✅ pd#89 CLOSED**: `--bg` dead token を選択肢A（削除）で処理（68f4b6f）。`var(--bg)` 全域 grep 参照0件再確認・static-checks 11/11。
 - **✅ .cache/active/ 整理**: 関連 Issue が全 CLOSED の残留 11 件（issue50/53 フェーズ×8・TASK-6・PLAN-value-llm-comparison=#36/#33・techo115-paper-search-results）＋ハーネス再生成可能な reader 読解テスト生成物 6 件を archive/ へ移動。active/ は README のみに。
 - **✅ #119 / #127 CLOSED（pjdhiro「両方 close」承認）**: #119＝到達点コメント付き close（引き継ぎ先: pd#111・pd#118・D13-S14 保持論点）。#127＝成果物3点納品済み・実運用実績ありで close（継続推敲は #129/#115 品質ゲート運用に吸収）。OPEN Issue は 15→12 件（#129/#126/#122/#121/#118/#117/#115/#111/#99/#98/#96/#95）。
 - **✅ pd#122 実装完了（develop 40f0c42・push 済み）**: SEO/AI メタ強化——robots.txt AI クローラー9種明示 Allow／llms.txt+llms-full.txt に reader 2ページ収載／reader テンプレ2種の JSON-LD 拡充（description/about×5/citation×5・citation は正本 MD 引用実在照合済み・Rutledge→Gottwald&Braun 差替）／og:locale+article:published/modified_time／index.html @graph+seo-summary に reader 追加／build-reader-lp.py の日付陳腐化バグ修正（未コミット編集時は当日）＋sitemap lastmod 自動追随。品質ループ全通過（static 11/11・アンカー149・U+FFFD 0・JSON-LD 妥当・:3004 コンソール0・差分 head 限定）。Issue コメント済み。**残＝ScholarlyArticle 格上げのみ（pd#121 待ち）**。
-- **🟡 pjdhiro 判断待ち**: ①pd#122 分の develop→main 公開（メタ情報のみ・本文不変）②pd#122 を close するか（残項目は pd#121 側で追う）。
+- **✅ pd#122 公開＋CLOSED（pjdhiro「公開する」「close」承認）**: develop→main --no-ff マージで公開（**main 09f3478**・push 済み）。ScholarlyArticle 格上げは pd#121 側へ移管（pd#121 にコメント済み）。OPEN Issue は 11 件に。HEAD: develop=**ad1f432**（push 済み）/ main=**09f3478**。GitHub Pages 反映確認は数分後。
 - **保持論点（変わらず）**: D13-S14 autopoiesis 取得経路・pd#129 次ラウンド。
 
 ## ✅ セッション終了 2026-07-16 (seq09) — 持ち越し一括クローズ＋両 READER 念入りレビュー（4回 main 公開）

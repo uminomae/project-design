@@ -56,6 +56,23 @@ print(''.join(lines), end='')
 "
 }
 
+# ── 黒板太字を LaTeX 数式へ置換 ──
+# Hiragino / Latin Modern に ℝℂℍ𝕆 等のグリフが無く空白落ちするため、
+# コードスパン・フェンス・既存数式の外でのみ $\mathbb{…}$ に置換する。
+substitute_bb_math() {
+    python3 -c "
+import sys, re
+MAP = {'ℕ': 'N', 'ℤ': 'Z', 'ℚ': 'Q', 'ℝ': 'R', 'ℂ': 'C', 'ℍ': 'H', '𝕆': 'O'}
+def sub(t):
+    for k, v in MAP.items():
+        t = t.replace(k, '\$\\\\mathbb{' + v + '}\$')
+    return t
+text = sys.stdin.read()
+parts = re.split(r'(\`\`\`.*?\`\`\`|\`[^\`\n]*\`|\\\$[^\$\n]*\\\$)', text, flags=re.S)
+sys.stdout.write(''.join(p if i % 2 else sub(p) for i, p in enumerate(parts)))
+"
+}
+
 # ── front matter / H1 からタイトル取得 ──
 extract_title() {
     local file="$1"
@@ -281,7 +298,7 @@ build_single() {
     fi
 
     # フロントマターを除去して連結
-    cat "$input_abs" | strip_frontmatter >> "$tmp"
+    cat "$input_abs" | strip_frontmatter | substitute_bb_math >> "$tmp"
 
     # SVG→PNG 変換
     rewrite_svg_links "$tmp" "$input_abs" "$BUILD_TMP/svg-raster/${basename_md}"
