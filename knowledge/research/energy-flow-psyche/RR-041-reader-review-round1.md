@@ -87,7 +87,7 @@ READER の要注意数値を RR と照合（すべて一致）:
 | Gernert 2023 R²=0.429・14 組 | RR-032 L43（N=14・R²=0.429・F(1,12)=9.009・p=0.011） | ✅ |
 | 自我消耗 2016 23 研究室・2021 3531 名 | RR-SURVEY L23（Hagger RRR 23-lab・Vohs 3531・d=0.06） | ✅ |
 | Li ら 2025 4000万論文・裾の長い分布 | RR-038 L26/L30（arXiv:2502.06190・Poisson を long-tail で棄却） | ✅ |
-| Facebook 6万規模・効果 0.1% 未満 | RR-REVIEW-depth-audit L74（Facebook 0.1% 効果量） | ✅ |
+| Facebook 約69万規模・効果 0.1% 未満 | RR-SURVEY L32（Kramer et al. 2014 PNAS・N=689,003＝約69万人・効果 ≈0.07%） | ✅（2026-07-16 訂正：round1 は「6万規模」と誤記していた。一次は 69万人。READER 本文も併せて訂正） |
 | Rennung & Göritz 2016 盲検で効果消失 | RR-032 L151（実験者盲検化で効果ゼロと区別不能） | ✅ |
 | Gottwald & Braun 2020 同じ関数形・別の物理 | RR-030 ③（PLOS Comput. Biol. 16(12):e1008420） | ✅ |
 | Kondepudi 2020 生物＝散逸構造・自己複製は未達 | RR-030/033（査読・自己申告限界つき） | ✅ |
