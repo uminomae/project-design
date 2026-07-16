@@ -5,12 +5,18 @@ on:
     branches: [main]
     paths:
       - 'index.html'
+      - 'robots.txt'
+      - 'llms.txt'
+      - 'llms-full.txt'
+      - 'sitemap.xml'
+      - 'favicon.ico'
       - 'src/**'
       - 'content/**'
       - 'assets/**'
       - 'reader/**'
       - 'wiki/**'
       - 'quartz/**'
+      - '.github/workflows/wiki-publish.yml'
   workflow_dispatch:
 
 permissions:
@@ -45,6 +51,8 @@ jobs:
           mkdir -p _site
           # Copy existing site (index.html, src/, content/, assets/, reader/, etc.)
           cp -r index.html src/ content/ assets/ reader/ _site/
+          # Root-level discoverability files (robots/llms/sitemap/favicon)
+          cp robots.txt llms.txt llms-full.txt sitemap.xml favicon.ico _site/
           # Copy Quartz wiki output into /wiki/ subpath
           cp -r wiki-out/ _site/wiki/
 
