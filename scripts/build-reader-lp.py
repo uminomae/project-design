@@ -14,6 +14,7 @@ READER を更新したら本スクリプトを再実行して LP を追随させ
 import re
 import subprocess
 import sys
+from datetime import date
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -66,11 +67,20 @@ def build(SRC: Path, TPL: Path, OUT: Path, STYLE: str) -> None:
     m = re.match(r"^---\n.*?\n---\n", md, re.S)
     body_md = md[m.end():] if m else md
 
-    # 最終更新日は正本の git 履歴から取る
-    updated = subprocess.run(
-        ["git", "log", "-1", "--format=%ad", "--date=format:%Y-%m-%d", "--", str(SRC)],
+    # 最終更新日は正本の git 履歴から取る。ただし未コミットの編集があるときは今日の日付
+    # （MD 編集と再ビルドを同一コミットに入れる通常運用では、コミット前のビルド時点で
+    #  git log が 1 コミット前の日付を返し、表示が古いまま公開される）
+    dirty = subprocess.run(
+        ["git", "status", "--porcelain", "--", str(SRC)],
         cwd=ROOT, capture_output=True, text=True, check=True,
-    ).stdout.strip() or "unknown"
+    ).stdout.strip()
+    if dirty:
+        updated = date.today().isoformat()
+    else:
+        updated = subprocess.run(
+            ["git", "log", "-1", "--format=%ad", "--date=format:%Y-%m-%d", "--", str(SRC)],
+            cwd=ROOT, capture_output=True, text=True, check=True,
+        ).stdout.strip() or "unknown"
 
     # GFM → HTML（インライン SVG は raw HTML としてそのまま通る）
     html = subprocess.run(
@@ -133,6 +143,24 @@ def build(SRC: Path, TPL: Path, OUT: Path, STYLE: str) -> None:
     if "�" in page:
         sys.exit(f"ERROR: U+FFFD found in output ({OUT.name})")
     print(f"OK: {OUT.relative_to(ROOT)} ({len(page):,} bytes, updated {updated})")
+
+    update_sitemap_lastmod(OUT, updated)
+
+
+def update_sitemap_lastmod(out: Path, updated: str) -> None:
+    """sitemap.xml の該当 <url> の <lastmod> をビルド日付に追随させる（pd#122）。"""
+    if updated == "unknown":
+        return
+    sm = ROOT / "sitemap.xml"
+    xml = sm.read_text(encoding="utf-8")
+    loc = f"https://uminomae.github.io/project-design/reader/{out.name}"
+    pattern = re.compile(
+        r"(<loc>" + re.escape(loc) + r"</loc>\s*<lastmod>)[^<]+(</lastmod>)"
+    )
+    new_xml, n = pattern.subn(lambda m: m.group(1) + updated + m.group(2), xml)
+    if n and new_xml != xml:
+        sm.write_text(new_xml, encoding="utf-8")
+        print(f"OK: sitemap.xml lastmod -> {updated} ({out.name})")
 
 
 def main() -> None:

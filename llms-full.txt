@@ -77,6 +77,20 @@ URL: `?knowledge=value`
 
 Value is a polysemous term bundling at least five problem domains: price, utility, norms, meaning, and symbolism. It emerges as a multi-layered concept arising from relationships among objects, subjects, institutions, and contexts.
 
+### Long-form Readers (読み物)
+
+Standalone explainer pages generated from `knowledge/` research notes. Written in Japanese, designed to be uniquely readable by an LLM with zero external context (README rule 16). Authorship: main text by Claude (Fable 5); questions posed and readings adjudicated by pjdhiro. Verification status — including retracted strong readings — is published on each page.
+
+#### なぜ 3 と 7 だけが特別なのか — 可除代数‑意識/組織仮説
+URL: https://uminomae.github.io/project-design/reader/three-and-seven.html
+
+Starting from two felt experiences — a two-axis sense of consciousness (survival-trust axis, from awareness-space) and "teams work best at 3, cap at 7" — the page asks whether multiplicative (rotational) composition explains why 3 and 7 are special. Mathematical core: division algebras exist only in dimensions 1, 2, 4, 8 (Hurwitz's theorem), giving 3 and 7 imaginary directions for ℍ and 𝕆. This is compared against team-size research (optimum 3–5, ceiling 7–9), cabinet-size studies, and structural balance theory. The page separates theorem / adopted reading / candidate reading / retracted reading, and includes interactive micro-worlds and comprehension quizzes.
+
+#### 感情も、関係も、時代も「エネルギーの流れ」なのか — エネルギーの流れ仮説
+URL: https://uminomae.github.io/project-design/reader/energy-flow.html
+
+An independent inquiry inspired by dissipative structures ("form persists only while flow continues"). It examines whether emotions, relationships, and historical eras can be understood as energy flows, sorting claims along two named scales: a meaning scale (literal / structural similarity / metaphor) and a certainty scale (measured / hypothesis / leap). Measured anchors include emotional contagion (Kramer et al. 2014, N≈689k), OU-process dynamics of affect, critical slowing down as depression early-warning (van de Leemput et al. 2014), and Kuramoto synchronization. A scoreboard section states what is established, open, and rejected.
+
 ## Content Hosted on pjdhiro
 
 The full theory articles are hosted on the parent site (pjdhiro):
