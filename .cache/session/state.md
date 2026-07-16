@@ -1,5 +1,11 @@
 # state.md — project-design
 
+## ✅ 単発修正 2026-07-16 (seq08) — mw-ready 2行修正（seq07 次アクション②完了）
+- **HEAD**: develop=**5af1a8b**（push 済み・remote 同期）/ main=**c7ab80b**（変更なし）
+- `src/reader-microworlds.js` init(): `mw-ready` 付与を mount(host) 成功後へ移動＋catch で remove。mount 例外時（2D コンテキスト不可の WebView 等）にフォールバック文が隠れたまま空箱になる欠陥を解消（seq07 成果③で発見済みのもの）。
+- 検証: `node --check` OK／:3004 で energy-flow（2図）・three-and-seven（4図）の全 6 ウィジェットが mw-ready＋フォールバック非表示／コンソールエラー 0。CSS 上 `mw-ready` はフォールバック非表示専用で mount 側は依存しないため順序入替は安全と確認。
+- **🟡 残り次アクション**: seq07 の ①背景関連2修正の main 公開判断 ③自己参照 symlink 削除判断 ④worktree 掃除（②は本修正で完了）
+
 ## ✅ セッション終了 2026-07-16 (seq07) — energy-flow に自己複製仕様の章（LLM 向け再構築仕様）を実装・develop 反映＋pd#130 実装の独立チェック
 - **HEAD**: develop=**8b58d75**（push 済み・remote 同期）/ main=**c7ab80b**（自己複製章〜公開経路の規定まで公開済み。**背景関連2修正 43b86af/d1faff9 は develop のみ＝未公開**）。cwd は worktree `llm-exploration-html-framework-60fa6a`（branch `claude/llm-exploration-html-framework-60fa6a`・マージ済み・掃除候補）。
 - **成果①（本セッションの主タスク）**: energy-flow.html 末尾にテンプレート固有の章「**あなたの問いで、同じページを作る — LLM に渡す仕様書つき**」を実装。人間向け定型プロンプト＋LLM 向け再構築仕様 A〜F（作るものの正体／リポジトリ最小構成／調査ワークフロー／READER 構成規約／HTML・デザイン流用 MIT／GitHub Pages 公開手順）をページ自身に内蔵。**公開 URL ひとつを LLM に渡すだけでリポジトリ構築〜調査〜公開まで再構築できる**設計。章は正本 MD でなく `scripts/reader-energy-flow-template.html` で管理（reader/README.md に明記）。
