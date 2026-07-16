@@ -8,6 +8,7 @@
 - **✅ inbox wiki-gen-2026-07-15 を stale 判定で archive**: 7件中6件は別 stem で compiled 済み（ドメイン ID 一致）、D13-S14 autopoiesis のみ真に未生成だが raw PDF 不在＝取得元なし（保持論点「D13-S14 取得経路＝cs 側正本の可能性」継続）。判定根拠を依頼ファイルに追記して archive。
 - **✅ worktree 4本 prune（pjdhiro「削除する」）**: continuation-7346cd / continuation-decision-points-f4304b / elegant-thompson-b6d5f6 / llm-exploration-html-framework-60fa6a（全て develop へ merge 済み・clean）。`.git/worktrees` メタ削除＋branch -D 完了。残る worktree は develop 本体と現 continuation-e477dc のみ。
 - **保持論点（未解決・持ち越し）**: ①D13-S14 autopoiesis の取得経路（cs 側正本の可能性・取得元なし）②pd#129 OPEN 継続（次ラウンド着手は pjdhiro 選択）③periodic review WARN の cs/kdt 分は別リポジトリのセッション事項。
+- **✅ energy-flow READER 念入りレビュー＋事実誤り訂正を公開（main 496c020・pjdhiro「修正＋main 再公開」）**: pjdhiro 依頼「reader ページのレビュー・念入りに」。正本 MD 全文精読＋機械チェック（static 11/11・アンカー39・U+FFFD 0・JS OK・再ビルド差分ゼロ）＋原典抜き取り照合（r=0.47/R²=0.429/3531/23研究室/0.1%/4000万/148/Still2012/Gottwald/Kondepudi 一致）＋Litt 三技法実装確認（ou-well・kuramoto-sync 実体あり／Shared Spaces scope 正直）。**発見＝CONFIRMED 事実誤り1件**: §3 Facebook 感情伝染実験「6万人規模」は約69万人の誤り（Kramer et al. 2014 PNAS N=689,003）。誤源は RR-041 review round1 照合表の「6万規模」誤記→READER に伝播（RR-SURVEY は 69万と正記）。READER 本文＋RR-041 を訂正＋inline 引用補足→再ビルド→品質ループ通過→develop e9ec614→main 496c020 公開。効果量 0.1% 未満は不変。**設計上の検討（バグでない・pjdhiro 判断）**: §2〈読み方の種類〉と §4/§5〈確からしさの段〉の2種類の3分割表に両方「構造類似」が出て読解負荷（現状は3か所の注記で打ち消し済・破綻なし）。
 - **次アクション**: GitHub Pages 反映確認（数分後）。それ以外の持ち越しは解消済み。
 
 ## ✅ 単発修正 2026-07-16 (seq08) — mw-ready 2行修正（seq07 次アクション②完了）
