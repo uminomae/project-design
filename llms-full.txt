@@ -86,6 +86,10 @@ URL: https://uminomae.github.io/project-design/reader/three-and-seven.html
 
 Starting from two felt experiences — a two-axis sense of consciousness (survival-trust axis, from awareness-space) and "teams work best at 3, cap at 7" — the page asks whether multiplicative (rotational) composition explains why 3 and 7 are special. Mathematical core: division algebras exist only in dimensions 1, 2, 4, 8 (Hurwitz's theorem), giving 3 and 7 imaginary directions for ℍ and 𝕆. This is compared against team-size research (optimum 3–5, ceiling 7–9), cabinet-size studies, and structural balance theory. The page separates theorem / adopted reading / candidate reading / retracted reading, and includes interactive micro-worlds and comprehension quizzes.
 
+An academic-format paper version (Japanese, non-peer-reviewed, AI-authored with human adjudication, CC BY 4.0) presents the same findings with a normalized reference list (each entry annotated with reading depth: primary / abstract / as-cited-in) and an appendix of 20 re-runnable verification scripts:
+Paper PDF: https://uminomae.github.io/pjdhiro/assets/project-design/knowledge/ja/pdf/PAPER-division-algebra-ja.pdf
+Paper source (canonical MD): https://github.com/uminomae/project-design/blob/main/knowledge/research/two-axis-closure/PAPER-division-algebra-ja.md
+
 #### 感情も、関係も、時代も「エネルギーの流れ」なのか — エネルギーの流れ仮説
 URL: https://uminomae.github.io/project-design/reader/energy-flow.html
 

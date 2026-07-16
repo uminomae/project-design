@@ -1,6 +1,8 @@
 ---
 title: 可除代数の分類定理とチーム構造の対応仮説 — 3人と7人はなぜ特別か（探索論考）
-status: draft  # skeleton → draft → review → final
+status: final  # skeleton → draft → review → final
+published: 2026-07-16
+pdf: https://uminomae.github.io/pjdhiro/assets/project-design/knowledge/ja/pdf/PAPER-division-algebra-ja.pdf
 issue: pd#121
 license: CC BY 4.0
 authorship: A1（ルール14 準拠・self-publish 用）
