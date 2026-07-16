@@ -7,7 +7,7 @@
 - **✅ .cache/active/ 整理**: 関連 Issue が全 CLOSED の残留 11 件（issue50/53 フェーズ×8・TASK-6・PLAN-value-llm-comparison=#36/#33・techo115-paper-search-results）＋ハーネス再生成可能な reader 読解テスト生成物 6 件を archive/ へ移動。active/ は README のみに。
 - **✅ #119 / #127 CLOSED（pjdhiro「両方 close」承認）**: #119＝到達点コメント付き close（引き継ぎ先: pd#111・pd#118・D13-S14 保持論点）。#127＝成果物3点納品済み・実運用実績ありで close（継続推敲は #129/#115 品質ゲート運用に吸収）。OPEN Issue は 15→12 件（#129/#126/#122/#121/#118/#117/#115/#111/#99/#98/#96/#95）。
 - **✅ pd#122 実装完了（develop 40f0c42・push 済み）**: SEO/AI メタ強化——robots.txt AI クローラー9種明示 Allow／llms.txt+llms-full.txt に reader 2ページ収載／reader テンプレ2種の JSON-LD 拡充（description/about×5/citation×5・citation は正本 MD 引用実在照合済み・Rutledge→Gottwald&Braun 差替）／og:locale+article:published/modified_time／index.html @graph+seo-summary に reader 追加／build-reader-lp.py の日付陳腐化バグ修正（未コミット編集時は当日）＋sitemap lastmod 自動追随。品質ループ全通過（static 11/11・アンカー149・U+FFFD 0・JSON-LD 妥当・:3004 コンソール0・差分 head 限定）。Issue コメント済み。**残＝ScholarlyArticle 格上げのみ（pd#121 待ち）**。
-- **🟡 pjdhiro 判断待ち**: ①pd#122 分の develop→main 公開（メタ情報のみ・本文不変）②pd#122 を close するか（残項目は pd#121 側で追う）。
+- **✅ pd#122 公開＋CLOSED（pjdhiro「公開する」「close」承認）**: develop→main --no-ff マージで公開（**main 09f3478**・push 済み）。ScholarlyArticle 格上げは pd#121 側へ移管（pd#121 にコメント済み）。OPEN Issue は 11 件に。HEAD: develop=**ad1f432**（push 済み）/ main=**09f3478**。GitHub Pages 反映確認は数分後。
 - **保持論点（変わらず）**: D13-S14 autopoiesis 取得経路・pd#129 次ラウンド。
 
 ## ✅ セッション終了 2026-07-16 (seq09) — 持ち越し一括クローズ＋両 READER 念入りレビュー（4回 main 公開）
