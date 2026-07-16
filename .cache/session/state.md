@@ -1,6 +1,9 @@
 # state.md — project-design
 
-## 🔵 CLI 作業中 2026-07-16 (seq10) — やり残しタスク一掃＋pd#122 完遂＋pd#121 Phase A 着手
+## ✅ セッション終了 2026-07-16 (seq10) — やり残し一掃（Issue 4件 close）＋pd#122 完遂・公開＋pd#121 Phase A 着手（骨格＋出典棚卸し180件）
+- **HEAD（最終）**: develop=**2cb5056**（push 済み・本ログ commit 分を除く）/ main=**09f3478**（pd#122 公開済み・push 済み）。OPEN Issue **11 件**。
+- **次セッションの入口**: pd#121 工程2 本番（`PAPER-references-inventory.md` 180件 → 論文 References 形式へ正規化＋発見3件〔Thatcher&Patel 撤回・Wang 2014 精読レベル矛盾・著者名欠落〕解消）→ 工程3 節ごと本文執筆（Opus 委任・Fable 統合。素材マップは `PAPER-division-algebra-ja.md` の SOURCE コメント）。工程全体は pd#121 コメント参照。
+- **ログ**: pd `log-20260716-10.md` / 横断 `SESSION-20260716-10.md`
 - **HEAD**: develop=**e7c9587**（push 済み）/ main=**09f3478**（pd#122 公開済み）。cwd worktree `remaining-tasks-564adb`（編集は main checkout の develop で実施）。
 - **✅ pd#121 検討完了→Phase A 着手（pjdhiro「Phase A に着手」承認）**: 検討メモを issue に投稿（結論=実現可能・二段構え推奨・arXiv 非推奨・最大論点=著者表記とルール14 の緊張。外部事実: arXiv moderation/endorsement・Jxiv・Zenodo・ICMJE 確認済み）。確定=A1 著者表記（執筆 Claude/判定 pjdhiro）・CC BY 4.0・和文先行。**骨格 commit e7c9587**: `knowledge/research/two-axis-closure/PAPER-division-algebra-ja.md` 新設（8節＋References＋付録2・節ごと SOURCE 素材マップ・機械検証は20本〔16は誤記・issue で訂正済み〕）。
 - **✅ pd#121 工程2前段完了（develop 18c340f）**: References 出典棚卸しインベントリ `PAPER-references-inventory.md` 180件（Opus 委任・Fable 検収・issue コメント済み）。数学21/実証56/意識ほか103/要確認10。精読 ★20/○36/△119/？5。**発見3件**=①Thatcher&Patel 2011 撤回済み ②Wang 2014 精読レベル RR 間矛盾（要一本化）③著者名欠落 Frontiers/arXiv 系数件。
