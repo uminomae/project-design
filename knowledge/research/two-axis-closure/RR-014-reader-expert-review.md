@@ -111,7 +111,7 @@ critic 判定: **確度評価は全件妥当・過大評価なし**（Furey を 
 
 ## G-2. Litt 適合監査 第2回（reader-litt-conformance・2026-07-08・pd#128 実装後）
 
-方法: 第1回と同じルーブリック。pd#128 で **Micro-worlds（L2）を READER に実装**した後の再監査。実装は `src/reader-microworlds.js`（vanilla・依存なし・DESIGN-RULES §0a 準拠）。数理核（Cayley–Dickson 乗算・八元数の合成則・16元数零因子 (e₁+e₁₀)(e₅+e₁₄)=0）は node で機械検証済み。
+方法: 第1回と同じルーブリック。pd#128 で **Micro-worlds（L2）を READER に実装**した後の再監査。実装は `src/reader-microworlds.js`（vanilla・依存なし・DESIGN-RULES §0a 準拠）。数理核（Cayley–Dickson 乗算・八元数の合成則・16元数零因子 (e₁+e₁₀)(e₄−e₁₅)=0・基底規約依存）は node で機械検証済み。
 
 | 項目 | 第1回 | 第2回 | ページ内の根拠（第2回） |
 |---|---|---|---|

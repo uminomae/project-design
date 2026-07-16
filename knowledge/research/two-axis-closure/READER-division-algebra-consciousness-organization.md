@@ -637,7 +637,7 @@ i·j = k,   j·k = i,   k·i = j
 
 <div class="microworld glow-card" data-microworld="zero-divisor" role="group" aria-label="対話：零因子（8を超えると割れなくなる）">
 <p class="mw-title">触ってみる — 非ゼロ×非ゼロ＝ゼロ が起きるのは、8 を超えてから</p>
-<p class="mw-fallback">（この対話図は JavaScript で動きます。動かない環境では: ℂ・ℍ・𝕆 では <code>|x·y| = |x|·|y|</code> がいつも成り立ち、非ゼロ同士の積は絶対にゼロになりません＝割り戻せます。ところが 𝕊（16元数）では、二つとも非ゼロなのに積がゼロになるペア、たとえば <code>(e₁+e₁₀)·(e₅+e₁₄)=0</code> があります＝割り戻せません。これが零因子で、機械検証済みです。）</p>
+<p class="mw-fallback">（この対話図は JavaScript で動きます。動かない環境では: ℂ・ℍ・𝕆 では <code>|x·y| = |x|·|y|</code> がいつも成り立ち、非ゼロ同士の積は絶対にゼロになりません＝割り戻せます。ところが 𝕊（16元数）では、二つとも非ゼロなのに積がゼロになるペア、たとえば <code>(e₁+e₁₀)·(e₄−e₁₅)=0</code> があります（どの組がゼロになるかは掛け算の規約によります）＝割り戻せません。これが零因子で、機械検証済みです。）</p>
 </div>
 
 <details class="pd-column">
