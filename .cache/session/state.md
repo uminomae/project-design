@@ -3,7 +3,8 @@
 ## 🔵 CLI 作業中 2026-07-16 (seq10) — やり残しタスク一掃＋pd#122 完遂＋pd#121 Phase A 着手
 - **HEAD**: develop=**e7c9587**（push 済み）/ main=**09f3478**（pd#122 公開済み）。cwd worktree `remaining-tasks-564adb`（編集は main checkout の develop で実施）。
 - **✅ pd#121 検討完了→Phase A 着手（pjdhiro「Phase A に着手」承認）**: 検討メモを issue に投稿（結論=実現可能・二段構え推奨・arXiv 非推奨・最大論点=著者表記とルール14 の緊張。外部事実: arXiv moderation/endorsement・Jxiv・Zenodo・ICMJE 確認済み）。確定=A1 著者表記（執筆 Claude/判定 pjdhiro）・CC BY 4.0・和文先行。**骨格 commit e7c9587**: `knowledge/research/two-axis-closure/PAPER-division-algebra-ja.md` 新設（8節＋References＋付録2・節ごと SOURCE 素材マップ・機械検証は20本〔16は誤記・issue で訂正済み〕）。
-- **🔜 pd#121 次工程（次セッション）**: ②References 正規化（RR-001〜024 散在出典→著者-年＋精読レベル。最大工数）→③節ごと本文執筆（Opus 委任・Fable 統合）→④接続チェック＋品質ループ→⑤build-pdf.sh→公開判定（pjdhiro 専権）→⑥three-and-seven.html リンク＋ScholarlyArticle 格上げ（pd#122 移管分）。工程詳細は issue コメント参照。
+- **✅ pd#121 工程2前段完了（develop 18c340f）**: References 出典棚卸しインベントリ `PAPER-references-inventory.md` 180件（Opus 委任・Fable 検収・issue コメント済み）。数学21/実証56/意識ほか103/要確認10。精読 ★20/○36/△119/？5。**発見3件**=①Thatcher&Patel 2011 撤回済み ②Wang 2014 精読レベル RR 間矛盾（要一本化）③著者名欠落 Frontiers/arXiv 系数件。
+- **🔜 pd#121 次工程（次セッション）**: ②本番=インベントリ→論文 References 形式へ正規化＋発見3件解消 →③節ごと本文執筆（Opus 委任・Fable 統合）→④接続チェック＋品質ループ→⑤build-pdf.sh→公開判定（pjdhiro 専権）→⑥three-and-seven.html リンク＋ScholarlyArticle 格上げ（pd#122 移管分）。工程詳細は issue コメント参照。
 - **✅ GitHub Pages 反映確認（seq09 の残り次アクション）**: three-and-seven（§7 日付 07-04・Lavanchy 孫引き注記）・energy-flow（確からしさのものさし×7）とも本番反映済み。
 - **✅ pd#89 CLOSED**: `--bg` dead token を選択肢A（削除）で処理（68f4b6f）。`var(--bg)` 全域 grep 参照0件再確認・static-checks 11/11。
 - **✅ .cache/active/ 整理**: 関連 Issue が全 CLOSED の残留 11 件（issue50/53 フェーズ×8・TASK-6・PLAN-value-llm-comparison=#36/#33・techo115-paper-search-results）＋ハーネス再生成可能な reader 読解テスト生成物 6 件を archive/ へ移動。active/ は README のみに。
