@@ -1,5 +1,14 @@
 # state.md — project-design
 
+## ✅ セッション終了 2026-07-16 (seq07) — energy-flow に自己複製仕様の章（LLM 向け再構築仕様）を実装・develop 反映＋pd#130 実装の独立チェック
+- **HEAD**: develop=**8b58d75**（push 済み・remote 同期）/ main=**c7ab80b**（自己複製章〜公開経路の規定まで公開済み。**背景関連2修正 43b86af/d1faff9 は develop のみ＝未公開**）。cwd は worktree `llm-exploration-html-framework-60fa6a`（branch `claude/llm-exploration-html-framework-60fa6a`・マージ済み・掃除候補）。
+- **成果①（本セッションの主タスク）**: energy-flow.html 末尾にテンプレート固有の章「**あなたの問いで、同じページを作る — LLM に渡す仕様書つき**」を実装。人間向け定型プロンプト＋LLM 向け再構築仕様 A〜F（作るものの正体／リポジトリ最小構成／調査ワークフロー／READER 構成規約／HTML・デザイン流用 MIT／GitHub Pages 公開手順）をページ自身に内蔵。**公開 URL ひとつを LLM に渡すだけでリポジトリ構築〜調査〜公開まで再構築できる**設計。章は正本 MD でなく `scripts/reader-energy-flow-template.html` で管理（reader/README.md に明記）。
+- **成果②（pjdhiro 対話で追補4件）**: (1) 正本参照チェーン明文化＝細部は公開 URL（見た目・文体の正本）と GitHub リポジトリ（内部実物の正本）を参照＝共通ルールの別 repo 正本参照と同じハーネス構造 (2) 公開経路の規定＝仕様は GitHub 一本道・他ホスティングは F 読み替えで可搬 (3) 背景記述訂正（暗い単色→明るい単色） (4) **背景は仕様の対象外**＝基本は背景なし・依頼者の指定に柔軟・一般知識で足りるのでページ参照不要（WebGL シェーダーは本ページ固有の装飾）。
+- **運用パターン（今後も使う）**: worktree ブランチには並行セッションの Micro-worlds コミットが無いため、**worktree ではテンプレートのみ commit → develop でマージ後に HTML 再生成**の分業で生成物の退行・衝突を回避した。
+- **成果③ pd#130 実装の独立チェック（pjdhiro 依頼）**: RR-042a 再実行 ALL PASSED／零因子 (e₁+e₁₀)(e₅+e₁₄)=0 と ℂℍ𝕆 比 1.0 を node で独立検証／DESIGN-RULES §0a 準拠（新色なし・reader.css 単一ソース）／no-JS フォールバックのマウント時非表示をブラウザ確認／a11y（aria-label・aria-live）良好／Shared Spaces の scope 正直を確認。**発見欠陥1件（低リスク・未修正）**: `src/reader-microworlds.js` init() が `mw-ready` を mount 成功**前**に付与→mount 例外時（2D コンテキスト不可の WebView 等）にフォールバック文が隠れたまま空箱。classList.add を mount 後へ移す2行修正で直る（three-and-seven にも効く）。アニメ実視は今回もペイン非表示（viewport 0×0→rAF 停止）で不能＝既知アーティファクト。
+- **🟡 次アクション**: ①背景関連2修正の develop→main 公開判断（pjdhiro 専権）②mw-ready 2行修正の実施判断 ③自己参照 symlink（content/content・reader/reader・src/src、7/15 13:36）は seq04 で「配信サーバー副産物＝放置」と判定済みだが、再帰走査ツールの無限ループ懸念があるため削除推奨（pjdhiro 確認の上）④worktree `llm-exploration-html-framework-60fa6a` 掃除。
+- **ログ**: pd `log-20260716-07.md` / 横断 `SESSION-20260716-07.md`
+
 ## ✅ セッション終了 2026-07-16 (seq06) — energy-flow READER 品質レビュー＋是正＋pd#130 Micro-worlds/Shared Spaces 実装 → main 公開完了
 - **HEAD**: develop=**2fc981f**（＋別セッション merge 分）/ main=**c7ab80b**（✅ 公開完了・pjdhiro「マージして」2026-07-16）。cwd は worktree `continuation-7346cd`。公開 URL: https://uminomae.github.io/project-design/reader/energy-flow.html
 - **本セッションの成果**: ①pd#129 三レンズ品質レビュー（文脈ゼロ読解テスト＋Litt 適合監査＋原典忠実性・RR-041/TEST-reader-energy-flow）→ 是正6件＋第2ラウンド仕上げ2件。②pd#130 Micro-worlds 2図（ou-well/kuramoto-sync）＋Shared Spaces（§7 共有の場）実装（RR-042・数理 RR-042a 検証済）＝Litt 三技法すべて ✅。③develop→main マージで公開（main c7ab80b、別セッションの自己複製章＋正本参照チェーンも同時公開）。**pd#130 = CLOSED**（完了条件充足）。**pd#129 = OPEN 継続**（ピラートラッカー）。
