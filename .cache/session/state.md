@@ -1,6 +1,21 @@
 # state.md — project-design
 
-## ✅ セッション終了 2026-07-16 (seq12) — pd#121 全工程完了・論文 PDF 公開（CLOSED）
+## ✅ セッション終了 2026-07-17 — 認知リズム版 energy-flow 比較ドラフト＋文脈ゼロLLM要約3層（公開済み）
+- **HEAD（最終）**: develop=**（本 commit 後に更新）** / main=**（公開マージ後に更新）**（ともに push 済み）。cwd worktree `remaining-tasks-564adb`（ブランチ `claude/cognitive-rhythm-writing-a4e6ec`・develop へマージ済み）。
+- **✅ 公開（pjdhiro「一旦公開して」明示指示）**: develop → main マージで `reader/energy-flow-rhythm.html` を公開。noindex 付きのため検索/クローラには非露出、直接 URL でのみ到達可。公開 URL: https://uminomae.github.io/project-design/reader/energy-flow-rhythm.html（Pages 反映は数分後）。
+- **✅ 完了1**: `reader/energy-flow-rhythm.html` 新設＝READER-energy-flow-psyche の調査結論を cognitive-rhythm-writing スキル7原則（実感から入る・議題表なし・断定/ためらい往復・困りごと→概念・箇条書き着地・実況削除・結び実感回帰）で語り直した**比較用ドラフト**。調査結論は正本と同一・配列と語り口のみ変更。意図的に独自テーマ（明朝＋ティール）＝pd VI 非継承。正本 energy-flow.html と相互リンク。Artifact 版: https://claude.ai/code/artifact/3dc9e82e-cdcd-47a0-ab59-be2cbe56f4fd
+- **✅ 完了2（LLM可読性の懸念に対応）**: 認知リズム版は人間向けに要約先出しを撤去したため、文脈ゼロ LLM への構造伝達を**機械可読3層**で担保＝①META description 要約化 ②head JSON-LD @graph（about 5件＝節ごとの結論の仕分け）③body 冒頭 `#llm-summary` visually-hidden 静的要約（本文抽出 innerText に残り・人間には 1×1px clip で不可視）＋生ソース向け HTML コメント地図。**検証**: JSON-LD 構文妥当・visual 1×1px・innerText に本文冒頭より前で出現・見た目は要約追加前と同一・static 11/11・U+FFFD 0。seo-llm.md の `#seo-content-summary` パターン準拠。
+- **設計メモ**: META タグ単独では本文抽出型（Readability/innerText）に届かないため3層構成が要る（生fetch=全層／本文抽出=visually-hidden／構造化データ=JSON-LD）。
+
+### 🔜 残作業（別セッション・pjdhiro 指示「別セッションでやりたい」）
+1. **比較レビューと採否判定（pjdhiro 専権）**: 正本 energy-flow.html（要約先出し・全編ヘッジ・LLM最適化）と rhythm 版（認知リズム・実感先出し・隠し要約でLLM両取り）を読み比べ、**どちらの書き方を今後の READER 標準にするか**を判定。両取り方式（本文=人間の緩急／隠し要約=LLM）が有効なら標準化候補。
+2. **採用時のテンプレ組込み**: rhythm 版の書き方＋機械可読3層を**採用する場合のみ**、正本の生成テンプレート `scripts/reader-energy-flow-template.html` / `scripts/build-reader-lp.py`（または reader-lp-template）へ反映。現状 rhythm 版は手書き独自テーマで、テンプレ非経由・pd VI 非継承。VI 準拠化するか、比較ドラフトとして VI 非継承のまま残すかもここで判断。
+3. **不採用（破棄）時**: `reader/energy-flow-rhythm.html` を削除し sitemap 等の整合を確認（現状 noindex・sitemap 未登録なので削除は低リスク）。
+- **保持論点**: rhythm 版は VI 非継承の実験ドラフトのまま公開中。正式な位置づけ（標準採用／VI準拠版に作り直し／破棄）は上記1で決める。Issue 化はしていない（pjdhiro が希望すれば新規 Issue 起票可＝要承認）。
+
+## ✅ セッション終了 2026-07-16 (seq12) — pd#121 全工程完了・論文 PDF 公開（CLOSED）＋英語版 PDF 追加（07-17）
+- **✅ 追加依頼（07-17 pjdhiro「PDFは英語も欲しい・ページ内にそれぞれへのリンクも・冒頭」）完遂**: ①`PAPER-division-algebra-en.md` 新設（全文英訳・Opus 委任・Fable 検収=零因子式/字義同一の否定/McHale 孫引き/Lewin 反証/判定語彙 adopted(採用) 等の対訳確認・20ページ）②build-pdf.sh EN ヘッダに luatexja＋Hiragino 追加（★○△・CJK 空白落ち解消）＋U+2013-201D 欧文字化（Condorcet' s 型の空白解消）③日英 PDF 冒頭メタに相互リンク④reader hero/footer を「論文版 PDF: 日本語 / English」2 リンク化・JSON-LD sameAs 配列化・llms.txt/llms-full.txt に EN 追記。**EN PDF**: https://uminomae.github.io/pjdhiro/assets/project-design/knowledge/en/pdf/PAPER-division-algebra-en.pdf
+- **HEAD（EN 追加後）**: develop=**f7406b4** / main=**1b4dd35** / pjdhiro main=**f0f32c0**（すべて push 済み）。
 - **HEAD（最終）**: develop=**1de9a50**（push 済み）/ main=**95669f6**（push 済み・論文公開＋Pages workflow 修正）/ pjdhiro main=**bcc322e**（PDF 配信）。cwd worktree `pd121-remaining-tasks-efb6c4`（ブランチ `claude/pd121-remaining-tasks-efb6c4`・develop へマージ済み・掃除候補）。OPEN Issue 10 件（pd#121 CLOSED）。
 - **🔴 潜在バグ発見・修正（公開後検証）**: Pages 配信 workflow `wiki-publish.yml` の Assemble site が robots.txt / llms.txt / llms-full.txt / sitemap.xml / favicon.ico をコピーしておらず**本番 404 のままだった**（pd#122 実装分も未配信だった）。cp＋paths トリガーに追加（f47005d→main 95669f6）。**再デプロイ success 後、robots/llms/llms-full/sitemap すべて 200・llms.txt の論文収載を本番確認済み**。
 - **pjdhiro 判定（AskUserQuestion）**: 配信場所＝**pjdhiro repo**（ワークフロー正本準拠）／範囲＝**公開まで一気に**。
