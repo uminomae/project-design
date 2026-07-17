@@ -1,6 +1,8 @@
 # state.md — project-design
 
-## ✅ セッション終了 2026-07-16 (seq12) — pd#121 全工程完了・論文 PDF 公開（CLOSED）
+## ✅ セッション終了 2026-07-16 (seq12) — pd#121 全工程完了・論文 PDF 公開（CLOSED）＋英語版 PDF 追加（07-17）
+- **✅ 追加依頼（07-17 pjdhiro「PDFは英語も欲しい・ページ内にそれぞれへのリンクも・冒頭」）完遂**: ①`PAPER-division-algebra-en.md` 新設（全文英訳・Opus 委任・Fable 検収=零因子式/字義同一の否定/McHale 孫引き/Lewin 反証/判定語彙 adopted(採用) 等の対訳確認・20ページ）②build-pdf.sh EN ヘッダに luatexja＋Hiragino 追加（★○△・CJK 空白落ち解消）＋U+2013-201D 欧文字化（Condorcet' s 型の空白解消）③日英 PDF 冒頭メタに相互リンク④reader hero/footer を「論文版 PDF: 日本語 / English」2 リンク化・JSON-LD sameAs 配列化・llms.txt/llms-full.txt に EN 追記。**EN PDF**: https://uminomae.github.io/pjdhiro/assets/project-design/knowledge/en/pdf/PAPER-division-algebra-en.pdf
+- **HEAD（EN 追加後）**: develop=**f7406b4** / main=**1b4dd35** / pjdhiro main=**f0f32c0**（すべて push 済み）。
 - **HEAD（最終）**: develop=**1de9a50**（push 済み）/ main=**95669f6**（push 済み・論文公開＋Pages workflow 修正）/ pjdhiro main=**bcc322e**（PDF 配信）。cwd worktree `pd121-remaining-tasks-efb6c4`（ブランチ `claude/pd121-remaining-tasks-efb6c4`・develop へマージ済み・掃除候補）。OPEN Issue 10 件（pd#121 CLOSED）。
 - **🔴 潜在バグ発見・修正（公開後検証）**: Pages 配信 workflow `wiki-publish.yml` の Assemble site が robots.txt / llms.txt / llms-full.txt / sitemap.xml / favicon.ico をコピーしておらず**本番 404 のままだった**（pd#122 実装分も未配信だった）。cp＋paths トリガーに追加（f47005d→main 95669f6）。**再デプロイ success 後、robots/llms/llms-full/sitemap すべて 200・llms.txt の論文収載を本番確認済み**。
 - **pjdhiro 判定（AskUserQuestion）**: 配信場所＝**pjdhiro repo**（ワークフロー正本準拠）／範囲＝**公開まで一気に**。
