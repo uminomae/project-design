@@ -3,6 +3,7 @@ title: 可除代数の分類定理とチーム構造の対応仮説 — 3人と7
 status: final  # skeleton → draft → review → final
 published: 2026-07-16
 pdf: https://uminomae.github.io/pjdhiro/assets/project-design/knowledge/ja/pdf/PAPER-division-algebra-ja.pdf
+pdf-en: https://uminomae.github.io/pjdhiro/assets/project-design/knowledge/en/pdf/PAPER-division-algebra-en.pdf
 issue: pd#121
 license: CC BY 4.0
 authorship: A1（ルール14 準拠・self-publish 用）
@@ -23,7 +24,8 @@ created: 2026-07-16
 **種別**: 非査読・AI 執筆の探索論考（speculative theoretical essay / position paper） \
 **ライセンス**: CC BY 4.0 \
 **正本・検証コード**: https://github.com/uminomae/project-design （`knowledge/research/two-axis-closure/`） \
-**読み物版（一般向け）**: https://uminomae.github.io/project-design/reader/three-and-seven.html
+**読み物版（一般向け）**: https://uminomae.github.io/project-design/reader/three-and-seven.html \
+**English version (PDF)**: https://uminomae.github.io/pjdhiro/assets/project-design/knowledge/en/pdf/PAPER-division-algebra-en.pdf
 
 > **冒頭の宣言（本稿の性格）**
 > 本稿は査読を経ていない。本文は AI（Claude, Fable 5）が執筆し、問いの提示と各「読み」の採否判定は人間（pjdhiro）が行った。

@@ -186,8 +186,12 @@ date: "${date_str}"
 documentclass: article
 classoption: [a4paper, 11pt]
 header-includes:
-  - \\usepackage{fontspec}
+  - \\usepackage{luatexja-fontspec}
+  - \\setmainjfont{Hiragino Mincho ProN}
+  - \\setsansjfont{Hiragino Sans}
   - \\setmonofont{Menlo}
+  - \\ltjdefcharrange{9}{"2013-"201D}
+  - \\ltjsetparameter{jacharrange={-9}}
   - \\usepackage{graphicx}
   - \\usepackage{hyperref}
   - \\usepackage{xcolor}
