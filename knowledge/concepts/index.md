@@ -21,6 +21,8 @@
 | CN-010 | [可除代数‑意識/組織仮説 — 個の意識(ℂ)と組織(ℍ/𝕆)は同一の梯子](CN-010_division-algebra-consciousness-organization.md) | pd#115, CN-009, awareness-model | 探索的・草稿 |
 | CN-011 | [理解こそがボトルネック — 解説＋理解度確認で創造的参加を保つ](CN-011_understanding-is-the-bottleneck.md) | pd#127, ルール16, CN-010 | 探索的 |
 | CN-012 | [「未マージ」は「未回収」を意味しない — 並行エージェント環境でのブランチ照合](CN-012_unmerged-is-not-unrecovered.md) | myhome ブランチ整理（2026-07-30）, CLAUDE.md 対話終了時の main マージ | 探索的（1事例） |
+| CN-013 | [検査は不変条件で書く — 差分ベースの検査は「壊れた期間だけ無音」になる](CN-013_invariant-checks-not-diff-checks.md) | CN-012, myhome garden-check [11][13], lessons.md 26 | 探索的（1事例） |
+| CN-014 | [合計は谷を隠す — 集計粒度が目的関数を決める](CN-014_aggregation-granularity-hides-troughs.md) | CN-007, CN-013, myhome garden-check [14], myhome#64 | 探索的（1事例） |
 
 ---
 
@@ -33,3 +35,4 @@
 | 2026-07-02 | CN-010 追加（可除代数‑意識/組織仮説、pd#115） |
 | 2026-07-08 | CN-011 追加（理解=ボトルネック枠組みの接地＋スキル reader-comprehension、pd#127） |
 | 2026-07-30 | CN-012 追加（並行エージェント環境のブランチ照合。myhome の畑ブランチ整理 57→1 本からの帰納） |
+| 2026-08-02 | CN-013・CN-014 追加（myhome の畝面積ドリフトと栄養素ベース自給率の設計からの帰納） |
