@@ -23,6 +23,8 @@
 | CN-012 | [「未マージ」は「未回収」を意味しない — 並行エージェント環境でのブランチ照合](CN-012_unmerged-is-not-unrecovered.md) | myhome ブランチ整理（2026-07-30）, CLAUDE.md 対話終了時の main マージ | 探索的（1事例） |
 | CN-013 | [検査は不変条件で書く — 差分ベースの検査は「壊れた期間だけ無音」になる](CN-013_invariant-checks-not-diff-checks.md) | CN-012, myhome garden-check [11][13], lessons.md 26 | 探索的（1事例） |
 | CN-014 | [合計は谷を隠す — 集計粒度が目的関数を決める](CN-014_aggregation-granularity-hides-troughs.md) | CN-007, CN-013, myhome garden-check [14], myhome#64 | 探索的（1事例） |
+| CN-015 | [消えない参照層を分ける — 「採用したら行を消す台帳」は判定と出典も一緒に消す](CN-015_non-erasable-reference-layer.md) | CN-013, CN-014, myhome overwintering.md, myhome nutrition-ref.tsv | 探索的（2事例） |
+| CN-016 | [「無い」を記録する — 不在の確認にはコストがかかるのに、成果物に残らない](CN-016_record-the-absence.md) | CN-015, CN-013, myhome decisions.md, myhome gap-crops.md | 探索的（1事例＋既存事例の再解釈） |
 
 ---
 
@@ -36,3 +38,4 @@
 | 2026-07-08 | CN-011 追加（理解=ボトルネック枠組みの接地＋スキル reader-comprehension、pd#127） |
 | 2026-07-30 | CN-012 追加（並行エージェント環境のブランチ照合。myhome の畑ブランチ整理 57→1 本からの帰納） |
 | 2026-08-02 | CN-013・CN-014 追加（myhome の畝面積ドリフトと栄養素ベース自給率の設計からの帰納） |
+| 2026-08-05 | CN-015・CN-016 追加（myhome の栄養価一次データ調査からの帰納。参照層の分離と「不在の記録」） |
