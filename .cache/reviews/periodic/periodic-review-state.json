@@ -1,21 +1,24 @@
 {
-  "last_run": "2026-07-20T08:31:00+09:00",
-  "last_report": ".cache/reviews/periodic/REVIEW-periodic-20260720-0831.md",
+  "last_run": "2026-08-10T08:32:00+09:00",
+  "last_report": ".cache/reviews/periodic/REVIEW-periodic-20260810-0832.md",
   "scheduler": "claude-code scheduled task: weekly-periodic-review (Mon 08:30 local)",
+  "prev_run": "2026-07-20T08:31:00+09:00",
+  "interval_days": 21,
   "repos": {
-    "project-design": { "branch": "develop", "head": "258c0b4", "dirty": 0, "status": "WARN" },
+    "project-design": { "branch": "develop", "head": "d736446", "dirty": 0, "status": "WARN" },
     "creation-space": { "branch": "develop", "head": "b9653bd", "dirty": 2, "status": "WARN" },
-    "kesson-driven-thinking": { "branch": "main", "head": "1d5fb89", "dirty": 0, "status": "PASS" },
-    "pjdhiro": { "branch": "main", "head": "cc4b9305", "dirty": 2, "behind": 1, "status": "WARN" },
+    "kesson-driven-thinking": { "branch": "main", "head": "1d5fb89", "dirty": 0, "status": "WARN" },
+    "pjdhiro": { "branch": "main", "head": "2b32a86", "dirty": 1, "behind": 0, "status": "PASS" },
     "awareness-space": { "branch": "develop", "head": "f3aed34", "dirty": 0, "status": "PASS" },
     "kesson-space": { "branch": "develop", "head": "5d9c59b", "dirty": 0, "status": "PASS" },
     "techo": { "branch": "main", "head": "892709f", "dirty": 1, "status": "PASS" },
-    "myhome": { "branch": "main", "head": "2496b9d", "dirty": 0, "status": "PASS" },
-    "uminomae.github.io": { "branch": "main", "head": "44be900", "dirty": 0, "status": "PASS" },
+    "myhome": { "branch": "main", "head": "294fe49", "dirty": 0, "status": "PASS" },
+    "uminomae.github.io": { "branch": "main", "head": "3ff5a01", "dirty": 0, "status": "PASS" },
     "zenn-content": { "branch": "main", "head": "4634835", "dirty": 0, "status": "PASS" }
   },
   "pending": {
     "codex": 0,
-    "followups": 5
+    "followups": 7,
+    "carried_over": 4
   }
 }
