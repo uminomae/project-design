@@ -9,6 +9,8 @@
 - **✅ inbox**: REVIEW-periodic 0720 / 0810 / 0817 を archive へ（0817 は本セッションで消化したため）。
 - **✅ wiki-gen 7 件（6 回連続再生成の根治）**: 調べると **6/7 は既存ページあり**（生成時 url-verified＝title 推定 stem → 後に raw-confirmed 昇格＝PDF 名 stem に変わり「未生成」へ誤判定）。`wiki-gen-check.sh` に `{domain}_{author}_{year}_` prefix 一致（著者の連結表記ゆれ吸収）で既存とみなすフォールバックを追加＝依頼側で無限再生成を停止。真に未生成だった **D13-S14 Varela/Maturana/Uribe 1974 (Autopoiesis)** は画像 PDF 10 頁を Read 画像モードで全頁読解し `wiki/sources/D13_varela-maturana-uribe_1974_autopoiesis.md` を生成（DOI Crossref 照合済み・crosslink 1 件・cross-check pairs=0・wiki-lint 0 orphan/0 broken）。
 - **⚠️ 副産物（pjdhiro 判断）**: 同じ stem ドリフトで **二重生成された既存ページ 2 組**を検出＝`D08_miller_2001_cohen-j-d.md` / `D08_miller_2001_integrative-theory-prefrontal-cortex.md`、`D15_dewey_1934_1934.md` / `D15_dewey_1934_art-as-experience.md`。どちらを残すかは内容比較の上で判断（本セッションでは未削除）。
+- **✅ periodic-review SKILL 2 点修正**: ①kdt は GitHub archived（read-only・2026-04-03〜）で retired command を push で消せない → PR-3 対象から除外（07376f3）②cs evidence>SVG staleness 30/30 は cs#207 pivot で evidence が全て `entry_count: 0` stub 化した実体＝再生成不能 → **凍結宣言**・PR-6 で stub を skip（f29420b）。0706〜0817 の 4 回連続 WARN を根治。
+- **✅ myhome diverged**: 別セッションが 09:54〜 merge を実施し解消（`d2b85b7` が origin/main に到達・clean を 10:21 確認）。本セッションは触っていない。
 - **⏸ 未実施（rm 権限が下りず）**: 孤児 worktree dir 2 件（main-merge / wt-wiki-consciousness-core・各 29MB）の物理削除。`git worktree prune` 後も dir は残る。中身は履歴上の旧 blob のみと確認済みなので `rm -rf` して問題ない。
 
 ## 🔄 CLI 作業中 2026-07-17 (seq02) — 正本 energy-flow に機械可読3層を実装（develop 反映済み・公開判定待ち）
