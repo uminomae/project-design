@@ -1,5 +1,24 @@
 # state.md — project-design
 
+## 🔄 CLI 作業中 2026-08-17 (174) — 定期レビュー 0817 の follow-up 消化（pd 分）
+- **HEAD（開始時）**: develop=**1a148bb**（push 済み）/ main=**fa24187**。cwd は cs worktree `branch-organization-c111f0` から兄弟 repo を横断操作（LOCAL）。
+- **✅ serve.sh**: `ln -sf` → `ln -sfn`（src/content/reader の 3 行）。既存 symlink-to-dir を dereference して `src/src` 等の自己参照リンクを作る再発源を止めた。既存 3 件（content/content・reader/reader・src/src）を削除。再実行検証で入れ子リンク再生なし。
+- **✅ state.md 回収**: worktree `continuation-e477dc` に **未コミットで取り残されていた 07-17 seq02 記録**（energy-flow 正本への機械可読3層移植・258c0b4）を本ファイルへ回収（直下の項）。0720 から 4 回続いた「develop=（本 commit 後に更新）」プレースホルダは実値で置換。
+- **📝 07-30 / 08-02 / 08-05 の CN 追加コミット（00d9514 CN-012 / eb6bd85 CN-013・014 / d736446 CN-015・016）**: セッションログ・state 記録なし。knowledge 直接追記の短セッションとみなし、ここに列挙して閉じる（遡及ログは作らない）。
+- **✅ worktree/branch prune**: 登録 4 件（continuation-e3551d / continuation-e477dc / pd121-remaining-tasks-efb6c4 / remaining-tasks-564adb）は全 HEAD が develop の祖先。孤児 2 件（main-merge / wt-wiki-consciousness-core）は差分ファイル 8/7 件がいずれも git 履歴上の旧 blob（`git log --find-object`）＝未回収なし、内包セッションログ 2 件は main に存在済み。`claude/*` 8 本も全て develop の祖先。すべて削除。
+- **✅ inbox**: REVIEW-periodic 0720 / 0810 / 0817 を archive へ（0817 は本セッションで消化したため）。
+- **✅ wiki-gen 7 件（6 回連続再生成の根治）**: 調べると **6/7 は既存ページあり**（生成時 url-verified＝title 推定 stem → 後に raw-confirmed 昇格＝PDF 名 stem に変わり「未生成」へ誤判定）。`wiki-gen-check.sh` に `{domain}_{author}_{year}_` prefix 一致（著者の連結表記ゆれ吸収）で既存とみなすフォールバックを追加＝依頼側で無限再生成を停止。真に未生成だった **D13-S14 Varela/Maturana/Uribe 1974 (Autopoiesis)** は画像 PDF 10 頁を Read 画像モードで全頁読解し `wiki/sources/D13_varela-maturana-uribe_1974_autopoiesis.md` を生成（DOI Crossref 照合済み・crosslink 1 件・cross-check pairs=0・wiki-lint 0 orphan/0 broken）。
+- **⚠️ 副産物（pjdhiro 判断）**: 同じ stem ドリフトで **二重生成された既存ページ 2 組**を検出＝`D08_miller_2001_cohen-j-d.md` / `D08_miller_2001_integrative-theory-prefrontal-cortex.md`、`D15_dewey_1934_1934.md` / `D15_dewey_1934_art-as-experience.md`。どちらを残すかは内容比較の上で判断（本セッションでは未削除）。
+- **⏸ 未実施（rm 権限が下りず）**: 孤児 worktree dir 2 件（main-merge / wt-wiki-consciousness-core・各 29MB）の物理削除。`git worktree prune` 後も dir は残る。中身は履歴上の旧 blob のみと確認済みなので `rm -rf` して問題ない。
+
+## 🔄 CLI 作業中 2026-07-17 (seq02) — 正本 energy-flow に機械可読3層を実装（develop 反映済み・公開判定待ち）
+- **HEAD**: develop=**258c0b4**（push 済み・fast-forward）/ main=**fa24187**（変化なし）。cwd worktree `continuation-e477dc`（ブランチ `claude/resume-session-a31e8a`・develop へマージ済み）。
+- **pjdhiro 決定**: ①両版（正本 energy-flow.html／認知リズム版 energy-flow-rhythm.html）を比較用に残す ②正本はあくまで元の energy-flow.html ③機械可読層は文体判定に関わらず必要なので正本側にも実装する。
+- **✅ 実装（258c0b4）**: rhythm 版と同じ機械可読3層を正本テンプレート `scripts/reader-energy-flow-template.html` に移植——(1) 冒頭 HTML コメント地図（章ごとの結論の仕分け・正本の章番号 §0-§7 に適合）(2) META/og/JSON-LD description 結論要約型＋JSON-LD abstract/keywords 追加＋about 5件を主張仕分け型へ (3) body 冒頭 `#llm-summary` visually-hidden 静的要約。`.visually-hidden` は `src/styles/reader.css`（共有側）に定義＝three-and-seven へも展開可能。**正本は章が閉じた details 内にあり innerText 抽出で本文が落ちるため、(3) が本文抽出系 LLM の正**（rhythm 版より効果が大きい）。
+- **検証**: static-checks 11/11・アンカー149解決・U+FFFD 0・JSON-LD 構文妥当・要約層の全用語（Shalizi/Marci/Gernert/Li 2025/Kondepudi/暴流/アロスタシス 等25語）を本文と照合一致・:3006 プレビューで 1×1px clip・innerText に hero より前で出現（2146字）・見た目不変・コンソール0・three-and-seven 再生成差分なし。
+- **🔜 次**: ①develop→main 公開判定（pjdhiro 専権）②three-and-seven への同展開（要約文の書き起こしが必要・未着手）③残作業だった「比較レビューと採否判定」は pjdhiro 決定で解消（文体標準の判定は引き続き保留・両版併存で比較継続）。
+
+
 ## ✅ セッション終了 2026-07-17 — 認知リズム版 energy-flow 比較ドラフト＋文脈ゼロLLM要約3層（公開済み）
 - **HEAD（最終）**: develop=**（本 commit 後に更新）** / main=**（公開マージ後に更新）**（ともに push 済み）。cwd worktree `remaining-tasks-564adb`（ブランチ `claude/cognitive-rhythm-writing-a4e6ec`・develop へマージ済み）。
 - **✅ 公開（pjdhiro「一旦公開して」明示指示）**: develop → main マージで `reader/energy-flow-rhythm.html` を公開。noindex 付きのため検索/クローラには非露出、直接 URL でのみ到達可。公開 URL: https://uminomae.github.io/project-design/reader/energy-flow-rhythm.html（Pages 反映は数分後）。
