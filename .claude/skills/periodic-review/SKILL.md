@@ -67,10 +67,11 @@ agent: "CLI"
 
 - `project-design`
 - `creation-space`
-- `kesson-driven-thinking`
 - `pjdhiro`
 
 必要に応じて他 repo を足してよい。
+
+> **凍結 repo の扱い（2026-08-17 追記）**: `kesson-driven-thinking` は GitHub 側で **archived（read-only, 2026-04-03〜）**。push できないため、PR-3（retired asset 残存）で毎回 WARN を出しても消化不能＝ノイズになる。**PR-3 の対象から除外**し、PR-1 では「ローカルが origin/main と一致しているか」だけを見る（一致していれば PASS）。同様に GitHub archived の repo は `gh repo view {repo} --json isArchived` で判定して同じ扱いにする。
 
 ## 4. 実行手順
 
