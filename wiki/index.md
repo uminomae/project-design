@@ -1,6 +1,6 @@
 ---
 title: "Wiki Index"
-compiled: "2026-07-03"
+compiled: "2026-08-17"
 ---
 # Wiki -- Map of Content
 
@@ -239,7 +239,7 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D12_stern_1959_integrated-control-concept|総合的防除の概念]]
 - [[sources/D12_walker_2004_2004|社会生態システムにおけるレジリエンス・適応性・変革可能性（Walker et al. 2004）]]
 
-#### D13 哲学 (11件)
+#### D13 哲学 (12件)
 - [[sources/D13_bergson_1911_bergson-1911-creative-evolution|創造的進化（Creative Evolution, Bergson 1911）]]
 - [[sources/D13_deleuze_1966_1966-2001|ジルベール・シモンドン論（Deleuze, Review of Simondon 1966）]]
 - [[sources/D13_dewey_1910_how-we-think|思考の方法（1910年版）]]
@@ -250,6 +250,7 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D13_james_1890_principles-of-psychology-vol|心理学原理（The Principles of Psychology, James 1890, Vol.1）— 意識の流れ]]
 - [[sources/D13_peirce_1923_peirce-1923-chance-love|偶然・愛・論理（Chance, Love, and Logic, Peirce 1923）]]
 - [[sources/D13_simondon_1958_1958|技術的対象の存在様態について（Simondon 1958）]]
+- [[sources/D13_varela-maturana-uribe_1974_autopoiesis|オートポイエーシス — 生命システムの組織、その特徴づけとモデル（Varela, Maturana & Uribe 1974）]]
 - [[sources/D13_whitehead_1929_process-and-reality|過程と実在]]
 
 #### D14 心理学 (10件)
@@ -484,6 +485,7 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 
 | ページ | category | compiled |
 |--------|----------|----------|
+| [[sources/D13_varela-maturana-uribe_1974_autopoiesis\|オートポイエーシス — 生命システムの組織、その特徴づけとモデル（Varela, Maturana & Uribe 1974）]] | sources | 2026-08-17 |
 | [[sources/D02_ulm_2013_et-al\|Kibble–Zurek スケーリング則 — イオン結晶での欠陥形成の観測]] | sources | 2026-07-03 |
 | [[sources/D03_turing_1952_1952\|形態形成の化学的基礎 — チューリングの反応拡散パターン]] | sources | 2026-07-03 |
 | [[sources/D23_vandermaas_2017_network-models-cognitive-development\|認知発達と知能のネットワークモデル]] | sources | 2026-07-03 |
@@ -503,6 +505,5 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 | [[sources/D05_le-pichon_1968_sea-floor-spreading\|海底拡大と大陸移動]] | sources | 2026-06-14 |
 | [[sources/D05_suarez_1988_schopf-p-s\|ENSO のための遅延作用振動子]] | sources | 2026-06-14 |
 | [[sources/D06_nicolis_2016_stochastic-resonance-self-organization\|確率共鳴・自己組織化・情報ダイナミクス — 多安定系の最適応答]] | sources | 2026-06-14 |
-| [[sources/D07_friston_2012_free-energy-principle\|生物系のための自由エネルギー原理 — 無秩序化への抵抗の数理]] | sources | 2026-06-14 |
 
 > このページは `scripts/generate-wiki-index.mjs` により自動生成されます。wiki/ 内のページ変更時に PostToolUse hook で自動実行されます。
