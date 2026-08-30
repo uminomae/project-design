@@ -1,33 +1,148 @@
 {
-  "last_run": "2026-08-17T08:32:00+09:00",
-  "last_report": ".cache/reviews/periodic/REVIEW-periodic-20260817-0832.md",
+  "last_run": "2026-08-31T08:34:00+09:00",
+  "last_report": ".cache/reviews/periodic/REVIEW-periodic-20260831-0834.md",
   "scheduler": "claude-code scheduled task: weekly-periodic-review (Mon 08:30 local)",
-  "prev_run": "2026-08-10T08:32:00+09:00",
+  "prev_run": "2026-08-24T08:31:00+09:00",
   "interval_days": 7,
   "repos": {
-    "project-design": { "branch": "develop", "head": "b55581f", "dirty": 3, "ahead": 1, "status": "WARN" },
-    "creation-space": { "branch": "develop", "head": "b9653bd", "dirty": 2, "status": "WARN" },
-    "kesson-driven-thinking": { "branch": "main", "head": "1d5fb89", "dirty": 0, "status": "WARN" },
-    "pjdhiro": { "branch": "main", "head": "2b32a86", "dirty": 1, "behind": 0, "status": "PASS" },
-    "awareness-space": { "branch": "develop", "head": "f3aed34", "dirty": 0, "status": "PASS" },
-    "kesson-space": { "branch": "develop", "head": "5d9c59b", "dirty": 0, "status": "WARN" },
-    "techo": { "branch": "main", "head": "892709f", "dirty": 1, "status": "WARN" },
-    "myhome": { "branch": "main", "head": "d2b85b7", "dirty": 0, "behind": 8, "ahead": 1, "status": "WARN" },
-    "uminomae.github.io": { "branch": "main", "head": "3ff5a01", "dirty": 0, "status": "PASS" },
-    "zenn-content": { "branch": "main", "head": "4634835", "dirty": 0, "status": "PASS" }
+    "project-design": {
+      "branch": "develop",
+      "head": "8f6092d",
+      "dirty": 2,
+      "ahead": 0,
+      "behind": 0,
+      "status": "WARN"
+    },
+    "creation-space": {
+      "branch": "develop",
+      "head": "7ed02a8",
+      "dirty": 0,
+      "ahead": 0,
+      "behind": 0,
+      "status": "WARN"
+    },
+    "kesson-driven-thinking": {
+      "branch": "main",
+      "head": "1d5fb89",
+      "dirty": 0,
+      "ahead": 0,
+      "behind": 0,
+      "status": "SKIP",
+      "note": "GitHub archived (read-only) — PR-3 対象外"
+    },
+    "pjdhiro": {
+      "branch": "main",
+      "head": "8fa721f",
+      "dirty": 1,
+      "ahead": 0,
+      "behind": 0,
+      "status": "PASS"
+    },
+    "awareness-space": {
+      "branch": "develop",
+      "head": "f3aed34",
+      "dirty": 0,
+      "ahead": 0,
+      "behind": 0,
+      "status": "WARN"
+    },
+    "kesson-space": {
+      "branch": "develop",
+      "head": "5d9c59b",
+      "dirty": 0,
+      "ahead": 0,
+      "behind": 0,
+      "status": "PASS"
+    },
+    "techo": {
+      "branch": "main",
+      "head": "892709f",
+      "dirty": 1,
+      "ahead": 0,
+      "behind": 0,
+      "status": "PASS"
+    },
+    "myhome": {
+      "branch": "main",
+      "head": "fd15878",
+      "dirty": 2,
+      "ahead": 0,
+      "behind": 5,
+      "status": "WARN"
+    },
+    "uminomae.github.io": {
+      "branch": "main",
+      "head": "3ff5a01",
+      "dirty": 0,
+      "ahead": 0,
+      "behind": 0,
+      "status": "PASS"
+    },
+    "zenn-content": {
+      "branch": "main",
+      "head": "4634835",
+      "dirty": 0,
+      "ahead": 0,
+      "behind": 0,
+      "status": "PASS"
+    },
+    "futari": {
+      "branch": "main",
+      "head": "8d4b59c",
+      "dirty": 2,
+      "ahead": 0,
+      "behind": 11,
+      "status": "WARN",
+      "note": "初回検出（2026-08-31）。PR-1 のみ実施"
+    },
+    "investing": {
+      "branch": "main",
+      "head": "5de073d",
+      "dirty": 71,
+      "ahead": 2,
+      "behind": 0,
+      "status": "WARN",
+      "note": "初回検出（2026-08-31）。dirty 71 は launchd 日次更新の生成物。PR-1 のみ実施"
+    }
   },
   "pending": {
     "codex": 0,
-    "followups": 10,
-    "carried_over": 7
+    "followups": 11,
+    "carried_over": 8
+  },
+  "checks": {
+    "PR-1": "WARN",
+    "PR-2": "WARN",
+    "PR-3": "PASS",
+    "PR-4": "PASS",
+    "PR-5": "WARN",
+    "PR-6": "PASS"
   },
   "notes": {
-    "prev_report_unpushed": "b55581f (0810 report) was ahead 1 for 7 days; pushed in this run",
+    "resolved_this_run": [],
     "new_this_run": [
-      "pd: self-referencing symlinks content/content, reader/reader, src/src (cause: serve.sh ln -sf without -n)",
-      "pd: 2 unregistered orphan worktree dirs (main-merge, wt-wiki-consciousness-core)",
-      "myhome: main diverged behind 8 / ahead 1 (d2b85b7 not ancestor of origin/main)",
-      "cs/ks/techo: _instructions-* inbox files stale 100-140 days (23 files total)"
+      "futari / investing を初回検出（対象 repo 10 → 12）",
+      "investing main が ahead=2（2 日間 未 push）",
+      "futari ローカル main が behind=11・ui/ に未コミット 2 件",
+      "myhome main が behind=5",
+      "前回レポートが pd inbox に残置＝0824 follow-up 8 件が消化 0",
+      "cs 孤児 worktree 11GB の内訳を実測：救出必要は 2 PDF のみ、残りは main と重複",
+      "0824 レポート本体が git 未追跡だった（.cache は gitignore・add -f 必須）。本 run で追跡下へ"
+    ],
+    "unresolved_from_prev": [
+      "cs 孤児 worktree 10 件 11GB の prune（4 回連続。増加は停止・削除条件は確定）",
+      "pd 孤児 worktree dir 2 件の物理削除（3 回連続・rm 権限待ち）",
+      "pd state.md の進行中マーカー未クローズ（未反映が 0819・0829×2 の 3 コミットへ拡大）",
+      "二重生成 wiki ページ 2 組の採否（pjdhiro 判断・3 回連続）",
+      "as inbox の pd#115 F4' proposal 滞留（59 日）",
+      "wiki-cross-check.mjs が missing 5 件を列挙しない",
+      "pjdhiro garage/ 残骸の整理",
+      "myhome claude/tamanegi-seed-inventory-check-3a2d5c の merge 判断"
+    ],
+    "blocker": "cs#242（settings.json に dev/ 配下の rm -rf を allow 追加）が OPEN のまま。cs 11GB と pd 58MB の worktree 掃除を同時に止めている",
+    "rescue_before_delete": [
+      "creation-space/.claude/worktrees/cs219-narrow-scope/knowledge/raw/D03_winter-chambon_1986_gel-point.pdf",
+      "creation-space/.claude/worktrees/cs219-narrow-scope/knowledge/raw/D25_vangennep_1909_rites-of-passage.pdf"
     ]
   }
 }
