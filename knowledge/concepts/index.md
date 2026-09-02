@@ -26,6 +26,7 @@
 | CN-015 | [消えない参照層を分ける — 「採用したら行を消す台帳」は判定と出典も一緒に消す](CN-015_non-erasable-reference-layer.md) | CN-013, CN-014, myhome overwintering.md, myhome nutrition-ref.tsv | 探索的（2事例） |
 | CN-016 | [「無い」を記録する — 不在の確認にはコストがかかるのに、成果物に残らない](CN-016_record-the-absence.md) | CN-015, CN-013, myhome decisions.md, myhome gap-crops.md | 探索的（1事例＋既存事例の再解釈） |
 | CN-018 | [移行は切り替えでなく重ねる — 新を先に見て、無ければ旧へ落とす](CN-018_migrate-by-overlap.md) | CN-013, CN-016, reference/cloudflare-pages-deploy-mode-is-one-way.md, gonin#3 | 探索的（1事例） |
+| CN-019 | [認証は入口だけ守り、本体は自分で証明を検証して振り分ける](CN-019_guard-only-the-door-verify-inside.md) | CN-013, CN-018, gonin#15・#28 | 探索的（1事例） |
 
 ---
 
@@ -43,3 +44,4 @@
 | 2026-08-29 | CN-017 追加（futari の二人の手帳のバックログ再構成からの帰納。担当・入れ子・F-S の最小記法） |
 | 2026-08-29 | CN-017 を futari へ移設（futari 固有の知見は futari `data/task-relations.md` を正本とする。CN-017 の番号は欠番） |
 | 2026-09-02 | CN-018 追加（gonin の画像置き場を git→R2 へ移した作業からの帰納。あわせて `knowledge/reference/` を新設し Cloudflare の制約2件を格納） |
+| 2026-09-02 | CN-019 追加（gonin の投稿ページを Access でメンバー限定にし、権限のない人に案内を出した作業からの帰納。`reference/` に Bootstrap の色変数と HTML コメントの2件を追加） |

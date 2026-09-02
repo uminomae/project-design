@@ -24,3 +24,5 @@
 |---|---|---|
 | [cloudflare-pages-deploy-mode-is-one-way.md](cloudflare-pages-deploy-mode-is-one-way.md) | Pages の Direct Upload と Git 連携は作成時に固定され、切り替えられない | 2026-09-02 |
 | [cloudflare-token-scope-tradeoff.md](cloudflare-token-scope-tradeoff.md) | R2 のバケット単位の絞り込みと Pages の権限は、1本のトークンに同居できない | 2026-09-02 |
+| [bootstrap-color-vars-need-rgb-twins.md](bootstrap-color-vars-need-rgb-twins.md) | Bootstrap 5 の色変数は通常版と `-rgb` 版の対。片方だけ上書きすると帯の色が古いまま残る | 2026-09-02 |
+| [html-comment-must-not-contain-markers.md](html-comment-must-not-contain-markers.md) | HTML コメントは入れ子にできない。説明文に目印や閉じ記号を書くと本文が画面に漏れる。関所で機械的に止める | 2026-09-02 |
