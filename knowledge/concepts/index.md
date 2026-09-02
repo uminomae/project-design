@@ -25,6 +25,7 @@
 | CN-014 | [合計は谷を隠す — 集計粒度が目的関数を決める](CN-014_aggregation-granularity-hides-troughs.md) | CN-007, CN-013, myhome garden-check [14], myhome#64 | 探索的（1事例） |
 | CN-015 | [消えない参照層を分ける — 「採用したら行を消す台帳」は判定と出典も一緒に消す](CN-015_non-erasable-reference-layer.md) | CN-013, CN-014, myhome overwintering.md, myhome nutrition-ref.tsv | 探索的（2事例） |
 | CN-016 | [「無い」を記録する — 不在の確認にはコストがかかるのに、成果物に残らない](CN-016_record-the-absence.md) | CN-015, CN-013, myhome decisions.md, myhome gap-crops.md | 探索的（1事例＋既存事例の再解釈） |
+| CN-018 | [移行は切り替えでなく重ねる — 新を先に見て、無ければ旧へ落とす](CN-018_migrate-by-overlap.md) | CN-013, CN-016, reference/cloudflare-pages-deploy-mode-is-one-way.md, gonin#3 | 探索的（1事例） |
 
 ---
 
@@ -41,3 +42,4 @@
 | 2026-08-05 | CN-015・CN-016 追加（myhome の栄養価一次データ調査からの帰納。参照層の分離と「不在の記録」） |
 | 2026-08-29 | CN-017 追加（futari の二人の手帳のバックログ再構成からの帰納。担当・入れ子・F-S の最小記法） |
 | 2026-08-29 | CN-017 を futari へ移設（futari 固有の知見は futari `data/task-relations.md` を正本とする。CN-017 の番号は欠番） |
+| 2026-09-02 | CN-018 追加（gonin の画像置き場を git→R2 へ移した作業からの帰納。あわせて `knowledge/reference/` を新設し Cloudflare の制約2件を格納） |
