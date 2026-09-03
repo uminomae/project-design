@@ -28,3 +28,4 @@
 | [html-comment-must-not-contain-markers.md](html-comment-must-not-contain-markers.md) | HTML コメントは入れ子にできない。説明文に目印や閉じ記号を書くと本文が画面に漏れる。関所で機械的に止める | 2026-09-02 |
 | [string-replace-expands-dollar-patterns.md](string-replace-expands-dollar-patterns.md) | `String.replace` の置換文字列は `$&` `$'` `` $` `` `$$` を展開する。利用者の文を差し込むときは関数で渡す | 2026-09-03 |
 | [img-in-hidden-subtree-still-loads-unless-lazy.md](img-in-hidden-subtree-still-loads-unless-lazy.md) | `display:none` の中の `<img>` も読み込まれる。隠す画像には全部 `loading="lazy"`、開く直前に eager へ | 2026-09-03 |
+| [cloud-env-vars-read-once-at-session-start.md](cloud-env-vars-read-once-at-session-start.md) | クラウド環境の環境変数はセッション開始時に1回だけ読まれ、走っているセッションには効かない。Network access は即時に効く | 2026-09-03 |
