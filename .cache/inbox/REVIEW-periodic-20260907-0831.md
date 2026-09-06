@@ -8,9 +8,12 @@
 
 ## いま効く 3 件
 
-1. **定期レビューが黙って止まっても誰も気づかない** — 09-06 に investing 発セッションが検出・修正（`d26328a`）。
-   サンドボックスという症状は直ったが、`notifyOnCompletion: false` と pd 側 watchdog 不在は残っている。
-   investing の `scripts/task-watchdog.py`（launchd・10 分ごと・トークン消費ゼロ）を横展開するのが最短。
+1. **回ごとに「完走したか」が確認できない** — 8/10・8/24 の回は**レポートを書いたあと `git push` 手前で切れていた**
+   （09-06 に判明・`d26328a` で修正。本 run の push は承認プロンプトなしで完走＝修正は有効）。
+   タスク自体は毎週起動するので、**次の run からは「前回も動いていた」ように見える**のがこの故障の厄介なところ。
+   `notifyOnCompletion` を true にするか pd 側にも watchdog を置く。
+   ⚠️ **`task-watchdog.py` をそのまま横展開しない** — 終わった実行を除外しないと同じ誤検出を繰り返す
+   （初報の「10 日間停止」がまさにそれで、本 run 中に `9eb7bc3` が撤回した。判定には `isArchived` が要る）。
 2. **cs#242 が 130 日 OPEN**（`settings.json` に dev/ 配下の `rm -rf` を allow）。
    cs 8.0GB と pd 58MB の worktree 掃除を**両方**止めている。5 回連続で同じことを書いている。
 3. **cs の 2 PDF 救出が未着手** — `D03_winter-chambon_1986_gel-point.pdf` / `D25_vangennep_1909_rites-of-passage.pdf`

@@ -7,7 +7,8 @@
   "repos": {
     "project-design": {
       "branch": "develop",
-      "head": "b7f7dfa",
+      "head": "99a0323",
+      "head_at_scan": "b7f7dfa",
       "dirty": 1,
       "ahead": 0,
       "behind": 0,
@@ -146,7 +147,8 @@
     ],
     "new_this_run": [
       "gonin / futari-gate-throwaway を初回検出（対象 repo 12 → 14）",
-      "定期タスク自身が承認プロンプト待ちで停止していたことが 09-06 に判明・修正（d26328a）。本 run は修正後の初回実行",
+      "過去の run の後半（8/10・8/24）が git push の承認プロンプト待ちで切れていたことが 09-06 に判明・修正（d26328a）。本 run は修正後の初回実行で、push は承認プロンプトなしで完走＝修正は有効",
+      "初報の「週次レビューが 10 日間停止」は task-watchdog の誤検出で、本 run 中（08:38）に 9eb7bc3 が撤回。週次レビューは 7/6 から 9/7 まで毎週走っている。終わった実行を除外しない監視は同じ誤報を出す（isArchived 判定が要る）",
       "PR-3 が PASS → WARN。as docs/templates/codex-worker-instruction.md:87 が retired skill (cs commit-review-with-log) を参照している（前回の取りこぼし）",
       "leak した headless Chrome PID 624 が 2026-08-13 から 24 日稼働し puppeteer プロファイルをロック。responsive-test が起動不能だった（TMPDIR 振り替えで回避・5/5 PASS）",
       "pd state.md の未反映が 3 → 18 コミットへ拡大。18 件すべてに Session: trailer があり、すべて他 repo 発（gonin/investing/futari）の横断編集",
@@ -162,7 +164,7 @@
       "wiki-cross-check.mjs が missing 5 件を列挙しない",
       "pjdhiro garage/ 残骸の整理"
     ],
-    "blocker": "cs#242 が 130 日 OPEN。加えて、この定期タスク自身の可用性が pd 外（investing の launchd watchdog）に依存している構造が未解消",
+    "blocker": "cs#242 が 130 日 OPEN。加えて、回ごとの完走を pd 側で確認できない構造が未解消（レポートを書いたあと push だけ落ちても、次の run からは動いていたように見える）",
     "rescue_before_delete": [
       "creation-space/.claude/worktrees/cs219-narrow-scope/knowledge/raw/D03_winter-chambon_1986_gel-point.pdf",
       "creation-space/.claude/worktrees/cs219-narrow-scope/knowledge/raw/D25_vangennep_1909_rites-of-passage.pdf"

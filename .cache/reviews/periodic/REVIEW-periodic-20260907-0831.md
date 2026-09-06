@@ -6,7 +6,9 @@
 チェックセット: PR-1〜PR-6
 対象: `~/dev/*` の git repo **14 件**（前回 12 件 → **gonin / futari-gate-throwaway を新規に検出**）
 
-> **本 run の位置づけ**: 08-31 の run 以降、この定期タスク自身が **承認プロンプト待ちで停止していた**ことが 09-06 に判明・修正された（commit `d26328a`）。**本 run は修正後の初回実行**であり、末尾の commit & push がその実地テストを兼ねる。詳細は PR-5。
+> **本 run の位置づけ**: 過去の run のいくつかが **`git push` の承認プロンプト待ちで後半を落としていた**ことが 09-06 に判明・修正された（commit `d26328a`）。**本 run は修正後の初回実行**であり、末尾の commit & push がその実地テストを兼ねる。詳細は PR-5。
+>
+> **本 run 中に入った訂正**: 08:38 に別セッション（`Session: 20260906-846` investing 発）が `9eb7bc3` を投入し、初報の「pd の週次レビューが 10 日間止まっていた」を**誤検出として撤回**した。週次レビューは 7/6 から 9/7 まで毎週走っている。本レポートは訂正後の事実で書いている。
 
 ## Summary
 
@@ -40,7 +42,7 @@
 | WARN | project-design | PR-5 | **pd inbox に periodic レポートが 2 件残置**（`REVIEW-periodic-20260824-0831.md` / `-20260831-0834.md`）＝**0824 の follow-up 8 件・0831 の 10 件が 2 週間まったく消化されていない**ことの機械的な証拠。原因は PR-2 と同一＝pd の対話セッションが 3 週間開かれていない（pd への commit 18 件はすべて他 repo 発の横断編集） | inbox の archive は消化とセット。次に pd セッションを開いたら 0824・0831・本レポートの 3 通をまとめて処理する |
 | WARN | project-design | PR-5 | 二重生成 wiki ページ 2 組が未処理（**4 回連続で pjdhiro 判断待ち**）: `D08_miller_2001_cohen-j-d.md`(5,767B) / `D08_miller_2001_integrative-theory-prefrontal-cortex.md`(7,056B)、`D15_dewey_1934_1934.md`(5,425B) / `D15_dewey_1934_art-as-experience.md`(6,166B)。**4 ファイルとも 7/2 23:08 のまま不変**。再発源は 0817 の `wiki-gen-check.sh` 修正で停止済み | 各組を比較して残す方を決め、他方を削除（値判断を含むため pjdhiro 承認）。ファイル名が退化している `_cohen-j-d`（共著者名）と `_1934`（年の重複）が削除候補で、バイト数でも両方とも小さい方に一致する |
 | WARN | awareness-space | PR-2 | `.cache/inbox/proposal-pd115-f4prime-order-experiment.md`（2026-07-03・**66 日**滞留・59 → 66 日）。内容は pd#115（F4' 順序実験）で、pd#115 / pd#126 はいずれも OPEN＝**pd 側で生きている論点**（memory「pd#115 は二つの別レンズ」「pd#124 行列が第一の方法論」） | 一度読んで RR-024 本線と突き合わせ、生きていれば pd へ移送・死んでいれば `archive/`。**3 回連続の持ち越しなので判断だけ付ける** |
-| INFO | project-design | PR-5 | **この定期タスク自身が停止していた**（09-06 に investing 発セッションが検出・修正、commit `d26328a`）。症状＝`git push origin develop` を `dangerouslyDisableSandbox` でリトライしたところで承認プロンプト待ちのまま停止。**ローカルの承認プロンプトにタイムアウトが無く、`notifyOnCompletion: false` のため誰も気づけなかった**。根因は TLS ではなく認証情報で、サンドボックス内から macOS キーチェーンの credential helper に届かない（`could not read Username for 'https://github.com': Device not configured`）。対処＝`.claude/settings.json` の `sandbox.excludedCommands` に `git push` / `git fetch` / `git pull` / `git ls-remote` / `gh` を追加（適用済みを確認）。検出したのは `investing/scripts/task-watchdog.py`（launchd・10 分ごと・トークン消費ゼロ）。**なお commit message は「2026-08-27 から停止」と書いているが、0831 のレポートは 08-31 08:38 に commit されている**（停止区間の起点は本 run からは確定できない） | ①**本 run の末尾 push が修正の実地テスト**（結果は「メタ」節に追記）②`notifyOnCompletion` を true にするか、pd 側にも watchdog を効かせるかを検討する。**週次レビューが黙って止まっても誰も気づかない構造**が今回いちばん高くついた |
+| INFO | project-design | PR-5 | **この定期タスクの「後半だけが飛ぶ」事象**（09-06 に investing 発セッションが検出・修正、commit `d26328a`）。症状＝`git push origin develop` を `dangerouslyDisableSandbox` でリトライしたところで承認プロンプト待ちのまま停止。根因は TLS ではなく認証情報で、サンドボックス内から macOS キーチェーンの credential helper に届かない（`could not read Username for 'https://github.com': Device not configured`）。対処＝`.claude/settings.json` の `sandbox.excludedCommands` に `git push` / `git fetch` / `git pull` / `git ls-remote` / `gh` を追加（適用済みを確認）。**⚠️ 初報の「10 日間止まっていた」は誤りで、本 run の最中（08:38）に投入された `9eb7bc3` が訂正している**＝週次レビューは 7/6 から 9/7 まで**毎週走っており成果物も全部コミット済み**。止まったのは **8/10 と 8/24 の回の後半だけ**で、次の枠はふつうに出ていた。誤検出の原因は `task-watchdog.py` が終わった実行を除外していなかったこと（**末尾の未応答 `tool_use` は死因の痕跡であって、いま待っている証拠ではない**。判定には `isArchived` が要る）。**この訂正は 0831 レポートの別の finding とも噛み合う**＝「0824 のレポート本体が git 未追跡だった」の説明は `add -f` 漏れだけでなく、**8/24 の回が push 手前で切れたこと**のほうが直接的 | ①**本 run の末尾 push が修正の実地テスト**（結果は「メタ」節に追記）②実害の出方は「自動化が死ぬ」ではなく「**その回の後始末が飛ぶ**」。レポートは書けているのに commit / push / inbox 投函だけが落ちる形なので、**次の run から見ると「前回は動いていたように見える」**のが厄介。`notifyOnCompletion` か pd 側 watchdog で回ごとの完了を確認する |
 | INFO | gonin | PR-1 | **新規検出 repo**。09-01 以降の横断セッションログ 147 件の主要な発生源の 1 つで、CLAUDE.md 50,617B・`.cache/{session,reviews,hooks}` を自前で整備済み＝pd 系の運用枠組みには**既に乗っている**。09-03 に自前の Claude レビュー 1 件（`REVIEW-claude-gonin-8825e1e-20260903.md`）。clean・同期 | 次回から PR-2・PR-3・PR-6 も対象に含める。今回は初回検出のため PR-1 のみ |
 | INFO | futari-gate-throwaway | PR-1 | **新規検出 repo**。09-05 の 1 日で作られた実験 repo（`gate/` `approval/` `allowed_signers`・署名付き承認フローの検証）。CLAUDE.md も `.cache` も無く、名前が示すとおり使い捨て想定 | 用が済んでいれば削除、残すなら CLAUDE.md を置いて定期レビューの対象規約に乗せる（pjdhiro 判断） |
 | INFO | gonin / myhome / futari | PR-1 | 孤児 worktree dir を新たに検出したが、**すべて 0B の空ディレクトリ**＝gonin 2 件（`bike-continuation-0d8fc1` / `current-situation-review-098c73`）・myhome 4 件（`asparagus-planting-position-769e52` / `github-actions-policy-fb13d7` / `parallel-session-todo-bug-28e391` / `spinach-germination-log-f17544`）・futari 1 件（`elastic-newton-97a137`）。加えて futari に prunable 登録 1 件（`/private/tmp/futari-mainchk`）。cs / pd のような容量問題ではない | `git worktree prune` と空 dir の削除で片付く。各 repo 管轄。**実害が無いので優先度は cs / pd より下** |
@@ -90,7 +92,7 @@
 
 優先度順:
 
-1. **`notifyOnCompletion` / watchdog を pd 側にも効かせる** — 今回いちばん高くついたのは「週次レビューが黙って 10 日近く止まり、誰も気づかなかった」こと。`d26328a` はサンドボックスという**症状**を直したが、**気づけない構造**はまだ残っている。investing の `task-watchdog.py` を横展開するのが最短
+1. **回ごとの「完走したか」を確認できるようにする** — `d26328a` はサンドボックスという症状を直したが、**8/10・8/24 の回がレポートを書いたあと push 手前で切れていた**ことに 2 週間気づけなかった構造は残っている。タスクは毎週起動するので**次の run からは「前回も動いていた」ように見える**のがこの故障の厄介なところ。`notifyOnCompletion` を true にするか、pd 側にも watchdog を効かせる。**ただし `task-watchdog.py` をそのまま横展開しない**＝終わった実行を除外していないと同じ誤検出を繰り返す（`isArchived` 判定が要る・`9eb7bc3`）
 2. **cs#242（`rm -rf` allow）を処理して worktree 掃除のブロッカーを外す** — cs 8.0GB と pd 58MB の**両方**を止めている 1 件。130 日 OPEN
 3. **cs 孤児 worktree の救出→削除** — ①`D03_winter-chambon_1986_gel-point.pdf` と `D25_vangennep_1909_rites-of-passage.pdf`（どちらも `cs219-narrow-scope/knowledge/raw/`）を main の `knowledge/raw/` へ**先に**救出 → ②10 dir を削除（約 8.0GB 回収）。**順序を逆にすると再取得不能**
 4. **pd state.md を Read-Before-Write で更新** — 0817 項を閉じ、18 コミットを「他 repo 発の横断編集」として 1 項に畳む（個別の書き起こしは不要＝各 `Session:` trailer から辿れる）
@@ -106,10 +108,13 @@
 
 - FAIL: 0 件 / WARN: 9 件（新規 3・持ち越し 6）/ INFO: 8 件 / PASS: 8 repo / SKIP: 1 repo
 - **PR-1 の同期ずれが 3 件 → 0 件になった**のが今週いちばんの改善。14 repo すべてが期待ブランチで ahead=0 / behind=0 / diverged=0。ただしこれは「よく動いている repo が自力で追いついた」結果で、pd 管轄の持ち越しには効いていない
-- **今週の主題は「気づけない構造」**。定期タスクが承認プロンプト待ちで停止しても、①プロンプトにタイムアウトが無い ②`notifyOnCompletion: false` ③pd に watchdog が無い、の 3 つが重なると誰にも見えない。実際に検出したのは pd でも定期レビューでもなく **investing の launchd watchdog** だった。**このレビュー自身の可用性が、このレビューの外側から支えられている**という非対称は記録しておく価値がある
+- **今週の主題は「気づけない構造」**。定期タスクは毎週起動していたが、**8/10・8/24 の回はレポートを書いたあと push 手前で切れていた**。①承認プロンプトにタイムアウトが無い ②`notifyOnCompletion: false` ③pd に watchdog が無い、が重なると**「回の後始末だけが落ちる」故障は次の run からも見えない**（タスク自体は毎週動いているので）。検出したのは pd でも定期レビューでもなく investing の launchd watchdog で、**このレビュー自身の可用性がレビューの外側から支えられている**という非対称は記録に値する
+- **ただしその外側の watchdog も初報を誤った** — 「10 日間停止」は終わった実行を除外しない誤検出で、本 run の最中に `9eb7bc3` が撤回した。**「未応答の tool_use」は死因の痕跡であって、いま待っている証拠ではない**。監視を足すこと自体が新しい誤報源になるという教訓が、同じ週に両方向で出た
 - **pd の持ち越し 7 件は 3 週間まったく動いていない**。原因は明確で、pd に固有のセッションが 2026-08-19 以来開かれていないこと。pd への commit 18 件はすべて gonin / investing / futari 発のセッションからの横断編集で、**pd は「他の repo で得た知見を書き込む先」になっており、「自分の宿題を片付ける場所」ではなくなっている**。knowledge/ には CN-018〜021 と `reference/` 新設が積まれた一方、state.md と inbox は 3 週間止まったまま — この非対称は運用の劣化ではなく**重心の移動**として読むほうが正確かもしれない（判断は pjdhiro）
 - **PR-3 が PASS → WARN**。降格の理由は状況の悪化ではなく、**前回の grep 結果の読みが甘かった**こと。hit 一覧のうち as の template だけが「生きた指示文書が retired 資産を指している」型で、他（SKILL 自己説明・教訓文書）とは質が違う
 - **PR-4 は 5/5・11/11 で全緑だが、そこに至るまでに 2 つの罠を踏んだ** — サンドボックスの localhost 遮断（memory 既知）と、24 日間 leak していた headless Chrome。**どちらも「テストが赤い」ではなく「テストが走らない」形で現れる**ので、SKIP と書いて流すと品質ゲートが静かに空洞化する
 - PR-6 は 3 回連続 PASS。凍結宣言は定着している
 - 間隔は 7 日（想定どおり）。scheduler の欠測なし
-- 定期レビューは検出と記録のみ。本 run でも修正・prune・削除は実行していない（read-only 制約）
+- **サンドボックス修正の実地テスト＝成功**。本 run の `git push origin develop` は **承認プロンプトなしで完走**した（`9eb7bc3..99a0323`）。`d26328a` の `sandbox.excludedCommands` は効いている
+- **本 run の最中に develop が 1 つ進んだ**（08:38 `9eb7bc3`・別セッション）。本レポートの commit `99a0323` はその上に乗っており衝突なし。したがって **pd state.md の未反映は正確には 19 コミット**（本文の「18」は 08:31 時点のスナップショット）
+- 定期レビューは検出と記録のみ。本 run でも修正・prune・削除は実行していない（read-only 制約。commit / push はレポートと state のみ）
