@@ -114,6 +114,18 @@
     ]
   },
   "sandbox": {
+    "excludedCommands": [
+      "git push",
+      "git push *",
+      "git fetch",
+      "git fetch *",
+      "git pull",
+      "git pull *",
+      "git ls-remote",
+      "git ls-remote *",
+      "gh",
+      "gh *"
+    ],
     "filesystem": {
       "allowWrite": [
         ".claude/settings.json"
