@@ -28,6 +28,7 @@
 | CN-018 | [移行は切り替えでなく重ねる — 新を先に見て、無ければ旧へ落とす](CN-018_migrate-by-overlap.md) | CN-013, CN-016, reference/cloudflare-pages-deploy-mode-is-one-way.md, gonin#3 | 探索的（1事例） |
 | CN-019 | [認証は入口だけ守り、本体は自分で証明を検証して振り分ける](CN-019_guard-only-the-door-verify-inside.md) | CN-013, CN-018, gonin#15・#28 | 探索的（1事例） |
 | CN-020 | [重複は症状で、原因は責務の多重化 — 削るのでなく、器の仕事を1つに絞る](CN-020_duplication-is-a-symptom-of-multiplexed-responsibility.md) | CN-014, CN-015, CN-013, gonin `garage/EDITORIAL.md` 7., gonin#70 | 探索的（1事例） |
+| CN-021 | [「誰のものか言えるか」と「そこへ書き込んでよいか」は別の条件 — 1つの旗にまとめない](CN-021_identity-vs-write-safety.md) | CN-013, CN-015, CN-019, gonin#76・#77 | 探索的（1事例） |
 
 ---
 
@@ -47,3 +48,4 @@
 | 2026-09-02 | CN-018 追加（gonin の画像置き場を git→R2 へ移した作業からの帰納。あわせて `knowledge/reference/` を新設し Cloudflare の制約2件を格納） |
 | 2026-09-02 | CN-019 追加（gonin の投稿ページを Access でメンバー限定にし、権限のない人に案内を出した作業からの帰納。`reference/` に Bootstrap の色変数と HTML コメントの2件を追加） |
 | 2026-09-06 | CN-020 追加（gonin のバイクのノート第4章の推敲からの帰納。1枚のカードが4つの仕事を持つと同じ結論が4回現れ、割ったら字数が21%落ちた） |
+| 2026-09-06 | CN-021 追加（gonin のセッションログのマーカー修正からの帰納。同一性の判定と書き込みの安全性を1つの旗にまとめ、同じセッションに ID が2つ出た） |
