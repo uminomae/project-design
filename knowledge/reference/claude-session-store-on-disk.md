@@ -44,11 +44,18 @@
 
 `isRunning` が無いので、transcript の形で見る。
 
+**`isArchived` が false**（＝アプリがまだ走っている扱い）で、かつ
 **最後の assistant メッセージが `tool_use` で、その `tool_result` が無く、
 transcript が N 分更新されていない** → ツールの返りを待ったまま進んでいない。
 
 承認プロンプトで固まった実績はどれもこの形（末尾が `(called Artifact)` / `(called Bash)`）。
 → [[sandboxed-git-cannot-reach-keychain]]
+
+**`isArchived` を外すと誤検出する。** アプリは終わった実行を archived にするが、
+**その transcript の末尾が返りの無い `tool_use` のまま終わっていることは普通にある**
+（途中で切れた実行の名残）。ここを見落として、毎週完走している定期タスクを
+「10 日間止まっている」と報告した（2026-09-06 の実例）。**「未応答の tool_use」は
+死因の痕跡であって、いま待っている証拠ではない。**
 
 読むときの注意:
 

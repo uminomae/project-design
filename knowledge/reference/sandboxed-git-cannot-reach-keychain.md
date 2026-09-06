@@ -60,16 +60,21 @@ fatal: could not read Username for 'https://github.com': Device not configured
 定期タスクのような無人セッションはそこで**永久に止まる**。しかも走りっぱなしのセッションが残ると
 次の枠が出ないので、その自動化そのものが死ぬ。
 
-実測 2 件（どちらも 2026-09-06 に発覚）:
+実測（2026-09-06）:
 
-| repo | 何が止まったか | 止まっていた期間 |
-|---|---|---|
-| investing | `investing-artifact-refresh`（Artifact 上書きの直後・書き戻しに到達せず） | 数時間 |
-| project-design | `weekly-periodic-review`（`git push origin develop` のリトライ） | **10 日**（8/27〜9/6） |
+| repo | 何が起きたか |
+|---|---|
+| investing | `investing-artifact-refresh` が Artifact 上書きの直後に止まり、db への書き戻しに到達しなかった |
+| project-design | `weekly-periodic-review` の 2 回の実行（8/10・8/24）が、`git push origin develop` のリトライで**途中で切れた** |
 
-pd のほうは誰も気づいていなかった。検出したのは
-[investing の task-watchdog](https://github.com/uminomae/investing/blob/main/scripts/task-watchdog.py)。
-→ [[claude-session-store-on-disk]]
+**pd のほうは「定期実行が死んでいた」のではない。** 週次レビューは 7/6 から 9/7 まで毎週走っていて、
+レビュー成果物も全部コミットされている。止まったのはその回の後半だけで、次の枠はふつうに出ている。
+（初報で「10 日間止まっていた」と書いたのは
+[task-watchdog](https://github.com/uminomae/investing/blob/main/scripts/task-watchdog.py)
+の誤検出。終わった実行を除いていなかった → [[claude-session-store-on-disk]]）
+
+**実害の出方は「自動化が死ぬ」ではなく「その回の後始末が飛ぶ」**。investing の例では db が
+`running` のまま残り、ページの更新ボタンが押せなくなった。気づきにくいのはどちらも同じ。
 
 ## 注意
 
