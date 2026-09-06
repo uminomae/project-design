@@ -29,3 +29,5 @@
 | [string-replace-expands-dollar-patterns.md](string-replace-expands-dollar-patterns.md) | `String.replace` の置換文字列は `$&` `$'` `` $` `` `$$` を展開する。利用者の文を差し込むときは関数で渡す | 2026-09-03 |
 | [img-in-hidden-subtree-still-loads-unless-lazy.md](img-in-hidden-subtree-still-loads-unless-lazy.md) | `display:none` の中の `<img>` も読み込まれる。隠す画像には全部 `loading="lazy"`、開く直前に eager へ | 2026-09-03 |
 | [cloud-env-vars-read-once-at-session-start.md](cloud-env-vars-read-once-at-session-start.md) | クラウド環境の環境変数はセッション開始時に1回だけ読まれ、走っているセッションには効かない。Network access は即時に効く | 2026-09-03 |
+| [sandboxed-git-cannot-reach-keychain.md](sandboxed-git-cannot-reach-keychain.md) | サンドボックスの中から macOS キーチェーンに届かない。`git push` / `gh` が落ちるのは TLS ではなく認証情報で、逃がし方は `sandbox.excludedCommands`（`allowMachLookup` は存在しない） | 2026-09-06 |
+| [claude-session-store-on-disk.md](claude-session-store-on-disk.md) | 定期タスクのセッションは `~/.claude/sessions/` には載らない。アプリ内セッションは `Application Support/Claude/claude-code-sessions/local_*.json`。止まった判定は transcript の未応答 `tool_use` で見る | 2026-09-06 |
