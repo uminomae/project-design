@@ -31,3 +31,5 @@
 | [cloud-env-vars-read-once-at-session-start.md](cloud-env-vars-read-once-at-session-start.md) | クラウド環境の環境変数はセッション開始時に1回だけ読まれ、走っているセッションには効かない。Network access は即時に効く | 2026-09-03 |
 | [sandboxed-git-cannot-reach-keychain.md](sandboxed-git-cannot-reach-keychain.md) | サンドボックスの中から macOS キーチェーンに届かない。`git push` / `gh` が落ちるのは TLS ではなく認証情報で、逃がし方は `sandbox.excludedCommands`（`allowMachLookup` は存在しない・**除外はスクリプトの中には効かない**） | 2026-09-07 |
 | [claude-session-store-on-disk.md](claude-session-store-on-disk.md) | 定期タスクのセッションは `~/.claude/sessions/` には載らない。アプリ内セッションは `Application Support/Claude/claude-code-sessions/local_*.json`。止まった判定は transcript の未応答 `tool_use` で見る | 2026-09-06 |
+| [merge-conflict-both-sides-may-be-unclosed.md](merge-conflict-both-sides-may-be-unclosed.md) | 衝突の「両方残す」が正しいのは両側が構文的に閉じているときだけ。直後の閉じ括弧は1つしかない＝片方が開いたまま通る。解決後にパーサへ通す | 2026-09-07 |
+| [sandbox-proxy-truncates-large-responses.md](sandbox-proxy-truncates-large-responses.md) | サンドボックスの egress プロキシが大きな応答を約 192KB で打ち切る（`IncompleteRead`）。TLS でも API でもなく経路。launchd（外）は無事なので「毎日動くのに手で叩くと落ちる」形で出る | 2026-09-07 |
