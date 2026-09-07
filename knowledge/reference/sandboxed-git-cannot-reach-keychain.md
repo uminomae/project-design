@@ -46,6 +46,25 @@ fatal: could not read Username for 'https://github.com': Device not configured
 `~/.claude/settings.json` が `Bash(*)` を allow していれば**承認プロンプトは出ない**。
 `excludedCommands` と `allowUnsandboxedCommands` はどちらも Scope が "Any file" ＝ project 設定でも効く。
 
+## ⚠️ 除外は「Claude が打つコマンドの文字列」にしか効かない（スクリプトの中は素通りしない）
+
+**追記 2026-09-07**（investing で実測）。照合されるのは Bash ツールに渡した**そのコマンド行**だけ。
+シェルスクリプトやサブシェルの**内側**で走る `git push` は除外の対象にならず、サンドボックスの中に残る。
+
+| 打ち方 | 結果 |
+|---|---|
+| `git ls-remote origin main` を直接 | 成功 |
+| `bash <script>`（script の中で同じ `git ls-remote`） | `Device not configured` で失敗 |
+
+**確かめるときの落とし穴**: 外側のコマンド行に除外語（`git ls-remote` など）を含めたまま
+入れ子を試すと、**外側がマッチして全体がサンドボックス外で走る**ので「入れ子でも通る」と読めてしまう。
+外側に除外語を一切含めない形で打ち直すこと（初回の確認はこれで誤った）。
+
+**効いてくる場面**＝publish 系スクリプトが自分で push する作り。investing の
+`scripts/publish.sh` の push は無人タスク（`investing-artifact-refresh`）から回すと毎回落ちる。
+直しは**呼ぶ側が自分のコマンドとして `git push` を 1 回だけ打つ**（スクリプト側の失敗は無視して先へ進む）。
+スクリプトを丸ごと `excludedCommands` に載せる手もあるが、取得処理まで含めてサンドボックス外に出ることになる。
+
 ## 存在しない設定を探さないこと
 
 **`sandbox.network.allowMachLookup` は無い。** キーチェーンは Mach サービスなので
