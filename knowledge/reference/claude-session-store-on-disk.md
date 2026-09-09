@@ -2,7 +2,7 @@
 
 **確認日**: 2026-09-06
 **一次ソース**: この Mac の実測（Claude Code 2.1.231 / デスクトップアプリ）。
-[investing の task-watchdog](https://github.com/uminomae/investing/blob/main/scripts/task-watchdog.py)
+旧 investing の task-watchdog（`scripts/task-watchdog.py`・GitHub の repo は 2026-09-09 に削除＝手元の clone `/Users/uminomae/dev/investing` と `~/dev/investing.bundle` に残る）
 を書くために特定した。公式ドキュメントに記載は見つからないので、**アプリの更新で変わりうる**
 
 ---

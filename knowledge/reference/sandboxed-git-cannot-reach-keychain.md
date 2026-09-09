@@ -89,7 +89,7 @@ fatal: could not read Username for 'https://github.com': Device not configured
 **pd のほうは「定期実行が死んでいた」のではない。** 週次レビューは 7/6 から 9/7 まで毎週走っていて、
 レビュー成果物も全部コミットされている。止まったのはその回の後半だけで、次の枠はふつうに出ている。
 （初報で「10 日間止まっていた」と書いたのは
-[task-watchdog](https://github.com/uminomae/investing/blob/main/scripts/task-watchdog.py)
+task-watchdog（旧 investing の `scripts/task-watchdog.py`・GitHub の repo は 2026-09-09 に削除＝手元の clone `/Users/uminomae/dev/investing` と `~/dev/investing.bundle` に残る）
 の誤検出。終わった実行を除いていなかった → [[claude-session-store-on-disk]]）
 
 **実害の出方は「自動化が死ぬ」ではなく「その回の後始末が飛ぶ」**。investing の例では db が
