@@ -1,18 +1,18 @@
 {
-  "last_run": "2026-09-07T08:31:00+09:00",
-  "last_report": ".cache/reviews/periodic/REVIEW-periodic-20260907-0831.md",
+  "last_run": "2026-09-14T08:31:00+09:00",
+  "last_report": ".cache/reviews/periodic/REVIEW-periodic-20260914-0831.md",
   "scheduler": "claude-code scheduled task: weekly-periodic-review (Mon 08:30 local)",
-  "prev_run": "2026-08-31T08:34:00+09:00",
+  "prev_run": "2026-09-07T08:31:00+09:00",
   "interval_days": 7,
   "repos": {
     "project-design": {
       "branch": "develop",
-      "head": "99a0323",
-      "head_at_scan": "b7f7dfa",
+      "head": "1842744",
       "dirty": 1,
       "ahead": 0,
       "behind": 0,
-      "status": "WARN"
+      "status": "WARN",
+      "note": "state.md 未反映 25 コミット・inbox periodic 3 通残置・孤児 dir 2 件 58MB（5 回連続）"
     },
     "creation-space": {
       "branch": "develop",
@@ -20,7 +20,8 @@
       "dirty": 0,
       "ahead": 0,
       "behind": 0,
-      "status": "WARN"
+      "status": "WARN",
+      "note": "孤児 worktree 10 件 8.0GB（6 回連続）・2 PDF 未救出・cs#242 137 日 OPEN"
     },
     "kesson-driven-thinking": {
       "branch": "main",
@@ -34,10 +35,11 @@
     "pjdhiro": {
       "branch": "main",
       "head": "8fa721f",
-      "dirty": 1,
+      "dirty": 0,
       "ahead": 0,
       "behind": 0,
-      "status": "PASS"
+      "status": "WARN",
+      "note": "新規指摘: 登録 worktree 11 件 6.4GB（全 HEAD origin/main 済み・7 件 dirty に garage 下書き等）。本体 garage/ 残骸は解消"
     },
     "awareness-space": {
       "branch": "develop",
@@ -45,7 +47,8 @@
       "dirty": 0,
       "ahead": 0,
       "behind": 0,
-      "status": "WARN"
+      "status": "WARN",
+      "note": "pd#115 proposal 73 日・template:87 retired 参照（2 回連続）"
     },
     "kesson-space": {
       "branch": "develop",
@@ -65,12 +68,11 @@
     },
     "myhome": {
       "branch": "main",
-      "head": "2bab7c9",
+      "head": "7675c94",
       "dirty": 0,
       "ahead": 0,
       "behind": 0,
-      "status": "PASS",
-      "note": "前回 behind=5 を解消"
+      "status": "PASS"
     },
     "uminomae.github.io": {
       "branch": "main",
@@ -90,30 +92,29 @@
     },
     "futari": {
       "branch": "main",
-      "head": "d53b712",
+      "head": "d7fea39",
       "dirty": 0,
       "ahead": 0,
       "behind": 0,
-      "status": "PASS",
-      "note": "前回 behind=11 を解消"
+      "status": "PASS"
     },
     "investing": {
       "branch": "main",
-      "head": "1c8ae95",
-      "dirty": 12,
-      "ahead": 0,
-      "behind": 0,
-      "status": "PASS",
-      "note": "前回 ahead=2 を解消。dirty 12 は launchd 日次更新の生成物"
+      "head": "e077ae5",
+      "dirty": 0,
+      "ahead": null,
+      "behind": null,
+      "status": "INFO",
+      "note": "origin (uminomae/investing) が GitHub に存在しない（gonin#228・pd 0871205）。upstream 比較不能。最終 commit 09-09"
     },
     "gonin": {
       "branch": "main",
-      "head": "6d99aa81",
+      "head": "42017c9e",
       "dirty": 0,
       "ahead": 0,
-      "behind": 0,
+      "behind": 4,
       "status": "INFO",
-      "note": "初回検出（2026-09-07）。PR-1 のみ実施。CLAUDE.md / .cache 整備済みで次回から PR-2/3/6 対象"
+      "note": "behind 4 は launchd garden 自動 commit のみ。今回から PR-2/3/6 対象。session-log-check 合計 93 件（gonin 管轄）"
     },
     "futari-gate-throwaway": {
       "branch": "main",
@@ -122,13 +123,22 @@
       "ahead": 0,
       "behind": 0,
       "status": "INFO",
-      "note": "初回検出（2026-09-07）。09-05 の実験 repo・CLAUDE.md / .cache なし。PR-1 のみ実施"
+      "note": "不変。去就は pjdhiro 判断待ち"
+    },
+    "shaman-meta-site": {
+      "branch": "main",
+      "head": "018d291",
+      "dirty": 0,
+      "ahead": null,
+      "behind": null,
+      "status": "INFO",
+      "note": "初回検出（2026-09-14）。remote なし・1 commit（09-13）・CLAUDE.md / .cache なし。PR-1 のみ"
     }
   },
   "pending": {
     "codex": 0,
     "followups": 11,
-    "carried_over": 7
+    "carried_over": 9
   },
   "checks": {
     "PR-1": "WARN",
@@ -138,36 +148,41 @@
     "PR-5": "WARN",
     "PR-6": "PASS"
   },
+  "worktree_debt_gb": {
+    "creation-space_orphan": 8.0,
+    "pjdhiro_registered": 6.4,
+    "project-design_orphan": 0.06
+  },
   "notes": {
     "resolved_this_run": [
-      "investing ahead=2 が解消（push 済み）",
-      "futari behind=11 が解消（ローカル main が追随・ui/ 未コミット 2 件も消滅）",
-      "myhome behind=5 と dirty 2 が解消",
-      "PR-1 の同期ずれが 3 件 → 0 件（14 repo すべて ahead=0/behind=0/diverged=0）"
+      "leak した headless Chrome（PID 624）が消滅",
+      "pjdhiro 本体 checkout の garage/ 残骸が解消（dirty 0）",
+      "gonin の 0B 空 dir 2 件が消滅（別 1 件が新規）",
+      "0907 回は完走（99a0323 / 9bed217 が origin 到達）"
     ],
     "new_this_run": [
-      "gonin / futari-gate-throwaway を初回検出（対象 repo 12 → 14）",
-      "過去の run の後半（8/10・8/24）が git push の承認プロンプト待ちで切れていたことが 09-06 に判明・修正（d26328a）。本 run は修正後の初回実行で、push は承認プロンプトなしで完走＝修正は有効",
-      "初報の「週次レビューが 10 日間停止」は task-watchdog の誤検出で、本 run 中（08:38）に 9eb7bc3 が撤回。週次レビューは 7/6 から 9/7 まで毎週走っている。終わった実行を除外しない監視は同じ誤報を出す（isArchived 判定が要る）",
-      "PR-3 が PASS → WARN。as docs/templates/codex-worker-instruction.md:87 が retired skill (cs commit-review-with-log) を参照している（前回の取りこぼし）",
-      "leak した headless Chrome PID 624 が 2026-08-13 から 24 日稼働し puppeteer プロファイルをロック。responsive-test が起動不能だった（TMPDIR 振り替えで回避・5/5 PASS）",
-      "pd state.md の未反映が 3 → 18 コミットへ拡大。18 件すべてに Session: trailer があり、すべて他 repo 発（gonin/investing/futari）の横断編集",
-      "gonin 2 / myhome 4 / futari 1 の孤児 worktree dir を検出（すべて 0B の空 dir・実害なし）"
+      "pjdhiro 登録 worktree 11 件 6.4GB（0706〜0907 の 9 回すべてで見落とし。登録済み worktree の容量・dirty を数えていなかった）",
+      "investing の GitHub repo 消滅（gonin#228 で既知）",
+      "shaman-meta-site を初回検出（remote なし）",
+      "pd state.md の未コミット空行削除の mtime が 0824 定期レビュー実行中",
+      "定期レビュー commit に Session: trailer が無い構造",
+      "ループ内 git fetch がサンドボックス内で認証失敗（94b915f の再現）→ サンドボックス外で再実行"
     ],
     "unresolved_from_prev": [
-      "cs#242（dev/ 配下の rm -rf を allow）が 2026-04-30 から 130 日 OPEN。cs 8.0GB と pd 58MB の掃除を両方止めている",
-      "cs 孤児 worktree 10 件 8.0GB の削除（5 回連続）。前提の 2 PDF 救出すら未着手",
-      "pd 孤児 worktree dir 2 件 58MB の物理削除（4 回連続・rm 権限待ち）",
-      "pd state.md の進行中マーカー未クローズ（未反映 18 コミット・14 日未コミット）",
-      "二重生成 wiki ページ 2 組の採否（pjdhiro 判断・4 回連続）",
-      "as inbox の pd#115 F4' proposal 滞留（66 日）",
-      "wiki-cross-check.mjs が missing 5 件を列挙しない",
-      "pjdhiro garage/ 残骸の整理"
+      "cs#242 137 日 OPEN（6 回連続）",
+      "cs 孤児 worktree 10 件 8.0GB・2 PDF 未救出（6 回連続）",
+      "pd 孤児 worktree dir 2 件 58MB（5 回連続）",
+      "pd state.md 未反映 25 コミット・inbox periodic 3 通",
+      "二重生成 wiki 2 組（5 回連続）",
+      "as proposal 73 日・as template retired 参照",
+      "wiki-cross-check missing 列挙なし",
+      "myhome / futari 空 dir・futari-gate-throwaway 去就"
     ],
-    "blocker": "cs#242 が 130 日 OPEN。加えて、回ごとの完走を pd 側で確認できない構造が未解消（レポートを書いたあと push だけ落ちても、次の run からは動いていたように見える）",
+    "skill_revision_proposal": "PR-1 に「登録済み worktree の最終更新日・dirty・容量」と「remote の有無」を追加（pjdhiro 承認事項）",
     "rescue_before_delete": [
       "creation-space/.claude/worktrees/cs219-narrow-scope/knowledge/raw/D03_winter-chambon_1986_gel-point.pdf",
-      "creation-space/.claude/worktrees/cs219-narrow-scope/knowledge/raw/D25_vangennep_1909_rites-of-passage.pdf"
+      "creation-space/.claude/worktrees/cs219-narrow-scope/knowledge/raw/D25_vangennep_1909_rites-of-passage.pdf",
+      "pjdhiro/.claude/worktrees/* の未コミット garage/ 下書き・_chart-src/gen_*.py 修正・assets/garage/credits-additional.json（移転先未照合）"
     ]
   }
 }
