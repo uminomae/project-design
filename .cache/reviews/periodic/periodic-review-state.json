@@ -1,18 +1,18 @@
 {
-  "last_run": "2026-09-21T08:32:00+09:00",
-  "last_report": ".cache/reviews/periodic/REVIEW-periodic-20260921-0832.md",
+  "last_run": "2026-09-28T08:45:00+09:00",
+  "last_report": ".cache/reviews/periodic/REVIEW-periodic-20260928-0845.md",
   "scheduler": "claude-code scheduled task: weekly-periodic-review (Mon 08:30 local)",
-  "prev_run": "2026-09-14T08:31:00+09:00",
+  "prev_run": "2026-09-21T08:32:00+09:00",
   "interval_days": 7,
   "repos": {
     "project-design": {
       "branch": "develop",
-      "head": "ad3ee9d",
+      "head": "d1be0fe",
       "dirty": 1,
       "ahead": 0,
       "behind": 0,
       "status": "WARN",
-      "note": "state.md 未反映 26 コミット（35 日）・inbox periodic 4 通・孤児 dir 2 件 58MB（6 回連続）。今週の人のセッション発 commit は 0"
+      "note": "state.md 未反映 27 コミット（42 日）・inbox periodic 5 通・worktree 158MB。人のセッション 4 週連続ゼロ"
     },
     "creation-space": {
       "branch": "develop",
@@ -21,7 +21,7 @@
       "ahead": 0,
       "behind": 0,
       "status": "WARN",
-      "note": "孤児 worktree 10 件 8.0GB ＋ 登録 3 件 2.9GB（新規計上）= 11GB。救出対象ゼロを MD5/git 履歴で確定（2 PDF は main に別名で一致・他は意図的削除）。cs#242 144 日 OPEN"
+      "note": "不変。worktree 13 件 11GB（救出不要は 0921 確定）。cs#242 151 日 OPEN（催促は 0921 で打ち止め）"
     },
     "kesson-driven-thinking": {
       "branch": "main",
@@ -41,7 +41,7 @@
       "ahead": 0,
       "behind": 0,
       "status": "WARN",
-      "note": "登録 worktree 11 件 6.4GB。0821 の退避（gonin/garage/_rescue-pjdhiro）で選別済みを MD5 確認。未照合は route-ladder.svg / weapon-radar.svg の 2 件 12.6KB のみ。未マージ remote 枝 14 本"
+      "note": "不変。worktree 6.4GB。未判断は 2 SVG 12.6KB のみ"
     },
     "awareness-space": {
       "branch": "develop",
@@ -50,7 +50,7 @@
       "ahead": 0,
       "behind": 0,
       "status": "WARN",
-      "note": "pd#115 proposal 80 日（5 回連続）・codex-worker-instruction.md:87 retired 参照（3 回連続・1 行）"
+      "note": "proposal 87 日（6 回連続）・codex-worker-instruction.md:87 retired 参照（4 回連続）"
     },
     "kesson-space": {
       "branch": "develop",
@@ -75,8 +75,14 @@
       "dirty": 0,
       "ahead": 0,
       "behind": 0,
-      "status": "PASS",
-      "note": "登録 worktree 1 件 68MB・空 dir 4 件（不変）"
+      "status": "WARN",
+      "note": "ローカル枝 claude/issue-342-b754c8 に 09-27 の 2 commit（#342 H）が upstream 無し・main 未到達。gonin [E] 検出漏れ",
+      "local_unpushed": {
+        "branch": "claude/issue-342-b754c8",
+        "worktree": ".claude/worktrees/continuation-574b7f",
+        "commits": 2,
+        "last": "2026-09-27T09:00"
+      }
     },
     "uminomae.github.io": {
       "branch": "main",
@@ -116,12 +122,12 @@
     },
     "gonin": {
       "branch": "main",
-      "head": "3e85deec",
+      "head": "e8fb852e",
       "dirty": 0,
       "ahead": 0,
-      "behind": 1,
+      "behind": 3,
       "status": "INFO",
-      "note": "behind 1 は launchd garden 自動 commit。session-log-check 合計 93 件・増分 0（gonin 管轄）。空 dir 1 件"
+      "note": "behind 3 は launchd garden 自動 commit。session-log-check 93・増分 0（3 週連続）。[E] が upstream 無しローカル枝を拾わない疑い"
     },
     "futari-gate-throwaway": {
       "branch": "main",
@@ -140,14 +146,15 @@
       "behind": null,
       "status": "INFO",
       "no_remote": true,
-      "note": "remote なし・1 commit（09-13）・629M。バックアップが手元 1 箇所のみの状態が 2 週連続。PR-1 のみ"
+      "note": "remote なし・bundle なし（3 週連続）"
     }
   },
   "pending": {
     "codex": 0,
-    "followups": 9,
+    "followups": 11,
     "carried_over": 10,
-    "resolved_this_run": 4
+    "resolved_this_run": 0,
+    "new_this_run": 2
   },
   "checks": {
     "PR-1": "WARN",
@@ -168,21 +175,13 @@
     "rescue_remaining": "pjdhiro bike-selection-height-eed99b/garage/assets/{route-ladder,weapon-radar}.svg のみ（12.6KB・判断待ち）"
   },
   "notes": {
-    "resolved_this_run": [
-      "cs 孤児 worktree の『2 PDF 未救出』は 6 回連続の誤検知だった（main に別名で MD5 一致・tracked）",
-      "cs 孤児 10 件の他の差分 9 件も全て git 履歴から復元可能（cs#249 / cs#252 の意図的削除・589c1d1 の旧版）＝救出対象ゼロ",
-      "pjdhiro の garage 下書きは 2026-08-21 に選別済みだった（gonin/garage/_rescue-pjdhiro/README.md ＋ ZX-DIFF.md）。MD5 で裏取り",
-      "investing は repo 自身がアーカイブを宣言・bundle 保全済み → SKIP へ再分類",
-      "leak した headless Chrome は 2 週連続 0 件"
-    ],
+    "resolved_this_run": [],
     "new_this_run": [
-      "cs の登録済み worktree 3 件 2.9GB を新規に計上（前回 pjdhiro で見つけた盲点が cs にもあった）",
-      "pjdhiro の未照合残は route-ladder.svg / weapon-radar.svg の 2 件のみ（0821 の退避 README の対象 3 系統どれにも入っていない）",
-      "定期レビュー自身が毎回 .cache/wiki-conflict-candidates-{日付}.md を書き 6 本溜まっている（read-only 方針と不整合・日付が実行日の前日）",
-      "cs#242 のブロッカーの性質が『救出待ち』から『実行権限だけ』に変わった"
+      "myhome ローカル枝 claude/issue-342-b754c8 の未 push 2 commit（09-27・#342 H）",
+      "gonin session-log-check [E] が upstream 無しローカル枝を拾わない疑い"
     ],
     "unresolved_from_prev": [
-      "cs#242 144 日 OPEN（7 回連続・ただし前提は解消済み）",
+      "cs#242 151 日 OPEN（8 回連続・ただし前提は解消済み）",
       "pd state.md 未反映 26 コミット（35 日）・inbox periodic 4 通",
       "pd 孤児 worktree dir 2 件 58MB（6 回連続）",
       "二重生成 wiki 2 組（6 回連続）",
@@ -196,11 +195,17 @@
     "skill_revision_proposal": [
       "前回提案（PR-1 に登録 worktree の容量・dirty・remote の有無を追加）は本 run で有効性を確認（cs 2.9GB を新規検出）",
       "PR-1 に『救出候補の機械照合』を追加: ファイル名でなく MD5 ＋ git log --all --find-object / git show <commit>^:<path> で照合する。『未照合』を WARN として繰り越す前に照合する",
-      "archived repo の判定を state で持つ: repo ごとに archived: true ＋ 根拠を記録し PR-1 の upstream 比較を飛ばす（kdt=GitHub archived / investing=repo 自身の宣言）"
+      "archived repo の判定を state で持つ: repo ごとに archived: true ＋ 根拠を記録し PR-1 の upstream 比較を飛ばす（kdt=GitHub archived / investing=repo 自身の宣言）",
+      "PR-1 に upstream 無しローカル枝の列挙（for-each-ref）を追加",
+      "不変の持ち越しは 1 行一覧に畳み、Findings は新規・変化分だけにする",
+      "pd inbox の periodic は最新 1 通のみ残す、または Issue コメントへ切替"
     ],
     "rescue_before_delete": [
       "pjdhiro/.claude/worktrees/bike-selection-height-eed99b/garage/assets/route-ladder.svg（6,045B・2026-07-25）",
       "pjdhiro/.claude/worktrees/bike-selection-height-eed99b/garage/assets/weapon-radar.svg（6,558B・2026-07-25）"
+    ],
+    "skipped_this_run": [
+      "wiki-cross-check --all（入力 pd wiki / cs とも前回から不変・毎回 .cache へ書くため）"
     ]
   }
 }
