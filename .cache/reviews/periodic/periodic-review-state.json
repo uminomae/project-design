@@ -1,18 +1,18 @@
 {
-  "last_run": "2026-09-28T08:45:00+09:00",
-  "last_report": ".cache/reviews/periodic/REVIEW-periodic-20260928-0845.md",
+  "last_run": "2026-10-05T08:47:00+09:00",
+  "last_report": ".cache/reviews/periodic/REVIEW-periodic-20261005-0847.md",
   "scheduler": "claude-code scheduled task: weekly-periodic-review (Mon 08:30 local)",
-  "prev_run": "2026-09-21T08:32:00+09:00",
+  "prev_run": "2026-09-28T08:45:00+09:00",
   "interval_days": 7,
   "repos": {
     "project-design": {
       "branch": "develop",
-      "head": "d1be0fe",
+      "head": "77dc18e",
       "dirty": 1,
       "ahead": 0,
       "behind": 0,
       "status": "WARN",
-      "note": "state.md 未反映 27 コミット（42 日）・inbox periodic 5 通・worktree 158MB。人のセッション 4 週連続ゼロ"
+      "note": "state.md 未反映 28 コミット（49 日）・inbox periodic 6 通・worktree 158MB。人のセッション 5 週連続ゼロ"
     },
     "creation-space": {
       "branch": "develop",
@@ -21,7 +21,7 @@
       "ahead": 0,
       "behind": 0,
       "status": "WARN",
-      "note": "不変。worktree 13 件 11GB（救出不要は 0921 確定）。cs#242 151 日 OPEN（催促は 0921 で打ち止め）"
+      "note": "不変。worktree 13 件 11GB。cs#242 158 日 OPEN"
     },
     "kesson-driven-thinking": {
       "branch": "main",
@@ -41,7 +41,19 @@
       "ahead": 0,
       "behind": 0,
       "status": "WARN",
-      "note": "不変。worktree 6.4GB。未判断は 2 SVG 12.6KB のみ"
+      "note": "不変。worktree 6.4GB。2 SVG 未判断。upstream 無し未 push ローカル枝 2 本（TV-dev-treneAlert / qt-codex・2025）",
+      "local_unpushed": [
+        {
+          "branch": "TV-dev-treneAlert",
+          "commits": 2,
+          "last": "2025-09-07"
+        },
+        {
+          "branch": "qt-codex",
+          "commits": 2,
+          "last": "2025-06-25"
+        }
+      ]
     },
     "awareness-space": {
       "branch": "develop",
@@ -50,7 +62,7 @@
       "ahead": 0,
       "behind": 0,
       "status": "WARN",
-      "note": "proposal 87 日（6 回連続）・codex-worker-instruction.md:87 retired 参照（4 回連続）"
+      "note": "proposal 94 日（7 回連続）・codex-worker-instruction.md:87 retired 参照（5 回連続）"
     },
     "kesson-space": {
       "branch": "develop",
@@ -58,16 +70,24 @@
       "dirty": 0,
       "ahead": 0,
       "behind": 0,
-      "status": "PASS"
+      "status": "INFO",
+      "note": "upstream 無し未 push ローカル枝 codexDT/kesson-about-modal-history（2026-04-01・1 commit）",
+      "local_unpushed": [
+        {
+          "branch": "codexDT/kesson-about-modal-history",
+          "commits": 1,
+          "last": "2026-04-01"
+        }
+      ]
     },
     "techo": {
       "branch": "main",
       "head": "892709f",
       "dirty": 1,
       "ahead": 0,
-      "behind": 0,
-      "status": "PASS",
-      "note": "登録 worktree 4 件 7.7MB（dirty 4 は軽微）"
+      "behind": 2,
+      "status": "INFO",
+      "note": "ローカル main behind 2（PR #142/#143 未 pull）。untracked note-rules-05-three-and-seven.md（07-03〜）"
     },
     "myhome": {
       "branch": "main",
@@ -76,7 +96,7 @@
       "ahead": 0,
       "behind": 0,
       "status": "WARN",
-      "note": "ローカル枝 claude/issue-342-b754c8 に 09-27 の 2 commit（#342 H）が upstream 無し・main 未到達。gonin [E] 検出漏れ",
+      "note": "2 週連続：claude/issue-342-b754c8 の 2 commit が upstream 無し・remote 未到達。gonin [E] 検出漏れ確定",
       "local_unpushed": {
         "branch": "claude/issue-342-b754c8",
         "worktree": ".claude/worktrees/continuation-574b7f",
@@ -102,12 +122,12 @@
     },
     "futari": {
       "branch": "main",
-      "head": "16035be",
+      "head": "15bfb92",
       "dirty": 0,
       "ahead": 0,
       "behind": 0,
       "status": "PASS",
-      "note": "活発（09-20）。登録 worktree 3 件 48MB・空 dir 1 件"
+      "note": "10-02 #196 の 2 commit。同期済み"
     },
     "investing": {
       "branch": "main",
@@ -122,12 +142,12 @@
     },
     "gonin": {
       "branch": "main",
-      "head": "e8fb852e",
+      "head": "e55675f4",
       "dirty": 0,
       "ahead": 0,
-      "behind": 3,
+      "behind": 0,
       "status": "INFO",
-      "note": "behind 3 は launchd garden 自動 commit。session-log-check 93・増分 0（3 週連続）。[E] が upstream 無しローカル枝を拾わない疑い"
+      "note": "63 commit（garden 自動 42）。session-log-check 93・増分 0（4 週連続）。[E] が upstream 無しローカル枝を拾わないことを確定"
     },
     "futari-gate-throwaway": {
       "branch": "main",
@@ -146,15 +166,15 @@
       "behind": null,
       "status": "INFO",
       "no_remote": true,
-      "note": "remote なし・bundle なし（3 週連続）"
+      "note": "remote なし・bundle なし（4 週連続）・未 push 1 commit"
     }
   },
   "pending": {
     "codex": 0,
-    "followups": 11,
-    "carried_over": 10,
+    "followups": 12,
+    "carried_over": 11,
     "resolved_this_run": 0,
-    "new_this_run": 2
+    "new_this_run": 3
   },
   "checks": {
     "PR-1": "WARN",
@@ -177,35 +197,36 @@
   "notes": {
     "resolved_this_run": [],
     "new_this_run": [
-      "myhome ローカル枝 claude/issue-342-b754c8 の未 push 2 commit（09-27・#342 H）",
-      "gonin session-log-check [E] が upstream 無しローカル枝を拾わない疑い"
+      "upstream 無し未 push ローカル枝の新規検出: kesson-space 1・pjdhiro 2（いずれも古い）",
+      "techo ローカル main behind 2・untracked 3 か月",
+      "gonin [E] 検出漏れの確定（myhome 枝 8 日経過でも 0）"
     ],
     "unresolved_from_prev": [
-      "cs#242 151 日 OPEN（8 回連続・ただし前提は解消済み）",
-      "pd state.md 未反映 26 コミット（35 日）・inbox periodic 4 通",
-      "pd 孤児 worktree dir 2 件 58MB（6 回連続）",
-      "二重生成 wiki 2 組（6 回連続）",
-      "as proposal 80 日・as codex-worker-instruction.md:87 retired 参照（3 回連続）",
-      "shaman-meta-site のバックアップなし（2 週連続）",
+      "myhome claude/issue-342-b754c8 未 push 2 commit（2 週連続）",
+      "cs#242 158 日 OPEN",
+      "pd state.md 28 コミット（49 日）・inbox periodic 6 通",
+      "pd 孤児 worktree dir・二重生成 wiki 2 組（8 回連続）",
+      "as proposal 94 日・as :87 retired 参照（5 回連続）",
+      "shaman-meta-site のバックアップなし（4 週連続）",
       "定期レビュー commit の Session: trailer 方針が未決",
-      "wiki-cross-check missing 列挙なし（5 回連続同数）",
-      "myhome 4 / gonin 1 / futari 1 の空 dir・futari-gate-throwaway の去就",
-      "pjdhiro 未マージ remote 枝 14 本"
+      "wiki-conflict-candidates 14 本",
+      "空 dir・futari-gate-throwaway の去就",
+      "pjdhiro 未マージ remote 枝 14 本・2 SVG"
     ],
     "skill_revision_proposal": [
-      "前回提案（PR-1 に登録 worktree の容量・dirty・remote の有無を追加）は本 run で有効性を確認（cs 2.9GB を新規検出）",
-      "PR-1 に『救出候補の機械照合』を追加: ファイル名でなく MD5 ＋ git log --all --find-object / git show <commit>^:<path> で照合する。『未照合』を WARN として繰り越す前に照合する",
-      "archived repo の判定を state で持つ: repo ごとに archived: true ＋ 根拠を記録し PR-1 の upstream 比較を飛ばす（kdt=GitHub archived / investing=repo 自身の宣言）",
-      "PR-1 に upstream 無しローカル枝の列挙（for-each-ref）を追加",
-      "不変の持ち越しは 1 行一覧に畳み、Findings は新規・変化分だけにする",
-      "pd inbox の periodic は最新 1 通のみ残す、または Issue コメントへ切替"
+      "PR-1 に upstream 無しローカル枝走査（for-each-ref + rev-list --not --remotes）を正式追加＝0928 提案を 1005 で試行し有効性確認（3 本新規検出）",
+      "不変の持ち越しを 1 行一覧に畳む形式を 1005 から試行",
+      "pd inbox の periodic は最新 1 通のみ残す、または Issue コメントへ切替（3 回目の提案）",
+      "PR-1 に救出候補の機械照合（MD5 + git log --all --find-object）",
+      "archived repo の判定を state で持つ（運用中）"
     ],
     "rescue_before_delete": [
       "pjdhiro/.claude/worktrees/bike-selection-height-eed99b/garage/assets/route-ladder.svg（6,045B・2026-07-25）",
       "pjdhiro/.claude/worktrees/bike-selection-height-eed99b/garage/assets/weapon-radar.svg（6,558B・2026-07-25）"
     ],
     "skipped_this_run": [
-      "wiki-cross-check --all（入力 pd wiki / cs とも前回から不変・毎回 .cache へ書くため）"
+      "wiki-cross-check --all（入力不変）",
+      "worktree 容量再計測（HEAD・構成不変）"
     ]
   }
 }
