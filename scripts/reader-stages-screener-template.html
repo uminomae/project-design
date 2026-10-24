@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<!--
+  ⚠️ このファイルは生成物です。直接編集しないでください。
+  正本:   knowledge/research/stages-screener/READER-stages-screener.md（本文）
+          knowledge/research/stages-screener/screener-data.json（問いと選択肢・帯の定義）
+  再生成: python3 scripts/build-reader-lp.py
+  手順:   reader/README.md
+
+  デザイン必須制約: docs/DESIGN-RULES.md §0a
+  - 全公開ページは index.html の VI を継承する（シェーダー背景 + グロークラス体系 + 確立パレット）
+  - カラー/タイポは src/styles/tokens.css の CSS 変数のみ。独自テーマ・埋め込み standalone CSS の新造は禁止
+  - ページ固有スタイルは src/styles/reader.css（tokens + glow の上に載せる）
+
+  ページの地図（LLM 向け）:
+  - 何か: 回答者の「ものの見方の広さ」を 16問×5択で見る自己スクリーナー。診断・正式な測定ではない
+  - 帯: 〜3.5／4.0〜4.5／5.0〜5.5／6.0／6.5（定義は STAGES の論文から要約・出典ページ付き）
+  - 採点: 選んだ帯を 0〜4 点（6.5 への近さ）として平均し 0〜100 に換算。帯ごとの分布で位置、隣り合う2帯がどちらも回答数の 1/3 以上で移行期
+  - 何を借り何を判断したか: 定義は論文、各選択肢がどの帯に当たるかは LLM と監修者の判断。求める正確性は内容の妥当性まで
+  - 状態: 選択肢は監修者レビュー前の下書き（公開前は noindex）
+-->
+<html lang="ja">
+<head>
+    <script>
+    if (!/^(localhost|127\.0\.0\.1)$/.test(location.hostname)) {
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-X5WQCB3JYT';
+      document.head.appendChild(s);
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-X5WQCB3JYT');
+    }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <title>ものの見方の広さスクリーナー — 16問×5択の自己スクリーニング（読み物） | Project Design</title>
+    <link rel="canonical" href="https://uminomae.github.io/project-design/reader/stages-screener.html">
+    <link rel="icon" href="../favicon.ico">
+    <meta name="description" content="ものの見方の広さ（包摂の度合いとメタ認知の層）を16問×5択で見る簡易スクリーナー。段階の定義は O'Fallon の STAGES モデルの公開論文（Integral Review 16(1), 2020）から借り、選択肢は LLM と監修者が判断して作った。診断ではなく、ゲームのような目安。">
+    <meta property="og:title" content="ものの見方の広さスクリーナー">
+    <meta property="og:description" content="ものの見方の広さ（包摂の度合いとメタ認知の層）を16問×5択で見る簡易スクリーナー。段階の定義は O'Fallon の STAGES モデルの公開論文（Integral Review 16(1), 2020）から借り、選択肢は LLM と監修者が判断して作った。診断ではなく、ゲームのような目安。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://uminomae.github.io/project-design/reader/stages-screener.html">
+    <meta property="og:site_name" content="Project Design">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="article:modified_time" content="<!--UPDATED-->">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Noto+Sans+JP:wght@300;400;500&family=Noto+Serif+JP:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../src/style.css">
+    <link rel="stylesheet" href="../src/styles/reader.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Article",
+          "headline": "ものの見方の広さスクリーナー — 16問×5択の自己スクリーニング",
+          "description": "ものの見方の広さ（包摂の度合いとメタ認知の層）を16問×5択で見る簡易スクリーナー。段階の定義は O'Fallon の STAGES モデルの公開論文（Integral Review 16(1), 2020）から借り、選択肢は LLM と監修者が判断して作った。診断ではなく、ゲームのような目安。",
+          "url": "https://uminomae.github.io/project-design/reader/stages-screener.html",
+          "mainEntityOfPage": "https://uminomae.github.io/project-design/reader/stages-screener.html",
+          "inLanguage": "ja",
+          "dateModified": "<!--UPDATED-->",
+          "about": [
+            {"@type": "Thing", "name": "自我発達の段階（STAGES モデルの帯 〜3.5／4.0〜4.5／5.0〜5.5／6.0／6.5）"},
+            {"@type": "Thing", "name": "包摂の度合いとメタ認知の層"},
+            {"@type": "Thing", "name": "自己スクリーニング（診断ではない・内容の妥当性まで）"}
+          ],
+          "citation": [
+            {"@type": "ScholarlyArticle", "name": "T. O'Fallon (2020) States and STAGES: Waking up Developmentally. Integral Review 16(1)", "url": "https://integral-review.org/issues/vol_16_no_1_ofallon_states_and_stages.pdf"},
+            {"@type": "ScholarlyArticle", "name": "K. Barta (2020) Seven Perspectives on the STAGES Developmental Model. Integral Review 16(1)", "url": "https://integral-review.org/issues/vol_16_no_1_barta_seven_perspectives_on_the_stages_developmental_model.pdf"},
+            {"@type": "ScholarlyArticle", "name": "T. Murray & T. O'Fallon (2020) Summary of STAGES Validation Research. Integral Review 16(1)", "url": "https://integral-review.org/issues/vol_16_no_1_murray_and_ofallon_summary_of_research.pdf"}
+          ],
+          "author": {"@type": "Person", "name": "Claude", "description": "Anthropic の AI。本文と選択肢の下書きの文責"},
+          "contributor": {"@type": "Person", "name": "pjdhiro", "description": "監修。方針と選択肢の採否の判定"},
+          "isPartOf": {"@type": "WebSite", "name": "プロジェクトデザイン論", "url": "https://uminomae.github.io/project-design/"}
+        }
+      ]
+    }
+    </script>
+</head>
+<body>
+    <div id="webgl-container" aria-hidden="true"></div>
+    <div id="content">
+        <div id="llm-summary" class="visually-hidden">
+            <p>要約: このページは、回答者の「ものの見方の広さ」（どれだけの視点・関係・時間を取り込むかという包摂の度合いと、何が見えているかというメタ認知の層）を 16問×5択で見る自己スクリーナーです。各問の5つの選択肢は 〜3.5／4.0〜4.5／5.0〜5.5／6.0／6.5 の帯に一つずつ対応し、帯の名前と定義は Terri O'Fallon の STAGES モデルの公開論文（Integral Review 16(1), 2020）を要約して借りています。各選択肢がどの帯に当たるかは LLM（Claude）と監修者（pjdhiro）の判断です。結果は、選んだ帯を 0〜4 点として平均した「6.5 への近さ」（0〜100）と、帯ごとの回答数の分布（最多の帯を位置、隣り合う2帯がどちらも回答数の 1/3 以上なら移行期）で示します。診断や正式な測定ではなく、何度答えても同じ結果になることや STAGES の正式な測定との一致は求めていません。回答はどこにも保存しません。</p>
+        </div>
+        <header class="reader-hero">
+            <h1 class="glow-heading">ものの見方の広さスクリーナー</h1>
+            <p class="reader-subtitle glow-text">16問×5択で、考えるときにどこまでを含めて見ているかを確かめる</p>
+            <p class="reader-meta glow-text">
+                <span class="reader-status-badge">選択肢は監修中 — 下書き</span><br>
+                最終更新: <!--UPDATED--><br>
+                <a href="https://github.com/uminomae/project-design/blob/main/knowledge/research/stages-screener/README.md">設計と論拠 (GitHub)</a> ・
+                <a href="https://github.com/uminomae/project-design/issues/131">pd#131</a> ・
+                <a href="../index.html">プロジェクトデザイン論</a>
+            </p>
+        </header>
+        <article class="reader-article prose-block glow-text">
+<!--BODY-->
+        </article>
+        <footer class="reader-footer glow-text">
+            段階の定義は O'Fallon の STAGES モデルの公開論文から借りた要約です。選択肢と帯の対応は LLM と監修者の判断です。<br>
+            <a href="../index.html">プロジェクトデザイン論</a> ・
+            <a href="https://github.com/uminomae/project-design">GitHub</a>
+        </footer>
+    </div>
+    <script type="module" src="../src/reader-app.js"></script>
+    <script type="module" src="../src/reader-screener.js"></script>
+</body>
+</html>

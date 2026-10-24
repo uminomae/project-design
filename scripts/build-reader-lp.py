@@ -11,6 +11,8 @@ READER を更新したら本スクリプトを再実行して LP を追随させ
 - テンプレート（scripts/reader-*-template.html）や後処理を変更するときも上記を満たすこと
 - 独自テーマ・埋め込み standalone CSS の新造は禁止（却下実例: DESIGN-RULES §8b 2026-07-03）
 """
+import html as htmllib
+import json
 import re
 import subprocess
 import sys
@@ -37,7 +39,19 @@ PAGES = [
         ROOT / "reader/energy-flow.html",
         "flow",
     ),
+    (
+        ROOT / "knowledge/research/stages-screener/READER-stages-screener.md",
+        ROOT / "scripts/reader-stages-screener-template.html",
+        ROOT / "reader/stages-screener.html",
+        "glow",
+    ),
 ]
+
+# スクリーナーのデータ（正本 JSON）。出力 HTML 名 → JSON。正本 MD の <!--SCREENER--> に
+# no-JS 用の静的リスト＋埋め込み JSON を差し込み、src/reader-screener.js が対話 UI に置き換える
+SCREENER_DATA = {
+    "stages-screener.html": ROOT / "knowledge/research/stages-screener/screener-data.json",
+}
 
 
 def fold_sections(html: str) -> str:
@@ -58,6 +72,29 @@ def fold_sections(html: str) -> str:
             f'<div class="secbody">{body}</div></details>'
         )
     return "".join(out)
+
+
+def screener_markup(data_path: Path) -> str:
+    """スクリーナーの静的マークアップ（no-JS・SEO/LLM 用）と埋め込み JSON を作る。"""
+    data = json.loads(data_path.read_text(encoding="utf-8"))
+    bands = {b["id"]: b for b in data["bands"]}
+    esc = htmllib.escape
+    items = []
+    for i, q in enumerate(data["questions"], 1):
+        opts = "".join(f"<li>{esc(o['text'])}</li>" for o in q["options"])
+        key = "".join(f"<li>{esc(bands[o['band']]['label'])}：{esc(o['text'])}</li>" for o in q["options"])
+        items.append(
+            f'<li><p class="screener-question">Q{i}. {esc(q["text"])}</p><ul>{opts}</ul>'
+            f'<details><summary>各選択肢の帯</summary><ul>{key}</ul></details></li>'
+        )
+    # JSON は </script> を閉じさせないよう < をエスケープする
+    payload = json.dumps(data, ensure_ascii=False).replace("<", "\\u003c")
+    return (
+        '<section class="screener glow-card" data-screener="screener-data" aria-label="スクリーナー">'
+        '<p class="screener-small">JavaScript が動かない環境では、問いと選択肢の一覧だけを表示しています。</p>'
+        f'<ol class="screener-static">{"".join(items)}</ol></section>'
+        f'<script type="application/json" id="screener-data">{payload}</script>'
+    )
 
 
 def build(SRC: Path, TPL: Path, OUT: Path, STYLE: str) -> None:
@@ -90,6 +127,14 @@ def build(SRC: Path, TPL: Path, OUT: Path, STYLE: str) -> None:
 
     # 先頭 H1 はテンプレートの hero と重複するため除去
     html = re.sub(r"<h1[^>]*>.*?</h1>\s*", "", html, count=1)
+
+    if OUT.name in SCREENER_DATA:
+        if "<!--SCREENER-->" not in html:
+            sys.exit(f"ERROR: <!--SCREENER--> marker not found in generated body ({SRC.name})")
+        # glow 後処理（表の glow-card 化など）が静的リストに及ばないよう、最後に差し込む
+        screener_html = screener_markup(SCREENER_DATA[OUT.name])
+    else:
+        screener_html = None
 
     if STYLE == "glow":
         # DESIGN-RULES §0a: グロークラス体系を生成 HTML に適用する
@@ -132,6 +177,9 @@ def build(SRC: Path, TPL: Path, OUT: Path, STYLE: str) -> None:
             sys.exit(f"ERROR: flow style page must not contain <!--TOC--> marker ({SRC.name})")
     else:
         sys.exit(f"ERROR: unknown style {STYLE!r} for {SRC.name}")
+
+    if screener_html is not None:
+        html = html.replace("<!--SCREENER-->", screener_html, 1)
 
     page = TPL.read_text(encoding="utf-8")
     page = page.replace("<!--BODY-->", html).replace("<!--UPDATED-->", updated)
