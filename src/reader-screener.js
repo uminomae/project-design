@@ -5,7 +5,8 @@
 // DESIGN-RULES §0a 準拠: tokens と glow 体系の上にのみ載せる。依存ライブラリなし（vanilla）。
 
 const KEYS = ['A', 'B', 'C', 'D', 'E'];
-// 位置（最多の帯・移行期）を出す最小の回答数。これ未満は分布だけを示す
+// 位置（最多の帯）を出す最小の回答数。これ未満は分布だけを示す
+// 移行期の判定は置かない。分布はグラデーションとして本人が読み取る（pjdhiro 2026-10-24）
 export const MIN_FOR_POSITION = 8;
 const CARE = '数字は優劣ではありません。どの帯も、次の見方へ移る途中の一つの場所です。';
 
@@ -16,26 +17,15 @@ export function score(answers, bands) {
     const n = picked.length;
     const counts = Object.fromEntries(bands.map(b => [b.id, 0]));
     picked.forEach(a => { counts[a] += 1; });
-    if (n === 0) return { answered: 0, closeness: null, counts, top: [], transition: null };
+    if (n === 0) return { answered: 0, closeness: null, counts, top: [] };
 
     const avg = picked.reduce((s, a) => s + byId[a].points, 0) / n;
     const closeness = Math.round(avg / 4 * 100);
-    if (n < MIN_FOR_POSITION) return { answered: n, closeness, counts, top: [], transition: null };
+    if (n < MIN_FOR_POSITION) return { answered: n, closeness, counts, top: [] };
 
     const max = Math.max(...Object.values(counts));
     const top = bands.filter(b => counts[b.id] === max).map(b => b.id);
-    // 隣り合う2帯がどちらも回答数の 1/3 以上（16問なら6問以上）で移行期
-    const need = Math.ceil(n / 3);
-    let transition = null;
-    for (let i = 0; i + 1 < bands.length; i++) {
-        const lo = bands[i], hi = bands[i + 1];
-        if (counts[lo.id] >= need && counts[hi.id] >= need) {
-            if (!transition || counts[lo.id] + counts[hi.id] > transition.total) {
-                transition = { from: lo.id, to: hi.id, total: counts[lo.id] + counts[hi.id] };
-            }
-        }
-    }
-    return { answered: n, closeness, counts, top, transition };
+    return { answered: n, closeness, counts, top };
 }
 
 export function shuffled(len, rand = Math.random) {
@@ -158,8 +148,7 @@ function mount(root, data) {
         const lines = [];
         lines.push(r.closeness == null ? '6.5 への近さ：回答なし' : `6.5 への近さ：${r.closeness}（0〜100・${r.answered}問に回答）`);
         lines.push(CARE);
-        if (r.transition) lines.push(`いまの位置（参考）：${byId[r.transition.from].label} と ${byId[r.transition.to].label} の移行期`);
-        else if (r.top.length) lines.push(`いまの位置（参考）：${r.top.map(id => byId[id].label).join('・')}`);
+        if (r.top.length) lines.push(`いまの位置（参考）：${r.top.map(id => byId[id].label).join('・')}`);
         lines.push(`帯ごとの回答数：${bands.map(b => `${b.label}=${r.counts[b.id]}`).join(' ')}`);
         lines.push('回答：');
         questions.forEach((q, i) => {
@@ -192,7 +181,6 @@ function mount(root, data) {
         parts.push(el('p', 'screener-label', 'いまの位置（参考）'));
         let pos;
         if (r.answered < MIN_FOR_POSITION) pos = `回答が ${MIN_FOR_POSITION} 問に満たないため、位置は出していません。下の分布だけを見てください。`;
-        else if (r.transition) pos = `${byId[r.transition.from].label} と ${byId[r.transition.to].label} の移行期`;
         else pos = r.top.map(id => bandName(byId[id])).join('／');
         parts.push(el('p', 'screener-position', pos));
         const dist = el('table', 'screener-dist');
@@ -209,7 +197,7 @@ function mount(root, data) {
             dist.append(tr);
         });
         parts.push(dist);
-        parts.push(el('p', 'screener-small', 'いちばん多い帯を位置とし、隣り合う2つの帯がどちらも回答数の 1/3 以上なら移行期としています。'));
+        parts.push(el('p', 'screener-small', 'いちばん多い帯を位置としていますが、帯の境目ははっきり分かれるものではありません。どの帯にどれだけ広がっているかを、グラデーションとして読み取ってください。'));
 
         parts.push(el('p', 'screener-label', 'あなたの回答と対応する帯'));
         const list = el('div', 'screener-answers');
@@ -282,3 +270,25 @@ if (typeof document !== 'undefined') {
     if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
     else init();
 }
+
+// 「Claude で再現する」のプロンプトをコピーするボタン（ビルドが <!--CLAUDE-PROMPT--> に置く）
+document.querySelectorAll('[data-copy]').forEach((btn) => {
+    const target = document.getElementById(btn.dataset.copy);
+    if (!target) return;
+    const label = btn.textContent;
+    btn.addEventListener('click', async () => {
+        try {
+            await navigator.clipboard.writeText(target.textContent);
+            btn.textContent = 'コピーしました';
+        } catch {
+            // クリップボードが使えない環境では、全文を選択して手でコピーできるようにする
+            const range = document.createRange();
+            range.selectNodeContents(target);
+            const sel = window.getSelection();
+            sel.removeAllRanges();
+            sel.addRange(range);
+            btn.textContent = '全文を選択しました（コピーしてください）';
+        }
+        setTimeout(() => { btn.textContent = label; }, 2500);
+    });
+});

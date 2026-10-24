@@ -24,23 +24,18 @@ eq(score(fill(16, 'b65'), B).closeness, 100, 'all 6.5 → 100');
 eq(score(fill(16, 'b35'), B).closeness, 0, 'all 〜3.5 → 0');
 
 let r = score([...fill(6, 'b40'), ...fill(6, 'b50'), ...fill(4, 'b35')], B);
-eq([r.transition?.from, r.transition?.to], ['b40', 'b50'], '6+6 adjacent → transition 4–5');
 eq(r.closeness, Math.round((6 * 1 + 6 * 2) / 16 / 4 * 100), 'closeness = avg / 4 × 100');
+eq(r.top, ['b40', 'b50'], 'tie → both top (no transition judgment)');
+eq('transition' in r, false, 'no transition field (removed 2026-10-24)');
 
 r = score([...fill(5, 'b40'), ...fill(6, 'b50'), ...fill(5, 'b60')], B);
-eq([r.transition, r.top], [null, ['b50']], '5/6/5 → no transition, top 5.0〜5.5');
-
-r = score([...fill(6, 'b40'), ...fill(4, 'b50'), ...fill(6, 'b60')], B);
-eq(r.transition, null, '6 and 6 but not adjacent → no transition');
-
-r = score([...fill(8, 'b60'), ...fill(8, 'b65')], B);
-eq([r.top, r.transition?.from, r.transition?.to], [['b60', 'b65'], 'b60', 'b65'], 'tie → both top, 6.0–6.5 transition');
+eq(r.top, ['b50'], '5/6/5 → top 5.0〜5.5');
 
 r = score([...fill(MIN_FOR_POSITION - 1, 'b60'), ...fill(16 - MIN_FOR_POSITION + 1, null)], B);
-eq([r.answered, r.closeness, r.top, r.transition], [MIN_FOR_POSITION - 1, 75, [], null], 'fewer than MIN_FOR_POSITION answers → closeness only');
+eq([r.answered, r.closeness, r.top], [MIN_FOR_POSITION - 1, 75, []], 'fewer than MIN_FOR_POSITION answers → closeness only');
 
-r = score([...fill(4, null), ...fill(4, 'b40'), ...fill(4, 'b50'), ...fill(4, 'b65')], B);
-eq([r.answered, r.transition?.from], [12, 'b40'], 'skipped questions excluded: threshold = ceil(12/3) = 4');
+r = score([...fill(4, null), ...fill(4, 'b40'), ...fill(4, 'b50'), ...fill(5, 'b65')].slice(0, 16), B);
+eq([r.answered, r.counts.b65], [12, 4], 'skipped questions excluded from counts');
 
 eq(score(fill(16, null), B).closeness, null, 'nothing answered → null');
 eq([...shuffled(5)].sort(), [0, 1, 2, 3, 4], 'shuffle is a permutation');

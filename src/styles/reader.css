@@ -754,3 +754,22 @@
     .reader-article { padding: 0 1rem 3rem; }
     .reader-article h2 { margin-top: 3.5rem; }
 }
+
+/* ---- Claude で再現するプロンプト（stages-screener・build の <!--CLAUDE-PROMPT-->） ---- */
+.reader-article .prompt-box { margin: 1rem 0 1.5rem; }
+.reader-article .prompt-box .screener-btn { margin-bottom: 0.75rem; }
+.reader-article .prompt-text {
+    max-height: 22rem;
+    overflow: auto;
+    margin: 0;
+    padding: 1rem 1.1rem;
+    white-space: pre-wrap;
+    word-break: break-word;
+    font-family: var(--sans);
+    font-size: 0.82rem;
+    line-height: 1.7;
+    color: var(--mid);
+    background: var(--glass-bg-medium);
+    border: 1px solid var(--glass-border-soft);
+    border-radius: 8px;
+}

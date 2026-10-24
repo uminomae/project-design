@@ -42,7 +42,7 @@ Claude と話しながら答える版もあります（Claude のアカウント
 ## 結果の読み方
 
 - **6.5 への近さ**：選んだ選択肢の帯を 〜3.5=0、4.0〜4.5=1、5.0〜5.5=2、6.0=3、6.5=4 として平均し、100 点に換算したものです。もともと 6.5 の特徴がどれくらいあるかを見るために作ったので、これを見出しにしています。6.5 以外の選択肢は、6.5 と比べる相手として置いています。
-- **いまの位置（参考）**：帯ごとに何問選んだかを数え、いちばん多い帯を位置とします。隣り合う2つの帯がどちらも回答数の 1/3 以上（16問なら6問以上）なら「4.0〜4.5 と 5.0〜5.5 の移行期」のように示します。回答が 8 問に満たないときは位置を出しません。
+- **いまの位置（参考）**：帯ごとに何問選んだかを数え、いちばん多い帯を位置とします。ただし帯の境目は、はっきり分かれるものではありません。どの帯にどれだけ広がっているかは、分布をグラデーションとして見て、ご自身で読み取ってください。回答が 8 問に満たないときは位置を出しません。
 - **回答と帯の対応**：答え終えると、各問で選んだ選択肢がどの帯に当たるか、ほかの選択肢がどの帯かを見られます。選ばなかった答えと見比べると、帯ごとの違いが見えてきます。
 - 数字は優劣ではありません。どの帯も、次の見方へ移る途中の一つの場所です。
 - もし「いつもより狭い基準で答えた」と感じたら、それもいつもの自分と比べる目安にしてください。何かを断定するものではありません。
@@ -110,3 +110,9 @@ Claude と話しながら答える版もあります（Claude のアカウント
 - **O**：O'Fallon, T. States and STAGES: Waking up Developmentally. [PDF](https://integral-review.org/issues/vol_16_no_1_ofallon_states_and_stages.pdf)
 - **B**：Barta, K. Seven Perspectives on the STAGES Developmental Model. [PDF](https://integral-review.org/issues/vol_16_no_1_barta_seven_perspectives_on_the_stages_developmental_model.pdf)
 - **V**：Murray, T. & O'Fallon, T. Summary of STAGES Validation Research. [PDF](https://integral-review.org/issues/vol_16_no_1_murray_and_ofallon_summary_of_research.pdf)
+
+## Claude で再現する
+
+下のプロンプトを Claude（claude.ai などのチャット）に貼ると、Claude が進行役になって、このページと同じ 16 問を 1 問ずつ出し、同じ決まりで結果を返します。回答中に言葉の意味を聞いたり、結果について一緒に考えたりできます。問いと選択肢は、このページと同じバージョンのものが入っています。
+
+<!--CLAUDE-PROMPT-->
