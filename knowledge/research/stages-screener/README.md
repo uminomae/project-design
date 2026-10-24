@@ -5,7 +5,7 @@ https://github.com/uminomae/project-design/issues/131
 
 回答者の「ものの見方の広さ」を 16問×5択で見る簡易スクリーナー。段階の名前と定義は Terri O'Fallon の
 STAGES モデルの公開論文から借り、選択肢は LLM（Claude）と監修者（pjdhiro）が判断して作る。
-ChatGPT の GPTs で作った旧版を Claude のアーティファクトに移し、論文と照らして作り直している途中。
+ChatGPT の GPTs で作った旧版を Claude のアーティファクトに移し、論文と照らして作り直した（改訂5・公開ページとアーティファクト版の両方・2026-10-24）。
 
 - 動いているページ（旧版 4択・v11）: https://claude.ai/artifact/VY7XMLt7g4v5PLzzmUDTu1
   （Claude アカウントで開くと、回答中の質問と結果の対話に閲覧者自身の利用枠で Claude を呼べる）
@@ -734,7 +734,7 @@ Q7 は 5.0〜5.5 以外は問題なし。6.0（Q5・Q6・Q8 は改訂3 で規則
 1. **監修者レビュー**（pjdhiro）: §8 の各選択肢の採否。レビュー用ドキュメント（Claude Docs・非公開）の確認欄で行う。
 2. **§10 の公開の形の承認**（pjdhiro）。
 3. **補足と例 80 組を書く**（Claude）: 採否が決まった選択肢に、補足1文と日常の例1つずつ。
-4. **アーティファクト版を5択に実装し直す**（Claude）: データを `screener-data.json` から作る。採点は `src/reader-screener.js` の `score()` と同じ規則にする。旧版の前段 Q1〜Q4・4択のデータ・「区分での判定」「根拠」「ステージ別スコア」「移行帯の追加質問」は消す。冒頭の「監修者の独断」を「定義は論文から借り、選択肢は LLM と監修者が判断」に変える。Claude への指示に §6 の要約と出典を入れる。ページ末尾の設計ドキュメントも新しいコードに合わせる。
+4. ✅ **アーティファクト版を5択に実装し直す**（2026-10-24 済み・Version 12。`scripts/build-screener-artifact.py` が `scripts/screener-artifact-template.html` に screener-data.json を差し込み `artifact/screener.html` を作る → Artifact ツールで https://claude.ai/artifact/VY7XMLt7g4v5PLzzmUDTu1 に再公開。採点はランダム 500 通りで公開ページと一致。Claude への質問と保存は実機で未確認）（Claude）: データを `screener-data.json` から作る。採点は `src/reader-screener.js` の `score()` と同じ規則にする。旧版の前段 Q1〜Q4・4択のデータ・「区分での判定」「根拠」「ステージ別スコア」「移行帯の追加質問」は消す。冒頭の「監修者の独断」を「定義は論文から借り、選択肢は LLM と監修者が判断」に変える。Claude への指示に §6 の要約と出典を入れる。ページ末尾の設計ドキュメントも新しいコードに合わせる。
 5. **`reader/` の公開ページ**: §10 の構成で develop に実装済み（下書きの選択肢で動く・noindex）。選択肢と補足・例が確定したら `screener-data.json` を直して再生成し、§10 の「公開前に外すもの」を外す。
 6. **確かめる**: 採点の関数を見本の回答で試す。両方のページで最後まで答え、書き出しとアーティファクト版の Claude の応答を確かめる。
 7. **公開前の確認**（pjdhiro）: 「STAGES」の名称を公開ページで使ってよいか。アーティファクト版の共有設定（いまは非公開。公開ページからリンクするので、リンクを知る人が開ける設定にするか）。develop→main マージ。
