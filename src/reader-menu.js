@@ -17,6 +17,8 @@ if (menuElement && toggleButton) {
         knowledgeEntries: {},
         translate,
         lang,
+        // 読み物ページは reader/ の下にあるので、サイトの根は一つ上
+        siteRoot: new URL('../', location.href).pathname,
     });
     toggleButton.textContent = translate('menu.toggle');
 

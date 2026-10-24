@@ -50,6 +50,7 @@ const i18n = createI18n({
 renderSiteMenu({
     menuElement: dom.menuElement,
     items: MENU_ITEMS,
+    siteRoot: new URL('./', location.href).pathname,
     knowledgeEntries: KNOWLEDGE_ENTRIES,
     translate: i18n.translate,
     lang: i18n.getCurrentLang(),

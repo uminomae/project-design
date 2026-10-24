@@ -6,7 +6,16 @@ function escapeHtml(value) {
         .replace(/>/g, '&gt;');
 }
 
-export function renderSiteMenu({ menuElement, items, knowledgeEntries, translate, lang }) {
+// メニュー定義の pd 内リンクは公開先の絶対パス（/project-design/…）で書かれている（wiki と共有）。
+// siteRoot を渡すと、表示中のページから見たサイトの根に読み替える（ローカル :3004 でも飛べるように）
+const SITE_PREFIX = '/project-design/';
+
+function resolveHref(href, siteRoot) {
+    if (!siteRoot || !href.startsWith(SITE_PREFIX)) return href;
+    return siteRoot + href.slice(SITE_PREFIX.length);
+}
+
+export function renderSiteMenu({ menuElement, items, knowledgeEntries, translate, lang, siteRoot }) {
     const parts = [];
 
     for (const item of items) {
@@ -36,7 +45,7 @@ export function renderSiteMenu({ menuElement, items, knowledgeEntries, translate
             : item.labelKey;
 
         parts.push(
-            `<a href="${escapeHtml(item.href)}"${className}${dataKnowledge} data-i18n-key="${escapeHtml(labelKey)}">${escapeHtml(translate(labelKey, lang))}</a>`,
+            `<a href="${escapeHtml(resolveHref(item.href, siteRoot))}"${className}${dataKnowledge} data-i18n-key="${escapeHtml(labelKey)}">${escapeHtml(translate(labelKey, lang))}</a>`,
         );
     }
 
