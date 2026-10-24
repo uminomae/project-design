@@ -2,7 +2,7 @@
  "version": "draft-rev1",
  "status": "draft",
  "updated": "2026-10-24",
- "note": "選択肢は監修者レビュー待ちの下書き（README §8）。note/example は採否確定後に書く。points は 6.5 への近さ（0〜4）。",
+ "note": "選択肢は監修者レビュー待ちの下書き（README §8）。note/example は採否確定後に書く。points は 6.5 への近さ（0〜4）。 review: ok＝監修者が採用／hold＝保留（README §8）。",
  "sources": {
   "O": "O'Fallon, T. (2020). States and STAGES: Waking up Developmentally. Integral Review 16(1). https://integral-review.org/issues/vol_16_no_1_ofallon_states_and_stages.pdf",
   "B": "Barta, K. (2020). Seven Perspectives on the STAGES Developmental Model. Integral Review 16(1). https://integral-review.org/issues/vol_16_no_1_barta_seven_perspectives_on_the_stages_developmental_model.pdf",
@@ -100,7 +100,8 @@
      "note": "",
      "example": ""
     }
-   ]
+   ],
+   "review": "ok"
   },
   {
    "id": "Q2",
@@ -136,7 +137,8 @@
      "note": "",
      "example": ""
     }
-   ]
+   ],
+   "review": "ok"
   },
   {
    "id": "Q3",
@@ -172,7 +174,8 @@
      "note": "",
      "example": ""
     }
-   ]
+   ],
+   "review": "ok"
   },
   {
    "id": "Q4",
@@ -208,7 +211,8 @@
      "note": "",
      "example": ""
     }
-   ]
+   ],
+   "review": "ok"
   },
   {
    "id": "Q5",
@@ -244,7 +248,8 @@
      "note": "",
      "example": ""
     }
-   ]
+   ],
+   "review": "hold"
   },
   {
    "id": "Q6",
@@ -280,7 +285,8 @@
      "note": "",
      "example": ""
     }
-   ]
+   ],
+   "review": "hold"
   },
   {
    "id": "Q7",
@@ -316,7 +322,8 @@
      "note": "",
      "example": ""
     }
-   ]
+   ],
+   "review": "hold"
   },
   {
    "id": "Q8",
@@ -352,7 +359,8 @@
      "note": "",
      "example": ""
     }
-   ]
+   ],
+   "review": "ok"
   },
   {
    "id": "Q9",
@@ -388,7 +396,8 @@
      "note": "",
      "example": ""
     }
-   ]
+   ],
+   "review": "ok"
   },
   {
    "id": "Q10",
@@ -424,7 +433,8 @@
      "note": "",
      "example": ""
     }
-   ]
+   ],
+   "review": "ok"
   },
   {
    "id": "Q11",
@@ -460,7 +470,8 @@
      "note": "",
      "example": ""
     }
-   ]
+   ],
+   "review": "hold"
   },
   {
    "id": "Q12",
@@ -496,7 +507,8 @@
      "note": "",
      "example": ""
     }
-   ]
+   ],
+   "review": "hold"
   },
   {
    "id": "Q13",
@@ -532,7 +544,8 @@
      "note": "",
      "example": ""
     }
-   ]
+   ],
+   "review": "hold"
   },
   {
    "id": "Q14",
@@ -568,7 +581,8 @@
      "note": "",
      "example": ""
     }
-   ]
+   ],
+   "review": "hold"
   },
   {
    "id": "Q15",
@@ -604,7 +618,8 @@
      "note": "",
      "example": ""
     }
-   ]
+   ],
+   "review": "hold"
   },
   {
    "id": "Q16",
@@ -640,7 +655,8 @@
      "note": "",
      "example": ""
     }
-   ]
+   ],
+   "review": "hold"
   }
  ]
 }
