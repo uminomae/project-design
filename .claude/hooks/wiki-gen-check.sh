@@ -193,7 +193,32 @@ for line in lines:
     wiki_path = os.path.join(wiki_dir, "sources", stem + ".md")
     # フォールバック: 旧パス（wiki/ 直下）も確認
     wiki_path_legacy = os.path.join(wiki_dir, stem + ".md")
-    if not os.path.exists(wiki_path) and not os.path.exists(wiki_path_legacy):
+    exists = os.path.exists(wiki_path) or os.path.exists(wiki_path_legacy)
+    # フォールバック（2026-08-17 定期レビュー follow-up）: stem は生成時点の
+    # access_status（url-verified=title 推定 / raw-confirmed=PDF ファイル名）で変わるため、
+    # 昇格後に「未生成」へ誤判定され同じ依頼が無限再生成されていた（6 回連続）。
+    # `{domain}_{author}_{year}_` の prefix 一致があれば既存ページとみなす。
+    if not exists and not stem.startswith("TBD_"):
+        seg = stem.split("_")
+        if len(seg) >= 3:
+            import glob as _glob
+            dom, author, year = seg[0], seg[1], seg[2]
+            # 著者セグメントは "attwell" / "attwell-laughlin" のような連結表記ゆれがあるため
+            # 先頭姓（最初のハイフン前）が一致すれば同一とみなす
+            a_head = author.split("-")[0]
+            hits = []
+            for cand in _glob.glob(os.path.join(wiki_dir, "sources", f"{dom}_*_{year}_*.md")):
+                cseg = os.path.basename(cand).split("_")
+                if len(cseg) >= 3 and cseg[1].split("-")[0] == a_head:
+                    hits.append(cand)
+            if hits:
+                exists = True
+                print(
+                    f"wiki-gen-check: {source_id} は stem 相違で既存ページあり"
+                    f" ({os.path.basename(hits[0])}) → 生成対象外",
+                    file=sys.stderr,
+                )
+    if not exists:
         missing.append({
             "source_id": source_id,
             "domain_id": domain_id,

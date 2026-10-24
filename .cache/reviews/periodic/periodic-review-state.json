@@ -1,21 +1,232 @@
 {
-  "last_run": "2026-07-06T08:34:00+09:00",
-  "last_report": ".cache/reviews/periodic/REVIEW-periodic-20260706-0834.md",
+  "last_run": "2026-10-05T08:47:00+09:00",
+  "last_report": ".cache/reviews/periodic/REVIEW-periodic-20261005-0847.md",
   "scheduler": "claude-code scheduled task: weekly-periodic-review (Mon 08:30 local)",
+  "prev_run": "2026-09-28T08:45:00+09:00",
+  "interval_days": 7,
   "repos": {
-    "project-design": { "branch": "develop", "head": "e21fb2e", "dirty": 0, "status": "WARN" },
-    "creation-space": { "branch": "develop", "head": "d269fdc", "dirty": 26, "status": "WARN" },
-    "kesson-driven-thinking": { "branch": "main", "head": "1d5fb89", "dirty": 0, "status": "WARN" },
-    "pjdhiro": { "branch": "main", "head": "d11b083", "dirty": 184, "status": "WARN" },
-    "awareness-space": { "branch": "develop", "head": "f3aed34", "dirty": 0, "status": "PASS" },
-    "kesson-space": { "branch": "develop", "head": "5d9c59b", "dirty": 0, "status": "PASS" },
-    "techo": { "branch": "main", "head": "892709f", "dirty": 1, "status": "PASS" },
-    "myhome": { "branch": "main", "head": "bab2305", "dirty": 1, "status": "PASS" },
-    "uminomae.github.io": { "branch": "main", "head": "44be900", "dirty": 0, "status": "PASS" },
-    "zenn-content": { "branch": "main", "head": "4634835", "dirty": 0, "status": "PASS" }
+    "project-design": {
+      "branch": "develop",
+      "head": "77dc18e",
+      "dirty": 1,
+      "ahead": 0,
+      "behind": 0,
+      "status": "WARN",
+      "note": "state.md 未反映 28 コミット（49 日）・inbox periodic 6 通・worktree 158MB。人のセッション 5 週連続ゼロ"
+    },
+    "creation-space": {
+      "branch": "develop",
+      "head": "7ed02a8",
+      "dirty": 0,
+      "ahead": 0,
+      "behind": 0,
+      "status": "WARN",
+      "note": "不変。worktree 13 件 11GB。cs#242 158 日 OPEN"
+    },
+    "kesson-driven-thinking": {
+      "branch": "main",
+      "head": "1d5fb89",
+      "dirty": 0,
+      "ahead": 0,
+      "behind": 0,
+      "status": "SKIP",
+      "archived": true,
+      "archived_basis": "GitHub archived (read-only, 2026-04-03〜)",
+      "note": "PR-3 対象外。ローカルは origin/main と一致"
+    },
+    "pjdhiro": {
+      "branch": "main",
+      "head": "8fa721f",
+      "dirty": 0,
+      "ahead": 0,
+      "behind": 0,
+      "status": "WARN",
+      "note": "不変。worktree 6.4GB。2 SVG 未判断。upstream 無し未 push ローカル枝 2 本（TV-dev-treneAlert / qt-codex・2025）",
+      "local_unpushed": [
+        {
+          "branch": "TV-dev-treneAlert",
+          "commits": 2,
+          "last": "2025-09-07"
+        },
+        {
+          "branch": "qt-codex",
+          "commits": 2,
+          "last": "2025-06-25"
+        }
+      ]
+    },
+    "awareness-space": {
+      "branch": "develop",
+      "head": "f3aed34",
+      "dirty": 0,
+      "ahead": 0,
+      "behind": 0,
+      "status": "WARN",
+      "note": "proposal 94 日（7 回連続）・codex-worker-instruction.md:87 retired 参照（5 回連続）"
+    },
+    "kesson-space": {
+      "branch": "develop",
+      "head": "5d9c59b",
+      "dirty": 0,
+      "ahead": 0,
+      "behind": 0,
+      "status": "INFO",
+      "note": "upstream 無し未 push ローカル枝 codexDT/kesson-about-modal-history（2026-04-01・1 commit）",
+      "local_unpushed": [
+        {
+          "branch": "codexDT/kesson-about-modal-history",
+          "commits": 1,
+          "last": "2026-04-01"
+        }
+      ]
+    },
+    "techo": {
+      "branch": "main",
+      "head": "892709f",
+      "dirty": 1,
+      "ahead": 0,
+      "behind": 2,
+      "status": "INFO",
+      "note": "ローカル main behind 2（PR #142/#143 未 pull）。untracked note-rules-05-three-and-seven.md（07-03〜）"
+    },
+    "myhome": {
+      "branch": "main",
+      "head": "8e767d1",
+      "dirty": 0,
+      "ahead": 0,
+      "behind": 0,
+      "status": "WARN",
+      "note": "2 週連続：claude/issue-342-b754c8 の 2 commit が upstream 無し・remote 未到達。gonin [E] 検出漏れ確定",
+      "local_unpushed": {
+        "branch": "claude/issue-342-b754c8",
+        "worktree": ".claude/worktrees/continuation-574b7f",
+        "commits": 2,
+        "last": "2026-09-27T09:00"
+      }
+    },
+    "uminomae.github.io": {
+      "branch": "main",
+      "head": "3ff5a01",
+      "dirty": 0,
+      "ahead": 0,
+      "behind": 0,
+      "status": "PASS"
+    },
+    "zenn-content": {
+      "branch": "main",
+      "head": "4634835",
+      "dirty": 0,
+      "ahead": 0,
+      "behind": 0,
+      "status": "PASS"
+    },
+    "futari": {
+      "branch": "main",
+      "head": "15bfb92",
+      "dirty": 0,
+      "ahead": 0,
+      "behind": 0,
+      "status": "PASS",
+      "note": "10-02 #196 の 2 commit。同期済み"
+    },
+    "investing": {
+      "branch": "main",
+      "head": "e077ae5",
+      "dirty": 0,
+      "ahead": null,
+      "behind": null,
+      "status": "SKIP",
+      "archived": true,
+      "archived_basis": "repo 自身の最終 commit e077ae5（2026-09-09）が「gonin の shisan/ へ移設＝この repo はアーカイブ（gonin#228）」と宣言。dev/investing.bundle（2.6MB）で保全済み",
+      "note": "次回以降は upstream 比較をしない。origin が GitHub に存在しないのは撤去の結果で異常ではない"
+    },
+    "gonin": {
+      "branch": "main",
+      "head": "e55675f4",
+      "dirty": 0,
+      "ahead": 0,
+      "behind": 0,
+      "status": "INFO",
+      "note": "63 commit（garden 自動 42）。session-log-check 93・増分 0（4 週連続）。[E] が upstream 無しローカル枝を拾わないことを確定"
+    },
+    "futari-gate-throwaway": {
+      "branch": "main",
+      "head": "a2120ab",
+      "dirty": 0,
+      "ahead": 0,
+      "behind": 0,
+      "status": "INFO",
+      "note": "不変。去就は pjdhiro 判断待ち（3 回目）"
+    },
+    "shaman-meta-site": {
+      "branch": "main",
+      "head": "018d291",
+      "dirty": 0,
+      "ahead": null,
+      "behind": null,
+      "status": "INFO",
+      "no_remote": true,
+      "note": "remote なし・bundle なし（4 週連続）・未 push 1 commit"
+    }
   },
   "pending": {
     "codex": 0,
-    "followups": 4
+    "followups": 12,
+    "carried_over": 11,
+    "resolved_this_run": 0,
+    "new_this_run": 3
+  },
+  "checks": {
+    "PR-1": "WARN",
+    "PR-2": "WARN",
+    "PR-3": "WARN",
+    "PR-4": "PASS",
+    "PR-5": "WARN",
+    "PR-6": "PASS"
+  },
+  "worktree_debt_gb": {
+    "creation-space_orphan": 8.0,
+    "creation-space_registered": 2.9,
+    "pjdhiro_registered": 6.4,
+    "project-design_orphan": 0.06,
+    "project-design_registered": 0.1,
+    "total": 17.5,
+    "rescue_required": false,
+    "rescue_remaining": "pjdhiro bike-selection-height-eed99b/garage/assets/{route-ladder,weapon-radar}.svg のみ（12.6KB・判断待ち）"
+  },
+  "notes": {
+    "resolved_this_run": [],
+    "new_this_run": [
+      "upstream 無し未 push ローカル枝の新規検出: kesson-space 1・pjdhiro 2（いずれも古い）",
+      "techo ローカル main behind 2・untracked 3 か月",
+      "gonin [E] 検出漏れの確定（myhome 枝 8 日経過でも 0）"
+    ],
+    "unresolved_from_prev": [
+      "myhome claude/issue-342-b754c8 未 push 2 commit（2 週連続）",
+      "cs#242 158 日 OPEN",
+      "pd state.md 28 コミット（49 日）・inbox periodic 6 通",
+      "pd 孤児 worktree dir・二重生成 wiki 2 組（8 回連続）",
+      "as proposal 94 日・as :87 retired 参照（5 回連続）",
+      "shaman-meta-site のバックアップなし（4 週連続）",
+      "定期レビュー commit の Session: trailer 方針が未決",
+      "wiki-conflict-candidates 14 本",
+      "空 dir・futari-gate-throwaway の去就",
+      "pjdhiro 未マージ remote 枝 14 本・2 SVG"
+    ],
+    "skill_revision_proposal": [
+      "PR-1 に upstream 無しローカル枝走査（for-each-ref + rev-list --not --remotes）を正式追加＝0928 提案を 1005 で試行し有効性確認（3 本新規検出）",
+      "不変の持ち越しを 1 行一覧に畳む形式を 1005 から試行",
+      "pd inbox の periodic は最新 1 通のみ残す、または Issue コメントへ切替（3 回目の提案）",
+      "PR-1 に救出候補の機械照合（MD5 + git log --all --find-object）",
+      "archived repo の判定を state で持つ（運用中）"
+    ],
+    "rescue_before_delete": [
+      "pjdhiro/.claude/worktrees/bike-selection-height-eed99b/garage/assets/route-ladder.svg（6,045B・2026-07-25）",
+      "pjdhiro/.claude/worktrees/bike-selection-height-eed99b/garage/assets/weapon-radar.svg（6,558B・2026-07-25）"
+    ],
+    "skipped_this_run": [
+      "wiki-cross-check --all（入力不変）",
+      "worktree 容量再計測（HEAD・構成不変）"
+    ]
   }
 }

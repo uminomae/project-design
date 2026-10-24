@@ -5,6 +5,7 @@
 | ページ | 正本（編集はこちら） | style |
 |---|---|---|
 | `three-and-seven.html` | `knowledge/research/two-axis-closure/READER-division-algebra-consciousness-organization.md` | glow（透過記事＋glow-card） |
+| `stages-screener.html` | `knowledge/research/stages-screener/READER-stages-screener.md`（本文）＋ `screener-data.json`（問いと選択肢・version） | flow（`<!--SCREENER-->` に 16問×5択を差し込み、「答える」章だけ `<!--OPEN-->` で開く。上部にトップと同じ Menu（`src/reader-menu.js`）、状態は最終更新日とバージョン。DESIGN-RULES §13・§14） |
 | `energy-flow.html` | `knowledge/research/energy-flow-psyche/READER-energy-flow-psyche.md` | flow（一枚ガラスカラム＋章アコーディオン＋garage 型目次。DESIGN-RULES §13） |
 
 ## このページが何で、どう育てるか

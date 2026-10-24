@@ -11,6 +11,8 @@ READER を更新したら本スクリプトを再実行して LP を追随させ
 - テンプレート（scripts/reader-*-template.html）や後処理を変更するときも上記を満たすこと
 - 独自テーマ・埋め込み standalone CSS の新造は禁止（却下実例: DESIGN-RULES §8b 2026-07-03）
 """
+import html as htmllib
+import json
 import re
 import subprocess
 import sys
@@ -37,7 +39,19 @@ PAGES = [
         ROOT / "reader/energy-flow.html",
         "flow",
     ),
+    (
+        ROOT / "knowledge/research/stages-screener/READER-stages-screener.md",
+        ROOT / "scripts/reader-stages-screener-template.html",
+        ROOT / "reader/stages-screener.html",
+        "flow",
+    ),
 ]
+
+# スクリーナーのデータ（正本 JSON）。出力 HTML 名 → JSON。正本 MD の <!--SCREENER--> に
+# no-JS 用の静的リスト＋埋め込み JSON を差し込み、src/reader-screener.js が対話 UI に置き換える
+SCREENER_DATA = {
+    "stages-screener.html": ROOT / "knowledge/research/stages-screener/screener-data.json",
+}
 
 
 def fold_sections(html: str) -> str:
@@ -53,11 +67,96 @@ def fold_sections(html: str) -> str:
         body = parts[i + 1] if i + 1 < len(parts) else ""
         hid = re.search(r'id="([^"]+)"', h2).group(1)
         label = re.sub(r"<[^>]+>", "", h2).strip()
+        # 正本 MD で h2 直後に <!--OPEN--> を置いた章は、最初から開いておく
+        opened = body.lstrip().startswith("<!--OPEN-->")
+        if opened:
+            body = body.replace("<!--OPEN-->", "", 1)
         out.append(
-            f'<details class="sec" id="{hid}"><summary>{label}</summary>'
+            f'<details class="sec" id="{hid}"{" open" if opened else ""}><summary>{label}</summary>'
             f'<div class="secbody">{body}</div></details>'
         )
     return "".join(out)
+
+
+def screener_markup(data_path: Path) -> str:
+    """スクリーナーの静的マークアップ（no-JS・SEO/LLM 用）と埋め込み JSON を作る。"""
+    data = json.loads(data_path.read_text(encoding="utf-8"))
+    bands = {b["id"]: b for b in data["bands"]}
+    esc = htmllib.escape
+    items = []
+    for i, q in enumerate(data["questions"], 1):
+        opts = "".join(f"<li>{esc(o['text'])}</li>" for o in q["options"])
+        key = "".join(f"<li>{esc(bands[o['band']]['label'])}：{esc(o['text'])}</li>" for o in q["options"])
+        items.append(
+            f'<li><p class="screener-question">Q{i}. {esc(q["text"])}</p><ul>{opts}</ul>'
+            f'<details><summary>各選択肢の帯</summary><ul>{key}</ul></details></li>'
+        )
+    # JSON は </script> を閉じさせないよう < をエスケープする
+    payload = json.dumps(data, ensure_ascii=False).replace("<", "\\u003c")
+    return (
+        '<section class="screener glow-card" data-screener="screener-data" aria-label="スクリーナー">'
+        '<p class="screener-small">JavaScript が動かない環境では、問いと選択肢の一覧だけを表示しています。</p>'
+        f'<ol class="screener-static">{"".join(items)}</ol></section>'
+        f'<script type="application/json" id="screener-data">{payload}</script>'
+    )
+
+
+def claude_prompt(data_path: Path) -> str:
+    """Claude（チャット）に貼るとスクリーナーを再現できるプロンプトを、正本 JSON から組み立てる。
+
+    問い・選択肢・帯・バージョンは毎回 JSON から取る（選択肢を直したときにずれないように）。
+    採点の決まりは src/reader-screener.js の score() と同じ。
+    """
+    data = json.loads(data_path.read_text(encoding="utf-8"))
+    bands = data["bands"]
+    by_id = {b["id"]: b for b in bands}
+    points = "、".join(f'{b["label"]}={b["points"]}' for b in bands)
+    lines = [
+        f'あなたは「ものの見方の広さスクリーナー」（バージョン {data["version"]}）の進行役です。'
+        "視座・メタ認知・インクルーシブ（包摂）——どの視点から見ているか、何が見えているか、"
+        "どこまでを含めて見ているか——を、16問×5択で確かめます。"
+        "いちばん奥の帯（6.0・6.5）では、非二元性（時間や境界に限られないものと日常とが二つに分かれていない見方）があるかも見ます。",
+        "",
+        "## 進め方",
+        "- まず「診断ではなく、ふだんの見方に気づくための目安です。回答はこの会話の外には保存しません」と一言伝えてから始める。",
+        "- 1問ずつ出す。各問の5つの選択肢は、問ごとに並びを入れ替えて A〜E で示す。どの選択肢がどの帯かは、全問に答え終えるまで言わない。",
+        "- 回答者は A〜E のどれか、または「飛ばす」で答える。迷っていたら「一時的な体験ではなく、ふだんの自分にいちばん近いもの」を選ぶよう促すだけにし、特定の選択肢へ誘導しない。",
+        "- 言葉の意味を聞かれたら、どの選択肢がどの帯か分からない範囲で答える。",
+        "- 「前の問に戻りたい」と言われたら戻って答え直してもらう。",
+        "",
+        "## 採点（全問のあとで）",
+        f"- 選んだ選択肢の帯を {points} として平均し、平均 ÷ 4 × 100 を四捨五入した値を「6.5 への近さ」（0〜100）とする。飛ばした問は数えない。",
+        "- 帯ごとに選ばれた数を数える。",
+        "- 回答が 8 問以上のとき、いちばん多い帯を「いまの位置（参考）」とする（同数なら並べて示す）。8 問未満なら位置は出さず、分布だけを示す。",
+        "- 「移行期」などの判定はしない。帯の境目ははっきり分かれるものではないので、分布はグラデーションとして示し、どう読むかは回答者に委ねる。",
+        "",
+        "## 結果の伝え方",
+        "- 6.5 への近さ、帯ごとの回答数（グラデーションが見えるよう、多い帯から少ない帯まですべて）、いまの位置（参考）を示す。",
+        "- 各問で選んだ選択肢と、その帯を一覧で示す。求められたら、ほかの選択肢の帯も示す。",
+        "- 必ず添える:「数字は優劣ではありません。どの帯も、次の見方へ移る途中の一つの場所です。」",
+        "- 診断や正式な測定ではない（何度答えても同じ結果になることや、STAGES の正式な測定との一致は求めていない）。結果を断定したり、病気や能力の判定に使ったりしない。",
+        "- そのあと回答者が望めば、結果について一緒に考える。",
+        "",
+        "## 帯（定義の要約。回答中は回答者に見せない）",
+        "帯の名前と定義は Terri O'Fallon の STAGES モデルの公開論文（Integral Review 16(1), 2020）、段階の見分け方は Cook-Greuter の自我発達理論（2013）を要約して借りている。",
+    ]
+    for b in bands:
+        lines.append(
+            f'- {b["label"]} {b["name"]}（{b["phrase"]}）：視座＝{b["perspective"]}。'
+            f'見えているもの＝{b["metacognition"]}。取り込むもの＝{b["inclusion"]}。'
+        )
+    lines += [
+        "- 非二元性: 6.0 は、時間や境界に限られないものと日常の行為が別々になっていない（二つを並べるのではない）。"
+        "6.5 は、体・感情・考えの層と、それに気づいている意識そのものが互いに入り込み合う。どちらも「区別が消えて一つになる」ことではない。",
+        "",
+        "## 問いと選択肢（[ ] 内は帯。回答者には見せない）",
+    ]
+    for i, q in enumerate(data["questions"], 1):
+        lines.append(f'Q{i}. {q["text"]}')
+        for o in q["options"]:
+            lines.append(f'- [{by_id[o["band"]]["label"]}] {o["text"]}')
+    lines += ["", "準備ができたら、最初の一言と Q1 から始めてください。"]
+    return "\n".join(lines)
 
 
 def build(SRC: Path, TPL: Path, OUT: Path, STYLE: str) -> None:
@@ -90,6 +189,14 @@ def build(SRC: Path, TPL: Path, OUT: Path, STYLE: str) -> None:
 
     # 先頭 H1 はテンプレートの hero と重複するため除去
     html = re.sub(r"<h1[^>]*>.*?</h1>\s*", "", html, count=1)
+
+    if OUT.name in SCREENER_DATA:
+        if "<!--SCREENER-->" not in html:
+            sys.exit(f"ERROR: <!--SCREENER--> marker not found in generated body ({SRC.name})")
+        # glow 後処理（表の glow-card 化など）が静的リストに及ばないよう、最後に差し込む
+        screener_html = screener_markup(SCREENER_DATA[OUT.name])
+    else:
+        screener_html = None
 
     if STYLE == "glow":
         # DESIGN-RULES §0a: グロークラス体系を生成 HTML に適用する
@@ -133,8 +240,27 @@ def build(SRC: Path, TPL: Path, OUT: Path, STYLE: str) -> None:
     else:
         sys.exit(f"ERROR: unknown style {STYLE!r} for {SRC.name}")
 
+    if screener_html is not None:
+        html = html.replace("<!--SCREENER-->", screener_html, 1)
+    if "<!--CLAUDE-PROMPT-->" in html:
+        if OUT.name not in SCREENER_DATA:
+            sys.exit(f"ERROR: <!--CLAUDE-PROMPT--> needs a data source ({OUT.name})")
+        prompt = htmllib.escape(claude_prompt(SCREENER_DATA[OUT.name]))
+        html = html.replace(
+            "<!--CLAUDE-PROMPT-->",
+            '<div class="prompt-box"><button type="button" class="screener-btn" data-copy="claude-prompt">プロンプトをコピー</button>'
+            f'<pre id="claude-prompt" class="prompt-text">{prompt}</pre></div>',
+            1,
+        )
+
     page = TPL.read_text(encoding="utf-8")
     page = page.replace("<!--BODY-->", html).replace("<!--UPDATED-->", updated)
+    # 状態は日付とバージョンで示す（pjdhiro 2026-10-24）。バージョンはスクリーナーの正本 JSON から取る
+    if "<!--VERSION-->" in page:
+        if OUT.name not in SCREENER_DATA:
+            sys.exit(f"ERROR: <!--VERSION--> needs a data source ({OUT.name})")
+        version = json.loads(SCREENER_DATA[OUT.name].read_text(encoding="utf-8"))["version"]
+        page = page.replace("<!--VERSION-->", version)
 
     OUT.parent.mkdir(exist_ok=True)
     OUT.write_text(page, encoding="utf-8")

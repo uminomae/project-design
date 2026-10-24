@@ -20,6 +20,17 @@
 | CN-009 | [切り口と相補的射影 — Being/Doing は分割でなく観測の構え](CN-009_cut-complementary-projection.md) | PD総論, 創造5段階 | 探索的 |
 | CN-010 | [可除代数‑意識/組織仮説 — 個の意識(ℂ)と組織(ℍ/𝕆)は同一の梯子](CN-010_division-algebra-consciousness-organization.md) | pd#115, CN-009, awareness-model | 探索的・草稿 |
 | CN-011 | [理解こそがボトルネック — 解説＋理解度確認で創造的参加を保つ](CN-011_understanding-is-the-bottleneck.md) | pd#127, ルール16, CN-010 | 探索的 |
+| CN-012 | [「未マージ」は「未回収」を意味しない — 並行エージェント環境でのブランチ照合](CN-012_unmerged-is-not-unrecovered.md) | myhome ブランチ整理（2026-07-30）, CLAUDE.md 対話終了時の main マージ | 探索的（1事例） |
+| CN-013 | [検査は不変条件で書く — 差分ベースの検査は「壊れた期間だけ無音」になる](CN-013_invariant-checks-not-diff-checks.md) | CN-012, myhome garden-check [11][13], lessons.md 26 | 探索的（1事例） |
+| CN-014 | [合計は谷を隠す — 集計粒度が目的関数を決める](CN-014_aggregation-granularity-hides-troughs.md) | CN-007, CN-013, myhome garden-check [14], myhome#64 | 探索的（1事例） |
+| CN-015 | [消えない参照層を分ける — 「採用したら行を消す台帳」は判定と出典も一緒に消す](CN-015_non-erasable-reference-layer.md) | CN-013, CN-014, myhome overwintering.md, myhome nutrition-ref.tsv | 探索的（2事例） |
+| CN-016 | [「無い」を記録する — 不在の確認にはコストがかかるのに、成果物に残らない](CN-016_record-the-absence.md) | CN-015, CN-013, myhome decisions.md, myhome gap-crops.md | 探索的（1事例＋既存事例の再解釈） |
+| CN-018 | [移行は切り替えでなく重ねる — 新を先に見て、無ければ旧へ落とす](CN-018_migrate-by-overlap.md) | CN-013, CN-016, reference/cloudflare-pages-deploy-mode-is-one-way.md, gonin#3 | 探索的（1事例） |
+| CN-019 | [認証は入口だけ守り、本体は自分で証明を検証して振り分ける](CN-019_guard-only-the-door-verify-inside.md) | CN-013, CN-018, gonin#15・#28 | 探索的（1事例） |
+| CN-020 | [重複は症状で、原因は責務の多重化 — 削るのでなく、器の仕事を1つに絞る](CN-020_duplication-is-a-symptom-of-multiplexed-responsibility.md) | CN-014, CN-015, CN-013, gonin `garage/EDITORIAL.md` 7., gonin#70 | 探索的（1事例） |
+| CN-021 | [「誰のものか言えるか」と「そこへ書き込んでよいか」は別の条件 — 1つの旗にまとめない](CN-021_identity-vs-write-safety.md) | CN-013, CN-015, CN-019, gonin#76・#77 | 探索的（1事例） |
+| CN-022 | [一覧は占有の現在を写さない — 席を外す前に、いま人が入っているかを別の口で測る](CN-022_a-listing-does-not-show-occupancy.md) | CN-012, CN-016, gonin#249 | 探索的（1事例） |
+| CN-023 | [語は帯を運ばない — 段階の深さは、語でなく見え方の構造で書く](CN-023_words-do-not-carry-the-band.md) | CN-011, pd#131, pd#132 | 探索的（1事例） |
 
 ---
 
@@ -31,3 +42,14 @@
 | 2026-06-01 | CN-009 追加（PD推敲 A-2/A-3 吟味より） |
 | 2026-07-02 | CN-010 追加（可除代数‑意識/組織仮説、pd#115） |
 | 2026-07-08 | CN-011 追加（理解=ボトルネック枠組みの接地＋スキル reader-comprehension、pd#127） |
+| 2026-07-30 | CN-012 追加（並行エージェント環境のブランチ照合。myhome の畑ブランチ整理 57→1 本からの帰納） |
+| 2026-08-02 | CN-013・CN-014 追加（myhome の畝面積ドリフトと栄養素ベース自給率の設計からの帰納） |
+| 2026-08-05 | CN-015・CN-016 追加（myhome の栄養価一次データ調査からの帰納。参照層の分離と「不在の記録」） |
+| 2026-08-29 | CN-017 追加（futari の二人の手帳のバックログ再構成からの帰納。担当・入れ子・F-S の最小記法） |
+| 2026-08-29 | CN-017 を futari へ移設（futari 固有の知見は futari `data/task-relations.md` を正本とする。CN-017 の番号は欠番） |
+| 2026-09-02 | CN-018 追加（gonin の画像置き場を git→R2 へ移した作業からの帰納。あわせて `knowledge/reference/` を新設し Cloudflare の制約2件を格納） |
+| 2026-09-02 | CN-019 追加（gonin の投稿ページを Access でメンバー限定にし、権限のない人に案内を出した作業からの帰納。`reference/` に Bootstrap の色変数と HTML コメントの2件を追加） |
+| 2026-09-06 | CN-020 追加（gonin のバイクのノート第4章の推敲からの帰納。1枚のカードが4つの仕事を持つと同じ結論が4回現れ、割ったら字数が21%落ちた） |
+| 2026-09-06 | CN-021 追加（gonin のセッションログのマーカー修正からの帰納。同一性の判定と書き込みの安全性を1つの旗にまとめ、同じセッションに ID が2つ出た） |
+| 2026-09-12 | CN-022 追加＋CN-012 補強（gonin の作業ツリー棚卸しからの帰納。外した作業ツリーに別の新しいセッションが入っていた／`+` 行の全数照合と、日本語パスの C エスケープで照合が空振りする罠） |
+| 2026-10-24 | CN-023 追加（pd#131 自我発達スクリーナーの選択肢レビューからの帰納。「気づき」「広がり」が段階の深さを運ばず手前の帯に読まれた／Cook-Greuter の構造と内容の区別） |

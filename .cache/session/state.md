@@ -1,5 +1,59 @@
 # state.md — project-design
 
+## ⏸ 区切り 2026-10-24 — pd#131 自我発達スクリーナー（Session 20261024-897）
+- **HEAD**: develop=（本 commit）/ main 変化なし。push 済み。公開（main マージ）はしていない。
+- **✅ 済み**: 正本 README（`knowledge/research/stages-screener/README.md`）・旧版 HTML（archive/）・reader/ 公開ページを develop に実装（`reader/stages-screener.html`・noindex・下書き選択肢）。採点テスト `test-screener-score.mjs`。
+- **✅ 監修者レビュー1回目**: OK 7問（Q1〜4・8〜10）／保留 9問（理由＝帯の当て方に迷う）。
+- **✅ pjdhiro 決定**: 帯の判定基準（主軸＝視点の広さと包含の程度・README §8）／§3 の 9「設問＝分野、選択肢＝帯の基準に沿って当てがう」／基準の条件は守り言い回しは散らす／Q11＝感情・Q13＝仕事と役割に分野変更／OK の7問も含め全問を基準で見直す。
+- **📝 改訂2案**: README §8「改訂2」（26 選択肢変更）と「改訂2 の基準照合」（全80選択肢に判定と解説・◯63／△17）。**screener-data.json と公開ページはまだ改訂1のまま**。
+- **🔜 次（再開時）**: ①pjdhiro が改訂2を照合表つきで問ごとにレビュー（Q1〜4 は出しかけて区切り）②△17 の直し（6.5 に気づきの層が抜けている、二つのことを聞いている）③確定後に screener-data.json を改訂2へ→再生成④補足と例 80 組⑤アーティファクト版の5択化⑥公開前確認（STAGES 名称・アーティファクト共有設定・noindex 解除・main マージ）。techo#145〜147 の扱いは残作業から外す（pjdhiro 2026-10-24）。
+
+## ⏸ 区切り 2026-10-24 — pd#131 改訂4 確定・pd#132／#133 起票（Session 20261024-935）
+- **HEAD**: develop=（本 commit）/ main 変化なし。push 済み。公開（main マージ）はしていない。
+- **🆕 区切り後の追加（pjdhiro）**: CN-023「語は帯を運ばない」追加（8513853）。**§5 品質基準に「非二元性があるか」**（このスクリーナーはもともと非二元性の判定でもあった・6.0 以降は必須）。定義は §8 参照体系 7.（O p.15/29/30/33・CG p.76）＝6.0 は限りのなさと日常が互いに行き来（二つを並べない）、6.5 は目撃するものとされるものの相互浸透、「一つになる」は除外のまま。改訂4 を点検＝6.0 の 13・6.5 の 5 が満たさない → **改訂5 案 18 選択肢**（README §8「非二元性での点検と直し案」）。screener-data.json は改訂4 のまま。
+- **✅ 改訂5 採用（pjdhiro・6.0 は否定の型でよい）**: README §8「改訂5（確定版）」→ screener-data.json を rev5 に・reader 再生成。採点テスト ALL PASSED・static 11/11・機械点検（非二元性を含む）違反 0。
+- **✅ 区切り後の追加（UI・pjdhiro）**: スクリーナーを flow 型に（章を畳み「答える」だけ開く・garage 型目次）／冒頭を視座・メタ認知・インクルーシブ（包摂）・非二元性のリードに／トップと同じ Menu（src/reader-menu.js）／状態の札をやめ「最終更新 ／ バージョン（rev5）」／トップに「ツール」節と Menu 項目／「五つの帯」の多列表を帯ごとの箇条書きに。DESIGN-RULES §14 に記録（c800341）。
+- **🔜 再開時の入口**: **pd#133 補足と例 80 組**＝Q1〜Q4 の 20 組を書いて pjdhiro に出す（仕様は Issue 本文・README §3。非二元性の基準も補足と例に効く）。そのあと pd#132 の残り（公開ページの説明文・冒頭の「監修中の下書き」表示）→ アーティファクト版の5択化 → 公開前確認。
+- ログ: `.cache/session/log-20261024-935.md`／横断 `SESSION-20261024-935.md`。
+- 以下は本セッション中の経過記録。
+
+## （経過）2026-10-24（再開）— pd#131 改訂3・pd#132 起票
+- **✅ 用語の規則を決定（pjdhiro）**: メタの層＝「気づいている意識そのもの」（名詞の「気づき」を単独で使わない）／6.0＝「時間にも境界にも限られないもの」（散らすのは時間・境界の2軸の中だけ）。README §8「用語の規則」。
+- **✅ 改訂3**: README §8「改訂3」＝22 選択肢（Q1〜Q4 確定 9・規則の適用 13）。機械点検で名詞の「気づき」0、6.0 のぼやけ語は Q15 のみ（レビューに残す）。**screener-data.json と公開ページはまだ改訂1のまま**。
+- **🆕 pd#132 起票**（pjdhiro 指示）: クック＝グロイターの自我発達理論・成人発達理論の観点で段階の識別を補強（pd#131 の子）。参照＝pjdhiro の学習ノート artifact RU7CnNTSe6qQW2i4EpHyCy。
+- **⏸ Q5〜Q8 レビューは中断**（pjdhiro: 判定ルールとして参照すべきものが固まっていないのが問題）。照合と直し案は出してあるが未判定。
+- **📝 pd#132 着手**: README §8「判定ルールの参照体系」（Claude 案）＝資料の役割と優先順位（帯の定義は STAGES、取り違えの見分け方と書き方の規則は Cook-Greuter 2013）／人称の視点での段階対応表（5.5↔自我意識型は Claude の読み）／全帯の規則4つ（構造で判定・について主義・状態と段階・複雑さは目印でない）／除外条件の補強／言葉の手がかり／保持論点（6.5 の長さ）。CG 原文で全頁指示を照合済み。
+- **✅ 参照体系 確定（pjdhiro）**: 保持論点の判定＝①選択肢の長さは複雑さではない（層を名指して長くなるのは可）②5.5↔自我意識型を採る（5.0〜5.5 の一部を 5.5 の形で書く）。
+- **📝 照合し直し**（README §8「確定した参照体系での照合し直し」）: 5.0〜5.5 が 16 問中 15 問で 5.0 の形に偏る／5.0 の多くが一般論の形（について主義に弱い）／Q10 4.0 が意見の形。Q1〜Q4 の直し案 6 件。
+- **✅ 採用（pjdhiro）**: Q1〜Q4 の直し案 6 件／5.5 の形は Q2・Q6・Q8・Q11 など 4〜5 問／一般論の形を直す方針を Q5 以降にも。
+- **📝 Q5〜Q8 の直し案 7 件**（README §8「Q5〜Q8 のレビュー」）: 5.0〜5.5 を Q5・Q7 は自分に当てはめた形、Q6・Q8 は 5.5 の形に／Q5・Q6・Q8 の 6.5 に気づいている意識の層。
+- **✅ Q5〜Q8 採用（pjdhiro）**。**📝 Q9〜Q12 の直し案 8 件**（README §8「Q9〜Q12 のレビュー」）: Q9 4.0 に自分も仕組みの一部（CG 注24）／Q9 6.0 を日常の行為に／Q10 4.0 意見の形を振る舞いに／5.0〜5.5 を自分に当てはめた形・Q11 は 5.5 の形（5.5 の形は Q2・Q6・Q8・Q11 の 4 問）／Q10 6.5 に意識の層。「線を引く」が Q3・Q5・Q10 で重なる。
+- **✅ Q9〜Q12 採用（pjdhiro）**・「線を引く」の重なりはそのまま。**📝 Q13〜Q16 の直し案 9 件**（README §8「Q13〜Q16 のレビュー」）: Q13 5.0〜5.5 を 5.5 の形（5 問目・4 問案も併記）／Q14 5.0〜5.5 は CG では達成者の支援（p.50）なので自分の物語も見える形に／Q15 の 5.0〜6.5 を規則に／Q16 の 4.0〜6.0。機械点検で全 80 選択肢が規則を満たす。Q16 は問いの形（「力」）の問題が残る＝pjdhiro 判定。
+- **✅ Q13〜Q16 採用（pjdhiro）**: Q13 は 5.5 の形（5.5 は Q2・Q6・Q8・Q11・Q13 の 5 問）。Q16 は選択肢から「力」を外す・問いは「ふだん、自分が自然にしていることに最も近いのは？」（Claude の例文で置いた。差し替え可）。
+- **✅ 改訂4（確定版）**: README §8「改訂4（確定版）」の表 → **screener-data.json を rev4 に差し替え**（sources に CG 追加・全問 review ok）→ `build-reader-lp.py` で `reader/stages-screener.html` 再生成。採点テスト ALL PASSED・static 11/11・機械点検の違反 0。公開（main マージ）はしていない。
+- **🔜 次**: ①補足と例 80 組（note/example）②pd#132 の残り＝公開ページの説明文（段階は理想化された地図・優劣でない・自己申告の限界）③アーティファクト版の5択化 ④公開前確認（STAGES 名称・noindex 解除・main マージ）。
+- 点検スクリプトは scratchpad の chk.py（レビュー表の「直し案」列を読むよう修正済み）。repo には入れていない。
+
+## 🔄 CLI 作業中 2026-08-17 (174) — 定期レビュー 0817 の follow-up 消化（pd 分）
+- **HEAD（開始時）**: develop=**1a148bb**（push 済み）/ main=**fa24187**。cwd は cs worktree `branch-organization-c111f0` から兄弟 repo を横断操作（LOCAL）。
+- **✅ serve.sh**: `ln -sf` → `ln -sfn`（src/content/reader の 3 行）。既存 symlink-to-dir を dereference して `src/src` 等の自己参照リンクを作る再発源を止めた。既存 3 件（content/content・reader/reader・src/src）を削除。再実行検証で入れ子リンク再生なし。
+- **✅ state.md 回収**: worktree `continuation-e477dc` に **未コミットで取り残されていた 07-17 seq02 記録**（energy-flow 正本への機械可読3層移植・258c0b4）を本ファイルへ回収（直下の項）。0720 から 4 回続いた「develop=（本 commit 後に更新）」プレースホルダは実値で置換。
+- **📝 07-30 / 08-02 / 08-05 の CN 追加コミット（00d9514 CN-012 / eb6bd85 CN-013・014 / d736446 CN-015・016）**: セッションログ・state 記録なし。knowledge 直接追記の短セッションとみなし、ここに列挙して閉じる（遡及ログは作らない）。
+- **✅ worktree/branch prune**: 登録 4 件（continuation-e3551d / continuation-e477dc / pd121-remaining-tasks-efb6c4 / remaining-tasks-564adb）は全 HEAD が develop の祖先。孤児 2 件（main-merge / wt-wiki-consciousness-core）は差分ファイル 8/7 件がいずれも git 履歴上の旧 blob（`git log --find-object`）＝未回収なし、内包セッションログ 2 件は main に存在済み。`claude/*` 8 本も全て develop の祖先。すべて削除。
+- **✅ inbox**: REVIEW-periodic 0720 / 0810 / 0817 を archive へ（0817 は本セッションで消化したため）。
+- **✅ wiki-gen 7 件（6 回連続再生成の根治）**: 調べると **6/7 は既存ページあり**（生成時 url-verified＝title 推定 stem → 後に raw-confirmed 昇格＝PDF 名 stem に変わり「未生成」へ誤判定）。`wiki-gen-check.sh` に `{domain}_{author}_{year}_` prefix 一致（著者の連結表記ゆれ吸収）で既存とみなすフォールバックを追加＝依頼側で無限再生成を停止。真に未生成だった **D13-S14 Varela/Maturana/Uribe 1974 (Autopoiesis)** は画像 PDF 10 頁を Read 画像モードで全頁読解し `wiki/sources/D13_varela-maturana-uribe_1974_autopoiesis.md` を生成（DOI Crossref 照合済み・crosslink 1 件・cross-check pairs=0・wiki-lint 0 orphan/0 broken）。
+- **⚠️ 副産物（pjdhiro 判断）**: 同じ stem ドリフトで **二重生成された既存ページ 2 組**を検出＝`D08_miller_2001_cohen-j-d.md` / `D08_miller_2001_integrative-theory-prefrontal-cortex.md`、`D15_dewey_1934_1934.md` / `D15_dewey_1934_art-as-experience.md`。どちらを残すかは内容比較の上で判断（本セッションでは未削除）。
+- **✅ periodic-review SKILL 2 点修正**: ①kdt は GitHub archived（read-only・2026-04-03〜）で retired command を push で消せない → PR-3 対象から除外（07376f3）②cs evidence>SVG staleness 30/30 は cs#207 pivot で evidence が全て `entry_count: 0` stub 化した実体＝再生成不能 → **凍結宣言**・PR-6 で stub を skip（f29420b）。0706〜0817 の 4 回連続 WARN を根治。
+- **✅ myhome diverged**: 別セッションが 09:54〜 merge を実施し解消（`d2b85b7` が origin/main に到達・clean を 10:21 確認）。本セッションは触っていない。
+- **⏸ 未実施（rm 権限が下りず）**: 孤児 worktree dir 2 件（main-merge / wt-wiki-consciousness-core・各 29MB）の物理削除。`git worktree prune` 後も dir は残る。中身は履歴上の旧 blob のみと確認済みなので `rm -rf` して問題ない。
+
+## 🔄 CLI 作業中 2026-07-17 (seq02) — 正本 energy-flow に機械可読3層を実装（develop 反映済み・公開判定待ち）
+- **HEAD**: develop=**258c0b4**（push 済み・fast-forward）/ main=**fa24187**（変化なし）。cwd worktree `continuation-e477dc`（ブランチ `claude/resume-session-a31e8a`・develop へマージ済み）。
+- **pjdhiro 決定**: ①両版（正本 energy-flow.html／認知リズム版 energy-flow-rhythm.html）を比較用に残す ②正本はあくまで元の energy-flow.html ③機械可読層は文体判定に関わらず必要なので正本側にも実装する。
+- **✅ 実装（258c0b4）**: rhythm 版と同じ機械可読3層を正本テンプレート `scripts/reader-energy-flow-template.html` に移植——(1) 冒頭 HTML コメント地図（章ごとの結論の仕分け・正本の章番号 §0-§7 に適合）(2) META/og/JSON-LD description 結論要約型＋JSON-LD abstract/keywords 追加＋about 5件を主張仕分け型へ (3) body 冒頭 `#llm-summary` visually-hidden 静的要約。`.visually-hidden` は `src/styles/reader.css`（共有側）に定義＝three-and-seven へも展開可能。**正本は章が閉じた details 内にあり innerText 抽出で本文が落ちるため、(3) が本文抽出系 LLM の正**（rhythm 版より効果が大きい）。
+- **検証**: static-checks 11/11・アンカー149解決・U+FFFD 0・JSON-LD 構文妥当・要約層の全用語（Shalizi/Marci/Gernert/Li 2025/Kondepudi/暴流/アロスタシス 等25語）を本文と照合一致・:3006 プレビューで 1×1px clip・innerText に hero より前で出現（2146字）・見た目不変・コンソール0・three-and-seven 再生成差分なし。
+- **🔜 次**: ①develop→main 公開判定（pjdhiro 専権）②three-and-seven への同展開（要約文の書き起こしが必要・未着手）③残作業だった「比較レビューと採否判定」は pjdhiro 決定で解消（文体標準の判定は引き続き保留・両版併存で比較継続）。
+
 ## ✅ セッション終了 2026-07-17 — 認知リズム版 energy-flow 比較ドラフト＋文脈ゼロLLM要約3層（公開済み）
 - **HEAD（最終）**: develop=**（本 commit 後に更新）** / main=**（公開マージ後に更新）**（ともに push 済み）。cwd worktree `remaining-tasks-564adb`（ブランチ `claude/cognitive-rhythm-writing-a4e6ec`・develop へマージ済み）。
 - **✅ 公開（pjdhiro「一旦公開して」明示指示）**: develop → main マージで `reader/energy-flow-rhythm.html` を公開。noindex 付きのため検索/クローラには非露出、直接 URL でのみ到達可。公開 URL: https://uminomae.github.io/project-design/reader/energy-flow-rhythm.html（Pages 反映は数分後）。

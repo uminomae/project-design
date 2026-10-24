@@ -67,10 +67,11 @@ agent: "CLI"
 
 - `project-design`
 - `creation-space`
-- `kesson-driven-thinking`
 - `pjdhiro`
 
 必要に応じて他 repo を足してよい。
+
+> **凍結 repo の扱い（2026-08-17 追記）**: `kesson-driven-thinking` は GitHub 側で **archived（read-only, 2026-04-03〜）**。push できないため、PR-3（retired asset 残存）で毎回 WARN を出しても消化不能＝ノイズになる。**PR-3 の対象から除外**し、PR-1 では「ローカルが origin/main と一致しているか」だけを見る（一致していれば PASS）。同様に GitHub archived の repo は `gh repo view {repo} --json isArchived` で判定して同じ扱いにする。
 
 ## 4. 実行手順
 
@@ -145,10 +146,14 @@ evidence/ の変更が下流の公開物に反映されているかを検出す�
 1. **更新日比較**: creation-space の `evidence/evidence-D{nn}-*.md` の mtime と、対応する `assets/svg/domains/domain-D{nn}-*.svg` / `assets/png/` / PDF の mtime を比較する。evidence が新しければ WARN
 2. **旧世代 SVG**: `assets/svg/` 内の SVG にインライン `font-family` が残っていれば WARN（techo#82 関連）
 
+> **stub evidence は比較対象外（2026-08-17 判断・凍結宣言）**: cs#207 の再監査 pivot（2026-04-07〜08）で全 30 領域の evidence は `entry_count: 0` / `status: 再監査待ち` の **stub** に置換された。0706〜0817 の 4 回連続 WARN「evidence>SVG staleness 30/30」の実体はこの stub 化であり、**stub から SVG を再生成することはできない**（入力が空）。したがって公開 SVG は `source_archive`（pre-rerun snapshot）を反映した**凍結状態が正**。更新日比較は front matter が `entry_count: 0` の evidence を **skip** し、evidence rebuild（cs#224 umbrella）で entry が入った領域から順に比較対象へ戻す。旧世代 `font-family` SVG 30 件も、再生成が rebuild 後になるため同じく凍結（INFO 扱い）。
+
 ```bash
 # evidence vs SVG の更新日比較（creation-space）
 cd /Users/uminomae/dev/creation-space
 for ev in evidence/evidence-D*.md; do
+  # stub（再監査待ち・entry 0）は凍結扱いで skip
+  grep -q '^entry_count: 0' "$ev" && continue
   domain=$(echo "$ev" | grep -oP 'D\d+')
   svg=$(ls assets/svg/domains/domain-${domain}-*.svg 2>/dev/null | head -1)
   if [ -n "$svg" ] && [ "$ev" -nt "$svg" ]; then
