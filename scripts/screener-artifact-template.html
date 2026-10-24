@@ -1,0 +1,408 @@
+<title>ものの見方の広さスクリーナー</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<!--
+  Claude 版スクリーナー（claude.ai アーティファクト https://claude.ai/artifact/VY7XMLt7g4v5PLzzmUDTu1）のテンプレート。
+  生成: python3 scripts/build-screener-artifact.py（問い・選択肢・帯・バージョンは screener-data.json から差し込む）
+  公開ページ reader/stages-screener.html と同じ中身・同じ採点（src/reader-screener.js の score() と同じ決まり）。
+-->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: one narrow column, a single card per step; the five-band ruler (〜3.5 → 6.5) recurs as the motif */
+:root{
+  --bg:#eef1f2; --surface:#fbfcfc; --ink:#1d2a30; --muted:#5b6b72; --line:#cfd8db;
+  --accent:#2f5d6b; --accent-soft:#dbe7ea; --warn:#9a4a2e;
+  --display:"Shippori Mincho","Hiragino Mincho ProN","Yu Mincho",serif;
+  --body:"Zen Kaku Gothic New","Hiragino Sans","Yu Gothic",system-ui,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#141c1f; --surface:#1b2529; --ink:#e3eaec; --muted:#97a7ad; --line:#2f3d42;
+  --accent:#8cc0cd; --accent-soft:#233a40; --warn:#e29a7c; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#141c1f; --surface:#1b2529; --ink:#e3eaec; --muted:#97a7ad; --line:#2f3d42;
+  --accent:#8cc0cd; --accent-soft:#233a40; --warn:#e29a7c; color-scheme:dark}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.75;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:28px 56px}
+.wrap{max-width:640px;margin:0 auto;display:flex;flex-direction:column;gap:20px}
+header{display:flex;flex-direction:column;gap:8px}
+.eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.08em;color:var(--muted);text-transform:uppercase}
+h1{font-family:var(--display);font-weight:700;font-size:clamp(24px,5vw,30px);line-height:1.35;margin:0;text-wrap:balance}
+h2{font-family:var(--display);font-weight:700;font-size:20px;line-height:1.5;margin:0;text-wrap:balance}
+h3{font-size:14px;font-weight:700;margin:0;color:var(--muted);letter-spacing:.04em}
+p{margin:0}
+a{color:var(--accent)}
+.lead{font-size:16px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:22px;display:flex;flex-direction:column;gap:16px;min-width:0}
+.notes{margin:0;padding-left:1.2em;display:flex;flex-direction:column;gap:6px}
+.btn{font:inherit;font-weight:700;border-radius:4px;padding:10px 18px;cursor:pointer;border:1px solid var(--accent);background:var(--accent);color:var(--surface)}
+.btn.ghost{background:transparent;color:var(--accent)}
+.btn:disabled{opacity:.45;cursor:default}
+.btn:focus-visible,.opt:focus-visible,textarea:focus-visible,summary:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.row{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.small{font-size:13px;color:var(--muted)}
+.ruler{display:grid;grid-template-columns:repeat(5,1fr);gap:4px;font-family:var(--mono);font-size:12px}
+.ruler span{border-top:3px solid var(--line);padding-top:4px;color:var(--muted);text-align:center;white-space:nowrap}
+.ruler span.on{border-color:var(--accent);color:var(--ink);font-weight:500}
+.progress{display:flex;justify-content:space-between;gap:8px;font-family:var(--mono);font-size:12px;color:var(--muted)}
+.bar{height:3px;background:var(--line);border-radius:2px;overflow:hidden}
+.bar i{display:block;height:100%;background:var(--accent);transition:width .25s}
+.opts{display:flex;flex-direction:column;gap:8px}
+.opt{font:inherit;text-align:left;display:grid;grid-template-columns:2em 1fr;gap:8px;align-items:baseline;
+  padding:12px 14px;border:1px solid var(--line);border-radius:4px;background:var(--bg);color:var(--ink);cursor:pointer}
+.opt b{font-family:var(--mono);color:var(--accent)}
+.opt:hover{border-color:var(--accent)}
+.opt.picked{border-color:var(--accent);background:var(--accent-soft)}
+.hint{min-height:1.4em;font-size:13px;color:var(--warn)}
+.big{font-family:var(--display);font-size:44px;font-weight:700;line-height:1.1;font-variant-numeric:tabular-nums}
+.big small{font-family:var(--body);font-size:15px;font-weight:500;color:var(--muted);margin-left:6px}
+.position{font-family:var(--display);font-size:18px;font-weight:700;line-height:1.5}
+.meter{height:8px;background:var(--line);border-radius:2px;min-width:40px}
+.meter i{display:block;height:100%;background:var(--accent);border-radius:2px}
+.dist{display:grid;grid-template-columns:auto 1fr auto;gap:8px 12px;align-items:center;font-size:14px}
+.dist .lbl{font-family:var(--mono);color:var(--muted);white-space:nowrap}
+.dist .num{font-family:var(--mono);font-variant-numeric:tabular-nums;color:var(--muted);text-align:right;white-space:nowrap}
+.bands{display:flex;flex-direction:column;gap:14px}
+.bands div{display:flex;flex-direction:column;gap:2px;border-top:1px solid var(--line);padding-top:10px}
+.bands b{font-family:var(--display)}
+.bands span{font-size:14px}
+.alist{display:flex;flex-direction:column}
+.alist details{border-bottom:1px solid var(--line);padding:8px 0}
+.alist summary{cursor:pointer;display:grid;grid-template-columns:3.2em 1fr auto;gap:8px;align-items:baseline;list-style:none}
+.alist summary::-webkit-details-marker{display:none}
+.alist .qn{font-family:var(--mono);color:var(--muted);font-size:13px}
+.alist .stage{font-family:var(--mono);font-size:12px;white-space:nowrap;padding:1px 8px;border-radius:99px;background:var(--accent-soft);color:var(--accent)}
+.alist ul{margin:8px 0 0 3.2em;padding:0;list-style:none;display:flex;flex-direction:column;gap:4px;font-size:13px;color:var(--muted)}
+.alist li.mine{color:var(--ink);font-weight:500}
+.tabs{display:flex;gap:6px;flex-wrap:wrap}
+.tabs button{font:inherit;font-size:13px;padding:4px 12px;border-radius:99px;border:1px solid var(--line);background:transparent;color:var(--muted);cursor:pointer}
+.tabs button[aria-pressed="true"]{border-color:var(--accent);color:var(--accent);font-weight:700}
+pre.out{font-family:var(--mono);font-size:12px;line-height:1.6;background:var(--bg);border:1px solid var(--line);border-radius:4px;padding:12px;margin:0;overflow:auto;max-height:260px;white-space:pre-wrap;word-break:break-word}
+textarea{font:inherit;width:100%;box-sizing:border-box;min-height:56px;padding:10px;border:1px solid var(--line);border-radius:4px;background:var(--bg);color:var(--ink);resize:vertical}
+.chat{display:flex;flex-direction:column;gap:10px}
+.msg{padding:10px 14px;border-radius:4px;white-space:pre-wrap;word-break:break-word}
+.msg.user{background:var(--accent-soft);align-self:flex-end;max-width:90%}
+.msg.ai{background:var(--bg);border:1px solid var(--line)}
+.help{display:flex;flex-direction:column;gap:10px;border-top:1px solid var(--line);padding-top:16px}
+.docs details{border-top:1px solid var(--line);padding-top:10px}
+.docs summary{cursor:pointer;font-weight:700;color:var(--ink)}
+.docs details[open] summary{margin-bottom:8px}
+@media (prefers-reduced-motion: reduce){.bar i{transition:none}}
+</style>
+
+<div class="wrap">
+  <header>
+    <span class="eyebrow" id="eyebrow">Breadth-of-view screener</span>
+    <h1>ものの見方の広さスクリーナー</h1>
+    <p class="lead"><strong>視座</strong>・<strong>メタ認知</strong>・<strong>インクルーシブ（包摂）</strong>——どの視点から観ているか、何が観えているか、どこまでを含めて観ているか。ふだんの考え方のこの三つを、16問で確かめるスクリーナーです。いちばん奥の帯（6.0・6.5）では、<strong>非二元性</strong>——時間や境界に限られないものと日常とが二つに分かれていない見方——があるかどうかも見ています。</p>
+    <p class="small"><strong>こんな人に</strong>：自分のものの見方を確かめてみたい人／意味や生き方、孤独や死といった実存的な課題に向き合っている人／これまでの見方が通じなくなったと感じている人／非二元性や瞑想・内省に関心がある人</p>
+    <p class="small" id="meta"></p>
+  </header>
+
+  <div class="ruler" aria-hidden="true" id="ruler"></div>
+
+  <section class="card" id="intro">
+    <h2>やってみると分かること</h2>
+    <ul class="notes">
+      <li><strong>包摂の度合い</strong>：考えるときに、どれだけの視点・人間関係・時間の幅を取り込んでいるか。</li>
+      <li><strong>メタ認知の層</strong>：考えている自分に気づいているか、さらに「気づいている自分」まで観えているか。</li>
+      <li><strong>自分の経験に言葉と境界線がつく</strong>：なんとなくやっていたことに名前がつき、似た経験どうしの違いを言い分けられるようになります。</li>
+      <li><strong>余裕のなさに気づく目安になる</strong>：いつもの自分の見方を知っておくと、ふだんより狭い基準で判断していると感じたときに、比べる目安になります。</li>
+      <li><strong>すれ違いの理由を言葉にできる</strong>：相手と自分が、違う範囲を観ながら話していたのかもしれない、と気づけます。</li>
+      <li><strong>実存的な課題の手がかりになる</strong>：自分の見方の広さに気づくこと自体が、意味や生き方をめぐる課題への直接の対策になる、というのが監修者（pjdhiro）の見立てです。確かめられた効果ではなく、気づきのきっかけとして置いています。</li>
+    </ul>
+    <h2>始める前に</h2>
+    <ul class="notes">
+      <li>これは<strong>診断ではありません</strong>。傾向をざっくり見るための、ゲームのような目安です。他人と比べたり、絶対的な段階を当てたりするものではありません。</li>
+      <li>一時的な体験ではなく、<strong>ふだんの見方</strong>に近いものを選んでください。</li>
+      <li>各問5つの選択肢から1つ選びます（キーボードの A〜E でも答えられます）。選択肢の並びは問ごとにランダムです。迷う問は飛ばせます。</li>
+      <li>回答はどこにも保存されません。ページを閉じると消えます。</li>
+    </ul>
+    <p class="small">実存的な課題の中にいる人、これまでの見方が通じなくなった、意味が見えなくなったと感じている最中の人へ：下の帯の選択肢を選ぶことは、何かが欠けているという意味ではありません。どの帯も、次の見方へ移っていく途中の一つの場所です。</p>
+    <div class="row"><button class="btn" id="start">Q1 から始める</button></div>
+  </section>
+
+  <section class="card" id="quiz" hidden>
+    <div class="progress"><span id="qcount"></span><span id="qdone"></span></div>
+    <div class="bar"><i id="qbar" style="width:0"></i></div>
+    <h2 id="qtext"></h2>
+    <div class="opts" id="opts"></div>
+    <p class="hint" id="hint" aria-live="polite"></p>
+    <div class="row"><button class="btn ghost" id="back">前の問に戻る</button><button class="btn ghost" id="skip">この問を飛ばす</button></div>
+    <div class="help" id="qhelp" hidden>
+      <h3>この問について Claude に聞く</h3>
+      <p class="small">言葉の意味や選択肢の違いを質問できます。どれを選ぶべきか、どの帯に当たるかは答えません。返答にはあなたの Claude の利用枠が使われます。</p>
+      <div class="chat" id="qchat"></div>
+      <textarea id="qIn" placeholder="例：B と D の違いがよく分かりません"></textarea>
+      <div class="row"><button class="btn" id="qSend">質問する</button><button class="btn ghost" id="qStop" hidden>止める</button><span class="small" id="qNote" aria-live="polite"></span></div>
+    </div>
+  </section>
+
+  <section id="result" hidden>
+    <div class="wrap" style="max-width:none">
+      <div class="card">
+        <h3>6.5 への近さ</h3>
+        <p class="big" id="closeness"></p>
+        <div class="meter" style="height:10px"><i id="closenessBar"></i></div>
+        <p class="small">数字は優劣ではありません。どの帯も、次の見方へ移る途中の一つの場所です。</p>
+        <p class="small" id="points"></p>
+      </div>
+      <div class="card">
+        <h3>いまの位置（参考）</h3>
+        <p class="position" id="position"></p>
+        <div class="dist" id="dist"></div>
+        <p class="small">いちばん多い帯を位置としていますが、帯の境目ははっきり分かれるものではありません。どの帯にどれだけ広がっているかを、グラデーションとして読み取ってください。</p>
+      </div>
+      <div class="card">
+        <h3>あなたの回答と対応する帯</h3>
+        <p class="small">問を開くと、ほかの選択肢の帯も見られます。選ばなかった答えと見比べると、帯ごとの違いが見えてきます。</p>
+        <div class="alist" id="answerList"></div>
+      </div>
+      <div class="card">
+        <h3>五つの帯</h3>
+        <p class="small">帯の名前と定義は Terri O'Fallon の STAGES モデルの論文を、段階の見分け方は Cook-Greuter の自我発達理論を、自分の言葉で要約して借りています。数字は段階を表す便宜上の記号です。</p>
+        <div class="bands" id="bands"></div>
+      </div>
+      <div class="card" id="chatCard" hidden>
+        <h3>結果について Claude と話す</h3>
+        <div class="chat" id="chat"><p class="small">結果の読み方や、自分の経験との結びつきを質問できます。返答にはあなたの Claude の利用枠が使われます。</p></div>
+        <textarea id="chatIn" placeholder="例：6.0 と 5.0〜5.5 に分かれたのは、どう読めばいいですか"></textarea>
+        <div class="row"><button class="btn" id="chatSend">送信</button><button class="btn ghost" id="chatStop" hidden>止める</button><span class="small" id="chatNote" aria-live="polite"></span></div>
+      </div>
+      <div class="card">
+        <h3>結果を書き出す</h3>
+        <div class="tabs" role="group" aria-label="形式"><button data-f="text" aria-pressed="true">テキスト</button><button data-f="csv" aria-pressed="false">CSV</button><button data-f="json" aria-pressed="false">JSON</button></div>
+        <pre class="out" id="out"></pre>
+        <div class="row"><button class="btn" id="copy">コピー</button><button class="btn ghost" id="save" hidden>ファイルに保存</button><span class="small" id="copyNote" aria-live="polite"></span></div>
+      </div>
+      <div class="row"><button class="btn ghost" id="restart">最初からやり直す</button></div>
+    </div>
+  </section>
+
+  <section class="card docs">
+    <h2>このスクリーナーについて</h2>
+    <p class="small">公開ページ版：<a href="https://uminomae.github.io/project-design/reader/stages-screener.html">ものの見方の広さスクリーナー（Project Design）</a>。設計と論拠は <a href="https://github.com/uminomae/project-design/blob/main/knowledge/research/stages-screener/README.md">README（GitHub）</a> にあります。このページと公開ページは同じ問い・同じ採点です。</p>
+    <details>
+      <summary>何を借り、何を判断したか</summary>
+      <ul class="notes">
+        <li><strong>借りたもの</strong>：帯の名前と定義（STAGES の論文の要約）、段階の取り違えの見分け方（Cook-Greuter の要約）。</li>
+        <li><strong>LLM と監修者が判断したもの</strong>：16 の問い、各選択肢の文、各選択肢がどの帯に当たるか。</li>
+        <li><strong>求めている正確さ</strong>：各選択肢が、借りた定義と合っていること（内容の妥当性）まで。同じ人が何度答えても同じ結果になるか、STAGES の正式な測定（訓練を受けた採点者による文章完成法）と一致するかは確かめていません。</li>
+        <li>6.0・6.5 の選択肢は非二元性を条件に含みます（6.0＝時間や境界に限られないものと日常の行為が別々になっていない、6.5＝体・感情・考えの層と、それに気づいている意識そのものが互いに入り込み合う。どちらも「区別が消えて一つになる」ことではありません）。</li>
+      </ul>
+    </details>
+    <details>
+      <summary>採点のしかた</summary>
+      <ul class="notes">
+        <li>選んだ選択肢の帯を 〜3.5=0、4.0〜4.5=1、5.0〜5.5=2、6.0=3、6.5=4 として平均し、100 点に換算したものが「6.5 への近さ」です。飛ばした問は数えません。</li>
+        <li>帯ごとに何問選んだかを数え、回答が 8 問以上なら、いちばん多い帯を「いまの位置（参考）」とします。移行期などの判定はしません。</li>
+      </ul>
+    </details>
+    <details>
+      <summary>知っておいてほしいこと</summary>
+      <ul class="notes">
+        <li>6.5 はデータが少ない段階です。STAGES の検証研究では、統計的な結論が成り立つのは 2.0〜6.0 で、6.5 は確かな結論を出すにはデータが足りないとされています。</li>
+        <li>上の段階の人も、4.0〜4.5 に当たる答えを多く選ぶことがあります。</li>
+        <li>理論を「知っている」ことと、その見方で「ふだん生きている」ことは別です。知識で答えると、結果は上に寄ります。</li>
+      </ul>
+    </details>
+    <details>
+      <summary>資料</summary>
+      <ul class="notes">
+        <li>O'Fallon, T. (2020) States and STAGES: Waking up Developmentally. Integral Review 16(1). <a href="https://integral-review.org/issues/vol_16_no_1_ofallon_states_and_stages.pdf">PDF</a></li>
+        <li>Barta, K. (2020) Seven Perspectives on the STAGES Developmental Model. Integral Review 16(1). <a href="https://integral-review.org/issues/vol_16_no_1_barta_seven_perspectives_on_the_stages_developmental_model.pdf">PDF</a></li>
+        <li>Murray, T. &amp; O'Fallon, T. (2020) Summary of STAGES Validation Research. Integral Review 16(1). <a href="https://integral-review.org/issues/vol_16_no_1_murray_and_ofallon_summary_of_research.pdf">PDF</a></li>
+        <li>Cook-Greuter, S. R. (2013) Nine Levels of Increasing Embrace in Ego Development (prepublication version). <a href="https://pdf.stafforini.com/cook-greuter-2013-nine-levels-increasing.pdf">PDF</a></li>
+      </ul>
+    </details>
+  </section>
+</div>
+
+<script>
+const DATA = /*SCREENER_DATA*/null;
+const BANDS = DATA.bands, QS = DATA.questions;
+const BY = Object.fromEntries(BANDS.map(b => [b.id, b]));
+const KEYS = ["A", "B", "C", "D", "E"];
+const MIN_FOR_POSITION = 8;
+const CARE = "数字は優劣ではありません。どの帯も、次の見方へ移る途中の一つの場所です。";
+const bandName = b => `${b.label} ${b.name}（${b.phrase}）`;
+
+// 採点（公開ページ src/reader-screener.js の score() と同じ決まり。移行期の判定はしない）
+function score(answers) {
+  const picked = answers.filter(a => a && BY[a]);
+  const n = picked.length;
+  const counts = Object.fromEntries(BANDS.map(b => [b.id, 0]));
+  picked.forEach(a => { counts[a] += 1; });
+  if (n === 0) return { answered: 0, closeness: null, counts, top: [] };
+  const avg = picked.reduce((s, a) => s + BY[a].points, 0) / n;
+  const closeness = Math.round(avg / 4 * 100);
+  if (n < MIN_FOR_POSITION) return { answered: n, closeness, counts, top: [] };
+  const max = Math.max(...Object.values(counts));
+  return { answered: n, closeness, counts, top: BANDS.filter(b => counts[b.id] === max).map(b => b.id) };
+}
+
+const $ = id => document.getElementById(id);
+let answers = [], cur = 0, perms = [], result = null, qLogs = [], chatLog = [];
+$("meta").textContent = `バージョン ${DATA.version}（${DATA.updated}）`;
+$("ruler").innerHTML = BANDS.map(b => `<span>${b.label}</span>`).join("");
+
+function shuffled(len) { const a = [...Array(len).keys()]; for (let i = len - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; }
+function show(id) { ["intro", "quiz", "result"].forEach(x => $(x).hidden = x !== id); window.scrollTo(0, 0); }
+
+function renderQ() {
+  const q = QS[cur];
+  $("qcount").textContent = `Q${cur + 1} / ${QS.length}`;
+  $("qdone").textContent = `回答 ${answers.filter(Boolean).length}`;
+  $("qbar").style.width = (cur / QS.length * 100) + "%";
+  $("qtext").textContent = `Q${cur + 1}. ${q.text}`;
+  $("opts").innerHTML = "";
+  perms[cur].forEach((oi, pos) => {
+    const o = q.options[oi];
+    const b = document.createElement("button");
+    b.className = "opt"; b.type = "button";
+    if (answers[cur] === o.band) b.classList.add("picked");
+    b.innerHTML = `<b>${KEYS[pos]}</b><span></span>`; b.lastChild.textContent = o.text;
+    b.onclick = () => pick(o.band);
+    $("opts").appendChild(b);
+  });
+  $("hint").textContent = ""; $("back").disabled = cur === 0;
+  $("qchat").innerHTML = ""; (qLogs[cur] || []).forEach(m => addMsg($("qchat"), m.role, m.content)); $("qNote").textContent = "";
+}
+function pick(band) { answers[cur] = band; next(); }
+function next() { if (cur < QS.length - 1) { cur++; renderQ(); } else finish(); }
+document.addEventListener("keydown", e => {
+  if ($("quiz").hidden || e.metaKey || e.ctrlKey || e.altKey || e.target.tagName === "TEXTAREA") return;
+  const k = e.key.toUpperCase();
+  if (KEYS.includes(k)) pick(QS[cur].options[perms[cur][KEYS.indexOf(k)]].band);
+  else if (k.length === 1) $("hint").textContent = "A〜E のいずれか1つで答えてください。";
+});
+$("start").onclick = () => { answers = Array(QS.length).fill(null); cur = 0; qLogs = []; perms = QS.map(q => shuffled(q.options.length)); show("quiz"); renderQ(); };
+$("back").onclick = () => { if (cur > 0) { cur--; renderQ(); } };
+$("skip").onclick = () => { answers[cur] = null; next(); };
+$("restart").onclick = () => { result = null; chatLog = []; $("chat").innerHTML = '<p class="small">結果の読み方や、自分の経験との結びつきを質問できます。返答にはあなたの Claude の利用枠が使われます。</p>'; show("intro"); };
+
+function finish() {
+  result = score(answers);
+  const r = result;
+  $("closeness").innerHTML = r.closeness == null ? "—<small>回答がありません</small>" : `${r.closeness}<small>/ 100（${r.answered}問に回答）</small>`;
+  $("closenessBar").style.width = (r.closeness ?? 0) + "%";
+  $("points").textContent = "選んだ選択肢の帯を 〜3.5=0、4.0〜4.5=1、5.0〜5.5=2、6.0=3、6.5=4 として平均し、100 点に換算したものです。飛ばした問は数えません。";
+  $("position").textContent = r.answered < MIN_FOR_POSITION ? `回答が ${MIN_FOR_POSITION} 問に満たないため、位置は出していません。下の分布だけを見てください。` : r.top.map(id => bandName(BY[id])).join("／");
+  const max = Math.max(1, ...Object.values(r.counts));
+  $("dist").innerHTML = "";
+  [...BANDS].reverse().forEach(b => {
+    const l = document.createElement("span"); l.className = "lbl"; l.textContent = b.label;
+    const m = document.createElement("div"); m.className = "meter"; m.innerHTML = `<i style="width:${r.counts[b.id] / max * 100}%"></i>`;
+    const n = document.createElement("span"); n.className = "num"; n.textContent = `${r.counts[b.id]}問`;
+    $("dist").append(l, m, n);
+  });
+  $("answerList").innerHTML = "";
+  QS.forEach((q, i) => {
+    const a = answers[i];
+    const d = document.createElement("details");
+    const sm = document.createElement("summary");
+    sm.innerHTML = `<span class="qn">Q${i + 1}</span><span></span><span class="stage"></span>`;
+    const o = a && q.options.find(x => x.band === a);
+    sm.children[1].textContent = o ? o.text : "（飛ばした）";
+    sm.children[2].textContent = a ? BY[a].label : "—";
+    const ul = document.createElement("ul");
+    q.options.forEach(x => { const li = document.createElement("li"); if (x.band === a) li.className = "mine"; li.textContent = `${BY[x.band].label}：${x.text}`; ul.appendChild(li); });
+    d.append(sm, ul); $("answerList").appendChild(d);
+  });
+  [...$("ruler").children].forEach((sp, i) => sp.classList.toggle("on", r.top.includes(BANDS[i].id)));
+  $("qbar").style.width = "100%";
+  setFormat("text");
+  show("result");
+}
+
+$("bands").innerHTML = BANDS.map(b => `<div><b></b><span></span><span class="small"></span></div>`).join("");
+[...$("bands").children].forEach((el, i) => {
+  const b = BANDS[i];
+  el.children[0].textContent = bandName(b);
+  el.children[1].textContent = `何が観えているか：${b.metacognition}／何を取り込むか：${b.inclusion}`;
+  el.children[2].textContent = `視座：${b.perspective}（出典 ${b.source}）`;
+});
+
+// 書き出し
+let fmt = "text";
+function exportText(f) {
+  const r = result;
+  const rows = QS.map((q, i) => { const a = answers[i]; const o = a && q.options.find(x => x.band === a); return { q: `Q${i + 1}`, text: q.text, answer: o ? o.text : null, band: a ? BY[a].label : null }; });
+  if (f === "csv") return ["問,問い,選んだ選択肢,帯", ...rows.map(x => `${x.q},"${x.text}","${x.answer ?? "（飛ばした）"}",${x.band ?? ""}`)].join("\n");
+  if (f === "json") return JSON.stringify({ version: DATA.version, closeness: r.closeness, answered: r.answered, position: r.top.map(id => BY[id].label), counts: Object.fromEntries(BANDS.map(b => [b.label, r.counts[b.id]])), answers: rows }, null, 2);
+  return [r.closeness == null ? "6.5 への近さ：回答なし" : `6.5 への近さ：${r.closeness}（0〜100・${r.answered}問に回答）`, CARE,
+    r.top.length ? `いまの位置（参考）：${r.top.map(id => BY[id].label).join("・")}` : "いまの位置（参考）：回答が少ないため出していません",
+    `帯ごとの回答数：${BANDS.map(b => `${b.label}=${r.counts[b.id]}`).join(" ")}`, "回答：",
+    ...rows.map(x => `${x.q} ${x.text} → ${x.answer ? `${x.answer}（${x.band}）` : "（飛ばした）"}`),
+    `バージョン：${DATA.version}`].join("\n");
+}
+function setFormat(f) { fmt = f; document.querySelectorAll(".tabs button").forEach(b => b.setAttribute("aria-pressed", b.dataset.f === f)); $("out").textContent = exportText(f); $("copyNote").textContent = ""; }
+document.querySelectorAll(".tabs button").forEach(b => b.onclick = () => setFormat(b.dataset.f));
+$("copy").onclick = () => {
+  navigator.clipboard.writeText($("out").textContent).then(() => $("copyNote").textContent = "コピーしました", () => {
+    const r = document.createRange(); r.selectNodeContents($("out")); const sel = getSelection(); sel.removeAllRanges(); sel.addRange(r);
+    $("copyNote").textContent = "選択しました。⌘C / Ctrl+C でコピーしてください";
+  });
+};
+
+// Claude（sample）と保存（downloads）。使えないときは機能ごと隠す
+let sample = null, downloads = null, ctl = null;
+window.claude?.use?.("downloads").then(d => { downloads = d; if (d) $("save").hidden = false; }).catch(() => {});
+$("save").onclick = () => {
+  const ext = { text: "txt", csv: "csv", json: "json" }[fmt];
+  downloads.save({ filename: `screener-result.${ext}`, data: $("out").textContent }).then(() => $("copyNote").textContent = "保存しました", e => { if (e?.code !== "cancelled" && e?.code !== "declined") $("copyNote").textContent = "保存できませんでした"; });
+};
+window.claude?.use?.("sample").then(s => { sample = s; $("qhelp").hidden = !s; $("chatCard").hidden = !s; }).catch(() => {});
+
+const BAND_TEXT = BANDS.map(b => `- ${bandName(b)}：視座＝${b.perspective}。観えているもの＝${b.metacognition}。取り込むもの＝${b.inclusion}。`).join("\n");
+const COMMON = `このスクリーナー（ものの見方の広さスクリーナー、バージョン ${DATA.version}）は、視座・メタ認知・インクルーシブ（包摂）——どの視点から観ているか、何が観えているか、どこまでを含めて観ているか——を16問×5択で確かめる。6.0・6.5 では非二元性（時間や境界に限られないものと日常とが二つに分かれていない見方。「区別が消えて一つになる」ではない）も見る。帯の定義は Terri O'Fallon の STAGES モデル、段階の見分け方は Cook-Greuter の自我発達理論の要約で、各選択肢がどの帯に当たるかは LLM と監修者の判断。診断ではなく、内容の妥当性までを求めた目安。主な対象は、自分のものの見方を確かめてみたい人、意味や生き方・孤独や死といった実存的な課題に向き合っている人、非二元性や瞑想・内省に関心がある人。`;
+const QHELP = `${COMMON}
+あなたは回答中の説明役。回答者がいま答えている問いの言葉や選択肢の違いについて、質問に答える。
+厳守：
+- どの選択肢がどの帯に当たるか、採点のしかた、どれが「高い」「進んでいる」かは言わない。聞かれても、回答に影響するので答えられないと伝える。
+- どれを選ぶべきか勧めない。回答者の話からどれに当てはまるかを判定しない。
+- 選択肢を説明するときは、A〜E を同じ分量・同じ温度で、日常の具体的な場面に置き換える。どれかを魅力的に、どれかを劣って見せない。
+- 一時的な特別な体験ではなく、ふだんの見方として最も近いものを選べばよい、と必要に応じて添える。
+- 医療・臨床的な表現は避ける。日本語で、簡潔に（300字程度まで）。`;
+const RESULT_RULES = `${COMMON}
+帯：
+${BAND_TEXT}
+あなたは結果の読み方を一緒に考える役。下の結果はページが決まりどおりに計算したもので、点や位置を書き換えない。
+方針：
+- 数字は優劣ではない。どの帯も次の見方へ移る途中の一つの場所。下の帯を「欠けている」と読ませない。
+- 移行期などの判定はしない。分布はグラデーションとして示し、どう読むかは回答者に委ねる。問いかけて、回答者が自分で読むのを助ける。
+- 一時的な体験（状態）とふだんの見方（段階）を分ける。理論を知っていることと、その見方で生きていることは別。
+- 結果を断定しない。病気や能力の判定に使わない。医療・臨床的な表現は避ける。治療や解決を約束しない。
+- 実存的な課題の中にいる人が読む前提で、落ち着いた言葉で話す。日常の場面に結びつけ、専門用語は必要なら括弧で説明する。日本語で、400字程度まで。`;
+function qContext() {
+  const q = QS[cur];
+  return `${QHELP}\n\n# いまの問い（記号は回答者の画面の並び）\nQ${cur + 1}. ${q.text}\n${perms[cur].map((oi, pos) => `${KEYS[pos]}. ${q.options[oi].text}`).join("\n")}`;
+}
+function rContext() { return `${RESULT_RULES}\n\n# 結果\n${exportText("text")}`; }
+
+const PANELS = {
+  result: { chat: "chat", send: "chatSend", stop: "chatStop", note: "chatNote", log: () => chatLog, ctx: rContext },
+  quiz: { chat: "qchat", send: "qSend", stop: "qStop", note: "qNote", log: () => (qLogs[cur] ||= []), ctx: qContext },
+};
+function addMsg(box, role, text) { box.querySelector(".small")?.remove(); const d = document.createElement("div"); d.className = "msg " + (role === "user" ? "user" : "ai"); d.textContent = text; box.appendChild(d); return d; }
+const ERR = { not_granted: "Claude の利用が許可されませんでした", sampling_disabled: "この表示では Claude を使えません", rate_limited: "混み合っています。少し待ってから送ってください", prompt_too_large: "会話が長くなりすぎました。やり直すと続けられます", session_expired: "Claude にもう一度ログインしてください" };
+async function ask(text, which) {
+  const P = PANELS[which];
+  if (!sample || ctl) return;
+  const log = P.log(), box = $(P.chat), qAt = cur;
+  log.push({ role: "user", content: text }); addMsg(box, "user", text);
+  const bubble = addMsg(box, "ai", "考えています…");
+  ctl = new AbortController(); $(P.send).disabled = true; $(P.stop).hidden = false; $(P.note).textContent = "";
+  try {
+    const r = await sample([{ role: "user", content: P.ctx() }, { role: "assistant", content: "方針と内容を確認しました。" }, ...log], { cache: false, signal: ctl.signal, modelTier: "complex", onText: ({ text }) => { bubble.textContent = text; } });
+    bubble.textContent = r.text; log.push({ role: "assistant", content: r.text });
+  } catch (e) {
+    if (e?.text) { bubble.textContent = e.text; log.push({ role: "assistant", content: e.text }); } else { bubble.remove(); log.pop(); }
+    if (e?.code === "not_granted" || e?.code === "sampling_disabled") { $("qhelp").hidden = true; $("chatCard").hidden = true; }
+    else if (e?.code !== "cancelled") $(P.note).textContent = ERR[e?.code] || "返答を受け取れませんでした。少し待ってから送ってください";
+  } finally { ctl = null; $(P.send).disabled = false; $(P.stop).hidden = true; if (which === "quiz" && cur !== qAt && !$("quiz").hidden) renderQ(); }
+}
+$("chatSend").onclick = () => { const t = $("chatIn").value.trim(); if (!t) return; $("chatIn").value = ""; ask(t, "result"); };
+$("chatStop").onclick = () => ctl?.abort();
+$("qSend").onclick = () => { const t = $("qIn").value.trim(); if (!t) return; $("qIn").value = ""; ask(t, "quiz"); };
+$("qStop").onclick = () => ctl?.abort();
+</script>
