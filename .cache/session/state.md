@@ -1,10 +1,12 @@
 # state.md — project-design
 
-## 🔄 CLI 作業中 2026-10-24 — pd#131 自我発達スクリーナーを pd へ移す（techo から）
-- **✅ 正本新設**: `knowledge/research/stages-screener/README.md`（目的・対象・選択肢の原則・採点・品質基準・論拠・16問×5択の下書き改訂1・エニアグラム仮説・公開の形の案・残作業）。掲載範囲は pjdhiro 承認（中年の危機・監修者の見立て・エニアグラム仮説＝載せる／techo の Issue 番号＝載せない／STAGES の名＝README では使う）。
-- **✅ 旧版 HTML**: `stages-screener/archive/screener-v11-4choice.html`（アーティファクト v11 のまま。掲載範囲内なので削除箇所なし）。
-- **決定**: reader/ 公開ページは Claude 欄を外しアーティファクト版へリンク。構成案（JSON 正本＋READER MD＋reader-screener.js）は README §10・pjdhiro 承認待ち。
-- **🔜 次**: 監修者レビュー（選択肢採否）→ 補足と例 80 組 → アーティファクト版5択化 → reader ページ。公開前に STAGES 名称確認。techo#145〜147 を閉じるかは pjdhiro に確認中。
+## ⏸ 区切り 2026-10-24 — pd#131 自我発達スクリーナー（Session 20261024-897）
+- **HEAD**: develop=（本 commit）/ main 変化なし。push 済み。公開（main マージ）はしていない。
+- **✅ 済み**: 正本 README（`knowledge/research/stages-screener/README.md`）・旧版 HTML（archive/）・reader/ 公開ページを develop に実装（`reader/stages-screener.html`・noindex・下書き選択肢）。採点テスト `test-screener-score.mjs`。
+- **✅ 監修者レビュー1回目**: OK 7問（Q1〜4・8〜10）／保留 9問（理由＝帯の当て方に迷う）。
+- **✅ pjdhiro 決定**: 帯の判定基準（主軸＝視点の広さと包含の程度・README §8）／§3 の 9「設問＝分野、選択肢＝帯の基準に沿って当てがう」／基準の条件は守り言い回しは散らす／Q11＝感情・Q13＝仕事と役割に分野変更／OK の7問も含め全問を基準で見直す。
+- **📝 改訂2案**: README §8「改訂2」（26 選択肢変更）と「改訂2 の基準照合」（全80選択肢に判定と解説・◯63／△17）。**screener-data.json と公開ページはまだ改訂1のまま**。
+- **🔜 次（再開時）**: ①pjdhiro が改訂2を照合表つきで問ごとにレビュー（Q1〜4 は出しかけて区切り）②△17 の直し（6.5 に気づきの層が抜けている、二つのことを聞いている）③確定後に screener-data.json を改訂2へ→再生成④補足と例 80 組⑤アーティファクト版の5択化⑥公開前確認（STAGES 名称・アーティファクト共有設定・noindex 解除・main マージ）⑦techo#145〜147 を閉じるか pjdhiro に確認（未質問）。
 
 ## 🔄 CLI 作業中 2026-08-17 (174) — 定期レビュー 0817 の follow-up 消化（pd 分）
 - **HEAD（開始時）**: develop=**1a148bb**（push 済み）/ main=**fa24187**。cwd は cs worktree `branch-organization-c111f0` から兄弟 repo を横断操作（LOCAL）。
