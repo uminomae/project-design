@@ -44,6 +44,22 @@ const SITE_MENU_LINKS = [
 
 const KNOWLEDGE_MENU_KEYS = ["design-thinking", "trust", "value"];
 
+// ツール（対話して使うページ）。トップの「ツール」節と同じものをメニューにも出す
+const TOOL_MENU_LINKS = [
+  {
+    href: "/project-design/reader/stages-screener.html",
+    labelKey: "menu.toolScreener",
+  },
+];
+
+function toolMenuItems() {
+  return [
+    { type: "separator" },
+    { type: "label", labelKey: "menu.tools" },
+    ...TOOL_MENU_LINKS.map((item) => ({ type: "link", ...item })),
+  ];
+}
+
 // NOTE: This menu data is also imported by Quartz for the wiki top nav.
 // When changing labels, ordering, or destinations here, review the wiki side too.
 export function getMenuItems({ currentSite = "home", context = "main" } = {}) {
@@ -75,9 +91,16 @@ export function getMenuItems({ currentSite = "home", context = "main" } = {}) {
         key,
         href: `?knowledge=${key}`,
       })),
+      ...toolMenuItems(),
       { type: "separator" },
       { type: "action", labelKey: "slides.trigger", modalOpen: "slides" },
     );
+    return items;
+  }
+
+  // 読み物・ツールのページ（src/reader-menu.js）。サイトとツールだけを出す
+  if (context === "reader") {
+    items.push(...toolMenuItems());
     return items;
   }
 
@@ -101,6 +124,8 @@ export const TRANSLATIONS = {
     "menu.awareness": "意識とは",
     "menu.blog": "BLOG",
     "menu.researchNotes": "調査ノート",
+    "menu.tools": "ツール",
+    "menu.toolScreener": "ものの見方の広さスクリーナー",
     "controls.topBarAria": "サイト操作",
     "controls.languageAria": "言語切替",
     "hero.notice":
@@ -174,6 +199,13 @@ export const TRANSLATIONS = {
     "repo.multiplication": "足し算ではなく、掛け算の経営 — 答えは「3 と 7」",
     "repo.multiplicationDesc":
       "複利の話ではない。向きと位相が振幅を決める「回転の掛け算」——チームの 3 と 7 を数学で確かめる読み物",
+    "section.tools.label": "Tools",
+    "section.tools.title": "ツール",
+    "section.tools.body":
+      "読むだけでなく、自分で試して確かめるためのページです。診断ではなく、自分の見方に気づくきっかけとして置いています。",
+    "repo.screener": "ものの見方の広さスクリーナー",
+    "repo.screenerDesc":
+      "視座・メタ認知・インクルーシブ（包摂）——どこまでを含めて見ているかを16問×5択で確かめる。6.0・6.5 では非二元性も見る",
     "knowledge.designThinking.title": "デザイン思考とは",
     "knowledge.trust.title": "信頼とは",
     "knowledge.value.title": "価値とは",
@@ -258,6 +290,8 @@ export const TRANSLATIONS = {
     "menu.awareness": "AWARENESS",
     "menu.blog": "BLOG",
     "menu.researchNotes": "Research Notes",
+    "menu.tools": "Tools",
+    "menu.toolScreener": "Breadth-of-View Screener",
     "controls.topBarAria": "Site controls",
     "controls.languageAria": "Language switcher",
     "hero.notice":
@@ -333,6 +367,13 @@ export const TRANSLATIONS = {
     "repo.multiplication": "Management by Multiplication, Not Addition — the Answer Is 3 and 7",
     "repo.multiplicationDesc":
       "Not compounding: a multiplication of rotations, where direction and phase drive amplitude. A reader that checks the 3 and 7 of teams with mathematics",
+    "section.tools.label": "Tools",
+    "section.tools.title": "Tools",
+    "section.tools.body":
+      "Pages to try for yourself, not just to read. They are not diagnoses — just prompts to notice how you see.",
+    "repo.screener": "Breadth-of-View Screener",
+    "repo.screenerDesc":
+      "Perspective, metacognition, and inclusiveness — 16 questions with 5 options each to see how much you take in. The 6.0 and 6.5 bands also look for non-duality. (Japanese only)",
     "knowledge.designThinking.title": "What is Design Thinking?",
     "knowledge.trust.title": "What is Trust?",
     "knowledge.value.title": "What is Value?",

@@ -16,7 +16,7 @@
   - 帯: 〜3.5／4.0〜4.5／5.0〜5.5／6.0／6.5（定義は STAGES の論文から要約・出典ページ付き）
   - 採点: 選んだ帯を 0〜4 点（6.5 への近さ）として平均し 0〜100 に換算。帯ごとの分布で位置、隣り合う2帯がどちらも回答数の 1/3 以上で移行期
   - 何を借り何を判断したか: 帯の定義は STAGES の論文、段階の見分け方は Cook-Greuter (2013)、各選択肢がどの帯に当たるかは LLM と監修者の判断。求める正確性は内容の妥当性まで
-  - 状態: 選択肢は監修者レビューで確定（改訂5）。補足と例は作成中（公開前は noindex）
+  - 状態: ページ上部の最終更新日とバージョン（screener-data.json の version）で示す（公開前は noindex）
 -->
 <html lang="ja">
 <head>
@@ -86,6 +86,11 @@
     </script>
 </head>
 <body class="reader-flow">
+    <!-- トップと同じ Menu（項目は src/content/site-data.mjs の getMenuItems・描画は src/reader-menu.js） -->
+    <div class="top-bar" role="group" aria-label="サイト操作">
+        <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-menu">Menu</button>
+    </div>
+    <nav class="site-menu" id="site-menu" aria-label="Site menu"></nav>
     <div id="webgl-container" aria-hidden="true"></div>
     <div id="content">
         <div id="llm-summary" class="visually-hidden">
@@ -96,9 +101,8 @@
                 <h1>ものの見方の広さスクリーナー</h1>
                 <p class="reader-subtitle">視座・メタ認知・インクルーシブ（包摂）を、16問×5択で確かめる</p>
                 <p class="reader-meta">
-                    <span class="reader-status-badge">選択肢は確定 — 補足と例は作成中</span><br>
-                    最終更新: 2026-10-24 ／ 各章は見出しをタップで開閉できます<br>
-                    <a href="../index.html">プロジェクトデザイン論</a>
+                    最終更新: 2026-10-24 ／ バージョン: rev5<br>
+                    各章は見出しをタップで開閉できます
                 </p>
             </header>
             <article class="reader-article prose-block">
@@ -122,9 +126,6 @@
 <li>回答はどこにも保存・送信されません。ページを閉じると消えます（ページの閲覧回数だけは計測しています）。</li>
 </ul>
 <p>これまでの見方が通じなくなった、意味が見えなくなった、と感じている最中の人へ：下の帯の選択肢を選ぶことは、何かが欠けているという意味ではありません。どの帯も、次の見方へ移っていく途中の一つの場所です。</p>
-<blockquote class="reader-callout">
-<p><strong>選択肢は監修者のレビューを経て確定しています。</strong> 各選択肢の補足と日常の例は、いま作っているところです。</p>
-</blockquote>
 </div></details><details class="sec" id="答える" open><summary>答える</summary><div class="secbody">
 
 
@@ -209,6 +210,7 @@
     </div>
     <script type="module" src="../src/reader-app.js"></script>
     <script src="../src/reader-flow.js" defer></script>
+    <script type="module" src="../src/reader-menu.js"></script>
     <script type="module" src="../src/reader-screener.js"></script>
 </body>
 </html>

@@ -187,6 +187,12 @@ def build(SRC: Path, TPL: Path, OUT: Path, STYLE: str) -> None:
 
     page = TPL.read_text(encoding="utf-8")
     page = page.replace("<!--BODY-->", html).replace("<!--UPDATED-->", updated)
+    # 状態は日付とバージョンで示す（pjdhiro 2026-10-24）。バージョンはスクリーナーの正本 JSON から取る
+    if "<!--VERSION-->" in page:
+        if OUT.name not in SCREENER_DATA:
+            sys.exit(f"ERROR: <!--VERSION--> needs a data source ({OUT.name})")
+        version = json.loads(SCREENER_DATA[OUT.name].read_text(encoding="utf-8"))["version"]
+        page = page.replace("<!--VERSION-->", version)
 
     OUT.parent.mkdir(exist_ok=True)
     OUT.write_text(page, encoding="utf-8")
