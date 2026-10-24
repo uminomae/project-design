@@ -272,7 +272,8 @@ if (typeof document !== 'undefined') {
 }
 
 // 「Claude で再現する」のプロンプトをコピーするボタン（ビルドが <!--CLAUDE-PROMPT--> に置く）
-document.querySelectorAll('[data-copy]').forEach((btn) => {
+// node の採点テストはこのモジュールを読み込むだけなので、document がないときは何もしない
+if (typeof document !== 'undefined') document.querySelectorAll('[data-copy]').forEach((btn) => {
     const target = document.getElementById(btn.dataset.copy);
     if (!target) return;
     const label = btn.textContent;
