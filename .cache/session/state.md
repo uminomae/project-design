@@ -1,5 +1,11 @@
 # state.md — project-design
 
+## 🔄 CLI 作業中 2026-10-24 — pd#131 自我発達スクリーナーを pd へ移す（techo から）
+- **✅ 正本新設**: `knowledge/research/stages-screener/README.md`（目的・対象・選択肢の原則・採点・品質基準・論拠・16問×5択の下書き改訂1・エニアグラム仮説・公開の形の案・残作業）。掲載範囲は pjdhiro 承認（中年の危機・監修者の見立て・エニアグラム仮説＝載せる／techo の Issue 番号＝載せない／STAGES の名＝README では使う）。
+- **✅ 旧版 HTML**: `stages-screener/archive/screener-v11-4choice.html`（アーティファクト v11 のまま。掲載範囲内なので削除箇所なし）。
+- **決定**: reader/ 公開ページは Claude 欄を外しアーティファクト版へリンク。構成案（JSON 正本＋READER MD＋reader-screener.js）は README §10・pjdhiro 承認待ち。
+- **🔜 次**: 監修者レビュー（選択肢採否）→ 補足と例 80 組 → アーティファクト版5択化 → reader ページ。公開前に STAGES 名称確認。techo#145〜147 を閉じるかは pjdhiro に確認中。
+
 ## 🔄 CLI 作業中 2026-08-17 (174) — 定期レビュー 0817 の follow-up 消化（pd 分）
 - **HEAD（開始時）**: develop=**1a148bb**（push 済み）/ main=**fa24187**。cwd は cs worktree `branch-organization-c111f0` から兄弟 repo を横断操作（LOCAL）。
 - **✅ serve.sh**: `ln -sf` → `ln -sfn`（src/content/reader の 3 行）。既存 symlink-to-dir を dereference して `src/src` 等の自己参照リンクを作る再発源を止めた。既存 3 件（content/content・reader/reader・src/src）を削除。再実行検証で入れ子リンク再生なし。
@@ -19,7 +25,6 @@
 - **✅ 実装（258c0b4）**: rhythm 版と同じ機械可読3層を正本テンプレート `scripts/reader-energy-flow-template.html` に移植——(1) 冒頭 HTML コメント地図（章ごとの結論の仕分け・正本の章番号 §0-§7 に適合）(2) META/og/JSON-LD description 結論要約型＋JSON-LD abstract/keywords 追加＋about 5件を主張仕分け型へ (3) body 冒頭 `#llm-summary` visually-hidden 静的要約。`.visually-hidden` は `src/styles/reader.css`（共有側）に定義＝three-and-seven へも展開可能。**正本は章が閉じた details 内にあり innerText 抽出で本文が落ちるため、(3) が本文抽出系 LLM の正**（rhythm 版より効果が大きい）。
 - **検証**: static-checks 11/11・アンカー149解決・U+FFFD 0・JSON-LD 構文妥当・要約層の全用語（Shalizi/Marci/Gernert/Li 2025/Kondepudi/暴流/アロスタシス 等25語）を本文と照合一致・:3006 プレビューで 1×1px clip・innerText に hero より前で出現（2146字）・見た目不変・コンソール0・three-and-seven 再生成差分なし。
 - **🔜 次**: ①develop→main 公開判定（pjdhiro 専権）②three-and-seven への同展開（要約文の書き起こしが必要・未着手）③残作業だった「比較レビューと採否判定」は pjdhiro 決定で解消（文体標準の判定は引き続き保留・両版併存で比較継続）。
-
 
 ## ✅ セッション終了 2026-07-17 — 認知リズム版 energy-flow 比較ドラフト＋文脈ゼロLLM要約3層（公開済み）
 - **HEAD（最終）**: develop=**（本 commit 後に更新）** / main=**（公開マージ後に更新）**（ともに push 済み）。cwd worktree `remaining-tasks-564adb`（ブランチ `claude/cognitive-rhythm-writing-a4e6ec`・develop へマージ済み）。
