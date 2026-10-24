@@ -43,7 +43,7 @@ PAGES = [
         ROOT / "knowledge/research/stages-screener/READER-stages-screener.md",
         ROOT / "scripts/reader-stages-screener-template.html",
         ROOT / "reader/stages-screener.html",
-        "glow",
+        "flow",
     ),
 ]
 
@@ -67,8 +67,12 @@ def fold_sections(html: str) -> str:
         body = parts[i + 1] if i + 1 < len(parts) else ""
         hid = re.search(r'id="([^"]+)"', h2).group(1)
         label = re.sub(r"<[^>]+>", "", h2).strip()
+        # 正本 MD で h2 直後に <!--OPEN--> を置いた章は、最初から開いておく
+        opened = body.lstrip().startswith("<!--OPEN-->")
+        if opened:
+            body = body.replace("<!--OPEN-->", "", 1)
         out.append(
-            f'<details class="sec" id="{hid}"><summary>{label}</summary>'
+            f'<details class="sec" id="{hid}"{" open" if opened else ""}><summary>{label}</summary>'
             f'<div class="secbody">{body}</div></details>'
         )
     return "".join(out)
