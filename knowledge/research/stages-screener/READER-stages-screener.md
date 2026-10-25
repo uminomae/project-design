@@ -109,16 +109,16 @@ Claude と話しながら答える版もあります（Claude のアカウント
 
 ### 三つの軸のほかに
 
-段階を分ける軸は、理論によって違います。代表的な成人発達理論を原文で確かめると、視座・メタ認知・包容のほかに、次のような軸が使われていました。このスクリーナーが見ているのは三つの軸だけです。下の軸は、自分の見方を別の角度から振り返るための手がかりとして置いています。
+段階を分ける軸は、理論によって違います。代表的な成人発達理論を原文で確かめると、視座・メタ認知・包容のほかに、次のような軸が使われていました。このスクリーナーが見ているのは三つの軸だけです。下の軸は、自分の見方を別の角度から振り返るための手がかりとして置いています。「未確認」と添えた名前は、本文を確かめられず、よく言われる説明に拠っています。
 
-- **時間の幅**：どれだけ先まで（そして後まで）見通して考え、働けるか（Cook-Greuter の各段階の Time frame、Jaques の時間の地平、Baltes らの生涯の文脈）
+- **時間の幅**：どれだけ先まで（そして後まで）見通して考え、働けるか（Cook-Greuter の各段階の Time frame、Jaques の時間の地平〔未確認〕、Baltes らの生涯の文脈）
 - **個人の見方か、集団の見方か**：同じ対象でも、個人の側から観るか、集団の側から観るか（STAGES が段階を定める三つの問いの一つ。Torbert は会話や組織にも段階を置く）
 - **気づきが行動を変える深さ**：行動を直す／やり方の枠を変える／気づきそのものが変わる、の三重のループ（Torbert）
 - **感情の扱い**：感情の細やかさと、緊張やつらい感情も抱えたまま保つ力（Labouvie-Vief、Cook-Greuter の「在る」の次元）
-- **知ることの前提**：知識はどれくらい確かか、どう確かめるか（King & Kitchener、Perry）
-- **関与と責任**：答えが一つでないと分かったうえで、どこに立つか（Perry）
+- **知ることの前提**：知識はどれくらい確かか、どう確かめるか（King & Kitchener、Perry〔未確認〕）
+- **関与と責任**：答えが一つでないと分かったうえで、どこに立つか（Perry〔未確認〕）
 - **課題の複雑さ**：内容に依らず、どれだけ入れ子の深い課題を扱えるか（Commons、Fischer、Dawson）
-- **支えと状況による幅**：支えがあるときと、ないとき、緊張しているときで、出せる見方が違う（Fischer、King & Kitchener、Loevinger）
+- **支えと状況による幅**：支えがあるときと、ないとき、緊張しているときで、出せる見方が違う（Fischer、King & Kitchener、Loevinger〔未確認〕）
 - **権威と世界のまとまり**：何を権威とするか、世界をどうまとまったものとして思い描くか、象徴とどう関わるか（Fowler）
 - **暮らしの条件との合い方**：外の世界を変える向きと、内側と和解する向きが、条件に応じて交互に来る（Graves）
 - **ケアに自分を含めること**：他人だけでなく、自分もケアの受け手に含め直す（Gilligan）
@@ -165,17 +165,17 @@ Claude と話しながら答える版もあります（Claude のアカウント
 - Fischer, K. W. (1980). *Psychological Review* 87／Dawson（Lectica）による解説 [Skill theory](https://lectica.org/about/fischer)
 - Basseches, M. (2005). *Integral Review* 1. [PDF](https://integral-review.org/issues/issue_1_basseches_the_development_of_dialectical_thinking.pdf)
 - King, P. M. & Kitchener, K. S. (2004). *Educational Psychologist* 39(1).
-- Perry, W. G. (1970). *Forms of Intellectual and Ethical Development in the College Years*.
+- Perry, W. G. (1970). *Forms of Intellectual and Ethical Development in the College Years*.（本文未確認）
 - Gilligan, C. (1977). *Harvard Educational Review* 47(4).
 - Fowler, J. W. (2004). Faith Development at 30. *Religious Education* 99(4). [PDF](https://old.religiouseducation.net/journal/archive/fowler_v99_4.pdf)
 - Labouvie-Vief, G. et al. (2007). *Psychology and Aging* 22(4). [PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC2440634/)
 - Graves, C. W. (1974). Human Nature Prepares for a Momentous Leap. *The Futurist*.
-- Loevinger, J. (1976). *Ego Development*.
+- Loevinger, J. (1976). *Ego Development*.（本文未確認）
 - Kegan, R. (1994). *In Over Our Heads*.
 - Erikson, E. H. (1959). *Identity and the Life Cycle*.
 - Levinson, D. J. (1978). *The Seasons of a Man's Life*.
 - Jung, C. G. The Stages of Life（*Modern Man in Search of a Soul*, 1933 所収）
-- Jaques, E. (1989). *Requisite Organization*.
+- Jaques, E. (1989). *Requisite Organization*.（本文未確認）
 - Wilber, K. (1997). *Journal of Consciousness Studies* 4(1).
 - Baltes, P. B. & Staudinger, U. M. (2000). *American Psychologist* 55(1)／Ardelt, M. (2003). *Research on Aging* 25(3).
 
