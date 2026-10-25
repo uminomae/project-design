@@ -1,8 +1,8 @@
 {
- "version": "rev5",
+ "version": "rev6",
  "status": "draft",
- "updated": "2026-10-24",
- "note": "選択肢は改訂5（改訂4＋非二元性の点検による 18 選択肢の直し・README §8「改訂5（確定版）」）。note/example はこれから書く。points は 6.5 への近さ（0〜4）。review: ok＝監修者が採用。",
+ "updated": "2026-10-25",
+ "note": "選択肢は改訂6（改訂5＋pd#136 の 6 選択肢の直し：6.5 に他者の層を入れる 5・Q15 の 4.0〜4.5・README §8「改訂6（確定版）」）。note/example はこれから書く。points は 6.5 への近さ（0〜4）。review: ok＝監修者が採用。",
  "sources": {
   "O": "O'Fallon, T. (2020). States and STAGES: Waking up Developmentally. Integral Review 16(1). https://integral-review.org/issues/vol_16_no_1_ofallon_states_and_stages.pdf",
   "B": "Barta, K. (2020). Seven Perspectives on the STAGES Developmental Model. Integral Review 16(1). https://integral-review.org/issues/vol_16_no_1_barta_seven_perspectives_on_the_stages_developmental_model.pdf",
@@ -171,7 +171,7 @@
     },
     {
      "band": "b65",
-     "text": "声の響きと言葉の意味と、それに気づいている意識そのものが、互いを透かし合っているのが見える",
+     "text": "話している相手と自分の、声の響き・言葉の意味・それに気づいている意識そのものが、互いを透かし合っているのが見える",
      "note": "",
      "example": ""
     }
@@ -208,7 +208,7 @@
     },
     {
      "band": "b65",
-     "text": "食い違いの中で、体のこわばりと感情と考え方と、それに気づいている意識そのものが絡み合うのが見える",
+     "text": "食い違いの中で、相手と自分の体のこわばり・感情・考え方・それに気づいている意識そのものが、互いに絡み合うのが見える",
      "note": "",
      "example": ""
     }
@@ -282,7 +282,7 @@
     },
     {
      "band": "b65",
-     "text": "体で覚えることと感じることと分かることと、それに気づいている意識そのものが、互いを変え合うのが見える",
+     "text": "一緒に学ぶ人と自分の、体で覚えること・感じること・分かること・それに気づいている意識そのものが、互いを変え合うのが見える",
      "note": "",
      "example": ""
     }
@@ -541,7 +541,7 @@
     },
     {
      "band": "b65",
-     "text": "仕事の中で、手の動き・気持ち・考え・それに気づいている意識そのものが、互いの中で働き合っているのが見える",
+     "text": "一緒に働く人と自分の、手の動き・気持ち・考え・それに気づいている意識そのものが、互いの中で働き合っているのが見える",
      "note": "",
      "example": ""
     }
@@ -597,7 +597,7 @@
     },
     {
      "band": "b40",
-     "text": "目的に応じて、複数のモデルを使い分ける",
+     "text": "聞き手の立場によって伝わるモデルが違うので、いくつかを組み合わせて説明する",
      "note": "",
      "example": ""
     },
@@ -615,7 +615,7 @@
     },
     {
      "band": "b65",
-     "text": "説明するとき、土地と地図と、それに気づいている意識そのものが、互いを照らし合っているのが見える",
+     "text": "説明するとき、土地と、聞き手と自分の地図と、それに気づいている意識そのものが、互いを照らし合っているのが見える",
      "note": "",
      "example": ""
     }
