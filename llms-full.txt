@@ -4,12 +4,28 @@
 
 ## Site Overview
 
-This is the hub site of pjdhiro presenting **Project Design Theory** — an approach to project envisioning, design, and execution that encompasses both Doing (actions) and Being (phenomena).
+This is the hub site of pjdhiro presenting **Project Design Theory (プロジェクトデザイン論)** — the practice of designing not only projects but the very methods by which projects are run and managed (プロジェクトの実行・管理の方法そのものを対象化し、構想・設計する営み). It encompasses both Doing (actions) and Being (phenomena).
 
 - **Primary Language**: Japanese (日本語), with English summaries
 - **Site URL**: https://uminomae.github.io/project-design/
 - **llms.txt**: https://uminomae.github.io/project-design/llms.txt
-- **Topics**: Project Design Theory, Love-Driven Development, 事業構想 (Business Planning), PMBOK Extension, Emotional Processing, Creativity Structure, Intersubjectivity, Negative Capability
+- **Overview page (総論)**: https://uminomae.github.io/pjdhiro/project-design/
+- **Topics**: Designing project-management methods, Project Design Theory, Love-Driven Development, 事業構想 (Business Planning), PMBOK Extension, Emotional Processing, Creativity Structure, Intersubjectivity, Negative Capability
+
+## Who This Is For
+
+People who want to **design how a project is run and managed**, not just pick an existing method and apply it:
+project managers, business owners, team leads, and researchers of project-management methodology
+(プロジェクト管理手法・進め方そのものをどう設計するかに関心がある人).
+
+## Questions This Site Answers
+
+- **What does it mean to design a project-management method itself?** — Instead of only selecting and applying an existing method such as PMBOK, the way a given project is run and managed becomes a design object. Project Design defines two objects: (1) envisioning, designing, and executing a project; (2) envisioning and designing the method of executing and managing it.
+- **How does it relate to PMBOK?** — It extends rather than replaces it. Environmental adaptation (material conditions), covered in detail by PMBOK 7th edition, is taken as a premise. On top of that, Being (what is happening) is added to Doing (what we do); emotions become a design concern rather than one element of stakeholder management; communication is designed as intersubjective experience, not only information transfer; creativity is structured with the Five-Stage Model.
+- **What gets added to the design scope?** — Project work is split into environmental adaptation (material) and communication (non-material); communication is split into information processing and emotional processing. Emotional processing — emotional contagion, emotional metacognition, personal boundaries, acceptance, value — is the main focus. Kesson-Driven Thinking (starting from noticing what is missing) is used as a thinking method.
+- **Where does it apply?** — Mainly for-profit and non-profit business, but the framework applies to any purposeful activity that repeats envisioning, decision-making, execution, and adjustment (research, life, etc.).
+- **Where to start?** — The overview page (scope, domains, terms): https://uminomae.github.io/pjdhiro/project-design/ . Concrete explorations: team size (3 and 7), emotions and relationships as flows, and a perspective-breadth screener (readers below).
+- **Status** — Exploratory and unfinished; the inquiry is published in progress, including retracted readings.
 
 ## Core Concepts (Detailed)
 
@@ -96,9 +112,17 @@ URL: https://uminomae.github.io/project-design/reader/energy-flow.html
 
 An independent inquiry inspired by dissipative structures ("form persists only while flow continues"). It examines whether emotions, relationships, and historical eras can be understood as energy flows, sorting claims along two named scales: a meaning scale (literal / structural similarity / metaphor) and a certainty scale (measured / hypothesis / leap). Measured anchors include emotional contagion (Kramer et al. 2014, N≈689k), OU-process dynamics of affect, critical slowing down as depression early-warning (van de Leemput et al. 2014), and Kuramoto synchronization. A scoreboard section states what is established, open, and rejected.
 
+#### ものの見方の広さスクリーナー — 視座・メタ認知・インクルーシブを16問で確かめる
+- URL: https://uminomae.github.io/project-design/reader/stages-screener.html
+- One-line: A 16-question, 5-choice self-screener for breadth of perspective (vantage point, metacognition, inclusiveness). Band definitions borrow from O'Fallon's STAGES model; stage cues borrow from Cook-Greuter's published work on ego development; the mapping of choices to bands is the judgment of an LLM and the supervisor.
+- Status: not a diagnosis — a game-like rough guide.
+
 ## Content Hosted on pjdhiro
 
 The full theory articles are hosted on the parent site (pjdhiro):
+
+### Overview (総論)
+- `/project-design/` — Scope, domains, terms; Doing/Being; how it differs from PMBOK (start here)
 
 ### Dialogue Series (対話)
 - `/dialogue-project-design/` — Dialogue on Project Design
