@@ -107,6 +107,29 @@ Claude と話しながら答える版もあります（Claude のアカウント
 - このスクリーナーの帯は 3.0〜6.5 です。1.0〜2.5 は名前と大枠の確認にとどめ、7.0 はデータがないので置いていません。
 - 図の各マスと「対象にできる」は論文の定義の要約です（主に O pp.28–29、B pp.73・78・79）。「対象にできない」は、同じ資料と Cook-Greuter の段階の記述から読み取って書きました。
 
+### 三つの軸のほかに
+
+段階を分ける軸は、理論によって違います。代表的な成人発達理論を原文で確かめると、視座・メタ認知・包容のほかに、次のような軸が使われていました。このスクリーナーが見ているのは三つの軸だけです。下の軸は、自分の見方を別の角度から振り返るための手がかりとして置いています。
+
+- **時間の幅**：どれだけ先まで（そして後まで）見通して考え、働けるか（Cook-Greuter の各段階の Time frame、Jaques の時間の地平、Baltes らの生涯の文脈）
+- **個人の見方か、集団の見方か**：同じ対象でも、個人の側から観るか、集団の側から観るか（STAGES が段階を定める三つの問いの一つ。Torbert は会話や組織にも段階を置く）
+- **気づきが行動を変える深さ**：行動を直す／やり方の枠を変える／気づきそのものが変わる、の三重のループ（Torbert）
+- **感情の扱い**：感情の細やかさと、緊張やつらい感情も抱えたまま保つ力（Labouvie-Vief、Cook-Greuter の「在る」の次元）
+- **知ることの前提**：知識はどれくらい確かか、どう確かめるか（King & Kitchener、Perry）
+- **関与と責任**：答えが一つでないと分かったうえで、どこに立つか（Perry）
+- **課題の複雑さ**：内容に依らず、どれだけ入れ子の深い課題を扱えるか（Commons、Fischer、Dawson）
+- **支えと状況による幅**：支えがあるときと、ないとき、緊張しているときで、出せる見方が違う（Fischer、King & Kitchener、Loevinger）
+- **権威と世界のまとまり**：何を権威とするか、世界をどうまとまったものとして思い描くか、象徴とどう関わるか（Fowler）
+- **暮らしの条件との合い方**：外の世界を変える向きと、内側と和解する向きが、条件に応じて交互に来る（Graves）
+- **ケアに自分を含めること**：他人だけでなく、自分もケアの受け手に含め直す（Gilligan）
+
+段階とは別の軸として扱われているものもあります。
+
+- **状態**：一時的な体験の深さ（粗大・微細・元因・非二元）。ふだんの見方である段階とは別です（O'Fallon、Wilber）
+- **人生の時期**：年齢と結びついた課題（Erikson、Levinson、ユング）。同じ年齢でも段階は違います
+- **様式（タイプ）**：変わらない好み。段階の違いと取り違えないための区別です（Kegan）
+- **知恵の目安**：不確かさの扱い方、価値の違いへの寛容など（Baltes、Ardelt）
+
 ## 知っておいてほしいこと
 
 - **6.5 はデータが少ない段階です**。STAGES の検証研究では、統計的な結論が成り立つのは 2.0〜6.0 で、6.5 は確かな結論を出すにはデータが足りないとされています（V p.55）。6.5 の選択肢は、論文の短い記述から広げて書いた部分がいちばん多くなっています。
@@ -117,6 +140,7 @@ Claude と話しながら答える版もあります（Claude のアカウント
 
 - **借りたもの**：帯の名前と定義（論文の要約）。「段階のしくみ」の段階の記述の補い（Cook-Greuter の要約）。
 - **LLM と監修者が判断したもの**：16 の問い、各選択肢の文、各選択肢がどの帯に当たるか。「段階のしくみ」の表の「対象にできない」の列（資料からの読み取り）。
+- **LLM がまとめたもの**：「三つの軸のほかに」の軸の分け方。各理論の原文で、段階の軸を定めている箇所を確かめてまとめました。
 - **求めている正確さ**：各選択肢が、借りた定義と合っていること（内容の妥当性）まで。同じ人が何度答えても同じ結果になるか、STAGES の正式な測定（訓練を受けた採点者による文章完成法）と一致するかは確かめていません。
 - 論文の全文や長い引用は載せていません。原文は下の資料で、無料で読めます。
 
@@ -131,6 +155,31 @@ Claude と話しながら答える版もあります（Claude のアカウント
 段階の記述の補い（「段階のしくみ」の表）：
 
 - **CG**：Cook-Greuter, S. R. (2013). Nine Levels of Increasing Embrace in Ego Development (prepublication version). [PDF](https://pdf.stafforini.com/cook-greuter-2013-nine-levels-increasing.pdf)
+
+<details>
+<summary>「三つの軸のほかに」の資料</summary>
+
+- Cook-Greuter (2013)：上の **CG**（Time frame・Embrace の欄、行う・在る・考えるの三つの次元）
+- Torbert & Livne-Tarandach (2009). *Integral Review* 5(2)／Starr & Torbert (2005). *Integral Review* 1. [PDF](https://integral-review.org/issues/vol_5_no_2_torbert_reliability_and_validity_tests_of_the_harthill_leadership_development_profile.pdf)
+- Commons, M. L. (2007). Introduction to the Model of Hierarchical Complexity. *Behavioral Development Bulletin* 13.
+- Fischer, K. W. (1980). *Psychological Review* 87／Dawson（Lectica）による解説 [Skill theory](https://lectica.org/about/fischer)
+- Basseches, M. (2005). *Integral Review* 1. [PDF](https://integral-review.org/issues/issue_1_basseches_the_development_of_dialectical_thinking.pdf)
+- King, P. M. & Kitchener, K. S. (2004). *Educational Psychologist* 39(1).
+- Perry, W. G. (1970). *Forms of Intellectual and Ethical Development in the College Years*.
+- Gilligan, C. (1977). *Harvard Educational Review* 47(4).
+- Fowler, J. W. (2004). Faith Development at 30. *Religious Education* 99(4). [PDF](https://old.religiouseducation.net/journal/archive/fowler_v99_4.pdf)
+- Labouvie-Vief, G. et al. (2007). *Psychology and Aging* 22(4). [PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC2440634/)
+- Graves, C. W. (1974). Human Nature Prepares for a Momentous Leap. *The Futurist*.
+- Loevinger, J. (1976). *Ego Development*.
+- Kegan, R. (1994). *In Over Our Heads*.
+- Erikson, E. H. (1959). *Identity and the Life Cycle*.
+- Levinson, D. J. (1978). *The Seasons of a Man's Life*.
+- Jung, C. G. The Stages of Life（*Modern Man in Search of a Soul*, 1933 所収）
+- Jaques, E. (1989). *Requisite Organization*.
+- Wilber, K. (1997). *Journal of Consciousness Studies* 4(1).
+- Baltes, P. B. & Staudinger, U. M. (2000). *American Psychologist* 55(1)／Ardelt, M. (2003). *Research on Aging* 25(3).
+
+</details>
 
 ## Claude で再現する
 
