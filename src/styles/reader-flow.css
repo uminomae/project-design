@@ -171,6 +171,31 @@ body.reader-flow .reader-article .tablewrap thead th {
 }
 body.reader-flow .reader-article .tablewrap tbody tr:last-child td { border-bottom: none; }
 
+/* 横スクロールなしで収める表（正本 MD で <div class="tablefit"> に囲む。DESIGN-RULES B1: 320px 幅で横スクロールなし） */
+body.reader-flow .reader-article .tablefit .tablewrap { overflow-x: visible; }
+body.reader-flow .reader-article .tablefit table {
+    min-width: 0;
+    table-layout: fixed;
+}
+body.reader-flow .reader-article .tablefit thead th { white-space: normal; }
+body.reader-flow .reader-article .tablefit th:first-child,
+body.reader-flow .reader-article .tablefit td:first-child { width: 16%; }
+body.reader-flow .reader-article .tablefit .en {
+    display: block;
+    margin-top: 2px;
+    font-size: 0.82em;
+    color: var(--mute);
+}
+@media (max-width: 600px) {
+    body.reader-flow .reader-article .tablefit th,
+    body.reader-flow .reader-article .tablefit td {
+        padding: 8px 6px;
+        font-size: 0.8rem;
+        overflow-wrap: anywhere;
+    }
+    body.reader-flow .reader-article .tablefit .en { display: none; }
+}
+
 /* ===== 目次（garage 型: PC=常設サイドバー / モバイル=右下ボタン＋ドロワー） ===== */
 body.reader-flow #toc-btn {
     position: fixed;
