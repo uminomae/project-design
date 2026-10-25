@@ -106,6 +106,11 @@ textarea{font:inherit;width:100%;box-sizing:border-box;min-height:56px;padding:1
 .cell p{font-size:12px;line-height:1.55;margin-top:2px}
 .cell.out{border-top-color:var(--line);opacity:.75}
 .docs details[open] summary{margin-bottom:8px}
+.axes{display:flex;flex-direction:column}
+.axes details{padding:8px 0}
+.axes summary{font-weight:500}
+.axes .tbl table{min-width:0;table-layout:fixed}
+.axes .tbl td:first-child,.axes .tbl th:first-child{width:5.5em;white-space:nowrap}
 @media (prefers-reduced-motion: reduce){.bar i{transition:none}}
 </style>
 
@@ -291,25 +296,22 @@ textarea{font:inherit;width:100%;box-sizing:border-box;min-height:56px;padding:1
           <li><strong>暮らしの条件との合い方</strong>：外の世界を変える向きと、内側と和解する向きが、条件に応じて交互に来る（Graves）</li>
           <li><strong>ケアに自分を含めること</strong>：他人だけでなく、自分もケアの受け手に含め直す（Gilligan）</li>
         </ul>
-        <p class="small">下の表は、スクリーナーの三つの軸と、ここに挙げた軸のうち、<strong>理論の著者が段階ごとに書いている記述</strong>を、スクリーナーの帯に当てて並べたものです。O・B は STAGES の帯そのものについての記述、CG と Torbert は自分の段階についての記述で、段階の名前と視点の対応で帯に移しています（3.0 Expert・3.5 Achiever・4.0 Individualist・4.5 Strategist・5.0〜5.5 Construct-aware と Ego-aware〈Torbert の Alchemist〉）。CG は 6.0 と 6.5 を分けず、一つの段階（Unitive）としているので、6.5 の欄は「同左」です。空欄は、著者の記述が見つからない所です。ここに載せていない軸は、段階ごとの記述を確かめられていないか、帯に当てると LLM の判断になるものです。気になる軸があれば、括弧の資料（下の「資料」）で原文を読めます。</p>
-        <div class="tbl"><table>
-          <thead><tr><th>軸</th><th>〜3.5</th><th>4.0〜4.5</th><th>5.0〜5.5</th><th>6.0</th><th>6.5</th></tr></thead>
-          <tbody>
-            <tr><td><b>視座（スクリーナーの軸）</b></td><td>3人称まで（O）</td><td>4人称（O・B）</td><td>5人称（O・B）</td><td>6人称（O・B）</td><td>6人称（O・B）</td></tr>
-            <tr><td><b>メタ認知（スクリーナーの軸）</b></td><td>考えや感情と、それが自分の行動にどう関わるかを振り返る（O）</td><td>考えている自分に気づく。「相手が自分をどう見ているか」にも気づく（O・B）</td><td>言葉や境界や意味を心が作っていると見える。気づきそのものに気づく（O・B）</td><td>時間や境界に限られないものと、日常の現実が別々になっていない（O・B）</td><td>見ている場そのものから、体・考え・気づきの層が互いに入り込み合うところが見える（O・B）</td></tr>
-            <tr><td><b>包容（スクリーナーの軸）</b></td><td>正しいやり方、専門知識、目標、自分の役割（O）</td><td>複数の視点、文脈、複雑な仕組み、人の成長の流れ（O・B）</td><td>意味づけの仕組み。時間や境界を超えたもの（ただし日常とは切り離されている）（O・B）</td><td>自分と相手の、気づいている意識そのものが響き合う全体（O・B）</td><td>物質・生命・心の進化の流れ全体。わずかな動きが全体に響く（O・B）</td></tr>
-            <tr><td><b>非二元性</b></td><td></td><td></td><td>時間や境界のなさを観ていても、日常からは切り離されている（O・CG）</td><td>時間や境界のなさと日常の現実が、互いに行き来する（O）</td><td>目撃するもの（気づいている意識）と、目撃される層が入り込み合う（O）</td></tr>
-            <tr><td><b>状態との関係</b></td><td></td><td></td><td>目撃や一体感は、瞑想や至高体験の中で垣間見える（CG）</td><td>特別な体験でなくなり、いつも使える構えになる（CG）</td><td>同左</td></tr>
-            <tr><td><b>時間の幅</b></td><td>今の自分と、目標としての自分（CG）</td><td>4.0：未来より「いま」に向く／4.5：一生を見通す（CG）</td><td>自分の一生を超えて観る（CG）。時間のなさが観えるが、日常とは別（O）</td><td>時間のなさと日常の現実が統合される（O）</td><td>物質・生命・心の進化の流れ（O）。地球の過去と未来を、この瞬間に含む（CG）</td></tr>
-            <tr><td><b>個人か集団か</b></td><td>3.0・3.5：個人（O）</td><td>4.5：集団（O）</td><td>5.0・5.5：個人（O）</td><td></td><td>集団（O）</td></tr>
-            <tr><td><b>三重のループ</b></td><td>一重：行動を直す（Torbert）</td><td>4.5：二重：やり方の枠を変える（Torbert）</td><td>三重へ向かう（Torbert）。目撃は長く続かない（CG）</td><td></td><td></td></tr>
-            <tr><td><b>感情の扱い</b></td><td>感情と見かけを細かく分ける（CG）</td><td>4.0：感情が体に広がるのに気づく／4.5：相反する感情、つらい感情も抱えておける（CG）</td><td>感じては、その正しさをすぐ疑う（CG）</td><td>属している感じと、一人である感じが、無理なく両立する（CG）</td><td>同左</td></tr>
-            <tr><td><b>知ることの前提</b></td><td>3.0：権威に頼る／3.5：正しい方法で真理が見つかる（CG）</td><td>4.0：すべて相対／4.5：真理には近づける。立場の質に差がある（CG）</td><td>言葉による理解は、どれも部分的（CG）</td><td>単純な生き物も、思想家と同じくらい真理に近い（CG）</td><td>同左</td></tr>
-            <tr><td><b>課題の複雑さ</b></td><td>抽象的・形式的な操作（CG）</td><td>4.0：系統的／4.5：複数の系を比べて調整する（CG）</td><td>パラダイムをまたぐ（CG）</td><td></td><td></td></tr>
-            <tr><td><b>権威</b></td><td>3.0：権威に頼る／3.5：通念を疑える（CG）</td><td></td><td></td><td></td><td></td></tr>
-            <tr><td><b>ケアに自分を含める</b></td><td></td><td>4.5：自分への思いやりが、続く構えになりうる（CG）</td><td></td><td></td><td></td></tr>
-          </tbody>
-        </table></div>
+        <p class="small">下の一覧は、スクリーナーの三つの軸と、ここに挙げた軸のうち、<strong>理論の著者が段階ごとに書いている記述</strong>を、スクリーナーの帯に当てて並べたものです。軸の名前を開くと、帯ごとの記述が出ます。O・B は STAGES の帯そのものについての記述、CG と Torbert は自分の段階についての記述で、段階の名前と視点の対応で帯に移しています（3.0 Expert・3.5 Achiever・4.0 Individualist・4.5 Strategist・5.0〜5.5 Construct-aware と Ego-aware〈Torbert の Alchemist〉）。CG は 6.0 と 6.5 を分けず、一つの段階（Unitive）としているので、6.5 は「6.0 と同じ」としています。「—」は、著者の記述が見つからない帯です。ここに載せていない軸は、段階ごとの記述を確かめられていないか、帯に当てると LLM の判断になるものです。気になる軸があれば、括弧の資料（下の「資料」）で原文を読めます。</p>
+        <div class="axes">
+          <details><summary>視座（スクリーナーの軸）</summary><div class="tbl"><table><thead><tr><th>帯</th><th>著者の記述（資料）</th></tr></thead><tbody><tr><td><b>〜3.5</b></td><td>3人称まで（O）</td></tr><tr><td><b>4.0〜4.5</b></td><td>4人称（O・B）</td></tr><tr><td><b>5.0〜5.5</b></td><td>5人称（O・B）</td></tr><tr><td><b>6.0</b></td><td>6人称（O・B）</td></tr><tr><td><b>6.5</b></td><td>6人称（O・B）</td></tr></tbody></table></div></details>
+          <details><summary>メタ認知（スクリーナーの軸）</summary><div class="tbl"><table><thead><tr><th>帯</th><th>著者の記述（資料）</th></tr></thead><tbody><tr><td><b>〜3.5</b></td><td>考えや感情と、それが自分の行動にどう関わるかを振り返る（O）</td></tr><tr><td><b>4.0〜4.5</b></td><td>考えている自分に気づく。「相手が自分をどう見ているか」にも気づく（O・B）</td></tr><tr><td><b>5.0〜5.5</b></td><td>言葉や境界や意味を心が作っていると見える。気づきそのものに気づく（O・B）</td></tr><tr><td><b>6.0</b></td><td>時間や境界に限られないものと、日常の現実が別々になっていない（O・B）</td></tr><tr><td><b>6.5</b></td><td>見ている場そのものから、体・考え・気づきの層が互いに入り込み合うところが見える（O・B）</td></tr></tbody></table></div></details>
+          <details><summary>包容（スクリーナーの軸）</summary><div class="tbl"><table><thead><tr><th>帯</th><th>著者の記述（資料）</th></tr></thead><tbody><tr><td><b>〜3.5</b></td><td>正しいやり方、専門知識、目標、自分の役割（O）</td></tr><tr><td><b>4.0〜4.5</b></td><td>複数の視点、文脈、複雑な仕組み、人の成長の流れ（O・B）</td></tr><tr><td><b>5.0〜5.5</b></td><td>意味づけの仕組み。時間や境界を超えたもの（ただし日常とは切り離されている）（O・B）</td></tr><tr><td><b>6.0</b></td><td>自分と相手の、気づいている意識そのものが響き合う全体（O・B）</td></tr><tr><td><b>6.5</b></td><td>物質・生命・心の進化の流れ全体。わずかな動きが全体に響く（O・B）</td></tr></tbody></table></div></details>
+          <details><summary>非二元性</summary><div class="tbl"><table><thead><tr><th>帯</th><th>著者の記述（資料）</th></tr></thead><tbody><tr><td><b>〜3.5</b></td><td>—（著者の記述が見つからない）</td></tr><tr><td><b>4.0〜4.5</b></td><td>—（著者の記述が見つからない）</td></tr><tr><td><b>5.0〜5.5</b></td><td>時間や境界のなさを観ていても、日常からは切り離されている（O・CG）</td></tr><tr><td><b>6.0</b></td><td>時間や境界のなさと日常の現実が、互いに行き来する（O）</td></tr><tr><td><b>6.5</b></td><td>目撃するもの（気づいている意識）と、目撃される層が入り込み合う（O）</td></tr></tbody></table></div></details>
+          <details><summary>状態との関係</summary><div class="tbl"><table><thead><tr><th>帯</th><th>著者の記述（資料）</th></tr></thead><tbody><tr><td><b>〜3.5</b></td><td>—（著者の記述が見つからない）</td></tr><tr><td><b>4.0〜4.5</b></td><td>—（著者の記述が見つからない）</td></tr><tr><td><b>5.0〜5.5</b></td><td>目撃や一体感は、瞑想や至高体験の中で垣間見える（CG）</td></tr><tr><td><b>6.0</b></td><td>特別な体験でなくなり、いつも使える構えになる（CG）</td></tr><tr><td><b>6.5</b></td><td>6.0 と同じ（CG は 6.0 と 6.5 を分けない）</td></tr></tbody></table></div></details>
+          <details><summary>時間の幅</summary><div class="tbl"><table><thead><tr><th>帯</th><th>著者の記述（資料）</th></tr></thead><tbody><tr><td><b>〜3.5</b></td><td>今の自分と、目標としての自分（CG）</td></tr><tr><td><b>4.0〜4.5</b></td><td>4.0：未来より「いま」に向く／4.5：一生を見通す（CG）</td></tr><tr><td><b>5.0〜5.5</b></td><td>自分の一生を超えて観る（CG）。時間のなさが観えるが、日常とは別（O）</td></tr><tr><td><b>6.0</b></td><td>時間のなさと日常の現実が統合される（O）</td></tr><tr><td><b>6.5</b></td><td>物質・生命・心の進化の流れ（O）。地球の過去と未来を、この瞬間に含む（CG）</td></tr></tbody></table></div></details>
+          <details><summary>個人か集団か</summary><div class="tbl"><table><thead><tr><th>帯</th><th>著者の記述（資料）</th></tr></thead><tbody><tr><td><b>〜3.5</b></td><td>3.0・3.5：個人（O）</td></tr><tr><td><b>4.0〜4.5</b></td><td>4.5：集団（O）</td></tr><tr><td><b>5.0〜5.5</b></td><td>5.0・5.5：個人（O）</td></tr><tr><td><b>6.0</b></td><td>—（著者の記述が見つからない）</td></tr><tr><td><b>6.5</b></td><td>集団（O）</td></tr></tbody></table></div></details>
+          <details><summary>三重のループ</summary><div class="tbl"><table><thead><tr><th>帯</th><th>著者の記述（資料）</th></tr></thead><tbody><tr><td><b>〜3.5</b></td><td>一重：行動を直す（Torbert）</td></tr><tr><td><b>4.0〜4.5</b></td><td>4.5：二重：やり方の枠を変える（Torbert）</td></tr><tr><td><b>5.0〜5.5</b></td><td>三重へ向かう（Torbert）。目撃は長く続かない（CG）</td></tr><tr><td><b>6.0</b></td><td>—（著者の記述が見つからない）</td></tr><tr><td><b>6.5</b></td><td>—（著者の記述が見つからない）</td></tr></tbody></table></div></details>
+          <details><summary>感情の扱い</summary><div class="tbl"><table><thead><tr><th>帯</th><th>著者の記述（資料）</th></tr></thead><tbody><tr><td><b>〜3.5</b></td><td>感情と見かけを細かく分ける（CG）</td></tr><tr><td><b>4.0〜4.5</b></td><td>4.0：感情が体に広がるのに気づく／4.5：相反する感情、つらい感情も抱えておける（CG）</td></tr><tr><td><b>5.0〜5.5</b></td><td>感じては、その正しさをすぐ疑う（CG）</td></tr><tr><td><b>6.0</b></td><td>属している感じと、一人である感じが、無理なく両立する（CG）</td></tr><tr><td><b>6.5</b></td><td>6.0 と同じ（CG は 6.0 と 6.5 を分けない）</td></tr></tbody></table></div></details>
+          <details><summary>知ることの前提</summary><div class="tbl"><table><thead><tr><th>帯</th><th>著者の記述（資料）</th></tr></thead><tbody><tr><td><b>〜3.5</b></td><td>3.0：権威に頼る／3.5：正しい方法で真理が見つかる（CG）</td></tr><tr><td><b>4.0〜4.5</b></td><td>4.0：すべて相対／4.5：真理には近づける。立場の質に差がある（CG）</td></tr><tr><td><b>5.0〜5.5</b></td><td>言葉による理解は、どれも部分的（CG）</td></tr><tr><td><b>6.0</b></td><td>単純な生き物も、思想家と同じくらい真理に近い（CG）</td></tr><tr><td><b>6.5</b></td><td>6.0 と同じ（CG は 6.0 と 6.5 を分けない）</td></tr></tbody></table></div></details>
+          <details><summary>課題の複雑さ</summary><div class="tbl"><table><thead><tr><th>帯</th><th>著者の記述（資料）</th></tr></thead><tbody><tr><td><b>〜3.5</b></td><td>抽象的・形式的な操作（CG）</td></tr><tr><td><b>4.0〜4.5</b></td><td>4.0：系統的／4.5：複数の系を比べて調整する（CG）</td></tr><tr><td><b>5.0〜5.5</b></td><td>パラダイムをまたぐ（CG）</td></tr><tr><td><b>6.0</b></td><td>—（著者の記述が見つからない）</td></tr><tr><td><b>6.5</b></td><td>—（著者の記述が見つからない）</td></tr></tbody></table></div></details>
+          <details><summary>権威</summary><div class="tbl"><table><thead><tr><th>帯</th><th>著者の記述（資料）</th></tr></thead><tbody><tr><td><b>〜3.5</b></td><td>3.0：権威に頼る／3.5：通念を疑える（CG）</td></tr><tr><td><b>4.0〜4.5</b></td><td>—（著者の記述が見つからない）</td></tr><tr><td><b>5.0〜5.5</b></td><td>—（著者の記述が見つからない）</td></tr><tr><td><b>6.0</b></td><td>—（著者の記述が見つからない）</td></tr><tr><td><b>6.5</b></td><td>—（著者の記述が見つからない）</td></tr></tbody></table></div></details>
+          <details><summary>ケアに自分を含める</summary><div class="tbl"><table><thead><tr><th>帯</th><th>著者の記述（資料）</th></tr></thead><tbody><tr><td><b>〜3.5</b></td><td>—（著者の記述が見つからない）</td></tr><tr><td><b>4.0〜4.5</b></td><td>4.5：自分への思いやりが、続く構えになりうる（CG）</td></tr><tr><td><b>5.0〜5.5</b></td><td>—（著者の記述が見つからない）</td></tr><tr><td><b>6.0</b></td><td>—（著者の記述が見つからない）</td></tr><tr><td><b>6.5</b></td><td>—（著者の記述が見つからない）</td></tr></tbody></table></div></details>
+        </div>
         <p class="small">段階とは別の軸として扱われているものもあります。</p>
         <ul class="notes">
           <li><strong>状態</strong>：一時的な体験の深さ（粗大・微細・元因・非二元）。ふだんの見方である段階とは別です（O'Fallon、Wilber）</li>
