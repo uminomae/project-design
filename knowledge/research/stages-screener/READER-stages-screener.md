@@ -124,7 +124,7 @@ Claude と話しながら答える版もあります（Claude のアカウント
 - **ケアに自分を含めること**：他人だけでなく、自分もケアの受け手に含め直す（Gilligan）
 
 
-下の一覧は、ここに挙げた軸と、非二元性・状態との関係のうち、**理論の著者が段階ごとに書いている記述**を、スクリーナーの帯に当てて並べたものです。軸の名前を開くと、帯ごとの記述が出ます。O は STAGES の帯そのものについての記述、CG と Torbert は自分の段階についての記述で、段階の名前と視点の対応で帯に移しています（3.0 Expert・3.5 Achiever・4.0 Individualist・4.5 Strategist・5.0〜5.5 Construct-aware と Ego-aware〈Torbert の Alchemist〉）。CG は 6.0 と 6.5 を分けず、一つの段階（Unitive）としているので、6.5 は「6.0 と同じ」としています。「—」は、著者の記述が見つからない帯です。ここに載せていない軸は、段階ごとの記述を確かめられていないか、帯に当てると LLM の判断になるものです。気になる軸があれば、括弧の資料（下の「資料」）で原文を読めます。
+下の一覧は、ここに挙げた軸と、非二元性・状態との関係のうち、**理論の著者が段階ごとに書いている記述**を、スクリーナーの帯に当てて並べたものです。軸の名前を開くと、帯ごとの記述が出ます。O は STAGES の帯そのものについての記述、CG と Torbert は自分の段階についての記述で、段階の名前と視点の対応で帯に移しています（3.0 Expert・3.5 Achiever・4.0 Individualist・4.5 Strategist・5.0〜5.5 Construct-aware と Ego-aware〈Torbert の Alchemist〉）。CG は 6.0 と 6.5 を分けず、一つの段階（Unitive）としているので、6.5 は「6.0 と同じ」としています。「—」は、著者の記述が見つからない帯です。ここに載せていない軸は、段階ごとの記述を確かめられていないか、帯に当てると LLM の判断になるものです。気になる軸があれば、括弧の資料（下の「資料」）で原文を読めます。CG の各段階をもっと詳しく知りたい方は、日本語の学習ノート[自我発達の9段階ノート](https://claude.ai/artifact/RU7CnNTSe6qQW2i4EpHyCy)も参考にしてください。
 
 <details>
 <summary>非二元性</summary>
@@ -353,6 +353,7 @@ Cook-Greuter が各段階の自己同一性（自分を何者として感じる�
 段階の記述の補い（「段階のしくみ」の表）：
 
 - **CG**：Cook-Greuter, S. R. (2013). Nine Levels of Increasing Embrace in Ego Development (prepublication version). [PDF](https://pdf.stafforini.com/cook-greuter-2013-nine-levels-increasing.pdf)
+  - より詳しく知りたい方へ：[自我発達の9段階ノート](https://claude.ai/artifact/RU7CnNTSe6qQW2i4EpHyCy)（CG の 9 段階を、章立てに沿って日本語でまとめた学習ノート。翻訳ではありません）
 
 <details>
 <summary>「三つの軸のほかに」の資料</summary>
