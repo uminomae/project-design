@@ -2,7 +2,7 @@
  "version": "rev6",
  "status": "draft",
  "updated": "2026-10-25",
- "note": "選択肢は改訂6（改訂5＋pd#136 の 8 選択肢の直し：6.x に他者の層を入れる 7・Q15 の 4.0〜4.5・README §8「改訂6（確定版）」）。note/example はこれから書く。points は 6.5 への近さ（0〜4）。review: ok＝監修者が採用。",
+ "note": "選択肢は改訂6（改訂5＋pd#136 の 6 選択肢の直し：6.5 に他者の層を入れる 5・Q15 の 4.0〜4.5・README §8「改訂6（確定版）」）。note/example はこれから書く。points は 6.5 への近さ（0〜4）。review: ok＝監修者が採用。",
  "sources": {
   "O": "O'Fallon, T. (2020). States and STAGES: Waking up Developmentally. Integral Review 16(1). https://integral-review.org/issues/vol_16_no_1_ofallon_states_and_stages.pdf",
   "B": "Barta, K. (2020). Seven Perspectives on the STAGES Developmental Model. Integral Review 16(1). https://integral-review.org/issues/vol_16_no_1_barta_seven_perspectives_on_the_stages_developmental_model.pdf",
@@ -202,7 +202,7 @@
     },
     {
      "band": "b60",
-     "text": "相手と一緒に具体的な落としどころを探すことが、時間にも境界にも限られないものと切り離されていない",
+     "text": "具体的な落としどころを探すことが、時間にも境界にも限られないものと切り離されていない",
      "note": "",
      "example": ""
     },
@@ -535,7 +535,7 @@
     },
     {
      "band": "b60",
-     "text": "人と分け合って日々の役割を果たすことが、境界のないものから離れていない",
+     "text": "日々の役割を果たすことが、境界のないものから離れていない",
      "note": "",
      "example": ""
     },
